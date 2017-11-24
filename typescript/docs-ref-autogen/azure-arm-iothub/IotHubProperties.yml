@@ -1,0 +1,206 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-iothub.IotHubProperties
+    name: IotHubProperties
+    fullName: IotHubProperties
+    children:
+      - azure-arm-iothub.IotHubProperties.authorizationPolicies
+      - azure-arm-iothub.IotHubProperties.cloudToDevice
+      - azure-arm-iothub.IotHubProperties.comments
+      - azure-arm-iothub.IotHubProperties.enableFileUploadNotifications
+      - azure-arm-iothub.IotHubProperties.eventHubEndpoints
+      - azure-arm-iothub.IotHubProperties.features
+      - azure-arm-iothub.IotHubProperties.hostName
+      - azure-arm-iothub.IotHubProperties.ipFilterRules
+      - azure-arm-iothub.IotHubProperties.messagingEndpoints
+      - azure-arm-iothub.IotHubProperties.operationsMonitoringProperties
+      - azure-arm-iothub.IotHubProperties.provisioningState
+      - azure-arm-iothub.IotHubProperties.routing
+      - azure-arm-iothub.IotHubProperties.storageEndpoints
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-iothub
+  - uid: azure-arm-iothub.IotHubProperties.authorizationPolicies
+    name: authorizationPolicies
+    fullName: authorizationPolicies
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'SharedAccessSignatureAuthorizationRule[] authorizationPolicies'
+      return:
+        type:
+          - '@azure-arm-iothub.SharedAccessSignatureAuthorizationRule[]'
+  - uid: azure-arm-iothub.IotHubProperties.cloudToDevice
+    name: cloudToDevice
+    fullName: cloudToDevice
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: CloudToDeviceProperties cloudToDevice
+      return:
+        type:
+          - '@azure-arm-iothub.CloudToDeviceProperties'
+  - uid: azure-arm-iothub.IotHubProperties.comments
+    name: comments
+    fullName: comments
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: string comments
+      return:
+        type:
+          - string
+  - uid: azure-arm-iothub.IotHubProperties.enableFileUploadNotifications
+    name: enableFileUploadNotifications
+    fullName: enableFileUploadNotifications
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: boolean enableFileUploadNotifications
+      return:
+        type:
+          - boolean
+  - uid: azure-arm-iothub.IotHubProperties.eventHubEndpoints
+    name: eventHubEndpoints
+    fullName: eventHubEndpoints
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: '[key: string]: EventHubProperties eventHubEndpoints'
+      return:
+        type:
+          - '[key: string]: @azure-arm-iothub.EventHubProperties'
+  - uid: azure-arm-iothub.IotHubProperties.features
+    name: features
+    fullName: features
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: string features
+      return:
+        type:
+          - string
+  - uid: azure-arm-iothub.IotHubProperties.hostName
+    name: hostName
+    fullName: hostName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: string hostName
+      return:
+        type:
+          - string
+  - uid: azure-arm-iothub.IotHubProperties.ipFilterRules
+    name: ipFilterRules
+    fullName: ipFilterRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'IpFilterRule[] ipFilterRules'
+      return:
+        type:
+          - '@azure-arm-iothub.IpFilterRule[]'
+  - uid: azure-arm-iothub.IotHubProperties.messagingEndpoints
+    name: messagingEndpoints
+    fullName: messagingEndpoints
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: '[key: string]: MessagingEndpointProperties messagingEndpoints'
+      return:
+        type:
+          - '[key: string]: @azure-arm-iothub.MessagingEndpointProperties'
+  - uid: azure-arm-iothub.IotHubProperties.operationsMonitoringProperties
+    name: operationsMonitoringProperties
+    fullName: operationsMonitoringProperties
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: OperationsMonitoringProperties operationsMonitoringProperties
+      return:
+        type:
+          - '@azure-arm-iothub.OperationsMonitoringProperties'
+  - uid: azure-arm-iothub.IotHubProperties.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: string provisioningState
+      return:
+        type:
+          - string
+  - uid: azure-arm-iothub.IotHubProperties.routing
+    name: routing
+    fullName: routing
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: RoutingProperties routing
+      return:
+        type:
+          - '@azure-arm-iothub.RoutingProperties'
+  - uid: azure-arm-iothub.IotHubProperties.storageEndpoints
+    name: storageEndpoints
+    fullName: storageEndpoints
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: '[key: string]: StorageEndpointProperties storageEndpoints'
+      return:
+        type:
+          - '[key: string]: @azure-arm-iothub.StorageEndpointProperties'
