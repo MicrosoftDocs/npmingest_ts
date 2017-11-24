@@ -1,0 +1,71 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network.EffectiveNetworkSecurityGroup
+    name: EffectiveNetworkSecurityGroup
+    fullName: EffectiveNetworkSecurityGroup
+    children:
+      - azure-arm-network.EffectiveNetworkSecurityGroup.association
+      - azure-arm-network.EffectiveNetworkSecurityGroup.effectiveSecurityRules
+      - azure-arm-network.EffectiveNetworkSecurityGroup.networkSecurityGroup
+      - azure-arm-network.EffectiveNetworkSecurityGroup.tagMap
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network
+  - uid: azure-arm-network.EffectiveNetworkSecurityGroup.association
+    name: association
+    fullName: association
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: EffectiveNetworkSecurityGroupAssociation association
+      return:
+        type:
+          - '@azure-arm-network.EffectiveNetworkSecurityGroupAssociation'
+  - uid: azure-arm-network.EffectiveNetworkSecurityGroup.effectiveSecurityRules
+    name: effectiveSecurityRules
+    fullName: effectiveSecurityRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'EffectiveNetworkSecurityRule[] effectiveSecurityRules'
+      return:
+        type:
+          - '@azure-arm-network.EffectiveNetworkSecurityRule[]'
+  - uid: azure-arm-network.EffectiveNetworkSecurityGroup.networkSecurityGroup
+    name: networkSecurityGroup
+    fullName: networkSecurityGroup
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: SubResource networkSecurityGroup
+      return:
+        type:
+          - '@azure-arm-network.SubResource'
+  - uid: azure-arm-network.EffectiveNetworkSecurityGroup.tagMap
+    name: tagMap
+    fullName: tagMap
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: '[key: string]: function tagMap'
+      return:
+        type:
+          - '[key: string]: function'

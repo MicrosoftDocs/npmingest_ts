@@ -1,0 +1,73 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute.RollingUpgradeStatusInfo
+    name: RollingUpgradeStatusInfo
+    fullName: RollingUpgradeStatusInfo
+    children:
+      - azure-arm-compute.RollingUpgradeStatusInfo.error
+      - azure-arm-compute.RollingUpgradeStatusInfo.policy
+      - azure-arm-compute.RollingUpgradeStatusInfo.progress
+      - azure-arm-compute.RollingUpgradeStatusInfo.runningStatus
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    extends:
+      name: '@azure-arm-compute.Resource'
+    package: azure-arm-compute
+  - uid: azure-arm-compute.RollingUpgradeStatusInfo.error
+    name: error
+    fullName: error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: ApiError error
+      return:
+        type:
+          - '@azure-arm-compute.ApiError'
+  - uid: azure-arm-compute.RollingUpgradeStatusInfo.policy
+    name: policy
+    fullName: policy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: RollingUpgradePolicy policy
+      return:
+        type:
+          - '@azure-arm-compute.RollingUpgradePolicy'
+  - uid: azure-arm-compute.RollingUpgradeStatusInfo.progress
+    name: progress
+    fullName: progress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: RollingUpgradeProgressInfo progress
+      return:
+        type:
+          - '@azure-arm-compute.RollingUpgradeProgressInfo'
+  - uid: azure-arm-compute.RollingUpgradeStatusInfo.runningStatus
+    name: runningStatus
+    fullName: runningStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: RollingUpgradeRunningStatus runningStatus
+      return:
+        type:
+          - '@azure-arm-compute.RollingUpgradeRunningStatus'

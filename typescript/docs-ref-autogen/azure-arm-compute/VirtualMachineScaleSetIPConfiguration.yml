@@ -1,0 +1,145 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute.VirtualMachineScaleSetIPConfiguration
+    name: VirtualMachineScaleSetIPConfiguration
+    fullName: VirtualMachineScaleSetIPConfiguration
+    children:
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetIPConfiguration.applicationGatewayBackendAddressPools
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetIPConfiguration.loadBalancerBackendAddressPools
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetIPConfiguration.loadBalancerInboundNatPools
+      - azure-arm-compute.VirtualMachineScaleSetIPConfiguration.name
+      - azure-arm-compute.VirtualMachineScaleSetIPConfiguration.primary
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetIPConfiguration.privateIPAddressVersion
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetIPConfiguration.publicIPAddressConfiguration
+      - azure-arm-compute.VirtualMachineScaleSetIPConfiguration.subnet
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    extends:
+      name: '@azure-arm-compute.SubResource'
+    package: azure-arm-compute
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetIPConfiguration.applicationGatewayBackendAddressPools
+    name: applicationGatewayBackendAddressPools
+    fullName: applicationGatewayBackendAddressPools
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'SubResource[] applicationGatewayBackendAddressPools'
+      return:
+        type:
+          - '@azure-arm-compute.SubResource[]'
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetIPConfiguration.loadBalancerBackendAddressPools
+    name: loadBalancerBackendAddressPools
+    fullName: loadBalancerBackendAddressPools
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'SubResource[] loadBalancerBackendAddressPools'
+      return:
+        type:
+          - '@azure-arm-compute.SubResource[]'
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetIPConfiguration.loadBalancerInboundNatPools
+    name: loadBalancerInboundNatPools
+    fullName: loadBalancerInboundNatPools
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'SubResource[] loadBalancerInboundNatPools'
+      return:
+        type:
+          - '@azure-arm-compute.SubResource[]'
+  - uid: azure-arm-compute.VirtualMachineScaleSetIPConfiguration.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string name
+      return:
+        type:
+          - string
+  - uid: azure-arm-compute.VirtualMachineScaleSetIPConfiguration.primary
+    name: primary
+    fullName: primary
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: boolean primary
+      return:
+        type:
+          - boolean
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetIPConfiguration.privateIPAddressVersion
+    name: privateIPAddressVersion
+    fullName: privateIPAddressVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: string privateIPAddressVersion
+      return:
+        type:
+          - string
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetIPConfiguration.publicIPAddressConfiguration
+    name: publicIPAddressConfiguration
+    fullName: publicIPAddressConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: >-
+        VirtualMachineScaleSetPublicIPAddressConfiguration
+        publicIPAddressConfiguration
+      return:
+        type:
+          - >-
+            @azure-arm-compute.VirtualMachineScaleSetPublicIPAddressConfiguration
+  - uid: azure-arm-compute.VirtualMachineScaleSetIPConfiguration.subnet
+    name: subnet
+    fullName: subnet
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: ApiEntityReference subnet
+      return:
+        type:
+          - '@azure-arm-compute.ApiEntityReference'

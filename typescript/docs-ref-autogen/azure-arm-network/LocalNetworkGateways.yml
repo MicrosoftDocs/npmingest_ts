@@ -1,0 +1,911 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network.LocalNetworkGateways
+    name: LocalNetworkGateways
+    fullName: LocalNetworkGateways
+    children:
+      - azure-arm-network.LocalNetworkGateways.beginCreateOrUpdate
+      - azure-arm-network.LocalNetworkGateways.beginCreateOrUpdate_1
+      - azure-arm-network.LocalNetworkGateways.beginCreateOrUpdate_2
+      - >-
+        azure-arm-network.LocalNetworkGateways.beginCreateOrUpdateWithHttpOperationResponse
+      - azure-arm-network.LocalNetworkGateways.beginDeleteMethod
+      - azure-arm-network.LocalNetworkGateways.beginDeleteMethod_1
+      - azure-arm-network.LocalNetworkGateways.beginDeleteMethod_2
+      - >-
+        azure-arm-network.LocalNetworkGateways.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-network.LocalNetworkGateways.createOrUpdate
+      - azure-arm-network.LocalNetworkGateways.createOrUpdate_1
+      - azure-arm-network.LocalNetworkGateways.createOrUpdate_2
+      - >-
+        azure-arm-network.LocalNetworkGateways.createOrUpdateWithHttpOperationResponse
+      - azure-arm-network.LocalNetworkGateways.deleteMethod
+      - azure-arm-network.LocalNetworkGateways.deleteMethod_1
+      - azure-arm-network.LocalNetworkGateways.deleteMethod_2
+      - >-
+        azure-arm-network.LocalNetworkGateways.deleteMethodWithHttpOperationResponse
+      - azure-arm-network.LocalNetworkGateways.get_1
+      - azure-arm-network.LocalNetworkGateways.get_2
+      - azure-arm-network.LocalNetworkGateways.get
+      - azure-arm-network.LocalNetworkGateways.getWithHttpOperationResponse
+      - azure-arm-network.LocalNetworkGateways.list
+      - azure-arm-network.LocalNetworkGateways.list_1
+      - azure-arm-network.LocalNetworkGateways.list_2
+      - azure-arm-network.LocalNetworkGateways.listNext
+      - azure-arm-network.LocalNetworkGateways.listNext_1
+      - azure-arm-network.LocalNetworkGateways.listNext_2
+      - azure-arm-network.LocalNetworkGateways.listNextWithHttpOperationResponse
+      - azure-arm-network.LocalNetworkGateways.listWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network
+  - uid: azure-arm-network.LocalNetworkGateways.beginCreateOrUpdate
+    name: beginCreateOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates or updates a local network gateway in the specified resource
+      group.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        localNetworkGatewayName: string, parameters: LocalNetworkGateway,
+        options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the local network
+            gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.LocalNetworkGateway'
+          description: |
+            Parameters supplied to the create or update local
+            network gateway operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGateway>
+  - uid: azure-arm-network.LocalNetworkGateways.beginCreateOrUpdate_1
+    name: beginCreateOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates or updates a local network gateway in the specified resource
+      group.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        localNetworkGatewayName: string, parameters: LocalNetworkGateway,
+        callback: ServiceCallback<LocalNetworkGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.LocalNetworkGateway'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LocalNetworkGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGateway>
+  - uid: azure-arm-network.LocalNetworkGateways.beginCreateOrUpdate_2
+    name: beginCreateOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates or updates a local network gateway in the specified resource
+      group.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        localNetworkGatewayName: string, parameters: LocalNetworkGateway,
+        options: function, callback: ServiceCallback<LocalNetworkGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.LocalNetworkGateway'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LocalNetworkGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGateway>
+  - uid: >-
+      azure-arm-network.LocalNetworkGateways.beginCreateOrUpdateWithHttpOperationResponse
+    name: beginCreateOrUpdateWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates or updates a local network gateway in the specified resource
+      group.
+    syntax:
+      content: >-
+        function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, localNetworkGatewayName: string, parameters:
+        LocalNetworkGateway, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the local network
+            gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.LocalNetworkGateway'
+          description: |
+            Parameters supplied to the create or update local
+            network gateway operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LocalNetworkGateway>>
+  - uid: azure-arm-network.LocalNetworkGateways.beginDeleteMethod
+    name: beginDeleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified local network gateway.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        localNetworkGatewayName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the local network
+            gateway.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+  - uid: azure-arm-network.LocalNetworkGateways.beginDeleteMethod_1
+    name: beginDeleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified local network gateway.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        localNetworkGatewayName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+  - uid: azure-arm-network.LocalNetworkGateways.beginDeleteMethod_2
+    name: beginDeleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified local network gateway.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        localNetworkGatewayName: string, options: function, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+  - uid: >-
+      azure-arm-network.LocalNetworkGateways.beginDeleteMethodWithHttpOperationResponse
+    name: beginDeleteMethodWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified local network gateway.
+    syntax:
+      content: >-
+        function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, localNetworkGatewayName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the local network
+            gateway.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+  - uid: azure-arm-network.LocalNetworkGateways.createOrUpdate
+    name: createOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates or updates a local network gateway in the specified resource
+      group.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        localNetworkGatewayName: string, parameters: LocalNetworkGateway,
+        options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the local network
+            gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.LocalNetworkGateway'
+          description: |
+            Parameters supplied to the create or update local
+            network gateway operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGateway>
+  - uid: azure-arm-network.LocalNetworkGateways.createOrUpdate_1
+    name: createOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates or updates a local network gateway in the specified resource
+      group.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        localNetworkGatewayName: string, parameters: LocalNetworkGateway,
+        callback: ServiceCallback<LocalNetworkGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.LocalNetworkGateway'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LocalNetworkGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGateway>
+  - uid: azure-arm-network.LocalNetworkGateways.createOrUpdate_2
+    name: createOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates or updates a local network gateway in the specified resource
+      group.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        localNetworkGatewayName: string, parameters: LocalNetworkGateway,
+        options: function, callback: ServiceCallback<LocalNetworkGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.LocalNetworkGateway'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LocalNetworkGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGateway>
+  - uid: >-
+      azure-arm-network.LocalNetworkGateways.createOrUpdateWithHttpOperationResponse
+    name: createOrUpdateWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates or updates a local network gateway in the specified resource
+      group.
+    syntax:
+      content: >-
+        function createOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, localNetworkGatewayName: string, parameters:
+        LocalNetworkGateway, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the local network
+            gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.LocalNetworkGateway'
+          description: |
+            Parameters supplied to the create or update local
+            network gateway operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LocalNetworkGateway>>
+  - uid: azure-arm-network.LocalNetworkGateways.deleteMethod
+    name: deleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified local network gateway.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string,
+        localNetworkGatewayName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the local network
+            gateway.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+  - uid: azure-arm-network.LocalNetworkGateways.deleteMethod_1
+    name: deleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified local network gateway.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string,
+        localNetworkGatewayName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+  - uid: azure-arm-network.LocalNetworkGateways.deleteMethod_2
+    name: deleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified local network gateway.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string,
+        localNetworkGatewayName: string, options: function, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+  - uid: >-
+      azure-arm-network.LocalNetworkGateways.deleteMethodWithHttpOperationResponse
+    name: deleteMethodWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified local network gateway.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, localNetworkGatewayName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the local network
+            gateway.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+  - uid: azure-arm-network.LocalNetworkGateways.get_1
+    name: get
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified local network gateway in a resource group.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, localNetworkGatewayName: string,
+        callback: ServiceCallback<LocalNetworkGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LocalNetworkGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGateway>
+  - uid: azure-arm-network.LocalNetworkGateways.get_2
+    name: get
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified local network gateway in a resource group.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, localNetworkGatewayName: string,
+        options: function, callback: ServiceCallback<LocalNetworkGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LocalNetworkGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGateway>
+  - uid: azure-arm-network.LocalNetworkGateways.get
+    name: get
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified local network gateway in a resource group.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, localNetworkGatewayName: string,
+        options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the local network
+            gateway.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGateway>
+  - uid: azure-arm-network.LocalNetworkGateways.getWithHttpOperationResponse
+    name: getWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified local network gateway in a resource group.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        localNetworkGatewayName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the local network
+            gateway.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LocalNetworkGateway>>
+  - uid: azure-arm-network.LocalNetworkGateways.list
+    name: list
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the local network gateways in a resource group.
+    syntax:
+      content: 'function list(resourceGroupName: string, options?: function)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGatewayListResult>
+  - uid: azure-arm-network.LocalNetworkGateways.list_1
+    name: list
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the local network gateways in a resource group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, callback:
+        ServiceCallback<LocalNetworkGatewayListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LocalNetworkGatewayListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGatewayListResult>
+  - uid: azure-arm-network.LocalNetworkGateways.list_2
+    name: list
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the local network gateways in a resource group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, options: function, callback:
+        ServiceCallback<LocalNetworkGatewayListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LocalNetworkGatewayListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGatewayListResult>
+  - uid: azure-arm-network.LocalNetworkGateways.listNext
+    name: listNext
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the local network gateways in a resource group.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: function)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGatewayListResult>
+  - uid: azure-arm-network.LocalNetworkGateways.listNext_1
+    name: listNext
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the local network gateways in a resource group.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<LocalNetworkGatewayListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LocalNetworkGatewayListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGatewayListResult>
+  - uid: azure-arm-network.LocalNetworkGateways.listNext_2
+    name: listNext
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the local network gateways in a resource group.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: function, callback:
+        ServiceCallback<LocalNetworkGatewayListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LocalNetworkGatewayListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGatewayListResult>
+  - uid: azure-arm-network.LocalNetworkGateways.listNextWithHttpOperationResponse
+    name: listNextWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the local network gateways in a resource group.
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: function)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LocalNetworkGatewayListResult>>
+  - uid: azure-arm-network.LocalNetworkGateways.listWithHttpOperationResponse
+    name: listWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the local network gateways in a resource group.
+    syntax:
+      content: >-
+        function listWithHttpOperationResponse(resourceGroupName: string,
+        options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LocalNetworkGatewayListResult>>

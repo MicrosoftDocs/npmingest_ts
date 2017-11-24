@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute.VirtualMachineScaleSetUpdateOSProfile
+    name: VirtualMachineScaleSetUpdateOSProfile
+    fullName: VirtualMachineScaleSetUpdateOSProfile
+    children:
+      - azure-arm-compute.VirtualMachineScaleSetUpdateOSProfile.customData
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetUpdateOSProfile.linuxConfiguration
+      - azure-arm-compute.VirtualMachineScaleSetUpdateOSProfile.secrets
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetUpdateOSProfile.windowsConfiguration
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetUpdateOSProfile.customData
+    name: customData
+    fullName: customData
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: string customData
+      return:
+        type:
+          - string
+  - uid: azure-arm-compute.VirtualMachineScaleSetUpdateOSProfile.linuxConfiguration
+    name: linuxConfiguration
+    fullName: linuxConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: LinuxConfiguration linuxConfiguration
+      return:
+        type:
+          - '@azure-arm-compute.LinuxConfiguration'
+  - uid: azure-arm-compute.VirtualMachineScaleSetUpdateOSProfile.secrets
+    name: secrets
+    fullName: secrets
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'VaultSecretGroup[] secrets'
+      return:
+        type:
+          - '@azure-arm-compute.VaultSecretGroup[]'
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetUpdateOSProfile.windowsConfiguration
+    name: windowsConfiguration
+    fullName: windowsConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: WindowsConfiguration windowsConfiguration
+      return:
+        type:
+          - '@azure-arm-compute.WindowsConfiguration'

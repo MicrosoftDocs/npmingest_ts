@@ -1,0 +1,45 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute.VirtualMachineScaleSetNetworkProfile
+    name: VirtualMachineScaleSetNetworkProfile
+    fullName: VirtualMachineScaleSetNetworkProfile
+    children:
+      - azure-arm-compute.VirtualMachineScaleSetNetworkProfile.healthProbe
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetNetworkProfile.networkInterfaceConfigurations
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetNetworkProfile.healthProbe
+    name: healthProbe
+    fullName: healthProbe
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: ApiEntityReference healthProbe
+      return:
+        type:
+          - '@azure-arm-compute.ApiEntityReference'
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetNetworkProfile.networkInterfaceConfigurations
+    name: networkInterfaceConfigurations
+    fullName: networkInterfaceConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: >-
+        VirtualMachineScaleSetNetworkConfiguration[]
+        networkInterfaceConfigurations
+      return:
+        type:
+          - '@azure-arm-compute.VirtualMachineScaleSetNetworkConfiguration[]'

@@ -1,0 +1,782 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute.VirtualMachineExtensions
+    name: VirtualMachineExtensions
+    fullName: VirtualMachineExtensions
+    children:
+      - azure-arm-compute.VirtualMachineExtensions.beginCreateOrUpdate
+      - azure-arm-compute.VirtualMachineExtensions.beginCreateOrUpdate_2
+      - azure-arm-compute.VirtualMachineExtensions.beginCreateOrUpdate_1
+      - >-
+        azure-arm-compute.VirtualMachineExtensions.beginCreateOrUpdateWithHttpOperationResponse
+      - azure-arm-compute.VirtualMachineExtensions.beginDeleteMethod
+      - azure-arm-compute.VirtualMachineExtensions.beginDeleteMethod_1
+      - azure-arm-compute.VirtualMachineExtensions.beginDeleteMethod_2
+      - >-
+        azure-arm-compute.VirtualMachineExtensions.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-compute.VirtualMachineExtensions.createOrUpdate
+      - azure-arm-compute.VirtualMachineExtensions.createOrUpdate_1
+      - azure-arm-compute.VirtualMachineExtensions.createOrUpdate_2
+      - >-
+        azure-arm-compute.VirtualMachineExtensions.createOrUpdateWithHttpOperationResponse
+      - azure-arm-compute.VirtualMachineExtensions.deleteMethod
+      - azure-arm-compute.VirtualMachineExtensions.deleteMethod_1
+      - azure-arm-compute.VirtualMachineExtensions.deleteMethod_2
+      - >-
+        azure-arm-compute.VirtualMachineExtensions.deleteMethodWithHttpOperationResponse
+      - azure-arm-compute.VirtualMachineExtensions.get
+      - azure-arm-compute.VirtualMachineExtensions.get_1
+      - azure-arm-compute.VirtualMachineExtensions.get_2
+      - azure-arm-compute.VirtualMachineExtensions.getWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineExtensions.beginCreateOrUpdate
+    name: beginCreateOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to create or update the extension.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, vmName: string,
+        vmExtensionName: string, extensionParameters: VirtualMachineExtension,
+        options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmName
+          type:
+            - string
+          description: |
+            The name of the virtual machine where the extension
+            should be create or updated.
+        - id: vmExtensionName
+          type:
+            - string
+          description: |
+            The name of the virtual machine extension.
+        - id: extensionParameters
+          type:
+            - '@azure-arm-compute.VirtualMachineExtension'
+          description: |
+            Parameters supplied to the Create
+            Virtual Machine Extension operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-compute.VirtualMachineExtension>
+  - uid: azure-arm-compute.VirtualMachineExtensions.beginCreateOrUpdate_2
+    name: beginCreateOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to create or update the extension.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, vmName: string,
+        vmExtensionName: string, extensionParameters: VirtualMachineExtension,
+        options: function, callback: ServiceCallback<VirtualMachineExtension>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmName
+          type:
+            - string
+          description: ''
+        - id: vmExtensionName
+          type:
+            - string
+          description: ''
+        - id: extensionParameters
+          type:
+            - '@azure-arm-compute.VirtualMachineExtension'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.VirtualMachineExtension>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.VirtualMachineExtension>
+  - uid: azure-arm-compute.VirtualMachineExtensions.beginCreateOrUpdate_1
+    name: beginCreateOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to create or update the extension.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, vmName: string,
+        vmExtensionName: string, extensionParameters: VirtualMachineExtension,
+        callback: ServiceCallback<VirtualMachineExtension>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmName
+          type:
+            - string
+          description: ''
+        - id: vmExtensionName
+          type:
+            - string
+          description: ''
+        - id: extensionParameters
+          type:
+            - '@azure-arm-compute.VirtualMachineExtension'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.VirtualMachineExtension>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.VirtualMachineExtension>
+  - uid: >-
+      azure-arm-compute.VirtualMachineExtensions.beginCreateOrUpdateWithHttpOperationResponse
+    name: beginCreateOrUpdateWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to create or update the extension.
+    syntax:
+      content: >-
+        function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, vmName: string, vmExtensionName: string, extensionParameters:
+        VirtualMachineExtension, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmName
+          type:
+            - string
+          description: |
+            The name of the virtual machine where the extension
+            should be create or updated.
+        - id: vmExtensionName
+          type:
+            - string
+          description: |
+            The name of the virtual machine extension.
+        - id: extensionParameters
+          type:
+            - '@azure-arm-compute.VirtualMachineExtension'
+          description: |
+            Parameters supplied to the Create
+            Virtual Machine Extension operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<VirtualMachineExtension>>
+  - uid: azure-arm-compute.VirtualMachineExtensions.beginDeleteMethod
+    name: beginDeleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to delete the extension.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, vmName: string,
+        vmExtensionName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmName
+          type:
+            - string
+          description: |
+            The name of the virtual machine where the extension
+            should be deleted.
+        - id: vmExtensionName
+          type:
+            - string
+          description: |
+            The name of the virtual machine extension.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-compute.OperationStatusResponse>
+  - uid: azure-arm-compute.VirtualMachineExtensions.beginDeleteMethod_1
+    name: beginDeleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to delete the extension.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, vmName: string,
+        vmExtensionName: string, callback:
+        ServiceCallback<OperationStatusResponse>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmName
+          type:
+            - string
+          description: ''
+        - id: vmExtensionName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.OperationStatusResponse>
+  - uid: azure-arm-compute.VirtualMachineExtensions.beginDeleteMethod_2
+    name: beginDeleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to delete the extension.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, vmName: string,
+        vmExtensionName: string, options: function, callback:
+        ServiceCallback<OperationStatusResponse>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmName
+          type:
+            - string
+          description: ''
+        - id: vmExtensionName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.OperationStatusResponse>
+  - uid: >-
+      azure-arm-compute.VirtualMachineExtensions.beginDeleteMethodWithHttpOperationResponse
+    name: beginDeleteMethodWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to delete the extension.
+    syntax:
+      content: >-
+        function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, vmName: string, vmExtensionName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmName
+          type:
+            - string
+          description: |
+            The name of the virtual machine where the extension
+            should be deleted.
+        - id: vmExtensionName
+          type:
+            - string
+          description: |
+            The name of the virtual machine extension.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<OperationStatusResponse>>
+  - uid: azure-arm-compute.VirtualMachineExtensions.createOrUpdate
+    name: createOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to create or update the extension.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, vmName: string,
+        vmExtensionName: string, extensionParameters: VirtualMachineExtension,
+        options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmName
+          type:
+            - string
+          description: |
+            The name of the virtual machine where the extension
+            should be create or updated.
+        - id: vmExtensionName
+          type:
+            - string
+          description: |
+            The name of the virtual machine extension.
+        - id: extensionParameters
+          type:
+            - '@azure-arm-compute.VirtualMachineExtension'
+          description: |
+            Parameters supplied to the Create
+            Virtual Machine Extension operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-compute.VirtualMachineExtension>
+  - uid: azure-arm-compute.VirtualMachineExtensions.createOrUpdate_1
+    name: createOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to create or update the extension.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, vmName: string,
+        vmExtensionName: string, extensionParameters: VirtualMachineExtension,
+        callback: ServiceCallback<VirtualMachineExtension>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmName
+          type:
+            - string
+          description: ''
+        - id: vmExtensionName
+          type:
+            - string
+          description: ''
+        - id: extensionParameters
+          type:
+            - '@azure-arm-compute.VirtualMachineExtension'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.VirtualMachineExtension>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.VirtualMachineExtension>
+  - uid: azure-arm-compute.VirtualMachineExtensions.createOrUpdate_2
+    name: createOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to create or update the extension.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, vmName: string,
+        vmExtensionName: string, extensionParameters: VirtualMachineExtension,
+        options: function, callback: ServiceCallback<VirtualMachineExtension>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmName
+          type:
+            - string
+          description: ''
+        - id: vmExtensionName
+          type:
+            - string
+          description: ''
+        - id: extensionParameters
+          type:
+            - '@azure-arm-compute.VirtualMachineExtension'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.VirtualMachineExtension>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.VirtualMachineExtension>
+  - uid: >-
+      azure-arm-compute.VirtualMachineExtensions.createOrUpdateWithHttpOperationResponse
+    name: createOrUpdateWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to create or update the extension.
+    syntax:
+      content: >-
+        function createOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, vmName: string, vmExtensionName: string, extensionParameters:
+        VirtualMachineExtension, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmName
+          type:
+            - string
+          description: |
+            The name of the virtual machine where the extension
+            should be create or updated.
+        - id: vmExtensionName
+          type:
+            - string
+          description: |
+            The name of the virtual machine extension.
+        - id: extensionParameters
+          type:
+            - '@azure-arm-compute.VirtualMachineExtension'
+          description: |
+            Parameters supplied to the Create
+            Virtual Machine Extension operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<VirtualMachineExtension>>
+  - uid: azure-arm-compute.VirtualMachineExtensions.deleteMethod
+    name: deleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to delete the extension.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, vmName: string,
+        vmExtensionName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmName
+          type:
+            - string
+          description: |
+            The name of the virtual machine where the extension
+            should be deleted.
+        - id: vmExtensionName
+          type:
+            - string
+          description: |
+            The name of the virtual machine extension.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-compute.OperationStatusResponse>
+  - uid: azure-arm-compute.VirtualMachineExtensions.deleteMethod_1
+    name: deleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to delete the extension.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, vmName: string,
+        vmExtensionName: string, callback:
+        ServiceCallback<OperationStatusResponse>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmName
+          type:
+            - string
+          description: ''
+        - id: vmExtensionName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.OperationStatusResponse>
+  - uid: azure-arm-compute.VirtualMachineExtensions.deleteMethod_2
+    name: deleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to delete the extension.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, vmName: string,
+        vmExtensionName: string, options: function, callback:
+        ServiceCallback<OperationStatusResponse>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmName
+          type:
+            - string
+          description: ''
+        - id: vmExtensionName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.OperationStatusResponse>
+  - uid: >-
+      azure-arm-compute.VirtualMachineExtensions.deleteMethodWithHttpOperationResponse
+    name: deleteMethodWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to delete the extension.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, vmName: string, vmExtensionName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmName
+          type:
+            - string
+          description: |
+            The name of the virtual machine where the extension
+            should be deleted.
+        - id: vmExtensionName
+          type:
+            - string
+          description: |
+            The name of the virtual machine extension.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<OperationStatusResponse>>
+  - uid: azure-arm-compute.VirtualMachineExtensions.get
+    name: get
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to get the extension.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, vmName: string, vmExtensionName:
+        string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmName
+          type:
+            - string
+          description: |
+            The name of the virtual machine containing the
+            extension.
+        - id: vmExtensionName
+          type:
+            - string
+          description: |
+            The name of the virtual machine extension.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-compute.VirtualMachineExtension>
+  - uid: azure-arm-compute.VirtualMachineExtensions.get_1
+    name: get
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to get the extension.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, vmName: string, vmExtensionName:
+        string, callback: ServiceCallback<VirtualMachineExtension>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmName
+          type:
+            - string
+          description: ''
+        - id: vmExtensionName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.VirtualMachineExtension>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.VirtualMachineExtension>
+  - uid: azure-arm-compute.VirtualMachineExtensions.get_2
+    name: get
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to get the extension.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, vmName: string, vmExtensionName:
+        string, options: function, callback:
+        ServiceCallback<VirtualMachineExtension>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmName
+          type:
+            - string
+          description: ''
+        - id: vmExtensionName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.VirtualMachineExtension>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.VirtualMachineExtension>
+  - uid: azure-arm-compute.VirtualMachineExtensions.getWithHttpOperationResponse
+    name: getWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The operation to get the extension.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string, vmName:
+        string, vmExtensionName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmName
+          type:
+            - string
+          description: |
+            The name of the virtual machine containing the
+            extension.
+        - id: vmExtensionName
+          type:
+            - string
+          description: |
+            The name of the virtual machine extension.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<VirtualMachineExtension>>

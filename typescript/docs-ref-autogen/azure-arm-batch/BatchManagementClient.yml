@@ -1,0 +1,230 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch.BatchManagementClient
+    name: BatchManagementClient
+    fullName: BatchManagementClient
+    children:
+      - azure-arm-batch.BatchManagementClient.acceptLanguage
+      - azure-arm-batch.BatchManagementClient.apiVersion
+      - azure-arm-batch.BatchManagementClient.applicationOperations
+      - azure-arm-batch.BatchManagementClient.applicationPackageOperations
+      - azure-arm-batch.BatchManagementClient.batchAccountOperations
+      - azure-arm-batch.BatchManagementClient.constructor
+      - azure-arm-batch.BatchManagementClient.certificateOperations
+      - azure-arm-batch.BatchManagementClient.credentials
+      - azure-arm-batch.BatchManagementClient.generateClientRequestId
+      - azure-arm-batch.BatchManagementClient.location
+      - azure-arm-batch.BatchManagementClient.longRunningOperationRetryTimeout
+      - azure-arm-batch.BatchManagementClient.operations
+      - azure-arm-batch.BatchManagementClient.poolOperations
+      - azure-arm-batch.BatchManagementClient.subscriptionId
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    extends:
+      name: AzureServiceClient
+    package: azure-arm-batch
+  - uid: azure-arm-batch.BatchManagementClient.acceptLanguage
+    name: acceptLanguage
+    fullName: acceptLanguage
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string acceptLanguage
+      return:
+        type:
+          - string
+  - uid: azure-arm-batch.BatchManagementClient.apiVersion
+    name: apiVersion
+    fullName: apiVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string apiVersion
+      return:
+        type:
+          - string
+  - uid: azure-arm-batch.BatchManagementClient.applicationOperations
+    name: applicationOperations
+    fullName: applicationOperations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: ApplicationOperations applicationOperations
+      return:
+        type:
+          - '@azure-arm-batch.ApplicationOperations'
+  - uid: azure-arm-batch.BatchManagementClient.applicationPackageOperations
+    name: applicationPackageOperations
+    fullName: applicationPackageOperations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: ApplicationPackageOperations applicationPackageOperations
+      return:
+        type:
+          - '@azure-arm-batch.ApplicationPackageOperations'
+  - uid: azure-arm-batch.BatchManagementClient.batchAccountOperations
+    name: batchAccountOperations
+    fullName: batchAccountOperations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: BatchAccountOperations batchAccountOperations
+      return:
+        type:
+          - '@azure-arm-batch.BatchAccountOperations'
+  - uid: azure-arm-batch.BatchManagementClient.constructor
+    name: BatchManagementClient
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: Initializes a new instance of the BatchManagementClient class.
+    syntax:
+      content: >-
+        new BatchManagementClient(credentials: ServiceClientCredentials,
+        subscriptionId: string, baseUri?: string, options?:
+        AzureServiceClientOptions)
+      parameters:
+        - id: credentials
+          type:
+            - ServiceClientCredentials
+          description: |
+            Credentials needed for the client to connect to Azure.
+        - id: subscriptionId
+          type:
+            - string
+          description: >
+            The Azure subscription ID. This is a GUID-formatted string (e.g.
+            00000000-0000-0000-0000-000000000000)
+        - id: baseUri
+          type:
+            - string
+          description: ''
+          optional: true
+        - id: options
+          type:
+            - AzureServiceClientOptions
+          description: ''
+          optional: true
+  - uid: azure-arm-batch.BatchManagementClient.certificateOperations
+    name: certificateOperations
+    fullName: certificateOperations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: CertificateOperations certificateOperations
+      return:
+        type:
+          - '@azure-arm-batch.CertificateOperations'
+  - uid: azure-arm-batch.BatchManagementClient.credentials
+    name: credentials
+    fullName: credentials
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: ServiceClientCredentials credentials
+      return:
+        type:
+          - ServiceClientCredentials
+  - uid: azure-arm-batch.BatchManagementClient.generateClientRequestId
+    name: generateClientRequestId
+    fullName: generateClientRequestId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: boolean generateClientRequestId
+      return:
+        type:
+          - boolean
+  - uid: azure-arm-batch.BatchManagementClient.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: Location location
+      return:
+        type:
+          - '@azure-arm-batch.Location'
+  - uid: azure-arm-batch.BatchManagementClient.longRunningOperationRetryTimeout
+    name: longRunningOperationRetryTimeout
+    fullName: longRunningOperationRetryTimeout
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: number longRunningOperationRetryTimeout
+      return:
+        type:
+          - number
+  - uid: azure-arm-batch.BatchManagementClient.operations
+    name: operations
+    fullName: operations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: Operations operations
+      return:
+        type:
+          - '@azure-arm-batch.Operations'
+  - uid: azure-arm-batch.BatchManagementClient.poolOperations
+    name: poolOperations
+    fullName: poolOperations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: PoolOperations poolOperations
+      return:
+        type:
+          - '@azure-arm-batch.PoolOperations'
+  - uid: azure-arm-batch.BatchManagementClient.subscriptionId
+    name: subscriptionId
+    fullName: subscriptionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string subscriptionId
+      return:
+        type:
+          - string

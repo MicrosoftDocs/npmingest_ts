@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network.BgpServiceCommunity
+    name: BgpServiceCommunity
+    fullName: BgpServiceCommunity
+    children:
+      - azure-arm-network.BgpServiceCommunity.bgpCommunities
+      - azure-arm-network.BgpServiceCommunity.serviceName
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    extends:
+      name: '@azure-arm-network.Resource'
+    package: azure-arm-network
+  - uid: azure-arm-network.BgpServiceCommunity.bgpCommunities
+    name: bgpCommunities
+    fullName: bgpCommunities
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'BGPCommunity[] bgpCommunities'
+      return:
+        type:
+          - '@azure-arm-network.BGPCommunity[]'
+  - uid: azure-arm-network.BgpServiceCommunity.serviceName
+    name: serviceName
+    fullName: serviceName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: string serviceName
+      return:
+        type:
+          - string

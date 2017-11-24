@@ -1,0 +1,73 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network.RouteFilter
+    name: RouteFilter
+    fullName: RouteFilter
+    children:
+      - azure-arm-network.RouteFilter.etag
+      - azure-arm-network.RouteFilter.peerings
+      - azure-arm-network.RouteFilter.provisioningState
+      - azure-arm-network.RouteFilter.rules
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    extends:
+      name: '@azure-arm-network.Resource'
+    package: azure-arm-network
+  - uid: azure-arm-network.RouteFilter.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: string etag
+      return:
+        type:
+          - string
+  - uid: azure-arm-network.RouteFilter.peerings
+    name: peerings
+    fullName: peerings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'ExpressRouteCircuitPeering[] peerings'
+      return:
+        type:
+          - '@azure-arm-network.ExpressRouteCircuitPeering[]'
+  - uid: azure-arm-network.RouteFilter.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: string provisioningState
+      return:
+        type:
+          - string
+  - uid: azure-arm-network.RouteFilter.rules
+    name: rules
+    fullName: rules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'RouteFilterRule[] rules'
+      return:
+        type:
+          - '@azure-arm-network.RouteFilterRule[]'

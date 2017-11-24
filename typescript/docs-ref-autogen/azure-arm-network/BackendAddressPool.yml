@@ -1,0 +1,103 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network.BackendAddressPool
+    name: BackendAddressPool
+    fullName: BackendAddressPool
+    children:
+      - azure-arm-network.BackendAddressPool.backendIPConfigurations
+      - azure-arm-network.BackendAddressPool.etag
+      - azure-arm-network.BackendAddressPool.loadBalancingRules
+      - azure-arm-network.BackendAddressPool.name
+      - azure-arm-network.BackendAddressPool.outboundNatRule
+      - azure-arm-network.BackendAddressPool.provisioningState
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    extends:
+      name: '@azure-arm-network.SubResource'
+    package: azure-arm-network
+  - uid: azure-arm-network.BackendAddressPool.backendIPConfigurations
+    name: backendIPConfigurations
+    fullName: backendIPConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'NetworkInterfaceIPConfiguration[] backendIPConfigurations'
+      return:
+        type:
+          - '@azure-arm-network.NetworkInterfaceIPConfiguration[]'
+  - uid: azure-arm-network.BackendAddressPool.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: string etag
+      return:
+        type:
+          - string
+  - uid: azure-arm-network.BackendAddressPool.loadBalancingRules
+    name: loadBalancingRules
+    fullName: loadBalancingRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'SubResource[] loadBalancingRules'
+      return:
+        type:
+          - '@azure-arm-network.SubResource[]'
+  - uid: azure-arm-network.BackendAddressPool.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: string name
+      return:
+        type:
+          - string
+  - uid: azure-arm-network.BackendAddressPool.outboundNatRule
+    name: outboundNatRule
+    fullName: outboundNatRule
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: SubResource outboundNatRule
+      return:
+        type:
+          - '@azure-arm-network.SubResource'
+  - uid: azure-arm-network.BackendAddressPool.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: string provisioningState
+      return:
+        type:
+          - string

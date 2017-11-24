@@ -1,0 +1,638 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute.AvailabilitySets
+    name: AvailabilitySets
+    fullName: AvailabilitySets
+    children:
+      - azure-arm-compute.AvailabilitySets.createOrUpdate
+      - azure-arm-compute.AvailabilitySets.createOrUpdate_2
+      - azure-arm-compute.AvailabilitySets.createOrUpdate_1
+      - >-
+        azure-arm-compute.AvailabilitySets.createOrUpdateWithHttpOperationResponse
+      - azure-arm-compute.AvailabilitySets.deleteMethod
+      - azure-arm-compute.AvailabilitySets.deleteMethod_1
+      - azure-arm-compute.AvailabilitySets.deleteMethod_2
+      - azure-arm-compute.AvailabilitySets.deleteMethodWithHttpOperationResponse
+      - azure-arm-compute.AvailabilitySets.get
+      - azure-arm-compute.AvailabilitySets.get_1
+      - azure-arm-compute.AvailabilitySets.get_2
+      - azure-arm-compute.AvailabilitySets.getWithHttpOperationResponse
+      - azure-arm-compute.AvailabilitySets.list
+      - azure-arm-compute.AvailabilitySets.list_1
+      - azure-arm-compute.AvailabilitySets.list_2
+      - azure-arm-compute.AvailabilitySets.listAvailableSizes
+      - azure-arm-compute.AvailabilitySets.listAvailableSizes_1
+      - azure-arm-compute.AvailabilitySets.listAvailableSizes_2
+      - >-
+        azure-arm-compute.AvailabilitySets.listAvailableSizesWithHttpOperationResponse
+      - azure-arm-compute.AvailabilitySets.listWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-compute
+  - uid: azure-arm-compute.AvailabilitySets.createOrUpdate
+    name: createOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or update an availability set.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, availabilitySetName:
+        string, parameters: AvailabilitySet, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: availabilitySetName
+          type:
+            - string
+          description: |
+            The name of the availability set.
+        - id: parameters
+          type:
+            - '@azure-arm-compute.AvailabilitySet'
+          description: |
+            Parameters supplied to the Create Availability
+            Set operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-compute.AvailabilitySet>
+  - uid: azure-arm-compute.AvailabilitySets.createOrUpdate_2
+    name: createOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or update an availability set.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, availabilitySetName:
+        string, parameters: AvailabilitySet, options: function, callback:
+        ServiceCallback<AvailabilitySet>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: availabilitySetName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-compute.AvailabilitySet'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.AvailabilitySet>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.AvailabilitySet>
+  - uid: azure-arm-compute.AvailabilitySets.createOrUpdate_1
+    name: createOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or update an availability set.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, availabilitySetName:
+        string, parameters: AvailabilitySet, callback:
+        ServiceCallback<AvailabilitySet>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: availabilitySetName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-compute.AvailabilitySet'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.AvailabilitySet>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.AvailabilitySet>
+  - uid: azure-arm-compute.AvailabilitySets.createOrUpdateWithHttpOperationResponse
+    name: createOrUpdateWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or update an availability set.
+    syntax:
+      content: >-
+        function createOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, availabilitySetName: string, parameters: AvailabilitySet,
+        options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: availabilitySetName
+          type:
+            - string
+          description: |
+            The name of the availability set.
+        - id: parameters
+          type:
+            - '@azure-arm-compute.AvailabilitySet'
+          description: |
+            Parameters supplied to the Create Availability
+            Set operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<AvailabilitySet>>
+  - uid: azure-arm-compute.AvailabilitySets.deleteMethod
+    name: deleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Delete an availability set.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, availabilitySetName:
+        string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: availabilitySetName
+          type:
+            - string
+          description: |
+            The name of the availability set.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-compute.OperationStatusResponse>
+  - uid: azure-arm-compute.AvailabilitySets.deleteMethod_1
+    name: deleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Delete an availability set.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, availabilitySetName:
+        string, callback: ServiceCallback<OperationStatusResponse>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: availabilitySetName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.OperationStatusResponse>
+  - uid: azure-arm-compute.AvailabilitySets.deleteMethod_2
+    name: deleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Delete an availability set.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, availabilitySetName:
+        string, options: function, callback:
+        ServiceCallback<OperationStatusResponse>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: availabilitySetName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.OperationStatusResponse>
+  - uid: azure-arm-compute.AvailabilitySets.deleteMethodWithHttpOperationResponse
+    name: deleteMethodWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Delete an availability set.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, availabilitySetName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: availabilitySetName
+          type:
+            - string
+          description: |
+            The name of the availability set.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<OperationStatusResponse>>
+  - uid: azure-arm-compute.AvailabilitySets.get
+    name: get
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves information about an availability set.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, availabilitySetName: string,
+        options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: availabilitySetName
+          type:
+            - string
+          description: |
+            The name of the availability set.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-compute.AvailabilitySet>
+  - uid: azure-arm-compute.AvailabilitySets.get_1
+    name: get
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves information about an availability set.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, availabilitySetName: string,
+        callback: ServiceCallback<AvailabilitySet>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: availabilitySetName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.AvailabilitySet>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.AvailabilitySet>
+  - uid: azure-arm-compute.AvailabilitySets.get_2
+    name: get
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves information about an availability set.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, availabilitySetName: string,
+        options: function, callback: ServiceCallback<AvailabilitySet>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: availabilitySetName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.AvailabilitySet>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.AvailabilitySet>
+  - uid: azure-arm-compute.AvailabilitySets.getWithHttpOperationResponse
+    name: getWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves information about an availability set.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        availabilitySetName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: availabilitySetName
+          type:
+            - string
+          description: |
+            The name of the availability set.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<AvailabilitySet>>
+  - uid: azure-arm-compute.AvailabilitySets.list
+    name: list
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all availability sets in a resource group.
+    syntax:
+      content: 'function list(resourceGroupName: string, options?: function)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-compute.AvailabilitySetListResult>
+  - uid: azure-arm-compute.AvailabilitySets.list_1
+    name: list
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all availability sets in a resource group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, callback:
+        ServiceCallback<AvailabilitySetListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.AvailabilitySetListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.AvailabilitySetListResult>
+  - uid: azure-arm-compute.AvailabilitySets.list_2
+    name: list
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all availability sets in a resource group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, options: function, callback:
+        ServiceCallback<AvailabilitySetListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.AvailabilitySetListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.AvailabilitySetListResult>
+  - uid: azure-arm-compute.AvailabilitySets.listAvailableSizes
+    name: listAvailableSizes
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Lists all available virtual machine sizes that can be used to create a new
+      virtual machine in an existing availability set.
+    syntax:
+      content: >-
+        function listAvailableSizes(resourceGroupName: string,
+        availabilitySetName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: availabilitySetName
+          type:
+            - string
+          description: |
+            The name of the availability set.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-compute.VirtualMachineSizeListResult>
+  - uid: azure-arm-compute.AvailabilitySets.listAvailableSizes_1
+    name: listAvailableSizes
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Lists all available virtual machine sizes that can be used to create a new
+      virtual machine in an existing availability set.
+    syntax:
+      content: >-
+        function listAvailableSizes(resourceGroupName: string,
+        availabilitySetName: string, callback:
+        ServiceCallback<VirtualMachineSizeListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: availabilitySetName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.VirtualMachineSizeListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.VirtualMachineSizeListResult>
+  - uid: azure-arm-compute.AvailabilitySets.listAvailableSizes_2
+    name: listAvailableSizes
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Lists all available virtual machine sizes that can be used to create a new
+      virtual machine in an existing availability set.
+    syntax:
+      content: >-
+        function listAvailableSizes(resourceGroupName: string,
+        availabilitySetName: string, options: function, callback:
+        ServiceCallback<VirtualMachineSizeListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: availabilitySetName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.VirtualMachineSizeListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.VirtualMachineSizeListResult>
+  - uid: >-
+      azure-arm-compute.AvailabilitySets.listAvailableSizesWithHttpOperationResponse
+    name: listAvailableSizesWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Lists all available virtual machine sizes that can be used to create a new
+      virtual machine in an existing availability set.
+    syntax:
+      content: >-
+        function listAvailableSizesWithHttpOperationResponse(resourceGroupName:
+        string, availabilitySetName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: availabilitySetName
+          type:
+            - string
+          description: |
+            The name of the availability set.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<VirtualMachineSizeListResult>>
+  - uid: azure-arm-compute.AvailabilitySets.listWithHttpOperationResponse
+    name: listWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all availability sets in a resource group.
+    syntax:
+      content: >-
+        function listWithHttpOperationResponse(resourceGroupName: string,
+        options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<AvailabilitySetListResult>>

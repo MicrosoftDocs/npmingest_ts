@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute.Image
+    name: Image
+    fullName: Image
+    children:
+      - azure-arm-compute.Image.provisioningState
+      - azure-arm-compute.Image.sourceVirtualMachine
+      - azure-arm-compute.Image.storageProfile
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    extends:
+      name: '@azure-arm-compute.Resource'
+    package: azure-arm-compute
+  - uid: azure-arm-compute.Image.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: string provisioningState
+      return:
+        type:
+          - string
+  - uid: azure-arm-compute.Image.sourceVirtualMachine
+    name: sourceVirtualMachine
+    fullName: sourceVirtualMachine
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: SubResource sourceVirtualMachine
+      return:
+        type:
+          - '@azure-arm-compute.SubResource'
+  - uid: azure-arm-compute.Image.storageProfile
+    name: storageProfile
+    fullName: storageProfile
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: ImageStorageProfile storageProfile
+      return:
+        type:
+          - '@azure-arm-compute.ImageStorageProfile'

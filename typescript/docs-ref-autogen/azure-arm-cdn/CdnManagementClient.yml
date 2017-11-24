@@ -1,0 +1,479 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-cdn.CdnManagementClient
+    name: CdnManagementClient
+    fullName: CdnManagementClient
+    children:
+      - azure-arm-cdn.CdnManagementClient.acceptLanguage
+      - azure-arm-cdn.CdnManagementClient.apiVersion
+      - azure-arm-cdn.CdnManagementClient.constructor
+      - azure-arm-cdn.CdnManagementClient.checkNameAvailability_2
+      - azure-arm-cdn.CdnManagementClient.checkNameAvailability_1
+      - azure-arm-cdn.CdnManagementClient.checkNameAvailability
+      - >-
+        azure-arm-cdn.CdnManagementClient.checkNameAvailabilityWithHttpOperationResponse
+      - azure-arm-cdn.CdnManagementClient.credentials
+      - azure-arm-cdn.CdnManagementClient.customDomains
+      - azure-arm-cdn.CdnManagementClient.edgeNodes
+      - azure-arm-cdn.CdnManagementClient.endpoints
+      - azure-arm-cdn.CdnManagementClient.generateClientRequestId
+      - azure-arm-cdn.CdnManagementClient.longRunningOperationRetryTimeout
+      - azure-arm-cdn.CdnManagementClient.operations
+      - azure-arm-cdn.CdnManagementClient.origins
+      - azure-arm-cdn.CdnManagementClient.profiles
+      - azure-arm-cdn.CdnManagementClient.resourceUsageOperations
+      - azure-arm-cdn.CdnManagementClient.subscriptionId
+      - azure-arm-cdn.CdnManagementClient.validateProbe
+      - azure-arm-cdn.CdnManagementClient.validateProbe_1
+      - azure-arm-cdn.CdnManagementClient.validateProbe_2
+      - azure-arm-cdn.CdnManagementClient.validateProbeWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    extends:
+      name: AzureServiceClient
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.CdnManagementClient.acceptLanguage
+    name: acceptLanguage
+    fullName: acceptLanguage
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string acceptLanguage
+      return:
+        type:
+          - string
+  - uid: azure-arm-cdn.CdnManagementClient.apiVersion
+    name: apiVersion
+    fullName: apiVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string apiVersion
+      return:
+        type:
+          - string
+  - uid: azure-arm-cdn.CdnManagementClient.constructor
+    name: CdnManagementClient
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: Initializes a new instance of the CdnManagementClient class.
+    syntax:
+      content: >-
+        new CdnManagementClient(credentials: ServiceClientCredentials,
+        subscriptionId: string, baseUri?: string, options?:
+        AzureServiceClientOptions)
+      parameters:
+        - id: credentials
+          type:
+            - ServiceClientCredentials
+          description: |
+            Credentials needed for the client to connect to Azure.
+        - id: subscriptionId
+          type:
+            - string
+          description: |
+            Azure Subscription ID.
+        - id: baseUri
+          type:
+            - string
+          description: ''
+          optional: true
+        - id: options
+          type:
+            - AzureServiceClientOptions
+          description: ''
+          optional: true
+  - uid: azure-arm-cdn.CdnManagementClient.checkNameAvailability_2
+    name: checkNameAvailability
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Check the availability of a resource name. This is needed for resources
+      where name is globally unique, such as a CDN endpoint.
+    syntax:
+      content: >-
+        function checkNameAvailability(name: string, options: function,
+        callback: ServiceCallback<CheckNameAvailabilityOutput>)
+      parameters:
+        - id: name
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-cdn.CheckNameAvailabilityOutput>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-cdn.CheckNameAvailabilityOutput>
+  - uid: azure-arm-cdn.CdnManagementClient.checkNameAvailability_1
+    name: checkNameAvailability
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Check the availability of a resource name. This is needed for resources
+      where name is globally unique, such as a CDN endpoint.
+    syntax:
+      content: >-
+        function checkNameAvailability(name: string, callback:
+        ServiceCallback<CheckNameAvailabilityOutput>)
+      parameters:
+        - id: name
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-cdn.CheckNameAvailabilityOutput>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-cdn.CheckNameAvailabilityOutput>
+  - uid: azure-arm-cdn.CdnManagementClient.checkNameAvailability
+    name: checkNameAvailability
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Check the availability of a resource name. This is needed for resources
+      where name is globally unique, such as a CDN endpoint.
+    syntax:
+      content: 'function checkNameAvailability(name: string, options?: function)'
+      parameters:
+        - id: name
+          type:
+            - string
+          description: |
+            The resource name to validate.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-cdn.CheckNameAvailabilityOutput>
+  - uid: >-
+      azure-arm-cdn.CdnManagementClient.checkNameAvailabilityWithHttpOperationResponse
+    name: checkNameAvailabilityWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Check the availability of a resource name. This is needed for resources
+      where name is globally unique, such as a CDN endpoint.
+    syntax:
+      content: >-
+        function checkNameAvailabilityWithHttpOperationResponse(name: string,
+        options?: function)
+      parameters:
+        - id: name
+          type:
+            - string
+          description: |
+            The resource name to validate.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<CheckNameAvailabilityOutput>>
+  - uid: azure-arm-cdn.CdnManagementClient.credentials
+    name: credentials
+    fullName: credentials
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: ServiceClientCredentials credentials
+      return:
+        type:
+          - ServiceClientCredentials
+  - uid: azure-arm-cdn.CdnManagementClient.customDomains
+    name: customDomains
+    fullName: customDomains
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: CustomDomains customDomains
+      return:
+        type:
+          - '@azure-arm-cdn.CustomDomains'
+  - uid: azure-arm-cdn.CdnManagementClient.edgeNodes
+    name: edgeNodes
+    fullName: edgeNodes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: EdgeNodes edgeNodes
+      return:
+        type:
+          - '@azure-arm-cdn.EdgeNodes'
+  - uid: azure-arm-cdn.CdnManagementClient.endpoints
+    name: endpoints
+    fullName: endpoints
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: Endpoints endpoints
+      return:
+        type:
+          - '@azure-arm-cdn.Endpoints'
+  - uid: azure-arm-cdn.CdnManagementClient.generateClientRequestId
+    name: generateClientRequestId
+    fullName: generateClientRequestId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: boolean generateClientRequestId
+      return:
+        type:
+          - boolean
+  - uid: azure-arm-cdn.CdnManagementClient.longRunningOperationRetryTimeout
+    name: longRunningOperationRetryTimeout
+    fullName: longRunningOperationRetryTimeout
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: number longRunningOperationRetryTimeout
+      return:
+        type:
+          - number
+  - uid: azure-arm-cdn.CdnManagementClient.operations
+    name: operations
+    fullName: operations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: Operations operations
+      return:
+        type:
+          - '@azure-arm-cdn.Operations'
+  - uid: azure-arm-cdn.CdnManagementClient.origins
+    name: origins
+    fullName: origins
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: Origins origins
+      return:
+        type:
+          - '@azure-arm-cdn.Origins'
+  - uid: azure-arm-cdn.CdnManagementClient.profiles
+    name: profiles
+    fullName: profiles
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: Profiles profiles
+      return:
+        type:
+          - '@azure-arm-cdn.Profiles'
+  - uid: azure-arm-cdn.CdnManagementClient.resourceUsageOperations
+    name: resourceUsageOperations
+    fullName: resourceUsageOperations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: ResourceUsageOperations resourceUsageOperations
+      return:
+        type:
+          - '@azure-arm-cdn.ResourceUsageOperations'
+  - uid: azure-arm-cdn.CdnManagementClient.subscriptionId
+    name: subscriptionId
+    fullName: subscriptionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string subscriptionId
+      return:
+        type:
+          - string
+  - uid: azure-arm-cdn.CdnManagementClient.validateProbe
+    name: validateProbe
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Check if the probe path is a valid path and the file can be accessed.
+      Probe
+
+      path is the path to a file hosted on the origin server to help accelerate
+
+      the delivery of dynamic content via the CDN endpoint. This path is
+      relative
+
+      to the origin path specified in the endpoint configuration.
+    syntax:
+      content: 'function validateProbe(probeURL: string, options?: function)'
+      parameters:
+        - id: probeURL
+          type:
+            - string
+          description: |
+            The probe URL to validate.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-cdn.ValidateProbeOutput>
+  - uid: azure-arm-cdn.CdnManagementClient.validateProbe_1
+    name: validateProbe
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Check if the probe path is a valid path and the file can be accessed.
+      Probe
+
+      path is the path to a file hosted on the origin server to help accelerate
+
+      the delivery of dynamic content via the CDN endpoint. This path is
+      relative
+
+      to the origin path specified in the endpoint configuration.
+    syntax:
+      content: >-
+        function validateProbe(probeURL: string, callback:
+        ServiceCallback<ValidateProbeOutput>)
+      parameters:
+        - id: probeURL
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-cdn.ValidateProbeOutput>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-cdn.ValidateProbeOutput>
+  - uid: azure-arm-cdn.CdnManagementClient.validateProbe_2
+    name: validateProbe
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Check if the probe path is a valid path and the file can be accessed.
+      Probe
+
+      path is the path to a file hosted on the origin server to help accelerate
+
+      the delivery of dynamic content via the CDN endpoint. This path is
+      relative
+
+      to the origin path specified in the endpoint configuration.
+    syntax:
+      content: >-
+        function validateProbe(probeURL: string, options: function, callback:
+        ServiceCallback<ValidateProbeOutput>)
+      parameters:
+        - id: probeURL
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-cdn.ValidateProbeOutput>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-cdn.ValidateProbeOutput>
+  - uid: azure-arm-cdn.CdnManagementClient.validateProbeWithHttpOperationResponse
+    name: validateProbeWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Check if the probe path is a valid path and the file can be accessed.
+      Probe
+
+      path is the path to a file hosted on the origin server to help accelerate
+
+      the delivery of dynamic content via the CDN endpoint. This path is
+      relative
+
+      to the origin path specified in the endpoint configuration.
+    syntax:
+      content: >-
+        function validateProbeWithHttpOperationResponse(probeURL: string,
+        options?: function)
+      parameters:
+        - id: probeURL
+          type:
+            - string
+          description: |
+            The probe URL to validate.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<ValidateProbeOutput>>

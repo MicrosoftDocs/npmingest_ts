@@ -1,0 +1,387 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network.DefaultSecurityRules
+    name: DefaultSecurityRules
+    fullName: DefaultSecurityRules
+    children:
+      - azure-arm-network.DefaultSecurityRules.get
+      - azure-arm-network.DefaultSecurityRules.get_2
+      - azure-arm-network.DefaultSecurityRules.get_1
+      - azure-arm-network.DefaultSecurityRules.getWithHttpOperationResponse
+      - azure-arm-network.DefaultSecurityRules.list
+      - azure-arm-network.DefaultSecurityRules.list_1
+      - azure-arm-network.DefaultSecurityRules.list_2
+      - azure-arm-network.DefaultSecurityRules.listNext
+      - azure-arm-network.DefaultSecurityRules.listNext_1
+      - azure-arm-network.DefaultSecurityRules.listNext_2
+      - azure-arm-network.DefaultSecurityRules.listNextWithHttpOperationResponse
+      - azure-arm-network.DefaultSecurityRules.listWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network
+  - uid: azure-arm-network.DefaultSecurityRules.get
+    name: get
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get the specified default network security rule.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, networkSecurityGroupName:
+        string, defaultSecurityRuleName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the network security
+            group.
+        - id: defaultSecurityRuleName
+          type:
+            - string
+          description: |
+            The name of the default security
+            rule.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.SecurityRule>
+  - uid: azure-arm-network.DefaultSecurityRules.get_2
+    name: get
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get the specified default network security rule.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, networkSecurityGroupName:
+        string, defaultSecurityRuleName: string, options: function, callback:
+        ServiceCallback<SecurityRule>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: defaultSecurityRuleName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.SecurityRule>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.SecurityRule>
+  - uid: azure-arm-network.DefaultSecurityRules.get_1
+    name: get
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get the specified default network security rule.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, networkSecurityGroupName:
+        string, defaultSecurityRuleName: string, callback:
+        ServiceCallback<SecurityRule>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: defaultSecurityRuleName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.SecurityRule>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.SecurityRule>
+  - uid: azure-arm-network.DefaultSecurityRules.getWithHttpOperationResponse
+    name: getWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get the specified default network security rule.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        networkSecurityGroupName: string, defaultSecurityRuleName: string,
+        options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the network security
+            group.
+        - id: defaultSecurityRuleName
+          type:
+            - string
+          description: |
+            The name of the default security
+            rule.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<SecurityRule>>
+  - uid: azure-arm-network.DefaultSecurityRules.list
+    name: list
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all default security rules in a network security group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, networkSecurityGroupName:
+        string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the network security
+            group.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.SecurityRuleListResult>
+  - uid: azure-arm-network.DefaultSecurityRules.list_1
+    name: list
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all default security rules in a network security group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, networkSecurityGroupName:
+        string, callback: ServiceCallback<SecurityRuleListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.SecurityRuleListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.SecurityRuleListResult>
+  - uid: azure-arm-network.DefaultSecurityRules.list_2
+    name: list
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all default security rules in a network security group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, networkSecurityGroupName:
+        string, options: function, callback:
+        ServiceCallback<SecurityRuleListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.SecurityRuleListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.SecurityRuleListResult>
+  - uid: azure-arm-network.DefaultSecurityRules.listNext
+    name: listNext
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all default security rules in a network security group.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: function)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.SecurityRuleListResult>
+  - uid: azure-arm-network.DefaultSecurityRules.listNext_1
+    name: listNext
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all default security rules in a network security group.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<SecurityRuleListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.SecurityRuleListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.SecurityRuleListResult>
+  - uid: azure-arm-network.DefaultSecurityRules.listNext_2
+    name: listNext
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all default security rules in a network security group.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: function, callback:
+        ServiceCallback<SecurityRuleListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.SecurityRuleListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.SecurityRuleListResult>
+  - uid: azure-arm-network.DefaultSecurityRules.listNextWithHttpOperationResponse
+    name: listNextWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all default security rules in a network security group.
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: function)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<SecurityRuleListResult>>
+  - uid: azure-arm-network.DefaultSecurityRules.listWithHttpOperationResponse
+    name: listWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all default security rules in a network security group.
+    syntax:
+      content: >-
+        function listWithHttpOperationResponse(resourceGroupName: string,
+        networkSecurityGroupName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the network security
+            group.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<SecurityRuleListResult>>

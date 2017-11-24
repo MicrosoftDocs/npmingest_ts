@@ -1,0 +1,56 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute.DiskEncryptionSettings
+    name: DiskEncryptionSettings
+    fullName: DiskEncryptionSettings
+    children:
+      - azure-arm-compute.DiskEncryptionSettings.diskEncryptionKey
+      - azure-arm-compute.DiskEncryptionSettings.enabled
+      - azure-arm-compute.DiskEncryptionSettings.keyEncryptionKey
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-compute
+  - uid: azure-arm-compute.DiskEncryptionSettings.diskEncryptionKey
+    name: diskEncryptionKey
+    fullName: diskEncryptionKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: KeyVaultSecretReference diskEncryptionKey
+      return:
+        type:
+          - '@azure-arm-compute.KeyVaultSecretReference'
+  - uid: azure-arm-compute.DiskEncryptionSettings.enabled
+    name: enabled
+    fullName: enabled
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: boolean enabled
+      return:
+        type:
+          - boolean
+  - uid: azure-arm-compute.DiskEncryptionSettings.keyEncryptionKey
+    name: keyEncryptionKey
+    fullName: keyEncryptionKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: KeyVaultKeyReference keyEncryptionKey
+      return:
+        type:
+          - '@azure-arm-compute.KeyVaultKeyReference'

@@ -1,0 +1,102 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network.OutboundNatRule
+    name: OutboundNatRule
+    fullName: OutboundNatRule
+    children:
+      - azure-arm-network.OutboundNatRule.allocatedOutboundPorts
+      - azure-arm-network.OutboundNatRule.backendAddressPool
+      - azure-arm-network.OutboundNatRule.etag
+      - azure-arm-network.OutboundNatRule.frontendIPConfigurations
+      - azure-arm-network.OutboundNatRule.name
+      - azure-arm-network.OutboundNatRule.provisioningState
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    extends:
+      name: '@azure-arm-network.SubResource'
+    package: azure-arm-network
+  - uid: azure-arm-network.OutboundNatRule.allocatedOutboundPorts
+    name: allocatedOutboundPorts
+    fullName: allocatedOutboundPorts
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: number allocatedOutboundPorts
+      return:
+        type:
+          - number
+  - uid: azure-arm-network.OutboundNatRule.backendAddressPool
+    name: backendAddressPool
+    fullName: backendAddressPool
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: SubResource backendAddressPool
+      return:
+        type:
+          - '@azure-arm-network.SubResource'
+  - uid: azure-arm-network.OutboundNatRule.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: string etag
+      return:
+        type:
+          - string
+  - uid: azure-arm-network.OutboundNatRule.frontendIPConfigurations
+    name: frontendIPConfigurations
+    fullName: frontendIPConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'SubResource[] frontendIPConfigurations'
+      return:
+        type:
+          - '@azure-arm-network.SubResource[]'
+  - uid: azure-arm-network.OutboundNatRule.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: string name
+      return:
+        type:
+          - string
+  - uid: azure-arm-network.OutboundNatRule.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: string provisioningState
+      return:
+        type:
+          - string
