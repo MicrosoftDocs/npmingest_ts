@@ -1,0 +1,195 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network.Operations
+    name: Operations
+    fullName: Operations
+    children:
+      - azure-arm-network.Operations.list
+      - azure-arm-network.Operations.list_1
+      - azure-arm-network.Operations.list_2
+      - azure-arm-network.Operations.listNext
+      - azure-arm-network.Operations.listNext_1
+      - azure-arm-network.Operations.listNext_2
+      - azure-arm-network.Operations.listNextWithHttpOperationResponse
+      - azure-arm-network.Operations.listWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network
+  - uid: azure-arm-network.Operations.list
+    name: list
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the available Network Rest API operations.
+    syntax:
+      content: 'function list(options?: function)'
+      parameters:
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.OperationListResult>
+  - uid: azure-arm-network.Operations.list_1
+    name: list
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the available Network Rest API operations.
+    syntax:
+      content: 'function list(callback: ServiceCallback<OperationListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.OperationListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.OperationListResult>
+  - uid: azure-arm-network.Operations.list_2
+    name: list
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the available Network Rest API operations.
+    syntax:
+      content: >-
+        function list(options: function, callback:
+        ServiceCallback<OperationListResult>)
+      parameters:
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.OperationListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.OperationListResult>
+  - uid: azure-arm-network.Operations.listNext
+    name: listNext
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the available Network Rest API operations.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: function)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.OperationListResult>
+  - uid: azure-arm-network.Operations.listNext_1
+    name: listNext
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the available Network Rest API operations.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<OperationListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.OperationListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.OperationListResult>
+  - uid: azure-arm-network.Operations.listNext_2
+    name: listNext
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the available Network Rest API operations.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: function, callback:
+        ServiceCallback<OperationListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.OperationListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.OperationListResult>
+  - uid: azure-arm-network.Operations.listNextWithHttpOperationResponse
+    name: listNextWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the available Network Rest API operations.
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: function)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<OperationListResult>>
+  - uid: azure-arm-network.Operations.listWithHttpOperationResponse
+    name: listWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the available Network Rest API operations.
+    syntax:
+      content: 'function listWithHttpOperationResponse(options?: function)'
+      parameters:
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<OperationListResult>>

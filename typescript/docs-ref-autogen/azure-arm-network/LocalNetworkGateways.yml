@@ -10,10 +10,15 @@ items:
       - >-
         azure-arm-network.LocalNetworkGateways.beginCreateOrUpdateWithHttpOperationResponse
       - azure-arm-network.LocalNetworkGateways.beginDeleteMethod
-      - azure-arm-network.LocalNetworkGateways.beginDeleteMethod_1
       - azure-arm-network.LocalNetworkGateways.beginDeleteMethod_2
+      - azure-arm-network.LocalNetworkGateways.beginDeleteMethod_1
       - >-
         azure-arm-network.LocalNetworkGateways.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-network.LocalNetworkGateways.beginUpdateTags_1
+      - azure-arm-network.LocalNetworkGateways.beginUpdateTags
+      - azure-arm-network.LocalNetworkGateways.beginUpdateTags_2
+      - >-
+        azure-arm-network.LocalNetworkGateways.beginUpdateTagsWithHttpOperationResponse
       - azure-arm-network.LocalNetworkGateways.createOrUpdate
       - azure-arm-network.LocalNetworkGateways.createOrUpdate_1
       - azure-arm-network.LocalNetworkGateways.createOrUpdate_2
@@ -36,6 +41,11 @@ items:
       - azure-arm-network.LocalNetworkGateways.listNext_2
       - azure-arm-network.LocalNetworkGateways.listNextWithHttpOperationResponse
       - azure-arm-network.LocalNetworkGateways.listWithHttpOperationResponse
+      - azure-arm-network.LocalNetworkGateways.updateTags
+      - azure-arm-network.LocalNetworkGateways.updateTags_1
+      - azure-arm-network.LocalNetworkGateways.updateTags_2
+      - >-
+        azure-arm-network.LocalNetworkGateways.updateTagsWithHttpOperationResponse
     langs:
       - typeScript
     type: interface
@@ -225,33 +235,6 @@ items:
       return:
         type:
           - Promise<void>
-  - uid: azure-arm-network.LocalNetworkGateways.beginDeleteMethod_1
-    name: beginDeleteMethod
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Deletes the specified local network gateway.
-    syntax:
-      content: >-
-        function beginDeleteMethod(resourceGroupName: string,
-        localNetworkGatewayName: string, callback: ServiceCallback<void>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: localNetworkGatewayName
-          type:
-            - string
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<void>
-          description: ''
-      return:
-        type:
-          - Promise<void>
   - uid: azure-arm-network.LocalNetworkGateways.beginDeleteMethod_2
     name: beginDeleteMethod
     children: []
@@ -276,6 +259,33 @@ items:
         - id: options
           type:
             - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+  - uid: azure-arm-network.LocalNetworkGateways.beginDeleteMethod_1
+    name: beginDeleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified local network gateway.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        localNetworkGatewayName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: localNetworkGatewayName
+          type:
+            - string
           description: ''
         - id: callback
           type:
@@ -316,6 +326,151 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+  - uid: azure-arm-network.LocalNetworkGateways.beginUpdateTags_1
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a local network gateway tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        localNetworkGatewayName: string, parameters: TagsObject, callback:
+        ServiceCallback<LocalNetworkGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LocalNetworkGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGateway>
+  - uid: azure-arm-network.LocalNetworkGateways.beginUpdateTags
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a local network gateway tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        localNetworkGatewayName: string, parameters: TagsObject, options?:
+        function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the local network
+            gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update local network
+            gateway tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGateway>
+  - uid: azure-arm-network.LocalNetworkGateways.beginUpdateTags_2
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a local network gateway tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        localNetworkGatewayName: string, parameters: TagsObject, options:
+        function, callback: ServiceCallback<LocalNetworkGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LocalNetworkGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGateway>
+  - uid: >-
+      azure-arm-network.LocalNetworkGateways.beginUpdateTagsWithHttpOperationResponse
+    name: beginUpdateTagsWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a local network gateway tags.
+    syntax:
+      content: >-
+        function beginUpdateTagsWithHttpOperationResponse(resourceGroupName:
+        string, localNetworkGatewayName: string, parameters: TagsObject,
+        options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the local network
+            gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update local network
+            gateway tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LocalNetworkGateway>>
   - uid: azure-arm-network.LocalNetworkGateways.createOrUpdate
     name: createOrUpdate
     children: []
@@ -909,3 +1064,146 @@ items:
       return:
         type:
           - Promise<LocalNetworkGatewayListResult>>
+  - uid: azure-arm-network.LocalNetworkGateways.updateTags
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a local network gateway tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, localNetworkGatewayName:
+        string, parameters: TagsObject, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the local network
+            gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update local network
+            gateway tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGateway>
+  - uid: azure-arm-network.LocalNetworkGateways.updateTags_1
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a local network gateway tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, localNetworkGatewayName:
+        string, parameters: TagsObject, callback:
+        ServiceCallback<LocalNetworkGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LocalNetworkGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGateway>
+  - uid: azure-arm-network.LocalNetworkGateways.updateTags_2
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a local network gateway tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, localNetworkGatewayName:
+        string, parameters: TagsObject, options: function, callback:
+        ServiceCallback<LocalNetworkGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LocalNetworkGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LocalNetworkGateway>
+  - uid: azure-arm-network.LocalNetworkGateways.updateTagsWithHttpOperationResponse
+    name: updateTagsWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a local network gateway tags.
+    syntax:
+      content: >-
+        function updateTagsWithHttpOperationResponse(resourceGroupName: string,
+        localNetworkGatewayName: string, parameters: TagsObject, options?:
+        function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: localNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the local network
+            gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update local network
+            gateway tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LocalNetworkGateway>>

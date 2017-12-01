@@ -41,6 +41,7 @@ items:
       - azure-arm-network.ApplicationSecurityGroup
       - azure-arm-network.ApplicationSecurityGroupListResult
       - azure-arm-network.AuthorizationListResult
+      - azure-arm-network.Availability
       - azure-arm-network.AvailableProvidersList
       - azure-arm-network.AvailableProvidersListCity
       - azure-arm-network.AvailableProvidersListCountry
@@ -68,6 +69,7 @@ items:
       - azure-arm-network.ConnectivityParameters
       - azure-arm-network.ConnectivitySource
       - azure-arm-network.DhcpOptions
+      - azure-arm-network.Dimension
       - azure-arm-network.DnsNameAvailabilityResult
       - azure-arm-network.EffectiveNetworkSecurityGroup
       - azure-arm-network.EffectiveNetworkSecurityGroupAssociation
@@ -119,6 +121,8 @@ items:
       - azure-arm-network.LoadBalancingRule
       - azure-arm-network.LocalNetworkGateway
       - azure-arm-network.LocalNetworkGatewayListResult
+      - azure-arm-network.LogSpecification
+      - azure-arm-network.MetricSpecification
       - azure-arm-network.NetworkInterface
       - azure-arm-network.NetworkInterfaceAssociation
       - azure-arm-network.NetworkInterfaceDnsSettings
@@ -132,6 +136,10 @@ items:
       - azure-arm-network.NetworkWatcherListResult
       - azure-arm-network.NextHopParameters
       - azure-arm-network.NextHopResult
+      - azure-arm-network.Operation
+      - azure-arm-network.OperationDisplay
+      - azure-arm-network.OperationListResult
+      - azure-arm-network.OperationPropertiesFormatServiceSpecification
       - azure-arm-network.OutboundNatRule
       - azure-arm-network.PacketCapture
       - azure-arm-network.PacketCaptureFilter
@@ -170,6 +178,7 @@ items:
       - azure-arm-network.Subnet
       - azure-arm-network.SubnetAssociation
       - azure-arm-network.SubnetListResult
+      - azure-arm-network.TagsObject
       - azure-arm-network.Topology
       - azure-arm-network.TopologyAssociation
       - azure-arm-network.TopologyParameters
@@ -228,6 +237,7 @@ items:
       - azure-arm-network.NetworkInterfaces
       - azure-arm-network.NetworkSecurityGroups
       - azure-arm-network.NetworkWatchers
+      - azure-arm-network.Operations
       - azure-arm-network.PacketCaptures
       - azure-arm-network.PublicIPAddresses
       - azure-arm-network.RouteFilterRules
@@ -319,6 +329,8 @@ references:
     name: ApplicationSecurityGroupListResult
   - uid: azure-arm-network.AuthorizationListResult
     name: AuthorizationListResult
+  - uid: azure-arm-network.Availability
+    name: Availability
   - uid: azure-arm-network.AvailableProvidersList
     name: AvailableProvidersList
   - uid: azure-arm-network.AvailableProvidersListCity
@@ -373,6 +385,8 @@ references:
     name: ConnectivitySource
   - uid: azure-arm-network.DhcpOptions
     name: DhcpOptions
+  - uid: azure-arm-network.Dimension
+    name: Dimension
   - uid: azure-arm-network.DnsNameAvailabilityResult
     name: DnsNameAvailabilityResult
   - uid: azure-arm-network.EffectiveNetworkSecurityGroup
@@ -475,6 +489,10 @@ references:
     name: LocalNetworkGateway
   - uid: azure-arm-network.LocalNetworkGatewayListResult
     name: LocalNetworkGatewayListResult
+  - uid: azure-arm-network.LogSpecification
+    name: LogSpecification
+  - uid: azure-arm-network.MetricSpecification
+    name: MetricSpecification
   - uid: azure-arm-network.NetworkInterface
     name: NetworkInterface
   - uid: azure-arm-network.NetworkInterfaceAssociation
@@ -501,6 +519,14 @@ references:
     name: NextHopParameters
   - uid: azure-arm-network.NextHopResult
     name: NextHopResult
+  - uid: azure-arm-network.Operation
+    name: Operation
+  - uid: azure-arm-network.OperationDisplay
+    name: OperationDisplay
+  - uid: azure-arm-network.OperationListResult
+    name: OperationListResult
+  - uid: azure-arm-network.OperationPropertiesFormatServiceSpecification
+    name: OperationPropertiesFormatServiceSpecification
   - uid: azure-arm-network.OutboundNatRule
     name: OutboundNatRule
   - uid: azure-arm-network.PacketCapture
@@ -577,6 +603,8 @@ references:
     name: SubnetAssociation
   - uid: azure-arm-network.SubnetListResult
     name: SubnetListResult
+  - uid: azure-arm-network.TagsObject
+    name: TagsObject
   - uid: azure-arm-network.Topology
     name: Topology
   - uid: azure-arm-network.TopologyAssociation
@@ -693,6 +721,8 @@ references:
     name: NetworkSecurityGroups
   - uid: azure-arm-network.NetworkWatchers
     name: NetworkWatchers
+  - uid: azure-arm-network.Operations
+    name: Operations
   - uid: azure-arm-network.PacketCaptures
     name: PacketCaptures
   - uid: azure-arm-network.PublicIPAddresses

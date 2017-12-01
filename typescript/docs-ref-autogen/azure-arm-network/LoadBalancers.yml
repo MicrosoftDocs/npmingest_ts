@@ -14,9 +14,13 @@ items:
       - azure-arm-network.LoadBalancers.beginDeleteMethod_1
       - >-
         azure-arm-network.LoadBalancers.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-network.LoadBalancers.beginUpdateTags
+      - azure-arm-network.LoadBalancers.beginUpdateTags_1
+      - azure-arm-network.LoadBalancers.beginUpdateTags_2
+      - azure-arm-network.LoadBalancers.beginUpdateTagsWithHttpOperationResponse
       - azure-arm-network.LoadBalancers.createOrUpdate_1
-      - azure-arm-network.LoadBalancers.createOrUpdate
       - azure-arm-network.LoadBalancers.createOrUpdate_2
+      - azure-arm-network.LoadBalancers.createOrUpdate
       - azure-arm-network.LoadBalancers.createOrUpdateWithHttpOperationResponse
       - azure-arm-network.LoadBalancers.deleteMethod
       - azure-arm-network.LoadBalancers.deleteMethod_1
@@ -42,6 +46,10 @@ items:
       - azure-arm-network.LoadBalancers.listNext_2
       - azure-arm-network.LoadBalancers.listNextWithHttpOperationResponse
       - azure-arm-network.LoadBalancers.listWithHttpOperationResponse
+      - azure-arm-network.LoadBalancers.updateTags
+      - azure-arm-network.LoadBalancers.updateTags_1
+      - azure-arm-network.LoadBalancers.updateTags_2
+      - azure-arm-network.LoadBalancers.updateTagsWithHttpOperationResponse
     langs:
       - typeScript
     type: interface
@@ -307,6 +315,144 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+  - uid: azure-arm-network.LoadBalancers.beginUpdateTags
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a load balancer tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, loadBalancerName:
+        string, parameters: TagsObject, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: loadBalancerName
+          type:
+            - string
+          description: |
+            The name of the load balancer.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update load balancer tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.LoadBalancer>
+  - uid: azure-arm-network.LoadBalancers.beginUpdateTags_1
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a load balancer tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, loadBalancerName:
+        string, parameters: TagsObject, callback: ServiceCallback<LoadBalancer>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: loadBalancerName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LoadBalancer>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LoadBalancer>
+  - uid: azure-arm-network.LoadBalancers.beginUpdateTags_2
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a load balancer tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, loadBalancerName:
+        string, parameters: TagsObject, options: function, callback:
+        ServiceCallback<LoadBalancer>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: loadBalancerName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LoadBalancer>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LoadBalancer>
+  - uid: azure-arm-network.LoadBalancers.beginUpdateTagsWithHttpOperationResponse
+    name: beginUpdateTagsWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a load balancer tags.
+    syntax:
+      content: >-
+        function beginUpdateTagsWithHttpOperationResponse(resourceGroupName:
+        string, loadBalancerName: string, parameters: TagsObject, options?:
+        function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: loadBalancerName
+          type:
+            - string
+          description: |
+            The name of the load balancer.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update load balancer tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LoadBalancer>>
   - uid: azure-arm-network.LoadBalancers.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -331,6 +477,42 @@ items:
         - id: parameters
           type:
             - '@azure-arm-network.LoadBalancer'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LoadBalancer>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LoadBalancer>
+  - uid: azure-arm-network.LoadBalancers.createOrUpdate_2
+    name: createOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a load balancer.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, loadBalancerName:
+        string, parameters: LoadBalancer, options: function, callback:
+        ServiceCallback<LoadBalancer>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: loadBalancerName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.LoadBalancer'
+          description: ''
+        - id: options
+          type:
+            - function
           description: ''
         - id: callback
           type:
@@ -372,42 +554,6 @@ items:
             - function
           description: ''
           optional: true
-      return:
-        type:
-          - Promise<@azure-arm-network.LoadBalancer>
-  - uid: azure-arm-network.LoadBalancers.createOrUpdate_2
-    name: createOrUpdate
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Creates or updates a load balancer.
-    syntax:
-      content: >-
-        function createOrUpdate(resourceGroupName: string, loadBalancerName:
-        string, parameters: LoadBalancer, options: function, callback:
-        ServiceCallback<LoadBalancer>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: loadBalancerName
-          type:
-            - string
-          description: ''
-        - id: parameters
-          type:
-            - '@azure-arm-network.LoadBalancer'
-          description: ''
-        - id: options
-          type:
-            - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<@azure-arm-network.LoadBalancer>
-          description: ''
       return:
         type:
           - Promise<@azure-arm-network.LoadBalancer>
@@ -1058,3 +1204,140 @@ items:
       return:
         type:
           - Promise<LoadBalancerListResult>>
+  - uid: azure-arm-network.LoadBalancers.updateTags
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a load balancer tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, loadBalancerName: string,
+        parameters: TagsObject, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: loadBalancerName
+          type:
+            - string
+          description: |
+            The name of the load balancer.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update load balancer tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.LoadBalancer>
+  - uid: azure-arm-network.LoadBalancers.updateTags_1
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a load balancer tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, loadBalancerName: string,
+        parameters: TagsObject, callback: ServiceCallback<LoadBalancer>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: loadBalancerName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LoadBalancer>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LoadBalancer>
+  - uid: azure-arm-network.LoadBalancers.updateTags_2
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a load balancer tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, loadBalancerName: string,
+        parameters: TagsObject, options: function, callback:
+        ServiceCallback<LoadBalancer>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: loadBalancerName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.LoadBalancer>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.LoadBalancer>
+  - uid: azure-arm-network.LoadBalancers.updateTagsWithHttpOperationResponse
+    name: updateTagsWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a load balancer tags.
+    syntax:
+      content: >-
+        function updateTagsWithHttpOperationResponse(resourceGroupName: string,
+        loadBalancerName: string, parameters: TagsObject, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: loadBalancerName
+          type:
+            - string
+          description: |
+            The name of the load balancer.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update load balancer tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<LoadBalancer>>

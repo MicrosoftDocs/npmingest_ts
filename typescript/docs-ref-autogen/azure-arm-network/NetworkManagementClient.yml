@@ -41,6 +41,7 @@ items:
       - azure-arm-network.NetworkManagementClient.constructor
       - azure-arm-network.NetworkManagementClient.networkSecurityGroups
       - azure-arm-network.NetworkManagementClient.networkWatchers
+      - azure-arm-network.NetworkManagementClient.operations
       - azure-arm-network.NetworkManagementClient.packetCaptures
       - azure-arm-network.NetworkManagementClient.publicIPAddresses
       - azure-arm-network.NetworkManagementClient.routeFilterRules
@@ -582,6 +583,19 @@ items:
       return:
         type:
           - '@azure-arm-network.NetworkWatchers'
+  - uid: azure-arm-network.NetworkManagementClient.operations
+    name: operations
+    fullName: operations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: Operations operations
+      return:
+        type:
+          - '@azure-arm-network.Operations'
   - uid: azure-arm-network.NetworkManagementClient.packetCaptures
     name: packetCaptures
     fullName: packetCaptures

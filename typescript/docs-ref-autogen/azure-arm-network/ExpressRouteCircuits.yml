@@ -19,29 +19,34 @@ items:
       - azure-arm-network.ExpressRouteCircuits.beginListArpTable_2
       - >-
         azure-arm-network.ExpressRouteCircuits.beginListArpTableWithHttpOperationResponse
+      - azure-arm-network.ExpressRouteCircuits.beginListRoutesTable_2
       - azure-arm-network.ExpressRouteCircuits.beginListRoutesTable
       - azure-arm-network.ExpressRouteCircuits.beginListRoutesTable_1
-      - azure-arm-network.ExpressRouteCircuits.beginListRoutesTable_2
-      - azure-arm-network.ExpressRouteCircuits.beginListRoutesTableSummary_1
       - azure-arm-network.ExpressRouteCircuits.beginListRoutesTableSummary_2
+      - azure-arm-network.ExpressRouteCircuits.beginListRoutesTableSummary_1
       - azure-arm-network.ExpressRouteCircuits.beginListRoutesTableSummary
       - >-
         azure-arm-network.ExpressRouteCircuits.beginListRoutesTableSummaryWithHttpOperationResponse
       - >-
         azure-arm-network.ExpressRouteCircuits.beginListRoutesTableWithHttpOperationResponse
+      - azure-arm-network.ExpressRouteCircuits.beginUpdateTags
+      - azure-arm-network.ExpressRouteCircuits.beginUpdateTags_2
+      - azure-arm-network.ExpressRouteCircuits.beginUpdateTags_1
+      - >-
+        azure-arm-network.ExpressRouteCircuits.beginUpdateTagsWithHttpOperationResponse
+      - azure-arm-network.ExpressRouteCircuits.createOrUpdate_1
       - azure-arm-network.ExpressRouteCircuits.createOrUpdate
       - azure-arm-network.ExpressRouteCircuits.createOrUpdate_2
-      - azure-arm-network.ExpressRouteCircuits.createOrUpdate_1
       - >-
         azure-arm-network.ExpressRouteCircuits.createOrUpdateWithHttpOperationResponse
       - azure-arm-network.ExpressRouteCircuits.deleteMethod
-      - azure-arm-network.ExpressRouteCircuits.deleteMethod_2
       - azure-arm-network.ExpressRouteCircuits.deleteMethod_1
+      - azure-arm-network.ExpressRouteCircuits.deleteMethod_2
       - >-
         azure-arm-network.ExpressRouteCircuits.deleteMethodWithHttpOperationResponse
-      - azure-arm-network.ExpressRouteCircuits.get
-      - azure-arm-network.ExpressRouteCircuits.get_2
       - azure-arm-network.ExpressRouteCircuits.get_1
+      - azure-arm-network.ExpressRouteCircuits.get_2
+      - azure-arm-network.ExpressRouteCircuits.get
       - azure-arm-network.ExpressRouteCircuits.getPeeringStats
       - azure-arm-network.ExpressRouteCircuits.getPeeringStats_1
       - azure-arm-network.ExpressRouteCircuits.getPeeringStats_2
@@ -84,6 +89,11 @@ items:
       - >-
         azure-arm-network.ExpressRouteCircuits.listRoutesTableWithHttpOperationResponse
       - azure-arm-network.ExpressRouteCircuits.listWithHttpOperationResponse
+      - azure-arm-network.ExpressRouteCircuits.updateTags
+      - azure-arm-network.ExpressRouteCircuits.updateTags_1
+      - azure-arm-network.ExpressRouteCircuits.updateTags_2
+      - >-
+        azure-arm-network.ExpressRouteCircuits.updateTagsWithHttpOperationResponse
     langs:
       - typeScript
     type: interface
@@ -518,6 +528,52 @@ items:
       return:
         type:
           - Promise<ExpressRouteCircuitsArpTableListResult>>
+  - uid: azure-arm-network.ExpressRouteCircuits.beginListRoutesTable_2
+    name: beginListRoutesTable
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets the currently advertised routes table associated with the express
+      route
+
+      circuit in a resource group.
+    syntax:
+      content: >-
+        function beginListRoutesTable(resourceGroupName: string, circuitName:
+        string, peeringName: string, devicePath: string, options: function,
+        callback: ServiceCallback<ExpressRouteCircuitsRoutesTableListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: peeringName
+          type:
+            - string
+          description: ''
+        - id: devicePath
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.beginListRoutesTable
     name: beginListRoutesTable
     children: []
@@ -605,92 +661,6 @@ items:
         type:
           - >-
             Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
-  - uid: azure-arm-network.ExpressRouteCircuits.beginListRoutesTable_2
-    name: beginListRoutesTable
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: >-
-      Gets the currently advertised routes table associated with the express
-      route
-
-      circuit in a resource group.
-    syntax:
-      content: >-
-        function beginListRoutesTable(resourceGroupName: string, circuitName:
-        string, peeringName: string, devicePath: string, options: function,
-        callback: ServiceCallback<ExpressRouteCircuitsRoutesTableListResult>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: circuitName
-          type:
-            - string
-          description: ''
-        - id: peeringName
-          type:
-            - string
-          description: ''
-        - id: devicePath
-          type:
-            - string
-          description: ''
-        - id: options
-          type:
-            - function
-          description: ''
-        - id: callback
-          type:
-            - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
-          description: ''
-      return:
-        type:
-          - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
-  - uid: azure-arm-network.ExpressRouteCircuits.beginListRoutesTableSummary_1
-    name: beginListRoutesTableSummary
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: |-
-      Gets the currently advertised routes table summary associated with the
-      express route circuit in a resource group.
-    syntax:
-      content: >-
-        function beginListRoutesTableSummary(resourceGroupName: string,
-        circuitName: string, peeringName: string, devicePath: string, callback:
-        ServiceCallback<ExpressRouteCircuitsRoutesTableSummaryListResult>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: circuitName
-          type:
-            - string
-          description: ''
-        - id: peeringName
-          type:
-            - string
-          description: ''
-        - id: devicePath
-          type:
-            - string
-          description: ''
-        - id: callback
-          type:
-            - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
-          description: ''
-      return:
-        type:
-          - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.beginListRoutesTableSummary_2
     name: beginListRoutesTableSummary
     children: []
@@ -726,6 +696,46 @@ items:
         - id: options
           type:
             - function
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
+  - uid: azure-arm-network.ExpressRouteCircuits.beginListRoutesTableSummary_1
+    name: beginListRoutesTableSummary
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets the currently advertised routes table summary associated with the
+      express route circuit in a resource group.
+    syntax:
+      content: >-
+        function beginListRoutesTableSummary(resourceGroupName: string,
+        circuitName: string, peeringName: string, devicePath: string, callback:
+        ServiceCallback<ExpressRouteCircuitsRoutesTableSummaryListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: peeringName
+          type:
+            - string
+          description: ''
+        - id: devicePath
+          type:
+            - string
           description: ''
         - id: callback
           type:
@@ -872,6 +882,178 @@ items:
       return:
         type:
           - Promise<ExpressRouteCircuitsRoutesTableListResult>>
+  - uid: azure-arm-network.ExpressRouteCircuits.beginUpdateTags
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates an express route circuit tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, circuitName: string,
+        parameters: TagsObject, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: circuitName
+          type:
+            - string
+          description: |
+            The name of the circuit.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update express route
+            circuit tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.ExpressRouteCircuit>
+  - uid: azure-arm-network.ExpressRouteCircuits.beginUpdateTags_2
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates an express route circuit tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, circuitName: string,
+        parameters: TagsObject, options: function, callback:
+        ServiceCallback<ExpressRouteCircuit>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.ExpressRouteCircuit>
+  - uid: azure-arm-network.ExpressRouteCircuits.beginUpdateTags_1
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates an express route circuit tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, circuitName: string,
+        parameters: TagsObject, callback: ServiceCallback<ExpressRouteCircuit>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.ExpressRouteCircuit>
+  - uid: >-
+      azure-arm-network.ExpressRouteCircuits.beginUpdateTagsWithHttpOperationResponse
+    name: beginUpdateTagsWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates an express route circuit tags.
+    syntax:
+      content: >-
+        function beginUpdateTagsWithHttpOperationResponse(resourceGroupName:
+        string, circuitName: string, parameters: TagsObject, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: circuitName
+          type:
+            - string
+          description: |
+            The name of the circuit.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update express route
+            circuit tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<ExpressRouteCircuit>>
+  - uid: azure-arm-network.ExpressRouteCircuits.createOrUpdate_1
+    name: createOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an express route circuit.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, circuitName: string,
+        parameters: ExpressRouteCircuit, callback:
+        ServiceCallback<ExpressRouteCircuit>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.ExpressRouteCircuit'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.ExpressRouteCircuit>
   - uid: azure-arm-network.ExpressRouteCircuits.createOrUpdate
     name: createOrUpdate
     children: []
@@ -936,38 +1118,6 @@ items:
         - id: options
           type:
             - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
-          description: ''
-      return:
-        type:
-          - Promise<@azure-arm-network.ExpressRouteCircuit>
-  - uid: azure-arm-network.ExpressRouteCircuits.createOrUpdate_1
-    name: createOrUpdate
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Creates or updates an express route circuit.
-    syntax:
-      content: >-
-        function createOrUpdate(resourceGroupName: string, circuitName: string,
-        parameters: ExpressRouteCircuit, callback:
-        ServiceCallback<ExpressRouteCircuit>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: circuitName
-          type:
-            - string
-          description: ''
-        - id: parameters
-          type:
-            - '@azure-arm-network.ExpressRouteCircuit'
           description: ''
         - id: callback
           type:
@@ -1044,6 +1194,33 @@ items:
       return:
         type:
           - Promise<void>
+  - uid: azure-arm-network.ExpressRouteCircuits.deleteMethod_1
+    name: deleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified express route circuit.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, circuitName: string,
+        callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
   - uid: azure-arm-network.ExpressRouteCircuits.deleteMethod_2
     name: deleteMethod
     children: []
@@ -1067,33 +1244,6 @@ items:
         - id: options
           type:
             - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<void>
-          description: ''
-      return:
-        type:
-          - Promise<void>
-  - uid: azure-arm-network.ExpressRouteCircuits.deleteMethod_1
-    name: deleteMethod
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Deletes the specified express route circuit.
-    syntax:
-      content: >-
-        function deleteMethod(resourceGroupName: string, circuitName: string,
-        callback: ServiceCallback<void>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: circuitName
-          type:
-            - string
           description: ''
         - id: callback
           type:
@@ -1133,7 +1283,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
-  - uid: azure-arm-network.ExpressRouteCircuits.get
+  - uid: azure-arm-network.ExpressRouteCircuits.get_1
     name: get
     children: []
     type: method
@@ -1142,24 +1292,21 @@ items:
     summary: Gets information about the specified express route circuit.
     syntax:
       content: >-
-        function get(resourceGroupName: string, circuitName: string, options?:
-        function)
+        function get(resourceGroupName: string, circuitName: string, callback:
+        ServiceCallback<ExpressRouteCircuit>)
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |
-            The name of the resource group.
+          description: ''
         - id: circuitName
           type:
             - string
-          description: |
-            The name of express route circuit.
-        - id: options
-          type:
-            - function
           description: ''
-          optional: true
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+          description: ''
       return:
         type:
           - Promise<@azure-arm-network.ExpressRouteCircuit>
@@ -1194,7 +1341,7 @@ items:
       return:
         type:
           - Promise<@azure-arm-network.ExpressRouteCircuit>
-  - uid: azure-arm-network.ExpressRouteCircuits.get_1
+  - uid: azure-arm-network.ExpressRouteCircuits.get
     name: get
     children: []
     type: method
@@ -1203,21 +1350,24 @@ items:
     summary: Gets information about the specified express route circuit.
     syntax:
       content: >-
-        function get(resourceGroupName: string, circuitName: string, callback:
-        ServiceCallback<ExpressRouteCircuit>)
+        function get(resourceGroupName: string, circuitName: string, options?:
+        function)
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: ''
+          description: |
+            The name of the resource group.
         - id: circuitName
           type:
             - string
-          description: ''
-        - id: callback
+          description: |
+            The name of express route circuit.
+        - id: options
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+            - function
           description: ''
+          optional: true
       return:
         type:
           - Promise<@azure-arm-network.ExpressRouteCircuit>
@@ -2405,3 +2555,142 @@ items:
       return:
         type:
           - Promise<ExpressRouteCircuitListResult>>
+  - uid: azure-arm-network.ExpressRouteCircuits.updateTags
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates an express route circuit tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, circuitName: string,
+        parameters: TagsObject, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: circuitName
+          type:
+            - string
+          description: |
+            The name of the circuit.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update express route
+            circuit tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.ExpressRouteCircuit>
+  - uid: azure-arm-network.ExpressRouteCircuits.updateTags_1
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates an express route circuit tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, circuitName: string,
+        parameters: TagsObject, callback: ServiceCallback<ExpressRouteCircuit>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.ExpressRouteCircuit>
+  - uid: azure-arm-network.ExpressRouteCircuits.updateTags_2
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates an express route circuit tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, circuitName: string,
+        parameters: TagsObject, options: function, callback:
+        ServiceCallback<ExpressRouteCircuit>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.ExpressRouteCircuit>
+  - uid: azure-arm-network.ExpressRouteCircuits.updateTagsWithHttpOperationResponse
+    name: updateTagsWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates an express route circuit tags.
+    syntax:
+      content: >-
+        function updateTagsWithHttpOperationResponse(resourceGroupName: string,
+        circuitName: string, parameters: TagsObject, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: circuitName
+          type:
+            - string
+          description: |
+            The name of the circuit.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update express route
+            circuit tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<ExpressRouteCircuit>>

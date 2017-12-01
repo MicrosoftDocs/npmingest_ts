@@ -11,6 +11,7 @@ items:
       - azure-arm-network.VirtualNetworkPeering.name
       - azure-arm-network.VirtualNetworkPeering.peeringState
       - azure-arm-network.VirtualNetworkPeering.provisioningState
+      - azure-arm-network.VirtualNetworkPeering.remoteAddressSpace
       - azure-arm-network.VirtualNetworkPeering.remoteVirtualNetwork
       - azure-arm-network.VirtualNetworkPeering.useRemoteGateways
     langs:
@@ -118,6 +119,20 @@ items:
       return:
         type:
           - string
+  - uid: azure-arm-network.VirtualNetworkPeering.remoteAddressSpace
+    name: remoteAddressSpace
+    fullName: remoteAddressSpace
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: AddressSpace remoteAddressSpace
+      return:
+        type:
+          - '@azure-arm-network.AddressSpace'
   - uid: azure-arm-network.VirtualNetworkPeering.remoteVirtualNetwork
     name: remoteVirtualNetwork
     fullName: remoteVirtualNetwork

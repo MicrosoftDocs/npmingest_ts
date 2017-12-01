@@ -14,9 +14,14 @@ items:
       - azure-arm-network.NetworkSecurityGroups.beginDeleteMethod_1
       - >-
         azure-arm-network.NetworkSecurityGroups.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-network.NetworkSecurityGroups.beginUpdateTags
+      - azure-arm-network.NetworkSecurityGroups.beginUpdateTags_1
+      - azure-arm-network.NetworkSecurityGroups.beginUpdateTags_2
+      - >-
+        azure-arm-network.NetworkSecurityGroups.beginUpdateTagsWithHttpOperationResponse
       - azure-arm-network.NetworkSecurityGroups.createOrUpdate_1
-      - azure-arm-network.NetworkSecurityGroups.createOrUpdate
       - azure-arm-network.NetworkSecurityGroups.createOrUpdate_2
+      - azure-arm-network.NetworkSecurityGroups.createOrUpdate
       - >-
         azure-arm-network.NetworkSecurityGroups.createOrUpdateWithHttpOperationResponse
       - azure-arm-network.NetworkSecurityGroups.deleteMethod
@@ -46,6 +51,11 @@ items:
       - >-
         azure-arm-network.NetworkSecurityGroups.listNextWithHttpOperationResponse
       - azure-arm-network.NetworkSecurityGroups.listWithHttpOperationResponse
+      - azure-arm-network.NetworkSecurityGroups.updateTags
+      - azure-arm-network.NetworkSecurityGroups.updateTags_1
+      - azure-arm-network.NetworkSecurityGroups.updateTags_2
+      - >-
+        azure-arm-network.NetworkSecurityGroups.updateTagsWithHttpOperationResponse
     langs:
       - typeScript
     type: interface
@@ -326,6 +336,151 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+  - uid: azure-arm-network.NetworkSecurityGroups.beginUpdateTags
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a network security group tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        networkSecurityGroupName: string, parameters: TagsObject, options?:
+        function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the network security
+            group.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update network security
+            group tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.NetworkSecurityGroup>
+  - uid: azure-arm-network.NetworkSecurityGroups.beginUpdateTags_1
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a network security group tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        networkSecurityGroupName: string, parameters: TagsObject, callback:
+        ServiceCallback<NetworkSecurityGroup>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.NetworkSecurityGroup>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.NetworkSecurityGroup>
+  - uid: azure-arm-network.NetworkSecurityGroups.beginUpdateTags_2
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a network security group tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        networkSecurityGroupName: string, parameters: TagsObject, options:
+        function, callback: ServiceCallback<NetworkSecurityGroup>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.NetworkSecurityGroup>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.NetworkSecurityGroup>
+  - uid: >-
+      azure-arm-network.NetworkSecurityGroups.beginUpdateTagsWithHttpOperationResponse
+    name: beginUpdateTagsWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a network security group tags.
+    syntax:
+      content: >-
+        function beginUpdateTagsWithHttpOperationResponse(resourceGroupName:
+        string, networkSecurityGroupName: string, parameters: TagsObject,
+        options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the network security
+            group.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update network security
+            group tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<NetworkSecurityGroup>>
   - uid: azure-arm-network.NetworkSecurityGroups.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -352,6 +507,44 @@ items:
         - id: parameters
           type:
             - '@azure-arm-network.NetworkSecurityGroup'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.NetworkSecurityGroup>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.NetworkSecurityGroup>
+  - uid: azure-arm-network.NetworkSecurityGroups.createOrUpdate_2
+    name: createOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates or updates a network security group in the specified resource
+      group.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        networkSecurityGroupName: string, parameters: NetworkSecurityGroup,
+        options: function, callback: ServiceCallback<NetworkSecurityGroup>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.NetworkSecurityGroup'
+          description: ''
+        - id: options
+          type:
+            - function
           description: ''
         - id: callback
           type:
@@ -397,44 +590,6 @@ items:
             - function
           description: ''
           optional: true
-      return:
-        type:
-          - Promise<@azure-arm-network.NetworkSecurityGroup>
-  - uid: azure-arm-network.NetworkSecurityGroups.createOrUpdate_2
-    name: createOrUpdate
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: >-
-      Creates or updates a network security group in the specified resource
-      group.
-    syntax:
-      content: >-
-        function createOrUpdate(resourceGroupName: string,
-        networkSecurityGroupName: string, parameters: NetworkSecurityGroup,
-        options: function, callback: ServiceCallback<NetworkSecurityGroup>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: networkSecurityGroupName
-          type:
-            - string
-          description: ''
-        - id: parameters
-          type:
-            - '@azure-arm-network.NetworkSecurityGroup'
-          description: ''
-        - id: options
-          type:
-            - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<@azure-arm-network.NetworkSecurityGroup>
-          description: ''
       return:
         type:
           - Promise<@azure-arm-network.NetworkSecurityGroup>
@@ -1099,3 +1254,147 @@ items:
       return:
         type:
           - Promise<NetworkSecurityGroupListResult>>
+  - uid: azure-arm-network.NetworkSecurityGroups.updateTags
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a network security group tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, networkSecurityGroupName:
+        string, parameters: TagsObject, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the network security
+            group.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update network security
+            group tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.NetworkSecurityGroup>
+  - uid: azure-arm-network.NetworkSecurityGroups.updateTags_1
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a network security group tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, networkSecurityGroupName:
+        string, parameters: TagsObject, callback:
+        ServiceCallback<NetworkSecurityGroup>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.NetworkSecurityGroup>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.NetworkSecurityGroup>
+  - uid: azure-arm-network.NetworkSecurityGroups.updateTags_2
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a network security group tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, networkSecurityGroupName:
+        string, parameters: TagsObject, options: function, callback:
+        ServiceCallback<NetworkSecurityGroup>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.NetworkSecurityGroup>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.NetworkSecurityGroup>
+  - uid: >-
+      azure-arm-network.NetworkSecurityGroups.updateTagsWithHttpOperationResponse
+    name: updateTagsWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a network security group tags.
+    syntax:
+      content: >-
+        function updateTagsWithHttpOperationResponse(resourceGroupName: string,
+        networkSecurityGroupName: string, parameters: TagsObject, options?:
+        function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the network security
+            group.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update network security
+            group tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<NetworkSecurityGroup>>

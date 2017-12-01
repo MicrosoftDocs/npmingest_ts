@@ -4,6 +4,7 @@ items:
     name: RouteTable
     fullName: RouteTable
     children:
+      - azure-arm-network.RouteTable.disableBgpRoutePropagation
       - azure-arm-network.RouteTable.etag
       - azure-arm-network.RouteTable.provisioningState
       - azure-arm-network.RouteTable.routes
@@ -15,6 +16,20 @@ items:
     extends:
       name: '@azure-arm-network.Resource'
     package: azure-arm-network
+  - uid: azure-arm-network.RouteTable.disableBgpRoutePropagation
+    name: disableBgpRoutePropagation
+    fullName: disableBgpRoutePropagation
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: boolean disableBgpRoutePropagation
+      return:
+        type:
+          - boolean
   - uid: azure-arm-network.RouteTable.etag
     name: etag
     fullName: etag

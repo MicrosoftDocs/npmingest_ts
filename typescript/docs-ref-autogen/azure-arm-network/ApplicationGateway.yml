@@ -7,6 +7,7 @@ items:
       - azure-arm-network.ApplicationGateway.authenticationCertificates
       - azure-arm-network.ApplicationGateway.backendAddressPools
       - azure-arm-network.ApplicationGateway.backendHttpSettingsCollection
+      - azure-arm-network.ApplicationGateway.enableHttp2
       - azure-arm-network.ApplicationGateway.etag
       - azure-arm-network.ApplicationGateway.frontendIPConfigurations
       - azure-arm-network.ApplicationGateway.frontendPorts
@@ -72,6 +73,20 @@ items:
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayBackendHttpSettings[]'
+  - uid: azure-arm-network.ApplicationGateway.enableHttp2
+    name: enableHttp2
+    fullName: enableHttp2
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: boolean enableHttp2
+      return:
+        type:
+          - boolean
   - uid: azure-arm-network.ApplicationGateway.etag
     name: etag
     fullName: etag

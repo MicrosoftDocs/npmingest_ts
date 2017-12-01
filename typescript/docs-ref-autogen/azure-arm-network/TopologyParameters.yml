@@ -5,6 +5,8 @@ items:
     fullName: TopologyParameters
     children:
       - azure-arm-network.TopologyParameters.targetResourceGroupName
+      - azure-arm-network.TopologyParameters.targetSubnet
+      - azure-arm-network.TopologyParameters.targetVirtualNetwork
     langs:
       - typeScript
     type: interface
@@ -18,8 +20,37 @@ items:
       - typeScript
     type: property
     summary: ''
+    optional: true
     syntax:
       content: string targetResourceGroupName
       return:
         type:
           - string
+  - uid: azure-arm-network.TopologyParameters.targetSubnet
+    name: targetSubnet
+    fullName: targetSubnet
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: SubResource targetSubnet
+      return:
+        type:
+          - '@azure-arm-network.SubResource'
+  - uid: azure-arm-network.TopologyParameters.targetVirtualNetwork
+    name: targetVirtualNetwork
+    fullName: targetVirtualNetwork
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: SubResource targetVirtualNetwork
+      return:
+        type:
+          - '@azure-arm-network.SubResource'

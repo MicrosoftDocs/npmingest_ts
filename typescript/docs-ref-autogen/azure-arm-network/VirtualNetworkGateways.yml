@@ -39,9 +39,9 @@ items:
       - azure-arm-network.VirtualNetworkGateways.beginGetLearnedRoutes_2
       - >-
         azure-arm-network.VirtualNetworkGateways.beginGetLearnedRoutesWithHttpOperationResponse
+      - azure-arm-network.VirtualNetworkGateways.beginGetVpnProfilePackageUrl_1
       - azure-arm-network.VirtualNetworkGateways.beginGetVpnProfilePackageUrl
       - azure-arm-network.VirtualNetworkGateways.beginGetVpnProfilePackageUrl_2
-      - azure-arm-network.VirtualNetworkGateways.beginGetVpnProfilePackageUrl_1
       - >-
         azure-arm-network.VirtualNetworkGateways.beginGetVpnProfilePackageUrlWithHttpOperationResponse
       - azure-arm-network.VirtualNetworkGateways.beginReset
@@ -49,9 +49,14 @@ items:
       - azure-arm-network.VirtualNetworkGateways.beginReset_2
       - >-
         azure-arm-network.VirtualNetworkGateways.beginResetWithHttpOperationResponse
+      - azure-arm-network.VirtualNetworkGateways.beginUpdateTags_1
+      - azure-arm-network.VirtualNetworkGateways.beginUpdateTags_2
+      - azure-arm-network.VirtualNetworkGateways.beginUpdateTags
+      - >-
+        azure-arm-network.VirtualNetworkGateways.beginUpdateTagsWithHttpOperationResponse
+      - azure-arm-network.VirtualNetworkGateways.createOrUpdate
       - azure-arm-network.VirtualNetworkGateways.createOrUpdate_1
       - azure-arm-network.VirtualNetworkGateways.createOrUpdate_2
-      - azure-arm-network.VirtualNetworkGateways.createOrUpdate
       - >-
         azure-arm-network.VirtualNetworkGateways.createOrUpdateWithHttpOperationResponse
       - azure-arm-network.VirtualNetworkGateways.deleteMethod
@@ -77,14 +82,14 @@ items:
       - azure-arm-network.VirtualNetworkGateways.getAdvertisedRoutes_2
       - >-
         azure-arm-network.VirtualNetworkGateways.getAdvertisedRoutesWithHttpOperationResponse
+      - azure-arm-network.VirtualNetworkGateways.getBgpPeerStatus
       - azure-arm-network.VirtualNetworkGateways.getBgpPeerStatus_1
       - azure-arm-network.VirtualNetworkGateways.getBgpPeerStatus_2
-      - azure-arm-network.VirtualNetworkGateways.getBgpPeerStatus
       - >-
         azure-arm-network.VirtualNetworkGateways.getBgpPeerStatusWithHttpOperationResponse
+      - azure-arm-network.VirtualNetworkGateways.getLearnedRoutes
       - azure-arm-network.VirtualNetworkGateways.getLearnedRoutes_1
       - azure-arm-network.VirtualNetworkGateways.getLearnedRoutes_2
-      - azure-arm-network.VirtualNetworkGateways.getLearnedRoutes
       - >-
         azure-arm-network.VirtualNetworkGateways.getLearnedRoutesWithHttpOperationResponse
       - azure-arm-network.VirtualNetworkGateways.getVpnProfilePackageUrl
@@ -99,9 +104,9 @@ items:
       - azure-arm-network.VirtualNetworkGateways.listConnections
       - azure-arm-network.VirtualNetworkGateways.listConnections_1
       - azure-arm-network.VirtualNetworkGateways.listConnections_2
+      - azure-arm-network.VirtualNetworkGateways.listConnectionsNext
       - azure-arm-network.VirtualNetworkGateways.listConnectionsNext_1
       - azure-arm-network.VirtualNetworkGateways.listConnectionsNext_2
-      - azure-arm-network.VirtualNetworkGateways.listConnectionsNext
       - >-
         azure-arm-network.VirtualNetworkGateways.listConnectionsNextWithHttpOperationResponse
       - >-
@@ -113,14 +118,19 @@ items:
         azure-arm-network.VirtualNetworkGateways.listNextWithHttpOperationResponse
       - azure-arm-network.VirtualNetworkGateways.listWithHttpOperationResponse
       - azure-arm-network.VirtualNetworkGateways.reset
-      - azure-arm-network.VirtualNetworkGateways.reset_2
       - azure-arm-network.VirtualNetworkGateways.reset_1
+      - azure-arm-network.VirtualNetworkGateways.reset_2
       - azure-arm-network.VirtualNetworkGateways.resetWithHttpOperationResponse
       - azure-arm-network.VirtualNetworkGateways.supportedVpnDevices
-      - azure-arm-network.VirtualNetworkGateways.supportedVpnDevices_1
       - azure-arm-network.VirtualNetworkGateways.supportedVpnDevices_2
+      - azure-arm-network.VirtualNetworkGateways.supportedVpnDevices_1
       - >-
         azure-arm-network.VirtualNetworkGateways.supportedVpnDevicesWithHttpOperationResponse
+      - azure-arm-network.VirtualNetworkGateways.updateTags
+      - azure-arm-network.VirtualNetworkGateways.updateTags_1
+      - azure-arm-network.VirtualNetworkGateways.updateTags_2
+      - >-
+        azure-arm-network.VirtualNetworkGateways.updateTagsWithHttpOperationResponse
       - azure-arm-network.VirtualNetworkGateways.vpnDeviceConfigurationScript
       - azure-arm-network.VirtualNetworkGateways.vpnDeviceConfigurationScript_1
       - azure-arm-network.VirtualNetworkGateways.vpnDeviceConfigurationScript_2
@@ -1121,6 +1131,39 @@ items:
       return:
         type:
           - Promise<GatewayRouteListResult>>
+  - uid: azure-arm-network.VirtualNetworkGateways.beginGetVpnProfilePackageUrl_1
+    name: beginGetVpnProfilePackageUrl
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets pre-generated VPN profile for P2S client of the virtual network
+      gateway
+
+      in the specified resource group. The profile needs to be generated first
+
+      using generateVpnProfile.
+    syntax:
+      content: >-
+        function beginGetVpnProfilePackageUrl(resourceGroupName: string,
+        virtualNetworkGatewayName: string, callback: ServiceCallback<string>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<string>
+          description: ''
+      return:
+        type:
+          - Promise<string>
   - uid: azure-arm-network.VirtualNetworkGateways.beginGetVpnProfilePackageUrl
     name: beginGetVpnProfilePackageUrl
     children: []
@@ -1188,39 +1231,6 @@ items:
         - id: options
           type:
             - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<string>
-          description: ''
-      return:
-        type:
-          - Promise<string>
-  - uid: azure-arm-network.VirtualNetworkGateways.beginGetVpnProfilePackageUrl_1
-    name: beginGetVpnProfilePackageUrl
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: >-
-      Gets pre-generated VPN profile for P2S client of the virtual network
-      gateway
-
-      in the specified resource group. The profile needs to be generated first
-
-      using generateVpnProfile.
-    syntax:
-      content: >-
-        function beginGetVpnProfilePackageUrl(resourceGroupName: string,
-        virtualNetworkGatewayName: string, callback: ServiceCallback<string>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: virtualNetworkGatewayName
-          type:
-            - string
           description: ''
         - id: callback
           type:
@@ -1407,6 +1417,191 @@ items:
       return:
         type:
           - Promise<VirtualNetworkGateway>>
+  - uid: azure-arm-network.VirtualNetworkGateways.beginUpdateTags_1
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a virtual network gateway tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        virtualNetworkGatewayName: string, parameters: TagsObject, callback:
+        ServiceCallback<VirtualNetworkGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.VirtualNetworkGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.VirtualNetworkGateway>
+  - uid: azure-arm-network.VirtualNetworkGateways.beginUpdateTags_2
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a virtual network gateway tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        virtualNetworkGatewayName: string, parameters: TagsObject, options:
+        function, callback: ServiceCallback<VirtualNetworkGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.VirtualNetworkGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.VirtualNetworkGateway>
+  - uid: azure-arm-network.VirtualNetworkGateways.beginUpdateTags
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a virtual network gateway tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        virtualNetworkGatewayName: string, parameters: TagsObject, options?:
+        function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: virtualNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the virtual network
+            gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update virtual network
+            gateway tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.VirtualNetworkGateway>
+  - uid: >-
+      azure-arm-network.VirtualNetworkGateways.beginUpdateTagsWithHttpOperationResponse
+    name: beginUpdateTagsWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a virtual network gateway tags.
+    syntax:
+      content: >-
+        function beginUpdateTagsWithHttpOperationResponse(resourceGroupName:
+        string, virtualNetworkGatewayName: string, parameters: TagsObject,
+        options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: virtualNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the virtual network
+            gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update virtual network
+            gateway tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<VirtualNetworkGateway>>
+  - uid: azure-arm-network.VirtualNetworkGateways.createOrUpdate
+    name: createOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a virtual network gateway in the specified resource
+      group.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        virtualNetworkGatewayName: string, parameters: VirtualNetworkGateway,
+        options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: virtualNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the virtual network
+            gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.VirtualNetworkGateway'
+          description: |
+            Parameters supplied to create or update virtual
+            network gateway operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.VirtualNetworkGateway>
   - uid: azure-arm-network.VirtualNetworkGateways.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -1476,46 +1671,6 @@ items:
           type:
             - ServiceCallback<@azure-arm-network.VirtualNetworkGateway>
           description: ''
-      return:
-        type:
-          - Promise<@azure-arm-network.VirtualNetworkGateway>
-  - uid: azure-arm-network.VirtualNetworkGateways.createOrUpdate
-    name: createOrUpdate
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: |-
-      Creates or updates a virtual network gateway in the specified resource
-      group.
-    syntax:
-      content: >-
-        function createOrUpdate(resourceGroupName: string,
-        virtualNetworkGatewayName: string, parameters: VirtualNetworkGateway,
-        options?: function)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: |
-            The name of the resource group.
-        - id: virtualNetworkGatewayName
-          type:
-            - string
-          description: |
-            The name of the virtual network
-            gateway.
-        - id: parameters
-          type:
-            - '@azure-arm-network.VirtualNetworkGateway'
-          description: |
-            Parameters supplied to create or update virtual
-            network gateway operation.
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
       return:
         type:
           - Promise<@azure-arm-network.VirtualNetworkGateway>
@@ -2229,6 +2384,37 @@ items:
       return:
         type:
           - Promise<GatewayRouteListResult>>
+  - uid: azure-arm-network.VirtualNetworkGateways.getBgpPeerStatus
+    name: getBgpPeerStatus
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: The GetBgpPeerStatus operation retrieves the status of all BGP peers.
+    syntax:
+      content: >-
+        function getBgpPeerStatus(resourceGroupName: string,
+        virtualNetworkGatewayName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: virtualNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the virtual network
+            gateway.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.BgpPeerStatusListResult>
   - uid: azure-arm-network.VirtualNetworkGateways.getBgpPeerStatus_1
     name: getBgpPeerStatus
     children: []
@@ -2289,37 +2475,6 @@ items:
       return:
         type:
           - Promise<@azure-arm-network.BgpPeerStatusListResult>
-  - uid: azure-arm-network.VirtualNetworkGateways.getBgpPeerStatus
-    name: getBgpPeerStatus
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: The GetBgpPeerStatus operation retrieves the status of all BGP peers.
-    syntax:
-      content: >-
-        function getBgpPeerStatus(resourceGroupName: string,
-        virtualNetworkGatewayName: string, options?: function)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: |
-            The name of the resource group.
-        - id: virtualNetworkGatewayName
-          type:
-            - string
-          description: |
-            The name of the virtual network
-            gateway.
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<@azure-arm-network.BgpPeerStatusListResult>
   - uid: >-
       azure-arm-network.VirtualNetworkGateways.getBgpPeerStatusWithHttpOperationResponse
     name: getBgpPeerStatusWithHttpOperationResponse
@@ -2352,6 +2507,39 @@ items:
       return:
         type:
           - Promise<BgpPeerStatusListResult>>
+  - uid: azure-arm-network.VirtualNetworkGateways.getLearnedRoutes
+    name: getLearnedRoutes
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      This operation retrieves a list of routes the virtual network gateway has
+      learned, including routes learned from BGP peers.
+    syntax:
+      content: >-
+        function getLearnedRoutes(resourceGroupName: string,
+        virtualNetworkGatewayName: string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: virtualNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the virtual network
+            gateway.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.GatewayRouteListResult>
   - uid: azure-arm-network.VirtualNetworkGateways.getLearnedRoutes_1
     name: getLearnedRoutes
     children: []
@@ -2413,39 +2601,6 @@ items:
           type:
             - ServiceCallback<@azure-arm-network.GatewayRouteListResult>
           description: ''
-      return:
-        type:
-          - Promise<@azure-arm-network.GatewayRouteListResult>
-  - uid: azure-arm-network.VirtualNetworkGateways.getLearnedRoutes
-    name: getLearnedRoutes
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: |-
-      This operation retrieves a list of routes the virtual network gateway has
-      learned, including routes learned from BGP peers.
-    syntax:
-      content: >-
-        function getLearnedRoutes(resourceGroupName: string,
-        virtualNetworkGatewayName: string, options?: function)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: |
-            The name of the resource group.
-        - id: virtualNetworkGatewayName
-          type:
-            - string
-          description: |
-            The name of the virtual network
-            gateway.
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
       return:
         type:
           - Promise<@azure-arm-network.GatewayRouteListResult>
@@ -2832,6 +2987,31 @@ items:
         type:
           - >-
             Promise<@azure-arm-network.VirtualNetworkGatewayListConnectionsResult>
+  - uid: azure-arm-network.VirtualNetworkGateways.listConnectionsNext
+    name: listConnectionsNext
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the connections in a virtual network gateway.
+    syntax:
+      content: 'function listConnectionsNext(nextPageLink: string, options?: function)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<@azure-arm-network.VirtualNetworkGatewayListConnectionsResult>
   - uid: azure-arm-network.VirtualNetworkGateways.listConnectionsNext_1
     name: listConnectionsNext
     children: []
@@ -2882,31 +3062,6 @@ items:
             - >-
               ServiceCallback<@azure-arm-network.VirtualNetworkGatewayListConnectionsResult>
           description: ''
-      return:
-        type:
-          - >-
-            Promise<@azure-arm-network.VirtualNetworkGatewayListConnectionsResult>
-  - uid: azure-arm-network.VirtualNetworkGateways.listConnectionsNext
-    name: listConnectionsNext
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Gets all the connections in a virtual network gateway.
-    syntax:
-      content: 'function listConnectionsNext(nextPageLink: string, options?: function)'
-      parameters:
-        - id: nextPageLink
-          type:
-            - string
-          description: |
-            The NextLink from the previous successful call
-            to List operation.
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
       return:
         type:
           - >-
@@ -3132,6 +3287,37 @@ items:
       return:
         type:
           - Promise<@azure-arm-network.VirtualNetworkGateway>
+  - uid: azure-arm-network.VirtualNetworkGateways.reset_1
+    name: reset
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Resets the primary of the virtual network gateway in the specified
+      resource
+
+      group.
+    syntax:
+      content: >-
+        function reset(resourceGroupName: string, virtualNetworkGatewayName:
+        string, callback: ServiceCallback<VirtualNetworkGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.VirtualNetworkGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.VirtualNetworkGateway>
   - uid: azure-arm-network.VirtualNetworkGateways.reset_2
     name: reset
     children: []
@@ -3160,37 +3346,6 @@ items:
         - id: options
           type:
             - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkGateway>
-          description: ''
-      return:
-        type:
-          - Promise<@azure-arm-network.VirtualNetworkGateway>
-  - uid: azure-arm-network.VirtualNetworkGateways.reset_1
-    name: reset
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: >-
-      Resets the primary of the virtual network gateway in the specified
-      resource
-
-      group.
-    syntax:
-      content: >-
-        function reset(resourceGroupName: string, virtualNetworkGatewayName:
-        string, callback: ServiceCallback<VirtualNetworkGateway>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: virtualNetworkGatewayName
-          type:
-            - string
           description: ''
         - id: callback
           type:
@@ -3265,33 +3420,6 @@ items:
       return:
         type:
           - Promise<string>
-  - uid: azure-arm-network.VirtualNetworkGateways.supportedVpnDevices_1
-    name: supportedVpnDevices
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Gets a xml format representation for supported vpn devices.
-    syntax:
-      content: >-
-        function supportedVpnDevices(resourceGroupName: string,
-        virtualNetworkGatewayName: string, callback: ServiceCallback<string>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: virtualNetworkGatewayName
-          type:
-            - string
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<string>
-          description: ''
-      return:
-        type:
-          - Promise<string>
   - uid: azure-arm-network.VirtualNetworkGateways.supportedVpnDevices_2
     name: supportedVpnDevices
     children: []
@@ -3316,6 +3444,33 @@ items:
         - id: options
           type:
             - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<string>
+          description: ''
+      return:
+        type:
+          - Promise<string>
+  - uid: azure-arm-network.VirtualNetworkGateways.supportedVpnDevices_1
+    name: supportedVpnDevices
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets a xml format representation for supported vpn devices.
+    syntax:
+      content: >-
+        function supportedVpnDevices(resourceGroupName: string,
+        virtualNetworkGatewayName: string, callback: ServiceCallback<string>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualNetworkGatewayName
+          type:
+            - string
           description: ''
         - id: callback
           type:
@@ -3356,6 +3511,151 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<string>>
+  - uid: azure-arm-network.VirtualNetworkGateways.updateTags
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a virtual network gateway tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string,
+        virtualNetworkGatewayName: string, parameters: TagsObject, options?:
+        function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: virtualNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the virtual network
+            gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update virtual network
+            gateway tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.VirtualNetworkGateway>
+  - uid: azure-arm-network.VirtualNetworkGateways.updateTags_1
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a virtual network gateway tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string,
+        virtualNetworkGatewayName: string, parameters: TagsObject, callback:
+        ServiceCallback<VirtualNetworkGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.VirtualNetworkGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.VirtualNetworkGateway>
+  - uid: azure-arm-network.VirtualNetworkGateways.updateTags_2
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a virtual network gateway tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string,
+        virtualNetworkGatewayName: string, parameters: TagsObject, options:
+        function, callback: ServiceCallback<VirtualNetworkGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualNetworkGatewayName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.VirtualNetworkGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.VirtualNetworkGateway>
+  - uid: >-
+      azure-arm-network.VirtualNetworkGateways.updateTagsWithHttpOperationResponse
+    name: updateTagsWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a virtual network gateway tags.
+    syntax:
+      content: >-
+        function updateTagsWithHttpOperationResponse(resourceGroupName: string,
+        virtualNetworkGatewayName: string, parameters: TagsObject, options?:
+        function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: virtualNetworkGatewayName
+          type:
+            - string
+          description: |
+            The name of the virtual network
+            gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update virtual network
+            gateway tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<VirtualNetworkGateway>>
   - uid: azure-arm-network.VirtualNetworkGateways.vpnDeviceConfigurationScript
     name: vpnDeviceConfigurationScript
     children: []

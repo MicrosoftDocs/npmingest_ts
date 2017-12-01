@@ -10,23 +10,28 @@ items:
       - >-
         azure-arm-network.PublicIPAddresses.beginCreateOrUpdateWithHttpOperationResponse
       - azure-arm-network.PublicIPAddresses.beginDeleteMethod
-      - azure-arm-network.PublicIPAddresses.beginDeleteMethod_2
       - azure-arm-network.PublicIPAddresses.beginDeleteMethod_1
+      - azure-arm-network.PublicIPAddresses.beginDeleteMethod_2
       - >-
         azure-arm-network.PublicIPAddresses.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-network.PublicIPAddresses.beginUpdateTags_1
+      - azure-arm-network.PublicIPAddresses.beginUpdateTags_2
+      - azure-arm-network.PublicIPAddresses.beginUpdateTags
+      - >-
+        azure-arm-network.PublicIPAddresses.beginUpdateTagsWithHttpOperationResponse
       - azure-arm-network.PublicIPAddresses.createOrUpdate
       - azure-arm-network.PublicIPAddresses.createOrUpdate_1
       - azure-arm-network.PublicIPAddresses.createOrUpdate_2
       - >-
         azure-arm-network.PublicIPAddresses.createOrUpdateWithHttpOperationResponse
       - azure-arm-network.PublicIPAddresses.deleteMethod_1
-      - azure-arm-network.PublicIPAddresses.deleteMethod_2
       - azure-arm-network.PublicIPAddresses.deleteMethod
+      - azure-arm-network.PublicIPAddresses.deleteMethod_2
       - >-
         azure-arm-network.PublicIPAddresses.deleteMethodWithHttpOperationResponse
+      - azure-arm-network.PublicIPAddresses.get_1
       - azure-arm-network.PublicIPAddresses.get
       - azure-arm-network.PublicIPAddresses.get_2
-      - azure-arm-network.PublicIPAddresses.get_1
       - >-
         azure-arm-network.PublicIPAddresses.getVirtualMachineScaleSetPublicIPAddress_1
       - >-
@@ -47,16 +52,16 @@ items:
       - azure-arm-network.PublicIPAddresses.listAllNext_2
       - azure-arm-network.PublicIPAddresses.listAllNextWithHttpOperationResponse
       - azure-arm-network.PublicIPAddresses.listAllWithHttpOperationResponse
-      - azure-arm-network.PublicIPAddresses.listNext
       - azure-arm-network.PublicIPAddresses.listNext_1
       - azure-arm-network.PublicIPAddresses.listNext_2
+      - azure-arm-network.PublicIPAddresses.listNext
       - azure-arm-network.PublicIPAddresses.listNextWithHttpOperationResponse
       - >-
         azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddresses
       - >-
-        azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddresses_1
-      - >-
         azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddresses_2
+      - >-
+        azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddresses_1
       - >-
         azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddressesNext
       - >-
@@ -68,11 +73,11 @@ items:
       - >-
         azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddressesWithHttpOperationResponse
       - >-
-        azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddresses
-      - >-
         azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddresses_1
       - >-
         azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddresses_2
+      - >-
+        azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddresses
       - >-
         azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddressesNext
       - >-
@@ -84,6 +89,10 @@ items:
       - >-
         azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddressesWithHttpOperationResponse
       - azure-arm-network.PublicIPAddresses.listWithHttpOperationResponse
+      - azure-arm-network.PublicIPAddresses.updateTags
+      - azure-arm-network.PublicIPAddresses.updateTags_1
+      - azure-arm-network.PublicIPAddresses.updateTags_2
+      - azure-arm-network.PublicIPAddresses.updateTagsWithHttpOperationResponse
     langs:
       - typeScript
     type: interface
@@ -262,6 +271,33 @@ items:
       return:
         type:
           - Promise<void>
+  - uid: azure-arm-network.PublicIPAddresses.beginDeleteMethod_1
+    name: beginDeleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified public IP address.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        publicIpAddressName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: publicIpAddressName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
   - uid: azure-arm-network.PublicIPAddresses.beginDeleteMethod_2
     name: beginDeleteMethod
     children: []
@@ -286,33 +322,6 @@ items:
         - id: options
           type:
             - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<void>
-          description: ''
-      return:
-        type:
-          - Promise<void>
-  - uid: azure-arm-network.PublicIPAddresses.beginDeleteMethod_1
-    name: beginDeleteMethod
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Deletes the specified public IP address.
-    syntax:
-      content: >-
-        function beginDeleteMethod(resourceGroupName: string,
-        publicIpAddressName: string, callback: ServiceCallback<void>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: publicIpAddressName
-          type:
-            - string
           description: ''
         - id: callback
           type:
@@ -352,6 +361,148 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+  - uid: azure-arm-network.PublicIPAddresses.beginUpdateTags_1
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates public IP address tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, publicIpAddressName:
+        string, parameters: TagsObject, callback:
+        ServiceCallback<PublicIPAddress>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: publicIpAddressName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.PublicIPAddress>
+  - uid: azure-arm-network.PublicIPAddresses.beginUpdateTags_2
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates public IP address tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, publicIpAddressName:
+        string, parameters: TagsObject, options: function, callback:
+        ServiceCallback<PublicIPAddress>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: publicIpAddressName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.PublicIPAddress>
+  - uid: azure-arm-network.PublicIPAddresses.beginUpdateTags
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates public IP address tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, publicIpAddressName:
+        string, parameters: TagsObject, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: publicIpAddressName
+          type:
+            - string
+          description: |
+            The name of the public IP address.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update public IP address
+            tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.PublicIPAddress>
+  - uid: >-
+      azure-arm-network.PublicIPAddresses.beginUpdateTagsWithHttpOperationResponse
+    name: beginUpdateTagsWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates public IP address tags.
+    syntax:
+      content: >-
+        function beginUpdateTagsWithHttpOperationResponse(resourceGroupName:
+        string, publicIpAddressName: string, parameters: TagsObject, options?:
+        function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: publicIpAddressName
+          type:
+            - string
+          description: |
+            The name of the public IP address.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update public IP address
+            tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<PublicIPAddress>>
   - uid: azure-arm-network.PublicIPAddresses.createOrUpdate
     name: createOrUpdate
     children: []
@@ -521,6 +672,36 @@ items:
       return:
         type:
           - Promise<void>
+  - uid: azure-arm-network.PublicIPAddresses.deleteMethod
+    name: deleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified public IP address.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, publicIpAddressName:
+        string, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: publicIpAddressName
+          type:
+            - string
+          description: |
+            The name of the subnet.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
   - uid: azure-arm-network.PublicIPAddresses.deleteMethod_2
     name: deleteMethod
     children: []
@@ -549,36 +730,6 @@ items:
           type:
             - ServiceCallback<void>
           description: ''
-      return:
-        type:
-          - Promise<void>
-  - uid: azure-arm-network.PublicIPAddresses.deleteMethod
-    name: deleteMethod
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Deletes the specified public IP address.
-    syntax:
-      content: >-
-        function deleteMethod(resourceGroupName: string, publicIpAddressName:
-        string, options?: function)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: |
-            The name of the resource group.
-        - id: publicIpAddressName
-          type:
-            - string
-          description: |
-            The name of the subnet.
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
       return:
         type:
           - Promise<void>
@@ -612,6 +763,33 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+  - uid: azure-arm-network.PublicIPAddresses.get_1
+    name: get
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified public IP address in a specified resource group.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, publicIpAddressName: string,
+        callback: ServiceCallback<PublicIPAddress>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: publicIpAddressName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.PublicIPAddress>
   - uid: azure-arm-network.PublicIPAddresses.get
     name: get
     children: []
@@ -665,33 +843,6 @@ items:
         - id: options
           type:
             - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddress>
-          description: ''
-      return:
-        type:
-          - Promise<@azure-arm-network.PublicIPAddress>
-  - uid: azure-arm-network.PublicIPAddresses.get_1
-    name: get
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Gets the specified public IP address in a specified resource group.
-    syntax:
-      content: >-
-        function get(resourceGroupName: string, publicIpAddressName: string,
-        callback: ServiceCallback<PublicIPAddress>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: publicIpAddressName
-          type:
-            - string
           description: ''
         - id: callback
           type:
@@ -1185,30 +1336,6 @@ items:
       return:
         type:
           - Promise<PublicIPAddressListResult>>
-  - uid: azure-arm-network.PublicIPAddresses.listNext
-    name: listNext
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Gets all public IP addresses in a resource group.
-    syntax:
-      content: 'function listNext(nextPageLink: string, options?: function)'
-      parameters:
-        - id: nextPageLink
-          type:
-            - string
-          description: |
-            The NextLink from the previous successful call
-            to List operation.
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
   - uid: azure-arm-network.PublicIPAddresses.listNext_1
     name: listNext
     children: []
@@ -1256,6 +1383,30 @@ items:
           type:
             - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
           description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.PublicIPAddressListResult>
+  - uid: azure-arm-network.PublicIPAddresses.listNext
+    name: listNext
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all public IP addresses in a resource group.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: function)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
       return:
         type:
           - Promise<@azure-arm-network.PublicIPAddressListResult>
@@ -1320,37 +1471,6 @@ items:
         type:
           - Promise<@azure-arm-network.PublicIPAddressListResult>
   - uid: >-
-      azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddresses_1
-    name: listVirtualMachineScaleSetPublicIPAddresses
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: |-
-      Gets information about all public IP addresses on a virtual machine scale
-      set level.
-    syntax:
-      content: >-
-        function listVirtualMachineScaleSetPublicIPAddresses(resourceGroupName:
-        string, virtualMachineScaleSetName: string, callback:
-        ServiceCallback<PublicIPAddressListResult>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: virtualMachineScaleSetName
-          type:
-            - string
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
-          description: ''
-      return:
-        type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
-  - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddresses_2
     name: listVirtualMachineScaleSetPublicIPAddresses
     children: []
@@ -1377,6 +1497,37 @@ items:
         - id: options
           type:
             - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.PublicIPAddressListResult>
+  - uid: >-
+      azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddresses_1
+    name: listVirtualMachineScaleSetPublicIPAddresses
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets information about all public IP addresses on a virtual machine scale
+      set level.
+    syntax:
+      content: >-
+        function listVirtualMachineScaleSetPublicIPAddresses(resourceGroupName:
+        string, virtualMachineScaleSetName: string, callback:
+        ServiceCallback<PublicIPAddressListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualMachineScaleSetName
+          type:
+            - string
           description: ''
         - id: callback
           type:
@@ -1537,58 +1688,6 @@ items:
         type:
           - Promise<PublicIPAddressListResult>>
   - uid: >-
-      azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddresses
-    name: listVirtualMachineScaleSetVMPublicIPAddresses
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: |-
-      Gets information about all public IP addresses in a virtual machine IP
-      configuration in a virtual machine scale set.
-    syntax:
-      content: >-
-        function
-        listVirtualMachineScaleSetVMPublicIPAddresses(resourceGroupName: string,
-        virtualMachineScaleSetName: string, virtualmachineIndex: string,
-        networkInterfaceName: string, ipConfigurationName: string, options?:
-        function)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: |
-            The name of the resource group.
-        - id: virtualMachineScaleSetName
-          type:
-            - string
-          description: |
-            The name of the virtual machine
-            scale set.
-        - id: virtualmachineIndex
-          type:
-            - string
-          description: |
-            The virtual machine index.
-        - id: networkInterfaceName
-          type:
-            - string
-          description: |
-            The network interface name.
-        - id: ipConfigurationName
-          type:
-            - string
-          description: |
-            The IP configuration name.
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
-  - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddresses_1
     name: listVirtualMachineScaleSetVMPublicIPAddresses
     children: []
@@ -1679,6 +1778,58 @@ items:
           type:
             - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
           description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.PublicIPAddressListResult>
+  - uid: >-
+      azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddresses
+    name: listVirtualMachineScaleSetVMPublicIPAddresses
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets information about all public IP addresses in a virtual machine IP
+      configuration in a virtual machine scale set.
+    syntax:
+      content: >-
+        function
+        listVirtualMachineScaleSetVMPublicIPAddresses(resourceGroupName: string,
+        virtualMachineScaleSetName: string, virtualmachineIndex: string,
+        networkInterfaceName: string, ipConfigurationName: string, options?:
+        function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: virtualMachineScaleSetName
+          type:
+            - string
+          description: |
+            The name of the virtual machine
+            scale set.
+        - id: virtualmachineIndex
+          type:
+            - string
+          description: |
+            The virtual machine index.
+        - id: networkInterfaceName
+          type:
+            - string
+          description: |
+            The network interface name.
+        - id: ipConfigurationName
+          type:
+            - string
+          description: |
+            The IP configuration name.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
       return:
         type:
           - Promise<@azure-arm-network.PublicIPAddressListResult>
@@ -1875,3 +2026,143 @@ items:
       return:
         type:
           - Promise<PublicIPAddressListResult>>
+  - uid: azure-arm-network.PublicIPAddresses.updateTags
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates public IP address tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, publicIpAddressName:
+        string, parameters: TagsObject, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: publicIpAddressName
+          type:
+            - string
+          description: |
+            The name of the public IP address.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update public IP address
+            tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.PublicIPAddress>
+  - uid: azure-arm-network.PublicIPAddresses.updateTags_1
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates public IP address tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, publicIpAddressName:
+        string, parameters: TagsObject, callback:
+        ServiceCallback<PublicIPAddress>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: publicIpAddressName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.PublicIPAddress>
+  - uid: azure-arm-network.PublicIPAddresses.updateTags_2
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates public IP address tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, publicIpAddressName:
+        string, parameters: TagsObject, options: function, callback:
+        ServiceCallback<PublicIPAddress>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: publicIpAddressName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.PublicIPAddress>
+  - uid: azure-arm-network.PublicIPAddresses.updateTagsWithHttpOperationResponse
+    name: updateTagsWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates public IP address tags.
+    syntax:
+      content: >-
+        function updateTagsWithHttpOperationResponse(resourceGroupName: string,
+        publicIpAddressName: string, parameters: TagsObject, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: publicIpAddressName
+          type:
+            - string
+          description: |
+            The name of the public IP address.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update public IP address
+            tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<PublicIPAddress>>

@@ -19,23 +19,28 @@ items:
       - azure-arm-network.ApplicationGateways.beginCreateOrUpdate_2
       - >-
         azure-arm-network.ApplicationGateways.beginCreateOrUpdateWithHttpOperationResponse
-      - azure-arm-network.ApplicationGateways.beginDeleteMethod_2
       - azure-arm-network.ApplicationGateways.beginDeleteMethod
       - azure-arm-network.ApplicationGateways.beginDeleteMethod_1
+      - azure-arm-network.ApplicationGateways.beginDeleteMethod_2
       - >-
         azure-arm-network.ApplicationGateways.beginDeleteMethodWithHttpOperationResponse
-      - azure-arm-network.ApplicationGateways.beginStart_1
       - azure-arm-network.ApplicationGateways.beginStart_2
       - azure-arm-network.ApplicationGateways.beginStart
+      - azure-arm-network.ApplicationGateways.beginStart_1
       - >-
         azure-arm-network.ApplicationGateways.beginStartWithHttpOperationResponse
-      - azure-arm-network.ApplicationGateways.beginStop_1
       - azure-arm-network.ApplicationGateways.beginStop
+      - azure-arm-network.ApplicationGateways.beginStop_1
       - azure-arm-network.ApplicationGateways.beginStop_2
       - azure-arm-network.ApplicationGateways.beginStopWithHttpOperationResponse
-      - azure-arm-network.ApplicationGateways.createOrUpdate_1
+      - azure-arm-network.ApplicationGateways.beginUpdateTags_1
+      - azure-arm-network.ApplicationGateways.beginUpdateTags
+      - azure-arm-network.ApplicationGateways.beginUpdateTags_2
+      - >-
+        azure-arm-network.ApplicationGateways.beginUpdateTagsWithHttpOperationResponse
       - azure-arm-network.ApplicationGateways.createOrUpdate
       - azure-arm-network.ApplicationGateways.createOrUpdate_2
+      - azure-arm-network.ApplicationGateways.createOrUpdate_1
       - >-
         azure-arm-network.ApplicationGateways.createOrUpdateWithHttpOperationResponse
       - azure-arm-network.ApplicationGateways.deleteMethod
@@ -43,9 +48,9 @@ items:
       - azure-arm-network.ApplicationGateways.deleteMethod_2
       - >-
         azure-arm-network.ApplicationGateways.deleteMethodWithHttpOperationResponse
-      - azure-arm-network.ApplicationGateways.get
-      - azure-arm-network.ApplicationGateways.get_2
       - azure-arm-network.ApplicationGateways.get_1
+      - azure-arm-network.ApplicationGateways.get_2
+      - azure-arm-network.ApplicationGateways.get
       - azure-arm-network.ApplicationGateways.getSslPredefinedPolicy
       - azure-arm-network.ApplicationGateways.getSslPredefinedPolicy_1
       - azure-arm-network.ApplicationGateways.getSslPredefinedPolicy_2
@@ -64,16 +69,16 @@ items:
       - >-
         azure-arm-network.ApplicationGateways.listAllNextWithHttpOperationResponse
       - azure-arm-network.ApplicationGateways.listAllWithHttpOperationResponse
+      - azure-arm-network.ApplicationGateways.listAvailableSslOptions
       - azure-arm-network.ApplicationGateways.listAvailableSslOptions_1
       - azure-arm-network.ApplicationGateways.listAvailableSslOptions_2
-      - azure-arm-network.ApplicationGateways.listAvailableSslOptions
       - >-
         azure-arm-network.ApplicationGateways.listAvailableSslOptionsWithHttpOperationResponse
-      - azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPolicies
       - >-
         azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPolicies_1
       - >-
         azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPolicies_2
+      - azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPolicies
       - >-
         azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPoliciesNext
       - >-
@@ -84,14 +89,14 @@ items:
         azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPoliciesNextWithHttpOperationResponse
       - >-
         azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPoliciesWithHttpOperationResponse
+      - azure-arm-network.ApplicationGateways.listAvailableWafRuleSets
       - azure-arm-network.ApplicationGateways.listAvailableWafRuleSets_1
       - azure-arm-network.ApplicationGateways.listAvailableWafRuleSets_2
-      - azure-arm-network.ApplicationGateways.listAvailableWafRuleSets
       - >-
         azure-arm-network.ApplicationGateways.listAvailableWafRuleSetsWithHttpOperationResponse
-      - azure-arm-network.ApplicationGateways.listNext
       - azure-arm-network.ApplicationGateways.listNext_1
       - azure-arm-network.ApplicationGateways.listNext_2
+      - azure-arm-network.ApplicationGateways.listNext
       - azure-arm-network.ApplicationGateways.listNextWithHttpOperationResponse
       - azure-arm-network.ApplicationGateways.listWithHttpOperationResponse
       - azure-arm-network.ApplicationGateways.start
@@ -102,6 +107,11 @@ items:
       - azure-arm-network.ApplicationGateways.stop_1
       - azure-arm-network.ApplicationGateways.stop_2
       - azure-arm-network.ApplicationGateways.stopWithHttpOperationResponse
+      - azure-arm-network.ApplicationGateways.updateTags
+      - azure-arm-network.ApplicationGateways.updateTags_1
+      - azure-arm-network.ApplicationGateways.updateTags_2
+      - >-
+        azure-arm-network.ApplicationGateways.updateTagsWithHttpOperationResponse
     langs:
       - typeScript
     type: interface
@@ -512,38 +522,6 @@ items:
       return:
         type:
           - Promise<ApplicationGateway>>
-  - uid: azure-arm-network.ApplicationGateways.beginDeleteMethod_2
-    name: beginDeleteMethod
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Deletes the specified application gateway.
-    syntax:
-      content: >-
-        function beginDeleteMethod(resourceGroupName: string,
-        applicationGatewayName: string, options: function, callback:
-        ServiceCallback<void>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: applicationGatewayName
-          type:
-            - string
-          description: ''
-        - id: options
-          type:
-            - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<void>
-          description: ''
-      return:
-        type:
-          - Promise<void>
   - uid: azure-arm-network.ApplicationGateways.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -601,6 +579,38 @@ items:
       return:
         type:
           - Promise<void>
+  - uid: azure-arm-network.ApplicationGateways.beginDeleteMethod_2
+    name: beginDeleteMethod
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified application gateway.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        applicationGatewayName: string, options: function, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationGatewayName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
   - uid: >-
       azure-arm-network.ApplicationGateways.beginDeleteMethodWithHttpOperationResponse
     name: beginDeleteMethodWithHttpOperationResponse
@@ -632,33 +642,6 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
-  - uid: azure-arm-network.ApplicationGateways.beginStart_1
-    name: beginStart
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Starts the specified application gateway.
-    syntax:
-      content: >-
-        function beginStart(resourceGroupName: string, applicationGatewayName:
-        string, callback: ServiceCallback<void>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: applicationGatewayName
-          type:
-            - string
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<void>
-          description: ''
-      return:
-        type:
-          - Promise<void>
   - uid: azure-arm-network.ApplicationGateways.beginStart_2
     name: beginStart
     children: []
@@ -720,6 +703,33 @@ items:
       return:
         type:
           - Promise<void>
+  - uid: azure-arm-network.ApplicationGateways.beginStart_1
+    name: beginStart
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Starts the specified application gateway.
+    syntax:
+      content: >-
+        function beginStart(resourceGroupName: string, applicationGatewayName:
+        string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationGatewayName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
   - uid: azure-arm-network.ApplicationGateways.beginStartWithHttpOperationResponse
     name: beginStartWithHttpOperationResponse
     children: []
@@ -750,33 +760,6 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
-  - uid: azure-arm-network.ApplicationGateways.beginStop_1
-    name: beginStop
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Stops the specified application gateway in a resource group.
-    syntax:
-      content: >-
-        function beginStop(resourceGroupName: string, applicationGatewayName:
-        string, callback: ServiceCallback<void>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: applicationGatewayName
-          type:
-            - string
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<void>
-          description: ''
-      return:
-        type:
-          - Promise<void>
   - uid: azure-arm-network.ApplicationGateways.beginStop
     name: beginStop
     children: []
@@ -804,6 +787,33 @@ items:
             - function
           description: ''
           optional: true
+      return:
+        type:
+          - Promise<void>
+  - uid: azure-arm-network.ApplicationGateways.beginStop_1
+    name: beginStop
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Stops the specified application gateway in a resource group.
+    syntax:
+      content: >-
+        function beginStop(resourceGroupName: string, applicationGatewayName:
+        string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationGatewayName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
       return:
         type:
           - Promise<void>
@@ -868,18 +878,18 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
-  - uid: azure-arm-network.ApplicationGateways.createOrUpdate_1
-    name: createOrUpdate
+  - uid: azure-arm-network.ApplicationGateways.beginUpdateTags_1
+    name: beginUpdateTags
     children: []
     type: method
     langs:
       - typeScript
-    summary: Creates or updates the specified application gateway.
+    summary: Updates the specified application gateway tags.
     syntax:
       content: >-
-        function createOrUpdate(resourceGroupName: string,
-        applicationGatewayName: string, parameters: ApplicationGateway,
-        callback: ServiceCallback<ApplicationGateway>)
+        function beginUpdateTags(resourceGroupName: string,
+        applicationGatewayName: string, parameters: TagsObject, callback:
+        ServiceCallback<ApplicationGateway>)
       parameters:
         - id: resourceGroupName
           type:
@@ -891,7 +901,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationGateway'
+            - '@azure-arm-network.TagsObject'
           description: ''
         - id: callback
           type:
@@ -900,6 +910,117 @@ items:
       return:
         type:
           - Promise<@azure-arm-network.ApplicationGateway>
+  - uid: azure-arm-network.ApplicationGateways.beginUpdateTags
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates the specified application gateway tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        applicationGatewayName: string, parameters: TagsObject, options?:
+        function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationGatewayName
+          type:
+            - string
+          description: |
+            The name of the application gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update application gateway
+            tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.ApplicationGateway>
+  - uid: azure-arm-network.ApplicationGateways.beginUpdateTags_2
+    name: beginUpdateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates the specified application gateway tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        applicationGatewayName: string, parameters: TagsObject, options:
+        function, callback: ServiceCallback<ApplicationGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationGatewayName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.ApplicationGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.ApplicationGateway>
+  - uid: >-
+      azure-arm-network.ApplicationGateways.beginUpdateTagsWithHttpOperationResponse
+    name: beginUpdateTagsWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates the specified application gateway tags.
+    syntax:
+      content: >-
+        function beginUpdateTagsWithHttpOperationResponse(resourceGroupName:
+        string, applicationGatewayName: string, parameters: TagsObject,
+        options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationGatewayName
+          type:
+            - string
+          description: |
+            The name of the application gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update application gateway
+            tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<ApplicationGateway>>
   - uid: azure-arm-network.ApplicationGateways.createOrUpdate
     name: createOrUpdate
     children: []
@@ -965,6 +1086,38 @@ items:
         - id: options
           type:
             - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.ApplicationGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.ApplicationGateway>
+  - uid: azure-arm-network.ApplicationGateways.createOrUpdate_1
+    name: createOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates the specified application gateway.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        applicationGatewayName: string, parameters: ApplicationGateway,
+        callback: ServiceCallback<ApplicationGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationGatewayName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.ApplicationGateway'
           description: ''
         - id: callback
           type:
@@ -1130,7 +1283,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
-  - uid: azure-arm-network.ApplicationGateways.get
+  - uid: azure-arm-network.ApplicationGateways.get_1
     name: get
     children: []
     type: method
@@ -1140,23 +1293,20 @@ items:
     syntax:
       content: >-
         function get(resourceGroupName: string, applicationGatewayName: string,
-        options?: function)
+        callback: ServiceCallback<ApplicationGateway>)
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |
-            The name of the resource group.
+          description: ''
         - id: applicationGatewayName
           type:
             - string
-          description: |
-            The name of the application gateway.
-        - id: options
-          type:
-            - function
           description: ''
-          optional: true
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.ApplicationGateway>
+          description: ''
       return:
         type:
           - Promise<@azure-arm-network.ApplicationGateway>
@@ -1191,7 +1341,7 @@ items:
       return:
         type:
           - Promise<@azure-arm-network.ApplicationGateway>
-  - uid: azure-arm-network.ApplicationGateways.get_1
+  - uid: azure-arm-network.ApplicationGateways.get
     name: get
     children: []
     type: method
@@ -1201,20 +1351,23 @@ items:
     syntax:
       content: >-
         function get(resourceGroupName: string, applicationGatewayName: string,
-        callback: ServiceCallback<ApplicationGateway>)
+        options?: function)
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: ''
+          description: |
+            The name of the resource group.
         - id: applicationGatewayName
           type:
             - string
-          description: ''
-        - id: callback
+          description: |
+            The name of the application gateway.
+        - id: options
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGateway>
+            - function
           description: ''
+          optional: true
       return:
         type:
           - Promise<@azure-arm-network.ApplicationGateway>
@@ -1604,6 +1757,24 @@ items:
       return:
         type:
           - Promise<ApplicationGatewayListResult>>
+  - uid: azure-arm-network.ApplicationGateways.listAvailableSslOptions
+    name: listAvailableSslOptions
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists available Ssl options for configuring Ssl policy.
+    syntax:
+      content: 'function listAvailableSslOptions(options?: function)'
+      parameters:
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.ApplicationGatewayAvailableSslOptions>
   - uid: azure-arm-network.ApplicationGateways.listAvailableSslOptions_1
     name: listAvailableSslOptions
     children: []
@@ -1648,24 +1819,6 @@ items:
       return:
         type:
           - Promise<@azure-arm-network.ApplicationGatewayAvailableSslOptions>
-  - uid: azure-arm-network.ApplicationGateways.listAvailableSslOptions
-    name: listAvailableSslOptions
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Lists available Ssl options for configuring Ssl policy.
-    syntax:
-      content: 'function listAvailableSslOptions(options?: function)'
-      parameters:
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<@azure-arm-network.ApplicationGatewayAvailableSslOptions>
   - uid: >-
       azure-arm-network.ApplicationGateways.listAvailableSslOptionsWithHttpOperationResponse
     name: listAvailableSslOptionsWithHttpOperationResponse
@@ -1687,25 +1840,6 @@ items:
       return:
         type:
           - Promise<ApplicationGatewayAvailableSslOptions>>
-  - uid: azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPolicies
-    name: listAvailableSslPredefinedPolicies
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Lists all SSL predefined policies for configuring Ssl policy.
-    syntax:
-      content: 'function listAvailableSslPredefinedPolicies(options?: function)'
-      parameters:
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
-      return:
-        type:
-          - >-
-            Promise<@azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
   - uid: azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPolicies_1
     name: listAvailableSslPredefinedPolicies
     children: []
@@ -1748,6 +1882,25 @@ items:
             - >-
               ServiceCallback<@azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
           description: ''
+      return:
+        type:
+          - >-
+            Promise<@azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
+  - uid: azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPolicies
+    name: listAvailableSslPredefinedPolicies
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all SSL predefined policies for configuring Ssl policy.
+    syntax:
+      content: 'function listAvailableSslPredefinedPolicies(options?: function)'
+      parameters:
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
       return:
         type:
           - >-
@@ -1888,6 +2041,25 @@ items:
       return:
         type:
           - Promise<ApplicationGatewayAvailableSslPredefinedPolicies>>
+  - uid: azure-arm-network.ApplicationGateways.listAvailableWafRuleSets
+    name: listAvailableWafRuleSets
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all available web application firewall rule sets.
+    syntax:
+      content: 'function listAvailableWafRuleSets(options?: function)'
+      parameters:
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<@azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>
   - uid: azure-arm-network.ApplicationGateways.listAvailableWafRuleSets_1
     name: listAvailableWafRuleSets
     children: []
@@ -1934,25 +2106,6 @@ items:
         type:
           - >-
             Promise<@azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>
-  - uid: azure-arm-network.ApplicationGateways.listAvailableWafRuleSets
-    name: listAvailableWafRuleSets
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Lists all available web application firewall rule sets.
-    syntax:
-      content: 'function listAvailableWafRuleSets(options?: function)'
-      parameters:
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
-      return:
-        type:
-          - >-
-            Promise<@azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>
   - uid: >-
       azure-arm-network.ApplicationGateways.listAvailableWafRuleSetsWithHttpOperationResponse
     name: listAvailableWafRuleSetsWithHttpOperationResponse
@@ -1974,30 +2127,6 @@ items:
       return:
         type:
           - Promise<ApplicationGatewayAvailableWafRuleSetsResult>>
-  - uid: azure-arm-network.ApplicationGateways.listNext
-    name: listNext
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Lists all application gateways in a resource group.
-    syntax:
-      content: 'function listNext(nextPageLink: string, options?: function)'
-      parameters:
-        - id: nextPageLink
-          type:
-            - string
-          description: |
-            The NextLink from the previous successful call
-            to List operation.
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<@azure-arm-network.ApplicationGatewayListResult>
   - uid: azure-arm-network.ApplicationGateways.listNext_1
     name: listNext
     children: []
@@ -2045,6 +2174,30 @@ items:
           type:
             - ServiceCallback<@azure-arm-network.ApplicationGatewayListResult>
           description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.ApplicationGatewayListResult>
+  - uid: azure-arm-network.ApplicationGateways.listNext
+    name: listNext
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all application gateways in a resource group.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: function)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
       return:
         type:
           - Promise<@azure-arm-network.ApplicationGatewayListResult>
@@ -2335,3 +2488,144 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+  - uid: azure-arm-network.ApplicationGateways.updateTags
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates the specified application gateway tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, applicationGatewayName:
+        string, parameters: TagsObject, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationGatewayName
+          type:
+            - string
+          description: |
+            The name of the application gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update application gateway
+            tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-network.ApplicationGateway>
+  - uid: azure-arm-network.ApplicationGateways.updateTags_1
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates the specified application gateway tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, applicationGatewayName:
+        string, parameters: TagsObject, callback:
+        ServiceCallback<ApplicationGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationGatewayName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.ApplicationGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.ApplicationGateway>
+  - uid: azure-arm-network.ApplicationGateways.updateTags_2
+    name: updateTags
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates the specified application gateway tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, applicationGatewayName:
+        string, parameters: TagsObject, options: function, callback:
+        ServiceCallback<ApplicationGateway>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationGatewayName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-network.ApplicationGateway>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-network.ApplicationGateway>
+  - uid: azure-arm-network.ApplicationGateways.updateTagsWithHttpOperationResponse
+    name: updateTagsWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates the specified application gateway tags.
+    syntax:
+      content: >-
+        function updateTagsWithHttpOperationResponse(resourceGroupName: string,
+        applicationGatewayName: string, parameters: TagsObject, options?:
+        function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationGatewayName
+          type:
+            - string
+          description: |
+            The name of the application gateway.
+        - id: parameters
+          type:
+            - '@azure-arm-network.TagsObject'
+          description: |
+            Parameters supplied to update application gateway
+            tags.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<ApplicationGateway>>
