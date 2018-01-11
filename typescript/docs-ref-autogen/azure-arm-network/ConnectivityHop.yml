@@ -25,7 +25,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string address
+      content: 'address?: string'
       return:
         type:
           - string
@@ -39,7 +39,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string id
+      content: 'id?: string'
       return:
         type:
           - string
@@ -53,7 +53,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ConnectivityIssue[] issues'
+      content: 'issues?: ConnectivityIssue[]'
       return:
         type:
           - '@azure-arm-network.ConnectivityIssue[]'
@@ -67,7 +67,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] nextHopIds'
+      content: 'nextHopIds?: string[]'
       return:
         type:
           - 'string[]'
@@ -81,7 +81,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string resourceId
+      content: 'resourceId?: string'
       return:
         type:
           - string
@@ -95,7 +95,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string type
+      content: 'type?: string'
       return:
         type:
           - string

@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'DataDisk[] dataDisks'
+      content: 'dataDisks?: DataDisk[]'
       return:
         type:
           - '@azure-arm-compute.DataDisk[]'
@@ -36,7 +36,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ImageReference imageReference
+      content: 'imageReference?: ImageReference'
       return:
         type:
           - '@azure-arm-compute.ImageReference'
@@ -50,7 +50,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: OSDisk osDisk
+      content: 'osDisk?: OSDisk'
       return:
         type:
           - '@azure-arm-compute.OSDisk'

@@ -33,7 +33,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -47,7 +47,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SubResource[] inboundNatPools'
+      content: 'inboundNatPools?: SubResource[]'
       return:
         type:
           - '@azure-arm-network.SubResource[]'
@@ -61,7 +61,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SubResource[] inboundNatRules'
+      content: 'inboundNatRules?: SubResource[]'
       return:
         type:
           - '@azure-arm-network.SubResource[]'
@@ -75,7 +75,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SubResource[] loadBalancingRules'
+      content: 'loadBalancingRules?: SubResource[]'
       return:
         type:
           - '@azure-arm-network.SubResource[]'
@@ -89,7 +89,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -103,7 +103,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SubResource[] outboundNatRules'
+      content: 'outboundNatRules?: SubResource[]'
       return:
         type:
           - '@azure-arm-network.SubResource[]'
@@ -117,7 +117,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string privateIPAddress
+      content: 'privateIPAddress?: string'
       return:
         type:
           - string
@@ -131,7 +131,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string privateIPAllocationMethod
+      content: 'privateIPAllocationMethod?: string'
       return:
         type:
           - string
@@ -145,7 +145,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -159,7 +159,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: PublicIPAddress publicIPAddress
+      content: 'publicIPAddress?: PublicIPAddress'
       return:
         type:
           - '@azure-arm-network.PublicIPAddress'
@@ -173,7 +173,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Subnet subnet
+      content: 'subnet?: Subnet'
       return:
         type:
           - '@azure-arm-network.Subnet'
@@ -187,7 +187,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] zones'
+      content: 'zones?: string[]'
       return:
         type:
           - 'string[]'

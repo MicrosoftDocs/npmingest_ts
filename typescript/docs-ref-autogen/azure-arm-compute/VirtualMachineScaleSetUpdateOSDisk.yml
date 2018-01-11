@@ -23,7 +23,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string caching
+      content: 'caching?: string'
       return:
         type:
           - string
@@ -37,7 +37,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualHardDisk image
+      content: 'image?: VirtualHardDisk'
       return:
         type:
           - '@azure-arm-compute.VirtualHardDisk'
@@ -51,7 +51,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualMachineScaleSetManagedDiskParameters managedDisk
+      content: 'managedDisk?: VirtualMachineScaleSetManagedDiskParameters'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetManagedDiskParameters'
@@ -65,7 +65,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] vhdContainers'
+      content: 'vhdContainers?: string[]'
       return:
         type:
           - 'string[]'

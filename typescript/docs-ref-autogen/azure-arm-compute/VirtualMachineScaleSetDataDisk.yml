@@ -25,7 +25,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string caching
+      content: 'caching?: string'
       return:
         type:
           - string
@@ -38,7 +38,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string createOption
+      content: 'createOption: string'
       return:
         type:
           - string
@@ -52,7 +52,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number diskSizeGB
+      content: 'diskSizeGB?: number'
       return:
         type:
           - number
@@ -65,7 +65,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: number lun
+      content: 'lun: number'
       return:
         type:
           - number
@@ -79,7 +79,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualMachineScaleSetManagedDiskParameters managedDisk
+      content: 'managedDisk?: VirtualMachineScaleSetManagedDiskParameters'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetManagedDiskParameters'
@@ -93,7 +93,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string

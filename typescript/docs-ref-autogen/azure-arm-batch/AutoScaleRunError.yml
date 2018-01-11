@@ -21,7 +21,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string code
+      content: 'code: string'
       return:
         type:
           - string
@@ -35,7 +35,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'AutoScaleRunError[] details'
+      content: 'details?: AutoScaleRunError[]'
       return:
         type:
           - '@azure-arm-batch.AutoScaleRunError[]'
@@ -48,7 +48,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string message
+      content: 'message: string'
       return:
         type:
           - string

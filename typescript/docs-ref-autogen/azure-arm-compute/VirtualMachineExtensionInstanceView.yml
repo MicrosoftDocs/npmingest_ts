@@ -24,7 +24,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -38,7 +38,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'InstanceViewStatus[] statuses'
+      content: 'statuses?: InstanceViewStatus[]'
       return:
         type:
           - '@azure-arm-compute.InstanceViewStatus[]'
@@ -52,7 +52,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'InstanceViewStatus[] substatuses'
+      content: 'substatuses?: InstanceViewStatus[]'
       return:
         type:
           - '@azure-arm-compute.InstanceViewStatus[]'
@@ -66,7 +66,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string type
+      content: 'type?: string'
       return:
         type:
           - string
@@ -80,7 +80,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string typeHandlerVersion
+      content: 'typeHandlerVersion?: string'
       return:
         type:
           - string

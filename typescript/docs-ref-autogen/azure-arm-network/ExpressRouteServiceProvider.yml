@@ -24,7 +24,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ExpressRouteServiceProviderBandwidthsOffered[] bandwidthsOffered'
+      content: 'bandwidthsOffered?: ExpressRouteServiceProviderBandwidthsOffered[]'
       return:
         type:
           - '@azure-arm-network.ExpressRouteServiceProviderBandwidthsOffered[]'
@@ -38,7 +38,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] peeringLocations'
+      content: 'peeringLocations?: string[]'
       return:
         type:
           - 'string[]'
@@ -52,7 +52,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string

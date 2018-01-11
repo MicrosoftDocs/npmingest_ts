@@ -24,7 +24,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'DataDiskImage[] dataDiskImages'
+      content: 'dataDiskImages?: DataDiskImage[]'
       return:
         type:
           - '@azure-arm-compute.DataDiskImage[]'
@@ -38,7 +38,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: OSDiskImage osDiskImage
+      content: 'osDiskImage?: OSDiskImage'
       return:
         type:
           - '@azure-arm-compute.OSDiskImage'
@@ -52,7 +52,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: PurchasePlan plan
+      content: 'plan?: PurchasePlan'
       return:
         type:
           - '@azure-arm-compute.PurchasePlan'

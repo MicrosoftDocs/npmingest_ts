@@ -26,7 +26,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number avgLatencyInMs
+      content: 'avgLatencyInMs?: number'
       return:
         type:
           - number
@@ -40,7 +40,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string connectionStatus
+      content: 'connectionStatus?: string'
       return:
         type:
           - string
@@ -54,7 +54,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ConnectivityHop[] hops'
+      content: 'hops?: ConnectivityHop[]'
       return:
         type:
           - '@azure-arm-network.ConnectivityHop[]'
@@ -68,7 +68,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number maxLatencyInMs
+      content: 'maxLatencyInMs?: number'
       return:
         type:
           - number
@@ -82,7 +82,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number minLatencyInMs
+      content: 'minLatencyInMs?: number'
       return:
         type:
           - number
@@ -96,7 +96,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number probesFailed
+      content: 'probesFailed?: number'
       return:
         type:
           - number
@@ -110,7 +110,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number probesSent
+      content: 'probesSent?: number'
       return:
         type:
           - number

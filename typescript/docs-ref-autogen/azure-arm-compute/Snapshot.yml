@@ -28,7 +28,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: CreationData creationData
+      content: 'creationData: CreationData'
       return:
         type:
           - '@azure-arm-compute.CreationData'
@@ -42,7 +42,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number diskSizeGB
+      content: 'diskSizeGB?: number'
       return:
         type:
           - number
@@ -56,7 +56,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: EncryptionSettings encryptionSettings
+      content: 'encryptionSettings?: EncryptionSettings'
       return:
         type:
           - '@azure-arm-compute.EncryptionSettings'
@@ -70,7 +70,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string managedBy
+      content: 'managedBy?: string'
       return:
         type:
           - string
@@ -84,7 +84,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string osType
+      content: 'osType?: string'
       return:
         type:
           - string
@@ -98,7 +98,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -112,7 +112,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: DiskSku sku
+      content: 'sku?: DiskSku'
       return:
         type:
           - '@azure-arm-compute.DiskSku'
@@ -126,7 +126,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Date timeCreated
+      content: 'timeCreated?: Date'
       return:
         type:
           - Date

@@ -27,7 +27,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string blobUri
+      content: 'blobUri?: string'
       return:
         type:
           - string
@@ -41,7 +41,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string caching
+      content: 'caching?: string'
       return:
         type:
           - string
@@ -55,7 +55,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number diskSizeGB
+      content: 'diskSizeGB?: number'
       return:
         type:
           - number
@@ -69,7 +69,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource managedDisk
+      content: 'managedDisk?: SubResource'
       return:
         type:
           - '@azure-arm-compute.SubResource'
@@ -82,7 +82,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string osState
+      content: 'osState: string'
       return:
         type:
           - string
@@ -95,7 +95,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string osType
+      content: 'osType: string'
       return:
         type:
           - string
@@ -109,7 +109,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource snapshot
+      content: 'snapshot?: SubResource'
       return:
         type:
           - '@azure-arm-compute.SubResource'
@@ -123,7 +123,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string storageAccountType
+      content: 'storageAccountType?: string'
       return:
         type:
           - string

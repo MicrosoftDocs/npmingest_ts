@@ -24,7 +24,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'LogSpecification[] logSpecifications'
+      content: 'logSpecifications?: LogSpecification[]'
       return:
         type:
           - '@azure-arm-network.LogSpecification[]'
@@ -39,7 +39,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'MetricSpecification[] metricSpecifications'
+      content: 'metricSpecifications?: MetricSpecification[]'
       return:
         type:
           - '@azure-arm-network.MetricSpecification[]'

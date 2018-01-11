@@ -22,7 +22,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string code
+      content: 'code: string'
       return:
         type:
           - string
@@ -36,7 +36,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'DeleteCertificateError[] details'
+      content: 'details?: DeleteCertificateError[]'
       return:
         type:
           - '@azure-arm-batch.DeleteCertificateError[]'
@@ -49,7 +49,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string message
+      content: 'message: string'
       return:
         type:
           - string
@@ -63,7 +63,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string target
+      content: 'target?: string'
       return:
         type:
           - string

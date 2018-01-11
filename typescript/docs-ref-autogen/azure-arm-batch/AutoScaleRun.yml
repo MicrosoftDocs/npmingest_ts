@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: AutoScaleRunError error
+      content: 'error?: AutoScaleRunError'
       return:
         type:
           - '@azure-arm-batch.AutoScaleRunError'
@@ -35,7 +35,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: Date evaluationTime
+      content: 'evaluationTime: Date'
       return:
         type:
           - Date
@@ -49,7 +49,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string results
+      content: 'results?: string'
       return:
         type:
           - string

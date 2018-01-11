@@ -73,7 +73,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string acceptLanguage
+      content: 'acceptLanguage: string'
       return:
         type:
           - string
@@ -86,7 +86,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: ApplicationGateways applicationGateways
+      content: 'applicationGateways: ApplicationGateways'
       return:
         type:
           - '@azure-arm-network.ApplicationGateways'
@@ -99,7 +99,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: ApplicationSecurityGroups applicationSecurityGroups
+      content: 'applicationSecurityGroups: ApplicationSecurityGroups'
       return:
         type:
           - '@azure-arm-network.ApplicationSecurityGroups'
@@ -112,7 +112,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: AvailableEndpointServices availableEndpointServices
+      content: 'availableEndpointServices: AvailableEndpointServices'
       return:
         type:
           - '@azure-arm-network.AvailableEndpointServices'
@@ -125,7 +125,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: BgpServiceCommunities bgpServiceCommunities
+      content: 'bgpServiceCommunities: BgpServiceCommunities'
       return:
         type:
           - '@azure-arm-network.BgpServiceCommunities'
@@ -280,7 +280,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: ServiceClientCredentials credentials
+      content: 'credentials: ServiceClientCredentials'
       return:
         type:
           - ServiceClientCredentials
@@ -293,7 +293,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: DefaultSecurityRules defaultSecurityRules
+      content: 'defaultSecurityRules: DefaultSecurityRules'
       return:
         type:
           - '@azure-arm-network.DefaultSecurityRules'
@@ -307,7 +307,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: ExpressRouteCircuitAuthorizations expressRouteCircuitAuthorizations
+      content: 'expressRouteCircuitAuthorizations: ExpressRouteCircuitAuthorizations'
       return:
         type:
           - '@azure-arm-network.ExpressRouteCircuitAuthorizations'
@@ -320,7 +320,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: ExpressRouteCircuitPeerings expressRouteCircuitPeerings
+      content: 'expressRouteCircuitPeerings: ExpressRouteCircuitPeerings'
       return:
         type:
           - '@azure-arm-network.ExpressRouteCircuitPeerings'
@@ -333,7 +333,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: ExpressRouteCircuits expressRouteCircuits
+      content: 'expressRouteCircuits: ExpressRouteCircuits'
       return:
         type:
           - '@azure-arm-network.ExpressRouteCircuits'
@@ -346,7 +346,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: ExpressRouteServiceProviders expressRouteServiceProviders
+      content: 'expressRouteServiceProviders: ExpressRouteServiceProviders'
       return:
         type:
           - '@azure-arm-network.ExpressRouteServiceProviders'
@@ -359,7 +359,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: boolean generateClientRequestId
+      content: 'generateClientRequestId: boolean'
       return:
         type:
           - boolean
@@ -372,7 +372,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: InboundNatRules inboundNatRules
+      content: 'inboundNatRules: InboundNatRules'
       return:
         type:
           - '@azure-arm-network.InboundNatRules'
@@ -385,7 +385,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: LoadBalancerBackendAddressPools loadBalancerBackendAddressPools
+      content: 'loadBalancerBackendAddressPools: LoadBalancerBackendAddressPools'
       return:
         type:
           - '@azure-arm-network.LoadBalancerBackendAddressPools'
@@ -400,8 +400,8 @@ items:
     summary: ''
     syntax:
       content: >-
+        loadBalancerFrontendIPConfigurations:
         LoadBalancerFrontendIPConfigurations
-        loadBalancerFrontendIPConfigurations
       return:
         type:
           - '@azure-arm-network.LoadBalancerFrontendIPConfigurations'
@@ -414,7 +414,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: LoadBalancerLoadBalancingRules loadBalancerLoadBalancingRules
+      content: 'loadBalancerLoadBalancingRules: LoadBalancerLoadBalancingRules'
       return:
         type:
           - '@azure-arm-network.LoadBalancerLoadBalancingRules'
@@ -427,7 +427,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: LoadBalancerNetworkInterfaces loadBalancerNetworkInterfaces
+      content: 'loadBalancerNetworkInterfaces: LoadBalancerNetworkInterfaces'
       return:
         type:
           - '@azure-arm-network.LoadBalancerNetworkInterfaces'
@@ -440,7 +440,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: LoadBalancerProbes loadBalancerProbes
+      content: 'loadBalancerProbes: LoadBalancerProbes'
       return:
         type:
           - '@azure-arm-network.LoadBalancerProbes'
@@ -453,7 +453,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: LoadBalancers loadBalancers
+      content: 'loadBalancers: LoadBalancers'
       return:
         type:
           - '@azure-arm-network.LoadBalancers'
@@ -466,7 +466,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: LocalNetworkGateways localNetworkGateways
+      content: 'localNetworkGateways: LocalNetworkGateways'
       return:
         type:
           - '@azure-arm-network.LocalNetworkGateways'
@@ -479,7 +479,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: number longRunningOperationRetryTimeout
+      content: 'longRunningOperationRetryTimeout: number'
       return:
         type:
           - number
@@ -492,7 +492,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: NetworkInterfaceIPConfigurations networkInterfaceIPConfigurations
+      content: 'networkInterfaceIPConfigurations: NetworkInterfaceIPConfigurations'
       return:
         type:
           - '@azure-arm-network.NetworkInterfaceIPConfigurations'
@@ -505,7 +505,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: NetworkInterfaceLoadBalancers networkInterfaceLoadBalancers
+      content: 'networkInterfaceLoadBalancers: NetworkInterfaceLoadBalancers'
       return:
         type:
           - '@azure-arm-network.NetworkInterfaceLoadBalancers'
@@ -518,7 +518,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: NetworkInterfaces networkInterfaces
+      content: 'networkInterfaces: NetworkInterfaces'
       return:
         type:
           - '@azure-arm-network.NetworkInterfaces'
@@ -566,7 +566,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: NetworkSecurityGroups networkSecurityGroups
+      content: 'networkSecurityGroups: NetworkSecurityGroups'
       return:
         type:
           - '@azure-arm-network.NetworkSecurityGroups'
@@ -579,7 +579,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: NetworkWatchers networkWatchers
+      content: 'networkWatchers: NetworkWatchers'
       return:
         type:
           - '@azure-arm-network.NetworkWatchers'
@@ -592,7 +592,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: Operations operations
+      content: 'operations: Operations'
       return:
         type:
           - '@azure-arm-network.Operations'
@@ -605,7 +605,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: PacketCaptures packetCaptures
+      content: 'packetCaptures: PacketCaptures'
       return:
         type:
           - '@azure-arm-network.PacketCaptures'
@@ -618,7 +618,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: PublicIPAddresses publicIPAddresses
+      content: 'publicIPAddresses: PublicIPAddresses'
       return:
         type:
           - '@azure-arm-network.PublicIPAddresses'
@@ -631,7 +631,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: RouteFilterRules routeFilterRules
+      content: 'routeFilterRules: RouteFilterRules'
       return:
         type:
           - '@azure-arm-network.RouteFilterRules'
@@ -644,7 +644,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: RouteFilters routeFilters
+      content: 'routeFilters: RouteFilters'
       return:
         type:
           - '@azure-arm-network.RouteFilters'
@@ -657,7 +657,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: Routes routes
+      content: 'routes: Routes'
       return:
         type:
           - '@azure-arm-network.Routes'
@@ -670,7 +670,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: RouteTables routeTables
+      content: 'routeTables: RouteTables'
       return:
         type:
           - '@azure-arm-network.RouteTables'
@@ -683,7 +683,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: SecurityRules securityRules
+      content: 'securityRules: SecurityRules'
       return:
         type:
           - '@azure-arm-network.SecurityRules'
@@ -696,7 +696,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: Subnets subnets
+      content: 'subnets: Subnets'
       return:
         type:
           - '@azure-arm-network.Subnets'
@@ -709,7 +709,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string subscriptionId
+      content: 'subscriptionId: string'
       return:
         type:
           - string
@@ -722,7 +722,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: Usages usages
+      content: 'usages: Usages'
       return:
         type:
           - '@azure-arm-network.Usages'
@@ -735,7 +735,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: VirtualNetworkGatewayConnections virtualNetworkGatewayConnections
+      content: 'virtualNetworkGatewayConnections: VirtualNetworkGatewayConnections'
       return:
         type:
           - '@azure-arm-network.VirtualNetworkGatewayConnections'
@@ -748,7 +748,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: VirtualNetworkGateways virtualNetworkGateways
+      content: 'virtualNetworkGateways: VirtualNetworkGateways'
       return:
         type:
           - '@azure-arm-network.VirtualNetworkGateways'
@@ -761,7 +761,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: VirtualNetworkPeerings virtualNetworkPeerings
+      content: 'virtualNetworkPeerings: VirtualNetworkPeerings'
       return:
         type:
           - '@azure-arm-network.VirtualNetworkPeerings'
@@ -774,7 +774,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: VirtualNetworks virtualNetworks
+      content: 'virtualNetworks: VirtualNetworks'
       return:
         type:
           - '@azure-arm-network.VirtualNetworks'

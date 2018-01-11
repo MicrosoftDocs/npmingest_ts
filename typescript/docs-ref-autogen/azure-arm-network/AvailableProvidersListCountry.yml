@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string countryName
+      content: 'countryName?: string'
       return:
         type:
           - string
@@ -36,7 +36,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] providers'
+      content: 'providers?: string[]'
       return:
         type:
           - 'string[]'
@@ -50,7 +50,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'AvailableProvidersListState[] states'
+      content: 'states?: AvailableProvidersListState[]'
       return:
         type:
           - '@azure-arm-network.AvailableProvidersListState[]'

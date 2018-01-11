@@ -23,7 +23,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'RoutingEventHubProperties[] eventHubs'
+      content: 'eventHubs?: RoutingEventHubProperties[]'
       return:
         type:
           - '@azure-arm-iothub.RoutingEventHubProperties[]'
@@ -37,7 +37,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'RoutingServiceBusQueueEndpointProperties[] serviceBusQueues'
+      content: 'serviceBusQueues?: RoutingServiceBusQueueEndpointProperties[]'
       return:
         type:
           - '@azure-arm-iothub.RoutingServiceBusQueueEndpointProperties[]'
@@ -51,7 +51,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'RoutingServiceBusTopicEndpointProperties[] serviceBusTopics'
+      content: 'serviceBusTopics?: RoutingServiceBusTopicEndpointProperties[]'
       return:
         type:
           - '@azure-arm-iothub.RoutingServiceBusTopicEndpointProperties[]'
@@ -65,7 +65,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'RoutingStorageContainerProperties[] storageContainers'
+      content: 'storageContainers?: RoutingStorageContainerProperties[]'
       return:
         type:
           - '@azure-arm-iothub.RoutingStorageContainerProperties[]'

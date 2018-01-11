@@ -29,7 +29,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] availableCipherSuites'
+      content: 'availableCipherSuites?: string[]'
       return:
         type:
           - 'string[]'
@@ -43,7 +43,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] availableProtocols'
+      content: 'availableProtocols?: string[]'
       return:
         type:
           - 'string[]'
@@ -57,7 +57,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string defaultPolicy
+      content: 'defaultPolicy?: string'
       return:
         type:
           - string
@@ -71,7 +71,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SubResource[] predefinedPolicies'
+      content: 'predefinedPolicies?: SubResource[]'
       return:
         type:
           - '@azure-arm-network.SubResource[]'

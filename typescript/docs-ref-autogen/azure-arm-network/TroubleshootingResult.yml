@@ -23,7 +23,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string code
+      content: 'code?: string'
       return:
         type:
           - string
@@ -37,7 +37,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Date endTime
+      content: 'endTime?: Date'
       return:
         type:
           - Date
@@ -51,7 +51,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'TroubleshootingDetails[] results'
+      content: 'results?: TroubleshootingDetails[]'
       return:
         type:
           - '@azure-arm-network.TroubleshootingDetails[]'
@@ -65,7 +65,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Date startTime
+      content: 'startTime?: Date'
       return:
         type:
           - Date

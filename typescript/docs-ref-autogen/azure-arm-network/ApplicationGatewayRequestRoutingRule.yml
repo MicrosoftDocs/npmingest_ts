@@ -34,7 +34,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource backendAddressPool
+      content: 'backendAddressPool?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -48,7 +48,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource backendHttpSettings
+      content: 'backendHttpSettings?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -62,7 +62,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -76,7 +76,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource httpListener
+      content: 'httpListener?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -90,7 +90,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -104,7 +104,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -119,7 +119,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource redirectConfiguration
+      content: 'redirectConfiguration?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -133,7 +133,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string ruleType
+      content: 'ruleType?: string'
       return:
         type:
           - string
@@ -147,7 +147,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string type
+      content: 'type?: string'
       return:
         type:
           - string
@@ -161,7 +161,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource urlPathMap
+      content: 'urlPathMap?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'

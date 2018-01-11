@@ -28,7 +28,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ExpressRouteCircuitPeeringConfig microsoftPeeringConfig
+      content: 'microsoftPeeringConfig?: ExpressRouteCircuitPeeringConfig'
       return:
         type:
           - '@azure-arm-network.ExpressRouteCircuitPeeringConfig'
@@ -43,7 +43,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string primaryPeerAddressPrefix
+      content: 'primaryPeerAddressPrefix?: string'
       return:
         type:
           - string
@@ -57,7 +57,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: RouteFilter routeFilter
+      content: 'routeFilter?: RouteFilter'
       return:
         type:
           - '@azure-arm-network.RouteFilter'
@@ -72,7 +72,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string secondaryPeerAddressPrefix
+      content: 'secondaryPeerAddressPrefix?: string'
       return:
         type:
           - string
@@ -86,7 +86,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string state
+      content: 'state?: string'
       return:
         type:
           - string

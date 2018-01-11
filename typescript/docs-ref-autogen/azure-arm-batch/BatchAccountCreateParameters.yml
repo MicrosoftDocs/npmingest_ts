@@ -24,7 +24,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: AutoStorageBaseProperties autoStorage
+      content: 'autoStorage?: AutoStorageBaseProperties'
       return:
         type:
           - '@azure-arm-batch.AutoStorageBaseProperties'
@@ -38,7 +38,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: KeyVaultReference keyVaultReference
+      content: 'keyVaultReference?: KeyVaultReference'
       return:
         type:
           - '@azure-arm-batch.KeyVaultReference'
@@ -51,7 +51,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string location
+      content: 'location: string'
       return:
         type:
           - string
@@ -65,7 +65,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string poolAllocationMode
+      content: 'poolAllocationMode?: string'
       return:
         type:
           - string
@@ -79,7 +79,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: '[key: string]: string tags'
+      content: 'tags?: [key: string]: string'
       return:
         type:
           - '[key: string]: string'

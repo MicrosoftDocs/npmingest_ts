@@ -29,7 +29,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'ContainerServiceAgentPoolProfile[] agentPoolProfiles'
+      content: 'agentPoolProfiles: ContainerServiceAgentPoolProfile[]'
       return:
         type:
           - '@azure-arm-compute.ContainerServiceAgentPoolProfile[]'
@@ -43,7 +43,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ContainerServiceCustomProfile customProfile
+      content: 'customProfile?: ContainerServiceCustomProfile'
       return:
         type:
           - '@azure-arm-compute.ContainerServiceCustomProfile'
@@ -57,7 +57,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ContainerServiceDiagnosticsProfile diagnosticsProfile
+      content: 'diagnosticsProfile?: ContainerServiceDiagnosticsProfile'
       return:
         type:
           - '@azure-arm-compute.ContainerServiceDiagnosticsProfile'
@@ -70,7 +70,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: ContainerServiceLinuxProfile linuxProfile
+      content: 'linuxProfile: ContainerServiceLinuxProfile'
       return:
         type:
           - '@azure-arm-compute.ContainerServiceLinuxProfile'
@@ -83,7 +83,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: ContainerServiceMasterProfile masterProfile
+      content: 'masterProfile: ContainerServiceMasterProfile'
       return:
         type:
           - '@azure-arm-compute.ContainerServiceMasterProfile'
@@ -97,7 +97,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ContainerServiceOrchestratorProfile orchestratorProfile
+      content: 'orchestratorProfile?: ContainerServiceOrchestratorProfile'
       return:
         type:
           - '@azure-arm-compute.ContainerServiceOrchestratorProfile'
@@ -111,7 +111,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -125,7 +125,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ContainerServiceServicePrincipalProfile servicePrincipalProfile
+      content: 'servicePrincipalProfile?: ContainerServiceServicePrincipalProfile'
       return:
         type:
           - '@azure-arm-compute.ContainerServiceServicePrincipalProfile'
@@ -139,7 +139,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ContainerServiceWindowsProfile windowsProfile
+      content: 'windowsProfile?: ContainerServiceWindowsProfile'
       return:
         type:
           - '@azure-arm-compute.ContainerServiceWindowsProfile'

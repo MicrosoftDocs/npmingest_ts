@@ -23,7 +23,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string authenticationMethod
+      content: 'authenticationMethod?: string'
       return:
         type:
           - string
@@ -37,7 +37,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] clientRootCertificates'
+      content: 'clientRootCertificates?: string[]'
       return:
         type:
           - 'string[]'
@@ -51,7 +51,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string processorArchitecture
+      content: 'processorArchitecture?: string'
       return:
         type:
           - string
@@ -65,7 +65,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string radiusServerAuthCertificate
+      content: 'radiusServerAuthCertificate?: string'
       return:
         type:
           - string

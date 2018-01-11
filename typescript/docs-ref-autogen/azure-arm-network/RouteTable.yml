@@ -26,7 +26,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean disableBgpRoutePropagation
+      content: 'disableBgpRoutePropagation?: boolean'
       return:
         type:
           - boolean
@@ -40,7 +40,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -54,7 +54,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -68,7 +68,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'Route[] routes'
+      content: 'routes?: Route[]'
       return:
         type:
           - '@azure-arm-network.Route[]'
@@ -82,7 +82,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'Subnet[] subnets'
+      content: 'subnets?: Subnet[]'
       return:
         type:
           - '@azure-arm-network.Subnet[]'

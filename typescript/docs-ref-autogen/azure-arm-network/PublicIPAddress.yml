@@ -32,7 +32,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: PublicIPAddressDnsSettings dnsSettings
+      content: 'dnsSettings?: PublicIPAddressDnsSettings'
       return:
         type:
           - '@azure-arm-network.PublicIPAddressDnsSettings'
@@ -46,7 +46,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -60,7 +60,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number idleTimeoutInMinutes
+      content: 'idleTimeoutInMinutes?: number'
       return:
         type:
           - number
@@ -74,7 +74,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string ipAddress
+      content: 'ipAddress?: string'
       return:
         type:
           - string
@@ -88,7 +88,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: IPConfiguration ipConfiguration
+      content: 'ipConfiguration?: IPConfiguration'
       return:
         type:
           - '@azure-arm-network.IPConfiguration'
@@ -102,7 +102,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -116,7 +116,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string publicIPAddressVersion
+      content: 'publicIPAddressVersion?: string'
       return:
         type:
           - string
@@ -130,7 +130,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string publicIPAllocationMethod
+      content: 'publicIPAllocationMethod?: string'
       return:
         type:
           - string
@@ -144,7 +144,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string resourceGuid
+      content: 'resourceGuid?: string'
       return:
         type:
           - string
@@ -158,7 +158,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: PublicIPAddressSku sku
+      content: 'sku?: PublicIPAddressSku'
       return:
         type:
           - '@azure-arm-network.PublicIPAddressSku'
@@ -172,7 +172,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] zones'
+      content: 'zones?: string[]'
       return:
         type:
           - 'string[]'

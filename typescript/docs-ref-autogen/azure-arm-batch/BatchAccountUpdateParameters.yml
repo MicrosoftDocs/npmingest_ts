@@ -21,7 +21,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: AutoStorageBaseProperties autoStorage
+      content: 'autoStorage?: AutoStorageBaseProperties'
       return:
         type:
           - '@azure-arm-batch.AutoStorageBaseProperties'
@@ -35,7 +35,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: '[key: string]: string tags'
+      content: 'tags?: [key: string]: string'
       return:
         type:
           - '[key: string]: string'

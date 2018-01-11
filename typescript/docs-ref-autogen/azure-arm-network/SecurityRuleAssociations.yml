@@ -23,7 +23,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SecurityRule[] defaultSecurityRules'
+      content: 'defaultSecurityRules?: SecurityRule[]'
       return:
         type:
           - '@azure-arm-network.SecurityRule[]'
@@ -37,7 +37,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'EffectiveNetworkSecurityRule[] effectiveSecurityRules'
+      content: 'effectiveSecurityRules?: EffectiveNetworkSecurityRule[]'
       return:
         type:
           - '@azure-arm-network.EffectiveNetworkSecurityRule[]'
@@ -51,7 +51,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: NetworkInterfaceAssociation networkInterfaceAssociation
+      content: 'networkInterfaceAssociation?: NetworkInterfaceAssociation'
       return:
         type:
           - '@azure-arm-network.NetworkInterfaceAssociation'
@@ -65,7 +65,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubnetAssociation subnetAssociation
+      content: 'subnetAssociation?: SubnetAssociation'
       return:
         type:
           - '@azure-arm-network.SubnetAssociation'

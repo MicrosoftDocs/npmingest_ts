@@ -45,7 +45,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string allocationState
+      content: 'allocationState?: string'
       return:
         type:
           - string
@@ -59,7 +59,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Date allocationStateTransitionTime
+      content: 'allocationStateTransitionTime?: Date'
       return:
         type:
           - Date
@@ -73,7 +73,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] applicationLicenses'
+      content: 'applicationLicenses?: string[]'
       return:
         type:
           - 'string[]'
@@ -87,7 +87,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationPackageReference[] applicationPackages'
+      content: 'applicationPackages?: ApplicationPackageReference[]'
       return:
         type:
           - '@azure-arm-batch.ApplicationPackageReference[]'
@@ -101,7 +101,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: AutoScaleRun autoScaleRun
+      content: 'autoScaleRun?: AutoScaleRun'
       return:
         type:
           - '@azure-arm-batch.AutoScaleRun'
@@ -115,7 +115,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'CertificateReference[] certificates'
+      content: 'certificates?: CertificateReference[]'
       return:
         type:
           - '@azure-arm-batch.CertificateReference[]'
@@ -129,7 +129,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Date creationTime
+      content: 'creationTime?: Date'
       return:
         type:
           - Date
@@ -143,7 +143,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number currentDedicatedNodes
+      content: 'currentDedicatedNodes?: number'
       return:
         type:
           - number
@@ -157,7 +157,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number currentLowPriorityNodes
+      content: 'currentLowPriorityNodes?: number'
       return:
         type:
           - number
@@ -171,7 +171,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: DeploymentConfiguration deploymentConfiguration
+      content: 'deploymentConfiguration?: DeploymentConfiguration'
       return:
         type:
           - '@azure-arm-batch.DeploymentConfiguration'
@@ -185,7 +185,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string displayName
+      content: 'displayName?: string'
       return:
         type:
           - string
@@ -199,7 +199,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string interNodeCommunication
+      content: 'interNodeCommunication?: string'
       return:
         type:
           - string
@@ -213,7 +213,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Date lastModified
+      content: 'lastModified?: Date'
       return:
         type:
           - Date
@@ -227,7 +227,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number maxTasksPerNode
+      content: 'maxTasksPerNode?: number'
       return:
         type:
           - number
@@ -241,7 +241,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'MetadataItem[] metadata'
+      content: 'metadata?: MetadataItem[]'
       return:
         type:
           - '@azure-arm-batch.MetadataItem[]'
@@ -255,7 +255,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: NetworkConfiguration networkConfiguration
+      content: 'networkConfiguration?: NetworkConfiguration'
       return:
         type:
           - '@azure-arm-batch.NetworkConfiguration'
@@ -269,7 +269,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -283,7 +283,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Date provisioningStateTransitionTime
+      content: 'provisioningStateTransitionTime?: Date'
       return:
         type:
           - Date
@@ -297,7 +297,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ResizeOperationStatus resizeOperationStatus
+      content: 'resizeOperationStatus?: ResizeOperationStatus'
       return:
         type:
           - '@azure-arm-batch.ResizeOperationStatus'
@@ -311,7 +311,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ScaleSettings scaleSettings
+      content: 'scaleSettings?: ScaleSettings'
       return:
         type:
           - '@azure-arm-batch.ScaleSettings'
@@ -325,7 +325,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: StartTask startTask
+      content: 'startTask?: StartTask'
       return:
         type:
           - '@azure-arm-batch.StartTask'
@@ -339,7 +339,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: TaskSchedulingPolicy taskSchedulingPolicy
+      content: 'taskSchedulingPolicy?: TaskSchedulingPolicy'
       return:
         type:
           - '@azure-arm-batch.TaskSchedulingPolicy'
@@ -353,7 +353,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'UserAccount[] userAccounts'
+      content: 'userAccounts?: UserAccount[]'
       return:
         type:
           - '@azure-arm-batch.UserAccount[]'
@@ -367,7 +367,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string vmSize
+      content: 'vmSize?: string'
       return:
         type:
           - string

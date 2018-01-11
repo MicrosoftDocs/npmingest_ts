@@ -28,7 +28,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SecurityRule[] defaultSecurityRules'
+      content: 'defaultSecurityRules?: SecurityRule[]'
       return:
         type:
           - '@azure-arm-network.SecurityRule[]'
@@ -42,7 +42,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -56,7 +56,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'NetworkInterface[] networkInterfaces'
+      content: 'networkInterfaces?: NetworkInterface[]'
       return:
         type:
           - '@azure-arm-network.NetworkInterface[]'
@@ -70,7 +70,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -84,7 +84,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string resourceGuid
+      content: 'resourceGuid?: string'
       return:
         type:
           - string
@@ -98,7 +98,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SecurityRule[] securityRules'
+      content: 'securityRules?: SecurityRule[]'
       return:
         type:
           - '@azure-arm-network.SecurityRule[]'
@@ -112,7 +112,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'Subnet[] subnets'
+      content: 'subnets?: Subnet[]'
       return:
         type:
           - '@azure-arm-network.Subnet[]'

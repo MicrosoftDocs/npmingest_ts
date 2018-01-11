@@ -34,7 +34,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -48,7 +48,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean includePath
+      content: 'includePath?: boolean'
       return:
         type:
           - boolean
@@ -63,7 +63,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean includeQueryString
+      content: 'includeQueryString?: boolean'
       return:
         type:
           - boolean
@@ -77,7 +77,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -91,7 +91,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SubResource[] pathRules'
+      content: 'pathRules?: SubResource[]'
       return:
         type:
           - '@azure-arm-network.SubResource[]'
@@ -105,7 +105,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string redirectType
+      content: 'redirectType?: string'
       return:
         type:
           - string
@@ -120,7 +120,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SubResource[] requestRoutingRules'
+      content: 'requestRoutingRules?: SubResource[]'
       return:
         type:
           - '@azure-arm-network.SubResource[]'
@@ -134,7 +134,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource targetListener
+      content: 'targetListener?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -148,7 +148,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string targetUrl
+      content: 'targetUrl?: string'
       return:
         type:
           - string
@@ -162,7 +162,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string type
+      content: 'type?: string'
       return:
         type:
           - string
@@ -176,7 +176,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SubResource[] urlPathMaps'
+      content: 'urlPathMaps?: SubResource[]'
       return:
         type:
           - '@azure-arm-network.SubResource[]'

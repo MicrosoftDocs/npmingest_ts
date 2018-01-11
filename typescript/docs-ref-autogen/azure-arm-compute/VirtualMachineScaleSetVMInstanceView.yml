@@ -31,7 +31,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: BootDiagnosticsInstanceView bootDiagnostics
+      content: 'bootDiagnostics?: BootDiagnosticsInstanceView'
       return:
         type:
           - '@azure-arm-compute.BootDiagnosticsInstanceView'
@@ -45,7 +45,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'DiskInstanceView[] disks'
+      content: 'disks?: DiskInstanceView[]'
       return:
         type:
           - '@azure-arm-compute.DiskInstanceView[]'
@@ -59,7 +59,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'VirtualMachineExtensionInstanceView[] extensions'
+      content: 'extensions?: VirtualMachineExtensionInstanceView[]'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineExtensionInstanceView[]'
@@ -73,7 +73,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string placementGroupId
+      content: 'placementGroupId?: string'
       return:
         type:
           - string
@@ -87,7 +87,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number platformFaultDomain
+      content: 'platformFaultDomain?: number'
       return:
         type:
           - number
@@ -102,7 +102,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number platformUpdateDomain
+      content: 'platformUpdateDomain?: number'
       return:
         type:
           - number
@@ -116,7 +116,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string rdpThumbPrint
+      content: 'rdpThumbPrint?: string'
       return:
         type:
           - string
@@ -130,7 +130,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'InstanceViewStatus[] statuses'
+      content: 'statuses?: InstanceViewStatus[]'
       return:
         type:
           - '@azure-arm-compute.InstanceViewStatus[]'
@@ -144,7 +144,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualMachineAgentInstanceView vmAgent
+      content: 'vmAgent?: VirtualMachineAgentInstanceView'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineAgentInstanceView'
@@ -158,7 +158,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualMachineHealthStatus vmHealth
+      content: 'vmHealth?: VirtualMachineHealthStatus'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineHealthStatus'

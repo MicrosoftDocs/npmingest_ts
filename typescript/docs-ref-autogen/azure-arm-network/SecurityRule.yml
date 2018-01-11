@@ -38,7 +38,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string access
+      content: 'access: string'
       return:
         type:
           - string
@@ -52,7 +52,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string description
+      content: 'description?: string'
       return:
         type:
           - string
@@ -66,7 +66,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string destinationAddressPrefix
+      content: 'destinationAddressPrefix?: string'
       return:
         type:
           - string
@@ -80,7 +80,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] destinationAddressPrefixes'
+      content: 'destinationAddressPrefixes?: string[]'
       return:
         type:
           - 'string[]'
@@ -94,7 +94,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationSecurityGroup[] destinationApplicationSecurityGroups'
+      content: 'destinationApplicationSecurityGroups?: ApplicationSecurityGroup[]'
       return:
         type:
           - '@azure-arm-network.ApplicationSecurityGroup[]'
@@ -108,7 +108,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string destinationPortRange
+      content: 'destinationPortRange?: string'
       return:
         type:
           - string
@@ -122,7 +122,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] destinationPortRanges'
+      content: 'destinationPortRanges?: string[]'
       return:
         type:
           - 'string[]'
@@ -135,7 +135,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string direction
+      content: 'direction: string'
       return:
         type:
           - string
@@ -149,7 +149,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -163,7 +163,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -177,7 +177,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number priority
+      content: 'priority?: number'
       return:
         type:
           - number
@@ -190,7 +190,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string protocol
+      content: 'protocol: string'
       return:
         type:
           - string
@@ -204,7 +204,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -218,7 +218,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string sourceAddressPrefix
+      content: 'sourceAddressPrefix?: string'
       return:
         type:
           - string
@@ -232,7 +232,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] sourceAddressPrefixes'
+      content: 'sourceAddressPrefixes?: string[]'
       return:
         type:
           - 'string[]'
@@ -246,7 +246,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationSecurityGroup[] sourceApplicationSecurityGroups'
+      content: 'sourceApplicationSecurityGroups?: ApplicationSecurityGroup[]'
       return:
         type:
           - '@azure-arm-network.ApplicationSecurityGroup[]'
@@ -260,7 +260,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string sourcePortRange
+      content: 'sourcePortRange?: string'
       return:
         type:
           - string
@@ -274,7 +274,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] sourcePortRanges'
+      content: 'sourcePortRanges?: string[]'
       return:
         type:
           - 'string[]'

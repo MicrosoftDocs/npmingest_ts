@@ -32,7 +32,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] contentTypesToCompress'
+      content: 'contentTypesToCompress?: string[]'
       return:
         type:
           - 'string[]'
@@ -46,7 +46,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'GeoFilter[] geoFilters'
+      content: 'geoFilters?: GeoFilter[]'
       return:
         type:
           - '@azure-arm-cdn.GeoFilter[]'
@@ -60,7 +60,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean isCompressionEnabled
+      content: 'isCompressionEnabled?: boolean'
       return:
         type:
           - boolean
@@ -74,7 +74,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean isHttpAllowed
+      content: 'isHttpAllowed?: boolean'
       return:
         type:
           - boolean
@@ -88,7 +88,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean isHttpsAllowed
+      content: 'isHttpsAllowed?: boolean'
       return:
         type:
           - boolean
@@ -102,7 +102,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string optimizationType
+      content: 'optimizationType?: string'
       return:
         type:
           - string
@@ -116,7 +116,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string originHostHeader
+      content: 'originHostHeader?: string'
       return:
         type:
           - string
@@ -130,7 +130,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string originPath
+      content: 'originPath?: string'
       return:
         type:
           - string
@@ -144,7 +144,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string probePath
+      content: 'probePath?: string'
       return:
         type:
           - string
@@ -158,7 +158,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string queryStringCachingBehavior
+      content: 'queryStringCachingBehavior?: string'
       return:
         type:
           - string
@@ -172,7 +172,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: '[key: string]: string tags'
+      content: 'tags?: [key: string]: string'
       return:
         type:
           - '[key: string]: string'

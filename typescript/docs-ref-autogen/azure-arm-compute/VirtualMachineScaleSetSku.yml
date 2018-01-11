@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualMachineScaleSetSkuCapacity capacity
+      content: 'capacity?: VirtualMachineScaleSetSkuCapacity'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetSkuCapacity'
@@ -36,7 +36,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string resourceType
+      content: 'resourceType?: string'
       return:
         type:
           - string
@@ -50,7 +50,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Sku sku
+      content: 'sku?: Sku'
       return:
         type:
           - '@azure-arm-compute.Sku'

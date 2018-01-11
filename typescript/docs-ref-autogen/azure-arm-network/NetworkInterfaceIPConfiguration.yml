@@ -42,8 +42,8 @@ items:
     optional: true
     syntax:
       content: >-
+        applicationGatewayBackendAddressPools?:
         ApplicationGatewayBackendAddressPool[]
-        applicationGatewayBackendAddressPools
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayBackendAddressPool[]'
@@ -58,7 +58,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationSecurityGroup[] applicationSecurityGroups'
+      content: 'applicationSecurityGroups?: ApplicationSecurityGroup[]'
       return:
         type:
           - '@azure-arm-network.ApplicationSecurityGroup[]'
@@ -72,7 +72,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -87,7 +87,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'BackendAddressPool[] loadBalancerBackendAddressPools'
+      content: 'loadBalancerBackendAddressPools?: BackendAddressPool[]'
       return:
         type:
           - '@azure-arm-network.BackendAddressPool[]'
@@ -102,7 +102,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'InboundNatRule[] loadBalancerInboundNatRules'
+      content: 'loadBalancerInboundNatRules?: InboundNatRule[]'
       return:
         type:
           - '@azure-arm-network.InboundNatRule[]'
@@ -116,7 +116,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -130,7 +130,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean primary
+      content: 'primary?: boolean'
       return:
         type:
           - boolean
@@ -144,7 +144,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string privateIPAddress
+      content: 'privateIPAddress?: string'
       return:
         type:
           - string
@@ -158,7 +158,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string privateIPAddressVersion
+      content: 'privateIPAddressVersion?: string'
       return:
         type:
           - string
@@ -173,7 +173,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string privateIPAllocationMethod
+      content: 'privateIPAllocationMethod?: string'
       return:
         type:
           - string
@@ -187,7 +187,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -201,7 +201,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: PublicIPAddress publicIPAddress
+      content: 'publicIPAddress?: PublicIPAddress'
       return:
         type:
           - '@azure-arm-network.PublicIPAddress'
@@ -215,7 +215,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Subnet subnet
+      content: 'subnet?: Subnet'
       return:
         type:
           - '@azure-arm-network.Subnet'

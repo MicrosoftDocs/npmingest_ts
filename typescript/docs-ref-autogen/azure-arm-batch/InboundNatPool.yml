@@ -24,7 +24,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: number backendPort
+      content: 'backendPort: number'
       return:
         type:
           - number
@@ -37,7 +37,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: number frontendPortRangeEnd
+      content: 'frontendPortRangeEnd: number'
       return:
         type:
           - number
@@ -50,7 +50,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: number frontendPortRangeStart
+      content: 'frontendPortRangeStart: number'
       return:
         type:
           - number
@@ -63,7 +63,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string name
+      content: 'name: string'
       return:
         type:
           - string
@@ -77,7 +77,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'NetworkSecurityGroupRule[] networkSecurityGroupRules'
+      content: 'networkSecurityGroupRules?: NetworkSecurityGroupRule[]'
       return:
         type:
           - '@azure-arm-batch.NetworkSecurityGroupRule[]'
@@ -90,7 +90,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string protocol
+      content: 'protocol: string'
       return:
         type:
           - string

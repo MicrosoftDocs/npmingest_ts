@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ApiEntityReference healthProbe
+      content: 'healthProbe?: ApiEntityReference'
       return:
         type:
           - '@azure-arm-compute.ApiEntityReference'
@@ -38,8 +38,8 @@ items:
     optional: true
     syntax:
       content: >-
+        networkInterfaceConfigurations?:
         VirtualMachineScaleSetNetworkConfiguration[]
-        networkInterfaceConfigurations
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetNetworkConfiguration[]'

@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: KeyVaultAndSecretReference diskEncryptionKey
+      content: 'diskEncryptionKey?: KeyVaultAndSecretReference'
       return:
         type:
           - '@azure-arm-compute.KeyVaultAndSecretReference'
@@ -36,7 +36,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean enabled
+      content: 'enabled?: boolean'
       return:
         type:
           - boolean
@@ -50,7 +50,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: KeyVaultAndKeyReference keyEncryptionKey
+      content: 'keyEncryptionKey?: KeyVaultAndKeyReference'
       return:
         type:
           - '@azure-arm-compute.KeyVaultAndKeyReference'

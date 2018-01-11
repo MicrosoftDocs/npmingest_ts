@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Duration defaultTtlAsIso8601
+      content: 'defaultTtlAsIso8601?: Duration'
       return:
         type:
           - Duration
@@ -36,7 +36,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: FeedbackProperties feedback
+      content: 'feedback?: FeedbackProperties'
       return:
         type:
           - '@azure-arm-iothub.FeedbackProperties'
@@ -50,7 +50,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number maxDeliveryCount
+      content: 'maxDeliveryCount?: number'
       return:
         type:
           - number

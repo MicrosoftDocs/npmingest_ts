@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean automaticOSUpgrade
+      content: 'automaticOSUpgrade?: boolean'
       return:
         type:
           - boolean
@@ -36,7 +36,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string mode
+      content: 'mode?: string'
       return:
         type:
           - string
@@ -50,7 +50,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: RollingUpgradePolicy rollingUpgradePolicy
+      content: 'rollingUpgradePolicy?: RollingUpgradePolicy'
       return:
         type:
           - '@azure-arm-compute.RollingUpgradePolicy'

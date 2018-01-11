@@ -28,7 +28,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualMachineScaleSetIdentity identity
+      content: 'identity?: VirtualMachineScaleSetIdentity'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetIdentity'
@@ -42,7 +42,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean overprovision
+      content: 'overprovision?: boolean'
       return:
         type:
           - boolean
@@ -56,7 +56,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Plan plan
+      content: 'plan?: Plan'
       return:
         type:
           - '@azure-arm-compute.Plan'
@@ -70,7 +70,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean singlePlacementGroup
+      content: 'singlePlacementGroup?: boolean'
       return:
         type:
           - boolean
@@ -84,7 +84,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Sku sku
+      content: 'sku?: Sku'
       return:
         type:
           - '@azure-arm-compute.Sku'
@@ -98,7 +98,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: UpgradePolicy upgradePolicy
+      content: 'upgradePolicy?: UpgradePolicy'
       return:
         type:
           - '@azure-arm-compute.UpgradePolicy'
@@ -112,7 +112,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualMachineScaleSetUpdateVMProfile virtualMachineProfile
+      content: 'virtualMachineProfile?: VirtualMachineScaleSetUpdateVMProfile'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetUpdateVMProfile'

@@ -33,7 +33,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string aggregationType
+      content: 'aggregationType?: string'
       return:
         type:
           - string
@@ -47,7 +47,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'Availability[] availabilities'
+      content: 'availabilities?: Availability[]'
       return:
         type:
           - '@azure-arm-network.Availability[]'
@@ -61,7 +61,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'Dimension[] dimensions'
+      content: 'dimensions?: Dimension[]'
       return:
         type:
           - '@azure-arm-network.Dimension[]'
@@ -75,7 +75,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string displayDescription
+      content: 'displayDescription?: string'
       return:
         type:
           - string
@@ -89,7 +89,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string displayName
+      content: 'displayName?: string'
       return:
         type:
           - string
@@ -103,7 +103,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean enableRegionalMdmAccount
+      content: 'enableRegionalMdmAccount?: boolean'
       return:
         type:
           - boolean
@@ -117,7 +117,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean fillGapWithZero
+      content: 'fillGapWithZero?: boolean'
       return:
         type:
           - boolean
@@ -131,7 +131,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean isInternal
+      content: 'isInternal?: boolean'
       return:
         type:
           - boolean
@@ -145,7 +145,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string metricFilterPattern
+      content: 'metricFilterPattern?: string'
       return:
         type:
           - string
@@ -159,7 +159,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -173,7 +173,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string resourceIdDimensionNameOverride
+      content: 'resourceIdDimensionNameOverride?: string'
       return:
         type:
           - string
@@ -187,7 +187,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string sourceMdmAccount
+      content: 'sourceMdmAccount?: string'
       return:
         type:
           - string
@@ -201,7 +201,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string sourceMdmNamespace
+      content: 'sourceMdmNamespace?: string'
       return:
         type:
           - string
@@ -215,7 +215,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string unit
+      content: 'unit?: string'
       return:
         type:
           - string

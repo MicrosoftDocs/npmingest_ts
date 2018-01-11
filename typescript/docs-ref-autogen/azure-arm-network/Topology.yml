@@ -23,7 +23,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Date createdDateTime
+      content: 'createdDateTime?: Date'
       return:
         type:
           - Date
@@ -37,7 +37,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string id
+      content: 'id?: string'
       return:
         type:
           - string
@@ -51,7 +51,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Date lastModified
+      content: 'lastModified?: Date'
       return:
         type:
           - Date
@@ -65,7 +65,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'TopologyResource[] resources'
+      content: 'resources?: TopologyResource[]'
       return:
         type:
           - '@azure-arm-network.TopologyResource[]'

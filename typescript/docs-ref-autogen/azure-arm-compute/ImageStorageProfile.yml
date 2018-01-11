@@ -21,7 +21,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ImageDataDisk[] dataDisks'
+      content: 'dataDisks?: ImageDataDisk[]'
       return:
         type:
           - '@azure-arm-compute.ImageDataDisk[]'
@@ -34,7 +34,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: ImageOSDisk osDisk
+      content: 'osDisk: ImageOSDisk'
       return:
         type:
           - '@azure-arm-compute.ImageOSDisk'

@@ -29,7 +29,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean isCustomerInitiatedMaintenanceAllowed
+      content: 'isCustomerInitiatedMaintenanceAllowed?: boolean'
       return:
         type:
           - boolean
@@ -43,7 +43,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string lastOperationMessage
+      content: 'lastOperationMessage?: string'
       return:
         type:
           - string
@@ -57,7 +57,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string lastOperationResultCode
+      content: 'lastOperationResultCode?: string'
       return:
         type:
           - string
@@ -71,7 +71,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Date maintenanceWindowEndTime
+      content: 'maintenanceWindowEndTime?: Date'
       return:
         type:
           - Date
@@ -85,7 +85,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Date maintenanceWindowStartTime
+      content: 'maintenanceWindowStartTime?: Date'
       return:
         type:
           - Date
@@ -99,7 +99,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Date preMaintenanceWindowEndTime
+      content: 'preMaintenanceWindowEndTime?: Date'
       return:
         type:
           - Date
@@ -113,7 +113,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Date preMaintenanceWindowStartTime
+      content: 'preMaintenanceWindowStartTime?: Date'
       return:
         type:
           - Date

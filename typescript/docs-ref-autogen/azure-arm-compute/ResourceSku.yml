@@ -31,7 +31,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] apiVersions'
+      content: 'apiVersions?: string[]'
       return:
         type:
           - 'string[]'
@@ -45,7 +45,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ResourceSkuCapabilities[] capabilities'
+      content: 'capabilities?: ResourceSkuCapabilities[]'
       return:
         type:
           - '@azure-arm-compute.ResourceSkuCapabilities[]'
@@ -59,7 +59,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ResourceSkuCapacity capacity
+      content: 'capacity?: ResourceSkuCapacity'
       return:
         type:
           - '@azure-arm-compute.ResourceSkuCapacity'
@@ -73,7 +73,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ResourceSkuCosts[] costs'
+      content: 'costs?: ResourceSkuCosts[]'
       return:
         type:
           - '@azure-arm-compute.ResourceSkuCosts[]'
@@ -87,7 +87,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string family
+      content: 'family?: string'
       return:
         type:
           - string
@@ -101,7 +101,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string kind
+      content: 'kind?: string'
       return:
         type:
           - string
@@ -115,7 +115,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] locations'
+      content: 'locations?: string[]'
       return:
         type:
           - 'string[]'
@@ -129,7 +129,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -143,7 +143,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string resourceType
+      content: 'resourceType?: string'
       return:
         type:
           - string
@@ -157,7 +157,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ResourceSkuRestrictions[] restrictions'
+      content: 'restrictions?: ResourceSkuRestrictions[]'
       return:
         type:
           - '@azure-arm-compute.ResourceSkuRestrictions[]'
@@ -171,7 +171,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string size
+      content: 'size?: string'
       return:
         type:
           - string
@@ -185,7 +185,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string tier
+      content: 'tier?: string'
       return:
         type:
           - string

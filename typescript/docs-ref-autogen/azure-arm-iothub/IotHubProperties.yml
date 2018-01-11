@@ -32,7 +32,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SharedAccessSignatureAuthorizationRule[] authorizationPolicies'
+      content: 'authorizationPolicies?: SharedAccessSignatureAuthorizationRule[]'
       return:
         type:
           - '@azure-arm-iothub.SharedAccessSignatureAuthorizationRule[]'
@@ -46,7 +46,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: CloudToDeviceProperties cloudToDevice
+      content: 'cloudToDevice?: CloudToDeviceProperties'
       return:
         type:
           - '@azure-arm-iothub.CloudToDeviceProperties'
@@ -60,7 +60,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string comments
+      content: 'comments?: string'
       return:
         type:
           - string
@@ -74,7 +74,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean enableFileUploadNotifications
+      content: 'enableFileUploadNotifications?: boolean'
       return:
         type:
           - boolean
@@ -88,7 +88,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: '[key: string]: EventHubProperties eventHubEndpoints'
+      content: 'eventHubEndpoints?: [key: string]: EventHubProperties'
       return:
         type:
           - '[key: string]: @azure-arm-iothub.EventHubProperties'
@@ -102,7 +102,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string features
+      content: 'features?: string'
       return:
         type:
           - string
@@ -116,7 +116,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string hostName
+      content: 'hostName?: string'
       return:
         type:
           - string
@@ -130,7 +130,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'IpFilterRule[] ipFilterRules'
+      content: 'ipFilterRules?: IpFilterRule[]'
       return:
         type:
           - '@azure-arm-iothub.IpFilterRule[]'
@@ -144,7 +144,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: '[key: string]: MessagingEndpointProperties messagingEndpoints'
+      content: 'messagingEndpoints?: [key: string]: MessagingEndpointProperties'
       return:
         type:
           - '[key: string]: @azure-arm-iothub.MessagingEndpointProperties'
@@ -158,7 +158,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: OperationsMonitoringProperties operationsMonitoringProperties
+      content: 'operationsMonitoringProperties?: OperationsMonitoringProperties'
       return:
         type:
           - '@azure-arm-iothub.OperationsMonitoringProperties'
@@ -172,7 +172,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -186,7 +186,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: RoutingProperties routing
+      content: 'routing?: RoutingProperties'
       return:
         type:
           - '@azure-arm-iothub.RoutingProperties'
@@ -200,7 +200,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: '[key: string]: StorageEndpointProperties storageEndpoints'
+      content: 'storageEndpoints?: [key: string]: StorageEndpointProperties'
       return:
         type:
           - '[key: string]: @azure-arm-iothub.StorageEndpointProperties'

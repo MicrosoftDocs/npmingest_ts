@@ -30,7 +30,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string addressPrefix
+      content: 'addressPrefix?: string'
       return:
         type:
           - string
@@ -44,7 +44,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -58,7 +58,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'IPConfiguration[] ipConfigurations'
+      content: 'ipConfigurations?: IPConfiguration[]'
       return:
         type:
           - '@azure-arm-network.IPConfiguration[]'
@@ -72,7 +72,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -86,7 +86,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: NetworkSecurityGroup networkSecurityGroup
+      content: 'networkSecurityGroup?: NetworkSecurityGroup'
       return:
         type:
           - '@azure-arm-network.NetworkSecurityGroup'
@@ -100,7 +100,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -114,7 +114,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ResourceNavigationLink[] resourceNavigationLinks'
+      content: 'resourceNavigationLinks?: ResourceNavigationLink[]'
       return:
         type:
           - '@azure-arm-network.ResourceNavigationLink[]'
@@ -128,7 +128,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: RouteTable routeTable
+      content: 'routeTable?: RouteTable'
       return:
         type:
           - '@azure-arm-network.RouteTable'
@@ -142,7 +142,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ServiceEndpointPropertiesFormat[] serviceEndpoints'
+      content: 'serviceEndpoints?: ServiceEndpointPropertiesFormat[]'
       return:
         type:
           - '@azure-arm-network.ServiceEndpointPropertiesFormat[]'

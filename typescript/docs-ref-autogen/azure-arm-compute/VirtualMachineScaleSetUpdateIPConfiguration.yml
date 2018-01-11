@@ -35,7 +35,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SubResource[] applicationGatewayBackendAddressPools'
+      content: 'applicationGatewayBackendAddressPools?: SubResource[]'
       return:
         type:
           - '@azure-arm-compute.SubResource[]'
@@ -50,7 +50,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SubResource[] loadBalancerBackendAddressPools'
+      content: 'loadBalancerBackendAddressPools?: SubResource[]'
       return:
         type:
           - '@azure-arm-compute.SubResource[]'
@@ -65,7 +65,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SubResource[] loadBalancerInboundNatPools'
+      content: 'loadBalancerInboundNatPools?: SubResource[]'
       return:
         type:
           - '@azure-arm-compute.SubResource[]'
@@ -79,7 +79,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -93,7 +93,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean primary
+      content: 'primary?: boolean'
       return:
         type:
           - boolean
@@ -108,7 +108,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string privateIPAddressVersion
+      content: 'privateIPAddressVersion?: string'
       return:
         type:
           - string
@@ -124,8 +124,8 @@ items:
     optional: true
     syntax:
       content: >-
+        publicIPAddressConfiguration?:
         VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
-        publicIPAddressConfiguration
       return:
         type:
           - >-
@@ -140,7 +140,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ApiEntityReference subnet
+      content: 'subnet?: ApiEntityReference'
       return:
         type:
           - '@azure-arm-compute.ApiEntityReference'

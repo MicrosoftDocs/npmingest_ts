@@ -36,7 +36,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource availabilitySet
+      content: 'availabilitySet?: SubResource'
       return:
         type:
           - '@azure-arm-compute.SubResource'
@@ -50,7 +50,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: DiagnosticsProfile diagnosticsProfile
+      content: 'diagnosticsProfile?: DiagnosticsProfile'
       return:
         type:
           - '@azure-arm-compute.DiagnosticsProfile'
@@ -64,7 +64,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: HardwareProfile hardwareProfile
+      content: 'hardwareProfile?: HardwareProfile'
       return:
         type:
           - '@azure-arm-compute.HardwareProfile'
@@ -78,7 +78,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string instanceId
+      content: 'instanceId?: string'
       return:
         type:
           - string
@@ -92,7 +92,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualMachineInstanceView instanceView
+      content: 'instanceView?: VirtualMachineInstanceView'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineInstanceView'
@@ -106,7 +106,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean latestModelApplied
+      content: 'latestModelApplied?: boolean'
       return:
         type:
           - boolean
@@ -120,7 +120,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string licenseType
+      content: 'licenseType?: string'
       return:
         type:
           - string
@@ -134,7 +134,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: NetworkProfile networkProfile
+      content: 'networkProfile?: NetworkProfile'
       return:
         type:
           - '@azure-arm-compute.NetworkProfile'
@@ -148,7 +148,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: OSProfile osProfile
+      content: 'osProfile?: OSProfile'
       return:
         type:
           - '@azure-arm-compute.OSProfile'
@@ -162,7 +162,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Plan plan
+      content: 'plan?: Plan'
       return:
         type:
           - '@azure-arm-compute.Plan'
@@ -176,7 +176,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -190,7 +190,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'VirtualMachineExtension[] resources'
+      content: 'resources?: VirtualMachineExtension[]'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineExtension[]'
@@ -204,7 +204,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Sku sku
+      content: 'sku?: Sku'
       return:
         type:
           - '@azure-arm-compute.Sku'
@@ -218,7 +218,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: StorageProfile storageProfile
+      content: 'storageProfile?: StorageProfile'
       return:
         type:
           - '@azure-arm-compute.StorageProfile'
@@ -232,7 +232,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string vmId
+      content: 'vmId?: string'
       return:
         type:
           - string

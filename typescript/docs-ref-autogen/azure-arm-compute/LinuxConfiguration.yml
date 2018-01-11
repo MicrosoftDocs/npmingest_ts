@@ -21,7 +21,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean disablePasswordAuthentication
+      content: 'disablePasswordAuthentication?: boolean'
       return:
         type:
           - boolean
@@ -35,7 +35,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SshConfiguration ssh
+      content: 'ssh?: SshConfiguration'
       return:
         type:
           - '@azure-arm-compute.SshConfiguration'

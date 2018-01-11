@@ -23,7 +23,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string createOption
+      content: 'createOption: string'
       return:
         type:
           - string
@@ -37,7 +37,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ImageDiskReference imageReference
+      content: 'imageReference?: ImageDiskReference'
       return:
         type:
           - '@azure-arm-compute.ImageDiskReference'
@@ -51,7 +51,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string sourceResourceId
+      content: 'sourceResourceId?: string'
       return:
         type:
           - string
@@ -65,7 +65,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string sourceUri
+      content: 'sourceUri?: string'
       return:
         type:
           - string
@@ -79,7 +79,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string storageAccountId
+      content: 'storageAccountId?: string'
       return:
         type:
           - string

@@ -26,7 +26,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string adminPassword
+      content: 'adminPassword?: string'
       return:
         type:
           - string
@@ -40,7 +40,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string adminUsername
+      content: 'adminUsername?: string'
       return:
         type:
           - string
@@ -54,7 +54,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string computerNamePrefix
+      content: 'computerNamePrefix?: string'
       return:
         type:
           - string
@@ -68,7 +68,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string customData
+      content: 'customData?: string'
       return:
         type:
           - string
@@ -82,7 +82,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: LinuxConfiguration linuxConfiguration
+      content: 'linuxConfiguration?: LinuxConfiguration'
       return:
         type:
           - '@azure-arm-compute.LinuxConfiguration'
@@ -96,7 +96,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'VaultSecretGroup[] secrets'
+      content: 'secrets?: VaultSecretGroup[]'
       return:
         type:
           - '@azure-arm-compute.VaultSecretGroup[]'
@@ -110,7 +110,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: WindowsConfiguration windowsConfiguration
+      content: 'windowsConfiguration?: WindowsConfiguration'
       return:
         type:
           - '@azure-arm-compute.WindowsConfiguration'

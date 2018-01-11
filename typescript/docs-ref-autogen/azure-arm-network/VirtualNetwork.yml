@@ -30,7 +30,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: AddressSpace addressSpace
+      content: 'addressSpace?: AddressSpace'
       return:
         type:
           - '@azure-arm-network.AddressSpace'
@@ -44,7 +44,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: DhcpOptions dhcpOptions
+      content: 'dhcpOptions?: DhcpOptions'
       return:
         type:
           - '@azure-arm-network.DhcpOptions'
@@ -58,7 +58,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean enableDdosProtection
+      content: 'enableDdosProtection?: boolean'
       return:
         type:
           - boolean
@@ -72,7 +72,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean enableVmProtection
+      content: 'enableVmProtection?: boolean'
       return:
         type:
           - boolean
@@ -86,7 +86,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -100,7 +100,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -114,7 +114,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string resourceGuid
+      content: 'resourceGuid?: string'
       return:
         type:
           - string
@@ -128,7 +128,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'Subnet[] subnets'
+      content: 'subnets?: Subnet[]'
       return:
         type:
           - '@azure-arm-network.Subnet[]'
@@ -142,7 +142,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'VirtualNetworkPeering[] virtualNetworkPeerings'
+      content: 'virtualNetworkPeerings?: VirtualNetworkPeering[]'
       return:
         type:
           - '@azure-arm-network.VirtualNetworkPeering[]'

@@ -25,7 +25,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -38,7 +38,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'ApplicationGatewayFirewallRuleGroup[] ruleGroups'
+      content: 'ruleGroups: ApplicationGatewayFirewallRuleGroup[]'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayFirewallRuleGroup[]'
@@ -51,7 +51,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string ruleSetType
+      content: 'ruleSetType: string'
       return:
         type:
           - string
@@ -64,7 +64,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string ruleSetVersion
+      content: 'ruleSetVersion: string'
       return:
         type:
           - string

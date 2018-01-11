@@ -27,7 +27,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] advertisedCommunities'
+      content: 'advertisedCommunities?: string[]'
       return:
         type:
           - 'string[]'
@@ -42,7 +42,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] advertisedPublicPrefixes'
+      content: 'advertisedPublicPrefixes?: string[]'
       return:
         type:
           - 'string[]'
@@ -57,7 +57,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string advertisedPublicPrefixesState
+      content: 'advertisedPublicPrefixesState?: string'
       return:
         type:
           - string
@@ -71,7 +71,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number customerASN
+      content: 'customerASN?: number'
       return:
         type:
           - number
@@ -85,7 +85,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number legacyMode
+      content: 'legacyMode?: number'
       return:
         type:
           - number
@@ -99,7 +99,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string routingRegistryName
+      content: 'routingRegistryName?: string'
       return:
         type:
           - string

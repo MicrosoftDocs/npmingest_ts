@@ -23,7 +23,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'VirtualMachineScaleSetDataDisk[] dataDisks'
+      content: 'dataDisks?: VirtualMachineScaleSetDataDisk[]'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetDataDisk[]'
@@ -38,7 +38,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ImageReference imageReference
+      content: 'imageReference?: ImageReference'
       return:
         type:
           - '@azure-arm-compute.ImageReference'
@@ -52,7 +52,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualMachineScaleSetUpdateOSDisk osDisk
+      content: 'osDisk?: VirtualMachineScaleSetUpdateOSDisk'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetUpdateOSDisk'

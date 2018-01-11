@@ -24,7 +24,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Date endTime
+      content: 'endTime?: Date'
       return:
         type:
           - Date
@@ -38,7 +38,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ApiError error
+      content: 'error?: ApiError'
       return:
         type:
           - '@azure-arm-compute.ApiError'
@@ -52,7 +52,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -66,7 +66,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Date startTime
+      content: 'startTime?: Date'
       return:
         type:
           - Date
@@ -80,7 +80,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string status
+      content: 'status?: string'
       return:
         type:
           - string

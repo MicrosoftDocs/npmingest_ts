@@ -32,7 +32,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -46,7 +46,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource frontendIPConfiguration
+      content: 'frontendIPConfiguration?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -60,7 +60,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource frontendPort
+      content: 'frontendPort?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -74,7 +74,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string hostName
+      content: 'hostName?: string'
       return:
         type:
           - string
@@ -88,7 +88,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -102,7 +102,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string protocol
+      content: 'protocol?: string'
       return:
         type:
           - string
@@ -116,7 +116,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -131,7 +131,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean requireServerNameIndication
+      content: 'requireServerNameIndication?: boolean'
       return:
         type:
           - boolean
@@ -145,7 +145,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource sslCertificate
+      content: 'sslCertificate?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -159,7 +159,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string type
+      content: 'type?: string'
       return:
         type:
           - string

@@ -25,7 +25,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number bytesToCapturePerPacket
+      content: 'bytesToCapturePerPacket?: number'
       return:
         type:
           - number
@@ -39,7 +39,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'PacketCaptureFilter[] filters'
+      content: 'filters?: PacketCaptureFilter[]'
       return:
         type:
           - '@azure-arm-network.PacketCaptureFilter[]'
@@ -52,7 +52,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: PacketCaptureStorageLocation storageLocation
+      content: 'storageLocation: PacketCaptureStorageLocation'
       return:
         type:
           - '@azure-arm-network.PacketCaptureStorageLocation'
@@ -65,7 +65,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string target
+      content: 'target: string'
       return:
         type:
           - string
@@ -79,7 +79,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number timeLimitInSeconds
+      content: 'timeLimitInSeconds?: number'
       return:
         type:
           - number
@@ -93,7 +93,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number totalBytesPerSession
+      content: 'totalBytesPerSession?: number'
       return:
         type:
           - number

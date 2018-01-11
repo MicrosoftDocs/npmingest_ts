@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string targetResourceGroupName
+      content: 'targetResourceGroupName?: string'
       return:
         type:
           - string
@@ -36,7 +36,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource targetSubnet
+      content: 'targetSubnet?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -50,7 +50,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource targetVirtualNetwork
+      content: 'targetVirtualNetwork?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'

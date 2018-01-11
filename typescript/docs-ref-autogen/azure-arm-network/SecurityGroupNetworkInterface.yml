@@ -21,7 +21,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string id
+      content: 'id?: string'
       return:
         type:
           - string
@@ -35,7 +35,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SecurityRuleAssociations securityRuleAssociations
+      content: 'securityRuleAssociations?: SecurityRuleAssociations'
       return:
         type:
           - '@azure-arm-network.SecurityRuleAssociations'

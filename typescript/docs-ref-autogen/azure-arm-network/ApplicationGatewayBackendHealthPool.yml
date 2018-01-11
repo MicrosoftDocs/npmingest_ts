@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ApplicationGatewayBackendAddressPool backendAddressPool
+      content: 'backendAddressPool?: ApplicationGatewayBackendAddressPool'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayBackendAddressPool'
@@ -38,8 +38,8 @@ items:
     optional: true
     syntax:
       content: >-
+        backendHttpSettingsCollection?:
         ApplicationGatewayBackendHealthHttpSettings[]
-        backendHttpSettingsCollection
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayBackendHealthHttpSettings[]'

@@ -28,7 +28,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -42,7 +42,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -57,7 +57,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string privateIPAllocationMethod
+      content: 'privateIPAllocationMethod?: string'
       return:
         type:
           - string
@@ -71,7 +71,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -85,7 +85,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource publicIPAddress
+      content: 'publicIPAddress?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -99,7 +99,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource subnet
+      content: 'subnet?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'

@@ -24,7 +24,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -38,7 +38,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource sourceVirtualMachine
+      content: 'sourceVirtualMachine?: SubResource'
       return:
         type:
           - '@azure-arm-compute.SubResource'
@@ -52,7 +52,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ImageStorageProfile storageProfile
+      content: 'storageProfile?: ImageStorageProfile'
       return:
         type:
           - '@azure-arm-compute.ImageStorageProfile'

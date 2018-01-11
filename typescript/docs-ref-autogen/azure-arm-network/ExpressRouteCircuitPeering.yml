@@ -40,7 +40,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number azureASN
+      content: 'azureASN?: number'
       return:
         type:
           - number
@@ -54,7 +54,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -68,7 +68,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string gatewayManagerEtag
+      content: 'gatewayManagerEtag?: string'
       return:
         type:
           - string
@@ -82,7 +82,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Ipv6ExpressRouteCircuitPeeringConfig ipv6PeeringConfig
+      content: 'ipv6PeeringConfig?: Ipv6ExpressRouteCircuitPeeringConfig'
       return:
         type:
           - '@azure-arm-network.Ipv6ExpressRouteCircuitPeeringConfig'
@@ -96,7 +96,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string lastModifiedBy
+      content: 'lastModifiedBy?: string'
       return:
         type:
           - string
@@ -110,7 +110,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ExpressRouteCircuitPeeringConfig microsoftPeeringConfig
+      content: 'microsoftPeeringConfig?: ExpressRouteCircuitPeeringConfig'
       return:
         type:
           - '@azure-arm-network.ExpressRouteCircuitPeeringConfig'
@@ -124,7 +124,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -138,7 +138,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number peerASN
+      content: 'peerASN?: number'
       return:
         type:
           - number
@@ -152,7 +152,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string peeringType
+      content: 'peeringType?: string'
       return:
         type:
           - string
@@ -166,7 +166,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string primaryAzurePort
+      content: 'primaryAzurePort?: string'
       return:
         type:
           - string
@@ -180,7 +180,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string primaryPeerAddressPrefix
+      content: 'primaryPeerAddressPrefix?: string'
       return:
         type:
           - string
@@ -194,7 +194,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -208,7 +208,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: RouteFilter routeFilter
+      content: 'routeFilter?: RouteFilter'
       return:
         type:
           - '@azure-arm-network.RouteFilter'
@@ -222,7 +222,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string secondaryAzurePort
+      content: 'secondaryAzurePort?: string'
       return:
         type:
           - string
@@ -236,7 +236,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string secondaryPeerAddressPrefix
+      content: 'secondaryPeerAddressPrefix?: string'
       return:
         type:
           - string
@@ -250,7 +250,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string sharedKey
+      content: 'sharedKey?: string'
       return:
         type:
           - string
@@ -264,7 +264,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string state
+      content: 'state?: string'
       return:
         type:
           - string
@@ -278,7 +278,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ExpressRouteCircuitStats stats
+      content: 'stats?: ExpressRouteCircuitStats'
       return:
         type:
           - '@azure-arm-network.ExpressRouteCircuitStats'
@@ -292,7 +292,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number vlanId
+      content: 'vlanId?: number'
       return:
         type:
           - number

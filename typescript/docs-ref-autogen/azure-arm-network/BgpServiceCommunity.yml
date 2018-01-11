@@ -23,7 +23,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'BGPCommunity[] bgpCommunities'
+      content: 'bgpCommunities?: BGPCommunity[]'
       return:
         type:
           - '@azure-arm-network.BGPCommunity[]'
@@ -37,7 +37,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string serviceName
+      content: 'serviceName?: string'
       return:
         type:
           - string

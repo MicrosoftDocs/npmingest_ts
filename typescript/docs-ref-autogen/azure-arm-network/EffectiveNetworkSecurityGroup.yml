@@ -23,7 +23,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: EffectiveNetworkSecurityGroupAssociation association
+      content: 'association?: EffectiveNetworkSecurityGroupAssociation'
       return:
         type:
           - '@azure-arm-network.EffectiveNetworkSecurityGroupAssociation'
@@ -37,7 +37,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'EffectiveNetworkSecurityRule[] effectiveSecurityRules'
+      content: 'effectiveSecurityRules?: EffectiveNetworkSecurityRule[]'
       return:
         type:
           - '@azure-arm-network.EffectiveNetworkSecurityRule[]'
@@ -51,7 +51,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource networkSecurityGroup
+      content: 'networkSecurityGroup?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -65,7 +65,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: '[key: string]: function tagMap'
+      content: 'tagMap?: [key: string]: function'
       return:
         type:
           - '[key: string]: function'

@@ -24,7 +24,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] appliedDnsServers'
+      content: 'appliedDnsServers?: string[]'
       return:
         type:
           - 'string[]'
@@ -38,7 +38,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] dnsServers'
+      content: 'dnsServers?: string[]'
       return:
         type:
           - 'string[]'
@@ -52,7 +52,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string internalDnsNameLabel
+      content: 'internalDnsNameLabel?: string'
       return:
         type:
           - string
@@ -66,7 +66,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string internalDomainNameSuffix
+      content: 'internalDomainNameSuffix?: string'
       return:
         type:
           - string
@@ -80,7 +80,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string internalFqdn
+      content: 'internalFqdn?: string'
       return:
         type:
           - string

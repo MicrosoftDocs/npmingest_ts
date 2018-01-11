@@ -25,7 +25,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: DiagnosticsProfile diagnosticsProfile
+      content: 'diagnosticsProfile?: DiagnosticsProfile'
       return:
         type:
           - '@azure-arm-compute.DiagnosticsProfile'
@@ -39,7 +39,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualMachineScaleSetExtensionProfile extensionProfile
+      content: 'extensionProfile?: VirtualMachineScaleSetExtensionProfile'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetExtensionProfile'
@@ -53,7 +53,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string licenseType
+      content: 'licenseType?: string'
       return:
         type:
           - string
@@ -67,7 +67,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualMachineScaleSetNetworkProfile networkProfile
+      content: 'networkProfile?: VirtualMachineScaleSetNetworkProfile'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetNetworkProfile'
@@ -81,7 +81,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualMachineScaleSetOSProfile osProfile
+      content: 'osProfile?: VirtualMachineScaleSetOSProfile'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetOSProfile'
@@ -95,7 +95,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualMachineScaleSetStorageProfile storageProfile
+      content: 'storageProfile?: VirtualMachineScaleSetStorageProfile'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetStorageProfile'

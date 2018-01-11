@@ -27,7 +27,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'NetworkInterfaceIPConfiguration[] backendIPConfigurations'
+      content: 'backendIPConfigurations?: NetworkInterfaceIPConfiguration[]'
       return:
         type:
           - '@azure-arm-network.NetworkInterfaceIPConfiguration[]'
@@ -41,7 +41,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -55,7 +55,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SubResource[] loadBalancingRules'
+      content: 'loadBalancingRules?: SubResource[]'
       return:
         type:
           - '@azure-arm-network.SubResource[]'
@@ -69,7 +69,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -83,7 +83,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource outboundNatRule
+      content: 'outboundNatRule?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -97,7 +97,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string

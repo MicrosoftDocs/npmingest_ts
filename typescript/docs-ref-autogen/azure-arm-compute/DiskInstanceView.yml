@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'DiskEncryptionSettings[] encryptionSettings'
+      content: 'encryptionSettings?: DiskEncryptionSettings[]'
       return:
         type:
           - '@azure-arm-compute.DiskEncryptionSettings[]'
@@ -36,7 +36,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -50,7 +50,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'InstanceViewStatus[] statuses'
+      content: 'statuses?: InstanceViewStatus[]'
       return:
         type:
           - '@azure-arm-compute.InstanceViewStatus[]'

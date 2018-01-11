@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string deliveryRegion
+      content: 'deliveryRegion?: string'
       return:
         type:
           - string
@@ -36,7 +36,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'CidrIpAddress[] ipv4Addresses'
+      content: 'ipv4Addresses?: CidrIpAddress[]'
       return:
         type:
           - '@azure-arm-cdn.CidrIpAddress[]'
@@ -50,7 +50,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'CidrIpAddress[] ipv6Addresses'
+      content: 'ipv6Addresses?: CidrIpAddress[]'
       return:
         type:
           - '@azure-arm-cdn.CidrIpAddress[]'

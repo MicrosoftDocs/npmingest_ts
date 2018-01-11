@@ -25,7 +25,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string radiusServerAddress
+      content: 'radiusServerAddress?: string'
       return:
         type:
           - string
@@ -39,7 +39,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string radiusServerSecret
+      content: 'radiusServerSecret?: string'
       return:
         type:
           - string
@@ -53,7 +53,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: AddressSpace vpnClientAddressPool
+      content: 'vpnClientAddressPool?: AddressSpace'
       return:
         type:
           - '@azure-arm-network.AddressSpace'
@@ -67,7 +67,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] vpnClientProtocols'
+      content: 'vpnClientProtocols?: string[]'
       return:
         type:
           - 'string[]'
@@ -81,7 +81,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'VpnClientRevokedCertificate[] vpnClientRevokedCertificates'
+      content: 'vpnClientRevokedCertificates?: VpnClientRevokedCertificate[]'
       return:
         type:
           - '@azure-arm-network.VpnClientRevokedCertificate[]'
@@ -95,7 +95,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'VpnClientRootCertificate[] vpnClientRootCertificates'
+      content: 'vpnClientRootCertificates?: VpnClientRootCertificate[]'
       return:
         type:
           - '@azure-arm-network.VpnClientRootCertificate[]'

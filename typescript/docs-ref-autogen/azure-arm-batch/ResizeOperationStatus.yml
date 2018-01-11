@@ -25,7 +25,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ResizeError[] errors'
+      content: 'errors?: ResizeError[]'
       return:
         type:
           - '@azure-arm-batch.ResizeError[]'
@@ -39,7 +39,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string nodeDeallocationOption
+      content: 'nodeDeallocationOption?: string'
       return:
         type:
           - string
@@ -53,7 +53,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Duration resizeTimeout
+      content: 'resizeTimeout?: Duration'
       return:
         type:
           - Duration
@@ -67,7 +67,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Date startTime
+      content: 'startTime?: Date'
       return:
         type:
           - Date
@@ -81,7 +81,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number targetDedicatedNodes
+      content: 'targetDedicatedNodes?: number'
       return:
         type:
           - number
@@ -95,7 +95,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number targetLowPriorityNodes
+      content: 'targetLowPriorityNodes?: number'
       return:
         type:
           - number

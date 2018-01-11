@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'AvailableProvidersListCity[] cities'
+      content: 'cities?: AvailableProvidersListCity[]'
       return:
         type:
           - '@azure-arm-network.AvailableProvidersListCity[]'
@@ -36,7 +36,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] providers'
+      content: 'providers?: string[]'
       return:
         type:
           - 'string[]'
@@ -50,7 +50,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string stateName
+      content: 'stateName?: string'
       return:
         type:
           - string

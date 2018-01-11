@@ -32,7 +32,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'BackendAddressPool[] backendAddressPools'
+      content: 'backendAddressPools?: BackendAddressPool[]'
       return:
         type:
           - '@azure-arm-network.BackendAddressPool[]'
@@ -46,7 +46,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -60,7 +60,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'FrontendIPConfiguration[] frontendIPConfigurations'
+      content: 'frontendIPConfigurations?: FrontendIPConfiguration[]'
       return:
         type:
           - '@azure-arm-network.FrontendIPConfiguration[]'
@@ -74,7 +74,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'InboundNatPool[] inboundNatPools'
+      content: 'inboundNatPools?: InboundNatPool[]'
       return:
         type:
           - '@azure-arm-network.InboundNatPool[]'
@@ -88,7 +88,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'InboundNatRule[] inboundNatRules'
+      content: 'inboundNatRules?: InboundNatRule[]'
       return:
         type:
           - '@azure-arm-network.InboundNatRule[]'
@@ -102,7 +102,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'LoadBalancingRule[] loadBalancingRules'
+      content: 'loadBalancingRules?: LoadBalancingRule[]'
       return:
         type:
           - '@azure-arm-network.LoadBalancingRule[]'
@@ -116,7 +116,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'OutboundNatRule[] outboundNatRules'
+      content: 'outboundNatRules?: OutboundNatRule[]'
       return:
         type:
           - '@azure-arm-network.OutboundNatRule[]'
@@ -130,7 +130,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'Probe[] probes'
+      content: 'probes?: Probe[]'
       return:
         type:
           - '@azure-arm-network.Probe[]'
@@ -144,7 +144,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -158,7 +158,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string resourceGuid
+      content: 'resourceGuid?: string'
       return:
         type:
           - string
@@ -172,7 +172,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: LoadBalancerSku sku
+      content: 'sku?: LoadBalancerSku'
       return:
         type:
           - '@azure-arm-network.LoadBalancerSku'

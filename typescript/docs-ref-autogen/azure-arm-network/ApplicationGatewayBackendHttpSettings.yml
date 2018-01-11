@@ -43,7 +43,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string affinityCookieName
+      content: 'affinityCookieName?: string'
       return:
         type:
           - string
@@ -58,7 +58,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SubResource[] authenticationCertificates'
+      content: 'authenticationCertificates?: SubResource[]'
       return:
         type:
           - '@azure-arm-network.SubResource[]'
@@ -72,7 +72,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ApplicationGatewayConnectionDraining connectionDraining
+      content: 'connectionDraining?: ApplicationGatewayConnectionDraining'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayConnectionDraining'
@@ -87,7 +87,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string cookieBasedAffinity
+      content: 'cookieBasedAffinity?: string'
       return:
         type:
           - string
@@ -101,7 +101,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -115,7 +115,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string hostName
+      content: 'hostName?: string'
       return:
         type:
           - string
@@ -129,7 +129,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -143,7 +143,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string path
+      content: 'path?: string'
       return:
         type:
           - string
@@ -158,7 +158,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean pickHostNameFromBackendAddress
+      content: 'pickHostNameFromBackendAddress?: boolean'
       return:
         type:
           - boolean
@@ -172,7 +172,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number port
+      content: 'port?: number'
       return:
         type:
           - number
@@ -186,7 +186,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource probe
+      content: 'probe?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -200,7 +200,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean probeEnabled
+      content: 'probeEnabled?: boolean'
       return:
         type:
           - boolean
@@ -214,7 +214,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string protocol
+      content: 'protocol?: string'
       return:
         type:
           - string
@@ -228,7 +228,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -242,7 +242,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number requestTimeout
+      content: 'requestTimeout?: number'
       return:
         type:
           - number
@@ -256,7 +256,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string type
+      content: 'type?: string'
       return:
         type:
           - string

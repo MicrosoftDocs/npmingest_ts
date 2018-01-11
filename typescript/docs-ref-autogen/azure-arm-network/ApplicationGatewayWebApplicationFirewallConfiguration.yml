@@ -30,7 +30,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationGatewayFirewallDisabledRuleGroup[] disabledRuleGroups'
+      content: 'disabledRuleGroups?: ApplicationGatewayFirewallDisabledRuleGroup[]'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayFirewallDisabledRuleGroup[]'
@@ -44,7 +44,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: boolean enabled
+      content: 'enabled: boolean'
       return:
         type:
           - boolean
@@ -58,7 +58,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string firewallMode
+      content: 'firewallMode: string'
       return:
         type:
           - string
@@ -72,7 +72,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string ruleSetType
+      content: 'ruleSetType: string'
       return:
         type:
           - string
@@ -86,7 +86,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string ruleSetVersion
+      content: 'ruleSetVersion: string'
       return:
         type:
           - string

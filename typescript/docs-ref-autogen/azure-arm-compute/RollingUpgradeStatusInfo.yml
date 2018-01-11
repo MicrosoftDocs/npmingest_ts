@@ -25,7 +25,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ApiError error
+      content: 'error?: ApiError'
       return:
         type:
           - '@azure-arm-compute.ApiError'
@@ -39,7 +39,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: RollingUpgradePolicy policy
+      content: 'policy?: RollingUpgradePolicy'
       return:
         type:
           - '@azure-arm-compute.RollingUpgradePolicy'
@@ -53,7 +53,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: RollingUpgradeProgressInfo progress
+      content: 'progress?: RollingUpgradeProgressInfo'
       return:
         type:
           - '@azure-arm-compute.RollingUpgradeProgressInfo'
@@ -67,7 +67,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: RollingUpgradeRunningStatus runningStatus
+      content: 'runningStatus?: RollingUpgradeRunningStatus'
       return:
         type:
           - '@azure-arm-compute.RollingUpgradeRunningStatus'

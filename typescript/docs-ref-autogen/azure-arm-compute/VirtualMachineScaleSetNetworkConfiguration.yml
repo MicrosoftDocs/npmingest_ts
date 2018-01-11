@@ -30,7 +30,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualMachineScaleSetNetworkConfigurationDnsSettings dnsSettings
+      content: 'dnsSettings?: VirtualMachineScaleSetNetworkConfigurationDnsSettings'
       return:
         type:
           - >-
@@ -46,7 +46,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean enableAcceleratedNetworking
+      content: 'enableAcceleratedNetworking?: boolean'
       return:
         type:
           - boolean
@@ -60,7 +60,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'VirtualMachineScaleSetIPConfiguration[] ipConfigurations'
+      content: 'ipConfigurations: VirtualMachineScaleSetIPConfiguration[]'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetIPConfiguration[]'
@@ -73,7 +73,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string name
+      content: 'name: string'
       return:
         type:
           - string
@@ -88,7 +88,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource networkSecurityGroup
+      content: 'networkSecurityGroup?: SubResource'
       return:
         type:
           - '@azure-arm-compute.SubResource'
@@ -102,7 +102,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean primary
+      content: 'primary?: boolean'
       return:
         type:
           - boolean

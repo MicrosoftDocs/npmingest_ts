@@ -24,7 +24,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number diskSizeGB
+      content: 'diskSizeGB?: number'
       return:
         type:
           - number
@@ -38,7 +38,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: EncryptionSettings encryptionSettings
+      content: 'encryptionSettings?: EncryptionSettings'
       return:
         type:
           - '@azure-arm-compute.EncryptionSettings'
@@ -52,7 +52,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string osType
+      content: 'osType?: string'
       return:
         type:
           - string

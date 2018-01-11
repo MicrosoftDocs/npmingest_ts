@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'VirtualMachineExtensionHandlerInstanceView[] extensionHandlers'
+      content: 'extensionHandlers?: VirtualMachineExtensionHandlerInstanceView[]'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineExtensionHandlerInstanceView[]'
@@ -36,7 +36,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'InstanceViewStatus[] statuses'
+      content: 'statuses?: InstanceViewStatus[]'
       return:
         type:
           - '@azure-arm-compute.InstanceViewStatus[]'
@@ -50,7 +50,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string vmAgentVersion
+      content: 'vmAgentVersion?: string'
       return:
         type:
           - string

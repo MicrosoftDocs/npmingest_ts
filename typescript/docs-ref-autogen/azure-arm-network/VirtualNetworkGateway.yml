@@ -33,7 +33,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean activeActive
+      content: 'activeActive?: boolean'
       return:
         type:
           - boolean
@@ -47,7 +47,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: BgpSettings bgpSettings
+      content: 'bgpSettings?: BgpSettings'
       return:
         type:
           - '@azure-arm-network.BgpSettings'
@@ -61,7 +61,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean enableBgp
+      content: 'enableBgp?: boolean'
       return:
         type:
           - boolean
@@ -75,7 +75,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -89,7 +89,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource gatewayDefaultSite
+      content: 'gatewayDefaultSite?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -103,7 +103,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string gatewayType
+      content: 'gatewayType?: string'
       return:
         type:
           - string
@@ -117,7 +117,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'VirtualNetworkGatewayIPConfiguration[] ipConfigurations'
+      content: 'ipConfigurations?: VirtualNetworkGatewayIPConfiguration[]'
       return:
         type:
           - '@azure-arm-network.VirtualNetworkGatewayIPConfiguration[]'
@@ -131,7 +131,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -145,7 +145,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string resourceGuid
+      content: 'resourceGuid?: string'
       return:
         type:
           - string
@@ -159,7 +159,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualNetworkGatewaySku sku
+      content: 'sku?: VirtualNetworkGatewaySku'
       return:
         type:
           - '@azure-arm-network.VirtualNetworkGatewaySku'
@@ -173,7 +173,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VpnClientConfiguration vpnClientConfiguration
+      content: 'vpnClientConfiguration?: VpnClientConfiguration'
       return:
         type:
           - '@azure-arm-network.VpnClientConfiguration'
@@ -187,7 +187,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string vpnType
+      content: 'vpnType?: string'
       return:
         type:
           - string

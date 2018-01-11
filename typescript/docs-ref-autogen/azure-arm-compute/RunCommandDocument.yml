@@ -23,7 +23,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'RunCommandParameterDefinition[] parameters'
+      content: 'parameters?: RunCommandParameterDefinition[]'
       return:
         type:
           - '@azure-arm-compute.RunCommandParameterDefinition[]'
@@ -36,7 +36,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'string[] script'
+      content: 'script: string[]'
       return:
         type:
           - 'string[]'

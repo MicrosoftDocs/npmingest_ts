@@ -23,7 +23,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ApplicationGatewayBackendHttpSettings backendHttpSettings
+      content: 'backendHttpSettings?: ApplicationGatewayBackendHttpSettings'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayBackendHttpSettings'
@@ -37,7 +37,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationGatewayBackendHealthServer[] servers'
+      content: 'servers?: ApplicationGatewayBackendHealthServer[]'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayBackendHealthServer[]'

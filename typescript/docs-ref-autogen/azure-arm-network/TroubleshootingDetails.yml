@@ -24,7 +24,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string detail
+      content: 'detail?: string'
       return:
         type:
           - string
@@ -38,7 +38,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string id
+      content: 'id?: string'
       return:
         type:
           - string
@@ -52,7 +52,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string reasonType
+      content: 'reasonType?: string'
       return:
         type:
           - string
@@ -66,7 +66,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'TroubleshootingRecommendedActions[] recommendedActions'
+      content: 'recommendedActions?: TroubleshootingRecommendedActions[]'
       return:
         type:
           - '@azure-arm-network.TroubleshootingRecommendedActions[]'
@@ -80,7 +80,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string summary
+      content: 'summary?: string'
       return:
         type:
           - string

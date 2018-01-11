@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'VirtualMachineScaleSetVMExtensionsSummary[] extensions'
+      content: 'extensions?: VirtualMachineScaleSetVMExtensionsSummary[]'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetVMExtensionsSummary[]'
@@ -36,7 +36,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'InstanceViewStatus[] statuses'
+      content: 'statuses?: InstanceViewStatus[]'
       return:
         type:
           - '@azure-arm-compute.InstanceViewStatus[]'
@@ -50,7 +50,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualMachineScaleSetInstanceViewStatusesSummary virtualMachine
+      content: 'virtualMachine?: VirtualMachineScaleSetInstanceViewStatusesSummary'
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetInstanceViewStatusesSummary'

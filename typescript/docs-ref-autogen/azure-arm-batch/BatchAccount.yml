@@ -30,7 +30,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string accountEndpoint
+      content: 'accountEndpoint?: string'
       return:
         type:
           - string
@@ -44,7 +44,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number activeJobAndJobScheduleQuota
+      content: 'activeJobAndJobScheduleQuota?: number'
       return:
         type:
           - number
@@ -58,7 +58,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: AutoStorageProperties autoStorage
+      content: 'autoStorage?: AutoStorageProperties'
       return:
         type:
           - '@azure-arm-batch.AutoStorageProperties'
@@ -72,7 +72,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number dedicatedCoreQuota
+      content: 'dedicatedCoreQuota?: number'
       return:
         type:
           - number
@@ -86,7 +86,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: KeyVaultReference keyVaultReference
+      content: 'keyVaultReference?: KeyVaultReference'
       return:
         type:
           - '@azure-arm-batch.KeyVaultReference'
@@ -100,7 +100,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number lowPriorityCoreQuota
+      content: 'lowPriorityCoreQuota?: number'
       return:
         type:
           - number
@@ -114,7 +114,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string poolAllocationMode
+      content: 'poolAllocationMode?: string'
       return:
         type:
           - string
@@ -128,7 +128,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number poolQuota
+      content: 'poolQuota?: number'
       return:
         type:
           - number
@@ -142,7 +142,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string

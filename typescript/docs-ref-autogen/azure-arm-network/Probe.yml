@@ -30,7 +30,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -44,7 +44,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number intervalInSeconds
+      content: 'intervalInSeconds?: number'
       return:
         type:
           - number
@@ -58,7 +58,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SubResource[] loadBalancingRules'
+      content: 'loadBalancingRules?: SubResource[]'
       return:
         type:
           - '@azure-arm-network.SubResource[]'
@@ -72,7 +72,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -86,7 +86,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number numberOfProbes
+      content: 'numberOfProbes?: number'
       return:
         type:
           - number
@@ -99,7 +99,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: number port
+      content: 'port: number'
       return:
         type:
           - number
@@ -112,7 +112,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string protocol
+      content: 'protocol: string'
       return:
         type:
           - string
@@ -126,7 +126,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -140,7 +140,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string requestPath
+      content: 'requestPath?: string'
       return:
         type:
           - string

@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string address
+      content: 'address?: string'
       return:
         type:
           - string
@@ -36,7 +36,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string health
+      content: 'health?: string'
       return:
         type:
           - string
@@ -50,7 +50,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: NetworkInterfaceIPConfiguration ipConfiguration
+      content: 'ipConfiguration?: NetworkInterfaceIPConfiguration'
       return:
         type:
           - '@azure-arm-network.NetworkInterfaceIPConfiguration'

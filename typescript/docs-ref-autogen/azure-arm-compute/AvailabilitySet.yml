@@ -26,7 +26,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number platformFaultDomainCount
+      content: 'platformFaultDomainCount?: number'
       return:
         type:
           - number
@@ -40,7 +40,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number platformUpdateDomainCount
+      content: 'platformUpdateDomainCount?: number'
       return:
         type:
           - number
@@ -54,7 +54,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: Sku sku
+      content: 'sku?: Sku'
       return:
         type:
           - '@azure-arm-compute.Sku'
@@ -68,7 +68,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'InstanceViewStatus[] statuses'
+      content: 'statuses?: InstanceViewStatus[]'
       return:
         type:
           - '@azure-arm-compute.InstanceViewStatus[]'
@@ -82,7 +82,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'SubResource[] virtualMachines'
+      content: 'virtualMachines?: SubResource[]'
       return:
         type:
           - '@azure-arm-compute.SubResource[]'

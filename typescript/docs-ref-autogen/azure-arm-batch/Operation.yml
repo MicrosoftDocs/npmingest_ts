@@ -23,7 +23,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: OperationDisplay display
+      content: 'display?: OperationDisplay'
       return:
         type:
           - '@azure-arm-batch.OperationDisplay'
@@ -37,7 +37,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -51,7 +51,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string origin
+      content: 'origin?: string'
       return:
         type:
           - string
@@ -65,7 +65,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: any properties
+      content: 'properties?: any'
       return:
         type:
           - any

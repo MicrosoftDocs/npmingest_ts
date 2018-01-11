@@ -24,7 +24,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string code
+      content: 'code?: string'
       return:
         type:
           - string
@@ -38,7 +38,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApiErrorBase[] details'
+      content: 'details?: ApiErrorBase[]'
       return:
         type:
           - '@azure-arm-compute.ApiErrorBase[]'
@@ -52,7 +52,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: InnerError innererror
+      content: 'innererror?: InnerError'
       return:
         type:
           - '@azure-arm-compute.InnerError'
@@ -66,7 +66,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string message
+      content: 'message?: string'
       return:
         type:
           - string
@@ -80,7 +80,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string target
+      content: 'target?: string'
       return:
         type:
           - string

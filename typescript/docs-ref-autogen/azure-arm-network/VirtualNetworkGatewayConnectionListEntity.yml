@@ -53,7 +53,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string authorizationKey
+      content: 'authorizationKey?: string'
       return:
         type:
           - string
@@ -68,7 +68,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string connectionStatus
+      content: 'connectionStatus?: string'
       return:
         type:
           - string
@@ -81,7 +81,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string connectionType
+      content: 'connectionType: string'
       return:
         type:
           - string
@@ -96,7 +96,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number egressBytesTransferred
+      content: 'egressBytesTransferred?: number'
       return:
         type:
           - number
@@ -110,7 +110,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean enableBgp
+      content: 'enableBgp?: boolean'
       return:
         type:
           - boolean
@@ -124,7 +124,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -139,7 +139,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number ingressBytesTransferred
+      content: 'ingressBytesTransferred?: number'
       return:
         type:
           - number
@@ -153,7 +153,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'IpsecPolicy[] ipsecPolicies'
+      content: 'ipsecPolicies?: IpsecPolicy[]'
       return:
         type:
           - '@azure-arm-network.IpsecPolicy[]'
@@ -168,7 +168,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualNetworkConnectionGatewayReference localNetworkGateway2
+      content: 'localNetworkGateway2?: VirtualNetworkConnectionGatewayReference'
       return:
         type:
           - '@azure-arm-network.VirtualNetworkConnectionGatewayReference'
@@ -182,7 +182,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource peer
+      content: 'peer?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -197,7 +197,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -211,7 +211,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string resourceGuid
+      content: 'resourceGuid?: string'
       return:
         type:
           - string
@@ -225,7 +225,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number routingWeight
+      content: 'routingWeight?: number'
       return:
         type:
           - number
@@ -239,7 +239,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string sharedKey
+      content: 'sharedKey?: string'
       return:
         type:
           - string
@@ -254,7 +254,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'TunnelConnectionHealth[] tunnelConnectionStatus'
+      content: 'tunnelConnectionStatus?: TunnelConnectionHealth[]'
       return:
         type:
           - '@azure-arm-network.TunnelConnectionHealth[]'
@@ -269,7 +269,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean usePolicyBasedTrafficSelectors
+      content: 'usePolicyBasedTrafficSelectors?: boolean'
       return:
         type:
           - boolean
@@ -283,7 +283,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: VirtualNetworkConnectionGatewayReference virtualNetworkGateway1
+      content: 'virtualNetworkGateway1: VirtualNetworkConnectionGatewayReference'
       return:
         type:
           - '@azure-arm-network.VirtualNetworkConnectionGatewayReference'
@@ -298,7 +298,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: VirtualNetworkConnectionGatewayReference virtualNetworkGateway2
+      content: 'virtualNetworkGateway2?: VirtualNetworkConnectionGatewayReference'
       return:
         type:
           - '@azure-arm-network.VirtualNetworkConnectionGatewayReference'

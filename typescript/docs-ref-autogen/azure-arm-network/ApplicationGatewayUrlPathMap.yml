@@ -31,7 +31,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource defaultBackendAddressPool
+      content: 'defaultBackendAddressPool?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -45,7 +45,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource defaultBackendHttpSettings
+      content: 'defaultBackendHttpSettings?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -60,7 +60,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource defaultRedirectConfiguration
+      content: 'defaultRedirectConfiguration?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -74,7 +74,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -88,7 +88,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -102,7 +102,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationGatewayPathRule[] pathRules'
+      content: 'pathRules?: ApplicationGatewayPathRule[]'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayPathRule[]'
@@ -116,7 +116,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -130,7 +130,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string type
+      content: 'type?: string'
       return:
         type:
           - string

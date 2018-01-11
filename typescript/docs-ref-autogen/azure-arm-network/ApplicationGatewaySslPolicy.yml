@@ -24,7 +24,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] cipherSuites'
+      content: 'cipherSuites?: string[]'
       return:
         type:
           - 'string[]'
@@ -38,7 +38,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'string[] disabledSslProtocols'
+      content: 'disabledSslProtocols?: string[]'
       return:
         type:
           - 'string[]'
@@ -52,7 +52,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string minProtocolVersion
+      content: 'minProtocolVersion?: string'
       return:
         type:
           - string
@@ -66,7 +66,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string policyName
+      content: 'policyName?: string'
       return:
         type:
           - string
@@ -80,7 +80,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string policyType
+      content: 'policyType?: string'
       return:
         type:
           - string

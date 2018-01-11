@@ -41,7 +41,9 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationGatewayAuthenticationCertificate[] authenticationCertificates'
+      content: >-
+        authenticationCertificates?:
+        ApplicationGatewayAuthenticationCertificate[]
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayAuthenticationCertificate[]'
@@ -55,7 +57,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationGatewayBackendAddressPool[] backendAddressPools'
+      content: 'backendAddressPools?: ApplicationGatewayBackendAddressPool[]'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayBackendAddressPool[]'
@@ -69,7 +71,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationGatewayBackendHttpSettings[] backendHttpSettingsCollection'
+      content: 'backendHttpSettingsCollection?: ApplicationGatewayBackendHttpSettings[]'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayBackendHttpSettings[]'
@@ -83,7 +85,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean enableHttp2
+      content: 'enableHttp2?: boolean'
       return:
         type:
           - boolean
@@ -97,7 +99,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -111,7 +113,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationGatewayFrontendIPConfiguration[] frontendIPConfigurations'
+      content: 'frontendIPConfigurations?: ApplicationGatewayFrontendIPConfiguration[]'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayFrontendIPConfiguration[]'
@@ -125,7 +127,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationGatewayFrontendPort[] frontendPorts'
+      content: 'frontendPorts?: ApplicationGatewayFrontendPort[]'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayFrontendPort[]'
@@ -139,7 +141,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationGatewayIPConfiguration[] gatewayIPConfigurations'
+      content: 'gatewayIPConfigurations?: ApplicationGatewayIPConfiguration[]'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayIPConfiguration[]'
@@ -153,7 +155,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationGatewayHttpListener[] httpListeners'
+      content: 'httpListeners?: ApplicationGatewayHttpListener[]'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayHttpListener[]'
@@ -167,7 +169,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string operationalState
+      content: 'operationalState?: string'
       return:
         type:
           - string
@@ -181,7 +183,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationGatewayProbe[] probes'
+      content: 'probes?: ApplicationGatewayProbe[]'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayProbe[]'
@@ -195,7 +197,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -209,7 +211,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationGatewayRedirectConfiguration[] redirectConfigurations'
+      content: 'redirectConfigurations?: ApplicationGatewayRedirectConfiguration[]'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayRedirectConfiguration[]'
@@ -223,7 +225,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationGatewayRequestRoutingRule[] requestRoutingRules'
+      content: 'requestRoutingRules?: ApplicationGatewayRequestRoutingRule[]'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayRequestRoutingRule[]'
@@ -237,7 +239,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string resourceGuid
+      content: 'resourceGuid?: string'
       return:
         type:
           - string
@@ -251,7 +253,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ApplicationGatewaySku sku
+      content: 'sku?: ApplicationGatewaySku'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewaySku'
@@ -265,7 +267,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationGatewaySslCertificate[] sslCertificates'
+      content: 'sslCertificates?: ApplicationGatewaySslCertificate[]'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewaySslCertificate[]'
@@ -279,7 +281,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ApplicationGatewaySslPolicy sslPolicy
+      content: 'sslPolicy?: ApplicationGatewaySslPolicy'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewaySslPolicy'
@@ -293,7 +295,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ApplicationGatewayUrlPathMap[] urlPathMaps'
+      content: 'urlPathMaps?: ApplicationGatewayUrlPathMap[]'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayUrlPathMap[]'
@@ -308,8 +310,8 @@ items:
     optional: true
     syntax:
       content: >-
+        webApplicationFirewallConfiguration?:
         ApplicationGatewayWebApplicationFirewallConfiguration
-        webApplicationFirewallConfiguration
       return:
         type:
           - >-

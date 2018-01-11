@@ -22,7 +22,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string description
+      content: 'description?: string'
       return:
         type:
           - string
@@ -35,7 +35,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string ruleGroupName
+      content: 'ruleGroupName: string'
       return:
         type:
           - string
@@ -48,7 +48,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'ApplicationGatewayFirewallRule[] rules'
+      content: 'rules: ApplicationGatewayFirewallRule[]'
       return:
         type:
           - '@azure-arm-network.ApplicationGatewayFirewallRule[]'

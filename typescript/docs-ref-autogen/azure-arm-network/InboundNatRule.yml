@@ -31,7 +31,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: NetworkInterfaceIPConfiguration backendIPConfiguration
+      content: 'backendIPConfiguration?: NetworkInterfaceIPConfiguration'
       return:
         type:
           - '@azure-arm-network.NetworkInterfaceIPConfiguration'
@@ -45,7 +45,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number backendPort
+      content: 'backendPort?: number'
       return:
         type:
           - number
@@ -59,7 +59,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean enableFloatingIP
+      content: 'enableFloatingIP?: boolean'
       return:
         type:
           - boolean
@@ -73,7 +73,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -87,7 +87,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: SubResource frontendIPConfiguration
+      content: 'frontendIPConfiguration?: SubResource'
       return:
         type:
           - '@azure-arm-network.SubResource'
@@ -101,7 +101,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number frontendPort
+      content: 'frontendPort?: number'
       return:
         type:
           - number
@@ -115,7 +115,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: number idleTimeoutInMinutes
+      content: 'idleTimeoutInMinutes?: number'
       return:
         type:
           - number
@@ -129,7 +129,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string name
+      content: 'name?: string'
       return:
         type:
           - string
@@ -143,7 +143,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string protocol
+      content: 'protocol?: string'
       return:
         type:
           - string
@@ -157,7 +157,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string

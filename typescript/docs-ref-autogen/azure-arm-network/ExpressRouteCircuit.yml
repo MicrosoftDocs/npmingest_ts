@@ -33,7 +33,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: boolean allowClassicOperations
+      content: 'allowClassicOperations?: boolean'
       return:
         type:
           - boolean
@@ -47,7 +47,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ExpressRouteCircuitAuthorization[] authorizations'
+      content: 'authorizations?: ExpressRouteCircuitAuthorization[]'
       return:
         type:
           - '@azure-arm-network.ExpressRouteCircuitAuthorization[]'
@@ -61,7 +61,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string circuitProvisioningState
+      content: 'circuitProvisioningState?: string'
       return:
         type:
           - string
@@ -75,7 +75,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string etag
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -89,7 +89,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string gatewayManagerEtag
+      content: 'gatewayManagerEtag?: string'
       return:
         type:
           - string
@@ -103,7 +103,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'ExpressRouteCircuitPeering[] peerings'
+      content: 'peerings?: ExpressRouteCircuitPeering[]'
       return:
         type:
           - '@azure-arm-network.ExpressRouteCircuitPeering[]'
@@ -117,7 +117,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string provisioningState
+      content: 'provisioningState?: string'
       return:
         type:
           - string
@@ -131,7 +131,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string serviceKey
+      content: 'serviceKey?: string'
       return:
         type:
           - string
@@ -145,7 +145,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string serviceProviderNotes
+      content: 'serviceProviderNotes?: string'
       return:
         type:
           - string
@@ -159,7 +159,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ExpressRouteCircuitServiceProviderProperties serviceProviderProperties
+      content: 'serviceProviderProperties?: ExpressRouteCircuitServiceProviderProperties'
       return:
         type:
           - '@azure-arm-network.ExpressRouteCircuitServiceProviderProperties'
@@ -173,7 +173,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: string serviceProviderProvisioningState
+      content: 'serviceProviderProvisioningState?: string'
       return:
         type:
           - string
@@ -187,7 +187,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: ExpressRouteCircuitSku sku
+      content: 'sku?: ExpressRouteCircuitSku'
       return:
         type:
           - '@azure-arm-network.ExpressRouteCircuitSku'
