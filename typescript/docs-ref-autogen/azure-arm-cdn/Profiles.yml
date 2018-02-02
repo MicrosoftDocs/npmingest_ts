@@ -364,7 +364,7 @@ items:
     syntax:
       content: >-
         function beginUpdate(resourceGroupName: string, profileName: string,
-        tags: [key: string]: string, callback: ServiceCallback<Profile>)
+        tags: function, callback: ServiceCallback<Profile>)
       parameters:
         - id: resourceGroupName
           type:
@@ -376,7 +376,7 @@ items:
           description: ''
         - id: tags
           type:
-            - '[key: string]: string'
+            - function
           description: ''
         - id: callback
           type:
@@ -397,8 +397,7 @@ items:
     syntax:
       content: >-
         function beginUpdate(resourceGroupName: string, profileName: string,
-        tags: [key: string]: string, options: function, callback:
-        ServiceCallback<Profile>)
+        tags: function, options: function, callback: ServiceCallback<Profile>)
       parameters:
         - id: resourceGroupName
           type:
@@ -410,7 +409,7 @@ items:
           description: ''
         - id: tags
           type:
-            - '[key: string]: string'
+            - function
           description: ''
         - id: options
           type:
@@ -435,7 +434,7 @@ items:
     syntax:
       content: >-
         function beginUpdate(resourceGroupName: string, profileName: string,
-        tags: [key: string]: string, options?: function)
+        tags: function, options?: function)
       parameters:
         - id: resourceGroupName
           type:
@@ -451,7 +450,7 @@ items:
             the resource group.
         - id: tags
           type:
-            - '[key: string]: string'
+            - function
           description: |
             Profile tags
         - id: options
@@ -474,7 +473,7 @@ items:
     syntax:
       content: >-
         function beginUpdateWithHttpOperationResponse(resourceGroupName: string,
-        profileName: string, tags: [key: string]: string, options?: function)
+        profileName: string, tags: function, options?: function)
       parameters:
         - id: resourceGroupName
           type:
@@ -490,7 +489,7 @@ items:
             the resource group.
         - id: tags
           type:
-            - '[key: string]: string'
+            - function
           description: |
             Profile tags
         - id: options
@@ -1858,7 +1857,7 @@ items:
     syntax:
       content: >-
         function update(resourceGroupName: string, profileName: string, tags:
-        [key: string]: string, options?: function)
+        function, options?: function)
       parameters:
         - id: resourceGroupName
           type:
@@ -1874,7 +1873,7 @@ items:
             the resource group.
         - id: tags
           type:
-            - '[key: string]: string'
+            - function
           description: |
             Profile tags
         - id: options
@@ -1897,7 +1896,7 @@ items:
     syntax:
       content: >-
         function update(resourceGroupName: string, profileName: string, tags:
-        [key: string]: string, callback: ServiceCallback<Profile>)
+        function, callback: ServiceCallback<Profile>)
       parameters:
         - id: resourceGroupName
           type:
@@ -1909,7 +1908,7 @@ items:
           description: ''
         - id: tags
           type:
-            - '[key: string]: string'
+            - function
           description: ''
         - id: callback
           type:
@@ -1930,8 +1929,7 @@ items:
     syntax:
       content: >-
         function update(resourceGroupName: string, profileName: string, tags:
-        [key: string]: string, options: function, callback:
-        ServiceCallback<Profile>)
+        function, options: function, callback: ServiceCallback<Profile>)
       parameters:
         - id: resourceGroupName
           type:
@@ -1943,7 +1941,7 @@ items:
           description: ''
         - id: tags
           type:
-            - '[key: string]: string'
+            - function
           description: ''
         - id: options
           type:
@@ -1968,7 +1966,7 @@ items:
     syntax:
       content: >-
         function updateWithHttpOperationResponse(resourceGroupName: string,
-        profileName: string, tags: [key: string]: string, options?: function)
+        profileName: string, tags: function, options?: function)
       parameters:
         - id: resourceGroupName
           type:
@@ -1984,7 +1982,7 @@ items:
             the resource group.
         - id: tags
           type:
-            - '[key: string]: string'
+            - function
           description: |
             Profile tags
         - id: options

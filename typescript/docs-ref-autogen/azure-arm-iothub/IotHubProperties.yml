@@ -88,10 +88,10 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'eventHubEndpoints?: [key: string]: EventHubProperties'
+      content: 'eventHubEndpoints?: function'
       return:
         type:
-          - '[key: string]: @azure-arm-iothub.EventHubProperties'
+          - function
   - uid: azure-arm-iothub.IotHubProperties.features
     name: features
     fullName: features
@@ -144,10 +144,10 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'messagingEndpoints?: [key: string]: MessagingEndpointProperties'
+      content: 'messagingEndpoints?: function'
       return:
         type:
-          - '[key: string]: @azure-arm-iothub.MessagingEndpointProperties'
+          - function
   - uid: azure-arm-iothub.IotHubProperties.operationsMonitoringProperties
     name: operationsMonitoringProperties
     fullName: operationsMonitoringProperties
@@ -200,7 +200,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'storageEndpoints?: [key: string]: StorageEndpointProperties'
+      content: 'storageEndpoints?: function'
       return:
         type:
-          - '[key: string]: @azure-arm-iothub.StorageEndpointProperties'
+          - function
