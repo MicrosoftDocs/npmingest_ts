@@ -364,7 +364,7 @@ items:
     syntax:
       content: >-
         function beginUpdate(resourceGroupName: string, profileName: string,
-        tags: function, callback: ServiceCallback<Profile>)
+        callback: ServiceCallback<Profile>)
       parameters:
         - id: resourceGroupName
           type:
@@ -373,10 +373,6 @@ items:
         - id: profileName
           type:
             - string
-          description: ''
-        - id: tags
-          type:
-            - function
           description: ''
         - id: callback
           type:
@@ -397,7 +393,7 @@ items:
     syntax:
       content: >-
         function beginUpdate(resourceGroupName: string, profileName: string,
-        tags: function, options: function, callback: ServiceCallback<Profile>)
+        options: function, callback: ServiceCallback<Profile>)
       parameters:
         - id: resourceGroupName
           type:
@@ -406,10 +402,6 @@ items:
         - id: profileName
           type:
             - string
-          description: ''
-        - id: tags
-          type:
-            - function
           description: ''
         - id: options
           type:
@@ -434,7 +426,7 @@ items:
     syntax:
       content: >-
         function beginUpdate(resourceGroupName: string, profileName: string,
-        tags: function, options?: function)
+        options?: function)
       parameters:
         - id: resourceGroupName
           type:
@@ -448,11 +440,6 @@ items:
           description: |
             Name of the CDN profile which is unique within
             the resource group.
-        - id: tags
-          type:
-            - function
-          description: |
-            Profile tags
         - id: options
           type:
             - function
@@ -473,7 +460,7 @@ items:
     syntax:
       content: >-
         function beginUpdateWithHttpOperationResponse(resourceGroupName: string,
-        profileName: string, tags: function, options?: function)
+        profileName: string, options?: function)
       parameters:
         - id: resourceGroupName
           type:
@@ -487,11 +474,6 @@ items:
           description: |
             Name of the CDN profile which is unique within
             the resource group.
-        - id: tags
-          type:
-            - function
-          description: |
-            Profile tags
         - id: options
           type:
             - function
@@ -1856,8 +1838,8 @@ items:
       specified subscription and resource group.
     syntax:
       content: >-
-        function update(resourceGroupName: string, profileName: string, tags:
-        function, options?: function)
+        function update(resourceGroupName: string, profileName: string,
+        options?: function)
       parameters:
         - id: resourceGroupName
           type:
@@ -1871,11 +1853,6 @@ items:
           description: |
             Name of the CDN profile which is unique within
             the resource group.
-        - id: tags
-          type:
-            - function
-          description: |
-            Profile tags
         - id: options
           type:
             - function
@@ -1895,8 +1872,8 @@ items:
       specified subscription and resource group.
     syntax:
       content: >-
-        function update(resourceGroupName: string, profileName: string, tags:
-        function, callback: ServiceCallback<Profile>)
+        function update(resourceGroupName: string, profileName: string,
+        callback: ServiceCallback<Profile>)
       parameters:
         - id: resourceGroupName
           type:
@@ -1905,10 +1882,6 @@ items:
         - id: profileName
           type:
             - string
-          description: ''
-        - id: tags
-          type:
-            - function
           description: ''
         - id: callback
           type:
@@ -1928,8 +1901,8 @@ items:
       specified subscription and resource group.
     syntax:
       content: >-
-        function update(resourceGroupName: string, profileName: string, tags:
-        function, options: function, callback: ServiceCallback<Profile>)
+        function update(resourceGroupName: string, profileName: string, options:
+        function, callback: ServiceCallback<Profile>)
       parameters:
         - id: resourceGroupName
           type:
@@ -1938,10 +1911,6 @@ items:
         - id: profileName
           type:
             - string
-          description: ''
-        - id: tags
-          type:
-            - function
           description: ''
         - id: options
           type:
@@ -1966,7 +1935,7 @@ items:
     syntax:
       content: >-
         function updateWithHttpOperationResponse(resourceGroupName: string,
-        profileName: string, tags: function, options?: function)
+        profileName: string, options?: function)
       parameters:
         - id: resourceGroupName
           type:
@@ -1980,11 +1949,6 @@ items:
           description: |
             Name of the CDN profile which is unique within
             the resource group.
-        - id: tags
-          type:
-            - function
-          description: |
-            Profile tags
         - id: options
           type:
             - function

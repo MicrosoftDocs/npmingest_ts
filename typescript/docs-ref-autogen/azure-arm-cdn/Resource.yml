@@ -5,9 +5,7 @@ items:
     fullName: Resource
     children:
       - azure-arm-cdn.Resource.id
-      - azure-arm-cdn.Resource.location
       - azure-arm-cdn.Resource.name
-      - azure-arm-cdn.Resource.tags
       - azure-arm-cdn.Resource.type
     langs:
       - typeScript
@@ -30,19 +28,6 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-cdn.Resource.location
-    name: location
-    fullName: location
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      content: 'location: string'
-      return:
-        type:
-          - string
   - uid: azure-arm-cdn.Resource.name
     name: name
     fullName: name
@@ -57,20 +42,6 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-cdn.Resource.tags
-    name: tags
-    fullName: tags
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    optional: true
-    syntax:
-      content: 'tags?: function'
-      return:
-        type:
-          - function
   - uid: azure-arm-cdn.Resource.type
     name: type
     fullName: type
