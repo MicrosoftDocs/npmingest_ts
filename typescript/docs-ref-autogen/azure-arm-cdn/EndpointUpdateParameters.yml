@@ -5,6 +5,7 @@ items:
     fullName: EndpointUpdateParameters
     children:
       - azure-arm-cdn.EndpointUpdateParameters.contentTypesToCompress
+      - azure-arm-cdn.EndpointUpdateParameters.deliveryPolicy
       - azure-arm-cdn.EndpointUpdateParameters.geoFilters
       - azure-arm-cdn.EndpointUpdateParameters.isCompressionEnabled
       - azure-arm-cdn.EndpointUpdateParameters.isHttpAllowed
@@ -36,6 +37,20 @@ items:
       return:
         type:
           - 'string[]'
+  - uid: azure-arm-cdn.EndpointUpdateParameters.deliveryPolicy
+    name: deliveryPolicy
+    fullName: deliveryPolicy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'deliveryPolicy?: EndpointPropertiesUpdateParametersDeliveryPolicy'
+      return:
+        type:
+          - '@azure-arm-cdn.EndpointPropertiesUpdateParametersDeliveryPolicy'
   - uid: azure-arm-cdn.EndpointUpdateParameters.geoFilters
     name: geoFilters
     fullName: geoFilters

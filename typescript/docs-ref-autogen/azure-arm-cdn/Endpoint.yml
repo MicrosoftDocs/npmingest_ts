@@ -5,6 +5,7 @@ items:
     fullName: Endpoint
     children:
       - azure-arm-cdn.Endpoint.contentTypesToCompress
+      - azure-arm-cdn.Endpoint.deliveryPolicy
       - azure-arm-cdn.Endpoint.geoFilters
       - azure-arm-cdn.Endpoint.hostName
       - azure-arm-cdn.Endpoint.isCompressionEnabled
@@ -39,6 +40,20 @@ items:
       return:
         type:
           - 'string[]'
+  - uid: azure-arm-cdn.Endpoint.deliveryPolicy
+    name: deliveryPolicy
+    fullName: deliveryPolicy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'deliveryPolicy?: EndpointPropertiesUpdateParametersDeliveryPolicy'
+      return:
+        type:
+          - '@azure-arm-cdn.EndpointPropertiesUpdateParametersDeliveryPolicy'
   - uid: azure-arm-cdn.Endpoint.geoFilters
     name: geoFilters
     fullName: geoFilters

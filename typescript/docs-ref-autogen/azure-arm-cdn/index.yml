@@ -5,6 +5,7 @@ items:
     summary: ''
     children:
       - azure-arm-cdn.CdnManagementClient
+      - azure-arm-cdn.CacheExpirationActionParameters
       - azure-arm-cdn.CheckNameAvailabilityInput
       - azure-arm-cdn.CheckNameAvailabilityOutput
       - azure-arm-cdn.CidrIpAddress
@@ -12,10 +13,17 @@ items:
       - azure-arm-cdn.CustomDomainListResult
       - azure-arm-cdn.CustomDomainParameters
       - azure-arm-cdn.DeepCreatedOrigin
+      - azure-arm-cdn.DeliveryRule
+      - azure-arm-cdn.DeliveryRuleAction
+      - azure-arm-cdn.DeliveryRuleCacheExpirationAction
+      - azure-arm-cdn.DeliveryRuleCondition
+      - azure-arm-cdn.DeliveryRuleUrlFileExtensionCondition
+      - azure-arm-cdn.DeliveryRuleUrlPathCondition
       - azure-arm-cdn.EdgeNode
       - azure-arm-cdn.EdgenodeResult
       - azure-arm-cdn.Endpoint
       - azure-arm-cdn.EndpointListResult
+      - azure-arm-cdn.EndpointPropertiesUpdateParametersDeliveryPolicy
       - azure-arm-cdn.EndpointUpdateParameters
       - azure-arm-cdn.ErrorResponse
       - azure-arm-cdn.GeoFilter
@@ -39,6 +47,8 @@ items:
       - azure-arm-cdn.SsoUri
       - azure-arm-cdn.SupportedOptimizationTypesListResult
       - azure-arm-cdn.TrackedResource
+      - azure-arm-cdn.UrlFileExtensionConditionParameters
+      - azure-arm-cdn.UrlPathConditionParameters
       - azure-arm-cdn.ValidateCustomDomainInput
       - azure-arm-cdn.ValidateCustomDomainOutput
       - azure-arm-cdn.ValidateProbeInput
@@ -56,6 +66,8 @@ items:
 references:
   - uid: azure-arm-cdn.CdnManagementClient
     name: CdnManagementClient
+  - uid: azure-arm-cdn.CacheExpirationActionParameters
+    name: CacheExpirationActionParameters
   - uid: azure-arm-cdn.CheckNameAvailabilityInput
     name: CheckNameAvailabilityInput
   - uid: azure-arm-cdn.CheckNameAvailabilityOutput
@@ -70,6 +82,18 @@ references:
     name: CustomDomainParameters
   - uid: azure-arm-cdn.DeepCreatedOrigin
     name: DeepCreatedOrigin
+  - uid: azure-arm-cdn.DeliveryRule
+    name: DeliveryRule
+  - uid: azure-arm-cdn.DeliveryRuleAction
+    name: DeliveryRuleAction
+  - uid: azure-arm-cdn.DeliveryRuleCacheExpirationAction
+    name: DeliveryRuleCacheExpirationAction
+  - uid: azure-arm-cdn.DeliveryRuleCondition
+    name: DeliveryRuleCondition
+  - uid: azure-arm-cdn.DeliveryRuleUrlFileExtensionCondition
+    name: DeliveryRuleUrlFileExtensionCondition
+  - uid: azure-arm-cdn.DeliveryRuleUrlPathCondition
+    name: DeliveryRuleUrlPathCondition
   - uid: azure-arm-cdn.EdgeNode
     name: EdgeNode
   - uid: azure-arm-cdn.EdgenodeResult
@@ -78,6 +102,8 @@ references:
     name: Endpoint
   - uid: azure-arm-cdn.EndpointListResult
     name: EndpointListResult
+  - uid: azure-arm-cdn.EndpointPropertiesUpdateParametersDeliveryPolicy
+    name: EndpointPropertiesUpdateParametersDeliveryPolicy
   - uid: azure-arm-cdn.EndpointUpdateParameters
     name: EndpointUpdateParameters
   - uid: azure-arm-cdn.ErrorResponse
@@ -124,6 +150,10 @@ references:
     name: SupportedOptimizationTypesListResult
   - uid: azure-arm-cdn.TrackedResource
     name: TrackedResource
+  - uid: azure-arm-cdn.UrlFileExtensionConditionParameters
+    name: UrlFileExtensionConditionParameters
+  - uid: azure-arm-cdn.UrlPathConditionParameters
+    name: UrlPathConditionParameters
   - uid: azure-arm-cdn.ValidateCustomDomainInput
     name: ValidateCustomDomainInput
   - uid: azure-arm-cdn.ValidateCustomDomainOutput
