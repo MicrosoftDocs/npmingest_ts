@@ -11,6 +11,7 @@ items:
       - azure-arm-compute.VirtualMachineScaleSetOSDisk.name
       - azure-arm-compute.VirtualMachineScaleSetOSDisk.osType
       - azure-arm-compute.VirtualMachineScaleSetOSDisk.vhdContainers
+      - azure-arm-compute.VirtualMachineScaleSetOSDisk.writeAcceleratorEnabled
     langs:
       - typeScript
     type: interface
@@ -113,3 +114,17 @@ items:
       return:
         type:
           - 'string[]'
+  - uid: azure-arm-compute.VirtualMachineScaleSetOSDisk.writeAcceleratorEnabled
+    name: writeAcceleratorEnabled
+    fullName: writeAcceleratorEnabled
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'writeAcceleratorEnabled?: boolean'
+      return:
+        type:
+          - boolean

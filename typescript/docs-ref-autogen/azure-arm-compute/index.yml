@@ -12,9 +12,12 @@ items:
       - azure-arm-compute.ApiErrorBase
       - azure-arm-compute.AvailabilitySet
       - azure-arm-compute.AvailabilitySetListResult
+      - azure-arm-compute.AvailabilitySetUpdate
       - azure-arm-compute.BootDiagnostics
       - azure-arm-compute.BootDiagnosticsInstanceView
       - azure-arm-compute.ComputeLongRunningOperationProperties
+      - azure-arm-compute.ComputeOperationListResult
+      - azure-arm-compute.ComputeOperationValue
       - azure-arm-compute.ContainerService
       - azure-arm-compute.ContainerServiceAgentPoolProfile
       - azure-arm-compute.ContainerServiceCustomProfile
@@ -48,6 +51,7 @@ items:
       - azure-arm-compute.ImageOSDisk
       - azure-arm-compute.ImageReference
       - azure-arm-compute.ImageStorageProfile
+      - azure-arm-compute.ImageUpdate
       - azure-arm-compute.InnerError
       - azure-arm-compute.InstanceViewStatus
       - azure-arm-compute.KeyVaultAndKeyReference
@@ -56,6 +60,9 @@ items:
       - azure-arm-compute.KeyVaultSecretReference
       - azure-arm-compute.LinuxConfiguration
       - azure-arm-compute.ListUsagesResult
+      - azure-arm-compute.LogAnalyticsInputBase
+      - azure-arm-compute.LogAnalyticsOperationResult
+      - azure-arm-compute.LogAnalyticsOutput
       - azure-arm-compute.MaintenanceRedeployStatus
       - azure-arm-compute.ManagedDiskParameters
       - azure-arm-compute.NetworkInterfaceReference
@@ -66,11 +73,15 @@ items:
       - azure-arm-compute.OperationStatusResponse
       - azure-arm-compute.Plan
       - azure-arm-compute.PurchasePlan
+      - azure-arm-compute.RecoveryWalkResponse
+      - azure-arm-compute.RequestRateByIntervalInput
       - azure-arm-compute.Resource
       - azure-arm-compute.ResourceSku
       - azure-arm-compute.ResourceSkuCapabilities
       - azure-arm-compute.ResourceSkuCapacity
       - azure-arm-compute.ResourceSkuCosts
+      - azure-arm-compute.ResourceSkuLocationInfo
+      - azure-arm-compute.ResourceSkuRestrictionInfo
       - azure-arm-compute.ResourceSkuRestrictions
       - azure-arm-compute.ResourceSkusResult
       - azure-arm-compute.ResourceUpdate
@@ -88,6 +99,7 @@ items:
       - azure-arm-compute.Sku
       - azure-arm-compute.Snapshot
       - azure-arm-compute.SnapshotList
+      - azure-arm-compute.SnapshotSku
       - azure-arm-compute.SnapshotUpdate
       - azure-arm-compute.SourceVault
       - azure-arm-compute.SshConfiguration
@@ -95,6 +107,7 @@ items:
       - azure-arm-compute.StorageProfile
       - azure-arm-compute.SubResource
       - azure-arm-compute.SubResourceReadOnly
+      - azure-arm-compute.ThrottledRequestsInput
       - azure-arm-compute.UpdateResource
       - azure-arm-compute.UpgradePolicy
       - azure-arm-compute.Usage
@@ -160,6 +173,7 @@ items:
       - azure-arm-compute.VirtualMachineSize
       - azure-arm-compute.VirtualMachineSizeListResult
       - azure-arm-compute.VirtualMachineStatusCodeCount
+      - azure-arm-compute.VirtualMachineUpdate
       - azure-arm-compute.WinRMConfiguration
       - azure-arm-compute.WinRMListener
       - azure-arm-compute.WindowsConfiguration
@@ -167,6 +181,8 @@ items:
       - azure-arm-compute.ContainerServices
       - azure-arm-compute.Disks
       - azure-arm-compute.Images
+      - azure-arm-compute.LogAnalytics
+      - azure-arm-compute.Operations
       - azure-arm-compute.ResourceSkus
       - azure-arm-compute.Snapshots
       - azure-arm-compute.UsageOperations
@@ -200,12 +216,18 @@ references:
     name: AvailabilitySet
   - uid: azure-arm-compute.AvailabilitySetListResult
     name: AvailabilitySetListResult
+  - uid: azure-arm-compute.AvailabilitySetUpdate
+    name: AvailabilitySetUpdate
   - uid: azure-arm-compute.BootDiagnostics
     name: BootDiagnostics
   - uid: azure-arm-compute.BootDiagnosticsInstanceView
     name: BootDiagnosticsInstanceView
   - uid: azure-arm-compute.ComputeLongRunningOperationProperties
     name: ComputeLongRunningOperationProperties
+  - uid: azure-arm-compute.ComputeOperationListResult
+    name: ComputeOperationListResult
+  - uid: azure-arm-compute.ComputeOperationValue
+    name: ComputeOperationValue
   - uid: azure-arm-compute.ContainerService
     name: ContainerService
   - uid: azure-arm-compute.ContainerServiceAgentPoolProfile
@@ -272,6 +294,8 @@ references:
     name: ImageReference
   - uid: azure-arm-compute.ImageStorageProfile
     name: ImageStorageProfile
+  - uid: azure-arm-compute.ImageUpdate
+    name: ImageUpdate
   - uid: azure-arm-compute.InnerError
     name: InnerError
   - uid: azure-arm-compute.InstanceViewStatus
@@ -288,6 +312,12 @@ references:
     name: LinuxConfiguration
   - uid: azure-arm-compute.ListUsagesResult
     name: ListUsagesResult
+  - uid: azure-arm-compute.LogAnalyticsInputBase
+    name: LogAnalyticsInputBase
+  - uid: azure-arm-compute.LogAnalyticsOperationResult
+    name: LogAnalyticsOperationResult
+  - uid: azure-arm-compute.LogAnalyticsOutput
+    name: LogAnalyticsOutput
   - uid: azure-arm-compute.MaintenanceRedeployStatus
     name: MaintenanceRedeployStatus
   - uid: azure-arm-compute.ManagedDiskParameters
@@ -308,6 +338,10 @@ references:
     name: Plan
   - uid: azure-arm-compute.PurchasePlan
     name: PurchasePlan
+  - uid: azure-arm-compute.RecoveryWalkResponse
+    name: RecoveryWalkResponse
+  - uid: azure-arm-compute.RequestRateByIntervalInput
+    name: RequestRateByIntervalInput
   - uid: azure-arm-compute.Resource
     name: Resource
   - uid: azure-arm-compute.ResourceSku
@@ -318,6 +352,10 @@ references:
     name: ResourceSkuCapacity
   - uid: azure-arm-compute.ResourceSkuCosts
     name: ResourceSkuCosts
+  - uid: azure-arm-compute.ResourceSkuLocationInfo
+    name: ResourceSkuLocationInfo
+  - uid: azure-arm-compute.ResourceSkuRestrictionInfo
+    name: ResourceSkuRestrictionInfo
   - uid: azure-arm-compute.ResourceSkuRestrictions
     name: ResourceSkuRestrictions
   - uid: azure-arm-compute.ResourceSkusResult
@@ -352,6 +390,8 @@ references:
     name: Snapshot
   - uid: azure-arm-compute.SnapshotList
     name: SnapshotList
+  - uid: azure-arm-compute.SnapshotSku
+    name: SnapshotSku
   - uid: azure-arm-compute.SnapshotUpdate
     name: SnapshotUpdate
   - uid: azure-arm-compute.SourceVault
@@ -366,6 +406,8 @@ references:
     name: SubResource
   - uid: azure-arm-compute.SubResourceReadOnly
     name: SubResourceReadOnly
+  - uid: azure-arm-compute.ThrottledRequestsInput
+    name: ThrottledRequestsInput
   - uid: azure-arm-compute.UpdateResource
     name: UpdateResource
   - uid: azure-arm-compute.UpgradePolicy
@@ -493,6 +535,8 @@ references:
     name: VirtualMachineSizeListResult
   - uid: azure-arm-compute.VirtualMachineStatusCodeCount
     name: VirtualMachineStatusCodeCount
+  - uid: azure-arm-compute.VirtualMachineUpdate
+    name: VirtualMachineUpdate
   - uid: azure-arm-compute.WinRMConfiguration
     name: WinRMConfiguration
   - uid: azure-arm-compute.WinRMListener
@@ -507,6 +551,10 @@ references:
     name: Disks
   - uid: azure-arm-compute.Images
     name: Images
+  - uid: azure-arm-compute.LogAnalytics
+    name: LogAnalytics
+  - uid: azure-arm-compute.Operations
+    name: Operations
   - uid: azure-arm-compute.ResourceSkus
     name: ResourceSkus
   - uid: azure-arm-compute.Snapshots

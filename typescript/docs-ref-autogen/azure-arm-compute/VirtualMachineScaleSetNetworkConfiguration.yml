@@ -8,6 +8,8 @@ items:
       - >-
         azure-arm-compute.VirtualMachineScaleSetNetworkConfiguration.enableAcceleratedNetworking
       - >-
+        azure-arm-compute.VirtualMachineScaleSetNetworkConfiguration.enableIPForwarding
+      - >-
         azure-arm-compute.VirtualMachineScaleSetNetworkConfiguration.ipConfigurations
       - azure-arm-compute.VirtualMachineScaleSetNetworkConfiguration.name
       - >-
@@ -47,6 +49,21 @@ items:
     optional: true
     syntax:
       content: 'enableAcceleratedNetworking?: boolean'
+      return:
+        type:
+          - boolean
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetNetworkConfiguration.enableIPForwarding
+    name: enableIPForwarding
+    fullName: enableIPForwarding
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'enableIPForwarding?: boolean'
       return:
         type:
           - boolean

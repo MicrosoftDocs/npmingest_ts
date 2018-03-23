@@ -6,6 +6,7 @@ items:
     children:
       - azure-arm-compute.ImageStorageProfile.dataDisks
       - azure-arm-compute.ImageStorageProfile.osDisk
+      - azure-arm-compute.ImageStorageProfile.zoneResilient
     langs:
       - typeScript
     type: interface
@@ -33,8 +34,23 @@ items:
       - typeScript
     type: property
     summary: ''
+    optional: true
     syntax:
-      content: 'osDisk: ImageOSDisk'
+      content: 'osDisk?: ImageOSDisk'
       return:
         type:
           - '@azure-arm-compute.ImageOSDisk'
+  - uid: azure-arm-compute.ImageStorageProfile.zoneResilient
+    name: zoneResilient
+    fullName: zoneResilient
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'zoneResilient?: boolean'
+      return:
+        type:
+          - boolean

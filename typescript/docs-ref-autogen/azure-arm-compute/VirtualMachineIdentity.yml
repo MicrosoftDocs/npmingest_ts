@@ -4,6 +4,7 @@ items:
     name: VirtualMachineIdentity
     fullName: VirtualMachineIdentity
     children:
+      - azure-arm-compute.VirtualMachineIdentity.identityIds
       - azure-arm-compute.VirtualMachineIdentity.principalId
       - azure-arm-compute.VirtualMachineIdentity.tenantId
       - azure-arm-compute.VirtualMachineIdentity.type
@@ -12,6 +13,20 @@ items:
     type: interface
     summary: ''
     package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineIdentity.identityIds
+    name: identityIds
+    fullName: identityIds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'identityIds?: string[]'
+      return:
+        type:
+          - 'string[]'
   - uid: azure-arm-compute.VirtualMachineIdentity.principalId
     name: principalId
     fullName: principalId

@@ -12,9 +12,13 @@ items:
       - azure-arm-compute.Images.beginDeleteMethod_2
       - azure-arm-compute.Images.beginDeleteMethod_1
       - azure-arm-compute.Images.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-compute.Images.beginUpdate
+      - azure-arm-compute.Images.beginUpdate_1
+      - azure-arm-compute.Images.beginUpdate_2
+      - azure-arm-compute.Images.beginUpdateWithHttpOperationResponse
       - azure-arm-compute.Images.createOrUpdate_1
-      - azure-arm-compute.Images.createOrUpdate
       - azure-arm-compute.Images.createOrUpdate_2
+      - azure-arm-compute.Images.createOrUpdate
       - azure-arm-compute.Images.createOrUpdateWithHttpOperationResponse
       - azure-arm-compute.Images.deleteMethod
       - azure-arm-compute.Images.deleteMethod_1
@@ -41,6 +45,10 @@ items:
       - azure-arm-compute.Images.listNext_2
       - azure-arm-compute.Images.listNextWithHttpOperationResponse
       - azure-arm-compute.Images.listWithHttpOperationResponse
+      - azure-arm-compute.Images.update
+      - azure-arm-compute.Images.update_1
+      - azure-arm-compute.Images.update_2
+      - azure-arm-compute.Images.updateWithHttpOperationResponse
     langs:
       - typeScript
     type: interface
@@ -303,6 +311,145 @@ items:
       return:
         type:
           - Promise<OperationStatusResponse>>
+  - uid: azure-arm-compute.Images.beginUpdate
+    name: beginUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update an image.
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, imageName: string,
+        parameters: ImageUpdate, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: imageName
+          type:
+            - string
+          description: |
+            The name of the image.
+        - id: parameters
+          type:
+            - '@azure-arm-compute.ImageUpdate'
+          description: |
+            Parameters supplied to the Update Image
+            operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-compute.Image>
+  - uid: azure-arm-compute.Images.beginUpdate_1
+    name: beginUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update an image.
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, imageName: string,
+        parameters: ImageUpdate, callback: ServiceCallback<Image>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: imageName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-compute.ImageUpdate'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.Image>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.Image>
+  - uid: azure-arm-compute.Images.beginUpdate_2
+    name: beginUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update an image.
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, imageName: string,
+        parameters: ImageUpdate, options: function, callback:
+        ServiceCallback<Image>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: imageName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-compute.ImageUpdate'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.Image>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.Image>
+  - uid: azure-arm-compute.Images.beginUpdateWithHttpOperationResponse
+    name: beginUpdateWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update an image.
+    syntax:
+      content: >-
+        function beginUpdateWithHttpOperationResponse(resourceGroupName: string,
+        imageName: string, parameters: ImageUpdate, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: imageName
+          type:
+            - string
+          description: |
+            The name of the image.
+        - id: parameters
+          type:
+            - '@azure-arm-compute.ImageUpdate'
+          description: |
+            Parameters supplied to the Update Image
+            operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Image>>
   - uid: azure-arm-compute.Images.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -326,6 +473,41 @@ items:
         - id: parameters
           type:
             - '@azure-arm-compute.Image'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.Image>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.Image>
+  - uid: azure-arm-compute.Images.createOrUpdate_2
+    name: createOrUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or update an image.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, imageName: string,
+        parameters: Image, options: function, callback: ServiceCallback<Image>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: imageName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-compute.Image'
+          description: ''
+        - id: options
+          type:
+            - function
           description: ''
         - id: callback
           type:
@@ -367,41 +549,6 @@ items:
             - function
           description: ''
           optional: true
-      return:
-        type:
-          - Promise<@azure-arm-compute.Image>
-  - uid: azure-arm-compute.Images.createOrUpdate_2
-    name: createOrUpdate
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Create or update an image.
-    syntax:
-      content: >-
-        function createOrUpdate(resourceGroupName: string, imageName: string,
-        parameters: Image, options: function, callback: ServiceCallback<Image>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: imageName
-          type:
-            - string
-          description: ''
-        - id: parameters
-          type:
-            - '@azure-arm-compute.Image'
-          description: ''
-        - id: options
-          type:
-            - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<@azure-arm-compute.Image>
-          description: ''
       return:
         type:
           - Promise<@azure-arm-compute.Image>
@@ -685,8 +832,8 @@ items:
       - typeScript
     summary: |-
       Gets the list of Images in the subscription. Use nextLink property in the
-      response to get the next page of Images. Do this till nextLink is not null
-      to fetch all the Images.
+      response to get the next page of Images. Do this till nextLink is null to
+      fetch all the Images.
     syntax:
       content: 'function list(callback: ServiceCallback<ImageListResult>)'
       parameters:
@@ -705,8 +852,8 @@ items:
       - typeScript
     summary: |-
       Gets the list of Images in the subscription. Use nextLink property in the
-      response to get the next page of Images. Do this till nextLink is not null
-      to fetch all the Images.
+      response to get the next page of Images. Do this till nextLink is null to
+      fetch all the Images.
     syntax:
       content: >-
         function list(options: function, callback:
@@ -731,8 +878,8 @@ items:
       - typeScript
     summary: |-
       Gets the list of Images in the subscription. Use nextLink property in the
-      response to get the next page of Images. Do this till nextLink is not null
-      to fetch all the Images.
+      response to get the next page of Images. Do this till nextLink is null to
+      fetch all the Images.
     syntax:
       content: 'function list(options?: function)'
       parameters:
@@ -954,8 +1101,8 @@ items:
       - typeScript
     summary: |-
       Gets the list of Images in the subscription. Use nextLink property in the
-      response to get the next page of Images. Do this till nextLink is not null
-      to fetch all the Images.
+      response to get the next page of Images. Do this till nextLink is null to
+      fetch all the Images.
     syntax:
       content: 'function listNext(nextPageLink: string, options?: function)'
       parameters:
@@ -981,8 +1128,8 @@ items:
       - typeScript
     summary: |-
       Gets the list of Images in the subscription. Use nextLink property in the
-      response to get the next page of Images. Do this till nextLink is not null
-      to fetch all the Images.
+      response to get the next page of Images. Do this till nextLink is null to
+      fetch all the Images.
     syntax:
       content: >-
         function listNext(nextPageLink: string, callback:
@@ -1007,8 +1154,8 @@ items:
       - typeScript
     summary: |-
       Gets the list of Images in the subscription. Use nextLink property in the
-      response to get the next page of Images. Do this till nextLink is not null
-      to fetch all the Images.
+      response to get the next page of Images. Do this till nextLink is null to
+      fetch all the Images.
     syntax:
       content: >-
         function listNext(nextPageLink: string, options: function, callback:
@@ -1037,8 +1184,8 @@ items:
       - typeScript
     summary: |-
       Gets the list of Images in the subscription. Use nextLink property in the
-      response to get the next page of Images. Do this till nextLink is not null
-      to fetch all the Images.
+      response to get the next page of Images. Do this till nextLink is null to
+      fetch all the Images.
     syntax:
       content: >-
         function listNextWithHttpOperationResponse(nextPageLink: string,
@@ -1066,8 +1213,8 @@ items:
       - typeScript
     summary: |-
       Gets the list of Images in the subscription. Use nextLink property in the
-      response to get the next page of Images. Do this till nextLink is not null
-      to fetch all the Images.
+      response to get the next page of Images. Do this till nextLink is null to
+      fetch all the Images.
     syntax:
       content: 'function listWithHttpOperationResponse(options?: function)'
       parameters:
@@ -1079,3 +1226,142 @@ items:
       return:
         type:
           - Promise<ImageListResult>>
+  - uid: azure-arm-compute.Images.update
+    name: update
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update an image.
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, imageName: string,
+        parameters: ImageUpdate, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: imageName
+          type:
+            - string
+          description: |
+            The name of the image.
+        - id: parameters
+          type:
+            - '@azure-arm-compute.ImageUpdate'
+          description: |
+            Parameters supplied to the Update Image
+            operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-compute.Image>
+  - uid: azure-arm-compute.Images.update_1
+    name: update
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update an image.
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, imageName: string,
+        parameters: ImageUpdate, callback: ServiceCallback<Image>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: imageName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-compute.ImageUpdate'
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.Image>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.Image>
+  - uid: azure-arm-compute.Images.update_2
+    name: update
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update an image.
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, imageName: string,
+        parameters: ImageUpdate, options: function, callback:
+        ServiceCallback<Image>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: imageName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - '@azure-arm-compute.ImageUpdate'
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.Image>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.Image>
+  - uid: azure-arm-compute.Images.updateWithHttpOperationResponse
+    name: updateWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update an image.
+    syntax:
+      content: >-
+        function updateWithHttpOperationResponse(resourceGroupName: string,
+        imageName: string, parameters: ImageUpdate, options?: function)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: imageName
+          type:
+            - string
+          description: |
+            The name of the image.
+        - id: parameters
+          type:
+            - '@azure-arm-compute.ImageUpdate'
+          description: |
+            Parameters supplied to the Update Image
+            operation.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<Image>>

@@ -12,8 +12,10 @@ items:
       - azure-arm-compute.ComputeManagementClient.disks
       - azure-arm-compute.ComputeManagementClient.generateClientRequestId
       - azure-arm-compute.ComputeManagementClient.images
+      - azure-arm-compute.ComputeManagementClient.logAnalytics
       - >-
         azure-arm-compute.ComputeManagementClient.longRunningOperationRetryTimeout
+      - azure-arm-compute.ComputeManagementClient.operations
       - azure-arm-compute.ComputeManagementClient.resourceSkus
       - azure-arm-compute.ComputeManagementClient.snapshots
       - azure-arm-compute.ComputeManagementClient.subscriptionId
@@ -163,6 +165,19 @@ items:
       return:
         type:
           - '@azure-arm-compute.Images'
+  - uid: azure-arm-compute.ComputeManagementClient.logAnalytics
+    name: logAnalytics
+    fullName: logAnalytics
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'logAnalytics: LogAnalytics'
+      return:
+        type:
+          - '@azure-arm-compute.LogAnalytics'
   - uid: azure-arm-compute.ComputeManagementClient.longRunningOperationRetryTimeout
     name: longRunningOperationRetryTimeout
     fullName: longRunningOperationRetryTimeout
@@ -176,6 +191,19 @@ items:
       return:
         type:
           - number
+  - uid: azure-arm-compute.ComputeManagementClient.operations
+    name: operations
+    fullName: operations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'operations: Operations'
+      return:
+        type:
+          - '@azure-arm-compute.Operations'
   - uid: azure-arm-compute.ComputeManagementClient.resourceSkus
     name: resourceSkus
     fullName: resourceSkus

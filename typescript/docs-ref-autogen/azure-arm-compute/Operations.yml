@@ -1,0 +1,91 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute.Operations
+    name: Operations
+    fullName: Operations
+    children:
+      - azure-arm-compute.Operations.list
+      - azure-arm-compute.Operations.list_1
+      - azure-arm-compute.Operations.list_2
+      - azure-arm-compute.Operations.listWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-compute
+  - uid: azure-arm-compute.Operations.list
+    name: list
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets a list of compute operations.
+    syntax:
+      content: 'function list(options?: function)'
+      parameters:
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-compute.ComputeOperationListResult>
+  - uid: azure-arm-compute.Operations.list_1
+    name: list
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets a list of compute operations.
+    syntax:
+      content: 'function list(callback: ServiceCallback<ComputeOperationListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.ComputeOperationListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.ComputeOperationListResult>
+  - uid: azure-arm-compute.Operations.list_2
+    name: list
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets a list of compute operations.
+    syntax:
+      content: >-
+        function list(options: function, callback:
+        ServiceCallback<ComputeOperationListResult>)
+      parameters:
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-compute.ComputeOperationListResult>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-compute.ComputeOperationListResult>
+  - uid: azure-arm-compute.Operations.listWithHttpOperationResponse
+    name: listWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets a list of compute operations.
+    syntax:
+      content: 'function listWithHttpOperationResponse(options?: function)'
+      parameters:
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<ComputeOperationListResult>>

@@ -7,6 +7,8 @@ items:
       - azure-arm-compute.VirtualMachineScaleSetVMInstanceView.bootDiagnostics
       - azure-arm-compute.VirtualMachineScaleSetVMInstanceView.disks
       - azure-arm-compute.VirtualMachineScaleSetVMInstanceView.extensions
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetVMInstanceView.maintenanceRedeployStatus
       - azure-arm-compute.VirtualMachineScaleSetVMInstanceView.placementGroupId
       - >-
         azure-arm-compute.VirtualMachineScaleSetVMInstanceView.platformFaultDomain
@@ -63,6 +65,21 @@ items:
       return:
         type:
           - '@azure-arm-compute.VirtualMachineExtensionInstanceView[]'
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetVMInstanceView.maintenanceRedeployStatus
+    name: maintenanceRedeployStatus
+    fullName: maintenanceRedeployStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'maintenanceRedeployStatus?: MaintenanceRedeployStatus'
+      return:
+        type:
+          - '@azure-arm-compute.MaintenanceRedeployStatus'
   - uid: azure-arm-compute.VirtualMachineScaleSetVMInstanceView.placementGroupId
     name: placementGroupId
     fullName: placementGroupId

@@ -10,6 +10,7 @@ items:
       - azure-arm-compute.VirtualMachineScaleSetDataDisk.lun
       - azure-arm-compute.VirtualMachineScaleSetDataDisk.managedDisk
       - azure-arm-compute.VirtualMachineScaleSetDataDisk.name
+      - azure-arm-compute.VirtualMachineScaleSetDataDisk.writeAcceleratorEnabled
     langs:
       - typeScript
     type: interface
@@ -97,3 +98,17 @@ items:
       return:
         type:
           - string
+  - uid: azure-arm-compute.VirtualMachineScaleSetDataDisk.writeAcceleratorEnabled
+    name: writeAcceleratorEnabled
+    fullName: writeAcceleratorEnabled
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'writeAcceleratorEnabled?: boolean'
+      return:
+        type:
+          - boolean

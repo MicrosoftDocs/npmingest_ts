@@ -7,12 +7,14 @@ items:
       - azure-arm-compute.VirtualMachineScaleSet.identity
       - azure-arm-compute.VirtualMachineScaleSet.overprovision
       - azure-arm-compute.VirtualMachineScaleSet.plan
+      - azure-arm-compute.VirtualMachineScaleSet.platformFaultDomainCount
       - azure-arm-compute.VirtualMachineScaleSet.provisioningState
       - azure-arm-compute.VirtualMachineScaleSet.singlePlacementGroup
       - azure-arm-compute.VirtualMachineScaleSet.sku
       - azure-arm-compute.VirtualMachineScaleSet.uniqueId
       - azure-arm-compute.VirtualMachineScaleSet.upgradePolicy
       - azure-arm-compute.VirtualMachineScaleSet.virtualMachineProfile
+      - azure-arm-compute.VirtualMachineScaleSet.zoneBalance
       - azure-arm-compute.VirtualMachineScaleSet.zones
     langs:
       - typeScript
@@ -63,6 +65,20 @@ items:
       return:
         type:
           - '@azure-arm-compute.Plan'
+  - uid: azure-arm-compute.VirtualMachineScaleSet.platformFaultDomainCount
+    name: platformFaultDomainCount
+    fullName: platformFaultDomainCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'platformFaultDomainCount?: number'
+      return:
+        type:
+          - number
   - uid: azure-arm-compute.VirtualMachineScaleSet.provisioningState
     name: provisioningState
     fullName: provisioningState
@@ -147,6 +163,20 @@ items:
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetVMProfile'
+  - uid: azure-arm-compute.VirtualMachineScaleSet.zoneBalance
+    name: zoneBalance
+    fullName: zoneBalance
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'zoneBalance?: boolean'
+      return:
+        type:
+          - boolean
   - uid: azure-arm-compute.VirtualMachineScaleSet.zones
     name: zones
     fullName: zones

@@ -5,6 +5,7 @@ items:
     fullName: ResourceSkuRestrictions
     children:
       - azure-arm-compute.ResourceSkuRestrictions.reasonCode
+      - azure-arm-compute.ResourceSkuRestrictions.restrictionInfo
       - azure-arm-compute.ResourceSkuRestrictions.type
       - azure-arm-compute.ResourceSkuRestrictions.values
     langs:
@@ -26,6 +27,20 @@ items:
       return:
         type:
           - string
+  - uid: azure-arm-compute.ResourceSkuRestrictions.restrictionInfo
+    name: restrictionInfo
+    fullName: restrictionInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'restrictionInfo?: ResourceSkuRestrictionInfo'
+      return:
+        type:
+          - '@azure-arm-compute.ResourceSkuRestrictionInfo'
   - uid: azure-arm-compute.ResourceSkuRestrictions.type
     name: type
     fullName: type

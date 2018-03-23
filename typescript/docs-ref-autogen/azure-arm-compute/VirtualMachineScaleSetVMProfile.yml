@@ -9,6 +9,7 @@ items:
       - azure-arm-compute.VirtualMachineScaleSetVMProfile.licenseType
       - azure-arm-compute.VirtualMachineScaleSetVMProfile.networkProfile
       - azure-arm-compute.VirtualMachineScaleSetVMProfile.osProfile
+      - azure-arm-compute.VirtualMachineScaleSetVMProfile.priority
       - azure-arm-compute.VirtualMachineScaleSetVMProfile.storageProfile
     langs:
       - typeScript
@@ -85,6 +86,20 @@ items:
       return:
         type:
           - '@azure-arm-compute.VirtualMachineScaleSetOSProfile'
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMProfile.priority
+    name: priority
+    fullName: priority
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'priority?: string'
+      return:
+        type:
+          - string
   - uid: azure-arm-compute.VirtualMachineScaleSetVMProfile.storageProfile
     name: storageProfile
     fullName: storageProfile

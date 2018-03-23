@@ -10,6 +10,7 @@ items:
       - azure-arm-compute.ResourceSku.costs
       - azure-arm-compute.ResourceSku.family
       - azure-arm-compute.ResourceSku.kind
+      - azure-arm-compute.ResourceSku.locationInfo
       - azure-arm-compute.ResourceSku.locations
       - azure-arm-compute.ResourceSku.name
       - azure-arm-compute.ResourceSku.resourceType
@@ -105,6 +106,20 @@ items:
       return:
         type:
           - string
+  - uid: azure-arm-compute.ResourceSku.locationInfo
+    name: locationInfo
+    fullName: locationInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'locationInfo?: ResourceSkuLocationInfo[]'
+      return:
+        type:
+          - '@azure-arm-compute.ResourceSkuLocationInfo[]'
   - uid: azure-arm-compute.ResourceSku.locations
     name: locations
     fullName: locations

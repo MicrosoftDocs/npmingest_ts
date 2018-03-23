@@ -5,9 +5,12 @@ items:
     fullName: VirtualMachineInstanceView
     children:
       - azure-arm-compute.VirtualMachineInstanceView.bootDiagnostics
+      - azure-arm-compute.VirtualMachineInstanceView.computerName
       - azure-arm-compute.VirtualMachineInstanceView.disks
       - azure-arm-compute.VirtualMachineInstanceView.extensions
       - azure-arm-compute.VirtualMachineInstanceView.maintenanceRedeployStatus
+      - azure-arm-compute.VirtualMachineInstanceView.osName
+      - azure-arm-compute.VirtualMachineInstanceView.osVersion
       - azure-arm-compute.VirtualMachineInstanceView.platformFaultDomain
       - azure-arm-compute.VirtualMachineInstanceView.platformUpdateDomain
       - azure-arm-compute.VirtualMachineInstanceView.rdpThumbPrint
@@ -32,6 +35,20 @@ items:
       return:
         type:
           - '@azure-arm-compute.BootDiagnosticsInstanceView'
+  - uid: azure-arm-compute.VirtualMachineInstanceView.computerName
+    name: computerName
+    fullName: computerName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'computerName?: string'
+      return:
+        type:
+          - string
   - uid: azure-arm-compute.VirtualMachineInstanceView.disks
     name: disks
     fullName: disks
@@ -74,6 +91,34 @@ items:
       return:
         type:
           - '@azure-arm-compute.MaintenanceRedeployStatus'
+  - uid: azure-arm-compute.VirtualMachineInstanceView.osName
+    name: osName
+    fullName: osName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'osName?: string'
+      return:
+        type:
+          - string
+  - uid: azure-arm-compute.VirtualMachineInstanceView.osVersion
+    name: osVersion
+    fullName: osVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'osVersion?: string'
+      return:
+        type:
+          - string
   - uid: azure-arm-compute.VirtualMachineInstanceView.platformFaultDomain
     name: platformFaultDomain
     fullName: platformFaultDomain
