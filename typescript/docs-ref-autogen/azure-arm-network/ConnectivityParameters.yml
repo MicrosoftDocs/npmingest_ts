@@ -5,6 +5,8 @@ items:
     fullName: ConnectivityParameters
     children:
       - azure-arm-network.ConnectivityParameters.destination
+      - azure-arm-network.ConnectivityParameters.protocol
+      - azure-arm-network.ConnectivityParameters.protocolConfiguration
       - azure-arm-network.ConnectivityParameters.source
     langs:
       - typeScript
@@ -24,6 +26,34 @@ items:
       return:
         type:
           - '@azure-arm-network.ConnectivityDestination'
+  - uid: azure-arm-network.ConnectivityParameters.protocol
+    name: protocol
+    fullName: protocol
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'protocol?: string'
+      return:
+        type:
+          - string
+  - uid: azure-arm-network.ConnectivityParameters.protocolConfiguration
+    name: protocolConfiguration
+    fullName: protocolConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'protocolConfiguration?: ProtocolConfiguration'
+      return:
+        type:
+          - '@azure-arm-network.ProtocolConfiguration'
   - uid: azure-arm-network.ConnectivityParameters.source
     name: source
     fullName: source

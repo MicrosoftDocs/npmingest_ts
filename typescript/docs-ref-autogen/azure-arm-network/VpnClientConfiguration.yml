@@ -7,6 +7,7 @@ items:
       - azure-arm-network.VpnClientConfiguration.radiusServerAddress
       - azure-arm-network.VpnClientConfiguration.radiusServerSecret
       - azure-arm-network.VpnClientConfiguration.vpnClientAddressPool
+      - azure-arm-network.VpnClientConfiguration.vpnClientIpsecPolicies
       - azure-arm-network.VpnClientConfiguration.vpnClientProtocols
       - azure-arm-network.VpnClientConfiguration.vpnClientRevokedCertificates
       - azure-arm-network.VpnClientConfiguration.vpnClientRootCertificates
@@ -57,6 +58,20 @@ items:
       return:
         type:
           - '@azure-arm-network.AddressSpace'
+  - uid: azure-arm-network.VpnClientConfiguration.vpnClientIpsecPolicies
+    name: vpnClientIpsecPolicies
+    fullName: vpnClientIpsecPolicies
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'vpnClientIpsecPolicies?: IpsecPolicy[]'
+      return:
+        type:
+          - '@azure-arm-network.IpsecPolicy[]'
   - uid: azure-arm-network.VpnClientConfiguration.vpnClientProtocols
     name: vpnClientProtocols
     fullName: vpnClientProtocols

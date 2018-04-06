@@ -5,6 +5,7 @@ items:
     fullName: NetworkManagementClient
     children:
       - azure-arm-network.NetworkManagementClient.acceptLanguage
+      - azure-arm-network.NetworkManagementClient.apiVersion
       - azure-arm-network.NetworkManagementClient.applicationGateways
       - azure-arm-network.NetworkManagementClient.applicationSecurityGroups
       - azure-arm-network.NetworkManagementClient.availableEndpointServices
@@ -14,12 +15,18 @@ items:
       - azure-arm-network.NetworkManagementClient.checkDnsNameAvailability_2
       - >-
         azure-arm-network.NetworkManagementClient.checkDnsNameAvailabilityWithHttpOperationResponse
+      - azure-arm-network.NetworkManagementClient.connectionMonitors
       - azure-arm-network.NetworkManagementClient.credentials
+      - azure-arm-network.NetworkManagementClient.ddosProtectionPlans
       - azure-arm-network.NetworkManagementClient.defaultSecurityRules
       - >-
         azure-arm-network.NetworkManagementClient.expressRouteCircuitAuthorizations
+      - azure-arm-network.NetworkManagementClient.expressRouteCircuitConnections
       - azure-arm-network.NetworkManagementClient.expressRouteCircuitPeerings
       - azure-arm-network.NetworkManagementClient.expressRouteCircuits
+      - >-
+        azure-arm-network.NetworkManagementClient.expressRouteCrossConnectionPeerings
+      - azure-arm-network.NetworkManagementClient.expressRouteCrossConnections
       - azure-arm-network.NetworkManagementClient.expressRouteServiceProviders
       - azure-arm-network.NetworkManagementClient.generateClientRequestId
       - azure-arm-network.NetworkManagementClient.inboundNatRules
@@ -74,6 +81,19 @@ items:
     summary: ''
     syntax:
       content: 'acceptLanguage: string'
+      return:
+        type:
+          - string
+  - uid: azure-arm-network.NetworkManagementClient.apiVersion
+    name: apiVersion
+    fullName: apiVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'apiVersion: string'
       return:
         type:
           - string
@@ -271,6 +291,19 @@ items:
       return:
         type:
           - Promise<DnsNameAvailabilityResult>>
+  - uid: azure-arm-network.NetworkManagementClient.connectionMonitors
+    name: connectionMonitors
+    fullName: connectionMonitors
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'connectionMonitors: ConnectionMonitors'
+      return:
+        type:
+          - '@azure-arm-network.ConnectionMonitors'
   - uid: azure-arm-network.NetworkManagementClient.credentials
     name: credentials
     fullName: credentials
@@ -284,6 +317,19 @@ items:
       return:
         type:
           - ServiceClientCredentials
+  - uid: azure-arm-network.NetworkManagementClient.ddosProtectionPlans
+    name: ddosProtectionPlans
+    fullName: ddosProtectionPlans
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'ddosProtectionPlans: DdosProtectionPlans'
+      return:
+        type:
+          - '@azure-arm-network.DdosProtectionPlans'
   - uid: azure-arm-network.NetworkManagementClient.defaultSecurityRules
     name: defaultSecurityRules
     fullName: defaultSecurityRules
@@ -311,6 +357,19 @@ items:
       return:
         type:
           - '@azure-arm-network.ExpressRouteCircuitAuthorizations'
+  - uid: azure-arm-network.NetworkManagementClient.expressRouteCircuitConnections
+    name: expressRouteCircuitConnections
+    fullName: expressRouteCircuitConnections
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'expressRouteCircuitConnections: ExpressRouteCircuitConnections'
+      return:
+        type:
+          - '@azure-arm-network.ExpressRouteCircuitConnections'
   - uid: azure-arm-network.NetworkManagementClient.expressRouteCircuitPeerings
     name: expressRouteCircuitPeerings
     fullName: expressRouteCircuitPeerings
@@ -337,6 +396,33 @@ items:
       return:
         type:
           - '@azure-arm-network.ExpressRouteCircuits'
+  - uid: >-
+      azure-arm-network.NetworkManagementClient.expressRouteCrossConnectionPeerings
+    name: expressRouteCrossConnectionPeerings
+    fullName: expressRouteCrossConnectionPeerings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'expressRouteCrossConnectionPeerings: ExpressRouteCrossConnectionPeerings'
+      return:
+        type:
+          - '@azure-arm-network.ExpressRouteCrossConnectionPeerings'
+  - uid: azure-arm-network.NetworkManagementClient.expressRouteCrossConnections
+    name: expressRouteCrossConnections
+    fullName: expressRouteCrossConnections
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'expressRouteCrossConnections: ExpressRouteCrossConnections'
+      return:
+        type:
+          - '@azure-arm-network.ExpressRouteCrossConnections'
   - uid: azure-arm-network.NetworkManagementClient.expressRouteServiceProviders
     name: expressRouteServiceProviders
     fullName: expressRouteServiceProviders

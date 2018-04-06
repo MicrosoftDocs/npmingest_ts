@@ -9,6 +9,7 @@ items:
       - azure-arm-network.PublicIPAddress.idleTimeoutInMinutes
       - azure-arm-network.PublicIPAddress.ipAddress
       - azure-arm-network.PublicIPAddress.ipConfiguration
+      - azure-arm-network.PublicIPAddress.ipTags
       - azure-arm-network.PublicIPAddress.provisioningState
       - azure-arm-network.PublicIPAddress.publicIPAddressVersion
       - azure-arm-network.PublicIPAddress.publicIPAllocationMethod
@@ -92,6 +93,20 @@ items:
       return:
         type:
           - '@azure-arm-network.IPConfiguration'
+  - uid: azure-arm-network.PublicIPAddress.ipTags
+    name: ipTags
+    fullName: ipTags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'ipTags?: IpTag[]'
+      return:
+        type:
+          - '@azure-arm-network.IpTag[]'
   - uid: azure-arm-network.PublicIPAddress.provisioningState
     name: provisioningState
     fullName: provisioningState

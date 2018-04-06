@@ -11,6 +11,10 @@ items:
       - >-
         azure-arm-network.ApplicationGatewayWebApplicationFirewallConfiguration.firewallMode
       - >-
+        azure-arm-network.ApplicationGatewayWebApplicationFirewallConfiguration.maxRequestBodySize
+      - >-
+        azure-arm-network.ApplicationGatewayWebApplicationFirewallConfiguration.requestBodyCheck
+      - >-
         azure-arm-network.ApplicationGatewayWebApplicationFirewallConfiguration.ruleSetType
       - >-
         azure-arm-network.ApplicationGatewayWebApplicationFirewallConfiguration.ruleSetVersion
@@ -62,6 +66,36 @@ items:
       return:
         type:
           - string
+  - uid: >-
+      azure-arm-network.ApplicationGatewayWebApplicationFirewallConfiguration.maxRequestBodySize
+    name: maxRequestBodySize
+    fullName: maxRequestBodySize
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'maxRequestBodySize?: number'
+      return:
+        type:
+          - number
+  - uid: >-
+      azure-arm-network.ApplicationGatewayWebApplicationFirewallConfiguration.requestBodyCheck
+    name: requestBodyCheck
+    fullName: requestBodyCheck
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'requestBodyCheck?: boolean'
+      return:
+        type:
+          - boolean
   - uid: >-
       azure-arm-network.ApplicationGatewayWebApplicationFirewallConfiguration.ruleSetType
     name: ruleSetType

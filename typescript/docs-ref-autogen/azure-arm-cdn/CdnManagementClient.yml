@@ -12,6 +12,13 @@ items:
       - azure-arm-cdn.CdnManagementClient.checkNameAvailability
       - >-
         azure-arm-cdn.CdnManagementClient.checkNameAvailabilityWithHttpOperationResponse
+      - >-
+        azure-arm-cdn.CdnManagementClient.checkNameAvailabilityWithSubscription_2
+      - >-
+        azure-arm-cdn.CdnManagementClient.checkNameAvailabilityWithSubscription_1
+      - azure-arm-cdn.CdnManagementClient.checkNameAvailabilityWithSubscription
+      - >-
+        azure-arm-cdn.CdnManagementClient.checkNameAvailabilityWithSubscriptionWithHttpOperationResponse
       - azure-arm-cdn.CdnManagementClient.credentials
       - azure-arm-cdn.CdnManagementClient.customDomains
       - azure-arm-cdn.CdnManagementClient.edgeNodes
@@ -186,6 +193,116 @@ items:
       content: >-
         function checkNameAvailabilityWithHttpOperationResponse(name: string,
         options?: function)
+      parameters:
+        - id: name
+          type:
+            - string
+          description: |
+            The resource name to validate.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<CheckNameAvailabilityOutput>>
+  - uid: azure-arm-cdn.CdnManagementClient.checkNameAvailabilityWithSubscription_2
+    name: checkNameAvailabilityWithSubscription
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Check the availability of a resource name. This is needed for resources
+      where name is globally unique, such as a CDN endpoint.
+    syntax:
+      content: >-
+        function checkNameAvailabilityWithSubscription(name: string, options:
+        function, callback: ServiceCallback<CheckNameAvailabilityOutput>)
+      parameters:
+        - id: name
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-cdn.CheckNameAvailabilityOutput>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-cdn.CheckNameAvailabilityOutput>
+  - uid: azure-arm-cdn.CdnManagementClient.checkNameAvailabilityWithSubscription_1
+    name: checkNameAvailabilityWithSubscription
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Check the availability of a resource name. This is needed for resources
+      where name is globally unique, such as a CDN endpoint.
+    syntax:
+      content: >-
+        function checkNameAvailabilityWithSubscription(name: string, callback:
+        ServiceCallback<CheckNameAvailabilityOutput>)
+      parameters:
+        - id: name
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<@azure-arm-cdn.CheckNameAvailabilityOutput>
+          description: ''
+      return:
+        type:
+          - Promise<@azure-arm-cdn.CheckNameAvailabilityOutput>
+  - uid: azure-arm-cdn.CdnManagementClient.checkNameAvailabilityWithSubscription
+    name: checkNameAvailabilityWithSubscription
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Check the availability of a resource name. This is needed for resources
+      where name is globally unique, such as a CDN endpoint.
+    syntax:
+      content: >-
+        function checkNameAvailabilityWithSubscription(name: string, options?:
+        function)
+      parameters:
+        - id: name
+          type:
+            - string
+          description: |
+            The resource name to validate.
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<@azure-arm-cdn.CheckNameAvailabilityOutput>
+  - uid: >-
+      azure-arm-cdn.CdnManagementClient.checkNameAvailabilityWithSubscriptionWithHttpOperationResponse
+    name: checkNameAvailabilityWithSubscriptionWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Check the availability of a resource name. This is needed for resources
+      where name is globally unique, such as a CDN endpoint.
+    syntax:
+      content: >-
+        function
+        checkNameAvailabilityWithSubscriptionWithHttpOperationResponse(name:
+        string, options?: function)
       parameters:
         - id: name
           type:

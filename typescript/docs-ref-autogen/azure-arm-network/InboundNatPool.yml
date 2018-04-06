@@ -5,10 +5,12 @@ items:
     fullName: InboundNatPool
     children:
       - azure-arm-network.InboundNatPool.backendPort
+      - azure-arm-network.InboundNatPool.enableFloatingIP
       - azure-arm-network.InboundNatPool.etag
       - azure-arm-network.InboundNatPool.frontendIPConfiguration
       - azure-arm-network.InboundNatPool.frontendPortRangeEnd
       - azure-arm-network.InboundNatPool.frontendPortRangeStart
+      - azure-arm-network.InboundNatPool.idleTimeoutInMinutes
       - azure-arm-network.InboundNatPool.name
       - azure-arm-network.InboundNatPool.protocol
       - azure-arm-network.InboundNatPool.provisioningState
@@ -32,6 +34,20 @@ items:
       return:
         type:
           - number
+  - uid: azure-arm-network.InboundNatPool.enableFloatingIP
+    name: enableFloatingIP
+    fullName: enableFloatingIP
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'enableFloatingIP?: boolean'
+      return:
+        type:
+          - boolean
   - uid: azure-arm-network.InboundNatPool.etag
     name: etag
     fullName: etag
@@ -83,6 +99,20 @@ items:
     summary: ''
     syntax:
       content: 'frontendPortRangeStart: number'
+      return:
+        type:
+          - number
+  - uid: azure-arm-network.InboundNatPool.idleTimeoutInMinutes
+    name: idleTimeoutInMinutes
+    fullName: idleTimeoutInMinutes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'idleTimeoutInMinutes?: number'
       return:
         type:
           - number

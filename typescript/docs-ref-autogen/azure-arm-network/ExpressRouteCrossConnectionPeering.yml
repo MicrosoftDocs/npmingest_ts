@@ -1,29 +1,29 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: azure-arm-network.ExpressRouteCircuitPeering
-    name: ExpressRouteCircuitPeering
-    fullName: ExpressRouteCircuitPeering
+  - uid: azure-arm-network.ExpressRouteCrossConnectionPeering
+    name: ExpressRouteCrossConnectionPeering
+    fullName: ExpressRouteCrossConnectionPeering
     children:
-      - azure-arm-network.ExpressRouteCircuitPeering.azureASN
-      - azure-arm-network.ExpressRouteCircuitPeering.connections
-      - azure-arm-network.ExpressRouteCircuitPeering.etag
-      - azure-arm-network.ExpressRouteCircuitPeering.gatewayManagerEtag
-      - azure-arm-network.ExpressRouteCircuitPeering.ipv6PeeringConfig
-      - azure-arm-network.ExpressRouteCircuitPeering.lastModifiedBy
-      - azure-arm-network.ExpressRouteCircuitPeering.microsoftPeeringConfig
-      - azure-arm-network.ExpressRouteCircuitPeering.name
-      - azure-arm-network.ExpressRouteCircuitPeering.peerASN
-      - azure-arm-network.ExpressRouteCircuitPeering.peeringType
-      - azure-arm-network.ExpressRouteCircuitPeering.primaryAzurePort
-      - azure-arm-network.ExpressRouteCircuitPeering.primaryPeerAddressPrefix
-      - azure-arm-network.ExpressRouteCircuitPeering.provisioningState
-      - azure-arm-network.ExpressRouteCircuitPeering.routeFilter
-      - azure-arm-network.ExpressRouteCircuitPeering.secondaryAzurePort
-      - azure-arm-network.ExpressRouteCircuitPeering.secondaryPeerAddressPrefix
-      - azure-arm-network.ExpressRouteCircuitPeering.sharedKey
-      - azure-arm-network.ExpressRouteCircuitPeering.state
-      - azure-arm-network.ExpressRouteCircuitPeering.stats
-      - azure-arm-network.ExpressRouteCircuitPeering.vlanId
+      - azure-arm-network.ExpressRouteCrossConnectionPeering.azureASN
+      - azure-arm-network.ExpressRouteCrossConnectionPeering.etag
+      - azure-arm-network.ExpressRouteCrossConnectionPeering.gatewayManagerEtag
+      - azure-arm-network.ExpressRouteCrossConnectionPeering.ipv6PeeringConfig
+      - azure-arm-network.ExpressRouteCrossConnectionPeering.lastModifiedBy
+      - >-
+        azure-arm-network.ExpressRouteCrossConnectionPeering.microsoftPeeringConfig
+      - azure-arm-network.ExpressRouteCrossConnectionPeering.name
+      - azure-arm-network.ExpressRouteCrossConnectionPeering.peerASN
+      - azure-arm-network.ExpressRouteCrossConnectionPeering.peeringType
+      - azure-arm-network.ExpressRouteCrossConnectionPeering.primaryAzurePort
+      - >-
+        azure-arm-network.ExpressRouteCrossConnectionPeering.primaryPeerAddressPrefix
+      - azure-arm-network.ExpressRouteCrossConnectionPeering.provisioningState
+      - azure-arm-network.ExpressRouteCrossConnectionPeering.secondaryAzurePort
+      - >-
+        azure-arm-network.ExpressRouteCrossConnectionPeering.secondaryPeerAddressPrefix
+      - azure-arm-network.ExpressRouteCrossConnectionPeering.sharedKey
+      - azure-arm-network.ExpressRouteCrossConnectionPeering.state
+      - azure-arm-network.ExpressRouteCrossConnectionPeering.vlanId
     langs:
       - typeScript
     type: interface
@@ -31,7 +31,7 @@ items:
     extends:
       name: '@azure-arm-network.SubResource'
     package: azure-arm-network
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.azureASN
+  - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.azureASN
     name: azureASN
     fullName: azureASN
     children: []
@@ -45,21 +45,7 @@ items:
       return:
         type:
           - number
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.connections
-    name: connections
-    fullName: connections
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    optional: true
-    syntax:
-      content: 'connections?: ExpressRouteCircuitConnection[]'
-      return:
-        type:
-          - '@azure-arm-network.ExpressRouteCircuitConnection[]'
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.etag
+  - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.etag
     name: etag
     fullName: etag
     children: []
@@ -73,7 +59,7 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.gatewayManagerEtag
+  - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.gatewayManagerEtag
     name: gatewayManagerEtag
     fullName: gatewayManagerEtag
     children: []
@@ -87,7 +73,7 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.ipv6PeeringConfig
+  - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.ipv6PeeringConfig
     name: ipv6PeeringConfig
     fullName: ipv6PeeringConfig
     children: []
@@ -101,7 +87,7 @@ items:
       return:
         type:
           - '@azure-arm-network.Ipv6ExpressRouteCircuitPeeringConfig'
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.lastModifiedBy
+  - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.lastModifiedBy
     name: lastModifiedBy
     fullName: lastModifiedBy
     children: []
@@ -115,7 +101,8 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.microsoftPeeringConfig
+  - uid: >-
+      azure-arm-network.ExpressRouteCrossConnectionPeering.microsoftPeeringConfig
     name: microsoftPeeringConfig
     fullName: microsoftPeeringConfig
     children: []
@@ -129,7 +116,7 @@ items:
       return:
         type:
           - '@azure-arm-network.ExpressRouteCircuitPeeringConfig'
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.name
+  - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.name
     name: name
     fullName: name
     children: []
@@ -143,7 +130,7 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.peerASN
+  - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.peerASN
     name: peerASN
     fullName: peerASN
     children: []
@@ -157,7 +144,7 @@ items:
       return:
         type:
           - number
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.peeringType
+  - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.peeringType
     name: peeringType
     fullName: peeringType
     children: []
@@ -171,7 +158,7 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.primaryAzurePort
+  - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.primaryAzurePort
     name: primaryAzurePort
     fullName: primaryAzurePort
     children: []
@@ -185,7 +172,8 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.primaryPeerAddressPrefix
+  - uid: >-
+      azure-arm-network.ExpressRouteCrossConnectionPeering.primaryPeerAddressPrefix
     name: primaryPeerAddressPrefix
     fullName: primaryPeerAddressPrefix
     children: []
@@ -199,7 +187,7 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.provisioningState
+  - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.provisioningState
     name: provisioningState
     fullName: provisioningState
     children: []
@@ -213,21 +201,7 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.routeFilter
-    name: routeFilter
-    fullName: routeFilter
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    optional: true
-    syntax:
-      content: 'routeFilter?: RouteFilter'
-      return:
-        type:
-          - '@azure-arm-network.RouteFilter'
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.secondaryAzurePort
+  - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.secondaryAzurePort
     name: secondaryAzurePort
     fullName: secondaryAzurePort
     children: []
@@ -241,7 +215,8 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.secondaryPeerAddressPrefix
+  - uid: >-
+      azure-arm-network.ExpressRouteCrossConnectionPeering.secondaryPeerAddressPrefix
     name: secondaryPeerAddressPrefix
     fullName: secondaryPeerAddressPrefix
     children: []
@@ -255,7 +230,7 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.sharedKey
+  - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.sharedKey
     name: sharedKey
     fullName: sharedKey
     children: []
@@ -269,7 +244,7 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.state
+  - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.state
     name: state
     fullName: state
     children: []
@@ -283,21 +258,7 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.stats
-    name: stats
-    fullName: stats
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    optional: true
-    syntax:
-      content: 'stats?: ExpressRouteCircuitStats'
-      return:
-        type:
-          - '@azure-arm-network.ExpressRouteCircuitStats'
-  - uid: azure-arm-network.ExpressRouteCircuitPeering.vlanId
+  - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.vlanId
     name: vlanId
     fullName: vlanId
     children: []
