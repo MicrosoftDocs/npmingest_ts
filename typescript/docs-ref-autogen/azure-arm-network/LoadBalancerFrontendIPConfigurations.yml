@@ -59,7 +59,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.FrontendIPConfiguration>
+          - Promise<azure-arm-network.FrontendIPConfiguration>
   - uid: azure-arm-network.LoadBalancerFrontendIPConfigurations.get_2
     name: get
     children: []
@@ -91,11 +91,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.FrontendIPConfiguration>
+            - ServiceCallback<azure-arm-network.FrontendIPConfiguration>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.FrontendIPConfiguration>
+          - Promise<azure-arm-network.FrontendIPConfiguration>
   - uid: azure-arm-network.LoadBalancerFrontendIPConfigurations.get_1
     name: get
     children: []
@@ -123,11 +123,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.FrontendIPConfiguration>
+            - ServiceCallback<azure-arm-network.FrontendIPConfiguration>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.FrontendIPConfiguration>
+          - Promise<azure-arm-network.FrontendIPConfiguration>
   - uid: >-
       azure-arm-network.LoadBalancerFrontendIPConfigurations.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
@@ -165,7 +165,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<FrontendIPConfiguration>>
+          - Promise<FrontendIPConfiguration!@>>
   - uid: azure-arm-network.LoadBalancerFrontendIPConfigurations.list
     name: list
     children: []
@@ -196,7 +196,7 @@ items:
       return:
         type:
           - >-
-            Promise<@azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
+            Promise<azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
   - uid: azure-arm-network.LoadBalancerFrontendIPConfigurations.list_1
     name: list
     children: []
@@ -221,12 +221,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
+              ServiceCallback<azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
+            Promise<azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
   - uid: azure-arm-network.LoadBalancerFrontendIPConfigurations.list_2
     name: list
     children: []
@@ -255,12 +255,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
+              ServiceCallback<azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
+            Promise<azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
   - uid: azure-arm-network.LoadBalancerFrontendIPConfigurations.listNext
     name: listNext
     children: []
@@ -285,7 +285,7 @@ items:
       return:
         type:
           - >-
-            Promise<@azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
+            Promise<azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
   - uid: azure-arm-network.LoadBalancerFrontendIPConfigurations.listNext_1
     name: listNext
     children: []
@@ -305,12 +305,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
+              ServiceCallback<azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
+            Promise<azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
   - uid: azure-arm-network.LoadBalancerFrontendIPConfigurations.listNext_2
     name: listNext
     children: []
@@ -334,12 +334,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
+              ServiceCallback<azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
+            Promise<azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
   - uid: >-
       azure-arm-network.LoadBalancerFrontendIPConfigurations.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
@@ -366,7 +366,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerFrontendIPConfigurationListResult>>
+          - Promise<LoadBalancerFrontendIPConfigurationListResult!@>>
   - uid: >-
       azure-arm-network.LoadBalancerFrontendIPConfigurations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -397,4 +397,42 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerFrontendIPConfigurationListResult>>
+          - Promise<LoadBalancerFrontendIPConfigurationListResult!@>>
+references:
+  - uid: Promise<azure-arm-network.FrontendIPConfiguration>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: FrontendIPConfiguration
+        fullName: FrontendIPConfiguration
+        uid: azure-arm-network.FrontendIPConfiguration
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.FrontendIPConfiguration>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: FrontendIPConfiguration
+        fullName: FrontendIPConfiguration
+        uid: azure-arm-network.FrontendIPConfiguration
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: LoadBalancerFrontendIPConfigurationListResult
+        fullName: LoadBalancerFrontendIPConfigurationListResult
+        uid: azure-arm-network.LoadBalancerFrontendIPConfigurationListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: LoadBalancerFrontendIPConfigurationListResult
+        fullName: LoadBalancerFrontendIPConfigurationListResult
+        uid: azure-arm-network.LoadBalancerFrontendIPConfigurationListResult
+      - name: '>'
+        fullName: '>'

@@ -42,7 +42,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.ListUsagesResult>
+          - Promise<azure-arm-compute.ListUsagesResult>
   - uid: azure-arm-compute.UsageOperations.list_1
     name: list
     children: []
@@ -64,11 +64,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ListUsagesResult>
+            - ServiceCallback<azure-arm-compute.ListUsagesResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ListUsagesResult>
+          - Promise<azure-arm-compute.ListUsagesResult>
   - uid: azure-arm-compute.UsageOperations.list_2
     name: list
     children: []
@@ -94,11 +94,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ListUsagesResult>
+            - ServiceCallback<azure-arm-compute.ListUsagesResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ListUsagesResult>
+          - Promise<azure-arm-compute.ListUsagesResult>
   - uid: azure-arm-compute.UsageOperations.listNext
     name: listNext
     children: []
@@ -125,7 +125,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.ListUsagesResult>
+          - Promise<azure-arm-compute.ListUsagesResult>
   - uid: azure-arm-compute.UsageOperations.listNext_1
     name: listNext
     children: []
@@ -147,11 +147,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ListUsagesResult>
+            - ServiceCallback<azure-arm-compute.ListUsagesResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ListUsagesResult>
+          - Promise<azure-arm-compute.ListUsagesResult>
   - uid: azure-arm-compute.UsageOperations.listNext_2
     name: listNext
     children: []
@@ -177,11 +177,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ListUsagesResult>
+            - ServiceCallback<azure-arm-compute.ListUsagesResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ListUsagesResult>
+          - Promise<azure-arm-compute.ListUsagesResult>
   - uid: azure-arm-compute.UsageOperations.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -210,7 +210,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ListUsagesResult>>
+          - Promise<ListUsagesResult!@>>
   - uid: azure-arm-compute.UsageOperations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -238,4 +238,23 @@ items:
           optional: true
       return:
         type:
-          - Promise<ListUsagesResult>>
+          - Promise<ListUsagesResult!@>>
+references:
+  - uid: Promise<azure-arm-compute.ListUsagesResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ListUsagesResult
+        fullName: ListUsagesResult
+        uid: azure-arm-compute.ListUsagesResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.ListUsagesResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ListUsagesResult
+        fullName: ListUsagesResult
+        uid: azure-arm-compute.ListUsagesResult
+      - name: '>'
+        fullName: '>'

@@ -39,7 +39,7 @@ items:
       content: 'ipv4Addresses?: CidrIpAddress[]'
       return:
         type:
-          - '@azure-arm-cdn.CidrIpAddress[]'
+          - 'azure-arm-cdn.CidrIpAddress[]'
   - uid: azure-arm-cdn.IpAddressGroup.ipv6Addresses
     name: ipv6Addresses
     fullName: ipv6Addresses
@@ -53,4 +53,12 @@ items:
       content: 'ipv6Addresses?: CidrIpAddress[]'
       return:
         type:
-          - '@azure-arm-cdn.CidrIpAddress[]'
+          - 'azure-arm-cdn.CidrIpAddress[]'
+references:
+  - uid: 'azure-arm-cdn.CidrIpAddress[]'
+    spec.typeScript:
+      - name: CidrIpAddress
+        fullName: CidrIpAddress
+        uid: azure-arm-cdn.CidrIpAddress
+      - name: '[]'
+        fullName: '[]'

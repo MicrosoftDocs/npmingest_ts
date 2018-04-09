@@ -100,7 +100,7 @@ items:
             characters.
         - id: disk
           type:
-            - '@azure-arm-compute.Disk'
+            - azure-arm-compute.Disk
           description: |
             Disk object supplied in the body of the Put disk
             operation.
@@ -111,7 +111,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.Disk>
+          - Promise<azure-arm-compute.Disk>
   - uid: azure-arm-compute.Disks.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -134,15 +134,15 @@ items:
           description: ''
         - id: disk
           type:
-            - '@azure-arm-compute.Disk'
+            - azure-arm-compute.Disk
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Disk>
+            - ServiceCallback<azure-arm-compute.Disk>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Disk>
+          - Promise<azure-arm-compute.Disk>
   - uid: azure-arm-compute.Disks.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -165,7 +165,7 @@ items:
           description: ''
         - id: disk
           type:
-            - '@azure-arm-compute.Disk'
+            - azure-arm-compute.Disk
           description: ''
         - id: options
           type:
@@ -173,11 +173,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Disk>
+            - ServiceCallback<azure-arm-compute.Disk>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Disk>
+          - Promise<azure-arm-compute.Disk>
   - uid: azure-arm-compute.Disks.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
     children: []
@@ -209,7 +209,7 @@ items:
             characters.
         - id: disk
           type:
-            - '@azure-arm-compute.Disk'
+            - azure-arm-compute.Disk
           description: |
             Disk object supplied in the body of the Put disk
             operation.
@@ -220,7 +220,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Disk>>
+          - Promise<Disk!@>>
   - uid: azure-arm-compute.Disks.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -257,7 +257,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Disks.beginDeleteMethod_1
     name: beginDeleteMethod
     children: []
@@ -280,11 +280,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Disks.beginDeleteMethod_2
     name: beginDeleteMethod
     children: []
@@ -311,11 +311,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Disks.beginDeleteMethodWithHttpOperationResponse
     name: beginDeleteMethodWithHttpOperationResponse
     children: []
@@ -352,7 +352,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse>>
+          - Promise<OperationStatusResponse!@>>
   - uid: azure-arm-compute.Disks.beginGrantAccess_1
     name: beginGrantAccess
     children: []
@@ -375,15 +375,15 @@ items:
           description: ''
         - id: grantAccessData
           type:
-            - '@azure-arm-compute.GrantAccessData'
+            - azure-arm-compute.GrantAccessData
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.AccessUri>
+            - ServiceCallback<azure-arm-compute.AccessUri>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.AccessUri>
+          - Promise<azure-arm-compute.AccessUri>
   - uid: azure-arm-compute.Disks.beginGrantAccess_2
     name: beginGrantAccess
     children: []
@@ -407,7 +407,7 @@ items:
           description: ''
         - id: grantAccessData
           type:
-            - '@azure-arm-compute.GrantAccessData'
+            - azure-arm-compute.GrantAccessData
           description: ''
         - id: options
           type:
@@ -415,11 +415,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.AccessUri>
+            - ServiceCallback<azure-arm-compute.AccessUri>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.AccessUri>
+          - Promise<azure-arm-compute.AccessUri>
   - uid: azure-arm-compute.Disks.beginGrantAccess
     name: beginGrantAccess
     children: []
@@ -451,7 +451,7 @@ items:
             characters.
         - id: grantAccessData
           type:
-            - '@azure-arm-compute.GrantAccessData'
+            - azure-arm-compute.GrantAccessData
           description: |
             Access data object supplied in the body of
             the get disk access operation.
@@ -462,7 +462,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.AccessUri>
+          - Promise<azure-arm-compute.AccessUri>
   - uid: azure-arm-compute.Disks.beginGrantAccessWithHttpOperationResponse
     name: beginGrantAccessWithHttpOperationResponse
     children: []
@@ -495,7 +495,7 @@ items:
             characters.
         - id: grantAccessData
           type:
-            - '@azure-arm-compute.GrantAccessData'
+            - azure-arm-compute.GrantAccessData
           description: |
             Access data object supplied in the body of
             the get disk access operation.
@@ -506,7 +506,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AccessUri>>
+          - Promise<AccessUri!@>>
   - uid: azure-arm-compute.Disks.beginRevokeAccess
     name: beginRevokeAccess
     children: []
@@ -543,7 +543,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Disks.beginRevokeAccess_1
     name: beginRevokeAccess
     children: []
@@ -566,11 +566,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Disks.beginRevokeAccess_2
     name: beginRevokeAccess
     children: []
@@ -597,11 +597,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Disks.beginRevokeAccessWithHttpOperationResponse
     name: beginRevokeAccessWithHttpOperationResponse
     children: []
@@ -638,7 +638,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse>>
+          - Promise<OperationStatusResponse!@>>
   - uid: azure-arm-compute.Disks.beginUpdate_1
     name: beginUpdate
     children: []
@@ -661,15 +661,15 @@ items:
           description: ''
         - id: disk
           type:
-            - '@azure-arm-compute.DiskUpdate'
+            - azure-arm-compute.DiskUpdate
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Disk>
+            - ServiceCallback<azure-arm-compute.Disk>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Disk>
+          - Promise<azure-arm-compute.Disk>
   - uid: azure-arm-compute.Disks.beginUpdate
     name: beginUpdate
     children: []
@@ -701,7 +701,7 @@ items:
             characters.
         - id: disk
           type:
-            - '@azure-arm-compute.DiskUpdate'
+            - azure-arm-compute.DiskUpdate
           description: |
             Disk object supplied in the body of the Patch disk
             operation.
@@ -712,7 +712,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.Disk>
+          - Promise<azure-arm-compute.Disk>
   - uid: azure-arm-compute.Disks.beginUpdate_2
     name: beginUpdate
     children: []
@@ -735,7 +735,7 @@ items:
           description: ''
         - id: disk
           type:
-            - '@azure-arm-compute.DiskUpdate'
+            - azure-arm-compute.DiskUpdate
           description: ''
         - id: options
           type:
@@ -743,11 +743,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Disk>
+            - ServiceCallback<azure-arm-compute.Disk>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Disk>
+          - Promise<azure-arm-compute.Disk>
   - uid: azure-arm-compute.Disks.beginUpdateWithHttpOperationResponse
     name: beginUpdateWithHttpOperationResponse
     children: []
@@ -779,7 +779,7 @@ items:
             characters.
         - id: disk
           type:
-            - '@azure-arm-compute.DiskUpdate'
+            - azure-arm-compute.DiskUpdate
           description: |
             Disk object supplied in the body of the Patch disk
             operation.
@@ -790,7 +790,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Disk>>
+          - Promise<Disk!@>>
   - uid: azure-arm-compute.Disks.createOrUpdate
     name: createOrUpdate
     children: []
@@ -822,7 +822,7 @@ items:
             characters.
         - id: disk
           type:
-            - '@azure-arm-compute.Disk'
+            - azure-arm-compute.Disk
           description: |
             Disk object supplied in the body of the Put disk
             operation.
@@ -833,7 +833,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.Disk>
+          - Promise<azure-arm-compute.Disk>
   - uid: azure-arm-compute.Disks.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -856,15 +856,15 @@ items:
           description: ''
         - id: disk
           type:
-            - '@azure-arm-compute.Disk'
+            - azure-arm-compute.Disk
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Disk>
+            - ServiceCallback<azure-arm-compute.Disk>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Disk>
+          - Promise<azure-arm-compute.Disk>
   - uid: azure-arm-compute.Disks.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -887,7 +887,7 @@ items:
           description: ''
         - id: disk
           type:
-            - '@azure-arm-compute.Disk'
+            - azure-arm-compute.Disk
           description: ''
         - id: options
           type:
@@ -895,11 +895,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Disk>
+            - ServiceCallback<azure-arm-compute.Disk>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Disk>
+          - Promise<azure-arm-compute.Disk>
   - uid: azure-arm-compute.Disks.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
     children: []
@@ -931,7 +931,7 @@ items:
             characters.
         - id: disk
           type:
-            - '@azure-arm-compute.Disk'
+            - azure-arm-compute.Disk
           description: |
             Disk object supplied in the body of the Put disk
             operation.
@@ -942,7 +942,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Disk>>
+          - Promise<Disk!@>>
   - uid: azure-arm-compute.Disks.deleteMethod
     name: deleteMethod
     children: []
@@ -979,7 +979,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Disks.deleteMethod_1
     name: deleteMethod
     children: []
@@ -1002,11 +1002,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Disks.deleteMethod_2
     name: deleteMethod
     children: []
@@ -1033,11 +1033,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Disks.deleteMethodWithHttpOperationResponse
     name: deleteMethodWithHttpOperationResponse
     children: []
@@ -1074,7 +1074,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse>>
+          - Promise<OperationStatusResponse!@>>
   - uid: azure-arm-compute.Disks.get
     name: get
     children: []
@@ -1111,7 +1111,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.Disk>
+          - Promise<azure-arm-compute.Disk>
   - uid: azure-arm-compute.Disks.get_1
     name: get
     children: []
@@ -1134,11 +1134,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Disk>
+            - ServiceCallback<azure-arm-compute.Disk>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Disk>
+          - Promise<azure-arm-compute.Disk>
   - uid: azure-arm-compute.Disks.get_2
     name: get
     children: []
@@ -1165,11 +1165,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Disk>
+            - ServiceCallback<azure-arm-compute.Disk>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Disk>
+          - Promise<azure-arm-compute.Disk>
   - uid: azure-arm-compute.Disks.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -1206,7 +1206,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Disk>>
+          - Promise<Disk!@>>
   - uid: azure-arm-compute.Disks.grantAccess
     name: grantAccess
     children: []
@@ -1238,7 +1238,7 @@ items:
             characters.
         - id: grantAccessData
           type:
-            - '@azure-arm-compute.GrantAccessData'
+            - azure-arm-compute.GrantAccessData
           description: |
             Access data object supplied in the body of
             the get disk access operation.
@@ -1249,7 +1249,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.AccessUri>
+          - Promise<azure-arm-compute.AccessUri>
   - uid: azure-arm-compute.Disks.grantAccess_2
     name: grantAccess
     children: []
@@ -1273,7 +1273,7 @@ items:
           description: ''
         - id: grantAccessData
           type:
-            - '@azure-arm-compute.GrantAccessData'
+            - azure-arm-compute.GrantAccessData
           description: ''
         - id: options
           type:
@@ -1281,11 +1281,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.AccessUri>
+            - ServiceCallback<azure-arm-compute.AccessUri>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.AccessUri>
+          - Promise<azure-arm-compute.AccessUri>
   - uid: azure-arm-compute.Disks.grantAccess_1
     name: grantAccess
     children: []
@@ -1308,15 +1308,15 @@ items:
           description: ''
         - id: grantAccessData
           type:
-            - '@azure-arm-compute.GrantAccessData'
+            - azure-arm-compute.GrantAccessData
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.AccessUri>
+            - ServiceCallback<azure-arm-compute.AccessUri>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.AccessUri>
+          - Promise<azure-arm-compute.AccessUri>
   - uid: azure-arm-compute.Disks.grantAccessWithHttpOperationResponse
     name: grantAccessWithHttpOperationResponse
     children: []
@@ -1348,7 +1348,7 @@ items:
             characters.
         - id: grantAccessData
           type:
-            - '@azure-arm-compute.GrantAccessData'
+            - azure-arm-compute.GrantAccessData
           description: |
             Access data object supplied in the body of
             the get disk access operation.
@@ -1359,7 +1359,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AccessUri>>
+          - Promise<AccessUri!@>>
   - uid: azure-arm-compute.Disks.list
     name: list
     children: []
@@ -1377,7 +1377,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.DiskList>
+          - Promise<azure-arm-compute.DiskList>
   - uid: azure-arm-compute.Disks.list_1
     name: list
     children: []
@@ -1390,11 +1390,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.DiskList>
+            - ServiceCallback<azure-arm-compute.DiskList>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.DiskList>
+          - Promise<azure-arm-compute.DiskList>
   - uid: azure-arm-compute.Disks.list_2
     name: list
     children: []
@@ -1411,11 +1411,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.DiskList>
+            - ServiceCallback<azure-arm-compute.DiskList>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.DiskList>
+          - Promise<azure-arm-compute.DiskList>
   - uid: azure-arm-compute.Disks.listByResourceGroup_1
     name: listByResourceGroup
     children: []
@@ -1434,11 +1434,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.DiskList>
+            - ServiceCallback<azure-arm-compute.DiskList>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.DiskList>
+          - Promise<azure-arm-compute.DiskList>
   - uid: azure-arm-compute.Disks.listByResourceGroup_2
     name: listByResourceGroup
     children: []
@@ -1461,11 +1461,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.DiskList>
+            - ServiceCallback<azure-arm-compute.DiskList>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.DiskList>
+          - Promise<azure-arm-compute.DiskList>
   - uid: azure-arm-compute.Disks.listByResourceGroup
     name: listByResourceGroup
     children: []
@@ -1490,7 +1490,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.DiskList>
+          - Promise<azure-arm-compute.DiskList>
   - uid: azure-arm-compute.Disks.listByResourceGroupNext
     name: listByResourceGroupNext
     children: []
@@ -1516,7 +1516,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.DiskList>
+          - Promise<azure-arm-compute.DiskList>
   - uid: azure-arm-compute.Disks.listByResourceGroupNext_1
     name: listByResourceGroupNext
     children: []
@@ -1535,11 +1535,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.DiskList>
+            - ServiceCallback<azure-arm-compute.DiskList>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.DiskList>
+          - Promise<azure-arm-compute.DiskList>
   - uid: azure-arm-compute.Disks.listByResourceGroupNext_2
     name: listByResourceGroupNext
     children: []
@@ -1562,11 +1562,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.DiskList>
+            - ServiceCallback<azure-arm-compute.DiskList>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.DiskList>
+          - Promise<azure-arm-compute.DiskList>
   - uid: azure-arm-compute.Disks.listByResourceGroupNextWithHttpOperationResponse
     name: listByResourceGroupNextWithHttpOperationResponse
     children: []
@@ -1592,7 +1592,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<DiskList>>
+          - Promise<DiskList!@>>
   - uid: azure-arm-compute.Disks.listByResourceGroupWithHttpOperationResponse
     name: listByResourceGroupWithHttpOperationResponse
     children: []
@@ -1617,7 +1617,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<DiskList>>
+          - Promise<DiskList!@>>
   - uid: azure-arm-compute.Disks.listNext_1
     name: listNext
     children: []
@@ -1636,11 +1636,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.DiskList>
+            - ServiceCallback<azure-arm-compute.DiskList>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.DiskList>
+          - Promise<azure-arm-compute.DiskList>
   - uid: azure-arm-compute.Disks.listNext_2
     name: listNext
     children: []
@@ -1663,11 +1663,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.DiskList>
+            - ServiceCallback<azure-arm-compute.DiskList>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.DiskList>
+          - Promise<azure-arm-compute.DiskList>
   - uid: azure-arm-compute.Disks.listNext
     name: listNext
     children: []
@@ -1691,7 +1691,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.DiskList>
+          - Promise<azure-arm-compute.DiskList>
   - uid: azure-arm-compute.Disks.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -1717,7 +1717,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<DiskList>>
+          - Promise<DiskList!@>>
   - uid: azure-arm-compute.Disks.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1735,7 +1735,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<DiskList>>
+          - Promise<DiskList!@>>
   - uid: azure-arm-compute.Disks.revokeAccess
     name: revokeAccess
     children: []
@@ -1772,7 +1772,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Disks.revokeAccess_1
     name: revokeAccess
     children: []
@@ -1795,11 +1795,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Disks.revokeAccess_2
     name: revokeAccess
     children: []
@@ -1826,11 +1826,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Disks.revokeAccessWithHttpOperationResponse
     name: revokeAccessWithHttpOperationResponse
     children: []
@@ -1867,7 +1867,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse>>
+          - Promise<OperationStatusResponse!@>>
   - uid: azure-arm-compute.Disks.update
     name: update
     children: []
@@ -1899,7 +1899,7 @@ items:
             characters.
         - id: disk
           type:
-            - '@azure-arm-compute.DiskUpdate'
+            - azure-arm-compute.DiskUpdate
           description: |
             Disk object supplied in the body of the Patch disk
             operation.
@@ -1910,7 +1910,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.Disk>
+          - Promise<azure-arm-compute.Disk>
   - uid: azure-arm-compute.Disks.update_1
     name: update
     children: []
@@ -1933,15 +1933,15 @@ items:
           description: ''
         - id: disk
           type:
-            - '@azure-arm-compute.DiskUpdate'
+            - azure-arm-compute.DiskUpdate
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Disk>
+            - ServiceCallback<azure-arm-compute.Disk>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Disk>
+          - Promise<azure-arm-compute.Disk>
   - uid: azure-arm-compute.Disks.update_2
     name: update
     children: []
@@ -1964,7 +1964,7 @@ items:
           description: ''
         - id: disk
           type:
-            - '@azure-arm-compute.DiskUpdate'
+            - azure-arm-compute.DiskUpdate
           description: ''
         - id: options
           type:
@@ -1972,11 +1972,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Disk>
+            - ServiceCallback<azure-arm-compute.Disk>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Disk>
+          - Promise<azure-arm-compute.Disk>
   - uid: azure-arm-compute.Disks.updateWithHttpOperationResponse
     name: updateWithHttpOperationResponse
     children: []
@@ -2008,7 +2008,7 @@ items:
             characters.
         - id: disk
           type:
-            - '@azure-arm-compute.DiskUpdate'
+            - azure-arm-compute.DiskUpdate
           description: |
             Disk object supplied in the body of the Patch disk
             operation.
@@ -2019,4 +2019,92 @@ items:
           optional: true
       return:
         type:
-          - Promise<Disk>>
+          - Promise<Disk!@>>
+references:
+  - uid: azure-arm-compute.Disk
+    spec.typeScript:
+      - name: Disk
+        fullName: Disk
+        uid: azure-arm-compute.Disk
+  - uid: Promise<azure-arm-compute.Disk>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Disk
+        fullName: Disk
+        uid: azure-arm-compute.Disk
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.Disk>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Disk
+        fullName: Disk
+        uid: azure-arm-compute.Disk
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-compute.OperationStatusResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.OperationStatusResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-compute.GrantAccessData
+    spec.typeScript:
+      - name: GrantAccessData
+        fullName: GrantAccessData
+        uid: azure-arm-compute.GrantAccessData
+  - uid: Promise<azure-arm-compute.AccessUri>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: AccessUri
+        fullName: AccessUri
+        uid: azure-arm-compute.AccessUri
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.AccessUri>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: AccessUri
+        fullName: AccessUri
+        uid: azure-arm-compute.AccessUri
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-compute.DiskUpdate
+    spec.typeScript:
+      - name: DiskUpdate
+        fullName: DiskUpdate
+        uid: azure-arm-compute.DiskUpdate
+  - uid: Promise<azure-arm-compute.DiskList>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: DiskList
+        fullName: DiskList
+        uid: azure-arm-compute.DiskList
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.DiskList>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: DiskList
+        fullName: DiskList
+        uid: azure-arm-compute.DiskList
+      - name: '>'
+        fullName: '>'

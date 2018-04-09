@@ -13,7 +13,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.Resource'
+      name: azure-arm-network.Resource
     package: azure-arm-network
   - uid: azure-arm-network.DdosProtectionPlan.etag
     name: etag
@@ -70,4 +70,17 @@ items:
       content: 'virtualNetworks?: SubResource[]'
       return:
         type:
-          - '@azure-arm-network.SubResource[]'
+          - 'azure-arm-network.SubResource[]'
+references:
+  - uid: azure-arm-network.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network.Resource
+  - uid: 'azure-arm-network.SubResource[]'
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+      - name: '[]'
+        fullName: '[]'

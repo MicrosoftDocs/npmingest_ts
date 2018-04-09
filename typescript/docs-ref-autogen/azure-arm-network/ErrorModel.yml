@@ -41,7 +41,7 @@ items:
       content: 'details?: ErrorDetails[]'
       return:
         type:
-          - '@azure-arm-network.ErrorDetails[]'
+          - 'azure-arm-network.ErrorDetails[]'
   - uid: azure-arm-network.ErrorModel.innerError
     name: innerError
     fullName: innerError
@@ -84,3 +84,11 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'azure-arm-network.ErrorDetails[]'
+    spec.typeScript:
+      - name: ErrorDetails
+        fullName: ErrorDetails
+        uid: azure-arm-network.ErrorDetails
+      - name: '[]'
+        fullName: '[]'

@@ -18,7 +18,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.Resource'
+      name: azure-arm-compute.Resource
     package: azure-arm-compute
   - uid: azure-arm-compute.ContainerService.agentPoolProfiles
     name: agentPoolProfiles
@@ -32,7 +32,7 @@ items:
       content: 'agentPoolProfiles: ContainerServiceAgentPoolProfile[]'
       return:
         type:
-          - '@azure-arm-compute.ContainerServiceAgentPoolProfile[]'
+          - 'azure-arm-compute.ContainerServiceAgentPoolProfile[]'
   - uid: azure-arm-compute.ContainerService.customProfile
     name: customProfile
     fullName: customProfile
@@ -46,7 +46,7 @@ items:
       content: 'customProfile?: ContainerServiceCustomProfile'
       return:
         type:
-          - '@azure-arm-compute.ContainerServiceCustomProfile'
+          - azure-arm-compute.ContainerServiceCustomProfile
   - uid: azure-arm-compute.ContainerService.diagnosticsProfile
     name: diagnosticsProfile
     fullName: diagnosticsProfile
@@ -60,7 +60,7 @@ items:
       content: 'diagnosticsProfile?: ContainerServiceDiagnosticsProfile'
       return:
         type:
-          - '@azure-arm-compute.ContainerServiceDiagnosticsProfile'
+          - azure-arm-compute.ContainerServiceDiagnosticsProfile
   - uid: azure-arm-compute.ContainerService.linuxProfile
     name: linuxProfile
     fullName: linuxProfile
@@ -73,7 +73,7 @@ items:
       content: 'linuxProfile: ContainerServiceLinuxProfile'
       return:
         type:
-          - '@azure-arm-compute.ContainerServiceLinuxProfile'
+          - azure-arm-compute.ContainerServiceLinuxProfile
   - uid: azure-arm-compute.ContainerService.masterProfile
     name: masterProfile
     fullName: masterProfile
@@ -86,7 +86,7 @@ items:
       content: 'masterProfile: ContainerServiceMasterProfile'
       return:
         type:
-          - '@azure-arm-compute.ContainerServiceMasterProfile'
+          - azure-arm-compute.ContainerServiceMasterProfile
   - uid: azure-arm-compute.ContainerService.orchestratorProfile
     name: orchestratorProfile
     fullName: orchestratorProfile
@@ -100,7 +100,7 @@ items:
       content: 'orchestratorProfile?: ContainerServiceOrchestratorProfile'
       return:
         type:
-          - '@azure-arm-compute.ContainerServiceOrchestratorProfile'
+          - azure-arm-compute.ContainerServiceOrchestratorProfile
   - uid: azure-arm-compute.ContainerService.provisioningState
     name: provisioningState
     fullName: provisioningState
@@ -128,7 +128,7 @@ items:
       content: 'servicePrincipalProfile?: ContainerServiceServicePrincipalProfile'
       return:
         type:
-          - '@azure-arm-compute.ContainerServiceServicePrincipalProfile'
+          - azure-arm-compute.ContainerServiceServicePrincipalProfile
   - uid: azure-arm-compute.ContainerService.windowsProfile
     name: windowsProfile
     fullName: windowsProfile
@@ -142,4 +142,52 @@ items:
       content: 'windowsProfile?: ContainerServiceWindowsProfile'
       return:
         type:
-          - '@azure-arm-compute.ContainerServiceWindowsProfile'
+          - azure-arm-compute.ContainerServiceWindowsProfile
+references:
+  - uid: azure-arm-compute.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-compute.Resource
+  - uid: 'azure-arm-compute.ContainerServiceAgentPoolProfile[]'
+    spec.typeScript:
+      - name: ContainerServiceAgentPoolProfile
+        fullName: ContainerServiceAgentPoolProfile
+        uid: azure-arm-compute.ContainerServiceAgentPoolProfile
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute.ContainerServiceCustomProfile
+    spec.typeScript:
+      - name: ContainerServiceCustomProfile
+        fullName: ContainerServiceCustomProfile
+        uid: azure-arm-compute.ContainerServiceCustomProfile
+  - uid: azure-arm-compute.ContainerServiceDiagnosticsProfile
+    spec.typeScript:
+      - name: ContainerServiceDiagnosticsProfile
+        fullName: ContainerServiceDiagnosticsProfile
+        uid: azure-arm-compute.ContainerServiceDiagnosticsProfile
+  - uid: azure-arm-compute.ContainerServiceLinuxProfile
+    spec.typeScript:
+      - name: ContainerServiceLinuxProfile
+        fullName: ContainerServiceLinuxProfile
+        uid: azure-arm-compute.ContainerServiceLinuxProfile
+  - uid: azure-arm-compute.ContainerServiceMasterProfile
+    spec.typeScript:
+      - name: ContainerServiceMasterProfile
+        fullName: ContainerServiceMasterProfile
+        uid: azure-arm-compute.ContainerServiceMasterProfile
+  - uid: azure-arm-compute.ContainerServiceOrchestratorProfile
+    spec.typeScript:
+      - name: ContainerServiceOrchestratorProfile
+        fullName: ContainerServiceOrchestratorProfile
+        uid: azure-arm-compute.ContainerServiceOrchestratorProfile
+  - uid: azure-arm-compute.ContainerServiceServicePrincipalProfile
+    spec.typeScript:
+      - name: ContainerServiceServicePrincipalProfile
+        fullName: ContainerServiceServicePrincipalProfile
+        uid: azure-arm-compute.ContainerServiceServicePrincipalProfile
+  - uid: azure-arm-compute.ContainerServiceWindowsProfile
+    spec.typeScript:
+      - name: ContainerServiceWindowsProfile
+        fullName: ContainerServiceWindowsProfile
+        uid: azure-arm-compute.ContainerServiceWindowsProfile

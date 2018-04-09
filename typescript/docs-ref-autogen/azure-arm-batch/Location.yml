@@ -48,7 +48,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.CheckNameAvailabilityResult>
+          - Promise<azure-arm-batch.CheckNameAvailabilityResult>
   - uid: azure-arm-batch.Location.checkNameAvailability_1
     name: checkNameAvailability
     children: []
@@ -73,11 +73,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.CheckNameAvailabilityResult>
+            - ServiceCallback<azure-arm-batch.CheckNameAvailabilityResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.CheckNameAvailabilityResult>
+          - Promise<azure-arm-batch.CheckNameAvailabilityResult>
   - uid: azure-arm-batch.Location.checkNameAvailability_2
     name: checkNameAvailability
     children: []
@@ -107,11 +107,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.CheckNameAvailabilityResult>
+            - ServiceCallback<azure-arm-batch.CheckNameAvailabilityResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.CheckNameAvailabilityResult>
+          - Promise<azure-arm-batch.CheckNameAvailabilityResult>
   - uid: azure-arm-batch.Location.checkNameAvailabilityWithHttpOperationResponse
     name: checkNameAvailabilityWithHttpOperationResponse
     children: []
@@ -143,7 +143,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<CheckNameAvailabilityResult>>
+          - Promise<CheckNameAvailabilityResult!@>>
   - uid: azure-arm-batch.Location.getQuotas
     name: getQuotas
     children: []
@@ -169,7 +169,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.BatchLocationQuota>
+          - Promise<azure-arm-batch.BatchLocationQuota>
   - uid: azure-arm-batch.Location.getQuotas_1
     name: getQuotas
     children: []
@@ -190,11 +190,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchLocationQuota>
+            - ServiceCallback<azure-arm-batch.BatchLocationQuota>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchLocationQuota>
+          - Promise<azure-arm-batch.BatchLocationQuota>
   - uid: azure-arm-batch.Location.getQuotas_2
     name: getQuotas
     children: []
@@ -219,11 +219,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchLocationQuota>
+            - ServiceCallback<azure-arm-batch.BatchLocationQuota>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchLocationQuota>
+          - Promise<azure-arm-batch.BatchLocationQuota>
   - uid: azure-arm-batch.Location.getQuotasWithHttpOperationResponse
     name: getQuotasWithHttpOperationResponse
     children: []
@@ -251,4 +251,41 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchLocationQuota>>
+          - Promise<BatchLocationQuota!@>>
+references:
+  - uid: Promise<azure-arm-batch.CheckNameAvailabilityResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: CheckNameAvailabilityResult
+        fullName: CheckNameAvailabilityResult
+        uid: azure-arm-batch.CheckNameAvailabilityResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch.CheckNameAvailabilityResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: CheckNameAvailabilityResult
+        fullName: CheckNameAvailabilityResult
+        uid: azure-arm-batch.CheckNameAvailabilityResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-batch.BatchLocationQuota>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: BatchLocationQuota
+        fullName: BatchLocationQuota
+        uid: azure-arm-batch.BatchLocationQuota
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch.BatchLocationQuota>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: BatchLocationQuota
+        fullName: BatchLocationQuota
+        uid: azure-arm-batch.BatchLocationQuota
+      - name: '>'
+        fullName: '>'

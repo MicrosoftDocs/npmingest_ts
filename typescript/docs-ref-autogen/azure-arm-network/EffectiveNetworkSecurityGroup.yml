@@ -26,7 +26,7 @@ items:
       content: 'association?: EffectiveNetworkSecurityGroupAssociation'
       return:
         type:
-          - '@azure-arm-network.EffectiveNetworkSecurityGroupAssociation'
+          - azure-arm-network.EffectiveNetworkSecurityGroupAssociation
   - uid: azure-arm-network.EffectiveNetworkSecurityGroup.effectiveSecurityRules
     name: effectiveSecurityRules
     fullName: effectiveSecurityRules
@@ -40,7 +40,7 @@ items:
       content: 'effectiveSecurityRules?: EffectiveNetworkSecurityRule[]'
       return:
         type:
-          - '@azure-arm-network.EffectiveNetworkSecurityRule[]'
+          - 'azure-arm-network.EffectiveNetworkSecurityRule[]'
   - uid: azure-arm-network.EffectiveNetworkSecurityGroup.networkSecurityGroup
     name: networkSecurityGroup
     fullName: networkSecurityGroup
@@ -54,7 +54,7 @@ items:
       content: 'networkSecurityGroup?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.EffectiveNetworkSecurityGroup.tagMap
     name: tagMap
     fullName: tagMap
@@ -69,3 +69,21 @@ items:
       return:
         type:
           - function
+references:
+  - uid: azure-arm-network.EffectiveNetworkSecurityGroupAssociation
+    spec.typeScript:
+      - name: EffectiveNetworkSecurityGroupAssociation
+        fullName: EffectiveNetworkSecurityGroupAssociation
+        uid: azure-arm-network.EffectiveNetworkSecurityGroupAssociation
+  - uid: 'azure-arm-network.EffectiveNetworkSecurityRule[]'
+    spec.typeScript:
+      - name: EffectiveNetworkSecurityRule
+        fullName: EffectiveNetworkSecurityRule
+        uid: azure-arm-network.EffectiveNetworkSecurityRule
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource

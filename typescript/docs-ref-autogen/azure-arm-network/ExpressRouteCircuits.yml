@@ -123,7 +123,7 @@ items:
             The name of the circuit.
         - id: parameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuit'
+            - azure-arm-network.ExpressRouteCircuit
           description: |
             Parameters supplied to the create or update
             express route circuit operation.
@@ -134,7 +134,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuit>
+          - Promise<azure-arm-network.ExpressRouteCircuit>
   - uid: azure-arm-network.ExpressRouteCircuits.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -158,15 +158,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuit'
+            - azure-arm-network.ExpressRouteCircuit
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuit>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuit>
+          - Promise<azure-arm-network.ExpressRouteCircuit>
   - uid: azure-arm-network.ExpressRouteCircuits.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -190,7 +190,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuit'
+            - azure-arm-network.ExpressRouteCircuit
           description: ''
         - id: options
           type:
@@ -198,11 +198,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuit>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuit>
+          - Promise<azure-arm-network.ExpressRouteCircuit>
   - uid: >-
       azure-arm-network.ExpressRouteCircuits.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
@@ -229,7 +229,7 @@ items:
             The name of the circuit.
         - id: parameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuit'
+            - azure-arm-network.ExpressRouteCircuit
           description: |
             Parameters supplied to the create or update
             express route circuit operation.
@@ -240,7 +240,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuit>>
+          - Promise<ExpressRouteCircuit!@>>
   - uid: azure-arm-network.ExpressRouteCircuits.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -394,11 +394,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.beginListArpTable
     name: beginListArpTable
     children: []
@@ -440,7 +440,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.beginListArpTable_2
     name: beginListArpTable
     children: []
@@ -479,11 +479,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
   - uid: >-
       azure-arm-network.ExpressRouteCircuits.beginListArpTableWithHttpOperationResponse
     name: beginListArpTableWithHttpOperationResponse
@@ -527,7 +527,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitsArpTableListResult>>
+          - Promise<ExpressRouteCircuitsArpTableListResult!@>>
   - uid: azure-arm-network.ExpressRouteCircuits.beginListRoutesTable_2
     name: beginListRoutesTable
     children: []
@@ -568,12 +568,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.beginListRoutesTable
     name: beginListRoutesTable
     children: []
@@ -617,8 +616,7 @@ items:
           optional: true
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.beginListRoutesTable_1
     name: beginListRoutesTable
     children: []
@@ -655,12 +653,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.beginListRoutesTableSummary_2
     name: beginListRoutesTableSummary
     children: []
@@ -700,12 +697,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
+            Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.beginListRoutesTableSummary_1
     name: beginListRoutesTableSummary
     children: []
@@ -740,12 +737,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
+            Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.beginListRoutesTableSummary
     name: beginListRoutesTableSummary
     children: []
@@ -789,7 +786,7 @@ items:
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
+            Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
   - uid: >-
       azure-arm-network.ExpressRouteCircuits.beginListRoutesTableSummaryWithHttpOperationResponse
     name: beginListRoutesTableSummaryWithHttpOperationResponse
@@ -834,7 +831,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitsRoutesTableSummaryListResult>>
+          - Promise<ExpressRouteCircuitsRoutesTableSummaryListResult!@>>
   - uid: >-
       azure-arm-network.ExpressRouteCircuits.beginListRoutesTableWithHttpOperationResponse
     name: beginListRoutesTableWithHttpOperationResponse
@@ -881,7 +878,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitsRoutesTableListResult>>
+          - Promise<ExpressRouteCircuitsRoutesTableListResult!@>>
   - uid: azure-arm-network.ExpressRouteCircuits.beginUpdateTags
     name: beginUpdateTags
     children: []
@@ -906,7 +903,7 @@ items:
             The name of the circuit.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update express route
             circuit tags.
@@ -917,7 +914,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuit>
+          - Promise<azure-arm-network.ExpressRouteCircuit>
   - uid: azure-arm-network.ExpressRouteCircuits.beginUpdateTags_2
     name: beginUpdateTags
     children: []
@@ -941,7 +938,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -949,11 +946,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuit>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuit>
+          - Promise<azure-arm-network.ExpressRouteCircuit>
   - uid: azure-arm-network.ExpressRouteCircuits.beginUpdateTags_1
     name: beginUpdateTags
     children: []
@@ -976,15 +973,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuit>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuit>
+          - Promise<azure-arm-network.ExpressRouteCircuit>
   - uid: >-
       azure-arm-network.ExpressRouteCircuits.beginUpdateTagsWithHttpOperationResponse
     name: beginUpdateTagsWithHttpOperationResponse
@@ -1010,7 +1007,7 @@ items:
             The name of the circuit.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update express route
             circuit tags.
@@ -1021,7 +1018,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuit>>
+          - Promise<ExpressRouteCircuit!@>>
   - uid: azure-arm-network.ExpressRouteCircuits.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -1045,15 +1042,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuit'
+            - azure-arm-network.ExpressRouteCircuit
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuit>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuit>
+          - Promise<azure-arm-network.ExpressRouteCircuit>
   - uid: azure-arm-network.ExpressRouteCircuits.createOrUpdate
     name: createOrUpdate
     children: []
@@ -1078,7 +1075,7 @@ items:
             The name of the circuit.
         - id: parameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuit'
+            - azure-arm-network.ExpressRouteCircuit
           description: |
             Parameters supplied to the create or update
             express route circuit operation.
@@ -1089,7 +1086,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuit>
+          - Promise<azure-arm-network.ExpressRouteCircuit>
   - uid: azure-arm-network.ExpressRouteCircuits.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -1113,7 +1110,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuit'
+            - azure-arm-network.ExpressRouteCircuit
           description: ''
         - id: options
           type:
@@ -1121,11 +1118,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuit>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuit>
+          - Promise<azure-arm-network.ExpressRouteCircuit>
   - uid: >-
       azure-arm-network.ExpressRouteCircuits.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
@@ -1152,7 +1149,7 @@ items:
             The name of the circuit.
         - id: parameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuit'
+            - azure-arm-network.ExpressRouteCircuit
           description: |
             Parameters supplied to the create or update
             express route circuit operation.
@@ -1163,7 +1160,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuit>>
+          - Promise<ExpressRouteCircuit!@>>
   - uid: azure-arm-network.ExpressRouteCircuits.deleteMethod
     name: deleteMethod
     children: []
@@ -1305,11 +1302,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuit>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuit>
+          - Promise<azure-arm-network.ExpressRouteCircuit>
   - uid: azure-arm-network.ExpressRouteCircuits.get_2
     name: get
     children: []
@@ -1336,11 +1333,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuit>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuit>
+          - Promise<azure-arm-network.ExpressRouteCircuit>
   - uid: azure-arm-network.ExpressRouteCircuits.get
     name: get
     children: []
@@ -1370,7 +1367,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuit>
+          - Promise<azure-arm-network.ExpressRouteCircuit>
   - uid: azure-arm-network.ExpressRouteCircuits.getPeeringStats
     name: getPeeringStats
     children: []
@@ -1405,7 +1402,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitStats>
+          - Promise<azure-arm-network.ExpressRouteCircuitStats>
   - uid: azure-arm-network.ExpressRouteCircuits.getPeeringStats_1
     name: getPeeringStats
     children: []
@@ -1433,11 +1430,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitStats>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitStats>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitStats>
+          - Promise<azure-arm-network.ExpressRouteCircuitStats>
   - uid: azure-arm-network.ExpressRouteCircuits.getPeeringStats_2
     name: getPeeringStats
     children: []
@@ -1469,11 +1466,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitStats>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitStats>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitStats>
+          - Promise<azure-arm-network.ExpressRouteCircuitStats>
   - uid: >-
       azure-arm-network.ExpressRouteCircuits.getPeeringStatsWithHttpOperationResponse
     name: getPeeringStatsWithHttpOperationResponse
@@ -1509,7 +1506,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitStats>>
+          - Promise<ExpressRouteCircuitStats!@>>
   - uid: azure-arm-network.ExpressRouteCircuits.getStats
     name: getStats
     children: []
@@ -1539,7 +1536,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitStats>
+          - Promise<azure-arm-network.ExpressRouteCircuitStats>
   - uid: azure-arm-network.ExpressRouteCircuits.getStats_1
     name: getStats
     children: []
@@ -1562,11 +1559,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitStats>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitStats>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitStats>
+          - Promise<azure-arm-network.ExpressRouteCircuitStats>
   - uid: azure-arm-network.ExpressRouteCircuits.getStats_2
     name: getStats
     children: []
@@ -1593,11 +1590,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitStats>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitStats>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitStats>
+          - Promise<azure-arm-network.ExpressRouteCircuitStats>
   - uid: azure-arm-network.ExpressRouteCircuits.getStatsWithHttpOperationResponse
     name: getStatsWithHttpOperationResponse
     children: []
@@ -1627,7 +1624,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitStats>>
+          - Promise<ExpressRouteCircuitStats!@>>
   - uid: azure-arm-network.ExpressRouteCircuits.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -1657,7 +1654,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuit>>
+          - Promise<ExpressRouteCircuit!@>>
   - uid: azure-arm-network.ExpressRouteCircuits.list_1
     name: list
     children: []
@@ -1676,11 +1673,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitListResult>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.list_2
     name: list
     children: []
@@ -1703,11 +1700,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitListResult>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.list
     name: list
     children: []
@@ -1730,7 +1727,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.listAll_1
     name: listAll
     children: []
@@ -1745,11 +1742,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitListResult>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.listAll
     name: listAll
     children: []
@@ -1767,7 +1764,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.listAll_2
     name: listAll
     children: []
@@ -1786,11 +1783,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitListResult>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.listAllNext
     name: listAllNext
     children: []
@@ -1814,7 +1811,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.listAllNext_1
     name: listAllNext
     children: []
@@ -1833,11 +1830,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitListResult>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.listAllNext_2
     name: listAllNext
     children: []
@@ -1860,11 +1857,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitListResult>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitListResult>
   - uid: >-
       azure-arm-network.ExpressRouteCircuits.listAllNextWithHttpOperationResponse
     name: listAllNextWithHttpOperationResponse
@@ -1891,7 +1888,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitListResult>>
+          - Promise<ExpressRouteCircuitListResult!@>>
   - uid: azure-arm-network.ExpressRouteCircuits.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse
     children: []
@@ -1909,7 +1906,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitListResult>>
+          - Promise<ExpressRouteCircuitListResult!@>>
   - uid: azure-arm-network.ExpressRouteCircuits.listArpTable
     name: listArpTable
     children: []
@@ -1951,7 +1948,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.listArpTable_1
     name: listArpTable
     children: []
@@ -1986,11 +1983,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.listArpTable_2
     name: listArpTable
     children: []
@@ -2029,11 +2026,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
   - uid: >-
       azure-arm-network.ExpressRouteCircuits.listArpTableWithHttpOperationResponse
     name: listArpTableWithHttpOperationResponse
@@ -2077,7 +2074,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitsArpTableListResult>>
+          - Promise<ExpressRouteCircuitsArpTableListResult!@>>
   - uid: azure-arm-network.ExpressRouteCircuits.listNext_1
     name: listNext
     children: []
@@ -2096,11 +2093,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitListResult>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.listNext_2
     name: listNext
     children: []
@@ -2123,11 +2120,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitListResult>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.listNext
     name: listNext
     children: []
@@ -2151,7 +2148,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -2177,7 +2174,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitListResult>>
+          - Promise<ExpressRouteCircuitListResult!@>>
   - uid: azure-arm-network.ExpressRouteCircuits.listRoutesTable
     name: listRoutesTable
     children: []
@@ -2221,8 +2218,7 @@ items:
           optional: true
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.listRoutesTable_1
     name: listRoutesTable
     children: []
@@ -2259,12 +2255,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.listRoutesTable_2
     name: listRoutesTable
     children: []
@@ -2305,12 +2300,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.listRoutesTableSummary
     name: listRoutesTableSummary
     children: []
@@ -2353,7 +2347,7 @@ items:
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
+            Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.listRoutesTableSummary_1
     name: listRoutesTableSummary
     children: []
@@ -2388,12 +2382,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
+            Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
   - uid: azure-arm-network.ExpressRouteCircuits.listRoutesTableSummary_2
     name: listRoutesTableSummary
     children: []
@@ -2433,12 +2427,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
+            Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
   - uid: >-
       azure-arm-network.ExpressRouteCircuits.listRoutesTableSummaryWithHttpOperationResponse
     name: listRoutesTableSummaryWithHttpOperationResponse
@@ -2483,7 +2477,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitsRoutesTableSummaryListResult>>
+          - Promise<ExpressRouteCircuitsRoutesTableSummaryListResult!@>>
   - uid: >-
       azure-arm-network.ExpressRouteCircuits.listRoutesTableWithHttpOperationResponse
     name: listRoutesTableWithHttpOperationResponse
@@ -2529,7 +2523,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitsRoutesTableListResult>>
+          - Promise<ExpressRouteCircuitsRoutesTableListResult!@>>
   - uid: azure-arm-network.ExpressRouteCircuits.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -2554,7 +2548,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitListResult>>
+          - Promise<ExpressRouteCircuitListResult!@>>
   - uid: azure-arm-network.ExpressRouteCircuits.updateTags
     name: updateTags
     children: []
@@ -2579,7 +2573,7 @@ items:
             The name of the circuit.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update express route
             circuit tags.
@@ -2590,7 +2584,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuit>
+          - Promise<azure-arm-network.ExpressRouteCircuit>
   - uid: azure-arm-network.ExpressRouteCircuits.updateTags_1
     name: updateTags
     children: []
@@ -2613,15 +2607,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuit>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuit>
+          - Promise<azure-arm-network.ExpressRouteCircuit>
   - uid: azure-arm-network.ExpressRouteCircuits.updateTags_2
     name: updateTags
     children: []
@@ -2645,7 +2639,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -2653,11 +2647,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuit>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuit>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuit>
+          - Promise<azure-arm-network.ExpressRouteCircuit>
   - uid: azure-arm-network.ExpressRouteCircuits.updateTagsWithHttpOperationResponse
     name: updateTagsWithHttpOperationResponse
     children: []
@@ -2682,7 +2676,7 @@ items:
             The name of the circuit.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update express route
             circuit tags.
@@ -2693,4 +2687,126 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuit>>
+          - Promise<ExpressRouteCircuit!@>>
+references:
+  - uid: azure-arm-network.ExpressRouteCircuit
+    spec.typeScript:
+      - name: ExpressRouteCircuit
+        fullName: ExpressRouteCircuit
+        uid: azure-arm-network.ExpressRouteCircuit
+  - uid: Promise<azure-arm-network.ExpressRouteCircuit>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteCircuit
+        fullName: ExpressRouteCircuit
+        uid: azure-arm-network.ExpressRouteCircuit
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ExpressRouteCircuit>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteCircuit
+        fullName: ExpressRouteCircuit
+        uid: azure-arm-network.ExpressRouteCircuit
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteCircuitsArpTableListResult
+        fullName: ExpressRouteCircuitsArpTableListResult
+        uid: azure-arm-network.ExpressRouteCircuitsArpTableListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteCircuitsArpTableListResult
+        fullName: ExpressRouteCircuitsArpTableListResult
+        uid: azure-arm-network.ExpressRouteCircuitsArpTableListResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteCircuitsRoutesTableListResult
+        fullName: ExpressRouteCircuitsRoutesTableListResult
+        uid: azure-arm-network.ExpressRouteCircuitsRoutesTableListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteCircuitsRoutesTableListResult
+        fullName: ExpressRouteCircuitsRoutesTableListResult
+        uid: azure-arm-network.ExpressRouteCircuitsRoutesTableListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteCircuitsRoutesTableSummaryListResult
+        fullName: ExpressRouteCircuitsRoutesTableSummaryListResult
+        uid: azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteCircuitsRoutesTableSummaryListResult
+        fullName: ExpressRouteCircuitsRoutesTableSummaryListResult
+        uid: azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.TagsObject
+    spec.typeScript:
+      - name: TagsObject
+        fullName: TagsObject
+        uid: azure-arm-network.TagsObject
+  - uid: Promise<azure-arm-network.ExpressRouteCircuitStats>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteCircuitStats
+        fullName: ExpressRouteCircuitStats
+        uid: azure-arm-network.ExpressRouteCircuitStats
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ExpressRouteCircuitStats>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteCircuitStats
+        fullName: ExpressRouteCircuitStats
+        uid: azure-arm-network.ExpressRouteCircuitStats
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.ExpressRouteCircuitListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteCircuitListResult
+        fullName: ExpressRouteCircuitListResult
+        uid: azure-arm-network.ExpressRouteCircuitListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ExpressRouteCircuitListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteCircuitListResult
+        fullName: ExpressRouteCircuitListResult
+        uid: azure-arm-network.ExpressRouteCircuitListResult
+      - name: '>'
+        fullName: '>'

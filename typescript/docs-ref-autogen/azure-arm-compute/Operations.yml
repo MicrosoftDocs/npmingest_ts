@@ -30,7 +30,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.ComputeOperationListResult>
+          - Promise<azure-arm-compute.ComputeOperationListResult>
   - uid: azure-arm-compute.Operations.list_1
     name: list
     children: []
@@ -43,11 +43,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ComputeOperationListResult>
+            - ServiceCallback<azure-arm-compute.ComputeOperationListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ComputeOperationListResult>
+          - Promise<azure-arm-compute.ComputeOperationListResult>
   - uid: azure-arm-compute.Operations.list_2
     name: list
     children: []
@@ -66,11 +66,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ComputeOperationListResult>
+            - ServiceCallback<azure-arm-compute.ComputeOperationListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ComputeOperationListResult>
+          - Promise<azure-arm-compute.ComputeOperationListResult>
   - uid: azure-arm-compute.Operations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -88,4 +88,23 @@ items:
           optional: true
       return:
         type:
-          - Promise<ComputeOperationListResult>>
+          - Promise<ComputeOperationListResult!@>>
+references:
+  - uid: Promise<azure-arm-compute.ComputeOperationListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ComputeOperationListResult
+        fullName: ComputeOperationListResult
+        uid: azure-arm-compute.ComputeOperationListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.ComputeOperationListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ComputeOperationListResult
+        fullName: ComputeOperationListResult
+        uid: azure-arm-compute.ComputeOperationListResult
+      - name: '>'
+        fullName: '>'

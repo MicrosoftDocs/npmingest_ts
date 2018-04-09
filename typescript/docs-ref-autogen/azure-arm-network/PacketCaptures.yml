@@ -80,7 +80,7 @@ items:
             The name of the packet capture session.
         - id: parameters
           type:
-            - '@azure-arm-network.PacketCapture'
+            - azure-arm-network.PacketCapture
           description: |
             Parameters that define the create packet capture
             operation.
@@ -91,7 +91,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureResult>
+          - Promise<azure-arm-network.PacketCaptureResult>
   - uid: azure-arm-network.PacketCaptures.beginCreate_1
     name: beginCreate
     children: []
@@ -119,15 +119,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.PacketCapture'
+            - azure-arm-network.PacketCapture
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PacketCaptureResult>
+            - ServiceCallback<azure-arm-network.PacketCaptureResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureResult>
+          - Promise<azure-arm-network.PacketCaptureResult>
   - uid: azure-arm-network.PacketCaptures.beginCreate_2
     name: beginCreate
     children: []
@@ -155,7 +155,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.PacketCapture'
+            - azure-arm-network.PacketCapture
           description: ''
         - id: options
           type:
@@ -163,11 +163,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PacketCaptureResult>
+            - ServiceCallback<azure-arm-network.PacketCaptureResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureResult>
+          - Promise<azure-arm-network.PacketCaptureResult>
   - uid: azure-arm-network.PacketCaptures.beginCreateWithHttpOperationResponse
     name: beginCreateWithHttpOperationResponse
     children: []
@@ -198,7 +198,7 @@ items:
             The name of the packet capture session.
         - id: parameters
           type:
-            - '@azure-arm-network.PacketCapture'
+            - azure-arm-network.PacketCapture
           description: |
             Parameters that define the create packet capture
             operation.
@@ -209,7 +209,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PacketCaptureResult>>
+          - Promise<PacketCaptureResult!@>>
   - uid: azure-arm-network.PacketCaptures.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -386,7 +386,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureQueryStatusResult>
+          - Promise<azure-arm-network.PacketCaptureQueryStatusResult>
   - uid: azure-arm-network.PacketCaptures.beginGetStatus_1
     name: beginGetStatus
     children: []
@@ -414,11 +414,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PacketCaptureQueryStatusResult>
+            - ServiceCallback<azure-arm-network.PacketCaptureQueryStatusResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureQueryStatusResult>
+          - Promise<azure-arm-network.PacketCaptureQueryStatusResult>
   - uid: azure-arm-network.PacketCaptures.beginGetStatus_2
     name: beginGetStatus
     children: []
@@ -450,11 +450,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PacketCaptureQueryStatusResult>
+            - ServiceCallback<azure-arm-network.PacketCaptureQueryStatusResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureQueryStatusResult>
+          - Promise<azure-arm-network.PacketCaptureQueryStatusResult>
   - uid: azure-arm-network.PacketCaptures.beginGetStatusWithHttpOperationResponse
     name: beginGetStatusWithHttpOperationResponse
     children: []
@@ -491,7 +491,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PacketCaptureQueryStatusResult>>
+          - Promise<PacketCaptureQueryStatusResult!@>>
   - uid: azure-arm-network.PacketCaptures.beginStop_1
     name: beginStop
     children: []
@@ -660,7 +660,7 @@ items:
             The name of the packet capture session.
         - id: parameters
           type:
-            - '@azure-arm-network.PacketCapture'
+            - azure-arm-network.PacketCapture
           description: |
             Parameters that define the create packet capture
             operation.
@@ -671,7 +671,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureResult>
+          - Promise<azure-arm-network.PacketCaptureResult>
   - uid: azure-arm-network.PacketCaptures.create_1
     name: create
     children: []
@@ -699,15 +699,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.PacketCapture'
+            - azure-arm-network.PacketCapture
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PacketCaptureResult>
+            - ServiceCallback<azure-arm-network.PacketCaptureResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureResult>
+          - Promise<azure-arm-network.PacketCaptureResult>
   - uid: azure-arm-network.PacketCaptures.create_2
     name: create
     children: []
@@ -735,7 +735,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.PacketCapture'
+            - azure-arm-network.PacketCapture
           description: ''
         - id: options
           type:
@@ -743,11 +743,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PacketCaptureResult>
+            - ServiceCallback<azure-arm-network.PacketCaptureResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureResult>
+          - Promise<azure-arm-network.PacketCaptureResult>
   - uid: azure-arm-network.PacketCaptures.createWithHttpOperationResponse
     name: createWithHttpOperationResponse
     children: []
@@ -778,7 +778,7 @@ items:
             The name of the packet capture session.
         - id: parameters
           type:
-            - '@azure-arm-network.PacketCapture'
+            - azure-arm-network.PacketCapture
           description: |
             Parameters that define the create packet capture
             operation.
@@ -789,7 +789,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PacketCaptureResult>>
+          - Promise<PacketCaptureResult!@>>
   - uid: azure-arm-network.PacketCaptures.deleteMethod
     name: deleteMethod
     children: []
@@ -955,11 +955,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PacketCaptureResult>
+            - ServiceCallback<azure-arm-network.PacketCaptureResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureResult>
+          - Promise<azure-arm-network.PacketCaptureResult>
   - uid: azure-arm-network.PacketCaptures.get_2
     name: get
     children: []
@@ -991,11 +991,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PacketCaptureResult>
+            - ServiceCallback<azure-arm-network.PacketCaptureResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureResult>
+          - Promise<azure-arm-network.PacketCaptureResult>
   - uid: azure-arm-network.PacketCaptures.get
     name: get
     children: []
@@ -1030,7 +1030,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureResult>
+          - Promise<azure-arm-network.PacketCaptureResult>
   - uid: azure-arm-network.PacketCaptures.getStatus
     name: getStatus
     children: []
@@ -1066,7 +1066,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureQueryStatusResult>
+          - Promise<azure-arm-network.PacketCaptureQueryStatusResult>
   - uid: azure-arm-network.PacketCaptures.getStatus_1
     name: getStatus
     children: []
@@ -1094,11 +1094,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PacketCaptureQueryStatusResult>
+            - ServiceCallback<azure-arm-network.PacketCaptureQueryStatusResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureQueryStatusResult>
+          - Promise<azure-arm-network.PacketCaptureQueryStatusResult>
   - uid: azure-arm-network.PacketCaptures.getStatus_2
     name: getStatus
     children: []
@@ -1130,11 +1130,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PacketCaptureQueryStatusResult>
+            - ServiceCallback<azure-arm-network.PacketCaptureQueryStatusResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureQueryStatusResult>
+          - Promise<azure-arm-network.PacketCaptureQueryStatusResult>
   - uid: azure-arm-network.PacketCaptures.getStatusWithHttpOperationResponse
     name: getStatusWithHttpOperationResponse
     children: []
@@ -1171,7 +1171,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PacketCaptureQueryStatusResult>>
+          - Promise<PacketCaptureQueryStatusResult!@>>
   - uid: azure-arm-network.PacketCaptures.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -1207,7 +1207,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PacketCaptureResult>>
+          - Promise<PacketCaptureResult!@>>
   - uid: azure-arm-network.PacketCaptures.list
     name: list
     children: []
@@ -1237,7 +1237,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureListResult>
+          - Promise<azure-arm-network.PacketCaptureListResult>
   - uid: azure-arm-network.PacketCaptures.list_1
     name: list
     children: []
@@ -1260,11 +1260,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PacketCaptureListResult>
+            - ServiceCallback<azure-arm-network.PacketCaptureListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureListResult>
+          - Promise<azure-arm-network.PacketCaptureListResult>
   - uid: azure-arm-network.PacketCaptures.list_2
     name: list
     children: []
@@ -1291,11 +1291,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PacketCaptureListResult>
+            - ServiceCallback<azure-arm-network.PacketCaptureListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PacketCaptureListResult>
+          - Promise<azure-arm-network.PacketCaptureListResult>
   - uid: azure-arm-network.PacketCaptures.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1325,7 +1325,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PacketCaptureListResult>>
+          - Promise<PacketCaptureListResult!@>>
   - uid: azure-arm-network.PacketCaptures.stop
     name: stop
     children: []
@@ -1464,3 +1464,63 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+references:
+  - uid: azure-arm-network.PacketCapture
+    spec.typeScript:
+      - name: PacketCapture
+        fullName: PacketCapture
+        uid: azure-arm-network.PacketCapture
+  - uid: Promise<azure-arm-network.PacketCaptureResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: PacketCaptureResult
+        fullName: PacketCaptureResult
+        uid: azure-arm-network.PacketCaptureResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.PacketCaptureResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: PacketCaptureResult
+        fullName: PacketCaptureResult
+        uid: azure-arm-network.PacketCaptureResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.PacketCaptureQueryStatusResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: PacketCaptureQueryStatusResult
+        fullName: PacketCaptureQueryStatusResult
+        uid: azure-arm-network.PacketCaptureQueryStatusResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.PacketCaptureQueryStatusResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: PacketCaptureQueryStatusResult
+        fullName: PacketCaptureQueryStatusResult
+        uid: azure-arm-network.PacketCaptureQueryStatusResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.PacketCaptureListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: PacketCaptureListResult
+        fullName: PacketCaptureListResult
+        uid: azure-arm-network.PacketCaptureListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.PacketCaptureListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: PacketCaptureListResult
+        fullName: PacketCaptureListResult
+        uid: azure-arm-network.PacketCaptureListResult
+      - name: '>'
+        fullName: '>'

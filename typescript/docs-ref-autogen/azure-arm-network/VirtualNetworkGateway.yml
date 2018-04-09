@@ -21,7 +21,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.Resource'
+      name: azure-arm-network.Resource
     package: azure-arm-network
   - uid: azure-arm-network.VirtualNetworkGateway.activeActive
     name: activeActive
@@ -50,7 +50,7 @@ items:
       content: 'bgpSettings?: BgpSettings'
       return:
         type:
-          - '@azure-arm-network.BgpSettings'
+          - azure-arm-network.BgpSettings
   - uid: azure-arm-network.VirtualNetworkGateway.enableBgp
     name: enableBgp
     fullName: enableBgp
@@ -92,7 +92,7 @@ items:
       content: 'gatewayDefaultSite?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.VirtualNetworkGateway.gatewayType
     name: gatewayType
     fullName: gatewayType
@@ -120,7 +120,7 @@ items:
       content: 'ipConfigurations?: VirtualNetworkGatewayIPConfiguration[]'
       return:
         type:
-          - '@azure-arm-network.VirtualNetworkGatewayIPConfiguration[]'
+          - 'azure-arm-network.VirtualNetworkGatewayIPConfiguration[]'
   - uid: azure-arm-network.VirtualNetworkGateway.provisioningState
     name: provisioningState
     fullName: provisioningState
@@ -162,7 +162,7 @@ items:
       content: 'sku?: VirtualNetworkGatewaySku'
       return:
         type:
-          - '@azure-arm-network.VirtualNetworkGatewaySku'
+          - azure-arm-network.VirtualNetworkGatewaySku
   - uid: azure-arm-network.VirtualNetworkGateway.vpnClientConfiguration
     name: vpnClientConfiguration
     fullName: vpnClientConfiguration
@@ -176,7 +176,7 @@ items:
       content: 'vpnClientConfiguration?: VpnClientConfiguration'
       return:
         type:
-          - '@azure-arm-network.VpnClientConfiguration'
+          - azure-arm-network.VpnClientConfiguration
   - uid: azure-arm-network.VirtualNetworkGateway.vpnType
     name: vpnType
     fullName: vpnType
@@ -191,3 +191,36 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network.Resource
+  - uid: azure-arm-network.BgpSettings
+    spec.typeScript:
+      - name: BgpSettings
+        fullName: BgpSettings
+        uid: azure-arm-network.BgpSettings
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: 'azure-arm-network.VirtualNetworkGatewayIPConfiguration[]'
+    spec.typeScript:
+      - name: VirtualNetworkGatewayIPConfiguration
+        fullName: VirtualNetworkGatewayIPConfiguration
+        uid: azure-arm-network.VirtualNetworkGatewayIPConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network.VirtualNetworkGatewaySku
+    spec.typeScript:
+      - name: VirtualNetworkGatewaySku
+        fullName: VirtualNetworkGatewaySku
+        uid: azure-arm-network.VirtualNetworkGatewaySku
+  - uid: azure-arm-network.VpnClientConfiguration
+    spec.typeScript:
+      - name: VpnClientConfiguration
+        fullName: VpnClientConfiguration
+        uid: azure-arm-network.VpnClientConfiguration

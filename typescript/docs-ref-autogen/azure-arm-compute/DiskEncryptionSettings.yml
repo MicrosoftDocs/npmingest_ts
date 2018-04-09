@@ -25,7 +25,7 @@ items:
       content: 'diskEncryptionKey?: KeyVaultSecretReference'
       return:
         type:
-          - '@azure-arm-compute.KeyVaultSecretReference'
+          - azure-arm-compute.KeyVaultSecretReference
   - uid: azure-arm-compute.DiskEncryptionSettings.enabled
     name: enabled
     fullName: enabled
@@ -53,4 +53,15 @@ items:
       content: 'keyEncryptionKey?: KeyVaultKeyReference'
       return:
         type:
-          - '@azure-arm-compute.KeyVaultKeyReference'
+          - azure-arm-compute.KeyVaultKeyReference
+references:
+  - uid: azure-arm-compute.KeyVaultSecretReference
+    spec.typeScript:
+      - name: KeyVaultSecretReference
+        fullName: KeyVaultSecretReference
+        uid: azure-arm-compute.KeyVaultSecretReference
+  - uid: azure-arm-compute.KeyVaultKeyReference
+    spec.typeScript:
+      - name: KeyVaultKeyReference
+        fullName: KeyVaultKeyReference
+        uid: azure-arm-compute.KeyVaultKeyReference

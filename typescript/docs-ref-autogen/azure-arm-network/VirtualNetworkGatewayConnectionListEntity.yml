@@ -40,7 +40,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.Resource'
+      name: azure-arm-network.Resource
     package: azure-arm-network
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnectionListEntity.authorizationKey
@@ -156,7 +156,7 @@ items:
       content: 'ipsecPolicies?: IpsecPolicy[]'
       return:
         type:
-          - '@azure-arm-network.IpsecPolicy[]'
+          - 'azure-arm-network.IpsecPolicy[]'
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnectionListEntity.localNetworkGateway2
     name: localNetworkGateway2
@@ -171,7 +171,7 @@ items:
       content: 'localNetworkGateway2?: VirtualNetworkConnectionGatewayReference'
       return:
         type:
-          - '@azure-arm-network.VirtualNetworkConnectionGatewayReference'
+          - azure-arm-network.VirtualNetworkConnectionGatewayReference
   - uid: azure-arm-network.VirtualNetworkGatewayConnectionListEntity.peer
     name: peer
     fullName: peer
@@ -185,7 +185,7 @@ items:
       content: 'peer?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnectionListEntity.provisioningState
     name: provisioningState
@@ -257,7 +257,7 @@ items:
       content: 'tunnelConnectionStatus?: TunnelConnectionHealth[]'
       return:
         type:
-          - '@azure-arm-network.TunnelConnectionHealth[]'
+          - 'azure-arm-network.TunnelConnectionHealth[]'
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnectionListEntity.usePolicyBasedTrafficSelectors
     name: usePolicyBasedTrafficSelectors
@@ -286,7 +286,7 @@ items:
       content: 'virtualNetworkGateway1: VirtualNetworkConnectionGatewayReference'
       return:
         type:
-          - '@azure-arm-network.VirtualNetworkConnectionGatewayReference'
+          - azure-arm-network.VirtualNetworkConnectionGatewayReference
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnectionListEntity.virtualNetworkGateway2
     name: virtualNetworkGateway2
@@ -301,4 +301,34 @@ items:
       content: 'virtualNetworkGateway2?: VirtualNetworkConnectionGatewayReference'
       return:
         type:
-          - '@azure-arm-network.VirtualNetworkConnectionGatewayReference'
+          - azure-arm-network.VirtualNetworkConnectionGatewayReference
+references:
+  - uid: azure-arm-network.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network.Resource
+  - uid: 'azure-arm-network.IpsecPolicy[]'
+    spec.typeScript:
+      - name: IpsecPolicy
+        fullName: IpsecPolicy
+        uid: azure-arm-network.IpsecPolicy
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network.VirtualNetworkConnectionGatewayReference
+    spec.typeScript:
+      - name: VirtualNetworkConnectionGatewayReference
+        fullName: VirtualNetworkConnectionGatewayReference
+        uid: azure-arm-network.VirtualNetworkConnectionGatewayReference
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: 'azure-arm-network.TunnelConnectionHealth[]'
+    spec.typeScript:
+      - name: TunnelConnectionHealth
+        fullName: TunnelConnectionHealth
+        uid: azure-arm-network.TunnelConnectionHealth
+      - name: '[]'
+        fullName: '[]'

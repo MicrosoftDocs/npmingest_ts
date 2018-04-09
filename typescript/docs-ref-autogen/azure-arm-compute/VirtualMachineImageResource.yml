@@ -12,7 +12,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.SubResource'
+      name: azure-arm-compute.SubResource
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineImageResource.location
     name: location
@@ -54,3 +54,9 @@ items:
       return:
         type:
           - function
+references:
+  - uid: azure-arm-compute.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute.SubResource

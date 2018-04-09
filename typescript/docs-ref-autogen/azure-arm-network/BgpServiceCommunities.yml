@@ -35,7 +35,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.BgpServiceCommunityListResult>
+          - Promise<azure-arm-network.BgpServiceCommunityListResult>
   - uid: azure-arm-network.BgpServiceCommunities.list_1
     name: list
     children: []
@@ -48,11 +48,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.BgpServiceCommunityListResult>
+            - ServiceCallback<azure-arm-network.BgpServiceCommunityListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.BgpServiceCommunityListResult>
+          - Promise<azure-arm-network.BgpServiceCommunityListResult>
   - uid: azure-arm-network.BgpServiceCommunities.list_2
     name: list
     children: []
@@ -71,11 +71,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.BgpServiceCommunityListResult>
+            - ServiceCallback<azure-arm-network.BgpServiceCommunityListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.BgpServiceCommunityListResult>
+          - Promise<azure-arm-network.BgpServiceCommunityListResult>
   - uid: azure-arm-network.BgpServiceCommunities.listNext
     name: listNext
     children: []
@@ -99,7 +99,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.BgpServiceCommunityListResult>
+          - Promise<azure-arm-network.BgpServiceCommunityListResult>
   - uid: azure-arm-network.BgpServiceCommunities.listNext_1
     name: listNext
     children: []
@@ -118,11 +118,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.BgpServiceCommunityListResult>
+            - ServiceCallback<azure-arm-network.BgpServiceCommunityListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.BgpServiceCommunityListResult>
+          - Promise<azure-arm-network.BgpServiceCommunityListResult>
   - uid: azure-arm-network.BgpServiceCommunities.listNext_2
     name: listNext
     children: []
@@ -145,11 +145,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.BgpServiceCommunityListResult>
+            - ServiceCallback<azure-arm-network.BgpServiceCommunityListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.BgpServiceCommunityListResult>
+          - Promise<azure-arm-network.BgpServiceCommunityListResult>
   - uid: azure-arm-network.BgpServiceCommunities.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -175,7 +175,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BgpServiceCommunityListResult>>
+          - Promise<BgpServiceCommunityListResult!@>>
   - uid: azure-arm-network.BgpServiceCommunities.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -193,4 +193,23 @@ items:
           optional: true
       return:
         type:
-          - Promise<BgpServiceCommunityListResult>>
+          - Promise<BgpServiceCommunityListResult!@>>
+references:
+  - uid: Promise<azure-arm-network.BgpServiceCommunityListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: BgpServiceCommunityListResult
+        fullName: BgpServiceCommunityListResult
+        uid: azure-arm-network.BgpServiceCommunityListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.BgpServiceCommunityListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: BgpServiceCommunityListResult
+        fullName: BgpServiceCommunityListResult
+        uid: azure-arm-network.BgpServiceCommunityListResult
+      - name: '>'
+        fullName: '>'

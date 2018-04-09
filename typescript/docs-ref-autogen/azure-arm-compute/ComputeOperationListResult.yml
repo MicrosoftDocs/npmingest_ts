@@ -10,7 +10,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-compute.ComputeOperationValue>
+      name: Array<azure-arm-compute.ComputeOperationValue>
     package: azure-arm-compute
   - uid: azure-arm-compute.ComputeOperationListResult.Array
     name: Array
@@ -25,3 +25,13 @@ items:
       return:
         type:
           - ArrayConstructor
+references:
+  - uid: Array<azure-arm-compute.ComputeOperationValue>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: ComputeOperationValue
+        fullName: ComputeOperationValue
+        uid: azure-arm-compute.ComputeOperationValue
+      - name: '>'
+        fullName: '>'

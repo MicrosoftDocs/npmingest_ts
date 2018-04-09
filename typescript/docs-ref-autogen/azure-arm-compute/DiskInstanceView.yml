@@ -25,7 +25,7 @@ items:
       content: 'encryptionSettings?: DiskEncryptionSettings[]'
       return:
         type:
-          - '@azure-arm-compute.DiskEncryptionSettings[]'
+          - 'azure-arm-compute.DiskEncryptionSettings[]'
   - uid: azure-arm-compute.DiskInstanceView.name
     name: name
     fullName: name
@@ -53,4 +53,19 @@ items:
       content: 'statuses?: InstanceViewStatus[]'
       return:
         type:
-          - '@azure-arm-compute.InstanceViewStatus[]'
+          - 'azure-arm-compute.InstanceViewStatus[]'
+references:
+  - uid: 'azure-arm-compute.DiskEncryptionSettings[]'
+    spec.typeScript:
+      - name: DiskEncryptionSettings
+        fullName: DiskEncryptionSettings
+        uid: azure-arm-compute.DiskEncryptionSettings
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-compute.InstanceViewStatus[]'
+    spec.typeScript:
+      - name: InstanceViewStatus
+        fullName: InstanceViewStatus
+        uid: azure-arm-compute.InstanceViewStatus
+      - name: '[]'
+        fullName: '[]'

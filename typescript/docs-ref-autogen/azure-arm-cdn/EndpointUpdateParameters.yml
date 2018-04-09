@@ -50,7 +50,7 @@ items:
       content: 'deliveryPolicy?: EndpointPropertiesUpdateParametersDeliveryPolicy'
       return:
         type:
-          - '@azure-arm-cdn.EndpointPropertiesUpdateParametersDeliveryPolicy'
+          - azure-arm-cdn.EndpointPropertiesUpdateParametersDeliveryPolicy
   - uid: azure-arm-cdn.EndpointUpdateParameters.geoFilters
     name: geoFilters
     fullName: geoFilters
@@ -64,7 +64,7 @@ items:
       content: 'geoFilters?: GeoFilter[]'
       return:
         type:
-          - '@azure-arm-cdn.GeoFilter[]'
+          - 'azure-arm-cdn.GeoFilter[]'
   - uid: azure-arm-cdn.EndpointUpdateParameters.isCompressionEnabled
     name: isCompressionEnabled
     fullName: isCompressionEnabled
@@ -191,3 +191,16 @@ items:
       return:
         type:
           - function
+references:
+  - uid: azure-arm-cdn.EndpointPropertiesUpdateParametersDeliveryPolicy
+    spec.typeScript:
+      - name: EndpointPropertiesUpdateParametersDeliveryPolicy
+        fullName: EndpointPropertiesUpdateParametersDeliveryPolicy
+        uid: azure-arm-cdn.EndpointPropertiesUpdateParametersDeliveryPolicy
+  - uid: 'azure-arm-cdn.GeoFilter[]'
+    spec.typeScript:
+      - name: GeoFilter
+        fullName: GeoFilter
+        uid: azure-arm-cdn.GeoFilter
+      - name: '[]'
+        fullName: '[]'

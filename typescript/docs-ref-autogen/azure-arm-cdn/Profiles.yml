@@ -98,7 +98,7 @@ items:
             the resource group.
         - id: profile
           type:
-            - '@azure-arm-cdn.Profile'
+            - azure-arm-cdn.Profile
           description: |
             Profile properties needed to create a new profile.
         - id: options
@@ -108,7 +108,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.Profile>
+          - Promise<azure-arm-cdn.Profile>
   - uid: azure-arm-cdn.Profiles.beginCreate_1
     name: beginCreate
     children: []
@@ -133,15 +133,15 @@ items:
           description: ''
         - id: profile
           type:
-            - '@azure-arm-cdn.Profile'
+            - azure-arm-cdn.Profile
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Profile>
+            - ServiceCallback<azure-arm-cdn.Profile>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Profile>
+          - Promise<azure-arm-cdn.Profile>
   - uid: azure-arm-cdn.Profiles.beginCreate_2
     name: beginCreate
     children: []
@@ -166,7 +166,7 @@ items:
           description: ''
         - id: profile
           type:
-            - '@azure-arm-cdn.Profile'
+            - azure-arm-cdn.Profile
           description: ''
         - id: options
           type:
@@ -174,11 +174,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Profile>
+            - ServiceCallback<azure-arm-cdn.Profile>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Profile>
+          - Promise<azure-arm-cdn.Profile>
   - uid: azure-arm-cdn.Profiles.beginCreateWithHttpOperationResponse
     name: beginCreateWithHttpOperationResponse
     children: []
@@ -207,7 +207,7 @@ items:
             the resource group.
         - id: profile
           type:
-            - '@azure-arm-cdn.Profile'
+            - azure-arm-cdn.Profile
           description: |
             Profile properties needed to create a new profile.
         - id: options
@@ -217,7 +217,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Profile>>
+          - Promise<Profile!@>>
   - uid: azure-arm-cdn.Profiles.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -376,11 +376,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Profile>
+            - ServiceCallback<azure-arm-cdn.Profile>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Profile>
+          - Promise<azure-arm-cdn.Profile>
   - uid: azure-arm-cdn.Profiles.beginUpdate_2
     name: beginUpdate
     children: []
@@ -409,11 +409,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Profile>
+            - ServiceCallback<azure-arm-cdn.Profile>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Profile>
+          - Promise<azure-arm-cdn.Profile>
   - uid: azure-arm-cdn.Profiles.beginUpdate
     name: beginUpdate
     children: []
@@ -447,7 +447,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.Profile>
+          - Promise<azure-arm-cdn.Profile>
   - uid: azure-arm-cdn.Profiles.beginUpdateWithHttpOperationResponse
     name: beginUpdateWithHttpOperationResponse
     children: []
@@ -481,7 +481,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Profile>>
+          - Promise<Profile!@>>
   - uid: azure-arm-cdn.Profiles.create
     name: create
     children: []
@@ -510,7 +510,7 @@ items:
             the resource group.
         - id: profile
           type:
-            - '@azure-arm-cdn.Profile'
+            - azure-arm-cdn.Profile
           description: |
             Profile properties needed to create a new profile.
         - id: options
@@ -520,7 +520,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.Profile>
+          - Promise<azure-arm-cdn.Profile>
   - uid: azure-arm-cdn.Profiles.create_1
     name: create
     children: []
@@ -545,15 +545,15 @@ items:
           description: ''
         - id: profile
           type:
-            - '@azure-arm-cdn.Profile'
+            - azure-arm-cdn.Profile
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Profile>
+            - ServiceCallback<azure-arm-cdn.Profile>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Profile>
+          - Promise<azure-arm-cdn.Profile>
   - uid: azure-arm-cdn.Profiles.create_2
     name: create
     children: []
@@ -578,7 +578,7 @@ items:
           description: ''
         - id: profile
           type:
-            - '@azure-arm-cdn.Profile'
+            - azure-arm-cdn.Profile
           description: ''
         - id: options
           type:
@@ -586,11 +586,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Profile>
+            - ServiceCallback<azure-arm-cdn.Profile>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Profile>
+          - Promise<azure-arm-cdn.Profile>
   - uid: azure-arm-cdn.Profiles.createWithHttpOperationResponse
     name: createWithHttpOperationResponse
     children: []
@@ -619,7 +619,7 @@ items:
             the resource group.
         - id: profile
           type:
-            - '@azure-arm-cdn.Profile'
+            - azure-arm-cdn.Profile
           description: |
             Profile properties needed to create a new profile.
         - id: options
@@ -629,7 +629,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Profile>>
+          - Promise<Profile!@>>
   - uid: azure-arm-cdn.Profiles.deleteMethod_1
     name: deleteMethod
     children: []
@@ -809,7 +809,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.SsoUri>
+          - Promise<azure-arm-cdn.SsoUri>
   - uid: azure-arm-cdn.Profiles.generateSsoUri_1
     name: generateSsoUri
     children: []
@@ -846,11 +846,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.SsoUri>
+            - ServiceCallback<azure-arm-cdn.SsoUri>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.SsoUri>
+          - Promise<azure-arm-cdn.SsoUri>
   - uid: azure-arm-cdn.Profiles.generateSsoUri_2
     name: generateSsoUri
     children: []
@@ -891,11 +891,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.SsoUri>
+            - ServiceCallback<azure-arm-cdn.SsoUri>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.SsoUri>
+          - Promise<azure-arm-cdn.SsoUri>
   - uid: azure-arm-cdn.Profiles.generateSsoUriWithHttpOperationResponse
     name: generateSsoUriWithHttpOperationResponse
     children: []
@@ -941,7 +941,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SsoUri>>
+          - Promise<SsoUri!@>>
   - uid: azure-arm-cdn.Profiles.get
     name: get
     children: []
@@ -975,7 +975,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.Profile>
+          - Promise<azure-arm-cdn.Profile>
   - uid: azure-arm-cdn.Profiles.get_1
     name: get
     children: []
@@ -1000,11 +1000,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Profile>
+            - ServiceCallback<azure-arm-cdn.Profile>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Profile>
+          - Promise<azure-arm-cdn.Profile>
   - uid: azure-arm-cdn.Profiles.get_2
     name: get
     children: []
@@ -1033,11 +1033,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Profile>
+            - ServiceCallback<azure-arm-cdn.Profile>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Profile>
+          - Promise<azure-arm-cdn.Profile>
   - uid: azure-arm-cdn.Profiles.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -1071,7 +1071,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Profile>>
+          - Promise<Profile!@>>
   - uid: azure-arm-cdn.Profiles.list
     name: list
     children: []
@@ -1089,7 +1089,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.ProfileListResult>
+          - Promise<azure-arm-cdn.ProfileListResult>
   - uid: azure-arm-cdn.Profiles.list_1
     name: list
     children: []
@@ -1102,11 +1102,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ProfileListResult>
+            - ServiceCallback<azure-arm-cdn.ProfileListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ProfileListResult>
+          - Promise<azure-arm-cdn.ProfileListResult>
   - uid: azure-arm-cdn.Profiles.list_2
     name: list
     children: []
@@ -1125,11 +1125,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ProfileListResult>
+            - ServiceCallback<azure-arm-cdn.ProfileListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ProfileListResult>
+          - Promise<azure-arm-cdn.ProfileListResult>
   - uid: azure-arm-cdn.Profiles.listByResourceGroup
     name: listByResourceGroup
     children: []
@@ -1155,7 +1155,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.ProfileListResult>
+          - Promise<azure-arm-cdn.ProfileListResult>
   - uid: azure-arm-cdn.Profiles.listByResourceGroup_1
     name: listByResourceGroup
     children: []
@@ -1174,11 +1174,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ProfileListResult>
+            - ServiceCallback<azure-arm-cdn.ProfileListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ProfileListResult>
+          - Promise<azure-arm-cdn.ProfileListResult>
   - uid: azure-arm-cdn.Profiles.listByResourceGroup_2
     name: listByResourceGroup
     children: []
@@ -1201,11 +1201,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ProfileListResult>
+            - ServiceCallback<azure-arm-cdn.ProfileListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ProfileListResult>
+          - Promise<azure-arm-cdn.ProfileListResult>
   - uid: azure-arm-cdn.Profiles.listByResourceGroupNext_1
     name: listByResourceGroupNext
     children: []
@@ -1224,11 +1224,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ProfileListResult>
+            - ServiceCallback<azure-arm-cdn.ProfileListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ProfileListResult>
+          - Promise<azure-arm-cdn.ProfileListResult>
   - uid: azure-arm-cdn.Profiles.listByResourceGroupNext_2
     name: listByResourceGroupNext
     children: []
@@ -1251,11 +1251,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ProfileListResult>
+            - ServiceCallback<azure-arm-cdn.ProfileListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ProfileListResult>
+          - Promise<azure-arm-cdn.ProfileListResult>
   - uid: azure-arm-cdn.Profiles.listByResourceGroupNext
     name: listByResourceGroupNext
     children: []
@@ -1281,7 +1281,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.ProfileListResult>
+          - Promise<azure-arm-cdn.ProfileListResult>
   - uid: azure-arm-cdn.Profiles.listByResourceGroupNextWithHttpOperationResponse
     name: listByResourceGroupNextWithHttpOperationResponse
     children: []
@@ -1307,7 +1307,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ProfileListResult>>
+          - Promise<ProfileListResult!@>>
   - uid: azure-arm-cdn.Profiles.listByResourceGroupWithHttpOperationResponse
     name: listByResourceGroupWithHttpOperationResponse
     children: []
@@ -1333,7 +1333,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ProfileListResult>>
+          - Promise<ProfileListResult!@>>
   - uid: azure-arm-cdn.Profiles.listNext
     name: listNext
     children: []
@@ -1357,7 +1357,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.ProfileListResult>
+          - Promise<azure-arm-cdn.ProfileListResult>
   - uid: azure-arm-cdn.Profiles.listNext_1
     name: listNext
     children: []
@@ -1376,11 +1376,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ProfileListResult>
+            - ServiceCallback<azure-arm-cdn.ProfileListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ProfileListResult>
+          - Promise<azure-arm-cdn.ProfileListResult>
   - uid: azure-arm-cdn.Profiles.listNext_2
     name: listNext
     children: []
@@ -1403,11 +1403,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ProfileListResult>
+            - ServiceCallback<azure-arm-cdn.ProfileListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ProfileListResult>
+          - Promise<azure-arm-cdn.ProfileListResult>
   - uid: azure-arm-cdn.Profiles.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -1433,7 +1433,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ProfileListResult>>
+          - Promise<ProfileListResult!@>>
   - uid: azure-arm-cdn.Profiles.listResourceUsage
     name: listResourceUsage
     children: []
@@ -1467,7 +1467,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.Profiles.listResourceUsage_1
     name: listResourceUsage
     children: []
@@ -1492,11 +1492,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ResourceUsageListResult>
+            - ServiceCallback<azure-arm-cdn.ResourceUsageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.Profiles.listResourceUsage_2
     name: listResourceUsage
     children: []
@@ -1526,11 +1526,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ResourceUsageListResult>
+            - ServiceCallback<azure-arm-cdn.ResourceUsageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.Profiles.listResourceUsageNext
     name: listResourceUsageNext
     children: []
@@ -1556,7 +1556,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.Profiles.listResourceUsageNext_2
     name: listResourceUsageNext
     children: []
@@ -1581,11 +1581,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ResourceUsageListResult>
+            - ServiceCallback<azure-arm-cdn.ResourceUsageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.Profiles.listResourceUsageNext_1
     name: listResourceUsageNext
     children: []
@@ -1606,11 +1606,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ResourceUsageListResult>
+            - ServiceCallback<azure-arm-cdn.ResourceUsageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.Profiles.listResourceUsageNextWithHttpOperationResponse
     name: listResourceUsageNextWithHttpOperationResponse
     children: []
@@ -1638,7 +1638,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ResourceUsageListResult>>
+          - Promise<ResourceUsageListResult!@>>
   - uid: azure-arm-cdn.Profiles.listResourceUsageWithHttpOperationResponse
     name: listResourceUsageWithHttpOperationResponse
     children: []
@@ -1672,7 +1672,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ResourceUsageListResult>>
+          - Promise<ResourceUsageListResult!@>>
   - uid: azure-arm-cdn.Profiles.listSupportedOptimizationTypes
     name: listSupportedOptimizationTypes
     children: []
@@ -1706,7 +1706,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.SupportedOptimizationTypesListResult>
+          - Promise<azure-arm-cdn.SupportedOptimizationTypesListResult>
   - uid: azure-arm-cdn.Profiles.listSupportedOptimizationTypes_1
     name: listSupportedOptimizationTypes
     children: []
@@ -1733,11 +1733,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-cdn.SupportedOptimizationTypesListResult>
+              ServiceCallback<azure-arm-cdn.SupportedOptimizationTypesListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.SupportedOptimizationTypesListResult>
+          - Promise<azure-arm-cdn.SupportedOptimizationTypesListResult>
   - uid: azure-arm-cdn.Profiles.listSupportedOptimizationTypes_2
     name: listSupportedOptimizationTypes
     children: []
@@ -1768,11 +1768,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-cdn.SupportedOptimizationTypesListResult>
+              ServiceCallback<azure-arm-cdn.SupportedOptimizationTypesListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.SupportedOptimizationTypesListResult>
+          - Promise<azure-arm-cdn.SupportedOptimizationTypesListResult>
   - uid: >-
       azure-arm-cdn.Profiles.listSupportedOptimizationTypesWithHttpOperationResponse
     name: listSupportedOptimizationTypesWithHttpOperationResponse
@@ -1808,7 +1808,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SupportedOptimizationTypesListResult>>
+          - Promise<SupportedOptimizationTypesListResult!@>>
   - uid: azure-arm-cdn.Profiles.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1826,7 +1826,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ProfileListResult>>
+          - Promise<ProfileListResult!@>>
   - uid: azure-arm-cdn.Profiles.update
     name: update
     children: []
@@ -1860,7 +1860,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.Profile>
+          - Promise<azure-arm-cdn.Profile>
   - uid: azure-arm-cdn.Profiles.update_1
     name: update
     children: []
@@ -1885,11 +1885,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Profile>
+            - ServiceCallback<azure-arm-cdn.Profile>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Profile>
+          - Promise<azure-arm-cdn.Profile>
   - uid: azure-arm-cdn.Profiles.update_2
     name: update
     children: []
@@ -1918,11 +1918,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Profile>
+            - ServiceCallback<azure-arm-cdn.Profile>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Profile>
+          - Promise<azure-arm-cdn.Profile>
   - uid: azure-arm-cdn.Profiles.updateWithHttpOperationResponse
     name: updateWithHttpOperationResponse
     children: []
@@ -1956,4 +1956,100 @@ items:
           optional: true
       return:
         type:
-          - Promise<Profile>>
+          - Promise<Profile!@>>
+references:
+  - uid: azure-arm-cdn.Profile
+    spec.typeScript:
+      - name: Profile
+        fullName: Profile
+        uid: azure-arm-cdn.Profile
+  - uid: Promise<azure-arm-cdn.Profile>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Profile
+        fullName: Profile
+        uid: azure-arm-cdn.Profile
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-cdn.Profile>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Profile
+        fullName: Profile
+        uid: azure-arm-cdn.Profile
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-cdn.SsoUri>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: SsoUri
+        fullName: SsoUri
+        uid: azure-arm-cdn.SsoUri
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-cdn.SsoUri>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: SsoUri
+        fullName: SsoUri
+        uid: azure-arm-cdn.SsoUri
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-cdn.ProfileListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ProfileListResult
+        fullName: ProfileListResult
+        uid: azure-arm-cdn.ProfileListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-cdn.ProfileListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ProfileListResult
+        fullName: ProfileListResult
+        uid: azure-arm-cdn.ProfileListResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-cdn.ResourceUsageListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ResourceUsageListResult
+        fullName: ResourceUsageListResult
+        uid: azure-arm-cdn.ResourceUsageListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-cdn.ResourceUsageListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ResourceUsageListResult
+        fullName: ResourceUsageListResult
+        uid: azure-arm-cdn.ResourceUsageListResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-cdn.SupportedOptimizationTypesListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: SupportedOptimizationTypesListResult
+        fullName: SupportedOptimizationTypesListResult
+        uid: azure-arm-cdn.SupportedOptimizationTypesListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-cdn.SupportedOptimizationTypesListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: SupportedOptimizationTypesListResult
+        fullName: SupportedOptimizationTypesListResult
+        uid: azure-arm-cdn.SupportedOptimizationTypesListResult
+      - name: '>'
+        fullName: '>'

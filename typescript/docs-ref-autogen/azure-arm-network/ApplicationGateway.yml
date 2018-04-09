@@ -29,7 +29,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.Resource'
+      name: azure-arm-network.Resource
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationGateway.authenticationCertificates
     name: authenticationCertificates
@@ -46,7 +46,7 @@ items:
         ApplicationGatewayAuthenticationCertificate[]
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayAuthenticationCertificate[]'
+          - 'azure-arm-network.ApplicationGatewayAuthenticationCertificate[]'
   - uid: azure-arm-network.ApplicationGateway.backendAddressPools
     name: backendAddressPools
     fullName: backendAddressPools
@@ -60,7 +60,7 @@ items:
       content: 'backendAddressPools?: ApplicationGatewayBackendAddressPool[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayBackendAddressPool[]'
+          - 'azure-arm-network.ApplicationGatewayBackendAddressPool[]'
   - uid: azure-arm-network.ApplicationGateway.backendHttpSettingsCollection
     name: backendHttpSettingsCollection
     fullName: backendHttpSettingsCollection
@@ -74,7 +74,7 @@ items:
       content: 'backendHttpSettingsCollection?: ApplicationGatewayBackendHttpSettings[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayBackendHttpSettings[]'
+          - 'azure-arm-network.ApplicationGatewayBackendHttpSettings[]'
   - uid: azure-arm-network.ApplicationGateway.enableHttp2
     name: enableHttp2
     fullName: enableHttp2
@@ -116,7 +116,7 @@ items:
       content: 'frontendIPConfigurations?: ApplicationGatewayFrontendIPConfiguration[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayFrontendIPConfiguration[]'
+          - 'azure-arm-network.ApplicationGatewayFrontendIPConfiguration[]'
   - uid: azure-arm-network.ApplicationGateway.frontendPorts
     name: frontendPorts
     fullName: frontendPorts
@@ -130,7 +130,7 @@ items:
       content: 'frontendPorts?: ApplicationGatewayFrontendPort[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayFrontendPort[]'
+          - 'azure-arm-network.ApplicationGatewayFrontendPort[]'
   - uid: azure-arm-network.ApplicationGateway.gatewayIPConfigurations
     name: gatewayIPConfigurations
     fullName: gatewayIPConfigurations
@@ -144,7 +144,7 @@ items:
       content: 'gatewayIPConfigurations?: ApplicationGatewayIPConfiguration[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayIPConfiguration[]'
+          - 'azure-arm-network.ApplicationGatewayIPConfiguration[]'
   - uid: azure-arm-network.ApplicationGateway.httpListeners
     name: httpListeners
     fullName: httpListeners
@@ -158,7 +158,7 @@ items:
       content: 'httpListeners?: ApplicationGatewayHttpListener[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayHttpListener[]'
+          - 'azure-arm-network.ApplicationGatewayHttpListener[]'
   - uid: azure-arm-network.ApplicationGateway.operationalState
     name: operationalState
     fullName: operationalState
@@ -186,7 +186,7 @@ items:
       content: 'probes?: ApplicationGatewayProbe[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayProbe[]'
+          - 'azure-arm-network.ApplicationGatewayProbe[]'
   - uid: azure-arm-network.ApplicationGateway.provisioningState
     name: provisioningState
     fullName: provisioningState
@@ -214,7 +214,7 @@ items:
       content: 'redirectConfigurations?: ApplicationGatewayRedirectConfiguration[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayRedirectConfiguration[]'
+          - 'azure-arm-network.ApplicationGatewayRedirectConfiguration[]'
   - uid: azure-arm-network.ApplicationGateway.requestRoutingRules
     name: requestRoutingRules
     fullName: requestRoutingRules
@@ -228,7 +228,7 @@ items:
       content: 'requestRoutingRules?: ApplicationGatewayRequestRoutingRule[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayRequestRoutingRule[]'
+          - 'azure-arm-network.ApplicationGatewayRequestRoutingRule[]'
   - uid: azure-arm-network.ApplicationGateway.resourceGuid
     name: resourceGuid
     fullName: resourceGuid
@@ -256,7 +256,7 @@ items:
       content: 'sku?: ApplicationGatewaySku'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewaySku'
+          - azure-arm-network.ApplicationGatewaySku
   - uid: azure-arm-network.ApplicationGateway.sslCertificates
     name: sslCertificates
     fullName: sslCertificates
@@ -270,7 +270,7 @@ items:
       content: 'sslCertificates?: ApplicationGatewaySslCertificate[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewaySslCertificate[]'
+          - 'azure-arm-network.ApplicationGatewaySslCertificate[]'
   - uid: azure-arm-network.ApplicationGateway.sslPolicy
     name: sslPolicy
     fullName: sslPolicy
@@ -284,7 +284,7 @@ items:
       content: 'sslPolicy?: ApplicationGatewaySslPolicy'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewaySslPolicy'
+          - azure-arm-network.ApplicationGatewaySslPolicy
   - uid: azure-arm-network.ApplicationGateway.urlPathMaps
     name: urlPathMaps
     fullName: urlPathMaps
@@ -298,7 +298,7 @@ items:
       content: 'urlPathMaps?: ApplicationGatewayUrlPathMap[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayUrlPathMap[]'
+          - 'azure-arm-network.ApplicationGatewayUrlPathMap[]'
   - uid: azure-arm-network.ApplicationGateway.webApplicationFirewallConfiguration
     name: webApplicationFirewallConfiguration
     fullName: webApplicationFirewallConfiguration
@@ -315,4 +315,110 @@ items:
       return:
         type:
           - >-
-            @azure-arm-network.ApplicationGatewayWebApplicationFirewallConfiguration
+            azure-arm-network.ApplicationGatewayWebApplicationFirewallConfiguration
+references:
+  - uid: azure-arm-network.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network.Resource
+  - uid: 'azure-arm-network.ApplicationGatewayAuthenticationCertificate[]'
+    spec.typeScript:
+      - name: ApplicationGatewayAuthenticationCertificate
+        fullName: ApplicationGatewayAuthenticationCertificate
+        uid: azure-arm-network.ApplicationGatewayAuthenticationCertificate
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.ApplicationGatewayBackendAddressPool[]'
+    spec.typeScript:
+      - name: ApplicationGatewayBackendAddressPool
+        fullName: ApplicationGatewayBackendAddressPool
+        uid: azure-arm-network.ApplicationGatewayBackendAddressPool
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.ApplicationGatewayBackendHttpSettings[]'
+    spec.typeScript:
+      - name: ApplicationGatewayBackendHttpSettings
+        fullName: ApplicationGatewayBackendHttpSettings
+        uid: azure-arm-network.ApplicationGatewayBackendHttpSettings
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.ApplicationGatewayFrontendIPConfiguration[]'
+    spec.typeScript:
+      - name: ApplicationGatewayFrontendIPConfiguration
+        fullName: ApplicationGatewayFrontendIPConfiguration
+        uid: azure-arm-network.ApplicationGatewayFrontendIPConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.ApplicationGatewayFrontendPort[]'
+    spec.typeScript:
+      - name: ApplicationGatewayFrontendPort
+        fullName: ApplicationGatewayFrontendPort
+        uid: azure-arm-network.ApplicationGatewayFrontendPort
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.ApplicationGatewayIPConfiguration[]'
+    spec.typeScript:
+      - name: ApplicationGatewayIPConfiguration
+        fullName: ApplicationGatewayIPConfiguration
+        uid: azure-arm-network.ApplicationGatewayIPConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.ApplicationGatewayHttpListener[]'
+    spec.typeScript:
+      - name: ApplicationGatewayHttpListener
+        fullName: ApplicationGatewayHttpListener
+        uid: azure-arm-network.ApplicationGatewayHttpListener
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.ApplicationGatewayProbe[]'
+    spec.typeScript:
+      - name: ApplicationGatewayProbe
+        fullName: ApplicationGatewayProbe
+        uid: azure-arm-network.ApplicationGatewayProbe
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.ApplicationGatewayRedirectConfiguration[]'
+    spec.typeScript:
+      - name: ApplicationGatewayRedirectConfiguration
+        fullName: ApplicationGatewayRedirectConfiguration
+        uid: azure-arm-network.ApplicationGatewayRedirectConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.ApplicationGatewayRequestRoutingRule[]'
+    spec.typeScript:
+      - name: ApplicationGatewayRequestRoutingRule
+        fullName: ApplicationGatewayRequestRoutingRule
+        uid: azure-arm-network.ApplicationGatewayRequestRoutingRule
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network.ApplicationGatewaySku
+    spec.typeScript:
+      - name: ApplicationGatewaySku
+        fullName: ApplicationGatewaySku
+        uid: azure-arm-network.ApplicationGatewaySku
+  - uid: 'azure-arm-network.ApplicationGatewaySslCertificate[]'
+    spec.typeScript:
+      - name: ApplicationGatewaySslCertificate
+        fullName: ApplicationGatewaySslCertificate
+        uid: azure-arm-network.ApplicationGatewaySslCertificate
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network.ApplicationGatewaySslPolicy
+    spec.typeScript:
+      - name: ApplicationGatewaySslPolicy
+        fullName: ApplicationGatewaySslPolicy
+        uid: azure-arm-network.ApplicationGatewaySslPolicy
+  - uid: 'azure-arm-network.ApplicationGatewayUrlPathMap[]'
+    spec.typeScript:
+      - name: ApplicationGatewayUrlPathMap
+        fullName: ApplicationGatewayUrlPathMap
+        uid: azure-arm-network.ApplicationGatewayUrlPathMap
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network.ApplicationGatewayWebApplicationFirewallConfiguration
+    spec.typeScript:
+      - name: ApplicationGatewayWebApplicationFirewallConfiguration
+        fullName: ApplicationGatewayWebApplicationFirewallConfiguration
+        uid: >-
+          azure-arm-network.ApplicationGatewayWebApplicationFirewallConfiguration

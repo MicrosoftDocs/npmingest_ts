@@ -41,7 +41,7 @@ items:
       content: 'destination: ConnectionMonitorDestination'
       return:
         type:
-          - '@azure-arm-network.ConnectionMonitorDestination'
+          - azure-arm-network.ConnectionMonitorDestination
   - uid: azure-arm-network.ConnectionMonitor.location
     name: location
     fullName: location
@@ -82,7 +82,7 @@ items:
       content: 'source: ConnectionMonitorSource'
       return:
         type:
-          - '@azure-arm-network.ConnectionMonitorSource'
+          - azure-arm-network.ConnectionMonitorSource
   - uid: azure-arm-network.ConnectionMonitor.tags
     name: tags
     fullName: tags
@@ -97,3 +97,14 @@ items:
       return:
         type:
           - function
+references:
+  - uid: azure-arm-network.ConnectionMonitorDestination
+    spec.typeScript:
+      - name: ConnectionMonitorDestination
+        fullName: ConnectionMonitorDestination
+        uid: azure-arm-network.ConnectionMonitorDestination
+  - uid: azure-arm-network.ConnectionMonitorSource
+    spec.typeScript:
+      - name: ConnectionMonitorSource
+        fullName: ConnectionMonitorSource
+        uid: azure-arm-network.ConnectionMonitorSource

@@ -22,7 +22,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationGatewayRequestRoutingRule.backendAddressPool
     name: backendAddressPool
@@ -37,7 +37,7 @@ items:
       content: 'backendAddressPool?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.ApplicationGatewayRequestRoutingRule.backendHttpSettings
     name: backendHttpSettings
     fullName: backendHttpSettings
@@ -51,7 +51,7 @@ items:
       content: 'backendHttpSettings?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.ApplicationGatewayRequestRoutingRule.etag
     name: etag
     fullName: etag
@@ -79,7 +79,7 @@ items:
       content: 'httpListener?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.ApplicationGatewayRequestRoutingRule.name
     name: name
     fullName: name
@@ -122,7 +122,7 @@ items:
       content: 'redirectConfiguration?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.ApplicationGatewayRequestRoutingRule.ruleType
     name: ruleType
     fullName: ruleType
@@ -164,4 +164,10 @@ items:
       content: 'urlPathMap?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource

@@ -12,7 +12,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.VirtualMachineImageResource'
+      name: azure-arm-compute.VirtualMachineImageResource
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineImage.dataDiskImages
     name: dataDiskImages
@@ -27,7 +27,7 @@ items:
       content: 'dataDiskImages?: DataDiskImage[]'
       return:
         type:
-          - '@azure-arm-compute.DataDiskImage[]'
+          - 'azure-arm-compute.DataDiskImage[]'
   - uid: azure-arm-compute.VirtualMachineImage.osDiskImage
     name: osDiskImage
     fullName: osDiskImage
@@ -41,7 +41,7 @@ items:
       content: 'osDiskImage?: OSDiskImage'
       return:
         type:
-          - '@azure-arm-compute.OSDiskImage'
+          - azure-arm-compute.OSDiskImage
   - uid: azure-arm-compute.VirtualMachineImage.plan
     name: plan
     fullName: plan
@@ -55,4 +55,27 @@ items:
       content: 'plan?: PurchasePlan'
       return:
         type:
-          - '@azure-arm-compute.PurchasePlan'
+          - azure-arm-compute.PurchasePlan
+references:
+  - uid: azure-arm-compute.VirtualMachineImageResource
+    spec.typeScript:
+      - name: VirtualMachineImageResource
+        fullName: VirtualMachineImageResource
+        uid: azure-arm-compute.VirtualMachineImageResource
+  - uid: 'azure-arm-compute.DataDiskImage[]'
+    spec.typeScript:
+      - name: DataDiskImage
+        fullName: DataDiskImage
+        uid: azure-arm-compute.DataDiskImage
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute.OSDiskImage
+    spec.typeScript:
+      - name: OSDiskImage
+        fullName: OSDiskImage
+        uid: azure-arm-compute.OSDiskImage
+  - uid: azure-arm-compute.PurchasePlan
+    spec.typeScript:
+      - name: PurchasePlan
+        fullName: PurchasePlan
+        uid: azure-arm-compute.PurchasePlan

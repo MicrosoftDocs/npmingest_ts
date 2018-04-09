@@ -59,7 +59,7 @@ items:
             The name of the availability set.
         - id: parameters
           type:
-            - '@azure-arm-compute.AvailabilitySet'
+            - azure-arm-compute.AvailabilitySet
           description: |
             Parameters supplied to the Create Availability
             Set operation.
@@ -70,7 +70,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.AvailabilitySet>
+          - Promise<azure-arm-compute.AvailabilitySet>
   - uid: azure-arm-compute.AvailabilitySets.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -94,15 +94,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-compute.AvailabilitySet'
+            - azure-arm-compute.AvailabilitySet
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.AvailabilitySet>
+            - ServiceCallback<azure-arm-compute.AvailabilitySet>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.AvailabilitySet>
+          - Promise<azure-arm-compute.AvailabilitySet>
   - uid: azure-arm-compute.AvailabilitySets.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -126,7 +126,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-compute.AvailabilitySet'
+            - azure-arm-compute.AvailabilitySet
           description: ''
         - id: options
           type:
@@ -134,11 +134,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.AvailabilitySet>
+            - ServiceCallback<azure-arm-compute.AvailabilitySet>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.AvailabilitySet>
+          - Promise<azure-arm-compute.AvailabilitySet>
   - uid: azure-arm-compute.AvailabilitySets.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
     children: []
@@ -164,7 +164,7 @@ items:
             The name of the availability set.
         - id: parameters
           type:
-            - '@azure-arm-compute.AvailabilitySet'
+            - azure-arm-compute.AvailabilitySet
           description: |
             Parameters supplied to the Create Availability
             Set operation.
@@ -175,7 +175,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AvailabilitySet>>
+          - Promise<AvailabilitySet!@>>
   - uid: azure-arm-compute.AvailabilitySets.deleteMethod
     name: deleteMethod
     children: []
@@ -205,7 +205,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.AvailabilitySets.deleteMethod_1
     name: deleteMethod
     children: []
@@ -228,11 +228,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.AvailabilitySets.deleteMethod_2
     name: deleteMethod
     children: []
@@ -260,11 +260,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.AvailabilitySets.deleteMethodWithHttpOperationResponse
     name: deleteMethodWithHttpOperationResponse
     children: []
@@ -294,7 +294,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse>>
+          - Promise<OperationStatusResponse!@>>
   - uid: azure-arm-compute.AvailabilitySets.get
     name: get
     children: []
@@ -324,7 +324,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.AvailabilitySet>
+          - Promise<azure-arm-compute.AvailabilitySet>
   - uid: azure-arm-compute.AvailabilitySets.get_1
     name: get
     children: []
@@ -347,11 +347,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.AvailabilitySet>
+            - ServiceCallback<azure-arm-compute.AvailabilitySet>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.AvailabilitySet>
+          - Promise<azure-arm-compute.AvailabilitySet>
   - uid: azure-arm-compute.AvailabilitySets.get_2
     name: get
     children: []
@@ -378,11 +378,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.AvailabilitySet>
+            - ServiceCallback<azure-arm-compute.AvailabilitySet>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.AvailabilitySet>
+          - Promise<azure-arm-compute.AvailabilitySet>
   - uid: azure-arm-compute.AvailabilitySets.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -412,7 +412,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AvailabilitySet>>
+          - Promise<AvailabilitySet!@>>
   - uid: azure-arm-compute.AvailabilitySets.list
     name: list
     children: []
@@ -435,7 +435,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.AvailabilitySetListResult>
+          - Promise<azure-arm-compute.AvailabilitySetListResult>
   - uid: azure-arm-compute.AvailabilitySets.list_1
     name: list
     children: []
@@ -454,11 +454,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.AvailabilitySetListResult>
+            - ServiceCallback<azure-arm-compute.AvailabilitySetListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.AvailabilitySetListResult>
+          - Promise<azure-arm-compute.AvailabilitySetListResult>
   - uid: azure-arm-compute.AvailabilitySets.list_2
     name: list
     children: []
@@ -481,11 +481,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.AvailabilitySetListResult>
+            - ServiceCallback<azure-arm-compute.AvailabilitySetListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.AvailabilitySetListResult>
+          - Promise<azure-arm-compute.AvailabilitySetListResult>
   - uid: azure-arm-compute.AvailabilitySets.listAvailableSizes
     name: listAvailableSizes
     children: []
@@ -517,7 +517,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineSizeListResult>
+          - Promise<azure-arm-compute.VirtualMachineSizeListResult>
   - uid: azure-arm-compute.AvailabilitySets.listAvailableSizes_1
     name: listAvailableSizes
     children: []
@@ -543,11 +543,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.VirtualMachineSizeListResult>
+            - ServiceCallback<azure-arm-compute.VirtualMachineSizeListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineSizeListResult>
+          - Promise<azure-arm-compute.VirtualMachineSizeListResult>
   - uid: azure-arm-compute.AvailabilitySets.listAvailableSizes_2
     name: listAvailableSizes
     children: []
@@ -577,11 +577,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.VirtualMachineSizeListResult>
+            - ServiceCallback<azure-arm-compute.VirtualMachineSizeListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineSizeListResult>
+          - Promise<azure-arm-compute.VirtualMachineSizeListResult>
   - uid: >-
       azure-arm-compute.AvailabilitySets.listAvailableSizesWithHttpOperationResponse
     name: listAvailableSizesWithHttpOperationResponse
@@ -614,7 +614,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineSizeListResult>>
+          - Promise<VirtualMachineSizeListResult!@>>
   - uid: azure-arm-compute.AvailabilitySets.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -639,7 +639,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AvailabilitySetListResult>>
+          - Promise<AvailabilitySetListResult!@>>
   - uid: azure-arm-compute.AvailabilitySets.update
     name: update
     children: []
@@ -664,7 +664,7 @@ items:
             The name of the availability set.
         - id: parameters
           type:
-            - '@azure-arm-compute.AvailabilitySetUpdate'
+            - azure-arm-compute.AvailabilitySetUpdate
           description: |
             Parameters supplied to the Update Availability
             Set operation.
@@ -675,7 +675,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.AvailabilitySet>
+          - Promise<azure-arm-compute.AvailabilitySet>
   - uid: azure-arm-compute.AvailabilitySets.update_1
     name: update
     children: []
@@ -699,15 +699,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-compute.AvailabilitySetUpdate'
+            - azure-arm-compute.AvailabilitySetUpdate
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.AvailabilitySet>
+            - ServiceCallback<azure-arm-compute.AvailabilitySet>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.AvailabilitySet>
+          - Promise<azure-arm-compute.AvailabilitySet>
   - uid: azure-arm-compute.AvailabilitySets.update_2
     name: update
     children: []
@@ -731,7 +731,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-compute.AvailabilitySetUpdate'
+            - azure-arm-compute.AvailabilitySetUpdate
           description: ''
         - id: options
           type:
@@ -739,11 +739,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.AvailabilitySet>
+            - ServiceCallback<azure-arm-compute.AvailabilitySet>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.AvailabilitySet>
+          - Promise<azure-arm-compute.AvailabilitySet>
   - uid: azure-arm-compute.AvailabilitySets.updateWithHttpOperationResponse
     name: updateWithHttpOperationResponse
     children: []
@@ -769,7 +769,7 @@ items:
             The name of the availability set.
         - id: parameters
           type:
-            - '@azure-arm-compute.AvailabilitySetUpdate'
+            - azure-arm-compute.AvailabilitySetUpdate
           description: |
             Parameters supplied to the Update Availability
             Set operation.
@@ -780,4 +780,87 @@ items:
           optional: true
       return:
         type:
-          - Promise<AvailabilitySet>>
+          - Promise<AvailabilitySet!@>>
+references:
+  - uid: azure-arm-compute.AvailabilitySet
+    spec.typeScript:
+      - name: AvailabilitySet
+        fullName: AvailabilitySet
+        uid: azure-arm-compute.AvailabilitySet
+  - uid: Promise<azure-arm-compute.AvailabilitySet>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: AvailabilitySet
+        fullName: AvailabilitySet
+        uid: azure-arm-compute.AvailabilitySet
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.AvailabilitySet>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: AvailabilitySet
+        fullName: AvailabilitySet
+        uid: azure-arm-compute.AvailabilitySet
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-compute.OperationStatusResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.OperationStatusResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-compute.AvailabilitySetListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: AvailabilitySetListResult
+        fullName: AvailabilitySetListResult
+        uid: azure-arm-compute.AvailabilitySetListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.AvailabilitySetListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: AvailabilitySetListResult
+        fullName: AvailabilitySetListResult
+        uid: azure-arm-compute.AvailabilitySetListResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-compute.VirtualMachineSizeListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualMachineSizeListResult
+        fullName: VirtualMachineSizeListResult
+        uid: azure-arm-compute.VirtualMachineSizeListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.VirtualMachineSizeListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualMachineSizeListResult
+        fullName: VirtualMachineSizeListResult
+        uid: azure-arm-compute.VirtualMachineSizeListResult
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-compute.AvailabilitySetUpdate
+    spec.typeScript:
+      - name: AvailabilitySetUpdate
+        fullName: AvailabilitySetUpdate
+        uid: azure-arm-compute.AvailabilitySetUpdate

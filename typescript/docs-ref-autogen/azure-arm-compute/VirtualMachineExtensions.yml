@@ -74,7 +74,7 @@ items:
             The name of the virtual machine extension.
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineExtension'
+            - azure-arm-compute.VirtualMachineExtension
           description: |
             Parameters supplied to the Create
             Virtual Machine Extension operation.
@@ -85,7 +85,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtension>
+          - Promise<azure-arm-compute.VirtualMachineExtension>
   - uid: azure-arm-compute.VirtualMachineExtensions.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -113,15 +113,15 @@ items:
           description: ''
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineExtension'
+            - azure-arm-compute.VirtualMachineExtension
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.VirtualMachineExtension>
+            - ServiceCallback<azure-arm-compute.VirtualMachineExtension>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtension>
+          - Promise<azure-arm-compute.VirtualMachineExtension>
   - uid: azure-arm-compute.VirtualMachineExtensions.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -149,7 +149,7 @@ items:
           description: ''
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineExtension'
+            - azure-arm-compute.VirtualMachineExtension
           description: ''
         - id: options
           type:
@@ -157,11 +157,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.VirtualMachineExtension>
+            - ServiceCallback<azure-arm-compute.VirtualMachineExtension>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtension>
+          - Promise<azure-arm-compute.VirtualMachineExtension>
   - uid: >-
       azure-arm-compute.VirtualMachineExtensions.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
@@ -194,7 +194,7 @@ items:
             The name of the virtual machine extension.
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineExtension'
+            - azure-arm-compute.VirtualMachineExtension
           description: |
             Parameters supplied to the Create
             Virtual Machine Extension operation.
@@ -205,7 +205,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineExtension>>
+          - Promise<VirtualMachineExtension!@>>
   - uid: azure-arm-compute.VirtualMachineExtensions.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -241,7 +241,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.VirtualMachineExtensions.beginDeleteMethod_1
     name: beginDeleteMethod
     children: []
@@ -269,11 +269,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.VirtualMachineExtensions.beginDeleteMethod_2
     name: beginDeleteMethod
     children: []
@@ -305,11 +305,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: >-
       azure-arm-compute.VirtualMachineExtensions.beginDeleteMethodWithHttpOperationResponse
     name: beginDeleteMethodWithHttpOperationResponse
@@ -346,7 +346,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse>>
+          - Promise<OperationStatusResponse!@>>
   - uid: azure-arm-compute.VirtualMachineExtensions.beginUpdate
     name: beginUpdate
     children: []
@@ -378,7 +378,7 @@ items:
             The name of the virtual machine extension.
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineExtensionUpdate'
+            - azure-arm-compute.VirtualMachineExtensionUpdate
           description: |
             Parameters supplied to the Update
             Virtual Machine Extension operation.
@@ -389,7 +389,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtension>
+          - Promise<azure-arm-compute.VirtualMachineExtension>
   - uid: azure-arm-compute.VirtualMachineExtensions.beginUpdate_1
     name: beginUpdate
     children: []
@@ -418,15 +418,15 @@ items:
           description: ''
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineExtensionUpdate'
+            - azure-arm-compute.VirtualMachineExtensionUpdate
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.VirtualMachineExtension>
+            - ServiceCallback<azure-arm-compute.VirtualMachineExtension>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtension>
+          - Promise<azure-arm-compute.VirtualMachineExtension>
   - uid: azure-arm-compute.VirtualMachineExtensions.beginUpdate_2
     name: beginUpdate
     children: []
@@ -455,7 +455,7 @@ items:
           description: ''
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineExtensionUpdate'
+            - azure-arm-compute.VirtualMachineExtensionUpdate
           description: ''
         - id: options
           type:
@@ -463,11 +463,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.VirtualMachineExtension>
+            - ServiceCallback<azure-arm-compute.VirtualMachineExtension>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtension>
+          - Promise<azure-arm-compute.VirtualMachineExtension>
   - uid: >-
       azure-arm-compute.VirtualMachineExtensions.beginUpdateWithHttpOperationResponse
     name: beginUpdateWithHttpOperationResponse
@@ -500,7 +500,7 @@ items:
             The name of the virtual machine extension.
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineExtensionUpdate'
+            - azure-arm-compute.VirtualMachineExtensionUpdate
           description: |
             Parameters supplied to the Update
             Virtual Machine Extension operation.
@@ -511,7 +511,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineExtension>>
+          - Promise<VirtualMachineExtension!@>>
   - uid: azure-arm-compute.VirtualMachineExtensions.createOrUpdate
     name: createOrUpdate
     children: []
@@ -543,7 +543,7 @@ items:
             The name of the virtual machine extension.
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineExtension'
+            - azure-arm-compute.VirtualMachineExtension
           description: |
             Parameters supplied to the Create
             Virtual Machine Extension operation.
@@ -554,7 +554,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtension>
+          - Promise<azure-arm-compute.VirtualMachineExtension>
   - uid: azure-arm-compute.VirtualMachineExtensions.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -582,15 +582,15 @@ items:
           description: ''
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineExtension'
+            - azure-arm-compute.VirtualMachineExtension
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.VirtualMachineExtension>
+            - ServiceCallback<azure-arm-compute.VirtualMachineExtension>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtension>
+          - Promise<azure-arm-compute.VirtualMachineExtension>
   - uid: azure-arm-compute.VirtualMachineExtensions.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -618,7 +618,7 @@ items:
           description: ''
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineExtension'
+            - azure-arm-compute.VirtualMachineExtension
           description: ''
         - id: options
           type:
@@ -626,11 +626,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.VirtualMachineExtension>
+            - ServiceCallback<azure-arm-compute.VirtualMachineExtension>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtension>
+          - Promise<azure-arm-compute.VirtualMachineExtension>
   - uid: >-
       azure-arm-compute.VirtualMachineExtensions.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
@@ -663,7 +663,7 @@ items:
             The name of the virtual machine extension.
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineExtension'
+            - azure-arm-compute.VirtualMachineExtension
           description: |
             Parameters supplied to the Create
             Virtual Machine Extension operation.
@@ -674,7 +674,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineExtension>>
+          - Promise<VirtualMachineExtension!@>>
   - uid: azure-arm-compute.VirtualMachineExtensions.deleteMethod_1
     name: deleteMethod
     children: []
@@ -702,11 +702,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.VirtualMachineExtensions.deleteMethod_2
     name: deleteMethod
     children: []
@@ -738,11 +738,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.VirtualMachineExtensions.deleteMethod
     name: deleteMethod
     children: []
@@ -778,7 +778,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: >-
       azure-arm-compute.VirtualMachineExtensions.deleteMethodWithHttpOperationResponse
     name: deleteMethodWithHttpOperationResponse
@@ -815,7 +815,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse>>
+          - Promise<OperationStatusResponse!@>>
   - uid: azure-arm-compute.VirtualMachineExtensions.get
     name: get
     children: []
@@ -851,7 +851,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtension>
+          - Promise<azure-arm-compute.VirtualMachineExtension>
   - uid: azure-arm-compute.VirtualMachineExtensions.get_1
     name: get
     children: []
@@ -878,11 +878,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.VirtualMachineExtension>
+            - ServiceCallback<azure-arm-compute.VirtualMachineExtension>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtension>
+          - Promise<azure-arm-compute.VirtualMachineExtension>
   - uid: azure-arm-compute.VirtualMachineExtensions.get_2
     name: get
     children: []
@@ -914,11 +914,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.VirtualMachineExtension>
+            - ServiceCallback<azure-arm-compute.VirtualMachineExtension>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtension>
+          - Promise<azure-arm-compute.VirtualMachineExtension>
   - uid: azure-arm-compute.VirtualMachineExtensions.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -954,7 +954,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineExtension>>
+          - Promise<VirtualMachineExtension!@>>
   - uid: azure-arm-compute.VirtualMachineExtensions.update
     name: update
     children: []
@@ -986,7 +986,7 @@ items:
             The name of the virtual machine extension.
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineExtensionUpdate'
+            - azure-arm-compute.VirtualMachineExtensionUpdate
           description: |
             Parameters supplied to the Update
             Virtual Machine Extension operation.
@@ -997,7 +997,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtension>
+          - Promise<azure-arm-compute.VirtualMachineExtension>
   - uid: azure-arm-compute.VirtualMachineExtensions.update_1
     name: update
     children: []
@@ -1026,15 +1026,15 @@ items:
           description: ''
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineExtensionUpdate'
+            - azure-arm-compute.VirtualMachineExtensionUpdate
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.VirtualMachineExtension>
+            - ServiceCallback<azure-arm-compute.VirtualMachineExtension>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtension>
+          - Promise<azure-arm-compute.VirtualMachineExtension>
   - uid: azure-arm-compute.VirtualMachineExtensions.update_2
     name: update
     children: []
@@ -1063,7 +1063,7 @@ items:
           description: ''
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineExtensionUpdate'
+            - azure-arm-compute.VirtualMachineExtensionUpdate
           description: ''
         - id: options
           type:
@@ -1071,11 +1071,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.VirtualMachineExtension>
+            - ServiceCallback<azure-arm-compute.VirtualMachineExtension>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtension>
+          - Promise<azure-arm-compute.VirtualMachineExtension>
   - uid: azure-arm-compute.VirtualMachineExtensions.updateWithHttpOperationResponse
     name: updateWithHttpOperationResponse
     children: []
@@ -1107,7 +1107,7 @@ items:
             The name of the virtual machine extension.
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineExtensionUpdate'
+            - azure-arm-compute.VirtualMachineExtensionUpdate
           description: |
             Parameters supplied to the Update
             Virtual Machine Extension operation.
@@ -1118,4 +1118,51 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineExtension>>
+          - Promise<VirtualMachineExtension!@>>
+references:
+  - uid: azure-arm-compute.VirtualMachineExtension
+    spec.typeScript:
+      - name: VirtualMachineExtension
+        fullName: VirtualMachineExtension
+        uid: azure-arm-compute.VirtualMachineExtension
+  - uid: Promise<azure-arm-compute.VirtualMachineExtension>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualMachineExtension
+        fullName: VirtualMachineExtension
+        uid: azure-arm-compute.VirtualMachineExtension
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.VirtualMachineExtension>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualMachineExtension
+        fullName: VirtualMachineExtension
+        uid: azure-arm-compute.VirtualMachineExtension
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-compute.OperationStatusResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.OperationStatusResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-compute.VirtualMachineExtensionUpdate
+    spec.typeScript:
+      - name: VirtualMachineExtensionUpdate
+        fullName: VirtualMachineExtensionUpdate
+        uid: azure-arm-compute.VirtualMachineExtensionUpdate

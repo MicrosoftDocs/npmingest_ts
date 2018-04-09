@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-cdn.CustomDomain>
+      name: Array<azure-arm-cdn.CustomDomain>
     package: azure-arm-cdn
   - uid: azure-arm-cdn.CustomDomainListResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-cdn.CustomDomain>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: CustomDomain
+        fullName: CustomDomain
+        uid: azure-arm-cdn.CustomDomain
+      - name: '>'
+        fullName: '>'

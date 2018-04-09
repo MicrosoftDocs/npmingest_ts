@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-compute.Image>
+      name: Array<azure-arm-compute.Image>
     package: azure-arm-compute
   - uid: azure-arm-compute.ImageListResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-compute.Image>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: Image
+        fullName: Image
+        uid: azure-arm-compute.Image
+      - name: '>'
+        fullName: '>'

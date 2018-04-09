@@ -23,7 +23,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.Resource'
+      name: azure-arm-compute.Resource
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachine.availabilitySet
     name: availabilitySet
@@ -38,7 +38,7 @@ items:
       content: 'availabilitySet?: SubResource'
       return:
         type:
-          - '@azure-arm-compute.SubResource'
+          - azure-arm-compute.SubResource
   - uid: azure-arm-compute.VirtualMachine.diagnosticsProfile
     name: diagnosticsProfile
     fullName: diagnosticsProfile
@@ -52,7 +52,7 @@ items:
       content: 'diagnosticsProfile?: DiagnosticsProfile'
       return:
         type:
-          - '@azure-arm-compute.DiagnosticsProfile'
+          - azure-arm-compute.DiagnosticsProfile
   - uid: azure-arm-compute.VirtualMachine.hardwareProfile
     name: hardwareProfile
     fullName: hardwareProfile
@@ -66,7 +66,7 @@ items:
       content: 'hardwareProfile?: HardwareProfile'
       return:
         type:
-          - '@azure-arm-compute.HardwareProfile'
+          - azure-arm-compute.HardwareProfile
   - uid: azure-arm-compute.VirtualMachine.identity
     name: identity
     fullName: identity
@@ -80,7 +80,7 @@ items:
       content: 'identity?: VirtualMachineIdentity'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineIdentity'
+          - azure-arm-compute.VirtualMachineIdentity
   - uid: azure-arm-compute.VirtualMachine.instanceView
     name: instanceView
     fullName: instanceView
@@ -94,7 +94,7 @@ items:
       content: 'instanceView?: VirtualMachineInstanceView'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineInstanceView'
+          - azure-arm-compute.VirtualMachineInstanceView
   - uid: azure-arm-compute.VirtualMachine.licenseType
     name: licenseType
     fullName: licenseType
@@ -122,7 +122,7 @@ items:
       content: 'networkProfile?: NetworkProfile'
       return:
         type:
-          - '@azure-arm-compute.NetworkProfile'
+          - azure-arm-compute.NetworkProfile
   - uid: azure-arm-compute.VirtualMachine.osProfile
     name: osProfile
     fullName: osProfile
@@ -136,7 +136,7 @@ items:
       content: 'osProfile?: OSProfile'
       return:
         type:
-          - '@azure-arm-compute.OSProfile'
+          - azure-arm-compute.OSProfile
   - uid: azure-arm-compute.VirtualMachine.plan
     name: plan
     fullName: plan
@@ -150,7 +150,7 @@ items:
       content: 'plan?: Plan'
       return:
         type:
-          - '@azure-arm-compute.Plan'
+          - azure-arm-compute.Plan
   - uid: azure-arm-compute.VirtualMachine.provisioningState
     name: provisioningState
     fullName: provisioningState
@@ -178,7 +178,7 @@ items:
       content: 'resources?: VirtualMachineExtension[]'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineExtension[]'
+          - 'azure-arm-compute.VirtualMachineExtension[]'
   - uid: azure-arm-compute.VirtualMachine.storageProfile
     name: storageProfile
     fullName: storageProfile
@@ -192,7 +192,7 @@ items:
       content: 'storageProfile?: StorageProfile'
       return:
         type:
-          - '@azure-arm-compute.StorageProfile'
+          - azure-arm-compute.StorageProfile
   - uid: azure-arm-compute.VirtualMachine.vmId
     name: vmId
     fullName: vmId
@@ -221,3 +221,61 @@ items:
       return:
         type:
           - 'string[]'
+references:
+  - uid: azure-arm-compute.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-compute.Resource
+  - uid: azure-arm-compute.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute.SubResource
+  - uid: azure-arm-compute.DiagnosticsProfile
+    spec.typeScript:
+      - name: DiagnosticsProfile
+        fullName: DiagnosticsProfile
+        uid: azure-arm-compute.DiagnosticsProfile
+  - uid: azure-arm-compute.HardwareProfile
+    spec.typeScript:
+      - name: HardwareProfile
+        fullName: HardwareProfile
+        uid: azure-arm-compute.HardwareProfile
+  - uid: azure-arm-compute.VirtualMachineIdentity
+    spec.typeScript:
+      - name: VirtualMachineIdentity
+        fullName: VirtualMachineIdentity
+        uid: azure-arm-compute.VirtualMachineIdentity
+  - uid: azure-arm-compute.VirtualMachineInstanceView
+    spec.typeScript:
+      - name: VirtualMachineInstanceView
+        fullName: VirtualMachineInstanceView
+        uid: azure-arm-compute.VirtualMachineInstanceView
+  - uid: azure-arm-compute.NetworkProfile
+    spec.typeScript:
+      - name: NetworkProfile
+        fullName: NetworkProfile
+        uid: azure-arm-compute.NetworkProfile
+  - uid: azure-arm-compute.OSProfile
+    spec.typeScript:
+      - name: OSProfile
+        fullName: OSProfile
+        uid: azure-arm-compute.OSProfile
+  - uid: azure-arm-compute.Plan
+    spec.typeScript:
+      - name: Plan
+        fullName: Plan
+        uid: azure-arm-compute.Plan
+  - uid: 'azure-arm-compute.VirtualMachineExtension[]'
+    spec.typeScript:
+      - name: VirtualMachineExtension
+        fullName: VirtualMachineExtension
+        uid: azure-arm-compute.VirtualMachineExtension
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute.StorageProfile
+    spec.typeScript:
+      - name: StorageProfile
+        fullName: StorageProfile
+        uid: azure-arm-compute.StorageProfile

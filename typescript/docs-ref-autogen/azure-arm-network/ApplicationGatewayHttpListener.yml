@@ -20,7 +20,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationGatewayHttpListener.etag
     name: etag
@@ -49,7 +49,7 @@ items:
       content: 'frontendIPConfiguration?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.ApplicationGatewayHttpListener.frontendPort
     name: frontendPort
     fullName: frontendPort
@@ -63,7 +63,7 @@ items:
       content: 'frontendPort?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.ApplicationGatewayHttpListener.hostName
     name: hostName
     fullName: hostName
@@ -148,7 +148,7 @@ items:
       content: 'sslCertificate?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.ApplicationGatewayHttpListener.type
     name: type
     fullName: type
@@ -163,3 +163,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource

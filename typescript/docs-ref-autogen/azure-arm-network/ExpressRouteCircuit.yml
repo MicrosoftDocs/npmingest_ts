@@ -21,7 +21,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.Resource'
+      name: azure-arm-network.Resource
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteCircuit.allowClassicOperations
     name: allowClassicOperations
@@ -50,7 +50,7 @@ items:
       content: 'authorizations?: ExpressRouteCircuitAuthorization[]'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCircuitAuthorization[]'
+          - 'azure-arm-network.ExpressRouteCircuitAuthorization[]'
   - uid: azure-arm-network.ExpressRouteCircuit.circuitProvisioningState
     name: circuitProvisioningState
     fullName: circuitProvisioningState
@@ -106,7 +106,7 @@ items:
       content: 'peerings?: ExpressRouteCircuitPeering[]'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCircuitPeering[]'
+          - 'azure-arm-network.ExpressRouteCircuitPeering[]'
   - uid: azure-arm-network.ExpressRouteCircuit.provisioningState
     name: provisioningState
     fullName: provisioningState
@@ -162,7 +162,7 @@ items:
       content: 'serviceProviderProperties?: ExpressRouteCircuitServiceProviderProperties'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCircuitServiceProviderProperties'
+          - azure-arm-network.ExpressRouteCircuitServiceProviderProperties
   - uid: azure-arm-network.ExpressRouteCircuit.serviceProviderProvisioningState
     name: serviceProviderProvisioningState
     fullName: serviceProviderProvisioningState
@@ -190,4 +190,34 @@ items:
       content: 'sku?: ExpressRouteCircuitSku'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCircuitSku'
+          - azure-arm-network.ExpressRouteCircuitSku
+references:
+  - uid: azure-arm-network.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network.Resource
+  - uid: 'azure-arm-network.ExpressRouteCircuitAuthorization[]'
+    spec.typeScript:
+      - name: ExpressRouteCircuitAuthorization
+        fullName: ExpressRouteCircuitAuthorization
+        uid: azure-arm-network.ExpressRouteCircuitAuthorization
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.ExpressRouteCircuitPeering[]'
+    spec.typeScript:
+      - name: ExpressRouteCircuitPeering
+        fullName: ExpressRouteCircuitPeering
+        uid: azure-arm-network.ExpressRouteCircuitPeering
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network.ExpressRouteCircuitServiceProviderProperties
+    spec.typeScript:
+      - name: ExpressRouteCircuitServiceProviderProperties
+        fullName: ExpressRouteCircuitServiceProviderProperties
+        uid: azure-arm-network.ExpressRouteCircuitServiceProviderProperties
+  - uid: azure-arm-network.ExpressRouteCircuitSku
+    spec.typeScript:
+      - name: ExpressRouteCircuitSku
+        fullName: ExpressRouteCircuitSku
+        uid: azure-arm-network.ExpressRouteCircuitSku

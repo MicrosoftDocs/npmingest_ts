@@ -67,7 +67,7 @@ items:
             The name of the subnet.
         - id: subnetParameters
           type:
-            - '@azure-arm-network.Subnet'
+            - azure-arm-network.Subnet
           description: |
             Parameters supplied to the create or update
             subnet operation.
@@ -78,7 +78,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.Subnet>
+          - Promise<azure-arm-network.Subnet>
   - uid: azure-arm-network.Subnets.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -106,15 +106,15 @@ items:
           description: ''
         - id: subnetParameters
           type:
-            - '@azure-arm-network.Subnet'
+            - azure-arm-network.Subnet
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.Subnet>
+            - ServiceCallback<azure-arm-network.Subnet>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.Subnet>
+          - Promise<azure-arm-network.Subnet>
   - uid: azure-arm-network.Subnets.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -142,7 +142,7 @@ items:
           description: ''
         - id: subnetParameters
           type:
-            - '@azure-arm-network.Subnet'
+            - azure-arm-network.Subnet
           description: ''
         - id: options
           type:
@@ -150,11 +150,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.Subnet>
+            - ServiceCallback<azure-arm-network.Subnet>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.Subnet>
+          - Promise<azure-arm-network.Subnet>
   - uid: azure-arm-network.Subnets.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
     children: []
@@ -185,7 +185,7 @@ items:
             The name of the subnet.
         - id: subnetParameters
           type:
-            - '@azure-arm-network.Subnet'
+            - azure-arm-network.Subnet
           description: |
             Parameters supplied to the create or update
             subnet operation.
@@ -196,7 +196,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Subnet>>
+          - Promise<Subnet!@>>
   - uid: azure-arm-network.Subnets.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -366,7 +366,7 @@ items:
             The name of the subnet.
         - id: subnetParameters
           type:
-            - '@azure-arm-network.Subnet'
+            - azure-arm-network.Subnet
           description: |
             Parameters supplied to the create or update
             subnet operation.
@@ -377,7 +377,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.Subnet>
+          - Promise<azure-arm-network.Subnet>
   - uid: azure-arm-network.Subnets.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -405,15 +405,15 @@ items:
           description: ''
         - id: subnetParameters
           type:
-            - '@azure-arm-network.Subnet'
+            - azure-arm-network.Subnet
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.Subnet>
+            - ServiceCallback<azure-arm-network.Subnet>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.Subnet>
+          - Promise<azure-arm-network.Subnet>
   - uid: azure-arm-network.Subnets.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -441,7 +441,7 @@ items:
           description: ''
         - id: subnetParameters
           type:
-            - '@azure-arm-network.Subnet'
+            - azure-arm-network.Subnet
           description: ''
         - id: options
           type:
@@ -449,11 +449,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.Subnet>
+            - ServiceCallback<azure-arm-network.Subnet>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.Subnet>
+          - Promise<azure-arm-network.Subnet>
   - uid: azure-arm-network.Subnets.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
     children: []
@@ -484,7 +484,7 @@ items:
             The name of the subnet.
         - id: subnetParameters
           type:
-            - '@azure-arm-network.Subnet'
+            - azure-arm-network.Subnet
           description: |
             Parameters supplied to the create or update
             subnet operation.
@@ -495,7 +495,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Subnet>>
+          - Promise<Subnet!@>>
   - uid: azure-arm-network.Subnets.deleteMethod
     name: deleteMethod
     children: []
@@ -660,11 +660,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.Subnet>
+            - ServiceCallback<azure-arm-network.Subnet>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.Subnet>
+          - Promise<azure-arm-network.Subnet>
   - uid: azure-arm-network.Subnets.get_2
     name: get
     children: []
@@ -696,11 +696,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.Subnet>
+            - ServiceCallback<azure-arm-network.Subnet>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.Subnet>
+          - Promise<azure-arm-network.Subnet>
   - uid: azure-arm-network.Subnets.get
     name: get
     children: []
@@ -735,7 +735,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.Subnet>
+          - Promise<azure-arm-network.Subnet>
   - uid: azure-arm-network.Subnets.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -770,7 +770,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Subnet>>
+          - Promise<Subnet!@>>
   - uid: azure-arm-network.Subnets.list
     name: list
     children: []
@@ -800,7 +800,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.SubnetListResult>
+          - Promise<azure-arm-network.SubnetListResult>
   - uid: azure-arm-network.Subnets.list_1
     name: list
     children: []
@@ -823,11 +823,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.SubnetListResult>
+            - ServiceCallback<azure-arm-network.SubnetListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.SubnetListResult>
+          - Promise<azure-arm-network.SubnetListResult>
   - uid: azure-arm-network.Subnets.list_2
     name: list
     children: []
@@ -854,11 +854,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.SubnetListResult>
+            - ServiceCallback<azure-arm-network.SubnetListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.SubnetListResult>
+          - Promise<azure-arm-network.SubnetListResult>
   - uid: azure-arm-network.Subnets.listNext
     name: listNext
     children: []
@@ -882,7 +882,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.SubnetListResult>
+          - Promise<azure-arm-network.SubnetListResult>
   - uid: azure-arm-network.Subnets.listNext_1
     name: listNext
     children: []
@@ -901,11 +901,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.SubnetListResult>
+            - ServiceCallback<azure-arm-network.SubnetListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.SubnetListResult>
+          - Promise<azure-arm-network.SubnetListResult>
   - uid: azure-arm-network.Subnets.listNext_2
     name: listNext
     children: []
@@ -928,11 +928,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.SubnetListResult>
+            - ServiceCallback<azure-arm-network.SubnetListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.SubnetListResult>
+          - Promise<azure-arm-network.SubnetListResult>
   - uid: azure-arm-network.Subnets.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -958,7 +958,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SubnetListResult>>
+          - Promise<SubnetListResult!@>>
   - uid: azure-arm-network.Subnets.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -988,4 +988,46 @@ items:
           optional: true
       return:
         type:
-          - Promise<SubnetListResult>>
+          - Promise<SubnetListResult!@>>
+references:
+  - uid: azure-arm-network.Subnet
+    spec.typeScript:
+      - name: Subnet
+        fullName: Subnet
+        uid: azure-arm-network.Subnet
+  - uid: Promise<azure-arm-network.Subnet>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Subnet
+        fullName: Subnet
+        uid: azure-arm-network.Subnet
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.Subnet>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Subnet
+        fullName: Subnet
+        uid: azure-arm-network.Subnet
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.SubnetListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: SubnetListResult
+        fullName: SubnetListResult
+        uid: azure-arm-network.SubnetListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.SubnetListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: SubnetListResult
+        fullName: SubnetListResult
+        uid: azure-arm-network.SubnetListResult
+      - name: '>'
+        fullName: '>'

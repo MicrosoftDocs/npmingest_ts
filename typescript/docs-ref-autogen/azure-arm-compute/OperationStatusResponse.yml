@@ -41,7 +41,7 @@ items:
       content: 'error?: ApiError'
       return:
         type:
-          - '@azure-arm-compute.ApiError'
+          - azure-arm-compute.ApiError
   - uid: azure-arm-compute.OperationStatusResponse.name
     name: name
     fullName: name
@@ -84,3 +84,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-compute.ApiError
+    spec.typeScript:
+      - name: ApiError
+        fullName: ApiError
+        uid: azure-arm-compute.ApiError

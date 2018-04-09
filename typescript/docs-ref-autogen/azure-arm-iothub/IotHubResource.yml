@@ -161,7 +161,7 @@ items:
             The name of the IoT hub to create or update.
         - id: iotHubDescription
           type:
-            - '@azure-arm-iothub.IotHubDescription'
+            - azure-arm-iothub.IotHubDescription
           description: |
             The IoT hub metadata and security
             metadata.
@@ -172,7 +172,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescription>
+          - Promise<azure-arm-iothub.IotHubDescription>
   - uid: azure-arm-iothub.IotHubResource.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -196,15 +196,15 @@ items:
           description: ''
         - id: iotHubDescription
           type:
-            - '@azure-arm-iothub.IotHubDescription'
+            - azure-arm-iothub.IotHubDescription
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubDescription>
+            - ServiceCallback<azure-arm-iothub.IotHubDescription>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescription>
+          - Promise<azure-arm-iothub.IotHubDescription>
   - uid: azure-arm-iothub.IotHubResource.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -228,7 +228,7 @@ items:
           description: ''
         - id: iotHubDescription
           type:
-            - '@azure-arm-iothub.IotHubDescription'
+            - azure-arm-iothub.IotHubDescription
           description: ''
         - id: options
           type:
@@ -236,11 +236,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubDescription>
+            - ServiceCallback<azure-arm-iothub.IotHubDescription>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescription>
+          - Promise<azure-arm-iothub.IotHubDescription>
   - uid: >-
       azure-arm-iothub.IotHubResource.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
@@ -268,7 +268,7 @@ items:
             The name of the IoT hub to create or update.
         - id: iotHubDescription
           type:
-            - '@azure-arm-iothub.IotHubDescription'
+            - azure-arm-iothub.IotHubDescription
           description: |
             The IoT hub metadata and security
             metadata.
@@ -279,7 +279,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubDescription>>
+          - Promise<IotHubDescription!@>>
   - uid: azure-arm-iothub.IotHubResource.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -418,11 +418,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubNameAvailabilityInfo>
+            - ServiceCallback<azure-arm-iothub.IotHubNameAvailabilityInfo>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubNameAvailabilityInfo>
+          - Promise<azure-arm-iothub.IotHubNameAvailabilityInfo>
   - uid: azure-arm-iothub.IotHubResource.checkNameAvailability
     name: checkNameAvailability
     children: []
@@ -445,7 +445,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubNameAvailabilityInfo>
+          - Promise<azure-arm-iothub.IotHubNameAvailabilityInfo>
   - uid: azure-arm-iothub.IotHubResource.checkNameAvailability_2
     name: checkNameAvailability
     children: []
@@ -468,11 +468,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubNameAvailabilityInfo>
+            - ServiceCallback<azure-arm-iothub.IotHubNameAvailabilityInfo>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubNameAvailabilityInfo>
+          - Promise<azure-arm-iothub.IotHubNameAvailabilityInfo>
   - uid: >-
       azure-arm-iothub.IotHubResource.checkNameAvailabilityWithHttpOperationResponse
     name: checkNameAvailabilityWithHttpOperationResponse
@@ -498,7 +498,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubNameAvailabilityInfo>>
+          - Promise<IotHubNameAvailabilityInfo!@>>
   - uid: azure-arm-iothub.IotHubResource.createEventHubConsumerGroup
     name: createEventHubConsumerGroup
     children: []
@@ -541,7 +541,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.EventHubConsumerGroupInfo>
+          - Promise<azure-arm-iothub.EventHubConsumerGroupInfo>
   - uid: azure-arm-iothub.IotHubResource.createEventHubConsumerGroup_1
     name: createEventHubConsumerGroup
     children: []
@@ -573,11 +573,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.EventHubConsumerGroupInfo>
+            - ServiceCallback<azure-arm-iothub.EventHubConsumerGroupInfo>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.EventHubConsumerGroupInfo>
+          - Promise<azure-arm-iothub.EventHubConsumerGroupInfo>
   - uid: azure-arm-iothub.IotHubResource.createEventHubConsumerGroup_2
     name: createEventHubConsumerGroup
     children: []
@@ -613,11 +613,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.EventHubConsumerGroupInfo>
+            - ServiceCallback<azure-arm-iothub.EventHubConsumerGroupInfo>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.EventHubConsumerGroupInfo>
+          - Promise<azure-arm-iothub.EventHubConsumerGroupInfo>
   - uid: >-
       azure-arm-iothub.IotHubResource.createEventHubConsumerGroupWithHttpOperationResponse
     name: createEventHubConsumerGroupWithHttpOperationResponse
@@ -662,7 +662,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<EventHubConsumerGroupInfo>>
+          - Promise<EventHubConsumerGroupInfo!@>>
   - uid: azure-arm-iothub.IotHubResource.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -686,7 +686,7 @@ items:
           description: ''
         - id: iotHubDescription
           type:
-            - '@azure-arm-iothub.IotHubDescription'
+            - azure-arm-iothub.IotHubDescription
           description: ''
         - id: options
           type:
@@ -694,11 +694,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubDescription>
+            - ServiceCallback<azure-arm-iothub.IotHubDescription>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescription>
+          - Promise<azure-arm-iothub.IotHubDescription>
   - uid: azure-arm-iothub.IotHubResource.createOrUpdate
     name: createOrUpdate
     children: []
@@ -724,7 +724,7 @@ items:
             The name of the IoT hub to create or update.
         - id: iotHubDescription
           type:
-            - '@azure-arm-iothub.IotHubDescription'
+            - azure-arm-iothub.IotHubDescription
           description: |
             The IoT hub metadata and security
             metadata.
@@ -735,7 +735,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescription>
+          - Promise<azure-arm-iothub.IotHubDescription>
   - uid: azure-arm-iothub.IotHubResource.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -759,15 +759,15 @@ items:
           description: ''
         - id: iotHubDescription
           type:
-            - '@azure-arm-iothub.IotHubDescription'
+            - azure-arm-iothub.IotHubDescription
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubDescription>
+            - ServiceCallback<azure-arm-iothub.IotHubDescription>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescription>
+          - Promise<azure-arm-iothub.IotHubDescription>
   - uid: azure-arm-iothub.IotHubResource.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
     children: []
@@ -794,7 +794,7 @@ items:
             The name of the IoT hub to create or update.
         - id: iotHubDescription
           type:
-            - '@azure-arm-iothub.IotHubDescription'
+            - azure-arm-iothub.IotHubDescription
           description: |
             The IoT hub metadata and security
             metadata.
@@ -805,7 +805,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubDescription>>
+          - Promise<IotHubDescription!@>>
   - uid: azure-arm-iothub.IotHubResource.deleteEventHubConsumerGroup_1
     name: deleteEventHubConsumerGroup
     children: []
@@ -1113,15 +1113,15 @@ items:
           description: ''
         - id: exportDevicesParameters
           type:
-            - '@azure-arm-iothub.ExportDevicesRequest'
+            - azure-arm-iothub.ExportDevicesRequest
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.JobResponse>
+            - ServiceCallback<azure-arm-iothub.JobResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.JobResponse>
+          - Promise<azure-arm-iothub.JobResponse>
   - uid: azure-arm-iothub.IotHubResource.exportDevices
     name: exportDevices
     children: []
@@ -1147,7 +1147,7 @@ items:
             The name of the IoT hub.
         - id: exportDevicesParameters
           type:
-            - '@azure-arm-iothub.ExportDevicesRequest'
+            - azure-arm-iothub.ExportDevicesRequest
           description: |
             The parameters that specify the
             export devices operation.
@@ -1158,7 +1158,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.JobResponse>
+          - Promise<azure-arm-iothub.JobResponse>
   - uid: azure-arm-iothub.IotHubResource.exportDevices_2
     name: exportDevices
     children: []
@@ -1182,7 +1182,7 @@ items:
           description: ''
         - id: exportDevicesParameters
           type:
-            - '@azure-arm-iothub.ExportDevicesRequest'
+            - azure-arm-iothub.ExportDevicesRequest
           description: ''
         - id: options
           type:
@@ -1190,11 +1190,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.JobResponse>
+            - ServiceCallback<azure-arm-iothub.JobResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.JobResponse>
+          - Promise<azure-arm-iothub.JobResponse>
   - uid: azure-arm-iothub.IotHubResource.exportDevicesWithHttpOperationResponse
     name: exportDevicesWithHttpOperationResponse
     children: []
@@ -1221,7 +1221,7 @@ items:
             The name of the IoT hub.
         - id: exportDevicesParameters
           type:
-            - '@azure-arm-iothub.ExportDevicesRequest'
+            - azure-arm-iothub.ExportDevicesRequest
           description: |
             The parameters that specify the
             export devices operation.
@@ -1232,7 +1232,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<JobResponse>>
+          - Promise<JobResponse!@>>
   - uid: azure-arm-iothub.IotHubResource.get_1
     name: get
     children: []
@@ -1255,11 +1255,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubDescription>
+            - ServiceCallback<azure-arm-iothub.IotHubDescription>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescription>
+          - Promise<azure-arm-iothub.IotHubDescription>
   - uid: azure-arm-iothub.IotHubResource.get_2
     name: get
     children: []
@@ -1286,11 +1286,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubDescription>
+            - ServiceCallback<azure-arm-iothub.IotHubDescription>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescription>
+          - Promise<azure-arm-iothub.IotHubDescription>
   - uid: azure-arm-iothub.IotHubResource.get
     name: get
     children: []
@@ -1321,7 +1321,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescription>
+          - Promise<azure-arm-iothub.IotHubDescription>
   - uid: azure-arm-iothub.IotHubResource.getEventHubConsumerGroup_2
     name: getEventHubConsumerGroup
     children: []
@@ -1357,11 +1357,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.EventHubConsumerGroupInfo>
+            - ServiceCallback<azure-arm-iothub.EventHubConsumerGroupInfo>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.EventHubConsumerGroupInfo>
+          - Promise<azure-arm-iothub.EventHubConsumerGroupInfo>
   - uid: azure-arm-iothub.IotHubResource.getEventHubConsumerGroup
     name: getEventHubConsumerGroup
     children: []
@@ -1404,7 +1404,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.EventHubConsumerGroupInfo>
+          - Promise<azure-arm-iothub.EventHubConsumerGroupInfo>
   - uid: azure-arm-iothub.IotHubResource.getEventHubConsumerGroup_1
     name: getEventHubConsumerGroup
     children: []
@@ -1436,11 +1436,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.EventHubConsumerGroupInfo>
+            - ServiceCallback<azure-arm-iothub.EventHubConsumerGroupInfo>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.EventHubConsumerGroupInfo>
+          - Promise<azure-arm-iothub.EventHubConsumerGroupInfo>
   - uid: >-
       azure-arm-iothub.IotHubResource.getEventHubConsumerGroupWithHttpOperationResponse
     name: getEventHubConsumerGroupWithHttpOperationResponse
@@ -1485,7 +1485,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<EventHubConsumerGroupInfo>>
+          - Promise<EventHubConsumerGroupInfo!@>>
   - uid: azure-arm-iothub.IotHubResource.getJob_1
     name: getJob
     children: []
@@ -1512,11 +1512,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.JobResponse>
+            - ServiceCallback<azure-arm-iothub.JobResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.JobResponse>
+          - Promise<azure-arm-iothub.JobResponse>
   - uid: azure-arm-iothub.IotHubResource.getJob_2
     name: getJob
     children: []
@@ -1547,11 +1547,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.JobResponse>
+            - ServiceCallback<azure-arm-iothub.JobResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.JobResponse>
+          - Promise<azure-arm-iothub.JobResponse>
   - uid: azure-arm-iothub.IotHubResource.getJob
     name: getJob
     children: []
@@ -1587,7 +1587,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.JobResponse>
+          - Promise<azure-arm-iothub.JobResponse>
   - uid: azure-arm-iothub.IotHubResource.getJobWithHttpOperationResponse
     name: getJobWithHttpOperationResponse
     children: []
@@ -1623,7 +1623,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<JobResponse>>
+          - Promise<JobResponse!@>>
   - uid: azure-arm-iothub.IotHubResource.getKeysForKeyName
     name: getKeysForKeyName
     children: []
@@ -1659,7 +1659,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
+          - Promise<azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
   - uid: azure-arm-iothub.IotHubResource.getKeysForKeyName_2
     name: getKeysForKeyName
     children: []
@@ -1692,11 +1692,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
+              ServiceCallback<azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
+          - Promise<azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
   - uid: azure-arm-iothub.IotHubResource.getKeysForKeyName_1
     name: getKeysForKeyName
     children: []
@@ -1725,11 +1725,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
+              ServiceCallback<azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
+          - Promise<azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
   - uid: azure-arm-iothub.IotHubResource.getKeysForKeyNameWithHttpOperationResponse
     name: getKeysForKeyNameWithHttpOperationResponse
     children: []
@@ -1765,7 +1765,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SharedAccessSignatureAuthorizationRule>>
+          - Promise<SharedAccessSignatureAuthorizationRule!@>>
   - uid: azure-arm-iothub.IotHubResource.getQuotaMetrics
     name: getQuotaMetrics
     children: []
@@ -1796,7 +1796,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubQuotaMetricInfoListResult>
+          - Promise<azure-arm-iothub.IotHubQuotaMetricInfoListResult>
   - uid: azure-arm-iothub.IotHubResource.getQuotaMetrics_1
     name: getQuotaMetrics
     children: []
@@ -1819,11 +1819,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubQuotaMetricInfoListResult>
+            - ServiceCallback<azure-arm-iothub.IotHubQuotaMetricInfoListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubQuotaMetricInfoListResult>
+          - Promise<azure-arm-iothub.IotHubQuotaMetricInfoListResult>
   - uid: azure-arm-iothub.IotHubResource.getQuotaMetrics_2
     name: getQuotaMetrics
     children: []
@@ -1851,11 +1851,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubQuotaMetricInfoListResult>
+            - ServiceCallback<azure-arm-iothub.IotHubQuotaMetricInfoListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubQuotaMetricInfoListResult>
+          - Promise<azure-arm-iothub.IotHubQuotaMetricInfoListResult>
   - uid: azure-arm-iothub.IotHubResource.getQuotaMetricsNext
     name: getQuotaMetricsNext
     children: []
@@ -1879,7 +1879,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubQuotaMetricInfoListResult>
+          - Promise<azure-arm-iothub.IotHubQuotaMetricInfoListResult>
   - uid: azure-arm-iothub.IotHubResource.getQuotaMetricsNext_1
     name: getQuotaMetricsNext
     children: []
@@ -1898,11 +1898,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubQuotaMetricInfoListResult>
+            - ServiceCallback<azure-arm-iothub.IotHubQuotaMetricInfoListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubQuotaMetricInfoListResult>
+          - Promise<azure-arm-iothub.IotHubQuotaMetricInfoListResult>
   - uid: azure-arm-iothub.IotHubResource.getQuotaMetricsNext_2
     name: getQuotaMetricsNext
     children: []
@@ -1925,11 +1925,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubQuotaMetricInfoListResult>
+            - ServiceCallback<azure-arm-iothub.IotHubQuotaMetricInfoListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubQuotaMetricInfoListResult>
+          - Promise<azure-arm-iothub.IotHubQuotaMetricInfoListResult>
   - uid: >-
       azure-arm-iothub.IotHubResource.getQuotaMetricsNextWithHttpOperationResponse
     name: getQuotaMetricsNextWithHttpOperationResponse
@@ -1956,7 +1956,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubQuotaMetricInfoListResult>>
+          - Promise<IotHubQuotaMetricInfoListResult!@>>
   - uid: azure-arm-iothub.IotHubResource.getQuotaMetricsWithHttpOperationResponse
     name: getQuotaMetricsWithHttpOperationResponse
     children: []
@@ -1987,7 +1987,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubQuotaMetricInfoListResult>>
+          - Promise<IotHubQuotaMetricInfoListResult!@>>
   - uid: azure-arm-iothub.IotHubResource.getStats
     name: getStats
     children: []
@@ -2018,7 +2018,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.RegistryStatistics>
+          - Promise<azure-arm-iothub.RegistryStatistics>
   - uid: azure-arm-iothub.IotHubResource.getStats_1
     name: getStats
     children: []
@@ -2041,11 +2041,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.RegistryStatistics>
+            - ServiceCallback<azure-arm-iothub.RegistryStatistics>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.RegistryStatistics>
+          - Promise<azure-arm-iothub.RegistryStatistics>
   - uid: azure-arm-iothub.IotHubResource.getStats_2
     name: getStats
     children: []
@@ -2072,11 +2072,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.RegistryStatistics>
+            - ServiceCallback<azure-arm-iothub.RegistryStatistics>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.RegistryStatistics>
+          - Promise<azure-arm-iothub.RegistryStatistics>
   - uid: azure-arm-iothub.IotHubResource.getStatsWithHttpOperationResponse
     name: getStatsWithHttpOperationResponse
     children: []
@@ -2107,7 +2107,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RegistryStatistics>>
+          - Promise<RegistryStatistics!@>>
   - uid: azure-arm-iothub.IotHubResource.getValidSkus
     name: getValidSkus
     children: []
@@ -2138,7 +2138,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubSkuDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubSkuDescriptionListResult>
   - uid: azure-arm-iothub.IotHubResource.getValidSkus_2
     name: getValidSkus
     children: []
@@ -2166,11 +2166,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubSkuDescriptionListResult>
+            - ServiceCallback<azure-arm-iothub.IotHubSkuDescriptionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubSkuDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubSkuDescriptionListResult>
   - uid: azure-arm-iothub.IotHubResource.getValidSkus_1
     name: getValidSkus
     children: []
@@ -2193,11 +2193,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubSkuDescriptionListResult>
+            - ServiceCallback<azure-arm-iothub.IotHubSkuDescriptionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubSkuDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubSkuDescriptionListResult>
   - uid: azure-arm-iothub.IotHubResource.getValidSkusNext_1
     name: getValidSkusNext
     children: []
@@ -2216,11 +2216,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubSkuDescriptionListResult>
+            - ServiceCallback<azure-arm-iothub.IotHubSkuDescriptionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubSkuDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubSkuDescriptionListResult>
   - uid: azure-arm-iothub.IotHubResource.getValidSkusNext
     name: getValidSkusNext
     children: []
@@ -2244,7 +2244,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubSkuDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubSkuDescriptionListResult>
   - uid: azure-arm-iothub.IotHubResource.getValidSkusNext_2
     name: getValidSkusNext
     children: []
@@ -2267,11 +2267,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubSkuDescriptionListResult>
+            - ServiceCallback<azure-arm-iothub.IotHubSkuDescriptionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubSkuDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubSkuDescriptionListResult>
   - uid: azure-arm-iothub.IotHubResource.getValidSkusNextWithHttpOperationResponse
     name: getValidSkusNextWithHttpOperationResponse
     children: []
@@ -2297,7 +2297,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubSkuDescriptionListResult>>
+          - Promise<IotHubSkuDescriptionListResult!@>>
   - uid: azure-arm-iothub.IotHubResource.getValidSkusWithHttpOperationResponse
     name: getValidSkusWithHttpOperationResponse
     children: []
@@ -2328,7 +2328,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubSkuDescriptionListResult>>
+          - Promise<IotHubSkuDescriptionListResult!@>>
   - uid: azure-arm-iothub.IotHubResource.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -2359,7 +2359,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubDescription>>
+          - Promise<IotHubDescription!@>>
   - uid: azure-arm-iothub.IotHubResource.importDevices
     name: importDevices
     children: []
@@ -2385,7 +2385,7 @@ items:
             The name of the IoT hub.
         - id: importDevicesParameters
           type:
-            - '@azure-arm-iothub.ImportDevicesRequest'
+            - azure-arm-iothub.ImportDevicesRequest
           description: |
             The parameters that specify the
             import devices operation.
@@ -2396,7 +2396,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.JobResponse>
+          - Promise<azure-arm-iothub.JobResponse>
   - uid: azure-arm-iothub.IotHubResource.importDevices_1
     name: importDevices
     children: []
@@ -2420,15 +2420,15 @@ items:
           description: ''
         - id: importDevicesParameters
           type:
-            - '@azure-arm-iothub.ImportDevicesRequest'
+            - azure-arm-iothub.ImportDevicesRequest
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.JobResponse>
+            - ServiceCallback<azure-arm-iothub.JobResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.JobResponse>
+          - Promise<azure-arm-iothub.JobResponse>
   - uid: azure-arm-iothub.IotHubResource.importDevices_2
     name: importDevices
     children: []
@@ -2452,7 +2452,7 @@ items:
           description: ''
         - id: importDevicesParameters
           type:
-            - '@azure-arm-iothub.ImportDevicesRequest'
+            - azure-arm-iothub.ImportDevicesRequest
           description: ''
         - id: options
           type:
@@ -2460,11 +2460,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.JobResponse>
+            - ServiceCallback<azure-arm-iothub.JobResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.JobResponse>
+          - Promise<azure-arm-iothub.JobResponse>
   - uid: azure-arm-iothub.IotHubResource.importDevicesWithHttpOperationResponse
     name: importDevicesWithHttpOperationResponse
     children: []
@@ -2491,7 +2491,7 @@ items:
             The name of the IoT hub.
         - id: importDevicesParameters
           type:
-            - '@azure-arm-iothub.ImportDevicesRequest'
+            - azure-arm-iothub.ImportDevicesRequest
           description: |
             The parameters that specify the
             import devices operation.
@@ -2502,7 +2502,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<JobResponse>>
+          - Promise<JobResponse!@>>
   - uid: azure-arm-iothub.IotHubResource.listByResourceGroup
     name: listByResourceGroup
     children: []
@@ -2528,7 +2528,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubDescriptionListResult>
   - uid: azure-arm-iothub.IotHubResource.listByResourceGroup_1
     name: listByResourceGroup
     children: []
@@ -2547,11 +2547,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubDescriptionListResult>
+            - ServiceCallback<azure-arm-iothub.IotHubDescriptionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubDescriptionListResult>
   - uid: azure-arm-iothub.IotHubResource.listByResourceGroup_2
     name: listByResourceGroup
     children: []
@@ -2574,11 +2574,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubDescriptionListResult>
+            - ServiceCallback<azure-arm-iothub.IotHubDescriptionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubDescriptionListResult>
   - uid: azure-arm-iothub.IotHubResource.listByResourceGroupNext_1
     name: listByResourceGroupNext
     children: []
@@ -2597,11 +2597,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubDescriptionListResult>
+            - ServiceCallback<azure-arm-iothub.IotHubDescriptionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubDescriptionListResult>
   - uid: azure-arm-iothub.IotHubResource.listByResourceGroupNext_2
     name: listByResourceGroupNext
     children: []
@@ -2624,11 +2624,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubDescriptionListResult>
+            - ServiceCallback<azure-arm-iothub.IotHubDescriptionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubDescriptionListResult>
   - uid: azure-arm-iothub.IotHubResource.listByResourceGroupNext
     name: listByResourceGroupNext
     children: []
@@ -2654,7 +2654,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubDescriptionListResult>
   - uid: >-
       azure-arm-iothub.IotHubResource.listByResourceGroupNextWithHttpOperationResponse
     name: listByResourceGroupNextWithHttpOperationResponse
@@ -2681,7 +2681,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubDescriptionListResult>>
+          - Promise<IotHubDescriptionListResult!@>>
   - uid: >-
       azure-arm-iothub.IotHubResource.listByResourceGroupWithHttpOperationResponse
     name: listByResourceGroupWithHttpOperationResponse
@@ -2708,7 +2708,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubDescriptionListResult>>
+          - Promise<IotHubDescriptionListResult!@>>
   - uid: azure-arm-iothub.IotHubResource.listBySubscription
     name: listBySubscription
     children: []
@@ -2726,7 +2726,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubDescriptionListResult>
   - uid: azure-arm-iothub.IotHubResource.listBySubscription_1
     name: listBySubscription
     children: []
@@ -2741,11 +2741,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubDescriptionListResult>
+            - ServiceCallback<azure-arm-iothub.IotHubDescriptionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubDescriptionListResult>
   - uid: azure-arm-iothub.IotHubResource.listBySubscription_2
     name: listBySubscription
     children: []
@@ -2764,11 +2764,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubDescriptionListResult>
+            - ServiceCallback<azure-arm-iothub.IotHubDescriptionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubDescriptionListResult>
   - uid: azure-arm-iothub.IotHubResource.listBySubscriptionNext
     name: listBySubscriptionNext
     children: []
@@ -2794,7 +2794,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubDescriptionListResult>
   - uid: azure-arm-iothub.IotHubResource.listBySubscriptionNext_1
     name: listBySubscriptionNext
     children: []
@@ -2813,11 +2813,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubDescriptionListResult>
+            - ServiceCallback<azure-arm-iothub.IotHubDescriptionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubDescriptionListResult>
   - uid: azure-arm-iothub.IotHubResource.listBySubscriptionNext_2
     name: listBySubscriptionNext
     children: []
@@ -2840,11 +2840,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.IotHubDescriptionListResult>
+            - ServiceCallback<azure-arm-iothub.IotHubDescriptionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.IotHubDescriptionListResult>
+          - Promise<azure-arm-iothub.IotHubDescriptionListResult>
   - uid: >-
       azure-arm-iothub.IotHubResource.listBySubscriptionNextWithHttpOperationResponse
     name: listBySubscriptionNextWithHttpOperationResponse
@@ -2871,7 +2871,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubDescriptionListResult>>
+          - Promise<IotHubDescriptionListResult!@>>
   - uid: >-
       azure-arm-iothub.IotHubResource.listBySubscriptionWithHttpOperationResponse
     name: listBySubscriptionWithHttpOperationResponse
@@ -2890,7 +2890,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubDescriptionListResult>>
+          - Promise<IotHubDescriptionListResult!@>>
   - uid: azure-arm-iothub.IotHubResource.listEventHubConsumerGroups_1
     name: listEventHubConsumerGroups
     children: []
@@ -2918,12 +2918,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-iothub.EventHubConsumerGroupsListResult>
+            - ServiceCallback<azure-arm-iothub.EventHubConsumerGroupsListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.EventHubConsumerGroupsListResult>
+          - Promise<azure-arm-iothub.EventHubConsumerGroupsListResult>
   - uid: azure-arm-iothub.IotHubResource.listEventHubConsumerGroups
     name: listEventHubConsumerGroups
     children: []
@@ -2960,7 +2959,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.EventHubConsumerGroupsListResult>
+          - Promise<azure-arm-iothub.EventHubConsumerGroupsListResult>
   - uid: azure-arm-iothub.IotHubResource.listEventHubConsumerGroups_2
     name: listEventHubConsumerGroups
     children: []
@@ -2992,12 +2991,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-iothub.EventHubConsumerGroupsListResult>
+            - ServiceCallback<azure-arm-iothub.EventHubConsumerGroupsListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.EventHubConsumerGroupsListResult>
+          - Promise<azure-arm-iothub.EventHubConsumerGroupsListResult>
   - uid: azure-arm-iothub.IotHubResource.listEventHubConsumerGroupsNext_1
     name: listEventHubConsumerGroupsNext
     children: []
@@ -3016,12 +3014,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-iothub.EventHubConsumerGroupsListResult>
+            - ServiceCallback<azure-arm-iothub.EventHubConsumerGroupsListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.EventHubConsumerGroupsListResult>
+          - Promise<azure-arm-iothub.EventHubConsumerGroupsListResult>
   - uid: azure-arm-iothub.IotHubResource.listEventHubConsumerGroupsNext_2
     name: listEventHubConsumerGroupsNext
     children: []
@@ -3044,12 +3041,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-iothub.EventHubConsumerGroupsListResult>
+            - ServiceCallback<azure-arm-iothub.EventHubConsumerGroupsListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.EventHubConsumerGroupsListResult>
+          - Promise<azure-arm-iothub.EventHubConsumerGroupsListResult>
   - uid: azure-arm-iothub.IotHubResource.listEventHubConsumerGroupsNext
     name: listEventHubConsumerGroupsNext
     children: []
@@ -3075,7 +3071,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.EventHubConsumerGroupsListResult>
+          - Promise<azure-arm-iothub.EventHubConsumerGroupsListResult>
   - uid: >-
       azure-arm-iothub.IotHubResource.listEventHubConsumerGroupsNextWithHttpOperationResponse
     name: listEventHubConsumerGroupsNextWithHttpOperationResponse
@@ -3103,7 +3099,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<EventHubConsumerGroupsListResult>>
+          - Promise<EventHubConsumerGroupsListResult!@>>
   - uid: >-
       azure-arm-iothub.IotHubResource.listEventHubConsumerGroupsWithHttpOperationResponse
     name: listEventHubConsumerGroupsWithHttpOperationResponse
@@ -3143,7 +3139,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<EventHubConsumerGroupsListResult>>
+          - Promise<EventHubConsumerGroupsListResult!@>>
   - uid: azure-arm-iothub.IotHubResource.listJobs
     name: listJobs
     children: []
@@ -3174,7 +3170,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.JobResponseListResult>
+          - Promise<azure-arm-iothub.JobResponseListResult>
   - uid: azure-arm-iothub.IotHubResource.listJobs_1
     name: listJobs
     children: []
@@ -3197,11 +3193,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.JobResponseListResult>
+            - ServiceCallback<azure-arm-iothub.JobResponseListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.JobResponseListResult>
+          - Promise<azure-arm-iothub.JobResponseListResult>
   - uid: azure-arm-iothub.IotHubResource.listJobs_2
     name: listJobs
     children: []
@@ -3228,11 +3224,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.JobResponseListResult>
+            - ServiceCallback<azure-arm-iothub.JobResponseListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.JobResponseListResult>
+          - Promise<azure-arm-iothub.JobResponseListResult>
   - uid: azure-arm-iothub.IotHubResource.listJobsNext
     name: listJobsNext
     children: []
@@ -3256,7 +3252,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.JobResponseListResult>
+          - Promise<azure-arm-iothub.JobResponseListResult>
   - uid: azure-arm-iothub.IotHubResource.listJobsNext_1
     name: listJobsNext
     children: []
@@ -3275,11 +3271,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.JobResponseListResult>
+            - ServiceCallback<azure-arm-iothub.JobResponseListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.JobResponseListResult>
+          - Promise<azure-arm-iothub.JobResponseListResult>
   - uid: azure-arm-iothub.IotHubResource.listJobsNext_2
     name: listJobsNext
     children: []
@@ -3302,11 +3298,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.JobResponseListResult>
+            - ServiceCallback<azure-arm-iothub.JobResponseListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.JobResponseListResult>
+          - Promise<azure-arm-iothub.JobResponseListResult>
   - uid: azure-arm-iothub.IotHubResource.listJobsNextWithHttpOperationResponse
     name: listJobsNextWithHttpOperationResponse
     children: []
@@ -3332,7 +3328,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<JobResponseListResult>>
+          - Promise<JobResponseListResult!@>>
   - uid: azure-arm-iothub.IotHubResource.listJobsWithHttpOperationResponse
     name: listJobsWithHttpOperationResponse
     children: []
@@ -3363,7 +3359,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<JobResponseListResult>>
+          - Promise<JobResponseListResult!@>>
   - uid: azure-arm-iothub.IotHubResource.listKeys
     name: listKeys
     children: []
@@ -3395,7 +3391,7 @@ items:
       return:
         type:
           - >-
-            Promise<@azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
+            Promise<azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
   - uid: azure-arm-iothub.IotHubResource.listKeys_1
     name: listKeys
     children: []
@@ -3420,12 +3416,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
+              ServiceCallback<azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
+            Promise<azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
   - uid: azure-arm-iothub.IotHubResource.listKeys_2
     name: listKeys
     children: []
@@ -3454,12 +3450,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
+              ServiceCallback<azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
+            Promise<azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
   - uid: azure-arm-iothub.IotHubResource.listKeysNext
     name: listKeysNext
     children: []
@@ -3484,7 +3480,7 @@ items:
       return:
         type:
           - >-
-            Promise<@azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
+            Promise<azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
   - uid: azure-arm-iothub.IotHubResource.listKeysNext_1
     name: listKeysNext
     children: []
@@ -3504,12 +3500,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
+              ServiceCallback<azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
+            Promise<azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
   - uid: azure-arm-iothub.IotHubResource.listKeysNext_2
     name: listKeysNext
     children: []
@@ -3533,12 +3529,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
+              ServiceCallback<azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
+            Promise<azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
   - uid: azure-arm-iothub.IotHubResource.listKeysNextWithHttpOperationResponse
     name: listKeysNextWithHttpOperationResponse
     children: []
@@ -3564,7 +3560,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SharedAccessSignatureAuthorizationRuleListResult>>
+          - Promise<SharedAccessSignatureAuthorizationRuleListResult!@>>
   - uid: azure-arm-iothub.IotHubResource.listKeysWithHttpOperationResponse
     name: listKeysWithHttpOperationResponse
     children: []
@@ -3595,4 +3591,237 @@ items:
           optional: true
       return:
         type:
-          - Promise<SharedAccessSignatureAuthorizationRuleListResult>>
+          - Promise<SharedAccessSignatureAuthorizationRuleListResult!@>>
+references:
+  - uid: azure-arm-iothub.IotHubDescription
+    spec.typeScript:
+      - name: IotHubDescription
+        fullName: IotHubDescription
+        uid: azure-arm-iothub.IotHubDescription
+  - uid: Promise<azure-arm-iothub.IotHubDescription>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: IotHubDescription
+        fullName: IotHubDescription
+        uid: azure-arm-iothub.IotHubDescription
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-iothub.IotHubDescription>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: IotHubDescription
+        fullName: IotHubDescription
+        uid: azure-arm-iothub.IotHubDescription
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-iothub.IotHubNameAvailabilityInfo>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: IotHubNameAvailabilityInfo
+        fullName: IotHubNameAvailabilityInfo
+        uid: azure-arm-iothub.IotHubNameAvailabilityInfo
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-iothub.IotHubNameAvailabilityInfo>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: IotHubNameAvailabilityInfo
+        fullName: IotHubNameAvailabilityInfo
+        uid: azure-arm-iothub.IotHubNameAvailabilityInfo
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-iothub.EventHubConsumerGroupInfo>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EventHubConsumerGroupInfo
+        fullName: EventHubConsumerGroupInfo
+        uid: azure-arm-iothub.EventHubConsumerGroupInfo
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-iothub.EventHubConsumerGroupInfo>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: EventHubConsumerGroupInfo
+        fullName: EventHubConsumerGroupInfo
+        uid: azure-arm-iothub.EventHubConsumerGroupInfo
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-iothub.ExportDevicesRequest
+    spec.typeScript:
+      - name: ExportDevicesRequest
+        fullName: ExportDevicesRequest
+        uid: azure-arm-iothub.ExportDevicesRequest
+  - uid: Promise<azure-arm-iothub.JobResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: JobResponse
+        fullName: JobResponse
+        uid: azure-arm-iothub.JobResponse
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-iothub.JobResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: JobResponse
+        fullName: JobResponse
+        uid: azure-arm-iothub.JobResponse
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: SharedAccessSignatureAuthorizationRule
+        fullName: SharedAccessSignatureAuthorizationRule
+        uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRule
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: SharedAccessSignatureAuthorizationRule
+        fullName: SharedAccessSignatureAuthorizationRule
+        uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRule
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-iothub.IotHubQuotaMetricInfoListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: IotHubQuotaMetricInfoListResult
+        fullName: IotHubQuotaMetricInfoListResult
+        uid: azure-arm-iothub.IotHubQuotaMetricInfoListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-iothub.IotHubQuotaMetricInfoListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: IotHubQuotaMetricInfoListResult
+        fullName: IotHubQuotaMetricInfoListResult
+        uid: azure-arm-iothub.IotHubQuotaMetricInfoListResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-iothub.RegistryStatistics>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: RegistryStatistics
+        fullName: RegistryStatistics
+        uid: azure-arm-iothub.RegistryStatistics
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-iothub.RegistryStatistics>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: RegistryStatistics
+        fullName: RegistryStatistics
+        uid: azure-arm-iothub.RegistryStatistics
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-iothub.IotHubSkuDescriptionListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: IotHubSkuDescriptionListResult
+        fullName: IotHubSkuDescriptionListResult
+        uid: azure-arm-iothub.IotHubSkuDescriptionListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-iothub.IotHubSkuDescriptionListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: IotHubSkuDescriptionListResult
+        fullName: IotHubSkuDescriptionListResult
+        uid: azure-arm-iothub.IotHubSkuDescriptionListResult
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-iothub.ImportDevicesRequest
+    spec.typeScript:
+      - name: ImportDevicesRequest
+        fullName: ImportDevicesRequest
+        uid: azure-arm-iothub.ImportDevicesRequest
+  - uid: Promise<azure-arm-iothub.IotHubDescriptionListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: IotHubDescriptionListResult
+        fullName: IotHubDescriptionListResult
+        uid: azure-arm-iothub.IotHubDescriptionListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-iothub.IotHubDescriptionListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: IotHubDescriptionListResult
+        fullName: IotHubDescriptionListResult
+        uid: azure-arm-iothub.IotHubDescriptionListResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-iothub.EventHubConsumerGroupsListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EventHubConsumerGroupsListResult
+        fullName: EventHubConsumerGroupsListResult
+        uid: azure-arm-iothub.EventHubConsumerGroupsListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-iothub.EventHubConsumerGroupsListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: EventHubConsumerGroupsListResult
+        fullName: EventHubConsumerGroupsListResult
+        uid: azure-arm-iothub.EventHubConsumerGroupsListResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-iothub.JobResponseListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: JobResponseListResult
+        fullName: JobResponseListResult
+        uid: azure-arm-iothub.JobResponseListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-iothub.JobResponseListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: JobResponseListResult
+        fullName: JobResponseListResult
+        uid: azure-arm-iothub.JobResponseListResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: SharedAccessSignatureAuthorizationRuleListResult
+        fullName: SharedAccessSignatureAuthorizationRuleListResult
+        uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: SharedAccessSignatureAuthorizationRuleListResult
+        fullName: SharedAccessSignatureAuthorizationRuleListResult
+        uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult
+      - name: '>'
+        fullName: '>'

@@ -19,7 +19,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.VirtualNetworkPeering.allowForwardedTraffic
     name: allowForwardedTraffic
@@ -132,7 +132,7 @@ items:
       content: 'remoteAddressSpace?: AddressSpace'
       return:
         type:
-          - '@azure-arm-network.AddressSpace'
+          - azure-arm-network.AddressSpace
   - uid: azure-arm-network.VirtualNetworkPeering.remoteVirtualNetwork
     name: remoteVirtualNetwork
     fullName: remoteVirtualNetwork
@@ -146,7 +146,7 @@ items:
       content: 'remoteVirtualNetwork?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.VirtualNetworkPeering.useRemoteGateways
     name: useRemoteGateways
     fullName: useRemoteGateways
@@ -161,3 +161,14 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: azure-arm-network.AddressSpace
+    spec.typeScript:
+      - name: AddressSpace
+        fullName: AddressSpace
+        uid: azure-arm-network.AddressSpace

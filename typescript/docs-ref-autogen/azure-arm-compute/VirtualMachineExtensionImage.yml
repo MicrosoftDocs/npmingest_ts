@@ -15,7 +15,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.Resource'
+      name: azure-arm-compute.Resource
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensionImage.computeRole
     name: computeRole
@@ -84,3 +84,9 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: azure-arm-compute.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-compute.Resource

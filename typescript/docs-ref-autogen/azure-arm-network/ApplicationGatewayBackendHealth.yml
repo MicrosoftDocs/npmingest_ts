@@ -23,4 +23,12 @@ items:
       content: 'backendAddressPools?: ApplicationGatewayBackendHealthPool[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayBackendHealthPool[]'
+          - 'azure-arm-network.ApplicationGatewayBackendHealthPool[]'
+references:
+  - uid: 'azure-arm-network.ApplicationGatewayBackendHealthPool[]'
+    spec.typeScript:
+      - name: ApplicationGatewayBackendHealthPool
+        fullName: ApplicationGatewayBackendHealthPool
+        uid: azure-arm-network.ApplicationGatewayBackendHealthPool
+      - name: '[]'
+        fullName: '[]'

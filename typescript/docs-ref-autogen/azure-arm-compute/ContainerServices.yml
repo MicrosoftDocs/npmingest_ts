@@ -77,7 +77,7 @@ items:
             the specified subscription and resource group.
         - id: parameters
           type:
-            - '@azure-arm-compute.ContainerService'
+            - azure-arm-compute.ContainerService
           description: |
             Parameters supplied to the Create or Update a
             Container Service operation.
@@ -88,7 +88,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerService>
+          - Promise<azure-arm-compute.ContainerService>
   - uid: azure-arm-compute.ContainerServices.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -112,15 +112,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-compute.ContainerService'
+            - azure-arm-compute.ContainerService
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ContainerService>
+            - ServiceCallback<azure-arm-compute.ContainerService>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerService>
+          - Promise<azure-arm-compute.ContainerService>
   - uid: azure-arm-compute.ContainerServices.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -144,7 +144,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-compute.ContainerService'
+            - azure-arm-compute.ContainerService
           description: ''
         - id: options
           type:
@@ -152,11 +152,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ContainerService>
+            - ServiceCallback<azure-arm-compute.ContainerService>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerService>
+          - Promise<azure-arm-compute.ContainerService>
   - uid: >-
       azure-arm-compute.ContainerServices.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
@@ -184,7 +184,7 @@ items:
             the specified subscription and resource group.
         - id: parameters
           type:
-            - '@azure-arm-compute.ContainerService'
+            - azure-arm-compute.ContainerService
           description: |
             Parameters supplied to the Create or Update a
             Container Service operation.
@@ -195,7 +195,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ContainerService>>
+          - Promise<ContainerService!@>>
   - uid: azure-arm-compute.ContainerServices.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -341,15 +341,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-compute.ContainerService'
+            - azure-arm-compute.ContainerService
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ContainerService>
+            - ServiceCallback<azure-arm-compute.ContainerService>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerService>
+          - Promise<azure-arm-compute.ContainerService>
   - uid: azure-arm-compute.ContainerServices.createOrUpdate
     name: createOrUpdate
     children: []
@@ -375,7 +375,7 @@ items:
             the specified subscription and resource group.
         - id: parameters
           type:
-            - '@azure-arm-compute.ContainerService'
+            - azure-arm-compute.ContainerService
           description: |
             Parameters supplied to the Create or Update a
             Container Service operation.
@@ -386,7 +386,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerService>
+          - Promise<azure-arm-compute.ContainerService>
   - uid: azure-arm-compute.ContainerServices.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -410,7 +410,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-compute.ContainerService'
+            - azure-arm-compute.ContainerService
           description: ''
         - id: options
           type:
@@ -418,11 +418,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ContainerService>
+            - ServiceCallback<azure-arm-compute.ContainerService>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerService>
+          - Promise<azure-arm-compute.ContainerService>
   - uid: >-
       azure-arm-compute.ContainerServices.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
@@ -450,7 +450,7 @@ items:
             the specified subscription and resource group.
         - id: parameters
           type:
-            - '@azure-arm-compute.ContainerService'
+            - azure-arm-compute.ContainerService
           description: |
             Parameters supplied to the Create or Update a
             Container Service operation.
@@ -461,7 +461,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ContainerService>>
+          - Promise<ContainerService!@>>
   - uid: azure-arm-compute.ContainerServices.deleteMethod
     name: deleteMethod
     children: []
@@ -612,7 +612,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerService>
+          - Promise<azure-arm-compute.ContainerService>
   - uid: azure-arm-compute.ContainerServices.get_1
     name: get
     children: []
@@ -635,11 +635,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ContainerService>
+            - ServiceCallback<azure-arm-compute.ContainerService>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerService>
+          - Promise<azure-arm-compute.ContainerService>
   - uid: azure-arm-compute.ContainerServices.get_2
     name: get
     children: []
@@ -666,11 +666,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ContainerService>
+            - ServiceCallback<azure-arm-compute.ContainerService>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerService>
+          - Promise<azure-arm-compute.ContainerService>
   - uid: azure-arm-compute.ContainerServices.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -701,7 +701,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ContainerService>>
+          - Promise<ContainerService!@>>
   - uid: azure-arm-compute.ContainerServices.list_1
     name: list
     children: []
@@ -714,11 +714,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ContainerServiceListResult>
+            - ServiceCallback<azure-arm-compute.ContainerServiceListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerServiceListResult>
+          - Promise<azure-arm-compute.ContainerServiceListResult>
   - uid: azure-arm-compute.ContainerServices.list_2
     name: list
     children: []
@@ -737,11 +737,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ContainerServiceListResult>
+            - ServiceCallback<azure-arm-compute.ContainerServiceListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerServiceListResult>
+          - Promise<azure-arm-compute.ContainerServiceListResult>
   - uid: azure-arm-compute.ContainerServices.list
     name: list
     children: []
@@ -759,7 +759,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerServiceListResult>
+          - Promise<azure-arm-compute.ContainerServiceListResult>
   - uid: azure-arm-compute.ContainerServices.listByResourceGroup
     name: listByResourceGroup
     children: []
@@ -784,7 +784,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerServiceListResult>
+          - Promise<azure-arm-compute.ContainerServiceListResult>
   - uid: azure-arm-compute.ContainerServices.listByResourceGroup_1
     name: listByResourceGroup
     children: []
@@ -803,11 +803,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ContainerServiceListResult>
+            - ServiceCallback<azure-arm-compute.ContainerServiceListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerServiceListResult>
+          - Promise<azure-arm-compute.ContainerServiceListResult>
   - uid: azure-arm-compute.ContainerServices.listByResourceGroup_2
     name: listByResourceGroup
     children: []
@@ -830,11 +830,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ContainerServiceListResult>
+            - ServiceCallback<azure-arm-compute.ContainerServiceListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerServiceListResult>
+          - Promise<azure-arm-compute.ContainerServiceListResult>
   - uid: azure-arm-compute.ContainerServices.listByResourceGroupNext
     name: listByResourceGroupNext
     children: []
@@ -860,7 +860,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerServiceListResult>
+          - Promise<azure-arm-compute.ContainerServiceListResult>
   - uid: azure-arm-compute.ContainerServices.listByResourceGroupNext_1
     name: listByResourceGroupNext
     children: []
@@ -879,11 +879,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ContainerServiceListResult>
+            - ServiceCallback<azure-arm-compute.ContainerServiceListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerServiceListResult>
+          - Promise<azure-arm-compute.ContainerServiceListResult>
   - uid: azure-arm-compute.ContainerServices.listByResourceGroupNext_2
     name: listByResourceGroupNext
     children: []
@@ -906,11 +906,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ContainerServiceListResult>
+            - ServiceCallback<azure-arm-compute.ContainerServiceListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerServiceListResult>
+          - Promise<azure-arm-compute.ContainerServiceListResult>
   - uid: >-
       azure-arm-compute.ContainerServices.listByResourceGroupNextWithHttpOperationResponse
     name: listByResourceGroupNextWithHttpOperationResponse
@@ -937,7 +937,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ContainerServiceListResult>>
+          - Promise<ContainerServiceListResult!@>>
   - uid: >-
       azure-arm-compute.ContainerServices.listByResourceGroupWithHttpOperationResponse
     name: listByResourceGroupWithHttpOperationResponse
@@ -963,7 +963,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ContainerServiceListResult>>
+          - Promise<ContainerServiceListResult!@>>
   - uid: azure-arm-compute.ContainerServices.listNext
     name: listNext
     children: []
@@ -987,7 +987,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerServiceListResult>
+          - Promise<azure-arm-compute.ContainerServiceListResult>
   - uid: azure-arm-compute.ContainerServices.listNext_1
     name: listNext
     children: []
@@ -1006,11 +1006,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ContainerServiceListResult>
+            - ServiceCallback<azure-arm-compute.ContainerServiceListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerServiceListResult>
+          - Promise<azure-arm-compute.ContainerServiceListResult>
   - uid: azure-arm-compute.ContainerServices.listNext_2
     name: listNext
     children: []
@@ -1033,11 +1033,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ContainerServiceListResult>
+            - ServiceCallback<azure-arm-compute.ContainerServiceListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ContainerServiceListResult>
+          - Promise<azure-arm-compute.ContainerServiceListResult>
   - uid: azure-arm-compute.ContainerServices.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -1063,7 +1063,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ContainerServiceListResult>>
+          - Promise<ContainerServiceListResult!@>>
   - uid: azure-arm-compute.ContainerServices.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1081,4 +1081,46 @@ items:
           optional: true
       return:
         type:
-          - Promise<ContainerServiceListResult>>
+          - Promise<ContainerServiceListResult!@>>
+references:
+  - uid: azure-arm-compute.ContainerService
+    spec.typeScript:
+      - name: ContainerService
+        fullName: ContainerService
+        uid: azure-arm-compute.ContainerService
+  - uid: Promise<azure-arm-compute.ContainerService>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ContainerService
+        fullName: ContainerService
+        uid: azure-arm-compute.ContainerService
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.ContainerService>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ContainerService
+        fullName: ContainerService
+        uid: azure-arm-compute.ContainerService
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-compute.ContainerServiceListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ContainerServiceListResult
+        fullName: ContainerServiceListResult
+        uid: azure-arm-compute.ContainerServiceListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.ContainerServiceListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ContainerServiceListResult
+        fullName: ContainerServiceListResult
+        uid: azure-arm-compute.ContainerServiceListResult
+      - name: '>'
+        fullName: '>'

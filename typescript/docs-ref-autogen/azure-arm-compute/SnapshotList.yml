@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-compute.Snapshot>
+      name: Array<azure-arm-compute.Snapshot>
     package: azure-arm-compute
   - uid: azure-arm-compute.SnapshotList.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-compute.Snapshot>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: Snapshot
+        fullName: Snapshot
+        uid: azure-arm-compute.Snapshot
+      - name: '>'
+        fullName: '>'

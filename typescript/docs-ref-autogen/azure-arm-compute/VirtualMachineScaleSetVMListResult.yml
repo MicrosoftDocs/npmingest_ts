@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-compute.VirtualMachineScaleSetVM>
+      name: Array<azure-arm-compute.VirtualMachineScaleSetVM>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMListResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-compute.VirtualMachineScaleSetVM>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: VirtualMachineScaleSetVM
+        fullName: VirtualMachineScaleSetVM
+        uid: azure-arm-compute.VirtualMachineScaleSetVM
+      - name: '>'
+        fullName: '>'

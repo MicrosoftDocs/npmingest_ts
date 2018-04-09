@@ -69,7 +69,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.Application>
+          - Promise<azure-arm-batch.Application>
   - uid: azure-arm-batch.ApplicationOperations.create_1
     name: create
     children: []
@@ -96,11 +96,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.Application>
+            - ServiceCallback<azure-arm-batch.Application>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.Application>
+          - Promise<azure-arm-batch.Application>
   - uid: azure-arm-batch.ApplicationOperations.create_2
     name: create
     children: []
@@ -132,11 +132,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.Application>
+            - ServiceCallback<azure-arm-batch.Application>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.Application>
+          - Promise<azure-arm-batch.Application>
   - uid: azure-arm-batch.ApplicationOperations.createWithHttpOperationResponse
     name: createWithHttpOperationResponse
     children: []
@@ -172,7 +172,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Application>>
+          - Promise<Application!@>>
   - uid: azure-arm-batch.ApplicationOperations.deleteMethod
     name: deleteMethod
     children: []
@@ -348,7 +348,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.Application>
+          - Promise<azure-arm-batch.Application>
   - uid: azure-arm-batch.ApplicationOperations.get_1
     name: get
     children: []
@@ -375,11 +375,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.Application>
+            - ServiceCallback<azure-arm-batch.Application>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.Application>
+          - Promise<azure-arm-batch.Application>
   - uid: azure-arm-batch.ApplicationOperations.get_2
     name: get
     children: []
@@ -411,11 +411,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.Application>
+            - ServiceCallback<azure-arm-batch.Application>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.Application>
+          - Promise<azure-arm-batch.Application>
   - uid: azure-arm-batch.ApplicationOperations.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -451,7 +451,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Application>>
+          - Promise<Application!@>>
   - uid: azure-arm-batch.ApplicationOperations.list
     name: list
     children: []
@@ -482,7 +482,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.ListApplicationsResult>
+          - Promise<azure-arm-batch.ListApplicationsResult>
   - uid: azure-arm-batch.ApplicationOperations.list_1
     name: list
     children: []
@@ -505,11 +505,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.ListApplicationsResult>
+            - ServiceCallback<azure-arm-batch.ListApplicationsResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.ListApplicationsResult>
+          - Promise<azure-arm-batch.ListApplicationsResult>
   - uid: azure-arm-batch.ApplicationOperations.list_2
     name: list
     children: []
@@ -536,11 +536,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.ListApplicationsResult>
+            - ServiceCallback<azure-arm-batch.ListApplicationsResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.ListApplicationsResult>
+          - Promise<azure-arm-batch.ListApplicationsResult>
   - uid: azure-arm-batch.ApplicationOperations.listNext
     name: listNext
     children: []
@@ -564,7 +564,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.ListApplicationsResult>
+          - Promise<azure-arm-batch.ListApplicationsResult>
   - uid: azure-arm-batch.ApplicationOperations.listNext_1
     name: listNext
     children: []
@@ -583,11 +583,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.ListApplicationsResult>
+            - ServiceCallback<azure-arm-batch.ListApplicationsResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.ListApplicationsResult>
+          - Promise<azure-arm-batch.ListApplicationsResult>
   - uid: azure-arm-batch.ApplicationOperations.listNext_2
     name: listNext
     children: []
@@ -610,11 +610,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.ListApplicationsResult>
+            - ServiceCallback<azure-arm-batch.ListApplicationsResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.ListApplicationsResult>
+          - Promise<azure-arm-batch.ListApplicationsResult>
   - uid: azure-arm-batch.ApplicationOperations.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -640,7 +640,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ListApplicationsResult>>
+          - Promise<ListApplicationsResult!@>>
   - uid: azure-arm-batch.ApplicationOperations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -671,7 +671,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ListApplicationsResult>>
+          - Promise<ListApplicationsResult!@>>
   - uid: azure-arm-batch.ApplicationOperations.update
     name: update
     children: []
@@ -703,7 +703,7 @@ items:
             The ID of the application.
         - id: parameters
           type:
-            - '@azure-arm-batch.ApplicationUpdateParameters'
+            - azure-arm-batch.ApplicationUpdateParameters
           description: |
             The parameters for the request.
         - id: options
@@ -741,7 +741,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-batch.ApplicationUpdateParameters'
+            - azure-arm-batch.ApplicationUpdateParameters
           description: ''
         - id: callback
           type:
@@ -777,7 +777,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-batch.ApplicationUpdateParameters'
+            - azure-arm-batch.ApplicationUpdateParameters
           description: ''
         - id: options
           type:
@@ -821,7 +821,7 @@ items:
             The ID of the application.
         - id: parameters
           type:
-            - '@azure-arm-batch.ApplicationUpdateParameters'
+            - azure-arm-batch.ApplicationUpdateParameters
           description: |
             The parameters for the request.
         - id: options
@@ -832,3 +832,45 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+references:
+  - uid: Promise<azure-arm-batch.Application>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Application
+        fullName: Application
+        uid: azure-arm-batch.Application
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch.Application>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Application
+        fullName: Application
+        uid: azure-arm-batch.Application
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-batch.ListApplicationsResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ListApplicationsResult
+        fullName: ListApplicationsResult
+        uid: azure-arm-batch.ListApplicationsResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch.ListApplicationsResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ListApplicationsResult
+        fullName: ListApplicationsResult
+        uid: azure-arm-batch.ListApplicationsResult
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-batch.ApplicationUpdateParameters
+    spec.typeScript:
+      - name: ApplicationUpdateParameters
+        fullName: ApplicationUpdateParameters
+        uid: azure-arm-batch.ApplicationUpdateParameters

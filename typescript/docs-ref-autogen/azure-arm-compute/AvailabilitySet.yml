@@ -14,7 +14,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.Resource'
+      name: azure-arm-compute.Resource
     package: azure-arm-compute
   - uid: azure-arm-compute.AvailabilitySet.platformFaultDomainCount
     name: platformFaultDomainCount
@@ -57,7 +57,7 @@ items:
       content: 'sku?: Sku'
       return:
         type:
-          - '@azure-arm-compute.Sku'
+          - azure-arm-compute.Sku
   - uid: azure-arm-compute.AvailabilitySet.statuses
     name: statuses
     fullName: statuses
@@ -71,7 +71,7 @@ items:
       content: 'statuses?: InstanceViewStatus[]'
       return:
         type:
-          - '@azure-arm-compute.InstanceViewStatus[]'
+          - 'azure-arm-compute.InstanceViewStatus[]'
   - uid: azure-arm-compute.AvailabilitySet.virtualMachines
     name: virtualMachines
     fullName: virtualMachines
@@ -85,4 +85,29 @@ items:
       content: 'virtualMachines?: SubResource[]'
       return:
         type:
-          - '@azure-arm-compute.SubResource[]'
+          - 'azure-arm-compute.SubResource[]'
+references:
+  - uid: azure-arm-compute.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-compute.Resource
+  - uid: azure-arm-compute.Sku
+    spec.typeScript:
+      - name: Sku
+        fullName: Sku
+        uid: azure-arm-compute.Sku
+  - uid: 'azure-arm-compute.InstanceViewStatus[]'
+    spec.typeScript:
+      - name: InstanceViewStatus
+        fullName: InstanceViewStatus
+        uid: azure-arm-compute.InstanceViewStatus
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-compute.SubResource[]'
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute.SubResource
+      - name: '[]'
+        fullName: '[]'

@@ -21,7 +21,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.Resource'
+      name: azure-arm-network.Resource
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteCrossConnection.bandwidthInMbps
     name: bandwidthInMbps
@@ -64,7 +64,7 @@ items:
       content: 'expressRouteCircuit?: ExpressRouteCircuitReference'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCircuitReference'
+          - azure-arm-network.ExpressRouteCircuitReference
   - uid: azure-arm-network.ExpressRouteCrossConnection.peeringLocation
     name: peeringLocation
     fullName: peeringLocation
@@ -92,7 +92,7 @@ items:
       content: 'peerings?: ExpressRouteCrossConnectionPeering[]'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCrossConnectionPeering[]'
+          - 'azure-arm-network.ExpressRouteCrossConnectionPeering[]'
   - uid: azure-arm-network.ExpressRouteCrossConnection.primaryAzurePort
     name: primaryAzurePort
     fullName: primaryAzurePort
@@ -178,3 +178,21 @@ items:
       return:
         type:
           - number
+references:
+  - uid: azure-arm-network.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network.Resource
+  - uid: azure-arm-network.ExpressRouteCircuitReference
+    spec.typeScript:
+      - name: ExpressRouteCircuitReference
+        fullName: ExpressRouteCircuitReference
+        uid: azure-arm-network.ExpressRouteCircuitReference
+  - uid: 'azure-arm-network.ExpressRouteCrossConnectionPeering[]'
+    spec.typeScript:
+      - name: ExpressRouteCrossConnectionPeering
+        fullName: ExpressRouteCrossConnectionPeering
+        uid: azure-arm-network.ExpressRouteCrossConnectionPeering
+      - name: '[]'
+        fullName: '[]'

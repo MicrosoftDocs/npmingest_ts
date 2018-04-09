@@ -78,7 +78,7 @@ items:
             The name of the route table.
         - id: parameters
           type:
-            - '@azure-arm-network.RouteTable'
+            - azure-arm-network.RouteTable
           description: |
             Parameters supplied to the create or update route
             table operation.
@@ -89,7 +89,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.RouteTable>
+          - Promise<azure-arm-network.RouteTable>
   - uid: azure-arm-network.RouteTables.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -112,15 +112,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.RouteTable'
+            - azure-arm-network.RouteTable
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTable>
+            - ServiceCallback<azure-arm-network.RouteTable>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTable>
+          - Promise<azure-arm-network.RouteTable>
   - uid: azure-arm-network.RouteTables.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -144,7 +144,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.RouteTable'
+            - azure-arm-network.RouteTable
           description: ''
         - id: options
           type:
@@ -152,11 +152,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTable>
+            - ServiceCallback<azure-arm-network.RouteTable>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTable>
+          - Promise<azure-arm-network.RouteTable>
   - uid: azure-arm-network.RouteTables.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
     children: []
@@ -182,7 +182,7 @@ items:
             The name of the route table.
         - id: parameters
           type:
-            - '@azure-arm-network.RouteTable'
+            - azure-arm-network.RouteTable
           description: |
             Parameters supplied to the create or update route
             table operation.
@@ -193,7 +193,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTable>>
+          - Promise<RouteTable!@>>
   - uid: azure-arm-network.RouteTables.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -336,7 +336,7 @@ items:
             The name of the route table.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update route table tags.
         - id: options
@@ -346,7 +346,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.RouteTable>
+          - Promise<azure-arm-network.RouteTable>
   - uid: azure-arm-network.RouteTables.beginUpdateTags_1
     name: beginUpdateTags
     children: []
@@ -369,15 +369,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTable>
+            - ServiceCallback<azure-arm-network.RouteTable>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTable>
+          - Promise<azure-arm-network.RouteTable>
   - uid: azure-arm-network.RouteTables.beginUpdateTags_2
     name: beginUpdateTags
     children: []
@@ -401,7 +401,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -409,11 +409,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTable>
+            - ServiceCallback<azure-arm-network.RouteTable>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTable>
+          - Promise<azure-arm-network.RouteTable>
   - uid: azure-arm-network.RouteTables.beginUpdateTagsWithHttpOperationResponse
     name: beginUpdateTagsWithHttpOperationResponse
     children: []
@@ -439,7 +439,7 @@ items:
             The name of the route table.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update route table tags.
         - id: options
@@ -449,7 +449,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTable>>
+          - Promise<RouteTable!@>>
   - uid: azure-arm-network.RouteTables.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -472,15 +472,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.RouteTable'
+            - azure-arm-network.RouteTable
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTable>
+            - ServiceCallback<azure-arm-network.RouteTable>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTable>
+          - Promise<azure-arm-network.RouteTable>
   - uid: azure-arm-network.RouteTables.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -504,7 +504,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.RouteTable'
+            - azure-arm-network.RouteTable
           description: ''
         - id: options
           type:
@@ -512,11 +512,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTable>
+            - ServiceCallback<azure-arm-network.RouteTable>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTable>
+          - Promise<azure-arm-network.RouteTable>
   - uid: azure-arm-network.RouteTables.createOrUpdate
     name: createOrUpdate
     children: []
@@ -541,7 +541,7 @@ items:
             The name of the route table.
         - id: parameters
           type:
-            - '@azure-arm-network.RouteTable'
+            - azure-arm-network.RouteTable
           description: |
             Parameters supplied to the create or update route
             table operation.
@@ -552,7 +552,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.RouteTable>
+          - Promise<azure-arm-network.RouteTable>
   - uid: azure-arm-network.RouteTables.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
     children: []
@@ -578,7 +578,7 @@ items:
             The name of the route table.
         - id: parameters
           type:
-            - '@azure-arm-network.RouteTable'
+            - azure-arm-network.RouteTable
           description: |
             Parameters supplied to the create or update route
             table operation.
@@ -589,7 +589,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTable>>
+          - Promise<RouteTable!@>>
   - uid: azure-arm-network.RouteTables.deleteMethod
     name: deleteMethod
     children: []
@@ -737,7 +737,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.RouteTable>
+          - Promise<azure-arm-network.RouteTable>
   - uid: azure-arm-network.RouteTables.get_1
     name: get
     children: []
@@ -760,11 +760,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTable>
+            - ServiceCallback<azure-arm-network.RouteTable>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTable>
+          - Promise<azure-arm-network.RouteTable>
   - uid: azure-arm-network.RouteTables.get_2
     name: get
     children: []
@@ -791,11 +791,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTable>
+            - ServiceCallback<azure-arm-network.RouteTable>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTable>
+          - Promise<azure-arm-network.RouteTable>
   - uid: azure-arm-network.RouteTables.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -825,7 +825,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTable>>
+          - Promise<RouteTable!@>>
   - uid: azure-arm-network.RouteTables.list_1
     name: list
     children: []
@@ -844,11 +844,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTableListResult>
+            - ServiceCallback<azure-arm-network.RouteTableListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTableListResult>
+          - Promise<azure-arm-network.RouteTableListResult>
   - uid: azure-arm-network.RouteTables.list_2
     name: list
     children: []
@@ -871,11 +871,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTableListResult>
+            - ServiceCallback<azure-arm-network.RouteTableListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTableListResult>
+          - Promise<azure-arm-network.RouteTableListResult>
   - uid: azure-arm-network.RouteTables.list
     name: list
     children: []
@@ -898,7 +898,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.RouteTableListResult>
+          - Promise<azure-arm-network.RouteTableListResult>
   - uid: azure-arm-network.RouteTables.listAll
     name: listAll
     children: []
@@ -916,7 +916,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.RouteTableListResult>
+          - Promise<azure-arm-network.RouteTableListResult>
   - uid: azure-arm-network.RouteTables.listAll_1
     name: listAll
     children: []
@@ -929,11 +929,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTableListResult>
+            - ServiceCallback<azure-arm-network.RouteTableListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTableListResult>
+          - Promise<azure-arm-network.RouteTableListResult>
   - uid: azure-arm-network.RouteTables.listAll_2
     name: listAll
     children: []
@@ -952,11 +952,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTableListResult>
+            - ServiceCallback<azure-arm-network.RouteTableListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTableListResult>
+          - Promise<azure-arm-network.RouteTableListResult>
   - uid: azure-arm-network.RouteTables.listAllNext
     name: listAllNext
     children: []
@@ -980,7 +980,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.RouteTableListResult>
+          - Promise<azure-arm-network.RouteTableListResult>
   - uid: azure-arm-network.RouteTables.listAllNext_1
     name: listAllNext
     children: []
@@ -999,11 +999,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTableListResult>
+            - ServiceCallback<azure-arm-network.RouteTableListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTableListResult>
+          - Promise<azure-arm-network.RouteTableListResult>
   - uid: azure-arm-network.RouteTables.listAllNext_2
     name: listAllNext
     children: []
@@ -1026,11 +1026,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTableListResult>
+            - ServiceCallback<azure-arm-network.RouteTableListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTableListResult>
+          - Promise<azure-arm-network.RouteTableListResult>
   - uid: azure-arm-network.RouteTables.listAllNextWithHttpOperationResponse
     name: listAllNextWithHttpOperationResponse
     children: []
@@ -1056,7 +1056,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTableListResult>>
+          - Promise<RouteTableListResult!@>>
   - uid: azure-arm-network.RouteTables.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse
     children: []
@@ -1074,7 +1074,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTableListResult>>
+          - Promise<RouteTableListResult!@>>
   - uid: azure-arm-network.RouteTables.listNext
     name: listNext
     children: []
@@ -1098,7 +1098,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.RouteTableListResult>
+          - Promise<azure-arm-network.RouteTableListResult>
   - uid: azure-arm-network.RouteTables.listNext_1
     name: listNext
     children: []
@@ -1117,11 +1117,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTableListResult>
+            - ServiceCallback<azure-arm-network.RouteTableListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTableListResult>
+          - Promise<azure-arm-network.RouteTableListResult>
   - uid: azure-arm-network.RouteTables.listNext_2
     name: listNext
     children: []
@@ -1144,11 +1144,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTableListResult>
+            - ServiceCallback<azure-arm-network.RouteTableListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTableListResult>
+          - Promise<azure-arm-network.RouteTableListResult>
   - uid: azure-arm-network.RouteTables.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -1174,7 +1174,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTableListResult>>
+          - Promise<RouteTableListResult!@>>
   - uid: azure-arm-network.RouteTables.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1199,7 +1199,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTableListResult>>
+          - Promise<RouteTableListResult!@>>
   - uid: azure-arm-network.RouteTables.updateTags
     name: updateTags
     children: []
@@ -1224,7 +1224,7 @@ items:
             The name of the route table.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update route table tags.
         - id: options
@@ -1234,7 +1234,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.RouteTable>
+          - Promise<azure-arm-network.RouteTable>
   - uid: azure-arm-network.RouteTables.updateTags_1
     name: updateTags
     children: []
@@ -1257,15 +1257,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTable>
+            - ServiceCallback<azure-arm-network.RouteTable>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTable>
+          - Promise<azure-arm-network.RouteTable>
   - uid: azure-arm-network.RouteTables.updateTags_2
     name: updateTags
     children: []
@@ -1289,7 +1289,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -1297,11 +1297,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.RouteTable>
+            - ServiceCallback<azure-arm-network.RouteTable>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.RouteTable>
+          - Promise<azure-arm-network.RouteTable>
   - uid: azure-arm-network.RouteTables.updateTagsWithHttpOperationResponse
     name: updateTagsWithHttpOperationResponse
     children: []
@@ -1326,7 +1326,7 @@ items:
             The name of the route table.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update route table tags.
         - id: options
@@ -1336,4 +1336,51 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTable>>
+          - Promise<RouteTable!@>>
+references:
+  - uid: azure-arm-network.RouteTable
+    spec.typeScript:
+      - name: RouteTable
+        fullName: RouteTable
+        uid: azure-arm-network.RouteTable
+  - uid: Promise<azure-arm-network.RouteTable>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: RouteTable
+        fullName: RouteTable
+        uid: azure-arm-network.RouteTable
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.RouteTable>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: RouteTable
+        fullName: RouteTable
+        uid: azure-arm-network.RouteTable
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.TagsObject
+    spec.typeScript:
+      - name: TagsObject
+        fullName: TagsObject
+        uid: azure-arm-network.TagsObject
+  - uid: Promise<azure-arm-network.RouteTableListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: RouteTableListResult
+        fullName: RouteTableListResult
+        uid: azure-arm-network.RouteTableListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.RouteTableListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: RouteTableListResult
+        fullName: RouteTableListResult
+        uid: azure-arm-network.RouteTableListResult
+      - name: '>'
+        fullName: '>'

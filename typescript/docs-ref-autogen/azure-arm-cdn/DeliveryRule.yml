@@ -24,7 +24,7 @@ items:
       content: 'actions: DeliveryRuleAction[]'
       return:
         type:
-          - '@azure-arm-cdn.DeliveryRuleAction[]'
+          - 'azure-arm-cdn.DeliveryRuleAction[]'
   - uid: azure-arm-cdn.DeliveryRule.conditions
     name: conditions
     fullName: conditions
@@ -38,7 +38,7 @@ items:
       content: 'conditions?: DeliveryRuleCondition[]'
       return:
         type:
-          - '@azure-arm-cdn.DeliveryRuleCondition[]'
+          - 'azure-arm-cdn.DeliveryRuleCondition[]'
   - uid: azure-arm-cdn.DeliveryRule.order
     name: order
     fullName: order
@@ -52,3 +52,18 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'azure-arm-cdn.DeliveryRuleAction[]'
+    spec.typeScript:
+      - name: DeliveryRuleAction
+        fullName: DeliveryRuleAction
+        uid: azure-arm-cdn.DeliveryRuleAction
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-cdn.DeliveryRuleCondition[]'
+    spec.typeScript:
+      - name: DeliveryRuleCondition
+        fullName: DeliveryRuleCondition
+        uid: azure-arm-cdn.DeliveryRuleCondition
+      - name: '[]'
+        fullName: '[]'

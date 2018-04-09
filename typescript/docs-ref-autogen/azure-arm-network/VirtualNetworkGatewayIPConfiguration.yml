@@ -16,7 +16,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.VirtualNetworkGatewayIPConfiguration.etag
     name: etag
@@ -88,7 +88,7 @@ items:
       content: 'publicIPAddress?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.VirtualNetworkGatewayIPConfiguration.subnet
     name: subnet
     fullName: subnet
@@ -102,4 +102,10 @@ items:
       content: 'subnet?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource

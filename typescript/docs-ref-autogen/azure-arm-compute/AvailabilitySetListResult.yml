@@ -10,7 +10,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-compute.AvailabilitySet>
+      name: Array<azure-arm-compute.AvailabilitySet>
     package: azure-arm-compute
   - uid: azure-arm-compute.AvailabilitySetListResult.Array
     name: Array
@@ -25,3 +25,13 @@ items:
       return:
         type:
           - ArrayConstructor
+references:
+  - uid: Array<azure-arm-compute.AvailabilitySet>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: AvailabilitySet
+        fullName: AvailabilitySet
+        uid: azure-arm-compute.AvailabilitySet
+      - name: '>'
+        fullName: '>'

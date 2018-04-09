@@ -13,7 +13,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.VpnClientRevokedCertificate.etag
     name: etag
@@ -71,3 +71,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource

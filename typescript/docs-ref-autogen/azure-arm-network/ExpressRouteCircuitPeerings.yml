@@ -74,7 +74,7 @@ items:
             The name of the peering.
         - id: peeringParameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuitPeering'
+            - azure-arm-network.ExpressRouteCircuitPeering
           description: |
             Parameters supplied to the create or
             update express route circuit peering operation.
@@ -85,7 +85,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitPeering>
+          - Promise<azure-arm-network.ExpressRouteCircuitPeering>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -114,15 +114,15 @@ items:
           description: ''
         - id: peeringParameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuitPeering'
+            - azure-arm-network.ExpressRouteCircuitPeering
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitPeering>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitPeering>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitPeering>
+          - Promise<azure-arm-network.ExpressRouteCircuitPeering>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -151,7 +151,7 @@ items:
           description: ''
         - id: peeringParameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuitPeering'
+            - azure-arm-network.ExpressRouteCircuitPeering
           description: ''
         - id: options
           type:
@@ -159,11 +159,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitPeering>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitPeering>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitPeering>
+          - Promise<azure-arm-network.ExpressRouteCircuitPeering>
   - uid: >-
       azure-arm-network.ExpressRouteCircuitPeerings.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
@@ -195,7 +195,7 @@ items:
             The name of the peering.
         - id: peeringParameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuitPeering'
+            - azure-arm-network.ExpressRouteCircuitPeering
           description: |
             Parameters supplied to the create or
             update express route circuit peering operation.
@@ -206,7 +206,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitPeering>>
+          - Promise<ExpressRouteCircuitPeering!@>>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -375,7 +375,7 @@ items:
             The name of the peering.
         - id: peeringParameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuitPeering'
+            - azure-arm-network.ExpressRouteCircuitPeering
           description: |
             Parameters supplied to the create or
             update express route circuit peering operation.
@@ -386,7 +386,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitPeering>
+          - Promise<azure-arm-network.ExpressRouteCircuitPeering>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -414,15 +414,15 @@ items:
           description: ''
         - id: peeringParameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuitPeering'
+            - azure-arm-network.ExpressRouteCircuitPeering
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitPeering>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitPeering>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitPeering>
+          - Promise<azure-arm-network.ExpressRouteCircuitPeering>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -451,7 +451,7 @@ items:
           description: ''
         - id: peeringParameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuitPeering'
+            - azure-arm-network.ExpressRouteCircuitPeering
           description: ''
         - id: options
           type:
@@ -459,11 +459,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitPeering>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitPeering>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitPeering>
+          - Promise<azure-arm-network.ExpressRouteCircuitPeering>
   - uid: >-
       azure-arm-network.ExpressRouteCircuitPeerings.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
@@ -495,7 +495,7 @@ items:
             The name of the peering.
         - id: peeringParameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuitPeering'
+            - azure-arm-network.ExpressRouteCircuitPeering
           description: |
             Parameters supplied to the create or
             update express route circuit peering operation.
@@ -506,7 +506,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitPeering>>
+          - Promise<ExpressRouteCircuitPeering!@>>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.deleteMethod
     name: deleteMethod
     children: []
@@ -671,11 +671,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitPeering>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitPeering>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitPeering>
+          - Promise<azure-arm-network.ExpressRouteCircuitPeering>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.get_2
     name: get
     children: []
@@ -707,11 +707,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCircuitPeering>
+            - ServiceCallback<azure-arm-network.ExpressRouteCircuitPeering>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitPeering>
+          - Promise<azure-arm-network.ExpressRouteCircuitPeering>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.get
     name: get
     children: []
@@ -746,7 +746,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitPeering>
+          - Promise<azure-arm-network.ExpressRouteCircuitPeering>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -781,7 +781,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitPeering>>
+          - Promise<ExpressRouteCircuitPeering!@>>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.list
     name: list
     children: []
@@ -811,7 +811,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitPeeringListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitPeeringListResult>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.list_1
     name: list
     children: []
@@ -835,11 +835,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitPeeringListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitPeeringListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitPeeringListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitPeeringListResult>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.list_2
     name: list
     children: []
@@ -868,11 +868,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitPeeringListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitPeeringListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitPeeringListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitPeeringListResult>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.listNext
     name: listNext
     children: []
@@ -896,7 +896,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitPeeringListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitPeeringListResult>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.listNext_1
     name: listNext
     children: []
@@ -916,11 +916,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitPeeringListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitPeeringListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitPeeringListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitPeeringListResult>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.listNext_2
     name: listNext
     children: []
@@ -944,11 +944,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitPeeringListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitPeeringListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitPeeringListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitPeeringListResult>
   - uid: >-
       azure-arm-network.ExpressRouteCircuitPeerings.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
@@ -975,7 +975,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitPeeringListResult>>
+          - Promise<ExpressRouteCircuitPeeringListResult!@>>
   - uid: >-
       azure-arm-network.ExpressRouteCircuitPeerings.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -1006,4 +1006,46 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitPeeringListResult>>
+          - Promise<ExpressRouteCircuitPeeringListResult!@>>
+references:
+  - uid: azure-arm-network.ExpressRouteCircuitPeering
+    spec.typeScript:
+      - name: ExpressRouteCircuitPeering
+        fullName: ExpressRouteCircuitPeering
+        uid: azure-arm-network.ExpressRouteCircuitPeering
+  - uid: Promise<azure-arm-network.ExpressRouteCircuitPeering>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteCircuitPeering
+        fullName: ExpressRouteCircuitPeering
+        uid: azure-arm-network.ExpressRouteCircuitPeering
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ExpressRouteCircuitPeering>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteCircuitPeering
+        fullName: ExpressRouteCircuitPeering
+        uid: azure-arm-network.ExpressRouteCircuitPeering
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.ExpressRouteCircuitPeeringListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteCircuitPeeringListResult
+        fullName: ExpressRouteCircuitPeeringListResult
+        uid: azure-arm-network.ExpressRouteCircuitPeeringListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ExpressRouteCircuitPeeringListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteCircuitPeeringListResult
+        fullName: ExpressRouteCircuitPeeringListResult
+        uid: azure-arm-network.ExpressRouteCircuitPeeringListResult
+      - name: '>'
+        fullName: '>'

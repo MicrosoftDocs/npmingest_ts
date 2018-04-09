@@ -36,7 +36,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteServiceProviderListResult>
+          - Promise<azure-arm-network.ExpressRouteServiceProviderListResult>
   - uid: azure-arm-network.ExpressRouteServiceProviders.list_1
     name: list
     children: []
@@ -52,11 +52,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteServiceProviderListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteServiceProviderListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteServiceProviderListResult>
+          - Promise<azure-arm-network.ExpressRouteServiceProviderListResult>
   - uid: azure-arm-network.ExpressRouteServiceProviders.list_2
     name: list
     children: []
@@ -76,11 +76,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteServiceProviderListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteServiceProviderListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteServiceProviderListResult>
+          - Promise<azure-arm-network.ExpressRouteServiceProviderListResult>
   - uid: azure-arm-network.ExpressRouteServiceProviders.listNext
     name: listNext
     children: []
@@ -104,7 +104,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteServiceProviderListResult>
+          - Promise<azure-arm-network.ExpressRouteServiceProviderListResult>
   - uid: azure-arm-network.ExpressRouteServiceProviders.listNext_1
     name: listNext
     children: []
@@ -124,11 +124,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteServiceProviderListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteServiceProviderListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteServiceProviderListResult>
+          - Promise<azure-arm-network.ExpressRouteServiceProviderListResult>
   - uid: azure-arm-network.ExpressRouteServiceProviders.listNext_2
     name: listNext
     children: []
@@ -152,11 +152,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteServiceProviderListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteServiceProviderListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteServiceProviderListResult>
+          - Promise<azure-arm-network.ExpressRouteServiceProviderListResult>
   - uid: >-
       azure-arm-network.ExpressRouteServiceProviders.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
@@ -183,7 +183,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteServiceProviderListResult>>
+          - Promise<ExpressRouteServiceProviderListResult!@>>
   - uid: >-
       azure-arm-network.ExpressRouteServiceProviders.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -202,4 +202,23 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteServiceProviderListResult>>
+          - Promise<ExpressRouteServiceProviderListResult!@>>
+references:
+  - uid: Promise<azure-arm-network.ExpressRouteServiceProviderListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteServiceProviderListResult
+        fullName: ExpressRouteServiceProviderListResult
+        uid: azure-arm-network.ExpressRouteServiceProviderListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ExpressRouteServiceProviderListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteServiceProviderListResult
+        fullName: ExpressRouteServiceProviderListResult
+        uid: azure-arm-network.ExpressRouteServiceProviderListResult
+      - name: '>'
+        fullName: '>'

@@ -24,7 +24,7 @@ items:
       content: 'capacity: IotHubCapacity'
       return:
         type:
-          - '@azure-arm-iothub.IotHubCapacity'
+          - azure-arm-iothub.IotHubCapacity
   - uid: azure-arm-iothub.IotHubSkuDescription.resourceType
     name: resourceType
     fullName: resourceType
@@ -51,4 +51,15 @@ items:
       content: 'sku: IotHubSkuInfo'
       return:
         type:
-          - '@azure-arm-iothub.IotHubSkuInfo'
+          - azure-arm-iothub.IotHubSkuInfo
+references:
+  - uid: azure-arm-iothub.IotHubCapacity
+    spec.typeScript:
+      - name: IotHubCapacity
+        fullName: IotHubCapacity
+        uid: azure-arm-iothub.IotHubCapacity
+  - uid: azure-arm-iothub.IotHubSkuInfo
+    spec.typeScript:
+      - name: IotHubSkuInfo
+        fullName: IotHubSkuInfo
+        uid: azure-arm-iothub.IotHubSkuInfo

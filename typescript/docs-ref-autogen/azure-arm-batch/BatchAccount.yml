@@ -18,7 +18,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-batch.Resource'
+      name: azure-arm-batch.Resource
     package: azure-arm-batch
   - uid: azure-arm-batch.BatchAccount.accountEndpoint
     name: accountEndpoint
@@ -61,7 +61,7 @@ items:
       content: 'autoStorage?: AutoStorageProperties'
       return:
         type:
-          - '@azure-arm-batch.AutoStorageProperties'
+          - azure-arm-batch.AutoStorageProperties
   - uid: azure-arm-batch.BatchAccount.dedicatedCoreQuota
     name: dedicatedCoreQuota
     fullName: dedicatedCoreQuota
@@ -89,7 +89,7 @@ items:
       content: 'keyVaultReference?: KeyVaultReference'
       return:
         type:
-          - '@azure-arm-batch.KeyVaultReference'
+          - azure-arm-batch.KeyVaultReference
   - uid: azure-arm-batch.BatchAccount.lowPriorityCoreQuota
     name: lowPriorityCoreQuota
     fullName: lowPriorityCoreQuota
@@ -146,3 +146,19 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-batch.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-batch.Resource
+  - uid: azure-arm-batch.AutoStorageProperties
+    spec.typeScript:
+      - name: AutoStorageProperties
+        fullName: AutoStorageProperties
+        uid: azure-arm-batch.AutoStorageProperties
+  - uid: azure-arm-batch.KeyVaultReference
+    spec.typeScript:
+      - name: KeyVaultReference
+        fullName: KeyVaultReference
+        uid: azure-arm-batch.KeyVaultReference

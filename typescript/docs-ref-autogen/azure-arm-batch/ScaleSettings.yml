@@ -24,7 +24,7 @@ items:
       content: 'autoScale?: AutoScaleSettings'
       return:
         type:
-          - '@azure-arm-batch.AutoScaleSettings'
+          - azure-arm-batch.AutoScaleSettings
   - uid: azure-arm-batch.ScaleSettings.fixedScale
     name: fixedScale
     fullName: fixedScale
@@ -38,4 +38,15 @@ items:
       content: 'fixedScale?: FixedScaleSettings'
       return:
         type:
-          - '@azure-arm-batch.FixedScaleSettings'
+          - azure-arm-batch.FixedScaleSettings
+references:
+  - uid: azure-arm-batch.AutoScaleSettings
+    spec.typeScript:
+      - name: AutoScaleSettings
+        fullName: AutoScaleSettings
+        uid: azure-arm-batch.AutoScaleSettings
+  - uid: azure-arm-batch.FixedScaleSettings
+    spec.typeScript:
+      - name: FixedScaleSettings
+        fullName: FixedScaleSettings
+        uid: azure-arm-batch.FixedScaleSettings

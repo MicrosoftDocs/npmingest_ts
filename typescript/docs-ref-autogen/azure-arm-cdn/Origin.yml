@@ -14,7 +14,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-cdn.TrackedResource'
+      name: azure-arm-cdn.TrackedResource
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Origin.hostName
     name: hostName
@@ -85,3 +85,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-cdn.TrackedResource
+    spec.typeScript:
+      - name: TrackedResource
+        fullName: TrackedResource
+        uid: azure-arm-cdn.TrackedResource

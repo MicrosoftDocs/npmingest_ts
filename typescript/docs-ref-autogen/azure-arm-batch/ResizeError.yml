@@ -38,7 +38,7 @@ items:
       content: 'details?: ResizeError[]'
       return:
         type:
-          - '@azure-arm-batch.ResizeError[]'
+          - 'azure-arm-batch.ResizeError[]'
   - uid: azure-arm-batch.ResizeError.message
     name: message
     fullName: message
@@ -52,3 +52,11 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'azure-arm-batch.ResizeError[]'
+    spec.typeScript:
+      - name: ResizeError
+        fullName: ResizeError
+        uid: azure-arm-batch.ResizeError
+      - name: '[]'
+        fullName: '[]'

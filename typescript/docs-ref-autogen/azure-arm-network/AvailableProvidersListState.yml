@@ -25,7 +25,7 @@ items:
       content: 'cities?: AvailableProvidersListCity[]'
       return:
         type:
-          - '@azure-arm-network.AvailableProvidersListCity[]'
+          - 'azure-arm-network.AvailableProvidersListCity[]'
   - uid: azure-arm-network.AvailableProvidersListState.providers
     name: providers
     fullName: providers
@@ -54,3 +54,11 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'azure-arm-network.AvailableProvidersListCity[]'
+    spec.typeScript:
+      - name: AvailableProvidersListCity
+        fullName: AvailableProvidersListCity
+        uid: azure-arm-network.AvailableProvidersListCity
+      - name: '[]'
+        fullName: '[]'

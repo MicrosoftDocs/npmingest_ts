@@ -95,7 +95,7 @@ items:
             The name of the virtual network.
         - id: parameters
           type:
-            - '@azure-arm-network.VirtualNetwork'
+            - azure-arm-network.VirtualNetwork
           description: |
             Parameters supplied to the create or update
             virtual network operation
@@ -106,7 +106,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetwork>
+          - Promise<azure-arm-network.VirtualNetwork>
   - uid: azure-arm-network.VirtualNetworks.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -130,15 +130,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.VirtualNetwork'
+            - azure-arm-network.VirtualNetwork
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetwork>
+            - ServiceCallback<azure-arm-network.VirtualNetwork>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetwork>
+          - Promise<azure-arm-network.VirtualNetwork>
   - uid: azure-arm-network.VirtualNetworks.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -162,7 +162,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.VirtualNetwork'
+            - azure-arm-network.VirtualNetwork
           description: ''
         - id: options
           type:
@@ -170,11 +170,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetwork>
+            - ServiceCallback<azure-arm-network.VirtualNetwork>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetwork>
+          - Promise<azure-arm-network.VirtualNetwork>
   - uid: >-
       azure-arm-network.VirtualNetworks.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
@@ -201,7 +201,7 @@ items:
             The name of the virtual network.
         - id: parameters
           type:
-            - '@azure-arm-network.VirtualNetwork'
+            - azure-arm-network.VirtualNetwork
           description: |
             Parameters supplied to the create or update
             virtual network operation
@@ -212,7 +212,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetwork>>
+          - Promise<VirtualNetwork!@>>
   - uid: azure-arm-network.VirtualNetworks.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -356,15 +356,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetwork>
+            - ServiceCallback<azure-arm-network.VirtualNetwork>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetwork>
+          - Promise<azure-arm-network.VirtualNetwork>
   - uid: azure-arm-network.VirtualNetworks.beginUpdateTags_2
     name: beginUpdateTags
     children: []
@@ -388,7 +388,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -396,11 +396,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetwork>
+            - ServiceCallback<azure-arm-network.VirtualNetwork>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetwork>
+          - Promise<azure-arm-network.VirtualNetwork>
   - uid: azure-arm-network.VirtualNetworks.beginUpdateTags
     name: beginUpdateTags
     children: []
@@ -425,7 +425,7 @@ items:
             The name of the virtual network.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update virtual network
             tags.
@@ -436,7 +436,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetwork>
+          - Promise<azure-arm-network.VirtualNetwork>
   - uid: azure-arm-network.VirtualNetworks.beginUpdateTagsWithHttpOperationResponse
     name: beginUpdateTagsWithHttpOperationResponse
     children: []
@@ -462,7 +462,7 @@ items:
             The name of the virtual network.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update virtual network
             tags.
@@ -473,7 +473,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetwork>>
+          - Promise<VirtualNetwork!@>>
   - uid: azure-arm-network.VirtualNetworks.checkIPAddressAvailability
     name: checkIPAddressAvailability
     children: []
@@ -503,7 +503,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.IPAddressAvailabilityResult>
+          - Promise<azure-arm-network.IPAddressAvailabilityResult>
   - uid: azure-arm-network.VirtualNetworks.checkIPAddressAvailability_1
     name: checkIPAddressAvailability
     children: []
@@ -527,11 +527,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.IPAddressAvailabilityResult>
+            - ServiceCallback<azure-arm-network.IPAddressAvailabilityResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.IPAddressAvailabilityResult>
+          - Promise<azure-arm-network.IPAddressAvailabilityResult>
   - uid: azure-arm-network.VirtualNetworks.checkIPAddressAvailability_2
     name: checkIPAddressAvailability
     children: []
@@ -559,11 +559,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.IPAddressAvailabilityResult>
+            - ServiceCallback<azure-arm-network.IPAddressAvailabilityResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.IPAddressAvailabilityResult>
+          - Promise<azure-arm-network.IPAddressAvailabilityResult>
   - uid: >-
       azure-arm-network.VirtualNetworks.checkIPAddressAvailabilityWithHttpOperationResponse
     name: checkIPAddressAvailabilityWithHttpOperationResponse
@@ -595,7 +595,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IPAddressAvailabilityResult>>
+          - Promise<IPAddressAvailabilityResult!@>>
   - uid: azure-arm-network.VirtualNetworks.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -619,15 +619,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.VirtualNetwork'
+            - azure-arm-network.VirtualNetwork
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetwork>
+            - ServiceCallback<azure-arm-network.VirtualNetwork>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetwork>
+          - Promise<azure-arm-network.VirtualNetwork>
   - uid: azure-arm-network.VirtualNetworks.createOrUpdate
     name: createOrUpdate
     children: []
@@ -652,7 +652,7 @@ items:
             The name of the virtual network.
         - id: parameters
           type:
-            - '@azure-arm-network.VirtualNetwork'
+            - azure-arm-network.VirtualNetwork
           description: |
             Parameters supplied to the create or update
             virtual network operation
@@ -663,7 +663,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetwork>
+          - Promise<azure-arm-network.VirtualNetwork>
   - uid: azure-arm-network.VirtualNetworks.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -687,7 +687,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.VirtualNetwork'
+            - azure-arm-network.VirtualNetwork
           description: ''
         - id: options
           type:
@@ -695,11 +695,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetwork>
+            - ServiceCallback<azure-arm-network.VirtualNetwork>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetwork>
+          - Promise<azure-arm-network.VirtualNetwork>
   - uid: azure-arm-network.VirtualNetworks.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
     children: []
@@ -725,7 +725,7 @@ items:
             The name of the virtual network.
         - id: parameters
           type:
-            - '@azure-arm-network.VirtualNetwork'
+            - azure-arm-network.VirtualNetwork
           description: |
             Parameters supplied to the create or update
             virtual network operation
@@ -736,7 +736,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetwork>>
+          - Promise<VirtualNetwork!@>>
   - uid: azure-arm-network.VirtualNetworks.deleteMethod
     name: deleteMethod
     children: []
@@ -884,7 +884,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetwork>
+          - Promise<azure-arm-network.VirtualNetwork>
   - uid: azure-arm-network.VirtualNetworks.get_1
     name: get
     children: []
@@ -907,11 +907,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetwork>
+            - ServiceCallback<azure-arm-network.VirtualNetwork>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetwork>
+          - Promise<azure-arm-network.VirtualNetwork>
   - uid: azure-arm-network.VirtualNetworks.get_2
     name: get
     children: []
@@ -938,11 +938,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetwork>
+            - ServiceCallback<azure-arm-network.VirtualNetwork>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetwork>
+          - Promise<azure-arm-network.VirtualNetwork>
   - uid: azure-arm-network.VirtualNetworks.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -972,7 +972,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetwork>>
+          - Promise<VirtualNetwork!@>>
   - uid: azure-arm-network.VirtualNetworks.list
     name: list
     children: []
@@ -995,7 +995,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListResult>
+          - Promise<azure-arm-network.VirtualNetworkListResult>
   - uid: azure-arm-network.VirtualNetworks.list_1
     name: list
     children: []
@@ -1014,11 +1014,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkListResult>
+            - ServiceCallback<azure-arm-network.VirtualNetworkListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListResult>
+          - Promise<azure-arm-network.VirtualNetworkListResult>
   - uid: azure-arm-network.VirtualNetworks.list_2
     name: list
     children: []
@@ -1041,11 +1041,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkListResult>
+            - ServiceCallback<azure-arm-network.VirtualNetworkListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListResult>
+          - Promise<azure-arm-network.VirtualNetworkListResult>
   - uid: azure-arm-network.VirtualNetworks.listAll
     name: listAll
     children: []
@@ -1063,7 +1063,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListResult>
+          - Promise<azure-arm-network.VirtualNetworkListResult>
   - uid: azure-arm-network.VirtualNetworks.listAll_1
     name: listAll
     children: []
@@ -1076,11 +1076,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkListResult>
+            - ServiceCallback<azure-arm-network.VirtualNetworkListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListResult>
+          - Promise<azure-arm-network.VirtualNetworkListResult>
   - uid: azure-arm-network.VirtualNetworks.listAll_2
     name: listAll
     children: []
@@ -1099,11 +1099,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkListResult>
+            - ServiceCallback<azure-arm-network.VirtualNetworkListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListResult>
+          - Promise<azure-arm-network.VirtualNetworkListResult>
   - uid: azure-arm-network.VirtualNetworks.listAllNext_1
     name: listAllNext
     children: []
@@ -1122,11 +1122,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkListResult>
+            - ServiceCallback<azure-arm-network.VirtualNetworkListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListResult>
+          - Promise<azure-arm-network.VirtualNetworkListResult>
   - uid: azure-arm-network.VirtualNetworks.listAllNext_2
     name: listAllNext
     children: []
@@ -1149,11 +1149,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkListResult>
+            - ServiceCallback<azure-arm-network.VirtualNetworkListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListResult>
+          - Promise<azure-arm-network.VirtualNetworkListResult>
   - uid: azure-arm-network.VirtualNetworks.listAllNext
     name: listAllNext
     children: []
@@ -1177,7 +1177,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListResult>
+          - Promise<azure-arm-network.VirtualNetworkListResult>
   - uid: azure-arm-network.VirtualNetworks.listAllNextWithHttpOperationResponse
     name: listAllNextWithHttpOperationResponse
     children: []
@@ -1203,7 +1203,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkListResult>>
+          - Promise<VirtualNetworkListResult!@>>
   - uid: azure-arm-network.VirtualNetworks.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse
     children: []
@@ -1221,7 +1221,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkListResult>>
+          - Promise<VirtualNetworkListResult!@>>
   - uid: azure-arm-network.VirtualNetworks.listNext
     name: listNext
     children: []
@@ -1245,7 +1245,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListResult>
+          - Promise<azure-arm-network.VirtualNetworkListResult>
   - uid: azure-arm-network.VirtualNetworks.listNext_1
     name: listNext
     children: []
@@ -1264,11 +1264,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkListResult>
+            - ServiceCallback<azure-arm-network.VirtualNetworkListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListResult>
+          - Promise<azure-arm-network.VirtualNetworkListResult>
   - uid: azure-arm-network.VirtualNetworks.listNext_2
     name: listNext
     children: []
@@ -1291,11 +1291,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkListResult>
+            - ServiceCallback<azure-arm-network.VirtualNetworkListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListResult>
+          - Promise<azure-arm-network.VirtualNetworkListResult>
   - uid: azure-arm-network.VirtualNetworks.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -1321,7 +1321,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkListResult>>
+          - Promise<VirtualNetworkListResult!@>>
   - uid: azure-arm-network.VirtualNetworks.listUsage
     name: listUsage
     children: []
@@ -1351,7 +1351,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListUsageResult>
+          - Promise<azure-arm-network.VirtualNetworkListUsageResult>
   - uid: azure-arm-network.VirtualNetworks.listUsage_1
     name: listUsage
     children: []
@@ -1374,11 +1374,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkListUsageResult>
+            - ServiceCallback<azure-arm-network.VirtualNetworkListUsageResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListUsageResult>
+          - Promise<azure-arm-network.VirtualNetworkListUsageResult>
   - uid: azure-arm-network.VirtualNetworks.listUsage_2
     name: listUsage
     children: []
@@ -1406,11 +1406,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkListUsageResult>
+            - ServiceCallback<azure-arm-network.VirtualNetworkListUsageResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListUsageResult>
+          - Promise<azure-arm-network.VirtualNetworkListUsageResult>
   - uid: azure-arm-network.VirtualNetworks.listUsageNext
     name: listUsageNext
     children: []
@@ -1434,7 +1434,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListUsageResult>
+          - Promise<azure-arm-network.VirtualNetworkListUsageResult>
   - uid: azure-arm-network.VirtualNetworks.listUsageNext_1
     name: listUsageNext
     children: []
@@ -1453,11 +1453,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkListUsageResult>
+            - ServiceCallback<azure-arm-network.VirtualNetworkListUsageResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListUsageResult>
+          - Promise<azure-arm-network.VirtualNetworkListUsageResult>
   - uid: azure-arm-network.VirtualNetworks.listUsageNext_2
     name: listUsageNext
     children: []
@@ -1480,11 +1480,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkListUsageResult>
+            - ServiceCallback<azure-arm-network.VirtualNetworkListUsageResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkListUsageResult>
+          - Promise<azure-arm-network.VirtualNetworkListUsageResult>
   - uid: azure-arm-network.VirtualNetworks.listUsageNextWithHttpOperationResponse
     name: listUsageNextWithHttpOperationResponse
     children: []
@@ -1510,7 +1510,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkListUsageResult>>
+          - Promise<VirtualNetworkListUsageResult!@>>
   - uid: azure-arm-network.VirtualNetworks.listUsageWithHttpOperationResponse
     name: listUsageWithHttpOperationResponse
     children: []
@@ -1540,7 +1540,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkListUsageResult>>
+          - Promise<VirtualNetworkListUsageResult!@>>
   - uid: azure-arm-network.VirtualNetworks.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1565,7 +1565,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkListResult>>
+          - Promise<VirtualNetworkListResult!@>>
   - uid: azure-arm-network.VirtualNetworks.updateTags
     name: updateTags
     children: []
@@ -1590,7 +1590,7 @@ items:
             The name of the virtual network.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update virtual network
             tags.
@@ -1601,7 +1601,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetwork>
+          - Promise<azure-arm-network.VirtualNetwork>
   - uid: azure-arm-network.VirtualNetworks.updateTags_1
     name: updateTags
     children: []
@@ -1625,15 +1625,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetwork>
+            - ServiceCallback<azure-arm-network.VirtualNetwork>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetwork>
+          - Promise<azure-arm-network.VirtualNetwork>
   - uid: azure-arm-network.VirtualNetworks.updateTags_2
     name: updateTags
     children: []
@@ -1657,7 +1657,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -1665,11 +1665,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetwork>
+            - ServiceCallback<azure-arm-network.VirtualNetwork>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetwork>
+          - Promise<azure-arm-network.VirtualNetwork>
   - uid: azure-arm-network.VirtualNetworks.updateTagsWithHttpOperationResponse
     name: updateTagsWithHttpOperationResponse
     children: []
@@ -1694,7 +1694,7 @@ items:
             The name of the virtual network.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update virtual network
             tags.
@@ -1705,4 +1705,87 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetwork>>
+          - Promise<VirtualNetwork!@>>
+references:
+  - uid: azure-arm-network.VirtualNetwork
+    spec.typeScript:
+      - name: VirtualNetwork
+        fullName: VirtualNetwork
+        uid: azure-arm-network.VirtualNetwork
+  - uid: Promise<azure-arm-network.VirtualNetwork>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualNetwork
+        fullName: VirtualNetwork
+        uid: azure-arm-network.VirtualNetwork
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.VirtualNetwork>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualNetwork
+        fullName: VirtualNetwork
+        uid: azure-arm-network.VirtualNetwork
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.TagsObject
+    spec.typeScript:
+      - name: TagsObject
+        fullName: TagsObject
+        uid: azure-arm-network.TagsObject
+  - uid: Promise<azure-arm-network.IPAddressAvailabilityResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: IPAddressAvailabilityResult
+        fullName: IPAddressAvailabilityResult
+        uid: azure-arm-network.IPAddressAvailabilityResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.IPAddressAvailabilityResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: IPAddressAvailabilityResult
+        fullName: IPAddressAvailabilityResult
+        uid: azure-arm-network.IPAddressAvailabilityResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.VirtualNetworkListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualNetworkListResult
+        fullName: VirtualNetworkListResult
+        uid: azure-arm-network.VirtualNetworkListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.VirtualNetworkListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualNetworkListResult
+        fullName: VirtualNetworkListResult
+        uid: azure-arm-network.VirtualNetworkListResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.VirtualNetworkListUsageResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualNetworkListUsageResult
+        fullName: VirtualNetworkListUsageResult
+        uid: azure-arm-network.VirtualNetworkListUsageResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.VirtualNetworkListUsageResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualNetworkListUsageResult
+        fullName: VirtualNetworkListUsageResult
+        uid: azure-arm-network.VirtualNetworkListUsageResult
+      - name: '>'
+        fullName: '>'

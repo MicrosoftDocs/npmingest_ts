@@ -63,7 +63,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtensionImage>
+          - Promise<azure-arm-compute.VirtualMachineExtensionImage>
   - uid: azure-arm-compute.VirtualMachineExtensionImages.get_2
     name: get
     children: []
@@ -99,11 +99,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.VirtualMachineExtensionImage>
+            - ServiceCallback<azure-arm-compute.VirtualMachineExtensionImage>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtensionImage>
+          - Promise<azure-arm-compute.VirtualMachineExtensionImage>
   - uid: azure-arm-compute.VirtualMachineExtensionImages.get_1
     name: get
     children: []
@@ -135,11 +135,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.VirtualMachineExtensionImage>
+            - ServiceCallback<azure-arm-compute.VirtualMachineExtensionImage>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineExtensionImage>
+          - Promise<azure-arm-compute.VirtualMachineExtensionImage>
   - uid: >-
       azure-arm-compute.VirtualMachineExtensionImages.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
@@ -180,7 +180,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineExtensionImage>>
+          - Promise<VirtualMachineExtensionImage!@>>
   - uid: azure-arm-compute.VirtualMachineExtensionImages.listTypes
     name: listTypes
     children: []
@@ -210,7 +210,7 @@ items:
           optional: true
       return:
         type:
-          - 'Promise<@azure-arm-compute.VirtualMachineExtensionImage[]>'
+          - 'Promise<azure-arm-compute.VirtualMachineExtensionImage[]>'
   - uid: azure-arm-compute.VirtualMachineExtensionImages.listTypes_1
     name: listTypes
     children: []
@@ -233,11 +233,11 @@ items:
           description: ''
         - id: callback
           type:
-            - 'ServiceCallback<@azure-arm-compute.VirtualMachineExtensionImage[]>'
+            - 'ServiceCallback<azure-arm-compute.VirtualMachineExtensionImage[]>'
           description: ''
       return:
         type:
-          - 'Promise<@azure-arm-compute.VirtualMachineExtensionImage[]>'
+          - 'Promise<azure-arm-compute.VirtualMachineExtensionImage[]>'
   - uid: azure-arm-compute.VirtualMachineExtensionImages.listTypes_2
     name: listTypes
     children: []
@@ -264,11 +264,11 @@ items:
           description: ''
         - id: callback
           type:
-            - 'ServiceCallback<@azure-arm-compute.VirtualMachineExtensionImage[]>'
+            - 'ServiceCallback<azure-arm-compute.VirtualMachineExtensionImage[]>'
           description: ''
       return:
         type:
-          - 'Promise<@azure-arm-compute.VirtualMachineExtensionImage[]>'
+          - 'Promise<azure-arm-compute.VirtualMachineExtensionImage[]>'
   - uid: >-
       azure-arm-compute.VirtualMachineExtensionImages.listTypesWithHttpOperationResponse
     name: listTypesWithHttpOperationResponse
@@ -299,7 +299,7 @@ items:
           optional: true
       return:
         type:
-          - 'Promise<VirtualMachineExtensionImage[]>>'
+          - 'Promise<VirtualMachineExtensionImage!@[]>>'
   - uid: azure-arm-compute.VirtualMachineExtensionImages.listVersions
     name: listVersions
     children: []
@@ -334,7 +334,7 @@ items:
           optional: true
       return:
         type:
-          - 'Promise<@azure-arm-compute.VirtualMachineExtensionImage[]>'
+          - 'Promise<azure-arm-compute.VirtualMachineExtensionImage[]>'
   - uid: azure-arm-compute.VirtualMachineExtensionImages.listVersions_1
     name: listVersions
     children: []
@@ -361,11 +361,11 @@ items:
           description: ''
         - id: callback
           type:
-            - 'ServiceCallback<@azure-arm-compute.VirtualMachineExtensionImage[]>'
+            - 'ServiceCallback<azure-arm-compute.VirtualMachineExtensionImage[]>'
           description: ''
       return:
         type:
-          - 'Promise<@azure-arm-compute.VirtualMachineExtensionImage[]>'
+          - 'Promise<azure-arm-compute.VirtualMachineExtensionImage[]>'
   - uid: azure-arm-compute.VirtualMachineExtensionImages.listVersions_2
     name: listVersions
     children: []
@@ -397,11 +397,11 @@ items:
           description: ''
         - id: callback
           type:
-            - 'ServiceCallback<@azure-arm-compute.VirtualMachineExtensionImage[]>'
+            - 'ServiceCallback<azure-arm-compute.VirtualMachineExtensionImage[]>'
           description: ''
       return:
         type:
-          - 'Promise<@azure-arm-compute.VirtualMachineExtensionImage[]>'
+          - 'Promise<azure-arm-compute.VirtualMachineExtensionImage[]>'
   - uid: >-
       azure-arm-compute.VirtualMachineExtensionImages.listVersionsWithHttpOperationResponse
     name: listVersionsWithHttpOperationResponse
@@ -437,4 +437,41 @@ items:
           optional: true
       return:
         type:
-          - 'Promise<VirtualMachineExtensionImage[]>>'
+          - 'Promise<VirtualMachineExtensionImage!@[]>>'
+references:
+  - uid: Promise<azure-arm-compute.VirtualMachineExtensionImage>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualMachineExtensionImage
+        fullName: VirtualMachineExtensionImage
+        uid: azure-arm-compute.VirtualMachineExtensionImage
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.VirtualMachineExtensionImage>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualMachineExtensionImage
+        fullName: VirtualMachineExtensionImage
+        uid: azure-arm-compute.VirtualMachineExtensionImage
+      - name: '>'
+        fullName: '>'
+  - uid: 'Promise<azure-arm-compute.VirtualMachineExtensionImage[]>'
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualMachineExtensionImage
+        fullName: VirtualMachineExtensionImage
+        uid: azure-arm-compute.VirtualMachineExtensionImage
+      - name: '[]>'
+        fullName: '[]>'
+  - uid: 'ServiceCallback<azure-arm-compute.VirtualMachineExtensionImage[]>'
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualMachineExtensionImage
+        fullName: VirtualMachineExtensionImage
+        uid: azure-arm-compute.VirtualMachineExtensionImage
+      - name: '[]>'
+        fullName: '[]>'

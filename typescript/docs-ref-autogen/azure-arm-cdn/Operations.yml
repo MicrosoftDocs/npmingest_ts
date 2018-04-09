@@ -34,7 +34,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.OperationsListResult>
+          - Promise<azure-arm-cdn.OperationsListResult>
   - uid: azure-arm-cdn.Operations.list_1
     name: list
     children: []
@@ -47,11 +47,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.OperationsListResult>
+            - ServiceCallback<azure-arm-cdn.OperationsListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.OperationsListResult>
+          - Promise<azure-arm-cdn.OperationsListResult>
   - uid: azure-arm-cdn.Operations.list_2
     name: list
     children: []
@@ -70,11 +70,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.OperationsListResult>
+            - ServiceCallback<azure-arm-cdn.OperationsListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.OperationsListResult>
+          - Promise<azure-arm-cdn.OperationsListResult>
   - uid: azure-arm-cdn.Operations.listNext
     name: listNext
     children: []
@@ -98,7 +98,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.OperationsListResult>
+          - Promise<azure-arm-cdn.OperationsListResult>
   - uid: azure-arm-cdn.Operations.listNext_1
     name: listNext
     children: []
@@ -117,11 +117,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.OperationsListResult>
+            - ServiceCallback<azure-arm-cdn.OperationsListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.OperationsListResult>
+          - Promise<azure-arm-cdn.OperationsListResult>
   - uid: azure-arm-cdn.Operations.listNext_2
     name: listNext
     children: []
@@ -144,11 +144,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.OperationsListResult>
+            - ServiceCallback<azure-arm-cdn.OperationsListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.OperationsListResult>
+          - Promise<azure-arm-cdn.OperationsListResult>
   - uid: azure-arm-cdn.Operations.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -174,7 +174,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationsListResult>>
+          - Promise<OperationsListResult!@>>
   - uid: azure-arm-cdn.Operations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -192,4 +192,23 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationsListResult>>
+          - Promise<OperationsListResult!@>>
+references:
+  - uid: Promise<azure-arm-cdn.OperationsListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: OperationsListResult
+        fullName: OperationsListResult
+        uid: azure-arm-cdn.OperationsListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-cdn.OperationsListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: OperationsListResult
+        fullName: OperationsListResult
+        uid: azure-arm-cdn.OperationsListResult
+      - name: '>'
+        fullName: '>'

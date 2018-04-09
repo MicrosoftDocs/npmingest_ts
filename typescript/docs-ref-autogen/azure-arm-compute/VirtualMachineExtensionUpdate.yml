@@ -16,7 +16,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.UpdateResource'
+      name: azure-arm-compute.UpdateResource
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensionUpdate.autoUpgradeMinorVersion
     name: autoUpgradeMinorVersion
@@ -116,3 +116,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-compute.UpdateResource
+    spec.typeScript:
+      - name: UpdateResource
+        fullName: UpdateResource
+        uid: azure-arm-compute.UpdateResource

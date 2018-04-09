@@ -39,7 +39,7 @@ items:
       content: 'targetSubnet?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.TopologyParameters.targetVirtualNetwork
     name: targetVirtualNetwork
     fullName: targetVirtualNetwork
@@ -53,4 +53,10 @@ items:
       content: 'targetVirtualNetwork?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource

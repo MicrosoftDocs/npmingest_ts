@@ -78,7 +78,7 @@ items:
             The name of the image.
         - id: parameters
           type:
-            - '@azure-arm-compute.Image'
+            - azure-arm-compute.Image
           description: |
             Parameters supplied to the Create Image
             operation.
@@ -89,7 +89,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.Image>
+          - Promise<azure-arm-compute.Image>
   - uid: azure-arm-compute.Images.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -112,15 +112,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-compute.Image'
+            - azure-arm-compute.Image
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Image>
+            - ServiceCallback<azure-arm-compute.Image>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Image>
+          - Promise<azure-arm-compute.Image>
   - uid: azure-arm-compute.Images.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -144,7 +144,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-compute.Image'
+            - azure-arm-compute.Image
           description: ''
         - id: options
           type:
@@ -152,11 +152,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Image>
+            - ServiceCallback<azure-arm-compute.Image>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Image>
+          - Promise<azure-arm-compute.Image>
   - uid: azure-arm-compute.Images.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
     children: []
@@ -181,7 +181,7 @@ items:
             The name of the image.
         - id: parameters
           type:
-            - '@azure-arm-compute.Image'
+            - azure-arm-compute.Image
           description: |
             Parameters supplied to the Create Image
             operation.
@@ -192,7 +192,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Image>>
+          - Promise<Image!@>>
   - uid: azure-arm-compute.Images.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -222,7 +222,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Images.beginDeleteMethod_2
     name: beginDeleteMethod
     children: []
@@ -249,11 +249,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Images.beginDeleteMethod_1
     name: beginDeleteMethod
     children: []
@@ -276,11 +276,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Images.beginDeleteMethodWithHttpOperationResponse
     name: beginDeleteMethodWithHttpOperationResponse
     children: []
@@ -310,7 +310,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse>>
+          - Promise<OperationStatusResponse!@>>
   - uid: azure-arm-compute.Images.beginUpdate
     name: beginUpdate
     children: []
@@ -335,7 +335,7 @@ items:
             The name of the image.
         - id: parameters
           type:
-            - '@azure-arm-compute.ImageUpdate'
+            - azure-arm-compute.ImageUpdate
           description: |
             Parameters supplied to the Update Image
             operation.
@@ -346,7 +346,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.Image>
+          - Promise<azure-arm-compute.Image>
   - uid: azure-arm-compute.Images.beginUpdate_1
     name: beginUpdate
     children: []
@@ -369,15 +369,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-compute.ImageUpdate'
+            - azure-arm-compute.ImageUpdate
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Image>
+            - ServiceCallback<azure-arm-compute.Image>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Image>
+          - Promise<azure-arm-compute.Image>
   - uid: azure-arm-compute.Images.beginUpdate_2
     name: beginUpdate
     children: []
@@ -401,7 +401,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-compute.ImageUpdate'
+            - azure-arm-compute.ImageUpdate
           description: ''
         - id: options
           type:
@@ -409,11 +409,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Image>
+            - ServiceCallback<azure-arm-compute.Image>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Image>
+          - Promise<azure-arm-compute.Image>
   - uid: azure-arm-compute.Images.beginUpdateWithHttpOperationResponse
     name: beginUpdateWithHttpOperationResponse
     children: []
@@ -438,7 +438,7 @@ items:
             The name of the image.
         - id: parameters
           type:
-            - '@azure-arm-compute.ImageUpdate'
+            - azure-arm-compute.ImageUpdate
           description: |
             Parameters supplied to the Update Image
             operation.
@@ -449,7 +449,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Image>>
+          - Promise<Image!@>>
   - uid: azure-arm-compute.Images.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -472,15 +472,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-compute.Image'
+            - azure-arm-compute.Image
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Image>
+            - ServiceCallback<azure-arm-compute.Image>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Image>
+          - Promise<azure-arm-compute.Image>
   - uid: azure-arm-compute.Images.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -503,7 +503,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-compute.Image'
+            - azure-arm-compute.Image
           description: ''
         - id: options
           type:
@@ -511,11 +511,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Image>
+            - ServiceCallback<azure-arm-compute.Image>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Image>
+          - Promise<azure-arm-compute.Image>
   - uid: azure-arm-compute.Images.createOrUpdate
     name: createOrUpdate
     children: []
@@ -540,7 +540,7 @@ items:
             The name of the image.
         - id: parameters
           type:
-            - '@azure-arm-compute.Image'
+            - azure-arm-compute.Image
           description: |
             Parameters supplied to the Create Image
             operation.
@@ -551,7 +551,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.Image>
+          - Promise<azure-arm-compute.Image>
   - uid: azure-arm-compute.Images.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
     children: []
@@ -576,7 +576,7 @@ items:
             The name of the image.
         - id: parameters
           type:
-            - '@azure-arm-compute.Image'
+            - azure-arm-compute.Image
           description: |
             Parameters supplied to the Create Image
             operation.
@@ -587,7 +587,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Image>>
+          - Promise<Image!@>>
   - uid: azure-arm-compute.Images.deleteMethod
     name: deleteMethod
     children: []
@@ -617,7 +617,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Images.deleteMethod_1
     name: deleteMethod
     children: []
@@ -640,11 +640,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Images.deleteMethod_2
     name: deleteMethod
     children: []
@@ -671,11 +671,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.Images.deleteMethodWithHttpOperationResponse
     name: deleteMethodWithHttpOperationResponse
     children: []
@@ -705,7 +705,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse>>
+          - Promise<OperationStatusResponse!@>>
   - uid: azure-arm-compute.Images.get
     name: get
     children: []
@@ -735,7 +735,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.Image>
+          - Promise<azure-arm-compute.Image>
   - uid: azure-arm-compute.Images.get_1
     name: get
     children: []
@@ -758,11 +758,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Image>
+            - ServiceCallback<azure-arm-compute.Image>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Image>
+          - Promise<azure-arm-compute.Image>
   - uid: azure-arm-compute.Images.get_2
     name: get
     children: []
@@ -789,11 +789,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Image>
+            - ServiceCallback<azure-arm-compute.Image>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Image>
+          - Promise<azure-arm-compute.Image>
   - uid: azure-arm-compute.Images.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -823,7 +823,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Image>>
+          - Promise<Image!@>>
   - uid: azure-arm-compute.Images.list_1
     name: list
     children: []
@@ -839,11 +839,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ImageListResult>
+            - ServiceCallback<azure-arm-compute.ImageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ImageListResult>
+          - Promise<azure-arm-compute.ImageListResult>
   - uid: azure-arm-compute.Images.list_2
     name: list
     children: []
@@ -865,11 +865,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ImageListResult>
+            - ServiceCallback<azure-arm-compute.ImageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ImageListResult>
+          - Promise<azure-arm-compute.ImageListResult>
   - uid: azure-arm-compute.Images.list
     name: list
     children: []
@@ -890,7 +890,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.ImageListResult>
+          - Promise<azure-arm-compute.ImageListResult>
   - uid: azure-arm-compute.Images.listByResourceGroup
     name: listByResourceGroup
     children: []
@@ -915,7 +915,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.ImageListResult>
+          - Promise<azure-arm-compute.ImageListResult>
   - uid: azure-arm-compute.Images.listByResourceGroup_1
     name: listByResourceGroup
     children: []
@@ -934,11 +934,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ImageListResult>
+            - ServiceCallback<azure-arm-compute.ImageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ImageListResult>
+          - Promise<azure-arm-compute.ImageListResult>
   - uid: azure-arm-compute.Images.listByResourceGroup_2
     name: listByResourceGroup
     children: []
@@ -961,11 +961,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ImageListResult>
+            - ServiceCallback<azure-arm-compute.ImageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ImageListResult>
+          - Promise<azure-arm-compute.ImageListResult>
   - uid: azure-arm-compute.Images.listByResourceGroupNext
     name: listByResourceGroupNext
     children: []
@@ -991,7 +991,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.ImageListResult>
+          - Promise<azure-arm-compute.ImageListResult>
   - uid: azure-arm-compute.Images.listByResourceGroupNext_1
     name: listByResourceGroupNext
     children: []
@@ -1010,11 +1010,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ImageListResult>
+            - ServiceCallback<azure-arm-compute.ImageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ImageListResult>
+          - Promise<azure-arm-compute.ImageListResult>
   - uid: azure-arm-compute.Images.listByResourceGroupNext_2
     name: listByResourceGroupNext
     children: []
@@ -1037,11 +1037,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ImageListResult>
+            - ServiceCallback<azure-arm-compute.ImageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ImageListResult>
+          - Promise<azure-arm-compute.ImageListResult>
   - uid: azure-arm-compute.Images.listByResourceGroupNextWithHttpOperationResponse
     name: listByResourceGroupNextWithHttpOperationResponse
     children: []
@@ -1067,7 +1067,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ImageListResult>>
+          - Promise<ImageListResult!@>>
   - uid: azure-arm-compute.Images.listByResourceGroupWithHttpOperationResponse
     name: listByResourceGroupWithHttpOperationResponse
     children: []
@@ -1092,7 +1092,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ImageListResult>>
+          - Promise<ImageListResult!@>>
   - uid: azure-arm-compute.Images.listNext
     name: listNext
     children: []
@@ -1119,7 +1119,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.ImageListResult>
+          - Promise<azure-arm-compute.ImageListResult>
   - uid: azure-arm-compute.Images.listNext_1
     name: listNext
     children: []
@@ -1141,11 +1141,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ImageListResult>
+            - ServiceCallback<azure-arm-compute.ImageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ImageListResult>
+          - Promise<azure-arm-compute.ImageListResult>
   - uid: azure-arm-compute.Images.listNext_2
     name: listNext
     children: []
@@ -1171,11 +1171,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.ImageListResult>
+            - ServiceCallback<azure-arm-compute.ImageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.ImageListResult>
+          - Promise<azure-arm-compute.ImageListResult>
   - uid: azure-arm-compute.Images.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -1204,7 +1204,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ImageListResult>>
+          - Promise<ImageListResult!@>>
   - uid: azure-arm-compute.Images.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1225,7 +1225,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ImageListResult>>
+          - Promise<ImageListResult!@>>
   - uid: azure-arm-compute.Images.update
     name: update
     children: []
@@ -1250,7 +1250,7 @@ items:
             The name of the image.
         - id: parameters
           type:
-            - '@azure-arm-compute.ImageUpdate'
+            - azure-arm-compute.ImageUpdate
           description: |
             Parameters supplied to the Update Image
             operation.
@@ -1261,7 +1261,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.Image>
+          - Promise<azure-arm-compute.Image>
   - uid: azure-arm-compute.Images.update_1
     name: update
     children: []
@@ -1284,15 +1284,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-compute.ImageUpdate'
+            - azure-arm-compute.ImageUpdate
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Image>
+            - ServiceCallback<azure-arm-compute.Image>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Image>
+          - Promise<azure-arm-compute.Image>
   - uid: azure-arm-compute.Images.update_2
     name: update
     children: []
@@ -1316,7 +1316,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-compute.ImageUpdate'
+            - azure-arm-compute.ImageUpdate
           description: ''
         - id: options
           type:
@@ -1324,11 +1324,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.Image>
+            - ServiceCallback<azure-arm-compute.Image>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.Image>
+          - Promise<azure-arm-compute.Image>
   - uid: azure-arm-compute.Images.updateWithHttpOperationResponse
     name: updateWithHttpOperationResponse
     children: []
@@ -1353,7 +1353,7 @@ items:
             The name of the image.
         - id: parameters
           type:
-            - '@azure-arm-compute.ImageUpdate'
+            - azure-arm-compute.ImageUpdate
           description: |
             Parameters supplied to the Update Image
             operation.
@@ -1364,4 +1364,69 @@ items:
           optional: true
       return:
         type:
-          - Promise<Image>>
+          - Promise<Image!@>>
+references:
+  - uid: azure-arm-compute.Image
+    spec.typeScript:
+      - name: Image
+        fullName: Image
+        uid: azure-arm-compute.Image
+  - uid: Promise<azure-arm-compute.Image>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Image
+        fullName: Image
+        uid: azure-arm-compute.Image
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.Image>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Image
+        fullName: Image
+        uid: azure-arm-compute.Image
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-compute.OperationStatusResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.OperationStatusResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-compute.ImageUpdate
+    spec.typeScript:
+      - name: ImageUpdate
+        fullName: ImageUpdate
+        uid: azure-arm-compute.ImageUpdate
+  - uid: Promise<azure-arm-compute.ImageListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ImageListResult
+        fullName: ImageListResult
+        uid: azure-arm-compute.ImageListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.ImageListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ImageListResult
+        fullName: ImageListResult
+        uid: azure-arm-compute.ImageListResult
+      - name: '>'
+        fullName: '>'

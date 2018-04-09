@@ -51,4 +51,12 @@ items:
       content: 'rules: ApplicationGatewayFirewallRule[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayFirewallRule[]'
+          - 'azure-arm-network.ApplicationGatewayFirewallRule[]'
+references:
+  - uid: 'azure-arm-network.ApplicationGatewayFirewallRule[]'
+    spec.typeScript:
+      - name: ApplicationGatewayFirewallRule
+        fullName: ApplicationGatewayFirewallRule
+        uid: azure-arm-network.ApplicationGatewayFirewallRule
+      - name: '[]'
+        fullName: '[]'

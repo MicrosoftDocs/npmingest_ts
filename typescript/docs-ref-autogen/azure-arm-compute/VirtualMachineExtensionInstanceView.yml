@@ -41,7 +41,7 @@ items:
       content: 'statuses?: InstanceViewStatus[]'
       return:
         type:
-          - '@azure-arm-compute.InstanceViewStatus[]'
+          - 'azure-arm-compute.InstanceViewStatus[]'
   - uid: azure-arm-compute.VirtualMachineExtensionInstanceView.substatuses
     name: substatuses
     fullName: substatuses
@@ -55,7 +55,7 @@ items:
       content: 'substatuses?: InstanceViewStatus[]'
       return:
         type:
-          - '@azure-arm-compute.InstanceViewStatus[]'
+          - 'azure-arm-compute.InstanceViewStatus[]'
   - uid: azure-arm-compute.VirtualMachineExtensionInstanceView.type
     name: type
     fullName: type
@@ -84,3 +84,11 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'azure-arm-compute.InstanceViewStatus[]'
+    spec.typeScript:
+      - name: InstanceViewStatus
+        fullName: InstanceViewStatus
+        uid: azure-arm-compute.InstanceViewStatus
+      - name: '[]'
+        fullName: '[]'

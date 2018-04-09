@@ -36,7 +36,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.ResourceUsageOperations.list_1
     name: list
     children: []
@@ -51,11 +51,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ResourceUsageListResult>
+            - ServiceCallback<azure-arm-cdn.ResourceUsageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.ResourceUsageOperations.list_2
     name: list
     children: []
@@ -76,11 +76,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ResourceUsageListResult>
+            - ServiceCallback<azure-arm-cdn.ResourceUsageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.ResourceUsageOperations.listNext
     name: listNext
     children: []
@@ -106,7 +106,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.ResourceUsageOperations.listNext_1
     name: listNext
     children: []
@@ -127,11 +127,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ResourceUsageListResult>
+            - ServiceCallback<azure-arm-cdn.ResourceUsageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.ResourceUsageOperations.listNext_2
     name: listNext
     children: []
@@ -156,11 +156,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ResourceUsageListResult>
+            - ServiceCallback<azure-arm-cdn.ResourceUsageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.ResourceUsageOperations.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -188,7 +188,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ResourceUsageListResult>>
+          - Promise<ResourceUsageListResult!@>>
   - uid: azure-arm-cdn.ResourceUsageOperations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -208,4 +208,23 @@ items:
           optional: true
       return:
         type:
-          - Promise<ResourceUsageListResult>>
+          - Promise<ResourceUsageListResult!@>>
+references:
+  - uid: Promise<azure-arm-cdn.ResourceUsageListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ResourceUsageListResult
+        fullName: ResourceUsageListResult
+        uid: azure-arm-cdn.ResourceUsageListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-cdn.ResourceUsageListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ResourceUsageListResult
+        fullName: ResourceUsageListResult
+        uid: azure-arm-cdn.ResourceUsageListResult
+      - name: '>'
+        fullName: '>'

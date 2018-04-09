@@ -40,7 +40,7 @@ items:
       content: 'destination: ConnectionMonitorDestination'
       return:
         type:
-          - '@azure-arm-network.ConnectionMonitorDestination'
+          - azure-arm-network.ConnectionMonitorDestination
   - uid: azure-arm-network.ConnectionMonitorParameters.monitoringIntervalInSeconds
     name: monitoringIntervalInSeconds
     fullName: monitoringIntervalInSeconds
@@ -67,4 +67,15 @@ items:
       content: 'source: ConnectionMonitorSource'
       return:
         type:
-          - '@azure-arm-network.ConnectionMonitorSource'
+          - azure-arm-network.ConnectionMonitorSource
+references:
+  - uid: azure-arm-network.ConnectionMonitorDestination
+    spec.typeScript:
+      - name: ConnectionMonitorDestination
+        fullName: ConnectionMonitorDestination
+        uid: azure-arm-network.ConnectionMonitorDestination
+  - uid: azure-arm-network.ConnectionMonitorSource
+    spec.typeScript:
+      - name: ConnectionMonitorSource
+        fullName: ConnectionMonitorSource
+        uid: azure-arm-network.ConnectionMonitorSource

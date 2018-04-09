@@ -123,7 +123,7 @@ items:
             unique globally.
         - id: endpoint
           type:
-            - '@azure-arm-cdn.Endpoint'
+            - azure-arm-cdn.Endpoint
           description: |
             Endpoint properties
         - id: options
@@ -133,7 +133,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.beginCreate_1
     name: beginCreate
     children: []
@@ -163,15 +163,15 @@ items:
           description: ''
         - id: endpoint
           type:
-            - '@azure-arm-cdn.Endpoint'
+            - azure-arm-cdn.Endpoint
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.beginCreate_2
     name: beginCreate
     children: []
@@ -201,7 +201,7 @@ items:
           description: ''
         - id: endpoint
           type:
-            - '@azure-arm-cdn.Endpoint'
+            - azure-arm-cdn.Endpoint
           description: ''
         - id: options
           type:
@@ -209,11 +209,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.beginCreateWithHttpOperationResponse
     name: beginCreateWithHttpOperationResponse
     children: []
@@ -249,7 +249,7 @@ items:
             unique globally.
         - id: endpoint
           type:
-            - '@azure-arm-cdn.Endpoint'
+            - azure-arm-cdn.Endpoint
           description: |
             Endpoint properties
         - id: options
@@ -259,7 +259,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint>>
+          - Promise<Endpoint!@>>
   - uid: azure-arm-cdn.Endpoints.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -777,11 +777,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.beginStart_2
     name: beginStart
     children: []
@@ -813,11 +813,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.beginStart
     name: beginStart
     children: []
@@ -855,7 +855,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.beginStartWithHttpOperationResponse
     name: beginStartWithHttpOperationResponse
     children: []
@@ -893,7 +893,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint>>
+          - Promise<Endpoint!@>>
   - uid: azure-arm-cdn.Endpoints.beginStop_1
     name: beginStop
     children: []
@@ -920,11 +920,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.beginStop
     name: beginStop
     children: []
@@ -962,7 +962,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.beginStop_2
     name: beginStop
     children: []
@@ -994,11 +994,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.beginStopWithHttpOperationResponse
     name: beginStopWithHttpOperationResponse
     children: []
@@ -1036,7 +1036,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint>>
+          - Promise<Endpoint!@>>
   - uid: azure-arm-cdn.Endpoints.beginUpdate_1
     name: beginUpdate
     children: []
@@ -1076,15 +1076,15 @@ items:
           description: ''
         - id: endpointUpdateProperties
           type:
-            - '@azure-arm-cdn.EndpointUpdateParameters'
+            - azure-arm-cdn.EndpointUpdateParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.beginUpdate
     name: beginUpdate
     children: []
@@ -1130,7 +1130,7 @@ items:
             unique globally.
         - id: endpointUpdateProperties
           type:
-            - '@azure-arm-cdn.EndpointUpdateParameters'
+            - azure-arm-cdn.EndpointUpdateParameters
           description: |
             Endpoint update properties
         - id: options
@@ -1140,7 +1140,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.beginUpdate_2
     name: beginUpdate
     children: []
@@ -1181,7 +1181,7 @@ items:
           description: ''
         - id: endpointUpdateProperties
           type:
-            - '@azure-arm-cdn.EndpointUpdateParameters'
+            - azure-arm-cdn.EndpointUpdateParameters
           description: ''
         - id: options
           type:
@@ -1189,11 +1189,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.beginUpdateWithHttpOperationResponse
     name: beginUpdateWithHttpOperationResponse
     children: []
@@ -1239,7 +1239,7 @@ items:
             unique globally.
         - id: endpointUpdateProperties
           type:
-            - '@azure-arm-cdn.EndpointUpdateParameters'
+            - azure-arm-cdn.EndpointUpdateParameters
           description: |
             Endpoint update properties
         - id: options
@@ -1249,7 +1249,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint>>
+          - Promise<Endpoint!@>>
   - uid: azure-arm-cdn.Endpoints.create
     name: create
     children: []
@@ -1284,7 +1284,7 @@ items:
             unique globally.
         - id: endpoint
           type:
-            - '@azure-arm-cdn.Endpoint'
+            - azure-arm-cdn.Endpoint
           description: |
             Endpoint properties
         - id: options
@@ -1294,7 +1294,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.create_1
     name: create
     children: []
@@ -1324,15 +1324,15 @@ items:
           description: ''
         - id: endpoint
           type:
-            - '@azure-arm-cdn.Endpoint'
+            - azure-arm-cdn.Endpoint
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.create_2
     name: create
     children: []
@@ -1362,7 +1362,7 @@ items:
           description: ''
         - id: endpoint
           type:
-            - '@azure-arm-cdn.Endpoint'
+            - azure-arm-cdn.Endpoint
           description: ''
         - id: options
           type:
@@ -1370,11 +1370,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.createWithHttpOperationResponse
     name: createWithHttpOperationResponse
     children: []
@@ -1410,7 +1410,7 @@ items:
             unique globally.
         - id: endpoint
           type:
-            - '@azure-arm-cdn.Endpoint'
+            - azure-arm-cdn.Endpoint
           description: |
             Endpoint properties
         - id: options
@@ -1420,7 +1420,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint>>
+          - Promise<Endpoint!@>>
   - uid: azure-arm-cdn.Endpoints.deleteMethod
     name: deleteMethod
     children: []
@@ -1619,7 +1619,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.get_1
     name: get
     children: []
@@ -1648,11 +1648,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.get_2
     name: get
     children: []
@@ -1686,11 +1686,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -1730,7 +1730,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint>>
+          - Promise<Endpoint!@>>
   - uid: azure-arm-cdn.Endpoints.listByProfile
     name: listByProfile
     children: []
@@ -1762,7 +1762,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.EndpointListResult>
+          - Promise<azure-arm-cdn.EndpointListResult>
   - uid: azure-arm-cdn.Endpoints.listByProfile_1
     name: listByProfile
     children: []
@@ -1785,11 +1785,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.EndpointListResult>
+            - ServiceCallback<azure-arm-cdn.EndpointListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.EndpointListResult>
+          - Promise<azure-arm-cdn.EndpointListResult>
   - uid: azure-arm-cdn.Endpoints.listByProfile_2
     name: listByProfile
     children: []
@@ -1816,11 +1816,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.EndpointListResult>
+            - ServiceCallback<azure-arm-cdn.EndpointListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.EndpointListResult>
+          - Promise<azure-arm-cdn.EndpointListResult>
   - uid: azure-arm-cdn.Endpoints.listByProfileNext
     name: listByProfileNext
     children: []
@@ -1844,7 +1844,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.EndpointListResult>
+          - Promise<azure-arm-cdn.EndpointListResult>
   - uid: azure-arm-cdn.Endpoints.listByProfileNext_1
     name: listByProfileNext
     children: []
@@ -1863,11 +1863,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.EndpointListResult>
+            - ServiceCallback<azure-arm-cdn.EndpointListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.EndpointListResult>
+          - Promise<azure-arm-cdn.EndpointListResult>
   - uid: azure-arm-cdn.Endpoints.listByProfileNext_2
     name: listByProfileNext
     children: []
@@ -1890,11 +1890,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.EndpointListResult>
+            - ServiceCallback<azure-arm-cdn.EndpointListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.EndpointListResult>
+          - Promise<azure-arm-cdn.EndpointListResult>
   - uid: azure-arm-cdn.Endpoints.listByProfileNextWithHttpOperationResponse
     name: listByProfileNextWithHttpOperationResponse
     children: []
@@ -1920,7 +1920,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<EndpointListResult>>
+          - Promise<EndpointListResult!@>>
   - uid: azure-arm-cdn.Endpoints.listByProfileWithHttpOperationResponse
     name: listByProfileWithHttpOperationResponse
     children: []
@@ -1952,7 +1952,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<EndpointListResult>>
+          - Promise<EndpointListResult!@>>
   - uid: azure-arm-cdn.Endpoints.listResourceUsage_1
     name: listResourceUsage
     children: []
@@ -1984,11 +1984,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ResourceUsageListResult>
+            - ServiceCallback<azure-arm-cdn.ResourceUsageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.Endpoints.listResourceUsage_2
     name: listResourceUsage
     children: []
@@ -2024,11 +2024,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ResourceUsageListResult>
+            - ServiceCallback<azure-arm-cdn.ResourceUsageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.Endpoints.listResourceUsage
     name: listResourceUsage
     children: []
@@ -2070,7 +2070,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.Endpoints.listResourceUsageNext_1
     name: listResourceUsageNext
     children: []
@@ -2093,11 +2093,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ResourceUsageListResult>
+            - ServiceCallback<azure-arm-cdn.ResourceUsageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.Endpoints.listResourceUsageNext_2
     name: listResourceUsageNext
     children: []
@@ -2124,11 +2124,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ResourceUsageListResult>
+            - ServiceCallback<azure-arm-cdn.ResourceUsageListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.Endpoints.listResourceUsageNext
     name: listResourceUsageNext
     children: []
@@ -2156,7 +2156,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.ResourceUsageListResult>
+          - Promise<azure-arm-cdn.ResourceUsageListResult>
   - uid: azure-arm-cdn.Endpoints.listResourceUsageNextWithHttpOperationResponse
     name: listResourceUsageNextWithHttpOperationResponse
     children: []
@@ -2186,7 +2186,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ResourceUsageListResult>>
+          - Promise<ResourceUsageListResult!@>>
   - uid: azure-arm-cdn.Endpoints.listResourceUsageWithHttpOperationResponse
     name: listResourceUsageWithHttpOperationResponse
     children: []
@@ -2228,7 +2228,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ResourceUsageListResult>>
+          - Promise<ResourceUsageListResult!@>>
   - uid: azure-arm-cdn.Endpoints.loadContent
     name: loadContent
     children: []
@@ -2585,11 +2585,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.start_2
     name: start
     children: []
@@ -2621,11 +2621,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.start
     name: start
     children: []
@@ -2663,7 +2663,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.startWithHttpOperationResponse
     name: startWithHttpOperationResponse
     children: []
@@ -2701,7 +2701,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint>>
+          - Promise<Endpoint!@>>
   - uid: azure-arm-cdn.Endpoints.stop
     name: stop
     children: []
@@ -2739,7 +2739,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.stop_1
     name: stop
     children: []
@@ -2766,11 +2766,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.stop_2
     name: stop
     children: []
@@ -2802,11 +2802,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.stopWithHttpOperationResponse
     name: stopWithHttpOperationResponse
     children: []
@@ -2844,7 +2844,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint>>
+          - Promise<Endpoint!@>>
   - uid: azure-arm-cdn.Endpoints.update
     name: update
     children: []
@@ -2890,7 +2890,7 @@ items:
             unique globally.
         - id: endpointUpdateProperties
           type:
-            - '@azure-arm-cdn.EndpointUpdateParameters'
+            - azure-arm-cdn.EndpointUpdateParameters
           description: |
             Endpoint update properties
         - id: options
@@ -2900,7 +2900,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.update_1
     name: update
     children: []
@@ -2940,15 +2940,15 @@ items:
           description: ''
         - id: endpointUpdateProperties
           type:
-            - '@azure-arm-cdn.EndpointUpdateParameters'
+            - azure-arm-cdn.EndpointUpdateParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.update_2
     name: update
     children: []
@@ -2989,7 +2989,7 @@ items:
           description: ''
         - id: endpointUpdateProperties
           type:
-            - '@azure-arm-cdn.EndpointUpdateParameters'
+            - azure-arm-cdn.EndpointUpdateParameters
           description: ''
         - id: options
           type:
@@ -2997,11 +2997,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.Endpoint>
+            - ServiceCallback<azure-arm-cdn.Endpoint>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.Endpoint>
+          - Promise<azure-arm-cdn.Endpoint>
   - uid: azure-arm-cdn.Endpoints.updateWithHttpOperationResponse
     name: updateWithHttpOperationResponse
     children: []
@@ -3047,7 +3047,7 @@ items:
             unique globally.
         - id: endpointUpdateProperties
           type:
-            - '@azure-arm-cdn.EndpointUpdateParameters'
+            - azure-arm-cdn.EndpointUpdateParameters
           description: |
             Endpoint update properties
         - id: options
@@ -3057,7 +3057,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint>>
+          - Promise<Endpoint!@>>
   - uid: azure-arm-cdn.Endpoints.validateCustomDomain
     name: validateCustomDomain
     children: []
@@ -3103,7 +3103,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.ValidateCustomDomainOutput>
+          - Promise<azure-arm-cdn.ValidateCustomDomainOutput>
   - uid: azure-arm-cdn.Endpoints.validateCustomDomain_1
     name: validateCustomDomain
     children: []
@@ -3137,11 +3137,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ValidateCustomDomainOutput>
+            - ServiceCallback<azure-arm-cdn.ValidateCustomDomainOutput>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ValidateCustomDomainOutput>
+          - Promise<azure-arm-cdn.ValidateCustomDomainOutput>
   - uid: azure-arm-cdn.Endpoints.validateCustomDomain_2
     name: validateCustomDomain
     children: []
@@ -3179,11 +3179,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.ValidateCustomDomainOutput>
+            - ServiceCallback<azure-arm-cdn.ValidateCustomDomainOutput>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.ValidateCustomDomainOutput>
+          - Promise<azure-arm-cdn.ValidateCustomDomainOutput>
   - uid: azure-arm-cdn.Endpoints.validateCustomDomainWithHttpOperationResponse
     name: validateCustomDomainWithHttpOperationResponse
     children: []
@@ -3231,4 +3231,87 @@ items:
           optional: true
       return:
         type:
-          - Promise<ValidateCustomDomainOutput>>
+          - Promise<ValidateCustomDomainOutput!@>>
+references:
+  - uid: azure-arm-cdn.Endpoint
+    spec.typeScript:
+      - name: Endpoint
+        fullName: Endpoint
+        uid: azure-arm-cdn.Endpoint
+  - uid: Promise<azure-arm-cdn.Endpoint>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Endpoint
+        fullName: Endpoint
+        uid: azure-arm-cdn.Endpoint
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-cdn.Endpoint>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Endpoint
+        fullName: Endpoint
+        uid: azure-arm-cdn.Endpoint
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-cdn.EndpointUpdateParameters
+    spec.typeScript:
+      - name: EndpointUpdateParameters
+        fullName: EndpointUpdateParameters
+        uid: azure-arm-cdn.EndpointUpdateParameters
+  - uid: Promise<azure-arm-cdn.EndpointListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EndpointListResult
+        fullName: EndpointListResult
+        uid: azure-arm-cdn.EndpointListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-cdn.EndpointListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: EndpointListResult
+        fullName: EndpointListResult
+        uid: azure-arm-cdn.EndpointListResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-cdn.ResourceUsageListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ResourceUsageListResult
+        fullName: ResourceUsageListResult
+        uid: azure-arm-cdn.ResourceUsageListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-cdn.ResourceUsageListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ResourceUsageListResult
+        fullName: ResourceUsageListResult
+        uid: azure-arm-cdn.ResourceUsageListResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-cdn.ValidateCustomDomainOutput>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ValidateCustomDomainOutput
+        fullName: ValidateCustomDomainOutput
+        uid: azure-arm-cdn.ValidateCustomDomainOutput
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-cdn.ValidateCustomDomainOutput>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ValidateCustomDomainOutput
+        fullName: ValidateCustomDomainOutput
+        uid: azure-arm-cdn.ValidateCustomDomainOutput
+      - name: '>'
+        fullName: '>'

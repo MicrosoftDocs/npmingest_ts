@@ -34,7 +34,7 @@ items:
       content: 'bootDiagnostics?: BootDiagnosticsInstanceView'
       return:
         type:
-          - '@azure-arm-compute.BootDiagnosticsInstanceView'
+          - azure-arm-compute.BootDiagnosticsInstanceView
   - uid: azure-arm-compute.VirtualMachineInstanceView.computerName
     name: computerName
     fullName: computerName
@@ -62,7 +62,7 @@ items:
       content: 'disks?: DiskInstanceView[]'
       return:
         type:
-          - '@azure-arm-compute.DiskInstanceView[]'
+          - 'azure-arm-compute.DiskInstanceView[]'
   - uid: azure-arm-compute.VirtualMachineInstanceView.extensions
     name: extensions
     fullName: extensions
@@ -76,7 +76,7 @@ items:
       content: 'extensions?: VirtualMachineExtensionInstanceView[]'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineExtensionInstanceView[]'
+          - 'azure-arm-compute.VirtualMachineExtensionInstanceView[]'
   - uid: azure-arm-compute.VirtualMachineInstanceView.maintenanceRedeployStatus
     name: maintenanceRedeployStatus
     fullName: maintenanceRedeployStatus
@@ -90,7 +90,7 @@ items:
       content: 'maintenanceRedeployStatus?: MaintenanceRedeployStatus'
       return:
         type:
-          - '@azure-arm-compute.MaintenanceRedeployStatus'
+          - azure-arm-compute.MaintenanceRedeployStatus
   - uid: azure-arm-compute.VirtualMachineInstanceView.osName
     name: osName
     fullName: osName
@@ -174,7 +174,7 @@ items:
       content: 'statuses?: InstanceViewStatus[]'
       return:
         type:
-          - '@azure-arm-compute.InstanceViewStatus[]'
+          - 'azure-arm-compute.InstanceViewStatus[]'
   - uid: azure-arm-compute.VirtualMachineInstanceView.vmAgent
     name: vmAgent
     fullName: vmAgent
@@ -188,4 +188,41 @@ items:
       content: 'vmAgent?: VirtualMachineAgentInstanceView'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineAgentInstanceView'
+          - azure-arm-compute.VirtualMachineAgentInstanceView
+references:
+  - uid: azure-arm-compute.BootDiagnosticsInstanceView
+    spec.typeScript:
+      - name: BootDiagnosticsInstanceView
+        fullName: BootDiagnosticsInstanceView
+        uid: azure-arm-compute.BootDiagnosticsInstanceView
+  - uid: 'azure-arm-compute.DiskInstanceView[]'
+    spec.typeScript:
+      - name: DiskInstanceView
+        fullName: DiskInstanceView
+        uid: azure-arm-compute.DiskInstanceView
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-compute.VirtualMachineExtensionInstanceView[]'
+    spec.typeScript:
+      - name: VirtualMachineExtensionInstanceView
+        fullName: VirtualMachineExtensionInstanceView
+        uid: azure-arm-compute.VirtualMachineExtensionInstanceView
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute.MaintenanceRedeployStatus
+    spec.typeScript:
+      - name: MaintenanceRedeployStatus
+        fullName: MaintenanceRedeployStatus
+        uid: azure-arm-compute.MaintenanceRedeployStatus
+  - uid: 'azure-arm-compute.InstanceViewStatus[]'
+    spec.typeScript:
+      - name: InstanceViewStatus
+        fullName: InstanceViewStatus
+        uid: azure-arm-compute.InstanceViewStatus
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute.VirtualMachineAgentInstanceView
+    spec.typeScript:
+      - name: VirtualMachineAgentInstanceView
+        fullName: VirtualMachineAgentInstanceView
+        uid: azure-arm-compute.VirtualMachineAgentInstanceView

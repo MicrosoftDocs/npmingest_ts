@@ -10,7 +10,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-network.NetworkWatcher>
+      name: Array<azure-arm-network.NetworkWatcher>
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatcherListResult.Array
     name: Array
@@ -25,3 +25,13 @@ items:
       return:
         type:
           - ArrayConstructor
+references:
+  - uid: Array<azure-arm-network.NetworkWatcher>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: NetworkWatcher
+        fullName: NetworkWatcher
+        uid: azure-arm-network.NetworkWatcher
+      - name: '>'
+        fullName: '>'

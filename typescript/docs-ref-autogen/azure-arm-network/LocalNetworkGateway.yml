@@ -15,7 +15,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.Resource'
+      name: azure-arm-network.Resource
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateway.bgpSettings
     name: bgpSettings
@@ -30,7 +30,7 @@ items:
       content: 'bgpSettings?: BgpSettings'
       return:
         type:
-          - '@azure-arm-network.BgpSettings'
+          - azure-arm-network.BgpSettings
   - uid: azure-arm-network.LocalNetworkGateway.etag
     name: etag
     fullName: etag
@@ -72,7 +72,7 @@ items:
       content: 'localNetworkAddressSpace?: AddressSpace'
       return:
         type:
-          - '@azure-arm-network.AddressSpace'
+          - azure-arm-network.AddressSpace
   - uid: azure-arm-network.LocalNetworkGateway.provisioningState
     name: provisioningState
     fullName: provisioningState
@@ -101,3 +101,19 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network.Resource
+  - uid: azure-arm-network.BgpSettings
+    spec.typeScript:
+      - name: BgpSettings
+        fullName: BgpSettings
+        uid: azure-arm-network.BgpSettings
+  - uid: azure-arm-network.AddressSpace
+    spec.typeScript:
+      - name: AddressSpace
+        fullName: AddressSpace
+        uid: azure-arm-network.AddressSpace

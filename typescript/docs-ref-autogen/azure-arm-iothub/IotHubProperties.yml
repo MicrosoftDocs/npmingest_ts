@@ -35,7 +35,7 @@ items:
       content: 'authorizationPolicies?: SharedAccessSignatureAuthorizationRule[]'
       return:
         type:
-          - '@azure-arm-iothub.SharedAccessSignatureAuthorizationRule[]'
+          - 'azure-arm-iothub.SharedAccessSignatureAuthorizationRule[]'
   - uid: azure-arm-iothub.IotHubProperties.cloudToDevice
     name: cloudToDevice
     fullName: cloudToDevice
@@ -49,7 +49,7 @@ items:
       content: 'cloudToDevice?: CloudToDeviceProperties'
       return:
         type:
-          - '@azure-arm-iothub.CloudToDeviceProperties'
+          - azure-arm-iothub.CloudToDeviceProperties
   - uid: azure-arm-iothub.IotHubProperties.comments
     name: comments
     fullName: comments
@@ -133,7 +133,7 @@ items:
       content: 'ipFilterRules?: IpFilterRule[]'
       return:
         type:
-          - '@azure-arm-iothub.IpFilterRule[]'
+          - 'azure-arm-iothub.IpFilterRule[]'
   - uid: azure-arm-iothub.IotHubProperties.messagingEndpoints
     name: messagingEndpoints
     fullName: messagingEndpoints
@@ -161,7 +161,7 @@ items:
       content: 'operationsMonitoringProperties?: OperationsMonitoringProperties'
       return:
         type:
-          - '@azure-arm-iothub.OperationsMonitoringProperties'
+          - azure-arm-iothub.OperationsMonitoringProperties
   - uid: azure-arm-iothub.IotHubProperties.provisioningState
     name: provisioningState
     fullName: provisioningState
@@ -189,7 +189,7 @@ items:
       content: 'routing?: RoutingProperties'
       return:
         type:
-          - '@azure-arm-iothub.RoutingProperties'
+          - azure-arm-iothub.RoutingProperties
   - uid: azure-arm-iothub.IotHubProperties.storageEndpoints
     name: storageEndpoints
     fullName: storageEndpoints
@@ -204,3 +204,33 @@ items:
       return:
         type:
           - function
+references:
+  - uid: 'azure-arm-iothub.SharedAccessSignatureAuthorizationRule[]'
+    spec.typeScript:
+      - name: SharedAccessSignatureAuthorizationRule
+        fullName: SharedAccessSignatureAuthorizationRule
+        uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRule
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-iothub.CloudToDeviceProperties
+    spec.typeScript:
+      - name: CloudToDeviceProperties
+        fullName: CloudToDeviceProperties
+        uid: azure-arm-iothub.CloudToDeviceProperties
+  - uid: 'azure-arm-iothub.IpFilterRule[]'
+    spec.typeScript:
+      - name: IpFilterRule
+        fullName: IpFilterRule
+        uid: azure-arm-iothub.IpFilterRule
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-iothub.OperationsMonitoringProperties
+    spec.typeScript:
+      - name: OperationsMonitoringProperties
+        fullName: OperationsMonitoringProperties
+        uid: azure-arm-iothub.OperationsMonitoringProperties
+  - uid: azure-arm-iothub.RoutingProperties
+    spec.typeScript:
+      - name: RoutingProperties
+        fullName: RoutingProperties
+        uid: azure-arm-iothub.RoutingProperties

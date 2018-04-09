@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-cdn.Endpoint>
+      name: Array<azure-arm-cdn.Endpoint>
     package: azure-arm-cdn
   - uid: azure-arm-cdn.EndpointListResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-cdn.Endpoint>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: Endpoint
+        fullName: Endpoint
+        uid: azure-arm-cdn.Endpoint
+      - name: '>'
+        fullName: '>'

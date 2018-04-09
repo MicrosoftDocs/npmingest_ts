@@ -20,7 +20,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.SubResource'
+      name: azure-arm-compute.SubResource
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetNetworkConfiguration.dnsSettings
     name: dnsSettings
@@ -36,7 +36,7 @@ items:
       return:
         type:
           - >-
-            @azure-arm-compute.VirtualMachineScaleSetNetworkConfigurationDnsSettings
+            azure-arm-compute.VirtualMachineScaleSetNetworkConfigurationDnsSettings
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetNetworkConfiguration.enableAcceleratedNetworking
     name: enableAcceleratedNetworking
@@ -80,7 +80,7 @@ items:
       content: 'ipConfigurations: VirtualMachineScaleSetIPConfiguration[]'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineScaleSetIPConfiguration[]'
+          - 'azure-arm-compute.VirtualMachineScaleSetIPConfiguration[]'
   - uid: azure-arm-compute.VirtualMachineScaleSetNetworkConfiguration.name
     name: name
     fullName: name
@@ -108,7 +108,7 @@ items:
       content: 'networkSecurityGroup?: SubResource'
       return:
         type:
-          - '@azure-arm-compute.SubResource'
+          - azure-arm-compute.SubResource
   - uid: azure-arm-compute.VirtualMachineScaleSetNetworkConfiguration.primary
     name: primary
     fullName: primary
@@ -123,3 +123,22 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: azure-arm-compute.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute.SubResource
+  - uid: azure-arm-compute.VirtualMachineScaleSetNetworkConfigurationDnsSettings
+    spec.typeScript:
+      - name: VirtualMachineScaleSetNetworkConfigurationDnsSettings
+        fullName: VirtualMachineScaleSetNetworkConfigurationDnsSettings
+        uid: >-
+          azure-arm-compute.VirtualMachineScaleSetNetworkConfigurationDnsSettings
+  - uid: 'azure-arm-compute.VirtualMachineScaleSetIPConfiguration[]'
+    spec.typeScript:
+      - name: VirtualMachineScaleSetIPConfiguration
+        fullName: VirtualMachineScaleSetIPConfiguration
+        uid: azure-arm-compute.VirtualMachineScaleSetIPConfiguration
+      - name: '[]'
+        fullName: '[]'

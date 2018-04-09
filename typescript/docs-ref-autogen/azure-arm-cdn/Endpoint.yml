@@ -24,7 +24,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-cdn.TrackedResource'
+      name: azure-arm-cdn.TrackedResource
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoint.contentTypesToCompress
     name: contentTypesToCompress
@@ -53,7 +53,7 @@ items:
       content: 'deliveryPolicy?: EndpointPropertiesUpdateParametersDeliveryPolicy'
       return:
         type:
-          - '@azure-arm-cdn.EndpointPropertiesUpdateParametersDeliveryPolicy'
+          - azure-arm-cdn.EndpointPropertiesUpdateParametersDeliveryPolicy
   - uid: azure-arm-cdn.Endpoint.geoFilters
     name: geoFilters
     fullName: geoFilters
@@ -67,7 +67,7 @@ items:
       content: 'geoFilters?: GeoFilter[]'
       return:
         type:
-          - '@azure-arm-cdn.GeoFilter[]'
+          - 'azure-arm-cdn.GeoFilter[]'
   - uid: azure-arm-cdn.Endpoint.hostName
     name: hostName
     fullName: hostName
@@ -178,7 +178,7 @@ items:
       content: 'origins: DeepCreatedOrigin[]'
       return:
         type:
-          - '@azure-arm-cdn.DeepCreatedOrigin[]'
+          - 'azure-arm-cdn.DeepCreatedOrigin[]'
   - uid: azure-arm-cdn.Endpoint.probePath
     name: probePath
     fullName: probePath
@@ -235,3 +235,28 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-cdn.TrackedResource
+    spec.typeScript:
+      - name: TrackedResource
+        fullName: TrackedResource
+        uid: azure-arm-cdn.TrackedResource
+  - uid: azure-arm-cdn.EndpointPropertiesUpdateParametersDeliveryPolicy
+    spec.typeScript:
+      - name: EndpointPropertiesUpdateParametersDeliveryPolicy
+        fullName: EndpointPropertiesUpdateParametersDeliveryPolicy
+        uid: azure-arm-cdn.EndpointPropertiesUpdateParametersDeliveryPolicy
+  - uid: 'azure-arm-cdn.GeoFilter[]'
+    spec.typeScript:
+      - name: GeoFilter
+        fullName: GeoFilter
+        uid: azure-arm-cdn.GeoFilter
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-cdn.DeepCreatedOrigin[]'
+    spec.typeScript:
+      - name: DeepCreatedOrigin
+        fullName: DeepCreatedOrigin
+        uid: azure-arm-cdn.DeepCreatedOrigin
+      - name: '[]'
+        fullName: '[]'

@@ -27,7 +27,7 @@ items:
       content: 'autoStorage?: AutoStorageBaseProperties'
       return:
         type:
-          - '@azure-arm-batch.AutoStorageBaseProperties'
+          - azure-arm-batch.AutoStorageBaseProperties
   - uid: azure-arm-batch.BatchAccountCreateParameters.keyVaultReference
     name: keyVaultReference
     fullName: keyVaultReference
@@ -41,7 +41,7 @@ items:
       content: 'keyVaultReference?: KeyVaultReference'
       return:
         type:
-          - '@azure-arm-batch.KeyVaultReference'
+          - azure-arm-batch.KeyVaultReference
   - uid: azure-arm-batch.BatchAccountCreateParameters.location
     name: location
     fullName: location
@@ -83,3 +83,14 @@ items:
       return:
         type:
           - function
+references:
+  - uid: azure-arm-batch.AutoStorageBaseProperties
+    spec.typeScript:
+      - name: AutoStorageBaseProperties
+        fullName: AutoStorageBaseProperties
+        uid: azure-arm-batch.AutoStorageBaseProperties
+  - uid: azure-arm-batch.KeyVaultReference
+    spec.typeScript:
+      - name: KeyVaultReference
+        fullName: KeyVaultReference
+        uid: azure-arm-batch.KeyVaultReference

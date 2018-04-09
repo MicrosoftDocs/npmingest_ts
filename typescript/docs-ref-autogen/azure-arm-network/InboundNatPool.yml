@@ -19,7 +19,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.InboundNatPool.backendPort
     name: backendPort
@@ -75,7 +75,7 @@ items:
       content: 'frontendIPConfiguration?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.InboundNatPool.frontendPortRangeEnd
     name: frontendPortRangeEnd
     fullName: frontendPortRangeEnd
@@ -157,3 +157,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource

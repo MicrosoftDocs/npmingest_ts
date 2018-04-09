@@ -69,7 +69,7 @@ items:
       content: 'recommendedActions?: TroubleshootingRecommendedActions[]'
       return:
         type:
-          - '@azure-arm-network.TroubleshootingRecommendedActions[]'
+          - 'azure-arm-network.TroubleshootingRecommendedActions[]'
   - uid: azure-arm-network.TroubleshootingDetails.summary
     name: summary
     fullName: summary
@@ -84,3 +84,11 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'azure-arm-network.TroubleshootingRecommendedActions[]'
+    spec.typeScript:
+      - name: TroubleshootingRecommendedActions
+        fullName: TroubleshootingRecommendedActions
+        uid: azure-arm-network.TroubleshootingRecommendedActions
+      - name: '[]'
+        fullName: '[]'

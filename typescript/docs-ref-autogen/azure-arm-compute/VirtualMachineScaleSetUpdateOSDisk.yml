@@ -42,7 +42,7 @@ items:
       content: 'image?: VirtualHardDisk'
       return:
         type:
-          - '@azure-arm-compute.VirtualHardDisk'
+          - azure-arm-compute.VirtualHardDisk
   - uid: azure-arm-compute.VirtualMachineScaleSetUpdateOSDisk.managedDisk
     name: managedDisk
     fullName: managedDisk
@@ -56,7 +56,7 @@ items:
       content: 'managedDisk?: VirtualMachineScaleSetManagedDiskParameters'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineScaleSetManagedDiskParameters'
+          - azure-arm-compute.VirtualMachineScaleSetManagedDiskParameters
   - uid: azure-arm-compute.VirtualMachineScaleSetUpdateOSDisk.vhdContainers
     name: vhdContainers
     fullName: vhdContainers
@@ -86,3 +86,14 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: azure-arm-compute.VirtualHardDisk
+    spec.typeScript:
+      - name: VirtualHardDisk
+        fullName: VirtualHardDisk
+        uid: azure-arm-compute.VirtualHardDisk
+  - uid: azure-arm-compute.VirtualMachineScaleSetManagedDiskParameters
+    spec.typeScript:
+      - name: VirtualMachineScaleSetManagedDiskParameters
+        fullName: VirtualMachineScaleSetManagedDiskParameters
+        uid: azure-arm-compute.VirtualMachineScaleSetManagedDiskParameters

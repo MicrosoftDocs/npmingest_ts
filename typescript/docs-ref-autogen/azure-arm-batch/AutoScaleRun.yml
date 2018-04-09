@@ -25,7 +25,7 @@ items:
       content: 'error?: AutoScaleRunError'
       return:
         type:
-          - '@azure-arm-batch.AutoScaleRunError'
+          - azure-arm-batch.AutoScaleRunError
   - uid: azure-arm-batch.AutoScaleRun.evaluationTime
     name: evaluationTime
     fullName: evaluationTime
@@ -53,3 +53,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-batch.AutoScaleRunError
+    spec.typeScript:
+      - name: AutoScaleRunError
+        fullName: AutoScaleRunError
+        uid: azure-arm-batch.AutoScaleRunError

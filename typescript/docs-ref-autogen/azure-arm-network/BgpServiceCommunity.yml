@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.Resource'
+      name: azure-arm-network.Resource
     package: azure-arm-network
   - uid: azure-arm-network.BgpServiceCommunity.bgpCommunities
     name: bgpCommunities
@@ -26,7 +26,7 @@ items:
       content: 'bgpCommunities?: BGPCommunity[]'
       return:
         type:
-          - '@azure-arm-network.BGPCommunity[]'
+          - 'azure-arm-network.BGPCommunity[]'
   - uid: azure-arm-network.BgpServiceCommunity.serviceName
     name: serviceName
     fullName: serviceName
@@ -41,3 +41,16 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network.Resource
+  - uid: 'azure-arm-network.BGPCommunity[]'
+    spec.typeScript:
+      - name: BGPCommunity
+        fullName: BGPCommunity
+        uid: azure-arm-network.BGPCommunity
+      - name: '[]'
+        fullName: '[]'

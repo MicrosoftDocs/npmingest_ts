@@ -10,7 +10,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-batch.AutoStorageBaseProperties'
+      name: azure-arm-batch.AutoStorageBaseProperties
     package: azure-arm-batch
   - uid: azure-arm-batch.AutoStorageProperties.lastKeySync
     name: lastKeySync
@@ -25,3 +25,9 @@ items:
       return:
         type:
           - Date
+references:
+  - uid: azure-arm-batch.AutoStorageBaseProperties
+    spec.typeScript:
+      - name: AutoStorageBaseProperties
+        fullName: AutoStorageBaseProperties
+        uid: azure-arm-batch.AutoStorageBaseProperties

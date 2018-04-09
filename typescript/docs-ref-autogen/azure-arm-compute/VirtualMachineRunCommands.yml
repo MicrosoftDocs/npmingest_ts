@@ -50,7 +50,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.RunCommandDocument>
+          - Promise<azure-arm-compute.RunCommandDocument>
   - uid: azure-arm-compute.VirtualMachineRunCommands.get_2
     name: get
     children: []
@@ -77,11 +77,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.RunCommandDocument>
+            - ServiceCallback<azure-arm-compute.RunCommandDocument>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.RunCommandDocument>
+          - Promise<azure-arm-compute.RunCommandDocument>
   - uid: azure-arm-compute.VirtualMachineRunCommands.get_1
     name: get
     children: []
@@ -104,11 +104,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.RunCommandDocument>
+            - ServiceCallback<azure-arm-compute.RunCommandDocument>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.RunCommandDocument>
+          - Promise<azure-arm-compute.RunCommandDocument>
   - uid: azure-arm-compute.VirtualMachineRunCommands.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -138,7 +138,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RunCommandDocument>>
+          - Promise<RunCommandDocument!@>>
   - uid: azure-arm-compute.VirtualMachineRunCommands.list
     name: list
     children: []
@@ -161,7 +161,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.RunCommandListResult>
+          - Promise<azure-arm-compute.RunCommandListResult>
   - uid: azure-arm-compute.VirtualMachineRunCommands.list_1
     name: list
     children: []
@@ -180,11 +180,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.RunCommandListResult>
+            - ServiceCallback<azure-arm-compute.RunCommandListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.RunCommandListResult>
+          - Promise<azure-arm-compute.RunCommandListResult>
   - uid: azure-arm-compute.VirtualMachineRunCommands.list_2
     name: list
     children: []
@@ -207,11 +207,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.RunCommandListResult>
+            - ServiceCallback<azure-arm-compute.RunCommandListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.RunCommandListResult>
+          - Promise<azure-arm-compute.RunCommandListResult>
   - uid: azure-arm-compute.VirtualMachineRunCommands.listNext
     name: listNext
     children: []
@@ -235,7 +235,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.RunCommandListResult>
+          - Promise<azure-arm-compute.RunCommandListResult>
   - uid: azure-arm-compute.VirtualMachineRunCommands.listNext_1
     name: listNext
     children: []
@@ -254,11 +254,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.RunCommandListResult>
+            - ServiceCallback<azure-arm-compute.RunCommandListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.RunCommandListResult>
+          - Promise<azure-arm-compute.RunCommandListResult>
   - uid: azure-arm-compute.VirtualMachineRunCommands.listNext_2
     name: listNext
     children: []
@@ -281,11 +281,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.RunCommandListResult>
+            - ServiceCallback<azure-arm-compute.RunCommandListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.RunCommandListResult>
+          - Promise<azure-arm-compute.RunCommandListResult>
   - uid: >-
       azure-arm-compute.VirtualMachineRunCommands.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
@@ -312,7 +312,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RunCommandListResult>>
+          - Promise<RunCommandListResult!@>>
   - uid: azure-arm-compute.VirtualMachineRunCommands.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -337,4 +337,41 @@ items:
           optional: true
       return:
         type:
-          - Promise<RunCommandListResult>>
+          - Promise<RunCommandListResult!@>>
+references:
+  - uid: Promise<azure-arm-compute.RunCommandDocument>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: RunCommandDocument
+        fullName: RunCommandDocument
+        uid: azure-arm-compute.RunCommandDocument
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.RunCommandDocument>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: RunCommandDocument
+        fullName: RunCommandDocument
+        uid: azure-arm-compute.RunCommandDocument
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-compute.RunCommandListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: RunCommandListResult
+        fullName: RunCommandListResult
+        uid: azure-arm-compute.RunCommandListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.RunCommandListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: RunCommandListResult
+        fullName: RunCommandListResult
+        uid: azure-arm-compute.RunCommandListResult
+      - name: '>'
+        fullName: '>'

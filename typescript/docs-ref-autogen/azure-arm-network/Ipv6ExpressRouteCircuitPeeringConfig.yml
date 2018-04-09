@@ -31,7 +31,7 @@ items:
       content: 'microsoftPeeringConfig?: ExpressRouteCircuitPeeringConfig'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCircuitPeeringConfig'
+          - azure-arm-network.ExpressRouteCircuitPeeringConfig
   - uid: >-
       azure-arm-network.Ipv6ExpressRouteCircuitPeeringConfig.primaryPeerAddressPrefix
     name: primaryPeerAddressPrefix
@@ -60,7 +60,7 @@ items:
       content: 'routeFilter?: RouteFilter'
       return:
         type:
-          - '@azure-arm-network.RouteFilter'
+          - azure-arm-network.RouteFilter
   - uid: >-
       azure-arm-network.Ipv6ExpressRouteCircuitPeeringConfig.secondaryPeerAddressPrefix
     name: secondaryPeerAddressPrefix
@@ -90,3 +90,14 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.ExpressRouteCircuitPeeringConfig
+    spec.typeScript:
+      - name: ExpressRouteCircuitPeeringConfig
+        fullName: ExpressRouteCircuitPeeringConfig
+        uid: azure-arm-network.ExpressRouteCircuitPeeringConfig
+  - uid: azure-arm-network.RouteFilter
+    spec.typeScript:
+      - name: RouteFilter
+        fullName: RouteFilter
+        uid: azure-arm-network.RouteFilter

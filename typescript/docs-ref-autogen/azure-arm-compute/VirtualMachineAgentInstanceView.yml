@@ -25,7 +25,7 @@ items:
       content: 'extensionHandlers?: VirtualMachineExtensionHandlerInstanceView[]'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineExtensionHandlerInstanceView[]'
+          - 'azure-arm-compute.VirtualMachineExtensionHandlerInstanceView[]'
   - uid: azure-arm-compute.VirtualMachineAgentInstanceView.statuses
     name: statuses
     fullName: statuses
@@ -39,7 +39,7 @@ items:
       content: 'statuses?: InstanceViewStatus[]'
       return:
         type:
-          - '@azure-arm-compute.InstanceViewStatus[]'
+          - 'azure-arm-compute.InstanceViewStatus[]'
   - uid: azure-arm-compute.VirtualMachineAgentInstanceView.vmAgentVersion
     name: vmAgentVersion
     fullName: vmAgentVersion
@@ -54,3 +54,18 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'azure-arm-compute.VirtualMachineExtensionHandlerInstanceView[]'
+    spec.typeScript:
+      - name: VirtualMachineExtensionHandlerInstanceView
+        fullName: VirtualMachineExtensionHandlerInstanceView
+        uid: azure-arm-compute.VirtualMachineExtensionHandlerInstanceView
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-compute.InstanceViewStatus[]'
+    spec.typeScript:
+      - name: InstanceViewStatus
+        fullName: InstanceViewStatus
+        uid: azure-arm-compute.InstanceViewStatus
+      - name: '[]'
+        fullName: '[]'

@@ -29,7 +29,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.azureASN
     name: azureASN
@@ -86,7 +86,7 @@ items:
       content: 'ipv6PeeringConfig?: Ipv6ExpressRouteCircuitPeeringConfig'
       return:
         type:
-          - '@azure-arm-network.Ipv6ExpressRouteCircuitPeeringConfig'
+          - azure-arm-network.Ipv6ExpressRouteCircuitPeeringConfig
   - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.lastModifiedBy
     name: lastModifiedBy
     fullName: lastModifiedBy
@@ -115,7 +115,7 @@ items:
       content: 'microsoftPeeringConfig?: ExpressRouteCircuitPeeringConfig'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCircuitPeeringConfig'
+          - azure-arm-network.ExpressRouteCircuitPeeringConfig
   - uid: azure-arm-network.ExpressRouteCrossConnectionPeering.name
     name: name
     fullName: name
@@ -272,3 +272,19 @@ items:
       return:
         type:
           - number
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: azure-arm-network.Ipv6ExpressRouteCircuitPeeringConfig
+    spec.typeScript:
+      - name: Ipv6ExpressRouteCircuitPeeringConfig
+        fullName: Ipv6ExpressRouteCircuitPeeringConfig
+        uid: azure-arm-network.Ipv6ExpressRouteCircuitPeeringConfig
+  - uid: azure-arm-network.ExpressRouteCircuitPeeringConfig
+    spec.typeScript:
+      - name: ExpressRouteCircuitPeeringConfig
+        fullName: ExpressRouteCircuitPeeringConfig
+        uid: azure-arm-network.ExpressRouteCircuitPeeringConfig

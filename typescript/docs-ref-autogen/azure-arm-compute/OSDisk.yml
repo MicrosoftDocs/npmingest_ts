@@ -73,7 +73,7 @@ items:
       content: 'encryptionSettings?: DiskEncryptionSettings'
       return:
         type:
-          - '@azure-arm-compute.DiskEncryptionSettings'
+          - azure-arm-compute.DiskEncryptionSettings
   - uid: azure-arm-compute.OSDisk.image
     name: image
     fullName: image
@@ -87,7 +87,7 @@ items:
       content: 'image?: VirtualHardDisk'
       return:
         type:
-          - '@azure-arm-compute.VirtualHardDisk'
+          - azure-arm-compute.VirtualHardDisk
   - uid: azure-arm-compute.OSDisk.managedDisk
     name: managedDisk
     fullName: managedDisk
@@ -101,7 +101,7 @@ items:
       content: 'managedDisk?: ManagedDiskParameters'
       return:
         type:
-          - '@azure-arm-compute.ManagedDiskParameters'
+          - azure-arm-compute.ManagedDiskParameters
   - uid: azure-arm-compute.OSDisk.name
     name: name
     fullName: name
@@ -143,7 +143,7 @@ items:
       content: 'vhd?: VirtualHardDisk'
       return:
         type:
-          - '@azure-arm-compute.VirtualHardDisk'
+          - azure-arm-compute.VirtualHardDisk
   - uid: azure-arm-compute.OSDisk.writeAcceleratorEnabled
     name: writeAcceleratorEnabled
     fullName: writeAcceleratorEnabled
@@ -158,3 +158,19 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: azure-arm-compute.DiskEncryptionSettings
+    spec.typeScript:
+      - name: DiskEncryptionSettings
+        fullName: DiskEncryptionSettings
+        uid: azure-arm-compute.DiskEncryptionSettings
+  - uid: azure-arm-compute.VirtualHardDisk
+    spec.typeScript:
+      - name: VirtualHardDisk
+        fullName: VirtualHardDisk
+        uid: azure-arm-compute.VirtualHardDisk
+  - uid: azure-arm-compute.ManagedDiskParameters
+    spec.typeScript:
+      - name: ManagedDiskParameters
+        fullName: ManagedDiskParameters
+        uid: azure-arm-compute.ManagedDiskParameters

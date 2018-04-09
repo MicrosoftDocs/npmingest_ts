@@ -16,7 +16,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationGatewayBackendAddressPool.backendAddresses
     name: backendAddresses
@@ -31,7 +31,7 @@ items:
       content: 'backendAddresses?: ApplicationGatewayBackendAddress[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayBackendAddress[]'
+          - 'azure-arm-network.ApplicationGatewayBackendAddress[]'
   - uid: >-
       azure-arm-network.ApplicationGatewayBackendAddressPool.backendIPConfigurations
     name: backendIPConfigurations
@@ -46,7 +46,7 @@ items:
       content: 'backendIPConfigurations?: NetworkInterfaceIPConfiguration[]'
       return:
         type:
-          - '@azure-arm-network.NetworkInterfaceIPConfiguration[]'
+          - 'azure-arm-network.NetworkInterfaceIPConfiguration[]'
   - uid: azure-arm-network.ApplicationGatewayBackendAddressPool.etag
     name: etag
     fullName: etag
@@ -103,3 +103,23 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: 'azure-arm-network.ApplicationGatewayBackendAddress[]'
+    spec.typeScript:
+      - name: ApplicationGatewayBackendAddress
+        fullName: ApplicationGatewayBackendAddress
+        uid: azure-arm-network.ApplicationGatewayBackendAddress
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.NetworkInterfaceIPConfiguration[]'
+    spec.typeScript:
+      - name: NetworkInterfaceIPConfiguration
+        fullName: NetworkInterfaceIPConfiguration
+        uid: azure-arm-network.NetworkInterfaceIPConfiguration
+      - name: '[]'
+        fullName: '[]'

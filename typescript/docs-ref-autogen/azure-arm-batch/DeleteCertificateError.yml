@@ -39,7 +39,7 @@ items:
       content: 'details?: DeleteCertificateError[]'
       return:
         type:
-          - '@azure-arm-batch.DeleteCertificateError[]'
+          - 'azure-arm-batch.DeleteCertificateError[]'
   - uid: azure-arm-batch.DeleteCertificateError.message
     name: message
     fullName: message
@@ -67,3 +67,11 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'azure-arm-batch.DeleteCertificateError[]'
+    spec.typeScript:
+      - name: DeleteCertificateError
+        fullName: DeleteCertificateError
+        uid: azure-arm-batch.DeleteCertificateError
+      - name: '[]'
+        fullName: '[]'

@@ -10,7 +10,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.OperationStatusResponse'
+      name: azure-arm-compute.OperationStatusResponse
     package: azure-arm-compute
   - uid: azure-arm-compute.RunCommandResult.output
     name: output
@@ -26,3 +26,9 @@ items:
       return:
         type:
           - any
+references:
+  - uid: azure-arm-compute.OperationStatusResponse
+    spec.typeScript:
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse

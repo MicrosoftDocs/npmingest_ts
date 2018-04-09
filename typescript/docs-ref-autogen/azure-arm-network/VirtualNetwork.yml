@@ -19,7 +19,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.Resource'
+      name: azure-arm-network.Resource
     package: azure-arm-network
   - uid: azure-arm-network.VirtualNetwork.addressSpace
     name: addressSpace
@@ -34,7 +34,7 @@ items:
       content: 'addressSpace?: AddressSpace'
       return:
         type:
-          - '@azure-arm-network.AddressSpace'
+          - azure-arm-network.AddressSpace
   - uid: azure-arm-network.VirtualNetwork.ddosProtectionPlan
     name: ddosProtectionPlan
     fullName: ddosProtectionPlan
@@ -48,7 +48,7 @@ items:
       content: 'ddosProtectionPlan?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.VirtualNetwork.dhcpOptions
     name: dhcpOptions
     fullName: dhcpOptions
@@ -62,7 +62,7 @@ items:
       content: 'dhcpOptions?: DhcpOptions'
       return:
         type:
-          - '@azure-arm-network.DhcpOptions'
+          - azure-arm-network.DhcpOptions
   - uid: azure-arm-network.VirtualNetwork.enableDdosProtection
     name: enableDdosProtection
     fullName: enableDdosProtection
@@ -146,7 +146,7 @@ items:
       content: 'subnets?: Subnet[]'
       return:
         type:
-          - '@azure-arm-network.Subnet[]'
+          - 'azure-arm-network.Subnet[]'
   - uid: azure-arm-network.VirtualNetwork.virtualNetworkPeerings
     name: virtualNetworkPeerings
     fullName: virtualNetworkPeerings
@@ -160,4 +160,39 @@ items:
       content: 'virtualNetworkPeerings?: VirtualNetworkPeering[]'
       return:
         type:
-          - '@azure-arm-network.VirtualNetworkPeering[]'
+          - 'azure-arm-network.VirtualNetworkPeering[]'
+references:
+  - uid: azure-arm-network.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network.Resource
+  - uid: azure-arm-network.AddressSpace
+    spec.typeScript:
+      - name: AddressSpace
+        fullName: AddressSpace
+        uid: azure-arm-network.AddressSpace
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: azure-arm-network.DhcpOptions
+    spec.typeScript:
+      - name: DhcpOptions
+        fullName: DhcpOptions
+        uid: azure-arm-network.DhcpOptions
+  - uid: 'azure-arm-network.Subnet[]'
+    spec.typeScript:
+      - name: Subnet
+        fullName: Subnet
+        uid: azure-arm-network.Subnet
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.VirtualNetworkPeering[]'
+    spec.typeScript:
+      - name: VirtualNetworkPeering
+        fullName: VirtualNetworkPeering
+        uid: azure-arm-network.VirtualNetworkPeering
+      - name: '[]'
+        fullName: '[]'

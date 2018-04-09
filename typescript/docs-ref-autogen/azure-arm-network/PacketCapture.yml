@@ -42,7 +42,7 @@ items:
       content: 'filters?: PacketCaptureFilter[]'
       return:
         type:
-          - '@azure-arm-network.PacketCaptureFilter[]'
+          - 'azure-arm-network.PacketCaptureFilter[]'
   - uid: azure-arm-network.PacketCapture.storageLocation
     name: storageLocation
     fullName: storageLocation
@@ -55,7 +55,7 @@ items:
       content: 'storageLocation: PacketCaptureStorageLocation'
       return:
         type:
-          - '@azure-arm-network.PacketCaptureStorageLocation'
+          - azure-arm-network.PacketCaptureStorageLocation
   - uid: azure-arm-network.PacketCapture.target
     name: target
     fullName: target
@@ -97,3 +97,16 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'azure-arm-network.PacketCaptureFilter[]'
+    spec.typeScript:
+      - name: PacketCaptureFilter
+        fullName: PacketCaptureFilter
+        uid: azure-arm-network.PacketCaptureFilter
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network.PacketCaptureStorageLocation
+    spec.typeScript:
+      - name: PacketCaptureStorageLocation
+        fullName: PacketCaptureStorageLocation
+        uid: azure-arm-network.PacketCaptureStorageLocation

@@ -57,7 +57,7 @@ items:
       content: 'vpnClientAddressPool?: AddressSpace'
       return:
         type:
-          - '@azure-arm-network.AddressSpace'
+          - azure-arm-network.AddressSpace
   - uid: azure-arm-network.VpnClientConfiguration.vpnClientIpsecPolicies
     name: vpnClientIpsecPolicies
     fullName: vpnClientIpsecPolicies
@@ -71,7 +71,7 @@ items:
       content: 'vpnClientIpsecPolicies?: IpsecPolicy[]'
       return:
         type:
-          - '@azure-arm-network.IpsecPolicy[]'
+          - 'azure-arm-network.IpsecPolicy[]'
   - uid: azure-arm-network.VpnClientConfiguration.vpnClientProtocols
     name: vpnClientProtocols
     fullName: vpnClientProtocols
@@ -99,7 +99,7 @@ items:
       content: 'vpnClientRevokedCertificates?: VpnClientRevokedCertificate[]'
       return:
         type:
-          - '@azure-arm-network.VpnClientRevokedCertificate[]'
+          - 'azure-arm-network.VpnClientRevokedCertificate[]'
   - uid: azure-arm-network.VpnClientConfiguration.vpnClientRootCertificates
     name: vpnClientRootCertificates
     fullName: vpnClientRootCertificates
@@ -113,4 +113,31 @@ items:
       content: 'vpnClientRootCertificates?: VpnClientRootCertificate[]'
       return:
         type:
-          - '@azure-arm-network.VpnClientRootCertificate[]'
+          - 'azure-arm-network.VpnClientRootCertificate[]'
+references:
+  - uid: azure-arm-network.AddressSpace
+    spec.typeScript:
+      - name: AddressSpace
+        fullName: AddressSpace
+        uid: azure-arm-network.AddressSpace
+  - uid: 'azure-arm-network.IpsecPolicy[]'
+    spec.typeScript:
+      - name: IpsecPolicy
+        fullName: IpsecPolicy
+        uid: azure-arm-network.IpsecPolicy
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.VpnClientRevokedCertificate[]'
+    spec.typeScript:
+      - name: VpnClientRevokedCertificate
+        fullName: VpnClientRevokedCertificate
+        uid: azure-arm-network.VpnClientRevokedCertificate
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.VpnClientRootCertificate[]'
+    spec.typeScript:
+      - name: VpnClientRootCertificate
+        fullName: VpnClientRootCertificate
+        uid: azure-arm-network.VpnClientRootCertificate
+      - name: '[]'
+        fullName: '[]'

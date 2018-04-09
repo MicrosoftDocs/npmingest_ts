@@ -56,7 +56,7 @@ items:
       content: 'issues?: ConnectivityIssue[]'
       return:
         type:
-          - '@azure-arm-network.ConnectivityIssue[]'
+          - 'azure-arm-network.ConnectivityIssue[]'
   - uid: azure-arm-network.ConnectivityHop.nextHopIds
     name: nextHopIds
     fullName: nextHopIds
@@ -99,3 +99,11 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'azure-arm-network.ConnectivityIssue[]'
+    spec.typeScript:
+      - name: ConnectivityIssue
+        fullName: ConnectivityIssue
+        uid: azure-arm-network.ConnectivityIssue
+      - name: '[]'
+        fullName: '[]'

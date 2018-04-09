@@ -78,7 +78,7 @@ items:
             The name of the authorization.
         - id: authorizationParameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuitAuthorization'
+            - azure-arm-network.ExpressRouteCircuitAuthorization
           description: |
             Parameters supplied to the create or
             update express route circuit authorization operation.
@@ -89,7 +89,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitAuthorization>
+          - Promise<azure-arm-network.ExpressRouteCircuitAuthorization>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -120,16 +120,16 @@ items:
           description: ''
         - id: authorizationParameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuitAuthorization'
+            - azure-arm-network.ExpressRouteCircuitAuthorization
           description: ''
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitAuthorization>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitAuthorization>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitAuthorization>
+          - Promise<azure-arm-network.ExpressRouteCircuitAuthorization>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -160,7 +160,7 @@ items:
           description: ''
         - id: authorizationParameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuitAuthorization'
+            - azure-arm-network.ExpressRouteCircuitAuthorization
           description: ''
         - id: options
           type:
@@ -169,11 +169,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitAuthorization>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitAuthorization>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitAuthorization>
+          - Promise<azure-arm-network.ExpressRouteCircuitAuthorization>
   - uid: >-
       azure-arm-network.ExpressRouteCircuitAuthorizations.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
@@ -208,7 +208,7 @@ items:
             The name of the authorization.
         - id: authorizationParameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuitAuthorization'
+            - azure-arm-network.ExpressRouteCircuitAuthorization
           description: |
             Parameters supplied to the create or
             update express route circuit authorization operation.
@@ -219,7 +219,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitAuthorization>>
+          - Promise<ExpressRouteCircuitAuthorization!@>>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -399,7 +399,7 @@ items:
             The name of the authorization.
         - id: authorizationParameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuitAuthorization'
+            - azure-arm-network.ExpressRouteCircuitAuthorization
           description: |
             Parameters supplied to the create or
             update express route circuit authorization operation.
@@ -410,7 +410,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitAuthorization>
+          - Promise<azure-arm-network.ExpressRouteCircuitAuthorization>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -441,16 +441,16 @@ items:
           description: ''
         - id: authorizationParameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuitAuthorization'
+            - azure-arm-network.ExpressRouteCircuitAuthorization
           description: ''
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitAuthorization>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitAuthorization>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitAuthorization>
+          - Promise<azure-arm-network.ExpressRouteCircuitAuthorization>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -481,7 +481,7 @@ items:
           description: ''
         - id: authorizationParameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuitAuthorization'
+            - azure-arm-network.ExpressRouteCircuitAuthorization
           description: ''
         - id: options
           type:
@@ -490,11 +490,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitAuthorization>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitAuthorization>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitAuthorization>
+          - Promise<azure-arm-network.ExpressRouteCircuitAuthorization>
   - uid: >-
       azure-arm-network.ExpressRouteCircuitAuthorizations.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
@@ -529,7 +529,7 @@ items:
             The name of the authorization.
         - id: authorizationParameters
           type:
-            - '@azure-arm-network.ExpressRouteCircuitAuthorization'
+            - azure-arm-network.ExpressRouteCircuitAuthorization
           description: |
             Parameters supplied to the create or
             update express route circuit authorization operation.
@@ -540,7 +540,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitAuthorization>>
+          - Promise<ExpressRouteCircuitAuthorization!@>>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.deleteMethod
     name: deleteMethod
     children: []
@@ -716,11 +716,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitAuthorization>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitAuthorization>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitAuthorization>
+          - Promise<azure-arm-network.ExpressRouteCircuitAuthorization>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.get_2
     name: get
     children: []
@@ -753,11 +753,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitAuthorization>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitAuthorization>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitAuthorization>
+          - Promise<azure-arm-network.ExpressRouteCircuitAuthorization>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.get
     name: get
     children: []
@@ -792,7 +792,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitAuthorization>
+          - Promise<azure-arm-network.ExpressRouteCircuitAuthorization>
   - uid: >-
       azure-arm-network.ExpressRouteCircuitAuthorizations.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
@@ -828,7 +828,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitAuthorization>>
+          - Promise<ExpressRouteCircuitAuthorization!@>>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.list
     name: list
     children: []
@@ -858,7 +858,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.AuthorizationListResult>
+          - Promise<azure-arm-network.AuthorizationListResult>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.list_1
     name: list
     children: []
@@ -881,11 +881,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.AuthorizationListResult>
+            - ServiceCallback<azure-arm-network.AuthorizationListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.AuthorizationListResult>
+          - Promise<azure-arm-network.AuthorizationListResult>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.list_2
     name: list
     children: []
@@ -912,11 +912,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.AuthorizationListResult>
+            - ServiceCallback<azure-arm-network.AuthorizationListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.AuthorizationListResult>
+          - Promise<azure-arm-network.AuthorizationListResult>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.listNext
     name: listNext
     children: []
@@ -940,7 +940,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.AuthorizationListResult>
+          - Promise<azure-arm-network.AuthorizationListResult>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.listNext_1
     name: listNext
     children: []
@@ -959,11 +959,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.AuthorizationListResult>
+            - ServiceCallback<azure-arm-network.AuthorizationListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.AuthorizationListResult>
+          - Promise<azure-arm-network.AuthorizationListResult>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.listNext_2
     name: listNext
     children: []
@@ -986,11 +986,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.AuthorizationListResult>
+            - ServiceCallback<azure-arm-network.AuthorizationListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.AuthorizationListResult>
+          - Promise<azure-arm-network.AuthorizationListResult>
   - uid: >-
       azure-arm-network.ExpressRouteCircuitAuthorizations.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
@@ -1017,7 +1017,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AuthorizationListResult>>
+          - Promise<AuthorizationListResult!@>>
   - uid: >-
       azure-arm-network.ExpressRouteCircuitAuthorizations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -1048,4 +1048,46 @@ items:
           optional: true
       return:
         type:
-          - Promise<AuthorizationListResult>>
+          - Promise<AuthorizationListResult!@>>
+references:
+  - uid: azure-arm-network.ExpressRouteCircuitAuthorization
+    spec.typeScript:
+      - name: ExpressRouteCircuitAuthorization
+        fullName: ExpressRouteCircuitAuthorization
+        uid: azure-arm-network.ExpressRouteCircuitAuthorization
+  - uid: Promise<azure-arm-network.ExpressRouteCircuitAuthorization>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteCircuitAuthorization
+        fullName: ExpressRouteCircuitAuthorization
+        uid: azure-arm-network.ExpressRouteCircuitAuthorization
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ExpressRouteCircuitAuthorization>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteCircuitAuthorization
+        fullName: ExpressRouteCircuitAuthorization
+        uid: azure-arm-network.ExpressRouteCircuitAuthorization
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.AuthorizationListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: AuthorizationListResult
+        fullName: AuthorizationListResult
+        uid: azure-arm-network.AuthorizationListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.AuthorizationListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: AuthorizationListResult
+        fullName: AuthorizationListResult
+        uid: azure-arm-network.AuthorizationListResult
+      - name: '>'
+        fullName: '>'

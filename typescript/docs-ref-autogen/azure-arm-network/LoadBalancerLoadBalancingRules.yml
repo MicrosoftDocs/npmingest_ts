@@ -58,7 +58,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancingRule>
+          - Promise<azure-arm-network.LoadBalancingRule>
   - uid: azure-arm-network.LoadBalancerLoadBalancingRules.get_2
     name: get
     children: []
@@ -90,11 +90,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancingRule>
+            - ServiceCallback<azure-arm-network.LoadBalancingRule>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancingRule>
+          - Promise<azure-arm-network.LoadBalancingRule>
   - uid: azure-arm-network.LoadBalancerLoadBalancingRules.get_1
     name: get
     children: []
@@ -122,11 +122,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancingRule>
+            - ServiceCallback<azure-arm-network.LoadBalancingRule>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancingRule>
+          - Promise<azure-arm-network.LoadBalancingRule>
   - uid: >-
       azure-arm-network.LoadBalancerLoadBalancingRules.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
@@ -163,7 +163,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancingRule>>
+          - Promise<LoadBalancingRule!@>>
   - uid: azure-arm-network.LoadBalancerLoadBalancingRules.list
     name: list
     children: []
@@ -193,7 +193,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
+          - Promise<azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
   - uid: azure-arm-network.LoadBalancerLoadBalancingRules.list_1
     name: list
     children: []
@@ -217,11 +217,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
+              ServiceCallback<azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
+          - Promise<azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
   - uid: azure-arm-network.LoadBalancerLoadBalancingRules.list_2
     name: list
     children: []
@@ -250,11 +250,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
+              ServiceCallback<azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
+          - Promise<azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
   - uid: azure-arm-network.LoadBalancerLoadBalancingRules.listNext
     name: listNext
     children: []
@@ -278,7 +278,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
+          - Promise<azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
   - uid: azure-arm-network.LoadBalancerLoadBalancingRules.listNext_1
     name: listNext
     children: []
@@ -298,11 +298,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
+              ServiceCallback<azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
+          - Promise<azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
   - uid: azure-arm-network.LoadBalancerLoadBalancingRules.listNext_2
     name: listNext
     children: []
@@ -326,11 +326,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
+              ServiceCallback<azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
+          - Promise<azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
   - uid: >-
       azure-arm-network.LoadBalancerLoadBalancingRules.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
@@ -357,7 +357,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerLoadBalancingRuleListResult>>
+          - Promise<LoadBalancerLoadBalancingRuleListResult!@>>
   - uid: >-
       azure-arm-network.LoadBalancerLoadBalancingRules.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -388,4 +388,41 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerLoadBalancingRuleListResult>>
+          - Promise<LoadBalancerLoadBalancingRuleListResult!@>>
+references:
+  - uid: Promise<azure-arm-network.LoadBalancingRule>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: LoadBalancingRule
+        fullName: LoadBalancingRule
+        uid: azure-arm-network.LoadBalancingRule
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.LoadBalancingRule>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: LoadBalancingRule
+        fullName: LoadBalancingRule
+        uid: azure-arm-network.LoadBalancingRule
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: LoadBalancerLoadBalancingRuleListResult
+        fullName: LoadBalancerLoadBalancingRuleListResult
+        uid: azure-arm-network.LoadBalancerLoadBalancingRuleListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: LoadBalancerLoadBalancingRuleListResult
+        fullName: LoadBalancerLoadBalancingRuleListResult
+        uid: azure-arm-network.LoadBalancerLoadBalancingRuleListResult
+      - name: '>'
+        fullName: '>'

@@ -84,7 +84,7 @@ items:
       content: 'managedDisk?: SubResource'
       return:
         type:
-          - '@azure-arm-compute.SubResource'
+          - azure-arm-compute.SubResource
   - uid: azure-arm-compute.ImageDataDisk.snapshot
     name: snapshot
     fullName: snapshot
@@ -98,7 +98,7 @@ items:
       content: 'snapshot?: SubResource'
       return:
         type:
-          - '@azure-arm-compute.SubResource'
+          - azure-arm-compute.SubResource
   - uid: azure-arm-compute.ImageDataDisk.storageAccountType
     name: storageAccountType
     fullName: storageAccountType
@@ -113,3 +113,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-compute.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute.SubResource

@@ -24,7 +24,7 @@ items:
       content: 'sku?: DiskSku'
       return:
         type:
-          - '@azure-arm-compute.DiskSku'
+          - azure-arm-compute.DiskSku
   - uid: azure-arm-compute.ResourceUpdate.tags
     name: tags
     fullName: tags
@@ -39,3 +39,9 @@ items:
       return:
         type:
           - function
+references:
+  - uid: azure-arm-compute.DiskSku
+    spec.typeScript:
+      - name: DiskSku
+        fullName: DiskSku
+        uid: azure-arm-compute.DiskSku

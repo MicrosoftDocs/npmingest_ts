@@ -36,4 +36,10 @@ items:
       content: 'ssh: ContainerServiceSshConfiguration'
       return:
         type:
-          - '@azure-arm-compute.ContainerServiceSshConfiguration'
+          - azure-arm-compute.ContainerServiceSshConfiguration
+references:
+  - uid: azure-arm-compute.ContainerServiceSshConfiguration
+    spec.typeScript:
+      - name: ContainerServiceSshConfiguration
+        fullName: ContainerServiceSshConfiguration
+        uid: azure-arm-compute.ContainerServiceSshConfiguration

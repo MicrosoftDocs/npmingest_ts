@@ -22,7 +22,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancingRule.backendAddressPool
     name: backendAddressPool
@@ -37,7 +37,7 @@ items:
       content: 'backendAddressPool?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.LoadBalancingRule.backendPort
     name: backendPort
     fullName: backendPort
@@ -107,7 +107,7 @@ items:
       content: 'frontendIPConfiguration?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.LoadBalancingRule.frontendPort
     name: frontendPort
     fullName: frontendPort
@@ -176,7 +176,7 @@ items:
       content: 'probe?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.LoadBalancingRule.protocol
     name: protocol
     fullName: protocol
@@ -204,3 +204,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource

@@ -53,7 +53,7 @@ items:
       content: 'providerLocation: AzureReachabilityReportLocation'
       return:
         type:
-          - '@azure-arm-network.AzureReachabilityReportLocation'
+          - azure-arm-network.AzureReachabilityReportLocation
   - uid: azure-arm-network.AzureReachabilityReportParameters.providers
     name: providers
     fullName: providers
@@ -81,3 +81,9 @@ items:
       return:
         type:
           - Date
+references:
+  - uid: azure-arm-network.AzureReachabilityReportLocation
+    spec.typeScript:
+      - name: AzureReachabilityReportLocation
+        fullName: AzureReachabilityReportLocation
+        uid: azure-arm-network.AzureReachabilityReportLocation

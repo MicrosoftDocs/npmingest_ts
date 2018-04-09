@@ -40,7 +40,7 @@ items:
       content: 'restrictionInfo?: ResourceSkuRestrictionInfo'
       return:
         type:
-          - '@azure-arm-compute.ResourceSkuRestrictionInfo'
+          - azure-arm-compute.ResourceSkuRestrictionInfo
   - uid: azure-arm-compute.ResourceSkuRestrictions.type
     name: type
     fullName: type
@@ -69,3 +69,9 @@ items:
       return:
         type:
           - 'string[]'
+references:
+  - uid: azure-arm-compute.ResourceSkuRestrictionInfo
+    spec.typeScript:
+      - name: ResourceSkuRestrictionInfo
+        fullName: ResourceSkuRestrictionInfo
+        uid: azure-arm-compute.ResourceSkuRestrictionInfo

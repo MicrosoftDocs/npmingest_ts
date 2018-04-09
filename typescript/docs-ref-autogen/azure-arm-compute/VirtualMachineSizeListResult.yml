@@ -10,7 +10,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-compute.VirtualMachineSize>
+      name: Array<azure-arm-compute.VirtualMachineSize>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineSizeListResult.Array
     name: Array
@@ -25,3 +25,13 @@ items:
       return:
         type:
           - ArrayConstructor
+references:
+  - uid: Array<azure-arm-compute.VirtualMachineSize>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: VirtualMachineSize
+        fullName: VirtualMachineSize
+        uid: azure-arm-compute.VirtualMachineSize
+      - name: '>'
+        fullName: '>'

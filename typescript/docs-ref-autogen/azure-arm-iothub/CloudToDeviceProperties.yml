@@ -39,7 +39,7 @@ items:
       content: 'feedback?: FeedbackProperties'
       return:
         type:
-          - '@azure-arm-iothub.FeedbackProperties'
+          - azure-arm-iothub.FeedbackProperties
   - uid: azure-arm-iothub.CloudToDeviceProperties.maxDeliveryCount
     name: maxDeliveryCount
     fullName: maxDeliveryCount
@@ -54,3 +54,9 @@ items:
       return:
         type:
           - number
+references:
+  - uid: azure-arm-iothub.FeedbackProperties
+    spec.typeScript:
+      - name: FeedbackProperties
+        fullName: FeedbackProperties
+        uid: azure-arm-iothub.FeedbackProperties

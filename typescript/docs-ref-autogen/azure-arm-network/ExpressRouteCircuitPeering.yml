@@ -29,7 +29,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteCircuitPeering.azureASN
     name: azureASN
@@ -58,7 +58,7 @@ items:
       content: 'connections?: ExpressRouteCircuitConnection[]'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCircuitConnection[]'
+          - 'azure-arm-network.ExpressRouteCircuitConnection[]'
   - uid: azure-arm-network.ExpressRouteCircuitPeering.etag
     name: etag
     fullName: etag
@@ -100,7 +100,7 @@ items:
       content: 'ipv6PeeringConfig?: Ipv6ExpressRouteCircuitPeeringConfig'
       return:
         type:
-          - '@azure-arm-network.Ipv6ExpressRouteCircuitPeeringConfig'
+          - azure-arm-network.Ipv6ExpressRouteCircuitPeeringConfig
   - uid: azure-arm-network.ExpressRouteCircuitPeering.lastModifiedBy
     name: lastModifiedBy
     fullName: lastModifiedBy
@@ -128,7 +128,7 @@ items:
       content: 'microsoftPeeringConfig?: ExpressRouteCircuitPeeringConfig'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCircuitPeeringConfig'
+          - azure-arm-network.ExpressRouteCircuitPeeringConfig
   - uid: azure-arm-network.ExpressRouteCircuitPeering.name
     name: name
     fullName: name
@@ -226,7 +226,7 @@ items:
       content: 'routeFilter?: RouteFilter'
       return:
         type:
-          - '@azure-arm-network.RouteFilter'
+          - azure-arm-network.RouteFilter
   - uid: azure-arm-network.ExpressRouteCircuitPeering.secondaryAzurePort
     name: secondaryAzurePort
     fullName: secondaryAzurePort
@@ -296,7 +296,7 @@ items:
       content: 'stats?: ExpressRouteCircuitStats'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCircuitStats'
+          - azure-arm-network.ExpressRouteCircuitStats
   - uid: azure-arm-network.ExpressRouteCircuitPeering.vlanId
     name: vlanId
     fullName: vlanId
@@ -311,3 +311,36 @@ items:
       return:
         type:
           - number
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: 'azure-arm-network.ExpressRouteCircuitConnection[]'
+    spec.typeScript:
+      - name: ExpressRouteCircuitConnection
+        fullName: ExpressRouteCircuitConnection
+        uid: azure-arm-network.ExpressRouteCircuitConnection
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network.Ipv6ExpressRouteCircuitPeeringConfig
+    spec.typeScript:
+      - name: Ipv6ExpressRouteCircuitPeeringConfig
+        fullName: Ipv6ExpressRouteCircuitPeeringConfig
+        uid: azure-arm-network.Ipv6ExpressRouteCircuitPeeringConfig
+  - uid: azure-arm-network.ExpressRouteCircuitPeeringConfig
+    spec.typeScript:
+      - name: ExpressRouteCircuitPeeringConfig
+        fullName: ExpressRouteCircuitPeeringConfig
+        uid: azure-arm-network.ExpressRouteCircuitPeeringConfig
+  - uid: azure-arm-network.RouteFilter
+    spec.typeScript:
+      - name: RouteFilter
+        fullName: RouteFilter
+        uid: azure-arm-network.RouteFilter
+  - uid: azure-arm-network.ExpressRouteCircuitStats
+    spec.typeScript:
+      - name: ExpressRouteCircuitStats
+        fullName: ExpressRouteCircuitStats
+        uid: azure-arm-network.ExpressRouteCircuitStats

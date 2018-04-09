@@ -28,7 +28,7 @@ items:
       content: 'errors?: ResizeError[]'
       return:
         type:
-          - '@azure-arm-batch.ResizeError[]'
+          - 'azure-arm-batch.ResizeError[]'
   - uid: azure-arm-batch.ResizeOperationStatus.nodeDeallocationOption
     name: nodeDeallocationOption
     fullName: nodeDeallocationOption
@@ -99,3 +99,11 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'azure-arm-batch.ResizeError[]'
+    spec.typeScript:
+      - name: ResizeError
+        fullName: ResizeError
+        uid: azure-arm-batch.ResizeError
+      - name: '[]'
+        fullName: '[]'

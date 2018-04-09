@@ -57,7 +57,7 @@ items:
       content: 'hops?: ConnectivityHop[]'
       return:
         type:
-          - '@azure-arm-network.ConnectivityHop[]'
+          - 'azure-arm-network.ConnectivityHop[]'
   - uid: azure-arm-network.ConnectivityInformation.maxLatencyInMs
     name: maxLatencyInMs
     fullName: maxLatencyInMs
@@ -114,3 +114,11 @@ items:
       return:
         type:
           - number
+references:
+  - uid: 'azure-arm-network.ConnectivityHop[]'
+    spec.typeScript:
+      - name: ConnectivityHop
+        fullName: ConnectivityHop
+        uid: azure-arm-network.ConnectivityHop
+      - name: '[]'
+        fullName: '[]'

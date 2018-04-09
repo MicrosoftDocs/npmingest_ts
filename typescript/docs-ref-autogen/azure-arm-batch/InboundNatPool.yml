@@ -80,7 +80,7 @@ items:
       content: 'networkSecurityGroupRules?: NetworkSecurityGroupRule[]'
       return:
         type:
-          - '@azure-arm-batch.NetworkSecurityGroupRule[]'
+          - 'azure-arm-batch.NetworkSecurityGroupRule[]'
   - uid: azure-arm-batch.InboundNatPool.protocol
     name: protocol
     fullName: protocol
@@ -94,3 +94,11 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'azure-arm-batch.NetworkSecurityGroupRule[]'
+    spec.typeScript:
+      - name: NetworkSecurityGroupRule
+        fullName: NetworkSecurityGroupRule
+        uid: azure-arm-batch.NetworkSecurityGroupRule
+      - name: '[]'
+        fullName: '[]'

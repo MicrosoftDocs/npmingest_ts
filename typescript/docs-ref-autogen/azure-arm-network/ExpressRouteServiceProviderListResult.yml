@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-network.ExpressRouteServiceProvider>
+      name: Array<azure-arm-network.ExpressRouteServiceProvider>
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteServiceProviderListResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-network.ExpressRouteServiceProvider>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: ExpressRouteServiceProvider
+        fullName: ExpressRouteServiceProvider
+        uid: azure-arm-network.ExpressRouteServiceProvider
+      - name: '>'
+        fullName: '>'

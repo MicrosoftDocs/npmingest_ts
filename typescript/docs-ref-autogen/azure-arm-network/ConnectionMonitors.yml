@@ -92,7 +92,7 @@ items:
             The name of the connection monitor.
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionMonitor'
+            - azure-arm-network.ConnectionMonitor
           description: |
             Parameters that define the operation to create a
             connection monitor.
@@ -103,7 +103,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorResult>
+          - Promise<azure-arm-network.ConnectionMonitorResult>
   - uid: azure-arm-network.ConnectionMonitors.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -131,15 +131,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionMonitor'
+            - azure-arm-network.ConnectionMonitor
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionMonitorResult>
+            - ServiceCallback<azure-arm-network.ConnectionMonitorResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorResult>
+          - Promise<azure-arm-network.ConnectionMonitorResult>
   - uid: azure-arm-network.ConnectionMonitors.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -168,7 +168,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionMonitor'
+            - azure-arm-network.ConnectionMonitor
           description: ''
         - id: options
           type:
@@ -176,11 +176,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionMonitorResult>
+            - ServiceCallback<azure-arm-network.ConnectionMonitorResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorResult>
+          - Promise<azure-arm-network.ConnectionMonitorResult>
   - uid: >-
       azure-arm-network.ConnectionMonitors.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
@@ -213,7 +213,7 @@ items:
             The name of the connection monitor.
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionMonitor'
+            - azure-arm-network.ConnectionMonitor
           description: |
             Parameters that define the operation to create a
             connection monitor.
@@ -224,7 +224,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionMonitorResult>>
+          - Promise<ConnectionMonitorResult!@>>
   - uid: azure-arm-network.ConnectionMonitors.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -404,7 +404,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorQueryResult>
+          - Promise<azure-arm-network.ConnectionMonitorQueryResult>
   - uid: azure-arm-network.ConnectionMonitors.beginQuery_1
     name: beginQuery
     children: []
@@ -432,11 +432,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionMonitorQueryResult>
+            - ServiceCallback<azure-arm-network.ConnectionMonitorQueryResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorQueryResult>
+          - Promise<azure-arm-network.ConnectionMonitorQueryResult>
   - uid: azure-arm-network.ConnectionMonitors.beginQuery_2
     name: beginQuery
     children: []
@@ -468,11 +468,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionMonitorQueryResult>
+            - ServiceCallback<azure-arm-network.ConnectionMonitorQueryResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorQueryResult>
+          - Promise<azure-arm-network.ConnectionMonitorQueryResult>
   - uid: azure-arm-network.ConnectionMonitors.beginQueryWithHttpOperationResponse
     name: beginQueryWithHttpOperationResponse
     children: []
@@ -510,7 +510,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionMonitorQueryResult>>
+          - Promise<ConnectionMonitorQueryResult!@>>
   - uid: azure-arm-network.ConnectionMonitors.beginStart_1
     name: beginStart
     children: []
@@ -822,7 +822,7 @@ items:
             The name of the connection monitor.
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionMonitor'
+            - azure-arm-network.ConnectionMonitor
           description: |
             Parameters that define the operation to create a
             connection monitor.
@@ -833,7 +833,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorResult>
+          - Promise<azure-arm-network.ConnectionMonitorResult>
   - uid: azure-arm-network.ConnectionMonitors.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -861,15 +861,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionMonitor'
+            - azure-arm-network.ConnectionMonitor
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionMonitorResult>
+            - ServiceCallback<azure-arm-network.ConnectionMonitorResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorResult>
+          - Promise<azure-arm-network.ConnectionMonitorResult>
   - uid: azure-arm-network.ConnectionMonitors.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -897,7 +897,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionMonitor'
+            - azure-arm-network.ConnectionMonitor
           description: ''
         - id: options
           type:
@@ -905,11 +905,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionMonitorResult>
+            - ServiceCallback<azure-arm-network.ConnectionMonitorResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorResult>
+          - Promise<azure-arm-network.ConnectionMonitorResult>
   - uid: >-
       azure-arm-network.ConnectionMonitors.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
@@ -942,7 +942,7 @@ items:
             The name of the connection monitor.
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionMonitor'
+            - azure-arm-network.ConnectionMonitor
           description: |
             Parameters that define the operation to create a
             connection monitor.
@@ -953,7 +953,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionMonitorResult>>
+          - Promise<ConnectionMonitorResult!@>>
   - uid: azure-arm-network.ConnectionMonitors.deleteMethod
     name: deleteMethod
     children: []
@@ -1121,11 +1121,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionMonitorResult>
+            - ServiceCallback<azure-arm-network.ConnectionMonitorResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorResult>
+          - Promise<azure-arm-network.ConnectionMonitorResult>
   - uid: azure-arm-network.ConnectionMonitors.get_2
     name: get
     children: []
@@ -1157,11 +1157,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionMonitorResult>
+            - ServiceCallback<azure-arm-network.ConnectionMonitorResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorResult>
+          - Promise<azure-arm-network.ConnectionMonitorResult>
   - uid: azure-arm-network.ConnectionMonitors.get
     name: get
     children: []
@@ -1197,7 +1197,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorResult>
+          - Promise<azure-arm-network.ConnectionMonitorResult>
   - uid: azure-arm-network.ConnectionMonitors.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -1234,7 +1234,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionMonitorResult>>
+          - Promise<ConnectionMonitorResult!@>>
   - uid: azure-arm-network.ConnectionMonitors.list
     name: list
     children: []
@@ -1265,7 +1265,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorListResult>
+          - Promise<azure-arm-network.ConnectionMonitorListResult>
   - uid: azure-arm-network.ConnectionMonitors.list_1
     name: list
     children: []
@@ -1288,11 +1288,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionMonitorListResult>
+            - ServiceCallback<azure-arm-network.ConnectionMonitorListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorListResult>
+          - Promise<azure-arm-network.ConnectionMonitorListResult>
   - uid: azure-arm-network.ConnectionMonitors.list_2
     name: list
     children: []
@@ -1320,11 +1320,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionMonitorListResult>
+            - ServiceCallback<azure-arm-network.ConnectionMonitorListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorListResult>
+          - Promise<azure-arm-network.ConnectionMonitorListResult>
   - uid: azure-arm-network.ConnectionMonitors.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1355,7 +1355,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionMonitorListResult>>
+          - Promise<ConnectionMonitorListResult!@>>
   - uid: azure-arm-network.ConnectionMonitors.query
     name: query
     children: []
@@ -1392,7 +1392,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorQueryResult>
+          - Promise<azure-arm-network.ConnectionMonitorQueryResult>
   - uid: azure-arm-network.ConnectionMonitors.query_1
     name: query
     children: []
@@ -1420,11 +1420,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionMonitorQueryResult>
+            - ServiceCallback<azure-arm-network.ConnectionMonitorQueryResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorQueryResult>
+          - Promise<azure-arm-network.ConnectionMonitorQueryResult>
   - uid: azure-arm-network.ConnectionMonitors.query_2
     name: query
     children: []
@@ -1456,11 +1456,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionMonitorQueryResult>
+            - ServiceCallback<azure-arm-network.ConnectionMonitorQueryResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionMonitorQueryResult>
+          - Promise<azure-arm-network.ConnectionMonitorQueryResult>
   - uid: azure-arm-network.ConnectionMonitors.queryWithHttpOperationResponse
     name: queryWithHttpOperationResponse
     children: []
@@ -1498,7 +1498,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionMonitorQueryResult>>
+          - Promise<ConnectionMonitorQueryResult!@>>
   - uid: azure-arm-network.ConnectionMonitors.start
     name: start
     children: []
@@ -1779,3 +1779,63 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+references:
+  - uid: azure-arm-network.ConnectionMonitor
+    spec.typeScript:
+      - name: ConnectionMonitor
+        fullName: ConnectionMonitor
+        uid: azure-arm-network.ConnectionMonitor
+  - uid: Promise<azure-arm-network.ConnectionMonitorResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ConnectionMonitorResult
+        fullName: ConnectionMonitorResult
+        uid: azure-arm-network.ConnectionMonitorResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ConnectionMonitorResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ConnectionMonitorResult
+        fullName: ConnectionMonitorResult
+        uid: azure-arm-network.ConnectionMonitorResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.ConnectionMonitorQueryResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ConnectionMonitorQueryResult
+        fullName: ConnectionMonitorQueryResult
+        uid: azure-arm-network.ConnectionMonitorQueryResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ConnectionMonitorQueryResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ConnectionMonitorQueryResult
+        fullName: ConnectionMonitorQueryResult
+        uid: azure-arm-network.ConnectionMonitorQueryResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.ConnectionMonitorListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ConnectionMonitorListResult
+        fullName: ConnectionMonitorListResult
+        uid: azure-arm-network.ConnectionMonitorListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ConnectionMonitorListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ConnectionMonitorListResult
+        fullName: ConnectionMonitorListResult
+        uid: azure-arm-network.ConnectionMonitorListResult
+      - name: '>'
+        fullName: '>'

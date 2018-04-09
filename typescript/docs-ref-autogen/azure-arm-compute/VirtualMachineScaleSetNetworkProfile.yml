@@ -25,7 +25,7 @@ items:
       content: 'healthProbe?: ApiEntityReference'
       return:
         type:
-          - '@azure-arm-compute.ApiEntityReference'
+          - azure-arm-compute.ApiEntityReference
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetNetworkProfile.networkInterfaceConfigurations
     name: networkInterfaceConfigurations
@@ -42,4 +42,17 @@ items:
         VirtualMachineScaleSetNetworkConfiguration[]
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineScaleSetNetworkConfiguration[]'
+          - 'azure-arm-compute.VirtualMachineScaleSetNetworkConfiguration[]'
+references:
+  - uid: azure-arm-compute.ApiEntityReference
+    spec.typeScript:
+      - name: ApiEntityReference
+        fullName: ApiEntityReference
+        uid: azure-arm-compute.ApiEntityReference
+  - uid: 'azure-arm-compute.VirtualMachineScaleSetNetworkConfiguration[]'
+    spec.typeScript:
+      - name: VirtualMachineScaleSetNetworkConfiguration
+        fullName: VirtualMachineScaleSetNetworkConfiguration
+        uid: azure-arm-compute.VirtualMachineScaleSetNetworkConfiguration
+      - name: '[]'
+        fullName: '[]'

@@ -38,4 +38,12 @@ items:
       content: 'securityRules?: SecurityRule[]'
       return:
         type:
-          - '@azure-arm-network.SecurityRule[]'
+          - 'azure-arm-network.SecurityRule[]'
+references:
+  - uid: 'azure-arm-network.SecurityRule[]'
+    spec.typeScript:
+      - name: SecurityRule
+        fullName: SecurityRule
+        uid: azure-arm-network.SecurityRule
+      - name: '[]'
+        fullName: '[]'

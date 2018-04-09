@@ -49,7 +49,7 @@ items:
       content: 'capabilities?: ResourceSkuCapabilities[]'
       return:
         type:
-          - '@azure-arm-compute.ResourceSkuCapabilities[]'
+          - 'azure-arm-compute.ResourceSkuCapabilities[]'
   - uid: azure-arm-compute.ResourceSku.capacity
     name: capacity
     fullName: capacity
@@ -63,7 +63,7 @@ items:
       content: 'capacity?: ResourceSkuCapacity'
       return:
         type:
-          - '@azure-arm-compute.ResourceSkuCapacity'
+          - azure-arm-compute.ResourceSkuCapacity
   - uid: azure-arm-compute.ResourceSku.costs
     name: costs
     fullName: costs
@@ -77,7 +77,7 @@ items:
       content: 'costs?: ResourceSkuCosts[]'
       return:
         type:
-          - '@azure-arm-compute.ResourceSkuCosts[]'
+          - 'azure-arm-compute.ResourceSkuCosts[]'
   - uid: azure-arm-compute.ResourceSku.family
     name: family
     fullName: family
@@ -119,7 +119,7 @@ items:
       content: 'locationInfo?: ResourceSkuLocationInfo[]'
       return:
         type:
-          - '@azure-arm-compute.ResourceSkuLocationInfo[]'
+          - 'azure-arm-compute.ResourceSkuLocationInfo[]'
   - uid: azure-arm-compute.ResourceSku.locations
     name: locations
     fullName: locations
@@ -175,7 +175,7 @@ items:
       content: 'restrictions?: ResourceSkuRestrictions[]'
       return:
         type:
-          - '@azure-arm-compute.ResourceSkuRestrictions[]'
+          - 'azure-arm-compute.ResourceSkuRestrictions[]'
   - uid: azure-arm-compute.ResourceSku.size
     name: size
     fullName: size
@@ -204,3 +204,37 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'azure-arm-compute.ResourceSkuCapabilities[]'
+    spec.typeScript:
+      - name: ResourceSkuCapabilities
+        fullName: ResourceSkuCapabilities
+        uid: azure-arm-compute.ResourceSkuCapabilities
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute.ResourceSkuCapacity
+    spec.typeScript:
+      - name: ResourceSkuCapacity
+        fullName: ResourceSkuCapacity
+        uid: azure-arm-compute.ResourceSkuCapacity
+  - uid: 'azure-arm-compute.ResourceSkuCosts[]'
+    spec.typeScript:
+      - name: ResourceSkuCosts
+        fullName: ResourceSkuCosts
+        uid: azure-arm-compute.ResourceSkuCosts
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-compute.ResourceSkuLocationInfo[]'
+    spec.typeScript:
+      - name: ResourceSkuLocationInfo
+        fullName: ResourceSkuLocationInfo
+        uid: azure-arm-compute.ResourceSkuLocationInfo
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-compute.ResourceSkuRestrictions[]'
+    spec.typeScript:
+      - name: ResourceSkuRestrictions
+        fullName: ResourceSkuRestrictions
+        uid: azure-arm-compute.ResourceSkuRestrictions
+      - name: '[]'
+        fullName: '[]'

@@ -26,7 +26,7 @@ items:
       content: 'networkInterface?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.EffectiveNetworkSecurityGroupAssociation.subnet
     name: subnet
     fullName: subnet
@@ -40,4 +40,10 @@ items:
       content: 'subnet?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource

@@ -21,7 +21,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.Resource'
+      name: azure-arm-compute.Resource
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSet.identity
     name: identity
@@ -36,7 +36,7 @@ items:
       content: 'identity?: VirtualMachineScaleSetIdentity'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineScaleSetIdentity'
+          - azure-arm-compute.VirtualMachineScaleSetIdentity
   - uid: azure-arm-compute.VirtualMachineScaleSet.overprovision
     name: overprovision
     fullName: overprovision
@@ -64,7 +64,7 @@ items:
       content: 'plan?: Plan'
       return:
         type:
-          - '@azure-arm-compute.Plan'
+          - azure-arm-compute.Plan
   - uid: azure-arm-compute.VirtualMachineScaleSet.platformFaultDomainCount
     name: platformFaultDomainCount
     fullName: platformFaultDomainCount
@@ -120,7 +120,7 @@ items:
       content: 'sku?: Sku'
       return:
         type:
-          - '@azure-arm-compute.Sku'
+          - azure-arm-compute.Sku
   - uid: azure-arm-compute.VirtualMachineScaleSet.uniqueId
     name: uniqueId
     fullName: uniqueId
@@ -148,7 +148,7 @@ items:
       content: 'upgradePolicy?: UpgradePolicy'
       return:
         type:
-          - '@azure-arm-compute.UpgradePolicy'
+          - azure-arm-compute.UpgradePolicy
   - uid: azure-arm-compute.VirtualMachineScaleSet.virtualMachineProfile
     name: virtualMachineProfile
     fullName: virtualMachineProfile
@@ -162,7 +162,7 @@ items:
       content: 'virtualMachineProfile?: VirtualMachineScaleSetVMProfile'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineScaleSetVMProfile'
+          - azure-arm-compute.VirtualMachineScaleSetVMProfile
   - uid: azure-arm-compute.VirtualMachineScaleSet.zoneBalance
     name: zoneBalance
     fullName: zoneBalance
@@ -191,3 +191,34 @@ items:
       return:
         type:
           - 'string[]'
+references:
+  - uid: azure-arm-compute.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-compute.Resource
+  - uid: azure-arm-compute.VirtualMachineScaleSetIdentity
+    spec.typeScript:
+      - name: VirtualMachineScaleSetIdentity
+        fullName: VirtualMachineScaleSetIdentity
+        uid: azure-arm-compute.VirtualMachineScaleSetIdentity
+  - uid: azure-arm-compute.Plan
+    spec.typeScript:
+      - name: Plan
+        fullName: Plan
+        uid: azure-arm-compute.Plan
+  - uid: azure-arm-compute.Sku
+    spec.typeScript:
+      - name: Sku
+        fullName: Sku
+        uid: azure-arm-compute.Sku
+  - uid: azure-arm-compute.UpgradePolicy
+    spec.typeScript:
+      - name: UpgradePolicy
+        fullName: UpgradePolicy
+        uid: azure-arm-compute.UpgradePolicy
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMProfile
+    spec.typeScript:
+      - name: VirtualMachineScaleSetVMProfile
+        fullName: VirtualMachineScaleSetVMProfile
+        uid: azure-arm-compute.VirtualMachineScaleSetVMProfile

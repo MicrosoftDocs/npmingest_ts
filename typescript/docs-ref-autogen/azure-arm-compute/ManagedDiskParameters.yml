@@ -10,7 +10,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.SubResource'
+      name: azure-arm-compute.SubResource
     package: azure-arm-compute
   - uid: azure-arm-compute.ManagedDiskParameters.storageAccountType
     name: storageAccountType
@@ -26,3 +26,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-compute.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute.SubResource

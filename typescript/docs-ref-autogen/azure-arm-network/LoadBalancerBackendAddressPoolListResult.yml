@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-network.BackendAddressPool>
+      name: Array<azure-arm-network.BackendAddressPool>
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancerBackendAddressPoolListResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-network.BackendAddressPool>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: BackendAddressPool
+        fullName: BackendAddressPool
+        uid: azure-arm-network.BackendAddressPool
+      - name: '>'
+        fullName: '>'

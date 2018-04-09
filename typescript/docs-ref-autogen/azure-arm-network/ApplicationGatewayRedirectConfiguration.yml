@@ -22,7 +22,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationGatewayRedirectConfiguration.etag
     name: etag
@@ -94,7 +94,7 @@ items:
       content: 'pathRules?: SubResource[]'
       return:
         type:
-          - '@azure-arm-network.SubResource[]'
+          - 'azure-arm-network.SubResource[]'
   - uid: azure-arm-network.ApplicationGatewayRedirectConfiguration.redirectType
     name: redirectType
     fullName: redirectType
@@ -123,7 +123,7 @@ items:
       content: 'requestRoutingRules?: SubResource[]'
       return:
         type:
-          - '@azure-arm-network.SubResource[]'
+          - 'azure-arm-network.SubResource[]'
   - uid: azure-arm-network.ApplicationGatewayRedirectConfiguration.targetListener
     name: targetListener
     fullName: targetListener
@@ -137,7 +137,7 @@ items:
       content: 'targetListener?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.ApplicationGatewayRedirectConfiguration.targetUrl
     name: targetUrl
     fullName: targetUrl
@@ -179,4 +179,17 @@ items:
       content: 'urlPathMaps?: SubResource[]'
       return:
         type:
-          - '@azure-arm-network.SubResource[]'
+          - 'azure-arm-network.SubResource[]'
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: 'azure-arm-network.SubResource[]'
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+      - name: '[]'
+        fullName: '[]'

@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-compute.Usage>
+      name: Array<azure-arm-compute.Usage>
     package: azure-arm-compute
   - uid: azure-arm-compute.ListUsagesResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-compute.Usage>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: Usage
+        fullName: Usage
+        uid: azure-arm-compute.Usage
+      - name: '>'
+        fullName: '>'

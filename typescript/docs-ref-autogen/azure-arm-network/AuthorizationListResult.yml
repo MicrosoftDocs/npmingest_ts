@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-network.ExpressRouteCircuitAuthorization>
+      name: Array<azure-arm-network.ExpressRouteCircuitAuthorization>
     package: azure-arm-network
   - uid: azure-arm-network.AuthorizationListResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-network.ExpressRouteCircuitAuthorization>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: ExpressRouteCircuitAuthorization
+        fullName: ExpressRouteCircuitAuthorization
+        uid: azure-arm-network.ExpressRouteCircuitAuthorization
+      - name: '>'
+        fullName: '>'

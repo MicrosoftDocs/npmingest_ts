@@ -45,7 +45,7 @@ items:
       parameters:
         - id: parameters
           type:
-            - '@azure-arm-compute.RequestRateByIntervalInput'
+            - azure-arm-compute.RequestRateByIntervalInput
           description: |
             Parameters supplied to the LogAnalytics
             getRequestRateByInterval Api.
@@ -62,7 +62,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.LogAnalyticsOperationResult>
+          - Promise<azure-arm-compute.LogAnalyticsOperationResult>
   - uid: azure-arm-compute.LogAnalytics.beginExportRequestRateByInterval_2
     name: beginExportRequestRateByInterval
     children: []
@@ -80,7 +80,7 @@ items:
       parameters:
         - id: parameters
           type:
-            - '@azure-arm-compute.RequestRateByIntervalInput'
+            - azure-arm-compute.RequestRateByIntervalInput
           description: ''
         - id: location
           type:
@@ -92,11 +92,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.LogAnalyticsOperationResult>
+            - ServiceCallback<azure-arm-compute.LogAnalyticsOperationResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.LogAnalyticsOperationResult>
+          - Promise<azure-arm-compute.LogAnalyticsOperationResult>
   - uid: azure-arm-compute.LogAnalytics.beginExportRequestRateByInterval_1
     name: beginExportRequestRateByInterval
     children: []
@@ -114,7 +114,7 @@ items:
       parameters:
         - id: parameters
           type:
-            - '@azure-arm-compute.RequestRateByIntervalInput'
+            - azure-arm-compute.RequestRateByIntervalInput
           description: ''
         - id: location
           type:
@@ -122,11 +122,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.LogAnalyticsOperationResult>
+            - ServiceCallback<azure-arm-compute.LogAnalyticsOperationResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.LogAnalyticsOperationResult>
+          - Promise<azure-arm-compute.LogAnalyticsOperationResult>
   - uid: >-
       azure-arm-compute.LogAnalytics.beginExportRequestRateByIntervalWithHttpOperationResponse
     name: beginExportRequestRateByIntervalWithHttpOperationResponse
@@ -145,7 +145,7 @@ items:
       parameters:
         - id: parameters
           type:
-            - '@azure-arm-compute.RequestRateByIntervalInput'
+            - azure-arm-compute.RequestRateByIntervalInput
           description: |
             Parameters supplied to the LogAnalytics
             getRequestRateByInterval Api.
@@ -162,7 +162,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LogAnalyticsOperationResult>>
+          - Promise<LogAnalyticsOperationResult!@>>
   - uid: azure-arm-compute.LogAnalytics.beginExportThrottledRequests
     name: beginExportThrottledRequests
     children: []
@@ -181,7 +181,7 @@ items:
       parameters:
         - id: parameters
           type:
-            - '@azure-arm-compute.ThrottledRequestsInput'
+            - azure-arm-compute.ThrottledRequestsInput
           description: |
             Parameters supplied to the LogAnalytics
             getThrottledRequests Api.
@@ -198,7 +198,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.LogAnalyticsOperationResult>
+          - Promise<azure-arm-compute.LogAnalyticsOperationResult>
   - uid: azure-arm-compute.LogAnalytics.beginExportThrottledRequests_1
     name: beginExportThrottledRequests
     children: []
@@ -218,7 +218,7 @@ items:
       parameters:
         - id: parameters
           type:
-            - '@azure-arm-compute.ThrottledRequestsInput'
+            - azure-arm-compute.ThrottledRequestsInput
           description: ''
         - id: location
           type:
@@ -226,11 +226,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.LogAnalyticsOperationResult>
+            - ServiceCallback<azure-arm-compute.LogAnalyticsOperationResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.LogAnalyticsOperationResult>
+          - Promise<azure-arm-compute.LogAnalyticsOperationResult>
   - uid: azure-arm-compute.LogAnalytics.beginExportThrottledRequests_2
     name: beginExportThrottledRequests
     children: []
@@ -250,7 +250,7 @@ items:
       parameters:
         - id: parameters
           type:
-            - '@azure-arm-compute.ThrottledRequestsInput'
+            - azure-arm-compute.ThrottledRequestsInput
           description: ''
         - id: location
           type:
@@ -262,11 +262,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.LogAnalyticsOperationResult>
+            - ServiceCallback<azure-arm-compute.LogAnalyticsOperationResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.LogAnalyticsOperationResult>
+          - Promise<azure-arm-compute.LogAnalyticsOperationResult>
   - uid: >-
       azure-arm-compute.LogAnalytics.beginExportThrottledRequestsWithHttpOperationResponse
     name: beginExportThrottledRequestsWithHttpOperationResponse
@@ -287,7 +287,7 @@ items:
       parameters:
         - id: parameters
           type:
-            - '@azure-arm-compute.ThrottledRequestsInput'
+            - azure-arm-compute.ThrottledRequestsInput
           description: |
             Parameters supplied to the LogAnalytics
             getThrottledRequests Api.
@@ -304,7 +304,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LogAnalyticsOperationResult>>
+          - Promise<LogAnalyticsOperationResult!@>>
   - uid: azure-arm-compute.LogAnalytics.exportRequestRateByInterval
     name: exportRequestRateByInterval
     children: []
@@ -321,7 +321,7 @@ items:
       parameters:
         - id: parameters
           type:
-            - '@azure-arm-compute.RequestRateByIntervalInput'
+            - azure-arm-compute.RequestRateByIntervalInput
           description: |
             Parameters supplied to the LogAnalytics
             getRequestRateByInterval Api.
@@ -338,7 +338,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.LogAnalyticsOperationResult>
+          - Promise<azure-arm-compute.LogAnalyticsOperationResult>
   - uid: azure-arm-compute.LogAnalytics.exportRequestRateByInterval_1
     name: exportRequestRateByInterval
     children: []
@@ -356,7 +356,7 @@ items:
       parameters:
         - id: parameters
           type:
-            - '@azure-arm-compute.RequestRateByIntervalInput'
+            - azure-arm-compute.RequestRateByIntervalInput
           description: ''
         - id: location
           type:
@@ -364,11 +364,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.LogAnalyticsOperationResult>
+            - ServiceCallback<azure-arm-compute.LogAnalyticsOperationResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.LogAnalyticsOperationResult>
+          - Promise<azure-arm-compute.LogAnalyticsOperationResult>
   - uid: azure-arm-compute.LogAnalytics.exportRequestRateByInterval_2
     name: exportRequestRateByInterval
     children: []
@@ -386,7 +386,7 @@ items:
       parameters:
         - id: parameters
           type:
-            - '@azure-arm-compute.RequestRateByIntervalInput'
+            - azure-arm-compute.RequestRateByIntervalInput
           description: ''
         - id: location
           type:
@@ -398,11 +398,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.LogAnalyticsOperationResult>
+            - ServiceCallback<azure-arm-compute.LogAnalyticsOperationResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.LogAnalyticsOperationResult>
+          - Promise<azure-arm-compute.LogAnalyticsOperationResult>
   - uid: >-
       azure-arm-compute.LogAnalytics.exportRequestRateByIntervalWithHttpOperationResponse
     name: exportRequestRateByIntervalWithHttpOperationResponse
@@ -421,7 +421,7 @@ items:
       parameters:
         - id: parameters
           type:
-            - '@azure-arm-compute.RequestRateByIntervalInput'
+            - azure-arm-compute.RequestRateByIntervalInput
           description: |
             Parameters supplied to the LogAnalytics
             getRequestRateByInterval Api.
@@ -438,7 +438,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LogAnalyticsOperationResult>>
+          - Promise<LogAnalyticsOperationResult!@>>
   - uid: azure-arm-compute.LogAnalytics.exportThrottledRequests
     name: exportThrottledRequests
     children: []
@@ -457,7 +457,7 @@ items:
       parameters:
         - id: parameters
           type:
-            - '@azure-arm-compute.ThrottledRequestsInput'
+            - azure-arm-compute.ThrottledRequestsInput
           description: |
             Parameters supplied to the LogAnalytics
             getThrottledRequests Api.
@@ -474,7 +474,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.LogAnalyticsOperationResult>
+          - Promise<azure-arm-compute.LogAnalyticsOperationResult>
   - uid: azure-arm-compute.LogAnalytics.exportThrottledRequests_1
     name: exportThrottledRequests
     children: []
@@ -494,7 +494,7 @@ items:
       parameters:
         - id: parameters
           type:
-            - '@azure-arm-compute.ThrottledRequestsInput'
+            - azure-arm-compute.ThrottledRequestsInput
           description: ''
         - id: location
           type:
@@ -502,11 +502,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.LogAnalyticsOperationResult>
+            - ServiceCallback<azure-arm-compute.LogAnalyticsOperationResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.LogAnalyticsOperationResult>
+          - Promise<azure-arm-compute.LogAnalyticsOperationResult>
   - uid: azure-arm-compute.LogAnalytics.exportThrottledRequests_2
     name: exportThrottledRequests
     children: []
@@ -526,7 +526,7 @@ items:
       parameters:
         - id: parameters
           type:
-            - '@azure-arm-compute.ThrottledRequestsInput'
+            - azure-arm-compute.ThrottledRequestsInput
           description: ''
         - id: location
           type:
@@ -538,11 +538,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.LogAnalyticsOperationResult>
+            - ServiceCallback<azure-arm-compute.LogAnalyticsOperationResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.LogAnalyticsOperationResult>
+          - Promise<azure-arm-compute.LogAnalyticsOperationResult>
   - uid: >-
       azure-arm-compute.LogAnalytics.exportThrottledRequestsWithHttpOperationResponse
     name: exportThrottledRequestsWithHttpOperationResponse
@@ -562,7 +562,7 @@ items:
       parameters:
         - id: parameters
           type:
-            - '@azure-arm-compute.ThrottledRequestsInput'
+            - azure-arm-compute.ThrottledRequestsInput
           description: |
             Parameters supplied to the LogAnalytics
             getThrottledRequests Api.
@@ -579,4 +579,33 @@ items:
           optional: true
       return:
         type:
-          - Promise<LogAnalyticsOperationResult>>
+          - Promise<LogAnalyticsOperationResult!@>>
+references:
+  - uid: azure-arm-compute.RequestRateByIntervalInput
+    spec.typeScript:
+      - name: RequestRateByIntervalInput
+        fullName: RequestRateByIntervalInput
+        uid: azure-arm-compute.RequestRateByIntervalInput
+  - uid: Promise<azure-arm-compute.LogAnalyticsOperationResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: LogAnalyticsOperationResult
+        fullName: LogAnalyticsOperationResult
+        uid: azure-arm-compute.LogAnalyticsOperationResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.LogAnalyticsOperationResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: LogAnalyticsOperationResult
+        fullName: LogAnalyticsOperationResult
+        uid: azure-arm-compute.LogAnalyticsOperationResult
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-compute.ThrottledRequestsInput
+    spec.typeScript:
+      - name: ThrottledRequestsInput
+        fullName: ThrottledRequestsInput
+        uid: azure-arm-compute.ThrottledRequestsInput

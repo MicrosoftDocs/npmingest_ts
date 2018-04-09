@@ -87,7 +87,7 @@ items:
             match the certificate data in the request. For example SHA1-a3d1c5.
         - id: parameters
           type:
-            - '@azure-arm-batch.CertificateCreateOrUpdateParameters'
+            - azure-arm-batch.CertificateCreateOrUpdateParameters
           description: |
             Additional parameters for certificate creation.
         - id: options
@@ -97,7 +97,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.Certificate>
+          - Promise<azure-arm-batch.Certificate>
   - uid: azure-arm-batch.CertificateOperations.beginCreate_1
     name: beginCreate
     children: []
@@ -126,15 +126,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-batch.CertificateCreateOrUpdateParameters'
+            - azure-arm-batch.CertificateCreateOrUpdateParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.Certificate>
+            - ServiceCallback<azure-arm-batch.Certificate>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.Certificate>
+          - Promise<azure-arm-batch.Certificate>
   - uid: azure-arm-batch.CertificateOperations.beginCreate_2
     name: beginCreate
     children: []
@@ -163,7 +163,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-batch.CertificateCreateOrUpdateParameters'
+            - azure-arm-batch.CertificateCreateOrUpdateParameters
           description: ''
         - id: options
           type:
@@ -171,11 +171,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.Certificate>
+            - ServiceCallback<azure-arm-batch.Certificate>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.Certificate>
+          - Promise<azure-arm-batch.Certificate>
   - uid: azure-arm-batch.CertificateOperations.beginCreateWithHttpOperationResponse
     name: beginCreateWithHttpOperationResponse
     children: []
@@ -212,7 +212,7 @@ items:
             match the certificate data in the request. For example SHA1-a3d1c5.
         - id: parameters
           type:
-            - '@azure-arm-batch.CertificateCreateOrUpdateParameters'
+            - azure-arm-batch.CertificateCreateOrUpdateParameters
           description: |
             Additional parameters for certificate creation.
         - id: options
@@ -222,7 +222,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Certificate>>
+          - Promise<Certificate!@>>
   - uid: azure-arm-batch.CertificateOperations.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -400,11 +400,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.Certificate>
+            - ServiceCallback<azure-arm-batch.Certificate>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.Certificate>
+          - Promise<azure-arm-batch.Certificate>
   - uid: azure-arm-batch.CertificateOperations.cancelDeletion
     name: cancelDeletion
     children: []
@@ -445,7 +445,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.Certificate>
+          - Promise<azure-arm-batch.Certificate>
   - uid: azure-arm-batch.CertificateOperations.cancelDeletion_2
     name: cancelDeletion
     children: []
@@ -477,11 +477,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.Certificate>
+            - ServiceCallback<azure-arm-batch.Certificate>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.Certificate>
+          - Promise<azure-arm-batch.Certificate>
   - uid: >-
       azure-arm-batch.CertificateOperations.cancelDeletionWithHttpOperationResponse
     name: cancelDeletionWithHttpOperationResponse
@@ -524,7 +524,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Certificate>>
+          - Promise<Certificate!@>>
   - uid: azure-arm-batch.CertificateOperations.create
     name: create
     children: []
@@ -561,7 +561,7 @@ items:
             match the certificate data in the request. For example SHA1-a3d1c5.
         - id: parameters
           type:
-            - '@azure-arm-batch.CertificateCreateOrUpdateParameters'
+            - azure-arm-batch.CertificateCreateOrUpdateParameters
           description: |
             Additional parameters for certificate creation.
         - id: options
@@ -571,7 +571,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.Certificate>
+          - Promise<azure-arm-batch.Certificate>
   - uid: azure-arm-batch.CertificateOperations.create_1
     name: create
     children: []
@@ -600,15 +600,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-batch.CertificateCreateOrUpdateParameters'
+            - azure-arm-batch.CertificateCreateOrUpdateParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.Certificate>
+            - ServiceCallback<azure-arm-batch.Certificate>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.Certificate>
+          - Promise<azure-arm-batch.Certificate>
   - uid: azure-arm-batch.CertificateOperations.create_2
     name: create
     children: []
@@ -637,7 +637,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-batch.CertificateCreateOrUpdateParameters'
+            - azure-arm-batch.CertificateCreateOrUpdateParameters
           description: ''
         - id: options
           type:
@@ -645,11 +645,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.Certificate>
+            - ServiceCallback<azure-arm-batch.Certificate>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.Certificate>
+          - Promise<azure-arm-batch.Certificate>
   - uid: azure-arm-batch.CertificateOperations.createWithHttpOperationResponse
     name: createWithHttpOperationResponse
     children: []
@@ -686,7 +686,7 @@ items:
             match the certificate data in the request. For example SHA1-a3d1c5.
         - id: parameters
           type:
-            - '@azure-arm-batch.CertificateCreateOrUpdateParameters'
+            - azure-arm-batch.CertificateCreateOrUpdateParameters
           description: |
             Additional parameters for certificate creation.
         - id: options
@@ -696,7 +696,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Certificate>>
+          - Promise<Certificate!@>>
   - uid: azure-arm-batch.CertificateOperations.deleteMethod
     name: deleteMethod
     children: []
@@ -874,11 +874,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.Certificate>
+            - ServiceCallback<azure-arm-batch.Certificate>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.Certificate>
+          - Promise<azure-arm-batch.Certificate>
   - uid: azure-arm-batch.CertificateOperations.get_2
     name: get
     children: []
@@ -910,11 +910,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.Certificate>
+            - ServiceCallback<azure-arm-batch.Certificate>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.Certificate>
+          - Promise<azure-arm-batch.Certificate>
   - uid: azure-arm-batch.CertificateOperations.get
     name: get
     children: []
@@ -955,7 +955,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.Certificate>
+          - Promise<azure-arm-batch.Certificate>
   - uid: azure-arm-batch.CertificateOperations.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -996,7 +996,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Certificate>>
+          - Promise<Certificate!@>>
   - uid: azure-arm-batch.CertificateOperations.listByBatchAccount
     name: listByBatchAccount
     children: []
@@ -1027,7 +1027,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.ListCertificatesResult>
+          - Promise<azure-arm-batch.ListCertificatesResult>
   - uid: azure-arm-batch.CertificateOperations.listByBatchAccount_1
     name: listByBatchAccount
     children: []
@@ -1050,11 +1050,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.ListCertificatesResult>
+            - ServiceCallback<azure-arm-batch.ListCertificatesResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.ListCertificatesResult>
+          - Promise<azure-arm-batch.ListCertificatesResult>
   - uid: azure-arm-batch.CertificateOperations.listByBatchAccount_2
     name: listByBatchAccount
     children: []
@@ -1082,11 +1082,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.ListCertificatesResult>
+            - ServiceCallback<azure-arm-batch.ListCertificatesResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.ListCertificatesResult>
+          - Promise<azure-arm-batch.ListCertificatesResult>
   - uid: azure-arm-batch.CertificateOperations.listByBatchAccountNext
     name: listByBatchAccountNext
     children: []
@@ -1112,7 +1112,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.ListCertificatesResult>
+          - Promise<azure-arm-batch.ListCertificatesResult>
   - uid: azure-arm-batch.CertificateOperations.listByBatchAccountNext_1
     name: listByBatchAccountNext
     children: []
@@ -1131,11 +1131,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.ListCertificatesResult>
+            - ServiceCallback<azure-arm-batch.ListCertificatesResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.ListCertificatesResult>
+          - Promise<azure-arm-batch.ListCertificatesResult>
   - uid: azure-arm-batch.CertificateOperations.listByBatchAccountNext_2
     name: listByBatchAccountNext
     children: []
@@ -1158,11 +1158,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.ListCertificatesResult>
+            - ServiceCallback<azure-arm-batch.ListCertificatesResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.ListCertificatesResult>
+          - Promise<azure-arm-batch.ListCertificatesResult>
   - uid: >-
       azure-arm-batch.CertificateOperations.listByBatchAccountNextWithHttpOperationResponse
     name: listByBatchAccountNextWithHttpOperationResponse
@@ -1189,7 +1189,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ListCertificatesResult>>
+          - Promise<ListCertificatesResult!@>>
   - uid: >-
       azure-arm-batch.CertificateOperations.listByBatchAccountWithHttpOperationResponse
     name: listByBatchAccountWithHttpOperationResponse
@@ -1221,7 +1221,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ListCertificatesResult>>
+          - Promise<ListCertificatesResult!@>>
   - uid: azure-arm-batch.CertificateOperations.update
     name: update
     children: []
@@ -1258,7 +1258,7 @@ items:
             match the certificate data in the request. For example SHA1-a3d1c5.
         - id: parameters
           type:
-            - '@azure-arm-batch.CertificateCreateOrUpdateParameters'
+            - azure-arm-batch.CertificateCreateOrUpdateParameters
           description: |
             Certificate entity to update.
         - id: options
@@ -1268,7 +1268,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.Certificate>
+          - Promise<azure-arm-batch.Certificate>
   - uid: azure-arm-batch.CertificateOperations.update_1
     name: update
     children: []
@@ -1297,15 +1297,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-batch.CertificateCreateOrUpdateParameters'
+            - azure-arm-batch.CertificateCreateOrUpdateParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.Certificate>
+            - ServiceCallback<azure-arm-batch.Certificate>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.Certificate>
+          - Promise<azure-arm-batch.Certificate>
   - uid: azure-arm-batch.CertificateOperations.update_2
     name: update
     children: []
@@ -1334,7 +1334,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-batch.CertificateCreateOrUpdateParameters'
+            - azure-arm-batch.CertificateCreateOrUpdateParameters
           description: ''
         - id: options
           type:
@@ -1342,11 +1342,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.Certificate>
+            - ServiceCallback<azure-arm-batch.Certificate>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.Certificate>
+          - Promise<azure-arm-batch.Certificate>
   - uid: azure-arm-batch.CertificateOperations.updateWithHttpOperationResponse
     name: updateWithHttpOperationResponse
     children: []
@@ -1383,7 +1383,7 @@ items:
             match the certificate data in the request. For example SHA1-a3d1c5.
         - id: parameters
           type:
-            - '@azure-arm-batch.CertificateCreateOrUpdateParameters'
+            - azure-arm-batch.CertificateCreateOrUpdateParameters
           description: |
             Certificate entity to update.
         - id: options
@@ -1393,4 +1393,46 @@ items:
           optional: true
       return:
         type:
-          - Promise<Certificate>>
+          - Promise<Certificate!@>>
+references:
+  - uid: azure-arm-batch.CertificateCreateOrUpdateParameters
+    spec.typeScript:
+      - name: CertificateCreateOrUpdateParameters
+        fullName: CertificateCreateOrUpdateParameters
+        uid: azure-arm-batch.CertificateCreateOrUpdateParameters
+  - uid: Promise<azure-arm-batch.Certificate>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Certificate
+        fullName: Certificate
+        uid: azure-arm-batch.Certificate
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch.Certificate>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Certificate
+        fullName: Certificate
+        uid: azure-arm-batch.Certificate
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-batch.ListCertificatesResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ListCertificatesResult
+        fullName: ListCertificatesResult
+        uid: azure-arm-batch.ListCertificatesResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch.ListCertificatesResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ListCertificatesResult
+        fullName: ListCertificatesResult
+        uid: azure-arm-batch.ListCertificatesResult
+      - name: '>'
+        fullName: '>'

@@ -37,7 +37,7 @@ items:
       content: 'providerLocation: AzureReachabilityReportLocation'
       return:
         type:
-          - '@azure-arm-network.AzureReachabilityReportLocation'
+          - azure-arm-network.AzureReachabilityReportLocation
   - uid: azure-arm-network.AzureReachabilityReport.reachabilityReport
     name: reachabilityReport
     fullName: reachabilityReport
@@ -50,4 +50,17 @@ items:
       content: 'reachabilityReport: AzureReachabilityReportItem[]'
       return:
         type:
-          - '@azure-arm-network.AzureReachabilityReportItem[]'
+          - 'azure-arm-network.AzureReachabilityReportItem[]'
+references:
+  - uid: azure-arm-network.AzureReachabilityReportLocation
+    spec.typeScript:
+      - name: AzureReachabilityReportLocation
+        fullName: AzureReachabilityReportLocation
+        uid: azure-arm-network.AzureReachabilityReportLocation
+  - uid: 'azure-arm-network.AzureReachabilityReportItem[]'
+    spec.typeScript:
+      - name: AzureReachabilityReportItem
+        fullName: AzureReachabilityReportItem
+        uid: azure-arm-network.AzureReachabilityReportItem
+      - name: '[]'
+        fullName: '[]'

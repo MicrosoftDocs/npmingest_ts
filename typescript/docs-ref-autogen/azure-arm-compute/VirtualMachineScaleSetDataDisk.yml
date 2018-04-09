@@ -83,7 +83,7 @@ items:
       content: 'managedDisk?: VirtualMachineScaleSetManagedDiskParameters'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineScaleSetManagedDiskParameters'
+          - azure-arm-compute.VirtualMachineScaleSetManagedDiskParameters
   - uid: azure-arm-compute.VirtualMachineScaleSetDataDisk.name
     name: name
     fullName: name
@@ -112,3 +112,9 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: azure-arm-compute.VirtualMachineScaleSetManagedDiskParameters
+    spec.typeScript:
+      - name: VirtualMachineScaleSetManagedDiskParameters
+        fullName: VirtualMachineScaleSetManagedDiskParameters
+        uid: azure-arm-compute.VirtualMachineScaleSetManagedDiskParameters

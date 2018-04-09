@@ -28,7 +28,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkInterfaceIPConfiguration.applicationGatewayBackendAddressPools
@@ -46,7 +46,7 @@ items:
         ApplicationGatewayBackendAddressPool[]
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayBackendAddressPool[]'
+          - 'azure-arm-network.ApplicationGatewayBackendAddressPool[]'
   - uid: >-
       azure-arm-network.NetworkInterfaceIPConfiguration.applicationSecurityGroups
     name: applicationSecurityGroups
@@ -61,7 +61,7 @@ items:
       content: 'applicationSecurityGroups?: ApplicationSecurityGroup[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationSecurityGroup[]'
+          - 'azure-arm-network.ApplicationSecurityGroup[]'
   - uid: azure-arm-network.NetworkInterfaceIPConfiguration.etag
     name: etag
     fullName: etag
@@ -90,7 +90,7 @@ items:
       content: 'loadBalancerBackendAddressPools?: BackendAddressPool[]'
       return:
         type:
-          - '@azure-arm-network.BackendAddressPool[]'
+          - 'azure-arm-network.BackendAddressPool[]'
   - uid: >-
       azure-arm-network.NetworkInterfaceIPConfiguration.loadBalancerInboundNatRules
     name: loadBalancerInboundNatRules
@@ -105,7 +105,7 @@ items:
       content: 'loadBalancerInboundNatRules?: InboundNatRule[]'
       return:
         type:
-          - '@azure-arm-network.InboundNatRule[]'
+          - 'azure-arm-network.InboundNatRule[]'
   - uid: azure-arm-network.NetworkInterfaceIPConfiguration.name
     name: name
     fullName: name
@@ -204,7 +204,7 @@ items:
       content: 'publicIPAddress?: PublicIPAddress'
       return:
         type:
-          - '@azure-arm-network.PublicIPAddress'
+          - azure-arm-network.PublicIPAddress
   - uid: azure-arm-network.NetworkInterfaceIPConfiguration.subnet
     name: subnet
     fullName: subnet
@@ -218,4 +218,48 @@ items:
       content: 'subnet?: Subnet'
       return:
         type:
-          - '@azure-arm-network.Subnet'
+          - azure-arm-network.Subnet
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: 'azure-arm-network.ApplicationGatewayBackendAddressPool[]'
+    spec.typeScript:
+      - name: ApplicationGatewayBackendAddressPool
+        fullName: ApplicationGatewayBackendAddressPool
+        uid: azure-arm-network.ApplicationGatewayBackendAddressPool
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.ApplicationSecurityGroup[]'
+    spec.typeScript:
+      - name: ApplicationSecurityGroup
+        fullName: ApplicationSecurityGroup
+        uid: azure-arm-network.ApplicationSecurityGroup
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.BackendAddressPool[]'
+    spec.typeScript:
+      - name: BackendAddressPool
+        fullName: BackendAddressPool
+        uid: azure-arm-network.BackendAddressPool
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.InboundNatRule[]'
+    spec.typeScript:
+      - name: InboundNatRule
+        fullName: InboundNatRule
+        uid: azure-arm-network.InboundNatRule
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network.PublicIPAddress
+    spec.typeScript:
+      - name: PublicIPAddress
+        fullName: PublicIPAddress
+        uid: azure-arm-network.PublicIPAddress
+  - uid: azure-arm-network.Subnet
+    spec.typeScript:
+      - name: Subnet
+        fullName: Subnet
+        uid: azure-arm-network.Subnet

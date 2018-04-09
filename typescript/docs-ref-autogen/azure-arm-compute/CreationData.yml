@@ -40,7 +40,7 @@ items:
       content: 'imageReference?: ImageDiskReference'
       return:
         type:
-          - '@azure-arm-compute.ImageDiskReference'
+          - azure-arm-compute.ImageDiskReference
   - uid: azure-arm-compute.CreationData.sourceResourceId
     name: sourceResourceId
     fullName: sourceResourceId
@@ -83,3 +83,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-compute.ImageDiskReference
+    spec.typeScript:
+      - name: ImageDiskReference
+        fullName: ImageDiskReference
+        uid: azure-arm-compute.ImageDiskReference

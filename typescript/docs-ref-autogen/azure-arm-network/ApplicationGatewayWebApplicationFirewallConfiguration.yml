@@ -37,7 +37,7 @@ items:
       content: 'disabledRuleGroups?: ApplicationGatewayFirewallDisabledRuleGroup[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayFirewallDisabledRuleGroup[]'
+          - 'azure-arm-network.ApplicationGatewayFirewallDisabledRuleGroup[]'
   - uid: >-
       azure-arm-network.ApplicationGatewayWebApplicationFirewallConfiguration.enabled
     name: enabled
@@ -124,3 +124,11 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'azure-arm-network.ApplicationGatewayFirewallDisabledRuleGroup[]'
+    spec.typeScript:
+      - name: ApplicationGatewayFirewallDisabledRuleGroup
+        fullName: ApplicationGatewayFirewallDisabledRuleGroup
+        uid: azure-arm-network.ApplicationGatewayFirewallDisabledRuleGroup
+      - name: '[]'
+        fullName: '[]'

@@ -14,7 +14,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-iothub.Resource'
+      name: azure-arm-iothub.Resource
     package: azure-arm-iothub
   - uid: azure-arm-iothub.IotHubDescription.etag
     name: etag
@@ -43,7 +43,7 @@ items:
       content: 'properties?: IotHubProperties'
       return:
         type:
-          - '@azure-arm-iothub.IotHubProperties'
+          - azure-arm-iothub.IotHubProperties
   - uid: azure-arm-iothub.IotHubDescription.resourcegroup
     name: resourcegroup
     fullName: resourcegroup
@@ -69,7 +69,7 @@ items:
       content: 'sku: IotHubSkuInfo'
       return:
         type:
-          - '@azure-arm-iothub.IotHubSkuInfo'
+          - azure-arm-iothub.IotHubSkuInfo
   - uid: azure-arm-iothub.IotHubDescription.subscriptionid
     name: subscriptionid
     fullName: subscriptionid
@@ -83,3 +83,19 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-iothub.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-iothub.Resource
+  - uid: azure-arm-iothub.IotHubProperties
+    spec.typeScript:
+      - name: IotHubProperties
+        fullName: IotHubProperties
+        uid: azure-arm-iothub.IotHubProperties
+  - uid: azure-arm-iothub.IotHubSkuInfo
+    spec.typeScript:
+      - name: IotHubSkuInfo
+        fullName: IotHubSkuInfo
+        uid: azure-arm-iothub.IotHubSkuInfo

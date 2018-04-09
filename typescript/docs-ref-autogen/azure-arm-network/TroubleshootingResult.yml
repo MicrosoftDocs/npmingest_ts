@@ -54,7 +54,7 @@ items:
       content: 'results?: TroubleshootingDetails[]'
       return:
         type:
-          - '@azure-arm-network.TroubleshootingDetails[]'
+          - 'azure-arm-network.TroubleshootingDetails[]'
   - uid: azure-arm-network.TroubleshootingResult.startTime
     name: startTime
     fullName: startTime
@@ -69,3 +69,11 @@ items:
       return:
         type:
           - Date
+references:
+  - uid: 'azure-arm-network.TroubleshootingDetails[]'
+    spec.typeScript:
+      - name: TroubleshootingDetails
+        fullName: TroubleshootingDetails
+        uid: azure-arm-network.TroubleshootingDetails
+      - name: '[]'
+        fullName: '[]'

@@ -50,7 +50,7 @@ items:
       content: 'destination: ConnectionMonitorDestination'
       return:
         type:
-          - '@azure-arm-network.ConnectionMonitorDestination'
+          - azure-arm-network.ConnectionMonitorDestination
   - uid: azure-arm-network.ConnectionMonitorResult.etag
     name: etag
     fullName: etag
@@ -161,7 +161,7 @@ items:
       content: 'source: ConnectionMonitorSource'
       return:
         type:
-          - '@azure-arm-network.ConnectionMonitorSource'
+          - azure-arm-network.ConnectionMonitorSource
   - uid: azure-arm-network.ConnectionMonitorResult.startTime
     name: startTime
     fullName: startTime
@@ -204,3 +204,14 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.ConnectionMonitorDestination
+    spec.typeScript:
+      - name: ConnectionMonitorDestination
+        fullName: ConnectionMonitorDestination
+        uid: azure-arm-network.ConnectionMonitorDestination
+  - uid: azure-arm-network.ConnectionMonitorSource
+    spec.typeScript:
+      - name: ConnectionMonitorSource
+        fullName: ConnectionMonitorSource
+        uid: azure-arm-network.ConnectionMonitorSource

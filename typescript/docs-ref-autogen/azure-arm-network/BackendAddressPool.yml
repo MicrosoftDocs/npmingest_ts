@@ -15,7 +15,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.BackendAddressPool.backendIPConfigurations
     name: backendIPConfigurations
@@ -30,7 +30,7 @@ items:
       content: 'backendIPConfigurations?: NetworkInterfaceIPConfiguration[]'
       return:
         type:
-          - '@azure-arm-network.NetworkInterfaceIPConfiguration[]'
+          - 'azure-arm-network.NetworkInterfaceIPConfiguration[]'
   - uid: azure-arm-network.BackendAddressPool.etag
     name: etag
     fullName: etag
@@ -58,7 +58,7 @@ items:
       content: 'loadBalancingRules?: SubResource[]'
       return:
         type:
-          - '@azure-arm-network.SubResource[]'
+          - 'azure-arm-network.SubResource[]'
   - uid: azure-arm-network.BackendAddressPool.name
     name: name
     fullName: name
@@ -86,7 +86,7 @@ items:
       content: 'outboundNatRule?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.BackendAddressPool.provisioningState
     name: provisioningState
     fullName: provisioningState
@@ -101,3 +101,23 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: 'azure-arm-network.NetworkInterfaceIPConfiguration[]'
+    spec.typeScript:
+      - name: NetworkInterfaceIPConfiguration
+        fullName: NetworkInterfaceIPConfiguration
+        uid: azure-arm-network.NetworkInterfaceIPConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.SubResource[]'
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+      - name: '[]'
+        fullName: '[]'

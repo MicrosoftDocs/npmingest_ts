@@ -113,7 +113,7 @@ items:
             ExpressRouteCrossConnection.
         - id: parameters
           type:
-            - '@azure-arm-network.ExpressRouteCrossConnection'
+            - azure-arm-network.ExpressRouteCrossConnection
           description: |
             Parameters supplied to the update express route
             crossConnection operation.
@@ -124,7 +124,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnection>
+          - Promise<azure-arm-network.ExpressRouteCrossConnection>
   - uid: azure-arm-network.ExpressRouteCrossConnections.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -148,15 +148,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ExpressRouteCrossConnection'
+            - azure-arm-network.ExpressRouteCrossConnection
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCrossConnection>
+            - ServiceCallback<azure-arm-network.ExpressRouteCrossConnection>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnection>
+          - Promise<azure-arm-network.ExpressRouteCrossConnection>
   - uid: azure-arm-network.ExpressRouteCrossConnections.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -181,7 +181,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ExpressRouteCrossConnection'
+            - azure-arm-network.ExpressRouteCrossConnection
           description: ''
         - id: options
           type:
@@ -189,11 +189,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCrossConnection>
+            - ServiceCallback<azure-arm-network.ExpressRouteCrossConnection>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnection>
+          - Promise<azure-arm-network.ExpressRouteCrossConnection>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
@@ -221,7 +221,7 @@ items:
             ExpressRouteCrossConnection.
         - id: parameters
           type:
-            - '@azure-arm-network.ExpressRouteCrossConnection'
+            - azure-arm-network.ExpressRouteCrossConnection
           description: |
             Parameters supplied to the update express route
             crossConnection operation.
@@ -232,7 +232,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCrossConnection>>
+          - Promise<ExpressRouteCrossConnection!@>>
   - uid: azure-arm-network.ExpressRouteCrossConnections.beginListArpTable
     name: beginListArpTable
     children: []
@@ -276,7 +276,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.beginListArpTable_1
     name: beginListArpTable
     children: []
@@ -311,11 +311,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.beginListArpTable_2
     name: beginListArpTable
     children: []
@@ -355,11 +355,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.beginListArpTableWithHttpOperationResponse
     name: beginListArpTableWithHttpOperationResponse
@@ -404,7 +404,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitsArpTableListResult>>
+          - Promise<ExpressRouteCircuitsArpTableListResult!@>>
   - uid: azure-arm-network.ExpressRouteCrossConnections.beginListRoutesTable_1
     name: beginListRoutesTable
     children: []
@@ -441,12 +441,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.beginListRoutesTable_2
     name: beginListRoutesTable
     children: []
@@ -488,12 +487,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.beginListRoutesTable
     name: beginListRoutesTable
     children: []
@@ -539,8 +537,7 @@ items:
           optional: true
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.beginListRoutesTableSummary_1
     name: beginListRoutesTableSummary
@@ -577,12 +574,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
+            Promise<azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.beginListRoutesTableSummary_2
     name: beginListRoutesTableSummary
@@ -623,12 +620,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
+            Promise<azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.beginListRoutesTableSummary
     name: beginListRoutesTableSummary
     children: []
@@ -673,7 +670,7 @@ items:
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
+            Promise<azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.beginListRoutesTableSummaryWithHttpOperationResponse
     name: beginListRoutesTableSummaryWithHttpOperationResponse
@@ -719,7 +716,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCrossConnectionsRoutesTableSummaryListResult>>
+          - Promise<ExpressRouteCrossConnectionsRoutesTableSummaryListResult!@>>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.beginListRoutesTableWithHttpOperationResponse
     name: beginListRoutesTableWithHttpOperationResponse
@@ -767,7 +764,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitsRoutesTableListResult>>
+          - Promise<ExpressRouteCircuitsRoutesTableListResult!@>>
   - uid: azure-arm-network.ExpressRouteCrossConnections.beginUpdateTags_1
     name: beginUpdateTags
     children: []
@@ -791,15 +788,15 @@ items:
           description: ''
         - id: crossConnectionParameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCrossConnection>
+            - ServiceCallback<azure-arm-network.ExpressRouteCrossConnection>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnection>
+          - Promise<azure-arm-network.ExpressRouteCrossConnection>
   - uid: azure-arm-network.ExpressRouteCrossConnections.beginUpdateTags
     name: beginUpdateTags
     children: []
@@ -824,7 +821,7 @@ items:
             The name of the cross connection.
         - id: crossConnectionParameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update
             express route cross connection tags.
@@ -835,7 +832,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnection>
+          - Promise<azure-arm-network.ExpressRouteCrossConnection>
   - uid: azure-arm-network.ExpressRouteCrossConnections.beginUpdateTags_2
     name: beginUpdateTags
     children: []
@@ -859,7 +856,7 @@ items:
           description: ''
         - id: crossConnectionParameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -867,11 +864,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCrossConnection>
+            - ServiceCallback<azure-arm-network.ExpressRouteCrossConnection>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnection>
+          - Promise<azure-arm-network.ExpressRouteCrossConnection>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.beginUpdateTagsWithHttpOperationResponse
     name: beginUpdateTagsWithHttpOperationResponse
@@ -898,7 +895,7 @@ items:
             The name of the cross connection.
         - id: crossConnectionParameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update
             express route cross connection tags.
@@ -909,7 +906,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCrossConnection>>
+          - Promise<ExpressRouteCrossConnection!@>>
   - uid: azure-arm-network.ExpressRouteCrossConnections.createOrUpdate
     name: createOrUpdate
     children: []
@@ -935,7 +932,7 @@ items:
             ExpressRouteCrossConnection.
         - id: parameters
           type:
-            - '@azure-arm-network.ExpressRouteCrossConnection'
+            - azure-arm-network.ExpressRouteCrossConnection
           description: |
             Parameters supplied to the update express route
             crossConnection operation.
@@ -946,7 +943,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnection>
+          - Promise<azure-arm-network.ExpressRouteCrossConnection>
   - uid: azure-arm-network.ExpressRouteCrossConnections.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -970,15 +967,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ExpressRouteCrossConnection'
+            - azure-arm-network.ExpressRouteCrossConnection
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCrossConnection>
+            - ServiceCallback<azure-arm-network.ExpressRouteCrossConnection>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnection>
+          - Promise<azure-arm-network.ExpressRouteCrossConnection>
   - uid: azure-arm-network.ExpressRouteCrossConnections.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -1002,7 +999,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ExpressRouteCrossConnection'
+            - azure-arm-network.ExpressRouteCrossConnection
           description: ''
         - id: options
           type:
@@ -1010,11 +1007,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCrossConnection>
+            - ServiceCallback<azure-arm-network.ExpressRouteCrossConnection>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnection>
+          - Promise<azure-arm-network.ExpressRouteCrossConnection>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
@@ -1042,7 +1039,7 @@ items:
             ExpressRouteCrossConnection.
         - id: parameters
           type:
-            - '@azure-arm-network.ExpressRouteCrossConnection'
+            - azure-arm-network.ExpressRouteCrossConnection
           description: |
             Parameters supplied to the update express route
             crossConnection operation.
@@ -1053,7 +1050,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCrossConnection>>
+          - Promise<ExpressRouteCrossConnection!@>>
   - uid: azure-arm-network.ExpressRouteCrossConnections.get
     name: get
     children: []
@@ -1085,7 +1082,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnection>
+          - Promise<azure-arm-network.ExpressRouteCrossConnection>
   - uid: azure-arm-network.ExpressRouteCrossConnections.get_1
     name: get
     children: []
@@ -1108,11 +1105,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCrossConnection>
+            - ServiceCallback<azure-arm-network.ExpressRouteCrossConnection>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnection>
+          - Promise<azure-arm-network.ExpressRouteCrossConnection>
   - uid: azure-arm-network.ExpressRouteCrossConnections.get_2
     name: get
     children: []
@@ -1140,11 +1137,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCrossConnection>
+            - ServiceCallback<azure-arm-network.ExpressRouteCrossConnection>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnection>
+          - Promise<azure-arm-network.ExpressRouteCrossConnection>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
@@ -1177,7 +1174,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCrossConnection>>
+          - Promise<ExpressRouteCrossConnection!@>>
   - uid: azure-arm-network.ExpressRouteCrossConnections.list
     name: list
     children: []
@@ -1195,7 +1192,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+          - Promise<azure-arm-network.ExpressRouteCrossConnectionListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.list_1
     name: list
     children: []
@@ -1211,11 +1208,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCrossConnectionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+          - Promise<azure-arm-network.ExpressRouteCrossConnectionListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.list_2
     name: list
     children: []
@@ -1235,11 +1232,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCrossConnectionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+          - Promise<azure-arm-network.ExpressRouteCrossConnectionListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listArpTable
     name: listArpTable
     children: []
@@ -1282,7 +1279,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listArpTable_1
     name: listArpTable
     children: []
@@ -1317,11 +1314,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listArpTable_2
     name: listArpTable
     children: []
@@ -1360,11 +1357,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.listArpTableWithHttpOperationResponse
     name: listArpTableWithHttpOperationResponse
@@ -1409,7 +1406,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitsArpTableListResult>>
+          - Promise<ExpressRouteCircuitsArpTableListResult!@>>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listByResourceGroup
     name: listByResourceGroup
     children: []
@@ -1434,7 +1431,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+          - Promise<azure-arm-network.ExpressRouteCrossConnectionListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listByResourceGroup_1
     name: listByResourceGroup
     children: []
@@ -1454,11 +1451,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCrossConnectionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+          - Promise<azure-arm-network.ExpressRouteCrossConnectionListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listByResourceGroup_2
     name: listByResourceGroup
     children: []
@@ -1483,11 +1480,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCrossConnectionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+          - Promise<azure-arm-network.ExpressRouteCrossConnectionListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listByResourceGroupNext_1
     name: listByResourceGroupNext
     children: []
@@ -1507,11 +1504,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCrossConnectionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+          - Promise<azure-arm-network.ExpressRouteCrossConnectionListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listByResourceGroupNext_2
     name: listByResourceGroupNext
     children: []
@@ -1536,11 +1533,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCrossConnectionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+          - Promise<azure-arm-network.ExpressRouteCrossConnectionListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listByResourceGroupNext
     name: listByResourceGroupNext
     children: []
@@ -1566,7 +1563,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+          - Promise<azure-arm-network.ExpressRouteCrossConnectionListResult>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.listByResourceGroupNextWithHttpOperationResponse
     name: listByResourceGroupNextWithHttpOperationResponse
@@ -1593,7 +1590,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCrossConnectionListResult>>
+          - Promise<ExpressRouteCrossConnectionListResult!@>>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.listByResourceGroupWithHttpOperationResponse
     name: listByResourceGroupWithHttpOperationResponse
@@ -1619,7 +1616,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCrossConnectionListResult>>
+          - Promise<ExpressRouteCrossConnectionListResult!@>>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listNext
     name: listNext
     children: []
@@ -1643,7 +1640,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+          - Promise<azure-arm-network.ExpressRouteCrossConnectionListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listNext_1
     name: listNext
     children: []
@@ -1663,11 +1660,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCrossConnectionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+          - Promise<azure-arm-network.ExpressRouteCrossConnectionListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listNext_2
     name: listNext
     children: []
@@ -1691,11 +1688,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCrossConnectionListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnectionListResult>
+          - Promise<azure-arm-network.ExpressRouteCrossConnectionListResult>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
@@ -1722,7 +1719,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCrossConnectionListResult>>
+          - Promise<ExpressRouteCrossConnectionListResult!@>>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listRoutesTable_1
     name: listRoutesTable
     children: []
@@ -1759,12 +1756,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listRoutesTable_2
     name: listRoutesTable
     children: []
@@ -1805,12 +1801,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listRoutesTable
     name: listRoutesTable
     children: []
@@ -1855,8 +1850,7 @@ items:
           optional: true
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+          - Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listRoutesTableSummary
     name: listRoutesTableSummary
     children: []
@@ -1901,7 +1895,7 @@ items:
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
+            Promise<azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listRoutesTableSummary_1
     name: listRoutesTableSummary
     children: []
@@ -1937,12 +1931,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
+            Promise<azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
   - uid: azure-arm-network.ExpressRouteCrossConnections.listRoutesTableSummary_2
     name: listRoutesTableSummary
     children: []
@@ -1982,12 +1976,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
+              ServiceCallback<azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
+            Promise<azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.listRoutesTableSummaryWithHttpOperationResponse
     name: listRoutesTableSummaryWithHttpOperationResponse
@@ -2033,7 +2027,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCrossConnectionsRoutesTableSummaryListResult>>
+          - Promise<ExpressRouteCrossConnectionsRoutesTableSummaryListResult!@>>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.listRoutesTableWithHttpOperationResponse
     name: listRoutesTableWithHttpOperationResponse
@@ -2080,7 +2074,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitsRoutesTableListResult>>
+          - Promise<ExpressRouteCircuitsRoutesTableListResult!@>>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -2099,7 +2093,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCrossConnectionListResult>>
+          - Promise<ExpressRouteCrossConnectionListResult!@>>
   - uid: azure-arm-network.ExpressRouteCrossConnections.updateTags
     name: updateTags
     children: []
@@ -2124,7 +2118,7 @@ items:
             The name of the cross connection.
         - id: crossConnectionParameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update
             express route cross connection tags.
@@ -2135,7 +2129,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnection>
+          - Promise<azure-arm-network.ExpressRouteCrossConnection>
   - uid: azure-arm-network.ExpressRouteCrossConnections.updateTags_1
     name: updateTags
     children: []
@@ -2159,15 +2153,15 @@ items:
           description: ''
         - id: crossConnectionParameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCrossConnection>
+            - ServiceCallback<azure-arm-network.ExpressRouteCrossConnection>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnection>
+          - Promise<azure-arm-network.ExpressRouteCrossConnection>
   - uid: azure-arm-network.ExpressRouteCrossConnections.updateTags_2
     name: updateTags
     children: []
@@ -2191,7 +2185,7 @@ items:
           description: ''
         - id: crossConnectionParameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -2199,11 +2193,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ExpressRouteCrossConnection>
+            - ServiceCallback<azure-arm-network.ExpressRouteCrossConnection>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ExpressRouteCrossConnection>
+          - Promise<azure-arm-network.ExpressRouteCrossConnection>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnections.updateTagsWithHttpOperationResponse
     name: updateTagsWithHttpOperationResponse
@@ -2230,7 +2224,7 @@ items:
             The name of the cross connection.
         - id: crossConnectionParameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update
             express route cross connection tags.
@@ -2241,4 +2235,110 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCrossConnection>>
+          - Promise<ExpressRouteCrossConnection!@>>
+references:
+  - uid: azure-arm-network.ExpressRouteCrossConnection
+    spec.typeScript:
+      - name: ExpressRouteCrossConnection
+        fullName: ExpressRouteCrossConnection
+        uid: azure-arm-network.ExpressRouteCrossConnection
+  - uid: Promise<azure-arm-network.ExpressRouteCrossConnection>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteCrossConnection
+        fullName: ExpressRouteCrossConnection
+        uid: azure-arm-network.ExpressRouteCrossConnection
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ExpressRouteCrossConnection>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteCrossConnection
+        fullName: ExpressRouteCrossConnection
+        uid: azure-arm-network.ExpressRouteCrossConnection
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteCircuitsArpTableListResult
+        fullName: ExpressRouteCircuitsArpTableListResult
+        uid: azure-arm-network.ExpressRouteCircuitsArpTableListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ExpressRouteCircuitsArpTableListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteCircuitsArpTableListResult
+        fullName: ExpressRouteCircuitsArpTableListResult
+        uid: azure-arm-network.ExpressRouteCircuitsArpTableListResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteCircuitsRoutesTableListResult
+        fullName: ExpressRouteCircuitsRoutesTableListResult
+        uid: azure-arm-network.ExpressRouteCircuitsRoutesTableListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network.ExpressRouteCircuitsRoutesTableListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteCircuitsRoutesTableListResult
+        fullName: ExpressRouteCircuitsRoutesTableListResult
+        uid: azure-arm-network.ExpressRouteCircuitsRoutesTableListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteCrossConnectionsRoutesTableSummaryListResult
+        fullName: ExpressRouteCrossConnectionsRoutesTableSummaryListResult
+        uid: >-
+          azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteCrossConnectionsRoutesTableSummaryListResult
+        fullName: ExpressRouteCrossConnectionsRoutesTableSummaryListResult
+        uid: >-
+          azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.TagsObject
+    spec.typeScript:
+      - name: TagsObject
+        fullName: TagsObject
+        uid: azure-arm-network.TagsObject
+  - uid: Promise<azure-arm-network.ExpressRouteCrossConnectionListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteCrossConnectionListResult
+        fullName: ExpressRouteCrossConnectionListResult
+        uid: azure-arm-network.ExpressRouteCrossConnectionListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ExpressRouteCrossConnectionListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteCrossConnectionListResult
+        fullName: ExpressRouteCrossConnectionListResult
+        uid: azure-arm-network.ExpressRouteCrossConnectionListResult
+      - name: '>'
+        fullName: '>'

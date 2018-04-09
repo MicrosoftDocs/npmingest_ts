@@ -29,7 +29,7 @@ items:
       content: 'diagnosticsProfile?: DiagnosticsProfile'
       return:
         type:
-          - '@azure-arm-compute.DiagnosticsProfile'
+          - azure-arm-compute.DiagnosticsProfile
   - uid: azure-arm-compute.VirtualMachineScaleSetVMProfile.extensionProfile
     name: extensionProfile
     fullName: extensionProfile
@@ -43,7 +43,7 @@ items:
       content: 'extensionProfile?: VirtualMachineScaleSetExtensionProfile'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineScaleSetExtensionProfile'
+          - azure-arm-compute.VirtualMachineScaleSetExtensionProfile
   - uid: azure-arm-compute.VirtualMachineScaleSetVMProfile.licenseType
     name: licenseType
     fullName: licenseType
@@ -71,7 +71,7 @@ items:
       content: 'networkProfile?: VirtualMachineScaleSetNetworkProfile'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineScaleSetNetworkProfile'
+          - azure-arm-compute.VirtualMachineScaleSetNetworkProfile
   - uid: azure-arm-compute.VirtualMachineScaleSetVMProfile.osProfile
     name: osProfile
     fullName: osProfile
@@ -85,7 +85,7 @@ items:
       content: 'osProfile?: VirtualMachineScaleSetOSProfile'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineScaleSetOSProfile'
+          - azure-arm-compute.VirtualMachineScaleSetOSProfile
   - uid: azure-arm-compute.VirtualMachineScaleSetVMProfile.priority
     name: priority
     fullName: priority
@@ -113,4 +113,30 @@ items:
       content: 'storageProfile?: VirtualMachineScaleSetStorageProfile'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineScaleSetStorageProfile'
+          - azure-arm-compute.VirtualMachineScaleSetStorageProfile
+references:
+  - uid: azure-arm-compute.DiagnosticsProfile
+    spec.typeScript:
+      - name: DiagnosticsProfile
+        fullName: DiagnosticsProfile
+        uid: azure-arm-compute.DiagnosticsProfile
+  - uid: azure-arm-compute.VirtualMachineScaleSetExtensionProfile
+    spec.typeScript:
+      - name: VirtualMachineScaleSetExtensionProfile
+        fullName: VirtualMachineScaleSetExtensionProfile
+        uid: azure-arm-compute.VirtualMachineScaleSetExtensionProfile
+  - uid: azure-arm-compute.VirtualMachineScaleSetNetworkProfile
+    spec.typeScript:
+      - name: VirtualMachineScaleSetNetworkProfile
+        fullName: VirtualMachineScaleSetNetworkProfile
+        uid: azure-arm-compute.VirtualMachineScaleSetNetworkProfile
+  - uid: azure-arm-compute.VirtualMachineScaleSetOSProfile
+    spec.typeScript:
+      - name: VirtualMachineScaleSetOSProfile
+        fullName: VirtualMachineScaleSetOSProfile
+        uid: azure-arm-compute.VirtualMachineScaleSetOSProfile
+  - uid: azure-arm-compute.VirtualMachineScaleSetStorageProfile
+    spec.typeScript:
+      - name: VirtualMachineScaleSetStorageProfile
+        fullName: VirtualMachineScaleSetStorageProfile
+        uid: azure-arm-compute.VirtualMachineScaleSetStorageProfile

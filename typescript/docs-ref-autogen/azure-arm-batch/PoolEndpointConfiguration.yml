@@ -22,4 +22,12 @@ items:
       content: 'inboundNatPools: InboundNatPool[]'
       return:
         type:
-          - '@azure-arm-batch.InboundNatPool[]'
+          - 'azure-arm-batch.InboundNatPool[]'
+references:
+  - uid: 'azure-arm-batch.InboundNatPool[]'
+    spec.typeScript:
+      - name: InboundNatPool
+        fullName: InboundNatPool
+        uid: azure-arm-batch.InboundNatPool
+      - name: '[]'
+        fullName: '[]'

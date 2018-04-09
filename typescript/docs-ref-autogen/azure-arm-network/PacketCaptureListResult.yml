@@ -10,7 +10,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-network.PacketCaptureResult>
+      name: Array<azure-arm-network.PacketCaptureResult>
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptureListResult.Array
     name: Array
@@ -25,3 +25,13 @@ items:
       return:
         type:
           - ArrayConstructor
+references:
+  - uid: Array<azure-arm-network.PacketCaptureResult>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: PacketCaptureResult
+        fullName: PacketCaptureResult
+        uid: azure-arm-network.PacketCaptureResult
+      - name: '>'
+        fullName: '>'

@@ -19,7 +19,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.SubResourceReadOnly'
+      name: azure-arm-compute.SubResourceReadOnly
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetExtension.autoUpgradeMinorVersion
     name: autoUpgradeMinorVersion
@@ -147,3 +147,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-compute.SubResourceReadOnly
+    spec.typeScript:
+      - name: SubResourceReadOnly
+        fullName: SubResourceReadOnly
+        uid: azure-arm-compute.SubResourceReadOnly

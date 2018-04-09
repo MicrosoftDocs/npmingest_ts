@@ -32,7 +32,7 @@ items:
       return:
         type:
           - >-
-            @azure-arm-compute.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings
+            azure-arm-compute.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetPublicIPAddressConfiguration.idleTimeoutInMinutes
     name: idleTimeoutInMinutes
@@ -61,3 +61,11 @@ items:
       return:
         type:
           - string
+references:
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings
+    spec.typeScript:
+      - name: VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings
+        fullName: VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings
+        uid: >-
+          azure-arm-compute.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings

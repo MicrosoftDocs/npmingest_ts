@@ -23,7 +23,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationGatewayProbe.etag
     name: etag
@@ -80,7 +80,7 @@ items:
       content: 'match?: ApplicationGatewayProbeHealthResponseMatch'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayProbeHealthResponseMatch'
+          - azure-arm-network.ApplicationGatewayProbeHealthResponseMatch
   - uid: azure-arm-network.ApplicationGatewayProbe.minServers
     name: minServers
     fullName: minServers
@@ -208,3 +208,14 @@ items:
       return:
         type:
           - number
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: azure-arm-network.ApplicationGatewayProbeHealthResponseMatch
+    spec.typeScript:
+      - name: ApplicationGatewayProbeHealthResponseMatch
+        fullName: ApplicationGatewayProbeHealthResponseMatch
+        uid: azure-arm-network.ApplicationGatewayProbeHealthResponseMatch

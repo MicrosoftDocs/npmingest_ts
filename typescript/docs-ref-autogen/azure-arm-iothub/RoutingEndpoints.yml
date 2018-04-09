@@ -26,7 +26,7 @@ items:
       content: 'eventHubs?: RoutingEventHubProperties[]'
       return:
         type:
-          - '@azure-arm-iothub.RoutingEventHubProperties[]'
+          - 'azure-arm-iothub.RoutingEventHubProperties[]'
   - uid: azure-arm-iothub.RoutingEndpoints.serviceBusQueues
     name: serviceBusQueues
     fullName: serviceBusQueues
@@ -40,7 +40,7 @@ items:
       content: 'serviceBusQueues?: RoutingServiceBusQueueEndpointProperties[]'
       return:
         type:
-          - '@azure-arm-iothub.RoutingServiceBusQueueEndpointProperties[]'
+          - 'azure-arm-iothub.RoutingServiceBusQueueEndpointProperties[]'
   - uid: azure-arm-iothub.RoutingEndpoints.serviceBusTopics
     name: serviceBusTopics
     fullName: serviceBusTopics
@@ -54,7 +54,7 @@ items:
       content: 'serviceBusTopics?: RoutingServiceBusTopicEndpointProperties[]'
       return:
         type:
-          - '@azure-arm-iothub.RoutingServiceBusTopicEndpointProperties[]'
+          - 'azure-arm-iothub.RoutingServiceBusTopicEndpointProperties[]'
   - uid: azure-arm-iothub.RoutingEndpoints.storageContainers
     name: storageContainers
     fullName: storageContainers
@@ -68,4 +68,33 @@ items:
       content: 'storageContainers?: RoutingStorageContainerProperties[]'
       return:
         type:
-          - '@azure-arm-iothub.RoutingStorageContainerProperties[]'
+          - 'azure-arm-iothub.RoutingStorageContainerProperties[]'
+references:
+  - uid: 'azure-arm-iothub.RoutingEventHubProperties[]'
+    spec.typeScript:
+      - name: RoutingEventHubProperties
+        fullName: RoutingEventHubProperties
+        uid: azure-arm-iothub.RoutingEventHubProperties
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-iothub.RoutingServiceBusQueueEndpointProperties[]'
+    spec.typeScript:
+      - name: RoutingServiceBusQueueEndpointProperties
+        fullName: RoutingServiceBusQueueEndpointProperties
+        uid: azure-arm-iothub.RoutingServiceBusQueueEndpointProperties
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-iothub.RoutingServiceBusTopicEndpointProperties[]'
+    spec.typeScript:
+      - name: RoutingServiceBusTopicEndpointProperties
+        fullName: RoutingServiceBusTopicEndpointProperties
+        uid: azure-arm-iothub.RoutingServiceBusTopicEndpointProperties
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-iothub.RoutingStorageContainerProperties[]'
+    spec.typeScript:
+      - name: RoutingStorageContainerProperties
+        fullName: RoutingStorageContainerProperties
+        uid: azure-arm-iothub.RoutingStorageContainerProperties
+      - name: '[]'
+        fullName: '[]'

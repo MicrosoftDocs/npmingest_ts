@@ -26,7 +26,7 @@ items:
       content: 'defaultSecurityRules?: SecurityRule[]'
       return:
         type:
-          - '@azure-arm-network.SecurityRule[]'
+          - 'azure-arm-network.SecurityRule[]'
   - uid: azure-arm-network.SecurityRuleAssociations.effectiveSecurityRules
     name: effectiveSecurityRules
     fullName: effectiveSecurityRules
@@ -40,7 +40,7 @@ items:
       content: 'effectiveSecurityRules?: EffectiveNetworkSecurityRule[]'
       return:
         type:
-          - '@azure-arm-network.EffectiveNetworkSecurityRule[]'
+          - 'azure-arm-network.EffectiveNetworkSecurityRule[]'
   - uid: azure-arm-network.SecurityRuleAssociations.networkInterfaceAssociation
     name: networkInterfaceAssociation
     fullName: networkInterfaceAssociation
@@ -54,7 +54,7 @@ items:
       content: 'networkInterfaceAssociation?: NetworkInterfaceAssociation'
       return:
         type:
-          - '@azure-arm-network.NetworkInterfaceAssociation'
+          - azure-arm-network.NetworkInterfaceAssociation
   - uid: azure-arm-network.SecurityRuleAssociations.subnetAssociation
     name: subnetAssociation
     fullName: subnetAssociation
@@ -68,4 +68,29 @@ items:
       content: 'subnetAssociation?: SubnetAssociation'
       return:
         type:
-          - '@azure-arm-network.SubnetAssociation'
+          - azure-arm-network.SubnetAssociation
+references:
+  - uid: 'azure-arm-network.SecurityRule[]'
+    spec.typeScript:
+      - name: SecurityRule
+        fullName: SecurityRule
+        uid: azure-arm-network.SecurityRule
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.EffectiveNetworkSecurityRule[]'
+    spec.typeScript:
+      - name: EffectiveNetworkSecurityRule
+        fullName: EffectiveNetworkSecurityRule
+        uid: azure-arm-network.EffectiveNetworkSecurityRule
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network.NetworkInterfaceAssociation
+    spec.typeScript:
+      - name: NetworkInterfaceAssociation
+        fullName: NetworkInterfaceAssociation
+        uid: azure-arm-network.NetworkInterfaceAssociation
+  - uid: azure-arm-network.SubnetAssociation
+    spec.typeScript:
+      - name: SubnetAssociation
+        fullName: SubnetAssociation
+        uid: azure-arm-network.SubnetAssociation

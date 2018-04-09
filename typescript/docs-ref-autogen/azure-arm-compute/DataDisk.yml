@@ -72,7 +72,7 @@ items:
       content: 'image?: VirtualHardDisk'
       return:
         type:
-          - '@azure-arm-compute.VirtualHardDisk'
+          - azure-arm-compute.VirtualHardDisk
   - uid: azure-arm-compute.DataDisk.lun
     name: lun
     fullName: lun
@@ -99,7 +99,7 @@ items:
       content: 'managedDisk?: ManagedDiskParameters'
       return:
         type:
-          - '@azure-arm-compute.ManagedDiskParameters'
+          - azure-arm-compute.ManagedDiskParameters
   - uid: azure-arm-compute.DataDisk.name
     name: name
     fullName: name
@@ -127,7 +127,7 @@ items:
       content: 'vhd?: VirtualHardDisk'
       return:
         type:
-          - '@azure-arm-compute.VirtualHardDisk'
+          - azure-arm-compute.VirtualHardDisk
   - uid: azure-arm-compute.DataDisk.writeAcceleratorEnabled
     name: writeAcceleratorEnabled
     fullName: writeAcceleratorEnabled
@@ -142,3 +142,14 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: azure-arm-compute.VirtualHardDisk
+    spec.typeScript:
+      - name: VirtualHardDisk
+        fullName: VirtualHardDisk
+        uid: azure-arm-compute.VirtualHardDisk
+  - uid: azure-arm-compute.ManagedDiskParameters
+    spec.typeScript:
+      - name: ManagedDiskParameters
+        fullName: ManagedDiskParameters
+        uid: azure-arm-compute.ManagedDiskParameters

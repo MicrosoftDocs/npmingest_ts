@@ -10,7 +10,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-network.ConnectionMonitorResult>
+      name: Array<azure-arm-network.ConnectionMonitorResult>
     package: azure-arm-network
   - uid: azure-arm-network.ConnectionMonitorListResult.Array
     name: Array
@@ -25,3 +25,13 @@ items:
       return:
         type:
           - ArrayConstructor
+references:
+  - uid: Array<azure-arm-network.ConnectionMonitorResult>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: ConnectionMonitorResult
+        fullName: ConnectionMonitorResult
+        uid: azure-arm-network.ConnectionMonitorResult
+      - name: '>'
+        fullName: '>'

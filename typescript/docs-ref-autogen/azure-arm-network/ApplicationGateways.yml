@@ -148,7 +148,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayBackendHealth>
+          - Promise<azure-arm-network.ApplicationGatewayBackendHealth>
   - uid: azure-arm-network.ApplicationGateways.backendHealth_1
     name: backendHealth
     children: []
@@ -174,12 +174,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-network.ApplicationGatewayBackendHealth>
+            - ServiceCallback<azure-arm-network.ApplicationGatewayBackendHealth>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayBackendHealth>
+          - Promise<azure-arm-network.ApplicationGatewayBackendHealth>
   - uid: azure-arm-network.ApplicationGateways.backendHealth_2
     name: backendHealth
     children: []
@@ -209,12 +208,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-network.ApplicationGatewayBackendHealth>
+            - ServiceCallback<azure-arm-network.ApplicationGatewayBackendHealth>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayBackendHealth>
+          - Promise<azure-arm-network.ApplicationGatewayBackendHealth>
   - uid: >-
       azure-arm-network.ApplicationGateways.backendHealthWithHttpOperationResponse
     name: backendHealthWithHttpOperationResponse
@@ -247,7 +245,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayBackendHealth>>
+          - Promise<ApplicationGatewayBackendHealth!@>>
   - uid: azure-arm-network.ApplicationGateways.beginBackendHealth
     name: beginBackendHealth
     children: []
@@ -279,7 +277,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayBackendHealth>
+          - Promise<azure-arm-network.ApplicationGatewayBackendHealth>
   - uid: azure-arm-network.ApplicationGateways.beginBackendHealth_1
     name: beginBackendHealth
     children: []
@@ -305,12 +303,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-network.ApplicationGatewayBackendHealth>
+            - ServiceCallback<azure-arm-network.ApplicationGatewayBackendHealth>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayBackendHealth>
+          - Promise<azure-arm-network.ApplicationGatewayBackendHealth>
   - uid: azure-arm-network.ApplicationGateways.beginBackendHealth_2
     name: beginBackendHealth
     children: []
@@ -340,12 +337,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-network.ApplicationGatewayBackendHealth>
+            - ServiceCallback<azure-arm-network.ApplicationGatewayBackendHealth>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayBackendHealth>
+          - Promise<azure-arm-network.ApplicationGatewayBackendHealth>
   - uid: >-
       azure-arm-network.ApplicationGateways.beginBackendHealthWithHttpOperationResponse
     name: beginBackendHealthWithHttpOperationResponse
@@ -378,7 +374,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayBackendHealth>>
+          - Promise<ApplicationGatewayBackendHealth!@>>
   - uid: azure-arm-network.ApplicationGateways.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -402,15 +398,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationGateway'
+            - azure-arm-network.ApplicationGateway
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGateway>
+            - ServiceCallback<azure-arm-network.ApplicationGateway>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGateway>
+          - Promise<azure-arm-network.ApplicationGateway>
   - uid: azure-arm-network.ApplicationGateways.beginCreateOrUpdate
     name: beginCreateOrUpdate
     children: []
@@ -436,7 +432,7 @@ items:
             The name of the application gateway.
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationGateway'
+            - azure-arm-network.ApplicationGateway
           description: |
             Parameters supplied to the create or update
             application gateway operation.
@@ -447,7 +443,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGateway>
+          - Promise<azure-arm-network.ApplicationGateway>
   - uid: azure-arm-network.ApplicationGateways.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -471,7 +467,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationGateway'
+            - azure-arm-network.ApplicationGateway
           description: ''
         - id: options
           type:
@@ -479,11 +475,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGateway>
+            - ServiceCallback<azure-arm-network.ApplicationGateway>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGateway>
+          - Promise<azure-arm-network.ApplicationGateway>
   - uid: >-
       azure-arm-network.ApplicationGateways.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
@@ -510,7 +506,7 @@ items:
             The name of the application gateway.
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationGateway'
+            - azure-arm-network.ApplicationGateway
           description: |
             Parameters supplied to the create or update
             application gateway operation.
@@ -521,7 +517,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGateway>>
+          - Promise<ApplicationGateway!@>>
   - uid: azure-arm-network.ApplicationGateways.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -901,15 +897,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGateway>
+            - ServiceCallback<azure-arm-network.ApplicationGateway>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGateway>
+          - Promise<azure-arm-network.ApplicationGateway>
   - uid: azure-arm-network.ApplicationGateways.beginUpdateTags
     name: beginUpdateTags
     children: []
@@ -935,7 +931,7 @@ items:
             The name of the application gateway.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update application gateway
             tags.
@@ -946,7 +942,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGateway>
+          - Promise<azure-arm-network.ApplicationGateway>
   - uid: azure-arm-network.ApplicationGateways.beginUpdateTags_2
     name: beginUpdateTags
     children: []
@@ -970,7 +966,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -978,11 +974,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGateway>
+            - ServiceCallback<azure-arm-network.ApplicationGateway>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGateway>
+          - Promise<azure-arm-network.ApplicationGateway>
   - uid: >-
       azure-arm-network.ApplicationGateways.beginUpdateTagsWithHttpOperationResponse
     name: beginUpdateTagsWithHttpOperationResponse
@@ -1009,7 +1005,7 @@ items:
             The name of the application gateway.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update application gateway
             tags.
@@ -1020,7 +1016,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGateway>>
+          - Promise<ApplicationGateway!@>>
   - uid: azure-arm-network.ApplicationGateways.createOrUpdate
     name: createOrUpdate
     children: []
@@ -1046,7 +1042,7 @@ items:
             The name of the application gateway.
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationGateway'
+            - azure-arm-network.ApplicationGateway
           description: |
             Parameters supplied to the create or update
             application gateway operation.
@@ -1057,7 +1053,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGateway>
+          - Promise<azure-arm-network.ApplicationGateway>
   - uid: azure-arm-network.ApplicationGateways.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -1081,7 +1077,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationGateway'
+            - azure-arm-network.ApplicationGateway
           description: ''
         - id: options
           type:
@@ -1089,11 +1085,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGateway>
+            - ServiceCallback<azure-arm-network.ApplicationGateway>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGateway>
+          - Promise<azure-arm-network.ApplicationGateway>
   - uid: azure-arm-network.ApplicationGateways.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -1117,15 +1113,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationGateway'
+            - azure-arm-network.ApplicationGateway
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGateway>
+            - ServiceCallback<azure-arm-network.ApplicationGateway>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGateway>
+          - Promise<azure-arm-network.ApplicationGateway>
   - uid: >-
       azure-arm-network.ApplicationGateways.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
@@ -1152,7 +1148,7 @@ items:
             The name of the application gateway.
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationGateway'
+            - azure-arm-network.ApplicationGateway
           description: |
             Parameters supplied to the create or update
             application gateway operation.
@@ -1163,7 +1159,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGateway>>
+          - Promise<ApplicationGateway!@>>
   - uid: azure-arm-network.ApplicationGateways.deleteMethod
     name: deleteMethod
     children: []
@@ -1305,11 +1301,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGateway>
+            - ServiceCallback<azure-arm-network.ApplicationGateway>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGateway>
+          - Promise<azure-arm-network.ApplicationGateway>
   - uid: azure-arm-network.ApplicationGateways.get_2
     name: get
     children: []
@@ -1336,11 +1332,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGateway>
+            - ServiceCallback<azure-arm-network.ApplicationGateway>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGateway>
+          - Promise<azure-arm-network.ApplicationGateway>
   - uid: azure-arm-network.ApplicationGateways.get
     name: get
     children: []
@@ -1370,7 +1366,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGateway>
+          - Promise<azure-arm-network.ApplicationGateway>
   - uid: azure-arm-network.ApplicationGateways.getSslPredefinedPolicy
     name: getSslPredefinedPolicy
     children: []
@@ -1395,7 +1391,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
+          - Promise<azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
   - uid: azure-arm-network.ApplicationGateways.getSslPredefinedPolicy_1
     name: getSslPredefinedPolicy
     children: []
@@ -1415,11 +1411,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
+              ServiceCallback<azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
+          - Promise<azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
   - uid: azure-arm-network.ApplicationGateways.getSslPredefinedPolicy_2
     name: getSslPredefinedPolicy
     children: []
@@ -1444,11 +1440,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
+              ServiceCallback<azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
+          - Promise<azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
   - uid: >-
       azure-arm-network.ApplicationGateways.getSslPredefinedPolicyWithHttpOperationResponse
     name: getSslPredefinedPolicyWithHttpOperationResponse
@@ -1475,7 +1471,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewaySslPredefinedPolicy>>
+          - Promise<ApplicationGatewaySslPredefinedPolicy!@>>
   - uid: azure-arm-network.ApplicationGateways.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -1505,7 +1501,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGateway>>
+          - Promise<ApplicationGateway!@>>
   - uid: azure-arm-network.ApplicationGateways.list
     name: list
     children: []
@@ -1528,7 +1524,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayListResult>
+          - Promise<azure-arm-network.ApplicationGatewayListResult>
   - uid: azure-arm-network.ApplicationGateways.list_1
     name: list
     children: []
@@ -1547,11 +1543,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGatewayListResult>
+            - ServiceCallback<azure-arm-network.ApplicationGatewayListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayListResult>
+          - Promise<azure-arm-network.ApplicationGatewayListResult>
   - uid: azure-arm-network.ApplicationGateways.list_2
     name: list
     children: []
@@ -1574,11 +1570,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGatewayListResult>
+            - ServiceCallback<azure-arm-network.ApplicationGatewayListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayListResult>
+          - Promise<azure-arm-network.ApplicationGatewayListResult>
   - uid: azure-arm-network.ApplicationGateways.listAll
     name: listAll
     children: []
@@ -1596,7 +1592,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayListResult>
+          - Promise<azure-arm-network.ApplicationGatewayListResult>
   - uid: azure-arm-network.ApplicationGateways.listAll_1
     name: listAll
     children: []
@@ -1611,11 +1607,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGatewayListResult>
+            - ServiceCallback<azure-arm-network.ApplicationGatewayListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayListResult>
+          - Promise<azure-arm-network.ApplicationGatewayListResult>
   - uid: azure-arm-network.ApplicationGateways.listAll_2
     name: listAll
     children: []
@@ -1634,11 +1630,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGatewayListResult>
+            - ServiceCallback<azure-arm-network.ApplicationGatewayListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayListResult>
+          - Promise<azure-arm-network.ApplicationGatewayListResult>
   - uid: azure-arm-network.ApplicationGateways.listAllNext_1
     name: listAllNext
     children: []
@@ -1657,11 +1653,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGatewayListResult>
+            - ServiceCallback<azure-arm-network.ApplicationGatewayListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayListResult>
+          - Promise<azure-arm-network.ApplicationGatewayListResult>
   - uid: azure-arm-network.ApplicationGateways.listAllNext
     name: listAllNext
     children: []
@@ -1685,7 +1681,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayListResult>
+          - Promise<azure-arm-network.ApplicationGatewayListResult>
   - uid: azure-arm-network.ApplicationGateways.listAllNext_2
     name: listAllNext
     children: []
@@ -1708,11 +1704,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGatewayListResult>
+            - ServiceCallback<azure-arm-network.ApplicationGatewayListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayListResult>
+          - Promise<azure-arm-network.ApplicationGatewayListResult>
   - uid: azure-arm-network.ApplicationGateways.listAllNextWithHttpOperationResponse
     name: listAllNextWithHttpOperationResponse
     children: []
@@ -1738,7 +1734,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayListResult>>
+          - Promise<ApplicationGatewayListResult!@>>
   - uid: azure-arm-network.ApplicationGateways.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse
     children: []
@@ -1756,7 +1752,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayListResult>>
+          - Promise<ApplicationGatewayListResult!@>>
   - uid: azure-arm-network.ApplicationGateways.listAvailableSslOptions
     name: listAvailableSslOptions
     children: []
@@ -1774,7 +1770,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayAvailableSslOptions>
+          - Promise<azure-arm-network.ApplicationGatewayAvailableSslOptions>
   - uid: azure-arm-network.ApplicationGateways.listAvailableSslOptions_1
     name: listAvailableSslOptions
     children: []
@@ -1790,11 +1786,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationGatewayAvailableSslOptions>
+              ServiceCallback<azure-arm-network.ApplicationGatewayAvailableSslOptions>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayAvailableSslOptions>
+          - Promise<azure-arm-network.ApplicationGatewayAvailableSslOptions>
   - uid: azure-arm-network.ApplicationGateways.listAvailableSslOptions_2
     name: listAvailableSslOptions
     children: []
@@ -1814,11 +1810,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationGatewayAvailableSslOptions>
+              ServiceCallback<azure-arm-network.ApplicationGatewayAvailableSslOptions>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayAvailableSslOptions>
+          - Promise<azure-arm-network.ApplicationGatewayAvailableSslOptions>
   - uid: >-
       azure-arm-network.ApplicationGateways.listAvailableSslOptionsWithHttpOperationResponse
     name: listAvailableSslOptionsWithHttpOperationResponse
@@ -1839,7 +1835,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayAvailableSslOptions>>
+          - Promise<ApplicationGatewayAvailableSslOptions!@>>
   - uid: azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPolicies_1
     name: listAvailableSslPredefinedPolicies
     children: []
@@ -1855,12 +1851,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
+              ServiceCallback<azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
+            Promise<azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
   - uid: azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPolicies_2
     name: listAvailableSslPredefinedPolicies
     children: []
@@ -1880,12 +1876,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
+              ServiceCallback<azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
+            Promise<azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
   - uid: azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPolicies
     name: listAvailableSslPredefinedPolicies
     children: []
@@ -1904,7 +1900,7 @@ items:
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
+            Promise<azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
   - uid: >-
       azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPoliciesNext
     name: listAvailableSslPredefinedPoliciesNext
@@ -1932,7 +1928,7 @@ items:
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
+            Promise<azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
   - uid: >-
       azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPoliciesNext_1
     name: listAvailableSslPredefinedPoliciesNext
@@ -1954,12 +1950,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
+              ServiceCallback<azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
+            Promise<azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
   - uid: >-
       azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPoliciesNext_2
     name: listAvailableSslPredefinedPoliciesNext
@@ -1985,12 +1981,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
+              ServiceCallback<azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
+            Promise<azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
   - uid: >-
       azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPoliciesNextWithHttpOperationResponse
     name: listAvailableSslPredefinedPoliciesNextWithHttpOperationResponse
@@ -2018,7 +2014,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayAvailableSslPredefinedPolicies>>
+          - Promise<ApplicationGatewayAvailableSslPredefinedPolicies!@>>
   - uid: >-
       azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPoliciesWithHttpOperationResponse
     name: listAvailableSslPredefinedPoliciesWithHttpOperationResponse
@@ -2040,7 +2036,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayAvailableSslPredefinedPolicies>>
+          - Promise<ApplicationGatewayAvailableSslPredefinedPolicies!@>>
   - uid: azure-arm-network.ApplicationGateways.listAvailableWafRuleSets
     name: listAvailableWafRuleSets
     children: []
@@ -2059,7 +2055,7 @@ items:
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>
+            Promise<azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>
   - uid: azure-arm-network.ApplicationGateways.listAvailableWafRuleSets_1
     name: listAvailableWafRuleSets
     children: []
@@ -2075,12 +2071,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>
+              ServiceCallback<azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>
+            Promise<azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>
   - uid: azure-arm-network.ApplicationGateways.listAvailableWafRuleSets_2
     name: listAvailableWafRuleSets
     children: []
@@ -2100,12 +2096,12 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>
+              ServiceCallback<azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>
           description: ''
       return:
         type:
           - >-
-            Promise<@azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>
+            Promise<azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>
   - uid: >-
       azure-arm-network.ApplicationGateways.listAvailableWafRuleSetsWithHttpOperationResponse
     name: listAvailableWafRuleSetsWithHttpOperationResponse
@@ -2126,7 +2122,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayAvailableWafRuleSetsResult>>
+          - Promise<ApplicationGatewayAvailableWafRuleSetsResult!@>>
   - uid: azure-arm-network.ApplicationGateways.listNext_1
     name: listNext
     children: []
@@ -2145,11 +2141,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGatewayListResult>
+            - ServiceCallback<azure-arm-network.ApplicationGatewayListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayListResult>
+          - Promise<azure-arm-network.ApplicationGatewayListResult>
   - uid: azure-arm-network.ApplicationGateways.listNext_2
     name: listNext
     children: []
@@ -2172,11 +2168,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGatewayListResult>
+            - ServiceCallback<azure-arm-network.ApplicationGatewayListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayListResult>
+          - Promise<azure-arm-network.ApplicationGatewayListResult>
   - uid: azure-arm-network.ApplicationGateways.listNext
     name: listNext
     children: []
@@ -2200,7 +2196,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGatewayListResult>
+          - Promise<azure-arm-network.ApplicationGatewayListResult>
   - uid: azure-arm-network.ApplicationGateways.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -2226,7 +2222,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayListResult>>
+          - Promise<ApplicationGatewayListResult!@>>
   - uid: azure-arm-network.ApplicationGateways.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -2251,7 +2247,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayListResult>>
+          - Promise<ApplicationGatewayListResult!@>>
   - uid: azure-arm-network.ApplicationGateways.start
     name: start
     children: []
@@ -2512,7 +2508,7 @@ items:
             The name of the application gateway.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update application gateway
             tags.
@@ -2523,7 +2519,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGateway>
+          - Promise<azure-arm-network.ApplicationGateway>
   - uid: azure-arm-network.ApplicationGateways.updateTags_1
     name: updateTags
     children: []
@@ -2547,15 +2543,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGateway>
+            - ServiceCallback<azure-arm-network.ApplicationGateway>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGateway>
+          - Promise<azure-arm-network.ApplicationGateway>
   - uid: azure-arm-network.ApplicationGateways.updateTags_2
     name: updateTags
     children: []
@@ -2579,7 +2575,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -2587,11 +2583,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationGateway>
+            - ServiceCallback<azure-arm-network.ApplicationGateway>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationGateway>
+          - Promise<azure-arm-network.ApplicationGateway>
   - uid: azure-arm-network.ApplicationGateways.updateTagsWithHttpOperationResponse
     name: updateTagsWithHttpOperationResponse
     children: []
@@ -2617,7 +2613,7 @@ items:
             The name of the application gateway.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update application gateway
             tags.
@@ -2628,4 +2624,144 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGateway>>
+          - Promise<ApplicationGateway!@>>
+references:
+  - uid: Promise<azure-arm-network.ApplicationGatewayBackendHealth>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ApplicationGatewayBackendHealth
+        fullName: ApplicationGatewayBackendHealth
+        uid: azure-arm-network.ApplicationGatewayBackendHealth
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ApplicationGatewayBackendHealth>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ApplicationGatewayBackendHealth
+        fullName: ApplicationGatewayBackendHealth
+        uid: azure-arm-network.ApplicationGatewayBackendHealth
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.ApplicationGateway
+    spec.typeScript:
+      - name: ApplicationGateway
+        fullName: ApplicationGateway
+        uid: azure-arm-network.ApplicationGateway
+  - uid: Promise<azure-arm-network.ApplicationGateway>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ApplicationGateway
+        fullName: ApplicationGateway
+        uid: azure-arm-network.ApplicationGateway
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ApplicationGateway>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ApplicationGateway
+        fullName: ApplicationGateway
+        uid: azure-arm-network.ApplicationGateway
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.TagsObject
+    spec.typeScript:
+      - name: TagsObject
+        fullName: TagsObject
+        uid: azure-arm-network.TagsObject
+  - uid: Promise<azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ApplicationGatewaySslPredefinedPolicy
+        fullName: ApplicationGatewaySslPredefinedPolicy
+        uid: azure-arm-network.ApplicationGatewaySslPredefinedPolicy
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ApplicationGatewaySslPredefinedPolicy
+        fullName: ApplicationGatewaySslPredefinedPolicy
+        uid: azure-arm-network.ApplicationGatewaySslPredefinedPolicy
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.ApplicationGatewayListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ApplicationGatewayListResult
+        fullName: ApplicationGatewayListResult
+        uid: azure-arm-network.ApplicationGatewayListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ApplicationGatewayListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ApplicationGatewayListResult
+        fullName: ApplicationGatewayListResult
+        uid: azure-arm-network.ApplicationGatewayListResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.ApplicationGatewayAvailableSslOptions>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ApplicationGatewayAvailableSslOptions
+        fullName: ApplicationGatewayAvailableSslOptions
+        uid: azure-arm-network.ApplicationGatewayAvailableSslOptions
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ApplicationGatewayAvailableSslOptions>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ApplicationGatewayAvailableSslOptions
+        fullName: ApplicationGatewayAvailableSslOptions
+        uid: azure-arm-network.ApplicationGatewayAvailableSslOptions
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ApplicationGatewayAvailableSslPredefinedPolicies
+        fullName: ApplicationGatewayAvailableSslPredefinedPolicies
+        uid: azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ApplicationGatewayAvailableSslPredefinedPolicies
+        fullName: ApplicationGatewayAvailableSslPredefinedPolicies
+        uid: azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ApplicationGatewayAvailableWafRuleSetsResult
+        fullName: ApplicationGatewayAvailableWafRuleSetsResult
+        uid: azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ApplicationGatewayAvailableWafRuleSetsResult
+        fullName: ApplicationGatewayAvailableWafRuleSetsResult
+        uid: azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult
+      - name: '>'
+        fullName: '>'

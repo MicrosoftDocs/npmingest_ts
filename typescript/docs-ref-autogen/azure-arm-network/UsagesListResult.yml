@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-network.Usage>
+      name: Array<azure-arm-network.Usage>
     package: azure-arm-network
   - uid: azure-arm-network.UsagesListResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-network.Usage>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: Usage
+        fullName: Usage
+        uid: azure-arm-network.Usage
+      - name: '>'
+        fullName: '>'

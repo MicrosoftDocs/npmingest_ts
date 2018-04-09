@@ -26,7 +26,7 @@ items:
       content: 'display?: OperationDisplay'
       return:
         type:
-          - '@azure-arm-network.OperationDisplay'
+          - azure-arm-network.OperationDisplay
   - uid: azure-arm-network.Operation.name
     name: name
     fullName: name
@@ -68,4 +68,15 @@ items:
       content: 'serviceSpecification?: OperationPropertiesFormatServiceSpecification'
       return:
         type:
-          - '@azure-arm-network.OperationPropertiesFormatServiceSpecification'
+          - azure-arm-network.OperationPropertiesFormatServiceSpecification
+references:
+  - uid: azure-arm-network.OperationDisplay
+    spec.typeScript:
+      - name: OperationDisplay
+        fullName: OperationDisplay
+        uid: azure-arm-network.OperationDisplay
+  - uid: azure-arm-network.OperationPropertiesFormatServiceSpecification
+    spec.typeScript:
+      - name: OperationPropertiesFormatServiceSpecification
+        fullName: OperationPropertiesFormatServiceSpecification
+        uid: azure-arm-network.OperationPropertiesFormatServiceSpecification

@@ -22,4 +22,12 @@ items:
       content: 'publicKeys: ContainerServiceSshPublicKey[]'
       return:
         type:
-          - '@azure-arm-compute.ContainerServiceSshPublicKey[]'
+          - 'azure-arm-compute.ContainerServiceSshPublicKey[]'
+references:
+  - uid: 'azure-arm-compute.ContainerServiceSshPublicKey[]'
+    spec.typeScript:
+      - name: ContainerServiceSshPublicKey
+        fullName: ContainerServiceSshPublicKey
+        uid: azure-arm-compute.ContainerServiceSshPublicKey
+      - name: '[]'
+        fullName: '[]'

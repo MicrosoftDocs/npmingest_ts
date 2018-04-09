@@ -24,7 +24,7 @@ items:
       content: 'display?: OperationDisplay'
       return:
         type:
-          - '@azure-arm-cdn.OperationDisplay'
+          - azure-arm-cdn.OperationDisplay
   - uid: azure-arm-cdn.Operation.name
     name: name
     fullName: name
@@ -39,3 +39,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-cdn.OperationDisplay
+    spec.typeScript:
+      - name: OperationDisplay
+        fullName: OperationDisplay
+        uid: azure-arm-cdn.OperationDisplay

@@ -16,7 +16,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.PatchRouteFilter.etag
     name: etag
@@ -59,7 +59,7 @@ items:
       content: 'peerings?: ExpressRouteCircuitPeering[]'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCircuitPeering[]'
+          - 'azure-arm-network.ExpressRouteCircuitPeering[]'
   - uid: azure-arm-network.PatchRouteFilter.provisioningState
     name: provisioningState
     fullName: provisioningState
@@ -87,7 +87,7 @@ items:
       content: 'rules?: RouteFilterRule[]'
       return:
         type:
-          - '@azure-arm-network.RouteFilterRule[]'
+          - 'azure-arm-network.RouteFilterRule[]'
   - uid: azure-arm-network.PatchRouteFilter.tags
     name: tags
     fullName: tags
@@ -116,3 +116,23 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: 'azure-arm-network.ExpressRouteCircuitPeering[]'
+    spec.typeScript:
+      - name: ExpressRouteCircuitPeering
+        fullName: ExpressRouteCircuitPeering
+        uid: azure-arm-network.ExpressRouteCircuitPeering
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.RouteFilterRule[]'
+    spec.typeScript:
+      - name: RouteFilterRule
+        fullName: RouteFilterRule
+        uid: azure-arm-network.RouteFilterRule
+      - name: '[]'
+        fullName: '[]'

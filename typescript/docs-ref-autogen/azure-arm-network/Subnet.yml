@@ -18,7 +18,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.Subnet.addressPrefix
     name: addressPrefix
@@ -61,7 +61,7 @@ items:
       content: 'ipConfigurations?: IPConfiguration[]'
       return:
         type:
-          - '@azure-arm-network.IPConfiguration[]'
+          - 'azure-arm-network.IPConfiguration[]'
   - uid: azure-arm-network.Subnet.name
     name: name
     fullName: name
@@ -89,7 +89,7 @@ items:
       content: 'networkSecurityGroup?: NetworkSecurityGroup'
       return:
         type:
-          - '@azure-arm-network.NetworkSecurityGroup'
+          - azure-arm-network.NetworkSecurityGroup
   - uid: azure-arm-network.Subnet.provisioningState
     name: provisioningState
     fullName: provisioningState
@@ -117,7 +117,7 @@ items:
       content: 'resourceNavigationLinks?: ResourceNavigationLink[]'
       return:
         type:
-          - '@azure-arm-network.ResourceNavigationLink[]'
+          - 'azure-arm-network.ResourceNavigationLink[]'
   - uid: azure-arm-network.Subnet.routeTable
     name: routeTable
     fullName: routeTable
@@ -131,7 +131,7 @@ items:
       content: 'routeTable?: RouteTable'
       return:
         type:
-          - '@azure-arm-network.RouteTable'
+          - azure-arm-network.RouteTable
   - uid: azure-arm-network.Subnet.serviceEndpoints
     name: serviceEndpoints
     fullName: serviceEndpoints
@@ -145,4 +145,41 @@ items:
       content: 'serviceEndpoints?: ServiceEndpointPropertiesFormat[]'
       return:
         type:
-          - '@azure-arm-network.ServiceEndpointPropertiesFormat[]'
+          - 'azure-arm-network.ServiceEndpointPropertiesFormat[]'
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: 'azure-arm-network.IPConfiguration[]'
+    spec.typeScript:
+      - name: IPConfiguration
+        fullName: IPConfiguration
+        uid: azure-arm-network.IPConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network.NetworkSecurityGroup
+    spec.typeScript:
+      - name: NetworkSecurityGroup
+        fullName: NetworkSecurityGroup
+        uid: azure-arm-network.NetworkSecurityGroup
+  - uid: 'azure-arm-network.ResourceNavigationLink[]'
+    spec.typeScript:
+      - name: ResourceNavigationLink
+        fullName: ResourceNavigationLink
+        uid: azure-arm-network.ResourceNavigationLink
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network.RouteTable
+    spec.typeScript:
+      - name: RouteTable
+        fullName: RouteTable
+        uid: azure-arm-network.RouteTable
+  - uid: 'azure-arm-network.ServiceEndpointPropertiesFormat[]'
+    spec.typeScript:
+      - name: ServiceEndpointPropertiesFormat
+        fullName: ServiceEndpointPropertiesFormat
+        uid: azure-arm-network.ServiceEndpointPropertiesFormat
+      - name: '[]'
+        fullName: '[]'

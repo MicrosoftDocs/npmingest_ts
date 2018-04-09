@@ -40,7 +40,7 @@ items:
       content: 'linuxUserConfiguration?: LinuxUserConfiguration'
       return:
         type:
-          - '@azure-arm-batch.LinuxUserConfiguration'
+          - azure-arm-batch.LinuxUserConfiguration
   - uid: azure-arm-batch.UserAccount.name
     name: name
     fullName: name
@@ -67,3 +67,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-batch.LinuxUserConfiguration
+    spec.typeScript:
+      - name: LinuxUserConfiguration
+        fullName: LinuxUserConfiguration
+        uid: azure-arm-batch.LinuxUserConfiguration

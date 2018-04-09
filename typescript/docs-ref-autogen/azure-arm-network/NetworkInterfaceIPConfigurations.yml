@@ -58,7 +58,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.NetworkInterfaceIPConfiguration>
+          - Promise<azure-arm-network.NetworkInterfaceIPConfiguration>
   - uid: azure-arm-network.NetworkInterfaceIPConfigurations.get_2
     name: get
     children: []
@@ -90,12 +90,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-network.NetworkInterfaceIPConfiguration>
+            - ServiceCallback<azure-arm-network.NetworkInterfaceIPConfiguration>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NetworkInterfaceIPConfiguration>
+          - Promise<azure-arm-network.NetworkInterfaceIPConfiguration>
   - uid: azure-arm-network.NetworkInterfaceIPConfigurations.get_1
     name: get
     children: []
@@ -123,12 +122,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-network.NetworkInterfaceIPConfiguration>
+            - ServiceCallback<azure-arm-network.NetworkInterfaceIPConfiguration>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NetworkInterfaceIPConfiguration>
+          - Promise<azure-arm-network.NetworkInterfaceIPConfiguration>
   - uid: >-
       azure-arm-network.NetworkInterfaceIPConfigurations.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
@@ -165,7 +163,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkInterfaceIPConfiguration>>
+          - Promise<NetworkInterfaceIPConfiguration!@>>
   - uid: azure-arm-network.NetworkInterfaceIPConfigurations.list
     name: list
     children: []
@@ -195,8 +193,7 @@ items:
           optional: true
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.NetworkInterfaceIPConfigurationListResult>
+          - Promise<azure-arm-network.NetworkInterfaceIPConfigurationListResult>
   - uid: azure-arm-network.NetworkInterfaceIPConfigurations.list_1
     name: list
     children: []
@@ -220,12 +217,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.NetworkInterfaceIPConfigurationListResult>
+              ServiceCallback<azure-arm-network.NetworkInterfaceIPConfigurationListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.NetworkInterfaceIPConfigurationListResult>
+          - Promise<azure-arm-network.NetworkInterfaceIPConfigurationListResult>
   - uid: azure-arm-network.NetworkInterfaceIPConfigurations.list_2
     name: list
     children: []
@@ -254,12 +250,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.NetworkInterfaceIPConfigurationListResult>
+              ServiceCallback<azure-arm-network.NetworkInterfaceIPConfigurationListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.NetworkInterfaceIPConfigurationListResult>
+          - Promise<azure-arm-network.NetworkInterfaceIPConfigurationListResult>
   - uid: azure-arm-network.NetworkInterfaceIPConfigurations.listNext
     name: listNext
     children: []
@@ -283,8 +278,7 @@ items:
           optional: true
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.NetworkInterfaceIPConfigurationListResult>
+          - Promise<azure-arm-network.NetworkInterfaceIPConfigurationListResult>
   - uid: azure-arm-network.NetworkInterfaceIPConfigurations.listNext_1
     name: listNext
     children: []
@@ -304,12 +298,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.NetworkInterfaceIPConfigurationListResult>
+              ServiceCallback<azure-arm-network.NetworkInterfaceIPConfigurationListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.NetworkInterfaceIPConfigurationListResult>
+          - Promise<azure-arm-network.NetworkInterfaceIPConfigurationListResult>
   - uid: azure-arm-network.NetworkInterfaceIPConfigurations.listNext_2
     name: listNext
     children: []
@@ -333,12 +326,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.NetworkInterfaceIPConfigurationListResult>
+              ServiceCallback<azure-arm-network.NetworkInterfaceIPConfigurationListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.NetworkInterfaceIPConfigurationListResult>
+          - Promise<azure-arm-network.NetworkInterfaceIPConfigurationListResult>
   - uid: >-
       azure-arm-network.NetworkInterfaceIPConfigurations.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
@@ -365,7 +357,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkInterfaceIPConfigurationListResult>>
+          - Promise<NetworkInterfaceIPConfigurationListResult!@>>
   - uid: >-
       azure-arm-network.NetworkInterfaceIPConfigurations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -396,4 +388,42 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkInterfaceIPConfigurationListResult>>
+          - Promise<NetworkInterfaceIPConfigurationListResult!@>>
+references:
+  - uid: Promise<azure-arm-network.NetworkInterfaceIPConfiguration>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: NetworkInterfaceIPConfiguration
+        fullName: NetworkInterfaceIPConfiguration
+        uid: azure-arm-network.NetworkInterfaceIPConfiguration
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.NetworkInterfaceIPConfiguration>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: NetworkInterfaceIPConfiguration
+        fullName: NetworkInterfaceIPConfiguration
+        uid: azure-arm-network.NetworkInterfaceIPConfiguration
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.NetworkInterfaceIPConfigurationListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: NetworkInterfaceIPConfigurationListResult
+        fullName: NetworkInterfaceIPConfigurationListResult
+        uid: azure-arm-network.NetworkInterfaceIPConfigurationListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network.NetworkInterfaceIPConfigurationListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: NetworkInterfaceIPConfigurationListResult
+        fullName: NetworkInterfaceIPConfigurationListResult
+        uid: azure-arm-network.NetworkInterfaceIPConfigurationListResult
+      - name: '>'
+        fullName: '>'

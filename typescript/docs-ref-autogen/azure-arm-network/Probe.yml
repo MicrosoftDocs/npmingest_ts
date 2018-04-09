@@ -18,7 +18,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.Probe.etag
     name: etag
@@ -61,7 +61,7 @@ items:
       content: 'loadBalancingRules?: SubResource[]'
       return:
         type:
-          - '@azure-arm-network.SubResource[]'
+          - 'azure-arm-network.SubResource[]'
   - uid: azure-arm-network.Probe.name
     name: name
     fullName: name
@@ -144,3 +144,16 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: 'azure-arm-network.SubResource[]'
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+      - name: '[]'
+        fullName: '[]'

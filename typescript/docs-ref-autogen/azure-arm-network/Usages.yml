@@ -39,7 +39,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.UsagesListResult>
+          - Promise<azure-arm-network.UsagesListResult>
   - uid: azure-arm-network.Usages.list_1
     name: list
     children: []
@@ -58,11 +58,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.UsagesListResult>
+            - ServiceCallback<azure-arm-network.UsagesListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.UsagesListResult>
+          - Promise<azure-arm-network.UsagesListResult>
   - uid: azure-arm-network.Usages.list_2
     name: list
     children: []
@@ -85,11 +85,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.UsagesListResult>
+            - ServiceCallback<azure-arm-network.UsagesListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.UsagesListResult>
+          - Promise<azure-arm-network.UsagesListResult>
   - uid: azure-arm-network.Usages.listNext
     name: listNext
     children: []
@@ -113,7 +113,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.UsagesListResult>
+          - Promise<azure-arm-network.UsagesListResult>
   - uid: azure-arm-network.Usages.listNext_1
     name: listNext
     children: []
@@ -132,11 +132,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.UsagesListResult>
+            - ServiceCallback<azure-arm-network.UsagesListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.UsagesListResult>
+          - Promise<azure-arm-network.UsagesListResult>
   - uid: azure-arm-network.Usages.listNext_2
     name: listNext
     children: []
@@ -159,11 +159,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.UsagesListResult>
+            - ServiceCallback<azure-arm-network.UsagesListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.UsagesListResult>
+          - Promise<azure-arm-network.UsagesListResult>
   - uid: azure-arm-network.Usages.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -189,7 +189,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<UsagesListResult>>
+          - Promise<UsagesListResult!@>>
   - uid: azure-arm-network.Usages.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -214,4 +214,23 @@ items:
           optional: true
       return:
         type:
-          - Promise<UsagesListResult>>
+          - Promise<UsagesListResult!@>>
+references:
+  - uid: Promise<azure-arm-network.UsagesListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: UsagesListResult
+        fullName: UsagesListResult
+        uid: azure-arm-network.UsagesListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.UsagesListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: UsagesListResult
+        fullName: UsagesListResult
+        uid: azure-arm-network.UsagesListResult
+      - name: '>'
+        fullName: '>'

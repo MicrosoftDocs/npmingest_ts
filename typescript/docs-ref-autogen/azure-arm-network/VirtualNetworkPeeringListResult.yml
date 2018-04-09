@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-network.VirtualNetworkPeering>
+      name: Array<azure-arm-network.VirtualNetworkPeering>
     package: azure-arm-network
   - uid: azure-arm-network.VirtualNetworkPeeringListResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-network.VirtualNetworkPeering>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: VirtualNetworkPeering
+        fullName: VirtualNetworkPeering
+        uid: azure-arm-network.VirtualNetworkPeering
+      - name: '>'
+        fullName: '>'

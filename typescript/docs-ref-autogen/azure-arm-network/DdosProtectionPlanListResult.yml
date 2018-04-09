@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-network.DdosProtectionPlan>
+      name: Array<azure-arm-network.DdosProtectionPlan>
     package: azure-arm-network
   - uid: azure-arm-network.DdosProtectionPlanListResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-network.DdosProtectionPlan>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: DdosProtectionPlan
+        fullName: DdosProtectionPlan
+        uid: azure-arm-network.DdosProtectionPlan
+      - name: '>'
+        fullName: '>'

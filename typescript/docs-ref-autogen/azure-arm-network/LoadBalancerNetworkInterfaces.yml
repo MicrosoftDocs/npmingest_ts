@@ -48,7 +48,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.NetworkInterfaceListResult>
+          - Promise<azure-arm-network.NetworkInterfaceListResult>
   - uid: azure-arm-network.LoadBalancerNetworkInterfaces.list_1
     name: list
     children: []
@@ -71,11 +71,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NetworkInterfaceListResult>
+            - ServiceCallback<azure-arm-network.NetworkInterfaceListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NetworkInterfaceListResult>
+          - Promise<azure-arm-network.NetworkInterfaceListResult>
   - uid: azure-arm-network.LoadBalancerNetworkInterfaces.list_2
     name: list
     children: []
@@ -103,11 +103,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NetworkInterfaceListResult>
+            - ServiceCallback<azure-arm-network.NetworkInterfaceListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NetworkInterfaceListResult>
+          - Promise<azure-arm-network.NetworkInterfaceListResult>
   - uid: azure-arm-network.LoadBalancerNetworkInterfaces.listNext
     name: listNext
     children: []
@@ -131,7 +131,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.NetworkInterfaceListResult>
+          - Promise<azure-arm-network.NetworkInterfaceListResult>
   - uid: azure-arm-network.LoadBalancerNetworkInterfaces.listNext_1
     name: listNext
     children: []
@@ -150,11 +150,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NetworkInterfaceListResult>
+            - ServiceCallback<azure-arm-network.NetworkInterfaceListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NetworkInterfaceListResult>
+          - Promise<azure-arm-network.NetworkInterfaceListResult>
   - uid: azure-arm-network.LoadBalancerNetworkInterfaces.listNext_2
     name: listNext
     children: []
@@ -177,11 +177,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NetworkInterfaceListResult>
+            - ServiceCallback<azure-arm-network.NetworkInterfaceListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NetworkInterfaceListResult>
+          - Promise<azure-arm-network.NetworkInterfaceListResult>
   - uid: >-
       azure-arm-network.LoadBalancerNetworkInterfaces.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
@@ -208,7 +208,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkInterfaceListResult>>
+          - Promise<NetworkInterfaceListResult!@>>
   - uid: >-
       azure-arm-network.LoadBalancerNetworkInterfaces.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -239,4 +239,23 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkInterfaceListResult>>
+          - Promise<NetworkInterfaceListResult!@>>
+references:
+  - uid: Promise<azure-arm-network.NetworkInterfaceListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: NetworkInterfaceListResult
+        fullName: NetworkInterfaceListResult
+        uid: azure-arm-network.NetworkInterfaceListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.NetworkInterfaceListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: NetworkInterfaceListResult
+        fullName: NetworkInterfaceListResult
+        uid: azure-arm-network.NetworkInterfaceListResult
+      - name: '>'
+        fullName: '>'

@@ -36,7 +36,7 @@ items:
       content: 'bootDiagnostics?: BootDiagnosticsInstanceView'
       return:
         type:
-          - '@azure-arm-compute.BootDiagnosticsInstanceView'
+          - azure-arm-compute.BootDiagnosticsInstanceView
   - uid: azure-arm-compute.VirtualMachineScaleSetVMInstanceView.disks
     name: disks
     fullName: disks
@@ -50,7 +50,7 @@ items:
       content: 'disks?: DiskInstanceView[]'
       return:
         type:
-          - '@azure-arm-compute.DiskInstanceView[]'
+          - 'azure-arm-compute.DiskInstanceView[]'
   - uid: azure-arm-compute.VirtualMachineScaleSetVMInstanceView.extensions
     name: extensions
     fullName: extensions
@@ -64,7 +64,7 @@ items:
       content: 'extensions?: VirtualMachineExtensionInstanceView[]'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineExtensionInstanceView[]'
+          - 'azure-arm-compute.VirtualMachineExtensionInstanceView[]'
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMInstanceView.maintenanceRedeployStatus
     name: maintenanceRedeployStatus
@@ -79,7 +79,7 @@ items:
       content: 'maintenanceRedeployStatus?: MaintenanceRedeployStatus'
       return:
         type:
-          - '@azure-arm-compute.MaintenanceRedeployStatus'
+          - azure-arm-compute.MaintenanceRedeployStatus
   - uid: azure-arm-compute.VirtualMachineScaleSetVMInstanceView.placementGroupId
     name: placementGroupId
     fullName: placementGroupId
@@ -150,7 +150,7 @@ items:
       content: 'statuses?: InstanceViewStatus[]'
       return:
         type:
-          - '@azure-arm-compute.InstanceViewStatus[]'
+          - 'azure-arm-compute.InstanceViewStatus[]'
   - uid: azure-arm-compute.VirtualMachineScaleSetVMInstanceView.vmAgent
     name: vmAgent
     fullName: vmAgent
@@ -164,7 +164,7 @@ items:
       content: 'vmAgent?: VirtualMachineAgentInstanceView'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineAgentInstanceView'
+          - azure-arm-compute.VirtualMachineAgentInstanceView
   - uid: azure-arm-compute.VirtualMachineScaleSetVMInstanceView.vmHealth
     name: vmHealth
     fullName: vmHealth
@@ -178,4 +178,46 @@ items:
       content: 'vmHealth?: VirtualMachineHealthStatus'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineHealthStatus'
+          - azure-arm-compute.VirtualMachineHealthStatus
+references:
+  - uid: azure-arm-compute.BootDiagnosticsInstanceView
+    spec.typeScript:
+      - name: BootDiagnosticsInstanceView
+        fullName: BootDiagnosticsInstanceView
+        uid: azure-arm-compute.BootDiagnosticsInstanceView
+  - uid: 'azure-arm-compute.DiskInstanceView[]'
+    spec.typeScript:
+      - name: DiskInstanceView
+        fullName: DiskInstanceView
+        uid: azure-arm-compute.DiskInstanceView
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-compute.VirtualMachineExtensionInstanceView[]'
+    spec.typeScript:
+      - name: VirtualMachineExtensionInstanceView
+        fullName: VirtualMachineExtensionInstanceView
+        uid: azure-arm-compute.VirtualMachineExtensionInstanceView
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute.MaintenanceRedeployStatus
+    spec.typeScript:
+      - name: MaintenanceRedeployStatus
+        fullName: MaintenanceRedeployStatus
+        uid: azure-arm-compute.MaintenanceRedeployStatus
+  - uid: 'azure-arm-compute.InstanceViewStatus[]'
+    spec.typeScript:
+      - name: InstanceViewStatus
+        fullName: InstanceViewStatus
+        uid: azure-arm-compute.InstanceViewStatus
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute.VirtualMachineAgentInstanceView
+    spec.typeScript:
+      - name: VirtualMachineAgentInstanceView
+        fullName: VirtualMachineAgentInstanceView
+        uid: azure-arm-compute.VirtualMachineAgentInstanceView
+  - uid: azure-arm-compute.VirtualMachineHealthStatus
+    spec.typeScript:
+      - name: VirtualMachineHealthStatus
+        fullName: VirtualMachineHealthStatus
+        uid: azure-arm-compute.VirtualMachineHealthStatus

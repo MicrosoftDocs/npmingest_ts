@@ -50,7 +50,7 @@ items:
       content: 'availabilities?: Availability[]'
       return:
         type:
-          - '@azure-arm-network.Availability[]'
+          - 'azure-arm-network.Availability[]'
   - uid: azure-arm-network.MetricSpecification.dimensions
     name: dimensions
     fullName: dimensions
@@ -64,7 +64,7 @@ items:
       content: 'dimensions?: Dimension[]'
       return:
         type:
-          - '@azure-arm-network.Dimension[]'
+          - 'azure-arm-network.Dimension[]'
   - uid: azure-arm-network.MetricSpecification.displayDescription
     name: displayDescription
     fullName: displayDescription
@@ -219,3 +219,18 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'azure-arm-network.Availability[]'
+    spec.typeScript:
+      - name: Availability
+        fullName: Availability
+        uid: azure-arm-network.Availability
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.Dimension[]'
+    spec.typeScript:
+      - name: Dimension
+        fullName: Dimension
+        uid: azure-arm-network.Dimension
+      - name: '[]'
+        fullName: '[]'

@@ -28,7 +28,7 @@ items:
       content: 'dataDisks?: DataDisk[]'
       return:
         type:
-          - '@azure-arm-batch.DataDisk[]'
+          - 'azure-arm-batch.DataDisk[]'
   - uid: azure-arm-batch.VirtualMachineConfiguration.imageReference
     name: imageReference
     fullName: imageReference
@@ -41,7 +41,7 @@ items:
       content: 'imageReference: ImageReference'
       return:
         type:
-          - '@azure-arm-batch.ImageReference'
+          - azure-arm-batch.ImageReference
   - uid: azure-arm-batch.VirtualMachineConfiguration.licenseType
     name: licenseType
     fullName: licenseType
@@ -82,7 +82,7 @@ items:
       content: 'osDisk?: OSDisk'
       return:
         type:
-          - '@azure-arm-batch.OSDisk'
+          - azure-arm-batch.OSDisk
   - uid: azure-arm-batch.VirtualMachineConfiguration.windowsConfiguration
     name: windowsConfiguration
     fullName: windowsConfiguration
@@ -96,4 +96,27 @@ items:
       content: 'windowsConfiguration?: WindowsConfiguration'
       return:
         type:
-          - '@azure-arm-batch.WindowsConfiguration'
+          - azure-arm-batch.WindowsConfiguration
+references:
+  - uid: 'azure-arm-batch.DataDisk[]'
+    spec.typeScript:
+      - name: DataDisk
+        fullName: DataDisk
+        uid: azure-arm-batch.DataDisk
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-batch.ImageReference
+    spec.typeScript:
+      - name: ImageReference
+        fullName: ImageReference
+        uid: azure-arm-batch.ImageReference
+  - uid: azure-arm-batch.OSDisk
+    spec.typeScript:
+      - name: OSDisk
+        fullName: OSDisk
+        uid: azure-arm-batch.OSDisk
+  - uid: azure-arm-batch.WindowsConfiguration
+    spec.typeScript:
+      - name: WindowsConfiguration
+        fullName: WindowsConfiguration
+        uid: azure-arm-batch.WindowsConfiguration

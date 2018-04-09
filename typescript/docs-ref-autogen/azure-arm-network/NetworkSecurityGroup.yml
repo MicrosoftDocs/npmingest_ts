@@ -16,7 +16,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.Resource'
+      name: azure-arm-network.Resource
     package: azure-arm-network
   - uid: azure-arm-network.NetworkSecurityGroup.defaultSecurityRules
     name: defaultSecurityRules
@@ -31,7 +31,7 @@ items:
       content: 'defaultSecurityRules?: SecurityRule[]'
       return:
         type:
-          - '@azure-arm-network.SecurityRule[]'
+          - 'azure-arm-network.SecurityRule[]'
   - uid: azure-arm-network.NetworkSecurityGroup.etag
     name: etag
     fullName: etag
@@ -59,7 +59,7 @@ items:
       content: 'networkInterfaces?: NetworkInterface[]'
       return:
         type:
-          - '@azure-arm-network.NetworkInterface[]'
+          - 'azure-arm-network.NetworkInterface[]'
   - uid: azure-arm-network.NetworkSecurityGroup.provisioningState
     name: provisioningState
     fullName: provisioningState
@@ -101,7 +101,7 @@ items:
       content: 'securityRules?: SecurityRule[]'
       return:
         type:
-          - '@azure-arm-network.SecurityRule[]'
+          - 'azure-arm-network.SecurityRule[]'
   - uid: azure-arm-network.NetworkSecurityGroup.subnets
     name: subnets
     fullName: subnets
@@ -115,4 +115,31 @@ items:
       content: 'subnets?: Subnet[]'
       return:
         type:
-          - '@azure-arm-network.Subnet[]'
+          - 'azure-arm-network.Subnet[]'
+references:
+  - uid: azure-arm-network.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network.Resource
+  - uid: 'azure-arm-network.SecurityRule[]'
+    spec.typeScript:
+      - name: SecurityRule
+        fullName: SecurityRule
+        uid: azure-arm-network.SecurityRule
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.NetworkInterface[]'
+    spec.typeScript:
+      - name: NetworkInterface
+        fullName: NetworkInterface
+        uid: azure-arm-network.NetworkInterface
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.Subnet[]'
+    spec.typeScript:
+      - name: Subnet
+        fullName: Subnet
+        uid: azure-arm-network.Subnet
+      - name: '[]'
+        fullName: '[]'

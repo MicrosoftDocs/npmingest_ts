@@ -41,7 +41,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.EndpointServicesListResult>
+          - Promise<azure-arm-network.EndpointServicesListResult>
   - uid: azure-arm-network.AvailableEndpointServices.list_1
     name: list
     children: []
@@ -60,11 +60,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.EndpointServicesListResult>
+            - ServiceCallback<azure-arm-network.EndpointServicesListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.EndpointServicesListResult>
+          - Promise<azure-arm-network.EndpointServicesListResult>
   - uid: azure-arm-network.AvailableEndpointServices.list_2
     name: list
     children: []
@@ -87,11 +87,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.EndpointServicesListResult>
+            - ServiceCallback<azure-arm-network.EndpointServicesListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.EndpointServicesListResult>
+          - Promise<azure-arm-network.EndpointServicesListResult>
   - uid: azure-arm-network.AvailableEndpointServices.listNext
     name: listNext
     children: []
@@ -115,7 +115,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.EndpointServicesListResult>
+          - Promise<azure-arm-network.EndpointServicesListResult>
   - uid: azure-arm-network.AvailableEndpointServices.listNext_1
     name: listNext
     children: []
@@ -134,11 +134,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.EndpointServicesListResult>
+            - ServiceCallback<azure-arm-network.EndpointServicesListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.EndpointServicesListResult>
+          - Promise<azure-arm-network.EndpointServicesListResult>
   - uid: azure-arm-network.AvailableEndpointServices.listNext_2
     name: listNext
     children: []
@@ -161,11 +161,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.EndpointServicesListResult>
+            - ServiceCallback<azure-arm-network.EndpointServicesListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.EndpointServicesListResult>
+          - Promise<azure-arm-network.EndpointServicesListResult>
   - uid: >-
       azure-arm-network.AvailableEndpointServices.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
@@ -192,7 +192,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<EndpointServicesListResult>>
+          - Promise<EndpointServicesListResult!@>>
   - uid: azure-arm-network.AvailableEndpointServices.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -217,4 +217,23 @@ items:
           optional: true
       return:
         type:
-          - Promise<EndpointServicesListResult>>
+          - Promise<EndpointServicesListResult!@>>
+references:
+  - uid: Promise<azure-arm-network.EndpointServicesListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EndpointServicesListResult
+        fullName: EndpointServicesListResult
+        uid: azure-arm-network.EndpointServicesListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.EndpointServicesListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: EndpointServicesListResult
+        fullName: EndpointServicesListResult
+        uid: azure-arm-network.EndpointServicesListResult
+      - name: '>'
+        fullName: '>'

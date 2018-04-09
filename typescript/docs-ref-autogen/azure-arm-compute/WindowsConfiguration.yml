@@ -27,7 +27,7 @@ items:
       content: 'additionalUnattendContent?: AdditionalUnattendContent[]'
       return:
         type:
-          - '@azure-arm-compute.AdditionalUnattendContent[]'
+          - 'azure-arm-compute.AdditionalUnattendContent[]'
   - uid: azure-arm-compute.WindowsConfiguration.enableAutomaticUpdates
     name: enableAutomaticUpdates
     fullName: enableAutomaticUpdates
@@ -83,4 +83,17 @@ items:
       content: 'winRM?: WinRMConfiguration'
       return:
         type:
-          - '@azure-arm-compute.WinRMConfiguration'
+          - azure-arm-compute.WinRMConfiguration
+references:
+  - uid: 'azure-arm-compute.AdditionalUnattendContent[]'
+    spec.typeScript:
+      - name: AdditionalUnattendContent
+        fullName: AdditionalUnattendContent
+        uid: azure-arm-compute.AdditionalUnattendContent
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute.WinRMConfiguration
+    spec.typeScript:
+      - name: WinRMConfiguration
+        fullName: WinRMConfiguration
+        uid: azure-arm-compute.WinRMConfiguration

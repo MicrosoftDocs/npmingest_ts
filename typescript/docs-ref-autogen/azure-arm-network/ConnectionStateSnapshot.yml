@@ -69,7 +69,7 @@ items:
       content: 'hops?: ConnectivityHop[]'
       return:
         type:
-          - '@azure-arm-network.ConnectivityHop[]'
+          - 'azure-arm-network.ConnectivityHop[]'
   - uid: azure-arm-network.ConnectionStateSnapshot.startTime
     name: startTime
     fullName: startTime
@@ -84,3 +84,11 @@ items:
       return:
         type:
           - Date
+references:
+  - uid: 'azure-arm-network.ConnectivityHop[]'
+    spec.typeScript:
+      - name: ConnectivityHop
+        fullName: ConnectivityHop
+        uid: azure-arm-network.ConnectivityHop
+      - name: '[]'
+        fullName: '[]'

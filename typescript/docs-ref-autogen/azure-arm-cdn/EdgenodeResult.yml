@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-cdn.EdgeNode>
+      name: Array<azure-arm-cdn.EdgeNode>
     package: azure-arm-cdn
   - uid: azure-arm-cdn.EdgenodeResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-cdn.EdgeNode>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: EdgeNode
+        fullName: EdgeNode
+        uid: azure-arm-cdn.EdgeNode
+      - name: '>'
+        fullName: '>'

@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-network.LocalNetworkGateway>
+      name: Array<azure-arm-network.LocalNetworkGateway>
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGatewayListResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-network.LocalNetworkGateway>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: LocalNetworkGateway
+        fullName: LocalNetworkGateway
+        uid: azure-arm-network.LocalNetworkGateway
+      - name: '>'
+        fullName: '>'

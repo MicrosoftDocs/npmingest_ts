@@ -75,7 +75,7 @@ items:
             The name of the VM scale set extension.
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineScaleSetExtension'
+            - azure-arm-compute.VirtualMachineScaleSetExtension
           description: |
             Parameters supplied to the Create VM
             scale set Extension operation.
@@ -86,7 +86,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineScaleSetExtension>
+          - Promise<azure-arm-compute.VirtualMachineScaleSetExtension>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -115,16 +115,15 @@ items:
           description: ''
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineScaleSetExtension'
+            - azure-arm-compute.VirtualMachineScaleSetExtension
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-compute.VirtualMachineScaleSetExtension>
+            - ServiceCallback<azure-arm-compute.VirtualMachineScaleSetExtension>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineScaleSetExtension>
+          - Promise<azure-arm-compute.VirtualMachineScaleSetExtension>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -153,7 +152,7 @@ items:
           description: ''
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineScaleSetExtension'
+            - azure-arm-compute.VirtualMachineScaleSetExtension
           description: ''
         - id: options
           type:
@@ -161,12 +160,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-compute.VirtualMachineScaleSetExtension>
+            - ServiceCallback<azure-arm-compute.VirtualMachineScaleSetExtension>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineScaleSetExtension>
+          - Promise<azure-arm-compute.VirtualMachineScaleSetExtension>
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetExtensions.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
@@ -200,7 +198,7 @@ items:
             The name of the VM scale set extension.
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineScaleSetExtension'
+            - azure-arm-compute.VirtualMachineScaleSetExtension
           description: |
             Parameters supplied to the Create VM
             scale set Extension operation.
@@ -211,7 +209,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineScaleSetExtension>>
+          - Promise<VirtualMachineScaleSetExtension!@>>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -247,7 +245,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.beginDeleteMethod_1
     name: beginDeleteMethod
     children: []
@@ -275,11 +273,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.beginDeleteMethod_2
     name: beginDeleteMethod
     children: []
@@ -311,11 +309,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetExtensions.beginDeleteMethodWithHttpOperationResponse
     name: beginDeleteMethodWithHttpOperationResponse
@@ -353,7 +351,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse>>
+          - Promise<OperationStatusResponse!@>>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.createOrUpdate
     name: createOrUpdate
     children: []
@@ -385,7 +383,7 @@ items:
             The name of the VM scale set extension.
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineScaleSetExtension'
+            - azure-arm-compute.VirtualMachineScaleSetExtension
           description: |
             Parameters supplied to the Create VM
             scale set Extension operation.
@@ -396,7 +394,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineScaleSetExtension>
+          - Promise<azure-arm-compute.VirtualMachineScaleSetExtension>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -425,16 +423,15 @@ items:
           description: ''
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineScaleSetExtension'
+            - azure-arm-compute.VirtualMachineScaleSetExtension
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-compute.VirtualMachineScaleSetExtension>
+            - ServiceCallback<azure-arm-compute.VirtualMachineScaleSetExtension>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineScaleSetExtension>
+          - Promise<azure-arm-compute.VirtualMachineScaleSetExtension>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -463,7 +460,7 @@ items:
           description: ''
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineScaleSetExtension'
+            - azure-arm-compute.VirtualMachineScaleSetExtension
           description: ''
         - id: options
           type:
@@ -471,12 +468,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-compute.VirtualMachineScaleSetExtension>
+            - ServiceCallback<azure-arm-compute.VirtualMachineScaleSetExtension>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineScaleSetExtension>
+          - Promise<azure-arm-compute.VirtualMachineScaleSetExtension>
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetExtensions.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
@@ -510,7 +506,7 @@ items:
             The name of the VM scale set extension.
         - id: extensionParameters
           type:
-            - '@azure-arm-compute.VirtualMachineScaleSetExtension'
+            - azure-arm-compute.VirtualMachineScaleSetExtension
           description: |
             Parameters supplied to the Create VM
             scale set Extension operation.
@@ -521,7 +517,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineScaleSetExtension>>
+          - Promise<VirtualMachineScaleSetExtension!@>>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.deleteMethod
     name: deleteMethod
     children: []
@@ -557,7 +553,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.deleteMethod_1
     name: deleteMethod
     children: []
@@ -585,11 +581,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.deleteMethod_2
     name: deleteMethod
     children: []
@@ -621,11 +617,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.OperationStatusResponse>
+          - Promise<azure-arm-compute.OperationStatusResponse>
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetExtensions.deleteMethodWithHttpOperationResponse
     name: deleteMethodWithHttpOperationResponse
@@ -663,7 +659,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse>>
+          - Promise<OperationStatusResponse!@>>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.get_1
     name: get
     children: []
@@ -691,12 +687,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-compute.VirtualMachineScaleSetExtension>
+            - ServiceCallback<azure-arm-compute.VirtualMachineScaleSetExtension>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineScaleSetExtension>
+          - Promise<azure-arm-compute.VirtualMachineScaleSetExtension>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.get_2
     name: get
     children: []
@@ -728,12 +723,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-compute.VirtualMachineScaleSetExtension>
+            - ServiceCallback<azure-arm-compute.VirtualMachineScaleSetExtension>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineScaleSetExtension>
+          - Promise<azure-arm-compute.VirtualMachineScaleSetExtension>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.get
     name: get
     children: []
@@ -769,7 +763,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineScaleSetExtension>
+          - Promise<azure-arm-compute.VirtualMachineScaleSetExtension>
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetExtensions.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
@@ -806,7 +800,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineScaleSetExtension>>
+          - Promise<VirtualMachineScaleSetExtension!@>>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.list
     name: list
     children: []
@@ -837,8 +831,7 @@ items:
           optional: true
       return:
         type:
-          - >-
-            Promise<@azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
+          - Promise<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.list_1
     name: list
     children: []
@@ -862,12 +855,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
+              ServiceCallback<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
+          - Promise<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.list_2
     name: list
     children: []
@@ -896,12 +888,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
+              ServiceCallback<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
+          - Promise<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.listNext
     name: listNext
     children: []
@@ -925,8 +916,7 @@ items:
           optional: true
       return:
         type:
-          - >-
-            Promise<@azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
+          - Promise<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.listNext_1
     name: listNext
     children: []
@@ -946,12 +936,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
+              ServiceCallback<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
+          - Promise<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.listNext_2
     name: listNext
     children: []
@@ -975,12 +964,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
+              ServiceCallback<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
+          - Promise<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetExtensions.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
@@ -1007,7 +995,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineScaleSetExtensionListResult>>
+          - Promise<VirtualMachineScaleSetExtensionListResult!@>>
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetExtensions.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -1039,4 +1027,65 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineScaleSetExtensionListResult>>
+          - Promise<VirtualMachineScaleSetExtensionListResult!@>>
+references:
+  - uid: azure-arm-compute.VirtualMachineScaleSetExtension
+    spec.typeScript:
+      - name: VirtualMachineScaleSetExtension
+        fullName: VirtualMachineScaleSetExtension
+        uid: azure-arm-compute.VirtualMachineScaleSetExtension
+  - uid: Promise<azure-arm-compute.VirtualMachineScaleSetExtension>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualMachineScaleSetExtension
+        fullName: VirtualMachineScaleSetExtension
+        uid: azure-arm-compute.VirtualMachineScaleSetExtension
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.VirtualMachineScaleSetExtension>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualMachineScaleSetExtension
+        fullName: VirtualMachineScaleSetExtension
+        uid: azure-arm-compute.VirtualMachineScaleSetExtension
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-compute.OperationStatusResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.OperationStatusResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualMachineScaleSetExtensionListResult
+        fullName: VirtualMachineScaleSetExtensionListResult
+        uid: azure-arm-compute.VirtualMachineScaleSetExtensionListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualMachineScaleSetExtensionListResult
+        fullName: VirtualMachineScaleSetExtensionListResult
+        uid: azure-arm-compute.VirtualMachineScaleSetExtensionListResult
+      - name: '>'
+        fullName: '>'

@@ -42,7 +42,7 @@ items:
       content: 'linuxConfiguration?: LinuxConfiguration'
       return:
         type:
-          - '@azure-arm-compute.LinuxConfiguration'
+          - azure-arm-compute.LinuxConfiguration
   - uid: azure-arm-compute.VirtualMachineScaleSetUpdateOSProfile.secrets
     name: secrets
     fullName: secrets
@@ -56,7 +56,7 @@ items:
       content: 'secrets?: VaultSecretGroup[]'
       return:
         type:
-          - '@azure-arm-compute.VaultSecretGroup[]'
+          - 'azure-arm-compute.VaultSecretGroup[]'
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetUpdateOSProfile.windowsConfiguration
     name: windowsConfiguration
@@ -71,4 +71,22 @@ items:
       content: 'windowsConfiguration?: WindowsConfiguration'
       return:
         type:
-          - '@azure-arm-compute.WindowsConfiguration'
+          - azure-arm-compute.WindowsConfiguration
+references:
+  - uid: azure-arm-compute.LinuxConfiguration
+    spec.typeScript:
+      - name: LinuxConfiguration
+        fullName: LinuxConfiguration
+        uid: azure-arm-compute.LinuxConfiguration
+  - uid: 'azure-arm-compute.VaultSecretGroup[]'
+    spec.typeScript:
+      - name: VaultSecretGroup
+        fullName: VaultSecretGroup
+        uid: azure-arm-compute.VaultSecretGroup
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute.WindowsConfiguration
+    spec.typeScript:
+      - name: WindowsConfiguration
+        fullName: WindowsConfiguration
+        uid: azure-arm-compute.WindowsConfiguration

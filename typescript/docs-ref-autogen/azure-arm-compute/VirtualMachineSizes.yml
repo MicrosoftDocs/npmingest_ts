@@ -38,7 +38,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineSizeListResult>
+          - Promise<azure-arm-compute.VirtualMachineSizeListResult>
   - uid: azure-arm-compute.VirtualMachineSizes.list_1
     name: list
     children: []
@@ -59,11 +59,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.VirtualMachineSizeListResult>
+            - ServiceCallback<azure-arm-compute.VirtualMachineSizeListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineSizeListResult>
+          - Promise<azure-arm-compute.VirtualMachineSizeListResult>
   - uid: azure-arm-compute.VirtualMachineSizes.list_2
     name: list
     children: []
@@ -88,11 +88,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-compute.VirtualMachineSizeListResult>
+            - ServiceCallback<azure-arm-compute.VirtualMachineSizeListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-compute.VirtualMachineSizeListResult>
+          - Promise<azure-arm-compute.VirtualMachineSizeListResult>
   - uid: azure-arm-compute.VirtualMachineSizes.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -120,4 +120,23 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineSizeListResult>>
+          - Promise<VirtualMachineSizeListResult!@>>
+references:
+  - uid: Promise<azure-arm-compute.VirtualMachineSizeListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualMachineSizeListResult
+        fullName: VirtualMachineSizeListResult
+        uid: azure-arm-compute.VirtualMachineSizeListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute.VirtualMachineSizeListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualMachineSizeListResult
+        fullName: VirtualMachineSizeListResult
+        uid: azure-arm-compute.VirtualMachineSizeListResult
+      - name: '>'
+        fullName: '>'

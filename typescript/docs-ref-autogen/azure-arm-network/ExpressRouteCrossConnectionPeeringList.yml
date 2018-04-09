@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-network.ExpressRouteCrossConnectionPeering>
+      name: Array<azure-arm-network.ExpressRouteCrossConnectionPeering>
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteCrossConnectionPeeringList.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-network.ExpressRouteCrossConnectionPeering>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: ExpressRouteCrossConnectionPeering
+        fullName: ExpressRouteCrossConnectionPeering
+        uid: azure-arm-network.ExpressRouteCrossConnectionPeering
+      - name: '>'
+        fullName: '>'

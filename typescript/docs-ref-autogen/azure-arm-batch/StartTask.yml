@@ -42,7 +42,7 @@ items:
       content: 'environmentSettings?: EnvironmentSetting[]'
       return:
         type:
-          - '@azure-arm-batch.EnvironmentSetting[]'
+          - 'azure-arm-batch.EnvironmentSetting[]'
   - uid: azure-arm-batch.StartTask.maxTaskRetryCount
     name: maxTaskRetryCount
     fullName: maxTaskRetryCount
@@ -70,7 +70,7 @@ items:
       content: 'resourceFiles?: ResourceFile[]'
       return:
         type:
-          - '@azure-arm-batch.ResourceFile[]'
+          - 'azure-arm-batch.ResourceFile[]'
   - uid: azure-arm-batch.StartTask.userIdentity
     name: userIdentity
     fullName: userIdentity
@@ -84,7 +84,7 @@ items:
       content: 'userIdentity?: UserIdentity'
       return:
         type:
-          - '@azure-arm-batch.UserIdentity'
+          - azure-arm-batch.UserIdentity
   - uid: azure-arm-batch.StartTask.waitForSuccess
     name: waitForSuccess
     fullName: waitForSuccess
@@ -99,3 +99,23 @@ items:
       return:
         type:
           - boolean
+references:
+  - uid: 'azure-arm-batch.EnvironmentSetting[]'
+    spec.typeScript:
+      - name: EnvironmentSetting
+        fullName: EnvironmentSetting
+        uid: azure-arm-batch.EnvironmentSetting
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-batch.ResourceFile[]'
+    spec.typeScript:
+      - name: ResourceFile
+        fullName: ResourceFile
+        uid: azure-arm-batch.ResourceFile
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-batch.UserIdentity
+    spec.typeScript:
+      - name: UserIdentity
+        fullName: UserIdentity
+        uid: azure-arm-batch.UserIdentity

@@ -26,7 +26,7 @@ items:
       content: 'dataDisks?: VirtualMachineScaleSetDataDisk[]'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineScaleSetDataDisk[]'
+          - 'azure-arm-compute.VirtualMachineScaleSetDataDisk[]'
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetUpdateStorageProfile.imageReference
     name: imageReference
@@ -41,7 +41,7 @@ items:
       content: 'imageReference?: ImageReference'
       return:
         type:
-          - '@azure-arm-compute.ImageReference'
+          - azure-arm-compute.ImageReference
   - uid: azure-arm-compute.VirtualMachineScaleSetUpdateStorageProfile.osDisk
     name: osDisk
     fullName: osDisk
@@ -55,4 +55,22 @@ items:
       content: 'osDisk?: VirtualMachineScaleSetUpdateOSDisk'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineScaleSetUpdateOSDisk'
+          - azure-arm-compute.VirtualMachineScaleSetUpdateOSDisk
+references:
+  - uid: 'azure-arm-compute.VirtualMachineScaleSetDataDisk[]'
+    spec.typeScript:
+      - name: VirtualMachineScaleSetDataDisk
+        fullName: VirtualMachineScaleSetDataDisk
+        uid: azure-arm-compute.VirtualMachineScaleSetDataDisk
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute.ImageReference
+    spec.typeScript:
+      - name: ImageReference
+        fullName: ImageReference
+        uid: azure-arm-compute.ImageReference
+  - uid: azure-arm-compute.VirtualMachineScaleSetUpdateOSDisk
+    spec.typeScript:
+      - name: VirtualMachineScaleSetUpdateOSDisk
+        fullName: VirtualMachineScaleSetUpdateOSDisk
+        uid: azure-arm-compute.VirtualMachineScaleSetUpdateOSDisk

@@ -107,7 +107,7 @@ items:
             network gateway connection.
         - id: parameters
           type:
-            - '@azure-arm-network.VirtualNetworkGatewayConnection'
+            - azure-arm-network.VirtualNetworkGatewayConnection
           description: |
             Parameters supplied to the create or update
             virtual network gateway connection operation.
@@ -118,7 +118,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkGatewayConnection>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnection>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -145,16 +145,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.VirtualNetworkGatewayConnection'
+            - azure-arm-network.VirtualNetworkGatewayConnection
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkGatewayConnection>
+            - ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnection>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkGatewayConnection>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnection>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -181,7 +180,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.VirtualNetworkGatewayConnection'
+            - azure-arm-network.VirtualNetworkGatewayConnection
           description: ''
         - id: options
           type:
@@ -189,12 +188,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkGatewayConnection>
+            - ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnection>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkGatewayConnection>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnection>
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnections.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
@@ -224,7 +222,7 @@ items:
             network gateway connection.
         - id: parameters
           type:
-            - '@azure-arm-network.VirtualNetworkGatewayConnection'
+            - azure-arm-network.VirtualNetworkGatewayConnection
           description: |
             Parameters supplied to the create or update
             virtual network gateway connection operation.
@@ -235,7 +233,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkGatewayConnection>>
+          - Promise<VirtualNetworkGatewayConnection!@>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -391,15 +389,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionResetSharedKey'
+            - azure-arm-network.ConnectionResetSharedKey
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionResetSharedKey>
+            - ServiceCallback<azure-arm-network.ConnectionResetSharedKey>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionResetSharedKey>
+          - Promise<azure-arm-network.ConnectionResetSharedKey>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.beginResetSharedKey_2
     name: beginResetSharedKey
     children: []
@@ -432,7 +430,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionResetSharedKey'
+            - azure-arm-network.ConnectionResetSharedKey
           description: ''
         - id: options
           type:
@@ -440,11 +438,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionResetSharedKey>
+            - ServiceCallback<azure-arm-network.ConnectionResetSharedKey>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionResetSharedKey>
+          - Promise<azure-arm-network.ConnectionResetSharedKey>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.beginResetSharedKey
     name: beginResetSharedKey
     children: []
@@ -479,7 +477,7 @@ items:
             gateway connection reset shared key Name.
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionResetSharedKey'
+            - azure-arm-network.ConnectionResetSharedKey
           description: >
             Parameters supplied to the begin reset virtual
 
@@ -494,7 +492,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionResetSharedKey>
+          - Promise<azure-arm-network.ConnectionResetSharedKey>
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnections.beginResetSharedKeyWithHttpOperationResponse
     name: beginResetSharedKeyWithHttpOperationResponse
@@ -530,7 +528,7 @@ items:
             gateway connection reset shared key Name.
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionResetSharedKey'
+            - azure-arm-network.ConnectionResetSharedKey
           description: >
             Parameters supplied to the begin reset virtual
 
@@ -545,7 +543,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionResetSharedKey>>
+          - Promise<ConnectionResetSharedKey!@>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.beginSetSharedKey
     name: beginSetSharedKey
     children: []
@@ -580,7 +578,7 @@ items:
             gateway connection name.
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionSharedKey'
+            - azure-arm-network.ConnectionSharedKey
           description: >
             Parameters supplied to the Begin Set Virtual
 
@@ -595,7 +593,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionSharedKey>
+          - Promise<azure-arm-network.ConnectionSharedKey>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.beginSetSharedKey_1
     name: beginSetSharedKey
     children: []
@@ -627,15 +625,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionSharedKey'
+            - azure-arm-network.ConnectionSharedKey
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionSharedKey>
+            - ServiceCallback<azure-arm-network.ConnectionSharedKey>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionSharedKey>
+          - Promise<azure-arm-network.ConnectionSharedKey>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.beginSetSharedKey_2
     name: beginSetSharedKey
     children: []
@@ -668,7 +666,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionSharedKey'
+            - azure-arm-network.ConnectionSharedKey
           description: ''
         - id: options
           type:
@@ -676,11 +674,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionSharedKey>
+            - ServiceCallback<azure-arm-network.ConnectionSharedKey>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionSharedKey>
+          - Promise<azure-arm-network.ConnectionSharedKey>
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnections.beginSetSharedKeyWithHttpOperationResponse
     name: beginSetSharedKeyWithHttpOperationResponse
@@ -716,7 +714,7 @@ items:
             gateway connection name.
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionSharedKey'
+            - azure-arm-network.ConnectionSharedKey
           description: >
             Parameters supplied to the Begin Set Virtual
 
@@ -731,7 +729,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionSharedKey>>
+          - Promise<ConnectionSharedKey!@>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.beginUpdateTags_1
     name: beginUpdateTags
     children: []
@@ -755,17 +753,16 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
+              ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.beginUpdateTags
     name: beginUpdateTags
     children: []
@@ -792,7 +789,7 @@ items:
             network gateway connection.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update virtual network
             gateway connection tags.
@@ -803,8 +800,7 @@ items:
           optional: true
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.beginUpdateTags_2
     name: beginUpdateTags
     children: []
@@ -829,7 +825,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -838,12 +834,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
+              ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnections.beginUpdateTagsWithHttpOperationResponse
     name: beginUpdateTagsWithHttpOperationResponse
@@ -871,7 +866,7 @@ items:
             network gateway connection.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update virtual network
             gateway connection tags.
@@ -882,7 +877,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkGatewayConnectionListEntity>>
+          - Promise<VirtualNetworkGatewayConnectionListEntity!@>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.createOrUpdate
     name: createOrUpdate
     children: []
@@ -911,7 +906,7 @@ items:
             network gateway connection.
         - id: parameters
           type:
-            - '@azure-arm-network.VirtualNetworkGatewayConnection'
+            - azure-arm-network.VirtualNetworkGatewayConnection
           description: |
             Parameters supplied to the create or update
             virtual network gateway connection operation.
@@ -922,7 +917,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkGatewayConnection>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnection>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -949,16 +944,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.VirtualNetworkGatewayConnection'
+            - azure-arm-network.VirtualNetworkGatewayConnection
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkGatewayConnection>
+            - ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnection>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkGatewayConnection>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnection>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -985,7 +979,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.VirtualNetworkGatewayConnection'
+            - azure-arm-network.VirtualNetworkGatewayConnection
           description: ''
         - id: options
           type:
@@ -993,12 +987,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkGatewayConnection>
+            - ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnection>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkGatewayConnection>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnection>
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnections.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
@@ -1028,7 +1021,7 @@ items:
             network gateway connection.
         - id: parameters
           type:
-            - '@azure-arm-network.VirtualNetworkGatewayConnection'
+            - azure-arm-network.VirtualNetworkGatewayConnection
           description: |
             Parameters supplied to the create or update
             virtual network gateway connection operation.
@@ -1039,7 +1032,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkGatewayConnection>>
+          - Promise<VirtualNetworkGatewayConnection!@>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.deleteMethod
     name: deleteMethod
     children: []
@@ -1193,7 +1186,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkGatewayConnection>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnection>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.get_1
     name: get
     children: []
@@ -1217,12 +1210,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkGatewayConnection>
+            - ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnection>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkGatewayConnection>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnection>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.get_2
     name: get
     children: []
@@ -1250,12 +1242,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkGatewayConnection>
+            - ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnection>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkGatewayConnection>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnection>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.getSharedKey
     name: getSharedKey
     children: []
@@ -1289,7 +1280,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionSharedKey>
+          - Promise<azure-arm-network.ConnectionSharedKey>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.getSharedKey_1
     name: getSharedKey
     children: []
@@ -1316,11 +1307,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionSharedKey>
+            - ServiceCallback<azure-arm-network.ConnectionSharedKey>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionSharedKey>
+          - Promise<azure-arm-network.ConnectionSharedKey>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.getSharedKey_2
     name: getSharedKey
     children: []
@@ -1351,11 +1342,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionSharedKey>
+            - ServiceCallback<azure-arm-network.ConnectionSharedKey>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionSharedKey>
+          - Promise<azure-arm-network.ConnectionSharedKey>
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnections.getSharedKeyWithHttpOperationResponse
     name: getSharedKeyWithHttpOperationResponse
@@ -1390,7 +1381,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionSharedKey>>
+          - Promise<ConnectionSharedKey!@>>
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnections.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
@@ -1422,7 +1413,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkGatewayConnection>>
+          - Promise<VirtualNetworkGatewayConnection!@>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.list
     name: list
     children: []
@@ -1447,8 +1438,7 @@ items:
           optional: true
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.VirtualNetworkGatewayConnectionListResult>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnectionListResult>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.list_1
     name: list
     children: []
@@ -1470,12 +1460,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkGatewayConnectionListResult>
+              ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnectionListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.VirtualNetworkGatewayConnectionListResult>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnectionListResult>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.list_2
     name: list
     children: []
@@ -1501,12 +1490,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkGatewayConnectionListResult>
+              ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnectionListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.VirtualNetworkGatewayConnectionListResult>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnectionListResult>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.listNext
     name: listNext
     children: []
@@ -1532,8 +1520,7 @@ items:
           optional: true
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.VirtualNetworkGatewayConnectionListResult>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnectionListResult>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.listNext_1
     name: listNext
     children: []
@@ -1555,12 +1542,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkGatewayConnectionListResult>
+              ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnectionListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.VirtualNetworkGatewayConnectionListResult>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnectionListResult>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.listNext_2
     name: listNext
     children: []
@@ -1586,12 +1572,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkGatewayConnectionListResult>
+              ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnectionListResult>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.VirtualNetworkGatewayConnectionListResult>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnectionListResult>
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnections.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
@@ -1620,7 +1605,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkGatewayConnectionListResult>>
+          - Promise<VirtualNetworkGatewayConnectionListResult!@>>
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnections.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -1648,7 +1633,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkGatewayConnectionListResult>>
+          - Promise<VirtualNetworkGatewayConnectionListResult!@>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.resetSharedKey
     name: resetSharedKey
     children: []
@@ -1683,7 +1668,7 @@ items:
             gateway connection reset shared key Name.
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionResetSharedKey'
+            - azure-arm-network.ConnectionResetSharedKey
           description: >
             Parameters supplied to the begin reset virtual
 
@@ -1698,7 +1683,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionResetSharedKey>
+          - Promise<azure-arm-network.ConnectionResetSharedKey>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.resetSharedKey_2
     name: resetSharedKey
     children: []
@@ -1731,7 +1716,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionResetSharedKey'
+            - azure-arm-network.ConnectionResetSharedKey
           description: ''
         - id: options
           type:
@@ -1739,11 +1724,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionResetSharedKey>
+            - ServiceCallback<azure-arm-network.ConnectionResetSharedKey>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionResetSharedKey>
+          - Promise<azure-arm-network.ConnectionResetSharedKey>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.resetSharedKey_1
     name: resetSharedKey
     children: []
@@ -1776,15 +1761,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionResetSharedKey'
+            - azure-arm-network.ConnectionResetSharedKey
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionResetSharedKey>
+            - ServiceCallback<azure-arm-network.ConnectionResetSharedKey>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionResetSharedKey>
+          - Promise<azure-arm-network.ConnectionResetSharedKey>
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnections.resetSharedKeyWithHttpOperationResponse
     name: resetSharedKeyWithHttpOperationResponse
@@ -1820,7 +1805,7 @@ items:
             gateway connection reset shared key Name.
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionResetSharedKey'
+            - azure-arm-network.ConnectionResetSharedKey
           description: >
             Parameters supplied to the begin reset virtual
 
@@ -1835,7 +1820,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionResetSharedKey>>
+          - Promise<ConnectionResetSharedKey!@>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.setSharedKey
     name: setSharedKey
     children: []
@@ -1870,7 +1855,7 @@ items:
             gateway connection name.
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionSharedKey'
+            - azure-arm-network.ConnectionSharedKey
           description: >
             Parameters supplied to the Begin Set Virtual
 
@@ -1885,7 +1870,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionSharedKey>
+          - Promise<azure-arm-network.ConnectionSharedKey>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.setSharedKey_1
     name: setSharedKey
     children: []
@@ -1917,15 +1902,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionSharedKey'
+            - azure-arm-network.ConnectionSharedKey
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionSharedKey>
+            - ServiceCallback<azure-arm-network.ConnectionSharedKey>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionSharedKey>
+          - Promise<azure-arm-network.ConnectionSharedKey>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.setSharedKey_2
     name: setSharedKey
     children: []
@@ -1958,7 +1943,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionSharedKey'
+            - azure-arm-network.ConnectionSharedKey
           description: ''
         - id: options
           type:
@@ -1966,11 +1951,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectionSharedKey>
+            - ServiceCallback<azure-arm-network.ConnectionSharedKey>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectionSharedKey>
+          - Promise<azure-arm-network.ConnectionSharedKey>
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnections.setSharedKeyWithHttpOperationResponse
     name: setSharedKeyWithHttpOperationResponse
@@ -2006,7 +1991,7 @@ items:
             gateway connection name.
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectionSharedKey'
+            - azure-arm-network.ConnectionSharedKey
           description: >
             Parameters supplied to the Begin Set Virtual
 
@@ -2021,7 +2006,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionSharedKey>>
+          - Promise<ConnectionSharedKey!@>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.updateTags
     name: updateTags
     children: []
@@ -2048,7 +2033,7 @@ items:
             network gateway connection.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update virtual network
             gateway connection tags.
@@ -2059,8 +2044,7 @@ items:
           optional: true
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.updateTags_1
     name: updateTags
     children: []
@@ -2084,17 +2068,16 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
+              ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.updateTags_2
     name: updateTags
     children: []
@@ -2119,7 +2102,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -2128,12 +2111,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
+              ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
           description: ''
       return:
         type:
-          - >-
-            Promise<@azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
+          - Promise<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnections.updateTagsWithHttpOperationResponse
     name: updateTagsWithHttpOperationResponse
@@ -2161,7 +2143,7 @@ items:
             network gateway connection.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update virtual network
             gateway connection tags.
@@ -2172,4 +2154,117 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkGatewayConnectionListEntity>>
+          - Promise<VirtualNetworkGatewayConnectionListEntity!@>>
+references:
+  - uid: azure-arm-network.VirtualNetworkGatewayConnection
+    spec.typeScript:
+      - name: VirtualNetworkGatewayConnection
+        fullName: VirtualNetworkGatewayConnection
+        uid: azure-arm-network.VirtualNetworkGatewayConnection
+  - uid: Promise<azure-arm-network.VirtualNetworkGatewayConnection>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualNetworkGatewayConnection
+        fullName: VirtualNetworkGatewayConnection
+        uid: azure-arm-network.VirtualNetworkGatewayConnection
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnection>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualNetworkGatewayConnection
+        fullName: VirtualNetworkGatewayConnection
+        uid: azure-arm-network.VirtualNetworkGatewayConnection
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.ConnectionResetSharedKey
+    spec.typeScript:
+      - name: ConnectionResetSharedKey
+        fullName: ConnectionResetSharedKey
+        uid: azure-arm-network.ConnectionResetSharedKey
+  - uid: Promise<azure-arm-network.ConnectionResetSharedKey>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ConnectionResetSharedKey
+        fullName: ConnectionResetSharedKey
+        uid: azure-arm-network.ConnectionResetSharedKey
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ConnectionResetSharedKey>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ConnectionResetSharedKey
+        fullName: ConnectionResetSharedKey
+        uid: azure-arm-network.ConnectionResetSharedKey
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.ConnectionSharedKey
+    spec.typeScript:
+      - name: ConnectionSharedKey
+        fullName: ConnectionSharedKey
+        uid: azure-arm-network.ConnectionSharedKey
+  - uid: Promise<azure-arm-network.ConnectionSharedKey>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ConnectionSharedKey
+        fullName: ConnectionSharedKey
+        uid: azure-arm-network.ConnectionSharedKey
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ConnectionSharedKey>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ConnectionSharedKey
+        fullName: ConnectionSharedKey
+        uid: azure-arm-network.ConnectionSharedKey
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.TagsObject
+    spec.typeScript:
+      - name: TagsObject
+        fullName: TagsObject
+        uid: azure-arm-network.TagsObject
+  - uid: Promise<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualNetworkGatewayConnectionListEntity
+        fullName: VirtualNetworkGatewayConnectionListEntity
+        uid: azure-arm-network.VirtualNetworkGatewayConnectionListEntity
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualNetworkGatewayConnectionListEntity
+        fullName: VirtualNetworkGatewayConnectionListEntity
+        uid: azure-arm-network.VirtualNetworkGatewayConnectionListEntity
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.VirtualNetworkGatewayConnectionListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualNetworkGatewayConnectionListResult
+        fullName: VirtualNetworkGatewayConnectionListResult
+        uid: azure-arm-network.VirtualNetworkGatewayConnectionListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network.VirtualNetworkGatewayConnectionListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualNetworkGatewayConnectionListResult
+        fullName: VirtualNetworkGatewayConnectionListResult
+        uid: azure-arm-network.VirtualNetworkGatewayConnectionListResult
+      - name: '>'
+        fullName: '>'

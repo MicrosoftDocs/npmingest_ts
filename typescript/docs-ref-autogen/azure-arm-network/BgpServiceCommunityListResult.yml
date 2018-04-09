@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-network.BgpServiceCommunity>
+      name: Array<azure-arm-network.BgpServiceCommunity>
     package: azure-arm-network
   - uid: azure-arm-network.BgpServiceCommunityListResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-network.BgpServiceCommunity>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: BgpServiceCommunity
+        fullName: BgpServiceCommunity
+        uid: azure-arm-network.BgpServiceCommunity
+      - name: '>'
+        fullName: '>'

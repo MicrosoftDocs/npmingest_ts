@@ -18,7 +18,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.Resource'
+      name: azure-arm-compute.Resource
     package: azure-arm-compute
   - uid: azure-arm-compute.Disk.creationData
     name: creationData
@@ -32,7 +32,7 @@ items:
       content: 'creationData: CreationData'
       return:
         type:
-          - '@azure-arm-compute.CreationData'
+          - azure-arm-compute.CreationData
   - uid: azure-arm-compute.Disk.diskSizeGB
     name: diskSizeGB
     fullName: diskSizeGB
@@ -60,7 +60,7 @@ items:
       content: 'encryptionSettings?: EncryptionSettings'
       return:
         type:
-          - '@azure-arm-compute.EncryptionSettings'
+          - azure-arm-compute.EncryptionSettings
   - uid: azure-arm-compute.Disk.managedBy
     name: managedBy
     fullName: managedBy
@@ -116,7 +116,7 @@ items:
       content: 'sku?: DiskSku'
       return:
         type:
-          - '@azure-arm-compute.DiskSku'
+          - azure-arm-compute.DiskSku
   - uid: azure-arm-compute.Disk.timeCreated
     name: timeCreated
     fullName: timeCreated
@@ -145,3 +145,24 @@ items:
       return:
         type:
           - 'string[]'
+references:
+  - uid: azure-arm-compute.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-compute.Resource
+  - uid: azure-arm-compute.CreationData
+    spec.typeScript:
+      - name: CreationData
+        fullName: CreationData
+        uid: azure-arm-compute.CreationData
+  - uid: azure-arm-compute.EncryptionSettings
+    spec.typeScript:
+      - name: EncryptionSettings
+        fullName: EncryptionSettings
+        uid: azure-arm-compute.EncryptionSettings
+  - uid: azure-arm-compute.DiskSku
+    spec.typeScript:
+      - name: DiskSku
+        fullName: DiskSku
+        uid: azure-arm-compute.DiskSku

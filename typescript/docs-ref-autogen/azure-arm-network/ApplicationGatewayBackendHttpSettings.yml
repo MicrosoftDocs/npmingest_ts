@@ -31,7 +31,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationGatewayBackendHttpSettings.affinityCookieName
     name: affinityCookieName
@@ -61,7 +61,7 @@ items:
       content: 'authenticationCertificates?: SubResource[]'
       return:
         type:
-          - '@azure-arm-network.SubResource[]'
+          - 'azure-arm-network.SubResource[]'
   - uid: azure-arm-network.ApplicationGatewayBackendHttpSettings.connectionDraining
     name: connectionDraining
     fullName: connectionDraining
@@ -75,7 +75,7 @@ items:
       content: 'connectionDraining?: ApplicationGatewayConnectionDraining'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayConnectionDraining'
+          - azure-arm-network.ApplicationGatewayConnectionDraining
   - uid: >-
       azure-arm-network.ApplicationGatewayBackendHttpSettings.cookieBasedAffinity
     name: cookieBasedAffinity
@@ -189,7 +189,7 @@ items:
       content: 'probe?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.ApplicationGatewayBackendHttpSettings.probeEnabled
     name: probeEnabled
     fullName: probeEnabled
@@ -260,3 +260,21 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: 'azure-arm-network.SubResource[]'
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network.ApplicationGatewayConnectionDraining
+    spec.typeScript:
+      - name: ApplicationGatewayConnectionDraining
+        fullName: ApplicationGatewayConnectionDraining
+        uid: azure-arm-network.ApplicationGatewayConnectionDraining

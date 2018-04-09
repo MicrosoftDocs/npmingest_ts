@@ -19,7 +19,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteCircuitConnection.addressPrefix
     name: addressPrefix
@@ -90,7 +90,7 @@ items:
       content: 'expressRouteCircuitPeering?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.ExpressRouteCircuitConnection.name
     name: name
     fullName: name
@@ -119,7 +119,7 @@ items:
       content: 'peerExpressRouteCircuitPeering?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
   - uid: azure-arm-network.ExpressRouteCircuitConnection.provisioningState
     name: provisioningState
     fullName: provisioningState
@@ -134,3 +134,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource

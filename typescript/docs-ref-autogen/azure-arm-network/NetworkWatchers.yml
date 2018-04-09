@@ -170,7 +170,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectivityParameters'
+            - azure-arm-network.ConnectivityParameters
           description: |
             Parameters that determine how the connectivity
             check will be performed.
@@ -181,7 +181,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ConnectivityInformation>
+          - Promise<azure-arm-network.ConnectivityInformation>
   - uid: azure-arm-network.NetworkWatchers.beginCheckConnectivity_1
     name: beginCheckConnectivity
     children: []
@@ -208,15 +208,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectivityParameters'
+            - azure-arm-network.ConnectivityParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectivityInformation>
+            - ServiceCallback<azure-arm-network.ConnectivityInformation>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectivityInformation>
+          - Promise<azure-arm-network.ConnectivityInformation>
   - uid: azure-arm-network.NetworkWatchers.beginCheckConnectivity_2
     name: beginCheckConnectivity
     children: []
@@ -243,7 +243,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectivityParameters'
+            - azure-arm-network.ConnectivityParameters
           description: ''
         - id: options
           type:
@@ -251,11 +251,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectivityInformation>
+            - ServiceCallback<azure-arm-network.ConnectivityInformation>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectivityInformation>
+          - Promise<azure-arm-network.ConnectivityInformation>
   - uid: >-
       azure-arm-network.NetworkWatchers.beginCheckConnectivityWithHttpOperationResponse
     name: beginCheckConnectivityWithHttpOperationResponse
@@ -287,7 +287,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectivityParameters'
+            - azure-arm-network.ConnectivityParameters
           description: |
             Parameters that determine how the connectivity
             check will be performed.
@@ -298,7 +298,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectivityInformation>>
+          - Promise<ConnectivityInformation!@>>
   - uid: azure-arm-network.NetworkWatchers.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -445,15 +445,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.AzureReachabilityReportParameters'
+            - azure-arm-network.AzureReachabilityReportParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.AzureReachabilityReport>
+            - ServiceCallback<azure-arm-network.AzureReachabilityReport>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.AzureReachabilityReport>
+          - Promise<azure-arm-network.AzureReachabilityReport>
   - uid: azure-arm-network.NetworkWatchers.beginGetAzureReachabilityReport
     name: beginGetAzureReachabilityReport
     children: []
@@ -482,7 +482,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.AzureReachabilityReportParameters'
+            - azure-arm-network.AzureReachabilityReportParameters
           description: |
             Parameters that determine Azure reachability
             report configuration.
@@ -493,7 +493,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.AzureReachabilityReport>
+          - Promise<azure-arm-network.AzureReachabilityReport>
   - uid: azure-arm-network.NetworkWatchers.beginGetAzureReachabilityReport_2
     name: beginGetAzureReachabilityReport
     children: []
@@ -520,7 +520,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.AzureReachabilityReportParameters'
+            - azure-arm-network.AzureReachabilityReportParameters
           description: ''
         - id: options
           type:
@@ -528,11 +528,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.AzureReachabilityReport>
+            - ServiceCallback<azure-arm-network.AzureReachabilityReport>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.AzureReachabilityReport>
+          - Promise<azure-arm-network.AzureReachabilityReport>
   - uid: >-
       azure-arm-network.NetworkWatchers.beginGetAzureReachabilityReportWithHttpOperationResponse
     name: beginGetAzureReachabilityReportWithHttpOperationResponse
@@ -563,7 +563,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.AzureReachabilityReportParameters'
+            - azure-arm-network.AzureReachabilityReportParameters
           description: |
             Parameters that determine Azure reachability
             report configuration.
@@ -574,7 +574,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AzureReachabilityReport>>
+          - Promise<AzureReachabilityReport!@>>
   - uid: azure-arm-network.NetworkWatchers.beginGetFlowLogStatus
     name: beginGetFlowLogStatus
     children: []
@@ -601,7 +601,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.FlowLogStatusParameters'
+            - azure-arm-network.FlowLogStatusParameters
           description: |
             Parameters that define a resource to query flow
             log status.
@@ -612,7 +612,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.FlowLogInformation>
+          - Promise<azure-arm-network.FlowLogInformation>
   - uid: azure-arm-network.NetworkWatchers.beginGetFlowLogStatus_1
     name: beginGetFlowLogStatus
     children: []
@@ -636,15 +636,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.FlowLogStatusParameters'
+            - azure-arm-network.FlowLogStatusParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.FlowLogInformation>
+            - ServiceCallback<azure-arm-network.FlowLogInformation>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.FlowLogInformation>
+          - Promise<azure-arm-network.FlowLogInformation>
   - uid: azure-arm-network.NetworkWatchers.beginGetFlowLogStatus_2
     name: beginGetFlowLogStatus
     children: []
@@ -668,7 +668,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.FlowLogStatusParameters'
+            - azure-arm-network.FlowLogStatusParameters
           description: ''
         - id: options
           type:
@@ -676,11 +676,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.FlowLogInformation>
+            - ServiceCallback<azure-arm-network.FlowLogInformation>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.FlowLogInformation>
+          - Promise<azure-arm-network.FlowLogInformation>
   - uid: >-
       azure-arm-network.NetworkWatchers.beginGetFlowLogStatusWithHttpOperationResponse
     name: beginGetFlowLogStatusWithHttpOperationResponse
@@ -709,7 +709,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.FlowLogStatusParameters'
+            - azure-arm-network.FlowLogStatusParameters
           description: |
             Parameters that define a resource to query flow
             log status.
@@ -720,7 +720,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<FlowLogInformation>>
+          - Promise<FlowLogInformation!@>>
   - uid: azure-arm-network.NetworkWatchers.beginGetNextHop_2
     name: beginGetNextHop
     children: []
@@ -744,7 +744,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.NextHopParameters'
+            - azure-arm-network.NextHopParameters
           description: ''
         - id: options
           type:
@@ -752,11 +752,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NextHopResult>
+            - ServiceCallback<azure-arm-network.NextHopResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NextHopResult>
+          - Promise<azure-arm-network.NextHopResult>
   - uid: azure-arm-network.NetworkWatchers.beginGetNextHop
     name: beginGetNextHop
     children: []
@@ -781,7 +781,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.NextHopParameters'
+            - azure-arm-network.NextHopParameters
           description: |
             Parameters that define the source and destination
             endpoint.
@@ -792,7 +792,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.NextHopResult>
+          - Promise<azure-arm-network.NextHopResult>
   - uid: azure-arm-network.NetworkWatchers.beginGetNextHop_1
     name: beginGetNextHop
     children: []
@@ -816,15 +816,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.NextHopParameters'
+            - azure-arm-network.NextHopParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NextHopResult>
+            - ServiceCallback<azure-arm-network.NextHopResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NextHopResult>
+          - Promise<azure-arm-network.NextHopResult>
   - uid: azure-arm-network.NetworkWatchers.beginGetNextHopWithHttpOperationResponse
     name: beginGetNextHopWithHttpOperationResponse
     children: []
@@ -850,7 +850,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.NextHopParameters'
+            - azure-arm-network.NextHopParameters
           description: |
             Parameters that define the source and destination
             endpoint.
@@ -861,7 +861,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<NextHopResult>>
+          - Promise<NextHopResult!@>>
   - uid: azure-arm-network.NetworkWatchers.beginGetTroubleshooting_1
     name: beginGetTroubleshooting
     children: []
@@ -885,15 +885,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TroubleshootingParameters'
+            - azure-arm-network.TroubleshootingParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.TroubleshootingResult>
+            - ServiceCallback<azure-arm-network.TroubleshootingResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.TroubleshootingResult>
+          - Promise<azure-arm-network.TroubleshootingResult>
   - uid: azure-arm-network.NetworkWatchers.beginGetTroubleshooting_2
     name: beginGetTroubleshooting
     children: []
@@ -917,7 +917,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TroubleshootingParameters'
+            - azure-arm-network.TroubleshootingParameters
           description: ''
         - id: options
           type:
@@ -925,11 +925,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.TroubleshootingResult>
+            - ServiceCallback<azure-arm-network.TroubleshootingResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.TroubleshootingResult>
+          - Promise<azure-arm-network.TroubleshootingResult>
   - uid: azure-arm-network.NetworkWatchers.beginGetTroubleshooting
     name: beginGetTroubleshooting
     children: []
@@ -955,7 +955,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.TroubleshootingParameters'
+            - azure-arm-network.TroubleshootingParameters
           description: |
             Parameters that define the resource to
             troubleshoot.
@@ -966,7 +966,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.TroubleshootingResult>
+          - Promise<azure-arm-network.TroubleshootingResult>
   - uid: azure-arm-network.NetworkWatchers.beginGetTroubleshootingResult
     name: beginGetTroubleshootingResult
     children: []
@@ -992,7 +992,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.QueryTroubleshootingParameters'
+            - azure-arm-network.QueryTroubleshootingParameters
           description: |
             Parameters that define the resource to query the
             troubleshooting result.
@@ -1003,7 +1003,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.TroubleshootingResult>
+          - Promise<azure-arm-network.TroubleshootingResult>
   - uid: azure-arm-network.NetworkWatchers.beginGetTroubleshootingResult_1
     name: beginGetTroubleshootingResult
     children: []
@@ -1027,15 +1027,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.QueryTroubleshootingParameters'
+            - azure-arm-network.QueryTroubleshootingParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.TroubleshootingResult>
+            - ServiceCallback<azure-arm-network.TroubleshootingResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.TroubleshootingResult>
+          - Promise<azure-arm-network.TroubleshootingResult>
   - uid: azure-arm-network.NetworkWatchers.beginGetTroubleshootingResult_2
     name: beginGetTroubleshootingResult
     children: []
@@ -1059,7 +1059,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.QueryTroubleshootingParameters'
+            - azure-arm-network.QueryTroubleshootingParameters
           description: ''
         - id: options
           type:
@@ -1067,11 +1067,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.TroubleshootingResult>
+            - ServiceCallback<azure-arm-network.TroubleshootingResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.TroubleshootingResult>
+          - Promise<azure-arm-network.TroubleshootingResult>
   - uid: >-
       azure-arm-network.NetworkWatchers.beginGetTroubleshootingResultWithHttpOperationResponse
     name: beginGetTroubleshootingResultWithHttpOperationResponse
@@ -1099,7 +1099,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.QueryTroubleshootingParameters'
+            - azure-arm-network.QueryTroubleshootingParameters
           description: |
             Parameters that define the resource to query the
             troubleshooting result.
@@ -1110,7 +1110,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<TroubleshootingResult>>
+          - Promise<TroubleshootingResult!@>>
   - uid: >-
       azure-arm-network.NetworkWatchers.beginGetTroubleshootingWithHttpOperationResponse
     name: beginGetTroubleshootingWithHttpOperationResponse
@@ -1138,7 +1138,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.TroubleshootingParameters'
+            - azure-arm-network.TroubleshootingParameters
           description: |
             Parameters that define the resource to
             troubleshoot.
@@ -1149,7 +1149,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<TroubleshootingResult>>
+          - Promise<TroubleshootingResult!@>>
   - uid: azure-arm-network.NetworkWatchers.beginGetVMSecurityRules_1
     name: beginGetVMSecurityRules
     children: []
@@ -1175,15 +1175,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.SecurityGroupViewParameters'
+            - azure-arm-network.SecurityGroupViewParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.SecurityGroupViewResult>
+            - ServiceCallback<azure-arm-network.SecurityGroupViewResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.SecurityGroupViewResult>
+          - Promise<azure-arm-network.SecurityGroupViewResult>
   - uid: azure-arm-network.NetworkWatchers.beginGetVMSecurityRules
     name: beginGetVMSecurityRules
     children: []
@@ -1211,7 +1211,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.SecurityGroupViewParameters'
+            - azure-arm-network.SecurityGroupViewParameters
           description: |
             Parameters that define the VM to check security
             groups for.
@@ -1222,7 +1222,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.SecurityGroupViewResult>
+          - Promise<azure-arm-network.SecurityGroupViewResult>
   - uid: azure-arm-network.NetworkWatchers.beginGetVMSecurityRules_2
     name: beginGetVMSecurityRules
     children: []
@@ -1248,7 +1248,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.SecurityGroupViewParameters'
+            - azure-arm-network.SecurityGroupViewParameters
           description: ''
         - id: options
           type:
@@ -1256,11 +1256,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.SecurityGroupViewResult>
+            - ServiceCallback<azure-arm-network.SecurityGroupViewResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.SecurityGroupViewResult>
+          - Promise<azure-arm-network.SecurityGroupViewResult>
   - uid: >-
       azure-arm-network.NetworkWatchers.beginGetVMSecurityRulesWithHttpOperationResponse
     name: beginGetVMSecurityRulesWithHttpOperationResponse
@@ -1290,7 +1290,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.SecurityGroupViewParameters'
+            - azure-arm-network.SecurityGroupViewParameters
           description: |
             Parameters that define the VM to check security
             groups for.
@@ -1301,7 +1301,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SecurityGroupViewResult>>
+          - Promise<SecurityGroupViewResult!@>>
   - uid: azure-arm-network.NetworkWatchers.beginListAvailableProviders_1
     name: beginListAvailableProviders
     children: []
@@ -1328,15 +1328,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.AvailableProvidersListParameters'
+            - azure-arm-network.AvailableProvidersListParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.AvailableProvidersList>
+            - ServiceCallback<azure-arm-network.AvailableProvidersList>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.AvailableProvidersList>
+          - Promise<azure-arm-network.AvailableProvidersList>
   - uid: azure-arm-network.NetworkWatchers.beginListAvailableProviders_2
     name: beginListAvailableProviders
     children: []
@@ -1363,7 +1363,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.AvailableProvidersListParameters'
+            - azure-arm-network.AvailableProvidersListParameters
           description: ''
         - id: options
           type:
@@ -1371,11 +1371,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.AvailableProvidersList>
+            - ServiceCallback<azure-arm-network.AvailableProvidersList>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.AvailableProvidersList>
+          - Promise<azure-arm-network.AvailableProvidersList>
   - uid: azure-arm-network.NetworkWatchers.beginListAvailableProviders
     name: beginListAvailableProviders
     children: []
@@ -1404,7 +1404,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.AvailableProvidersListParameters'
+            - azure-arm-network.AvailableProvidersListParameters
           description: |
             Parameters that scope the list of available
             providers.
@@ -1415,7 +1415,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.AvailableProvidersList>
+          - Promise<azure-arm-network.AvailableProvidersList>
   - uid: >-
       azure-arm-network.NetworkWatchers.beginListAvailableProvidersWithHttpOperationResponse
     name: beginListAvailableProvidersWithHttpOperationResponse
@@ -1446,7 +1446,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.AvailableProvidersListParameters'
+            - azure-arm-network.AvailableProvidersListParameters
           description: |
             Parameters that scope the list of available
             providers.
@@ -1457,7 +1457,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AvailableProvidersList>>
+          - Promise<AvailableProvidersList!@>>
   - uid: azure-arm-network.NetworkWatchers.beginSetFlowLogConfiguration_1
     name: beginSetFlowLogConfiguration
     children: []
@@ -1481,15 +1481,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.FlowLogInformation'
+            - azure-arm-network.FlowLogInformation
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.FlowLogInformation>
+            - ServiceCallback<azure-arm-network.FlowLogInformation>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.FlowLogInformation>
+          - Promise<azure-arm-network.FlowLogInformation>
   - uid: azure-arm-network.NetworkWatchers.beginSetFlowLogConfiguration_2
     name: beginSetFlowLogConfiguration
     children: []
@@ -1513,7 +1513,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.FlowLogInformation'
+            - azure-arm-network.FlowLogInformation
           description: ''
         - id: options
           type:
@@ -1521,11 +1521,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.FlowLogInformation>
+            - ServiceCallback<azure-arm-network.FlowLogInformation>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.FlowLogInformation>
+          - Promise<azure-arm-network.FlowLogInformation>
   - uid: azure-arm-network.NetworkWatchers.beginSetFlowLogConfiguration
     name: beginSetFlowLogConfiguration
     children: []
@@ -1552,7 +1552,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.FlowLogInformation'
+            - azure-arm-network.FlowLogInformation
           description: |
             Parameters that define the configuration of flow
             log.
@@ -1563,7 +1563,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.FlowLogInformation>
+          - Promise<azure-arm-network.FlowLogInformation>
   - uid: >-
       azure-arm-network.NetworkWatchers.beginSetFlowLogConfigurationWithHttpOperationResponse
     name: beginSetFlowLogConfigurationWithHttpOperationResponse
@@ -1592,7 +1592,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.FlowLogInformation'
+            - azure-arm-network.FlowLogInformation
           description: |
             Parameters that define the configuration of flow
             log.
@@ -1603,7 +1603,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<FlowLogInformation>>
+          - Promise<FlowLogInformation!@>>
   - uid: azure-arm-network.NetworkWatchers.beginVerifyIPFlow_1
     name: beginVerifyIPFlow
     children: []
@@ -1629,15 +1629,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.VerificationIPFlowParameters'
+            - azure-arm-network.VerificationIPFlowParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VerificationIPFlowResult>
+            - ServiceCallback<azure-arm-network.VerificationIPFlowResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VerificationIPFlowResult>
+          - Promise<azure-arm-network.VerificationIPFlowResult>
   - uid: azure-arm-network.NetworkWatchers.beginVerifyIPFlow_2
     name: beginVerifyIPFlow
     children: []
@@ -1663,7 +1663,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.VerificationIPFlowParameters'
+            - azure-arm-network.VerificationIPFlowParameters
           description: ''
         - id: options
           type:
@@ -1671,11 +1671,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VerificationIPFlowResult>
+            - ServiceCallback<azure-arm-network.VerificationIPFlowResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VerificationIPFlowResult>
+          - Promise<azure-arm-network.VerificationIPFlowResult>
   - uid: azure-arm-network.NetworkWatchers.beginVerifyIPFlow
     name: beginVerifyIPFlow
     children: []
@@ -1703,7 +1703,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.VerificationIPFlowParameters'
+            - azure-arm-network.VerificationIPFlowParameters
           description: |
             Parameters that define the IP flow to be
             verified.
@@ -1714,7 +1714,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VerificationIPFlowResult>
+          - Promise<azure-arm-network.VerificationIPFlowResult>
   - uid: >-
       azure-arm-network.NetworkWatchers.beginVerifyIPFlowWithHttpOperationResponse
     name: beginVerifyIPFlowWithHttpOperationResponse
@@ -1743,7 +1743,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.VerificationIPFlowParameters'
+            - azure-arm-network.VerificationIPFlowParameters
           description: |
             Parameters that define the IP flow to be
             verified.
@@ -1754,7 +1754,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VerificationIPFlowResult>>
+          - Promise<VerificationIPFlowResult!@>>
   - uid: azure-arm-network.NetworkWatchers.checkConnectivity
     name: checkConnectivity
     children: []
@@ -1784,7 +1784,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectivityParameters'
+            - azure-arm-network.ConnectivityParameters
           description: |
             Parameters that determine how the connectivity
             check will be performed.
@@ -1795,7 +1795,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ConnectivityInformation>
+          - Promise<azure-arm-network.ConnectivityInformation>
   - uid: azure-arm-network.NetworkWatchers.checkConnectivity_2
     name: checkConnectivity
     children: []
@@ -1822,7 +1822,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectivityParameters'
+            - azure-arm-network.ConnectivityParameters
           description: ''
         - id: options
           type:
@@ -1830,11 +1830,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectivityInformation>
+            - ServiceCallback<azure-arm-network.ConnectivityInformation>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectivityInformation>
+          - Promise<azure-arm-network.ConnectivityInformation>
   - uid: azure-arm-network.NetworkWatchers.checkConnectivity_1
     name: checkConnectivity
     children: []
@@ -1861,15 +1861,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectivityParameters'
+            - azure-arm-network.ConnectivityParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ConnectivityInformation>
+            - ServiceCallback<azure-arm-network.ConnectivityInformation>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ConnectivityInformation>
+          - Promise<azure-arm-network.ConnectivityInformation>
   - uid: >-
       azure-arm-network.NetworkWatchers.checkConnectivityWithHttpOperationResponse
     name: checkConnectivityWithHttpOperationResponse
@@ -1900,7 +1900,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.ConnectivityParameters'
+            - azure-arm-network.ConnectivityParameters
           description: |
             Parameters that determine how the connectivity
             check will be performed.
@@ -1911,7 +1911,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectivityInformation>>
+          - Promise<ConnectivityInformation!@>>
   - uid: azure-arm-network.NetworkWatchers.createOrUpdate
     name: createOrUpdate
     children: []
@@ -1936,7 +1936,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.NetworkWatcher'
+            - azure-arm-network.NetworkWatcher
           description: |
             Parameters that define the network watcher
             resource.
@@ -1947,7 +1947,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.NetworkWatcher>
+          - Promise<azure-arm-network.NetworkWatcher>
   - uid: azure-arm-network.NetworkWatchers.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -1971,15 +1971,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.NetworkWatcher'
+            - azure-arm-network.NetworkWatcher
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NetworkWatcher>
+            - ServiceCallback<azure-arm-network.NetworkWatcher>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NetworkWatcher>
+          - Promise<azure-arm-network.NetworkWatcher>
   - uid: azure-arm-network.NetworkWatchers.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -2003,7 +2003,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.NetworkWatcher'
+            - azure-arm-network.NetworkWatcher
           description: ''
         - id: options
           type:
@@ -2011,11 +2011,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NetworkWatcher>
+            - ServiceCallback<azure-arm-network.NetworkWatcher>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NetworkWatcher>
+          - Promise<azure-arm-network.NetworkWatcher>
   - uid: azure-arm-network.NetworkWatchers.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
     children: []
@@ -2041,7 +2041,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.NetworkWatcher'
+            - azure-arm-network.NetworkWatcher
           description: |
             Parameters that define the network watcher
             resource.
@@ -2052,7 +2052,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkWatcher>>
+          - Promise<NetworkWatcher!@>>
   - uid: azure-arm-network.NetworkWatchers.deleteMethod
     name: deleteMethod
     children: []
@@ -2200,7 +2200,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.NetworkWatcher>
+          - Promise<azure-arm-network.NetworkWatcher>
   - uid: azure-arm-network.NetworkWatchers.get_1
     name: get
     children: []
@@ -2223,11 +2223,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NetworkWatcher>
+            - ServiceCallback<azure-arm-network.NetworkWatcher>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NetworkWatcher>
+          - Promise<azure-arm-network.NetworkWatcher>
   - uid: azure-arm-network.NetworkWatchers.get_2
     name: get
     children: []
@@ -2254,11 +2254,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NetworkWatcher>
+            - ServiceCallback<azure-arm-network.NetworkWatcher>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NetworkWatcher>
+          - Promise<azure-arm-network.NetworkWatcher>
   - uid: azure-arm-network.NetworkWatchers.getAzureReachabilityReport
     name: getAzureReachabilityReport
     children: []
@@ -2287,7 +2287,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.AzureReachabilityReportParameters'
+            - azure-arm-network.AzureReachabilityReportParameters
           description: |
             Parameters that determine Azure reachability
             report configuration.
@@ -2298,7 +2298,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.AzureReachabilityReport>
+          - Promise<azure-arm-network.AzureReachabilityReport>
   - uid: azure-arm-network.NetworkWatchers.getAzureReachabilityReport_1
     name: getAzureReachabilityReport
     children: []
@@ -2325,15 +2325,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.AzureReachabilityReportParameters'
+            - azure-arm-network.AzureReachabilityReportParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.AzureReachabilityReport>
+            - ServiceCallback<azure-arm-network.AzureReachabilityReport>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.AzureReachabilityReport>
+          - Promise<azure-arm-network.AzureReachabilityReport>
   - uid: azure-arm-network.NetworkWatchers.getAzureReachabilityReport_2
     name: getAzureReachabilityReport
     children: []
@@ -2360,7 +2360,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.AzureReachabilityReportParameters'
+            - azure-arm-network.AzureReachabilityReportParameters
           description: ''
         - id: options
           type:
@@ -2368,11 +2368,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.AzureReachabilityReport>
+            - ServiceCallback<azure-arm-network.AzureReachabilityReport>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.AzureReachabilityReport>
+          - Promise<azure-arm-network.AzureReachabilityReport>
   - uid: >-
       azure-arm-network.NetworkWatchers.getAzureReachabilityReportWithHttpOperationResponse
     name: getAzureReachabilityReportWithHttpOperationResponse
@@ -2403,7 +2403,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.AzureReachabilityReportParameters'
+            - azure-arm-network.AzureReachabilityReportParameters
           description: |
             Parameters that determine Azure reachability
             report configuration.
@@ -2414,7 +2414,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AzureReachabilityReport>>
+          - Promise<AzureReachabilityReport!@>>
   - uid: azure-arm-network.NetworkWatchers.getFlowLogStatus
     name: getFlowLogStatus
     children: []
@@ -2440,7 +2440,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.FlowLogStatusParameters'
+            - azure-arm-network.FlowLogStatusParameters
           description: |
             Parameters that define a resource to query flow
             log status.
@@ -2451,7 +2451,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.FlowLogInformation>
+          - Promise<azure-arm-network.FlowLogInformation>
   - uid: azure-arm-network.NetworkWatchers.getFlowLogStatus_2
     name: getFlowLogStatus
     children: []
@@ -2475,7 +2475,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.FlowLogStatusParameters'
+            - azure-arm-network.FlowLogStatusParameters
           description: ''
         - id: options
           type:
@@ -2483,11 +2483,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.FlowLogInformation>
+            - ServiceCallback<azure-arm-network.FlowLogInformation>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.FlowLogInformation>
+          - Promise<azure-arm-network.FlowLogInformation>
   - uid: azure-arm-network.NetworkWatchers.getFlowLogStatus_1
     name: getFlowLogStatus
     children: []
@@ -2511,15 +2511,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.FlowLogStatusParameters'
+            - azure-arm-network.FlowLogStatusParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.FlowLogInformation>
+            - ServiceCallback<azure-arm-network.FlowLogInformation>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.FlowLogInformation>
+          - Promise<azure-arm-network.FlowLogInformation>
   - uid: >-
       azure-arm-network.NetworkWatchers.getFlowLogStatusWithHttpOperationResponse
     name: getFlowLogStatusWithHttpOperationResponse
@@ -2547,7 +2547,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.FlowLogStatusParameters'
+            - azure-arm-network.FlowLogStatusParameters
           description: |
             Parameters that define a resource to query flow
             log status.
@@ -2558,7 +2558,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<FlowLogInformation>>
+          - Promise<FlowLogInformation!@>>
   - uid: azure-arm-network.NetworkWatchers.getNextHop
     name: getNextHop
     children: []
@@ -2583,7 +2583,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.NextHopParameters'
+            - azure-arm-network.NextHopParameters
           description: |
             Parameters that define the source and destination
             endpoint.
@@ -2594,7 +2594,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.NextHopResult>
+          - Promise<azure-arm-network.NextHopResult>
   - uid: azure-arm-network.NetworkWatchers.getNextHop_1
     name: getNextHop
     children: []
@@ -2618,15 +2618,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.NextHopParameters'
+            - azure-arm-network.NextHopParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NextHopResult>
+            - ServiceCallback<azure-arm-network.NextHopResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NextHopResult>
+          - Promise<azure-arm-network.NextHopResult>
   - uid: azure-arm-network.NetworkWatchers.getNextHop_2
     name: getNextHop
     children: []
@@ -2650,7 +2650,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.NextHopParameters'
+            - azure-arm-network.NextHopParameters
           description: ''
         - id: options
           type:
@@ -2658,11 +2658,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NextHopResult>
+            - ServiceCallback<azure-arm-network.NextHopResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NextHopResult>
+          - Promise<azure-arm-network.NextHopResult>
   - uid: azure-arm-network.NetworkWatchers.getNextHopWithHttpOperationResponse
     name: getNextHopWithHttpOperationResponse
     children: []
@@ -2688,7 +2688,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.NextHopParameters'
+            - azure-arm-network.NextHopParameters
           description: |
             Parameters that define the source and destination
             endpoint.
@@ -2699,7 +2699,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<NextHopResult>>
+          - Promise<NextHopResult!@>>
   - uid: azure-arm-network.NetworkWatchers.getTopology_1
     name: getTopology
     children: []
@@ -2723,15 +2723,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TopologyParameters'
+            - azure-arm-network.TopologyParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.Topology>
+            - ServiceCallback<azure-arm-network.Topology>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.Topology>
+          - Promise<azure-arm-network.Topology>
   - uid: azure-arm-network.NetworkWatchers.getTopology
     name: getTopology
     children: []
@@ -2756,7 +2756,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.TopologyParameters'
+            - azure-arm-network.TopologyParameters
           description: |
             Parameters that define the representation of
             topology.
@@ -2767,7 +2767,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.Topology>
+          - Promise<azure-arm-network.Topology>
   - uid: azure-arm-network.NetworkWatchers.getTopology_2
     name: getTopology
     children: []
@@ -2791,7 +2791,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TopologyParameters'
+            - azure-arm-network.TopologyParameters
           description: ''
         - id: options
           type:
@@ -2799,11 +2799,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.Topology>
+            - ServiceCallback<azure-arm-network.Topology>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.Topology>
+          - Promise<azure-arm-network.Topology>
   - uid: azure-arm-network.NetworkWatchers.getTopologyWithHttpOperationResponse
     name: getTopologyWithHttpOperationResponse
     children: []
@@ -2829,7 +2829,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.TopologyParameters'
+            - azure-arm-network.TopologyParameters
           description: |
             Parameters that define the representation of
             topology.
@@ -2840,7 +2840,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Topology>>
+          - Promise<Topology!@>>
   - uid: azure-arm-network.NetworkWatchers.getTroubleshooting
     name: getTroubleshooting
     children: []
@@ -2866,7 +2866,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.TroubleshootingParameters'
+            - azure-arm-network.TroubleshootingParameters
           description: |
             Parameters that define the resource to
             troubleshoot.
@@ -2877,7 +2877,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.TroubleshootingResult>
+          - Promise<azure-arm-network.TroubleshootingResult>
   - uid: azure-arm-network.NetworkWatchers.getTroubleshooting_1
     name: getTroubleshooting
     children: []
@@ -2901,15 +2901,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TroubleshootingParameters'
+            - azure-arm-network.TroubleshootingParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.TroubleshootingResult>
+            - ServiceCallback<azure-arm-network.TroubleshootingResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.TroubleshootingResult>
+          - Promise<azure-arm-network.TroubleshootingResult>
   - uid: azure-arm-network.NetworkWatchers.getTroubleshooting_2
     name: getTroubleshooting
     children: []
@@ -2933,7 +2933,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TroubleshootingParameters'
+            - azure-arm-network.TroubleshootingParameters
           description: ''
         - id: options
           type:
@@ -2941,11 +2941,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.TroubleshootingResult>
+            - ServiceCallback<azure-arm-network.TroubleshootingResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.TroubleshootingResult>
+          - Promise<azure-arm-network.TroubleshootingResult>
   - uid: azure-arm-network.NetworkWatchers.getTroubleshootingResult
     name: getTroubleshootingResult
     children: []
@@ -2971,7 +2971,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.QueryTroubleshootingParameters'
+            - azure-arm-network.QueryTroubleshootingParameters
           description: |
             Parameters that define the resource to query the
             troubleshooting result.
@@ -2982,7 +2982,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.TroubleshootingResult>
+          - Promise<azure-arm-network.TroubleshootingResult>
   - uid: azure-arm-network.NetworkWatchers.getTroubleshootingResult_1
     name: getTroubleshootingResult
     children: []
@@ -3006,15 +3006,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.QueryTroubleshootingParameters'
+            - azure-arm-network.QueryTroubleshootingParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.TroubleshootingResult>
+            - ServiceCallback<azure-arm-network.TroubleshootingResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.TroubleshootingResult>
+          - Promise<azure-arm-network.TroubleshootingResult>
   - uid: azure-arm-network.NetworkWatchers.getTroubleshootingResult_2
     name: getTroubleshootingResult
     children: []
@@ -3038,7 +3038,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.QueryTroubleshootingParameters'
+            - azure-arm-network.QueryTroubleshootingParameters
           description: ''
         - id: options
           type:
@@ -3046,11 +3046,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.TroubleshootingResult>
+            - ServiceCallback<azure-arm-network.TroubleshootingResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.TroubleshootingResult>
+          - Promise<azure-arm-network.TroubleshootingResult>
   - uid: >-
       azure-arm-network.NetworkWatchers.getTroubleshootingResultWithHttpOperationResponse
     name: getTroubleshootingResultWithHttpOperationResponse
@@ -3078,7 +3078,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.QueryTroubleshootingParameters'
+            - azure-arm-network.QueryTroubleshootingParameters
           description: |
             Parameters that define the resource to query the
             troubleshooting result.
@@ -3089,7 +3089,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<TroubleshootingResult>>
+          - Promise<TroubleshootingResult!@>>
   - uid: >-
       azure-arm-network.NetworkWatchers.getTroubleshootingWithHttpOperationResponse
     name: getTroubleshootingWithHttpOperationResponse
@@ -3116,7 +3116,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.TroubleshootingParameters'
+            - azure-arm-network.TroubleshootingParameters
           description: |
             Parameters that define the resource to
             troubleshoot.
@@ -3127,7 +3127,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<TroubleshootingResult>>
+          - Promise<TroubleshootingResult!@>>
   - uid: azure-arm-network.NetworkWatchers.getVMSecurityRules
     name: getVMSecurityRules
     children: []
@@ -3155,7 +3155,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.SecurityGroupViewParameters'
+            - azure-arm-network.SecurityGroupViewParameters
           description: |
             Parameters that define the VM to check security
             groups for.
@@ -3166,7 +3166,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.SecurityGroupViewResult>
+          - Promise<azure-arm-network.SecurityGroupViewResult>
   - uid: azure-arm-network.NetworkWatchers.getVMSecurityRules_1
     name: getVMSecurityRules
     children: []
@@ -3192,15 +3192,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.SecurityGroupViewParameters'
+            - azure-arm-network.SecurityGroupViewParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.SecurityGroupViewResult>
+            - ServiceCallback<azure-arm-network.SecurityGroupViewResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.SecurityGroupViewResult>
+          - Promise<azure-arm-network.SecurityGroupViewResult>
   - uid: azure-arm-network.NetworkWatchers.getVMSecurityRules_2
     name: getVMSecurityRules
     children: []
@@ -3226,7 +3226,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.SecurityGroupViewParameters'
+            - azure-arm-network.SecurityGroupViewParameters
           description: ''
         - id: options
           type:
@@ -3234,11 +3234,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.SecurityGroupViewResult>
+            - ServiceCallback<azure-arm-network.SecurityGroupViewResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.SecurityGroupViewResult>
+          - Promise<azure-arm-network.SecurityGroupViewResult>
   - uid: >-
       azure-arm-network.NetworkWatchers.getVMSecurityRulesWithHttpOperationResponse
     name: getVMSecurityRulesWithHttpOperationResponse
@@ -3267,7 +3267,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.SecurityGroupViewParameters'
+            - azure-arm-network.SecurityGroupViewParameters
           description: |
             Parameters that define the VM to check security
             groups for.
@@ -3278,7 +3278,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SecurityGroupViewResult>>
+          - Promise<SecurityGroupViewResult!@>>
   - uid: azure-arm-network.NetworkWatchers.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -3308,7 +3308,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkWatcher>>
+          - Promise<NetworkWatcher!@>>
   - uid: azure-arm-network.NetworkWatchers.list_1
     name: list
     children: []
@@ -3327,11 +3327,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NetworkWatcherListResult>
+            - ServiceCallback<azure-arm-network.NetworkWatcherListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NetworkWatcherListResult>
+          - Promise<azure-arm-network.NetworkWatcherListResult>
   - uid: azure-arm-network.NetworkWatchers.list
     name: list
     children: []
@@ -3354,7 +3354,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.NetworkWatcherListResult>
+          - Promise<azure-arm-network.NetworkWatcherListResult>
   - uid: azure-arm-network.NetworkWatchers.list_2
     name: list
     children: []
@@ -3377,11 +3377,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NetworkWatcherListResult>
+            - ServiceCallback<azure-arm-network.NetworkWatcherListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NetworkWatcherListResult>
+          - Promise<azure-arm-network.NetworkWatcherListResult>
   - uid: azure-arm-network.NetworkWatchers.listAll_1
     name: listAll
     children: []
@@ -3394,11 +3394,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NetworkWatcherListResult>
+            - ServiceCallback<azure-arm-network.NetworkWatcherListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NetworkWatcherListResult>
+          - Promise<azure-arm-network.NetworkWatcherListResult>
   - uid: azure-arm-network.NetworkWatchers.listAll_2
     name: listAll
     children: []
@@ -3417,11 +3417,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NetworkWatcherListResult>
+            - ServiceCallback<azure-arm-network.NetworkWatcherListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NetworkWatcherListResult>
+          - Promise<azure-arm-network.NetworkWatcherListResult>
   - uid: azure-arm-network.NetworkWatchers.listAll
     name: listAll
     children: []
@@ -3439,7 +3439,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.NetworkWatcherListResult>
+          - Promise<azure-arm-network.NetworkWatcherListResult>
   - uid: azure-arm-network.NetworkWatchers.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse
     children: []
@@ -3457,7 +3457,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkWatcherListResult>>
+          - Promise<NetworkWatcherListResult!@>>
   - uid: azure-arm-network.NetworkWatchers.listAvailableProviders
     name: listAvailableProviders
     children: []
@@ -3486,7 +3486,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.AvailableProvidersListParameters'
+            - azure-arm-network.AvailableProvidersListParameters
           description: |
             Parameters that scope the list of available
             providers.
@@ -3497,7 +3497,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.AvailableProvidersList>
+          - Promise<azure-arm-network.AvailableProvidersList>
   - uid: azure-arm-network.NetworkWatchers.listAvailableProviders_1
     name: listAvailableProviders
     children: []
@@ -3524,15 +3524,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.AvailableProvidersListParameters'
+            - azure-arm-network.AvailableProvidersListParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.AvailableProvidersList>
+            - ServiceCallback<azure-arm-network.AvailableProvidersList>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.AvailableProvidersList>
+          - Promise<azure-arm-network.AvailableProvidersList>
   - uid: azure-arm-network.NetworkWatchers.listAvailableProviders_2
     name: listAvailableProviders
     children: []
@@ -3559,7 +3559,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.AvailableProvidersListParameters'
+            - azure-arm-network.AvailableProvidersListParameters
           description: ''
         - id: options
           type:
@@ -3567,11 +3567,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.AvailableProvidersList>
+            - ServiceCallback<azure-arm-network.AvailableProvidersList>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.AvailableProvidersList>
+          - Promise<azure-arm-network.AvailableProvidersList>
   - uid: >-
       azure-arm-network.NetworkWatchers.listAvailableProvidersWithHttpOperationResponse
     name: listAvailableProvidersWithHttpOperationResponse
@@ -3602,7 +3602,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.AvailableProvidersListParameters'
+            - azure-arm-network.AvailableProvidersListParameters
           description: |
             Parameters that scope the list of available
             providers.
@@ -3613,7 +3613,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AvailableProvidersList>>
+          - Promise<AvailableProvidersList!@>>
   - uid: azure-arm-network.NetworkWatchers.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -3638,7 +3638,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkWatcherListResult>>
+          - Promise<NetworkWatcherListResult!@>>
   - uid: azure-arm-network.NetworkWatchers.setFlowLogConfiguration
     name: setFlowLogConfiguration
     children: []
@@ -3665,7 +3665,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.FlowLogInformation'
+            - azure-arm-network.FlowLogInformation
           description: |
             Parameters that define the configuration of flow
             log.
@@ -3676,7 +3676,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.FlowLogInformation>
+          - Promise<azure-arm-network.FlowLogInformation>
   - uid: azure-arm-network.NetworkWatchers.setFlowLogConfiguration_2
     name: setFlowLogConfiguration
     children: []
@@ -3700,7 +3700,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.FlowLogInformation'
+            - azure-arm-network.FlowLogInformation
           description: ''
         - id: options
           type:
@@ -3708,11 +3708,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.FlowLogInformation>
+            - ServiceCallback<azure-arm-network.FlowLogInformation>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.FlowLogInformation>
+          - Promise<azure-arm-network.FlowLogInformation>
   - uid: azure-arm-network.NetworkWatchers.setFlowLogConfiguration_1
     name: setFlowLogConfiguration
     children: []
@@ -3736,15 +3736,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.FlowLogInformation'
+            - azure-arm-network.FlowLogInformation
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.FlowLogInformation>
+            - ServiceCallback<azure-arm-network.FlowLogInformation>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.FlowLogInformation>
+          - Promise<azure-arm-network.FlowLogInformation>
   - uid: >-
       azure-arm-network.NetworkWatchers.setFlowLogConfigurationWithHttpOperationResponse
     name: setFlowLogConfigurationWithHttpOperationResponse
@@ -3773,7 +3773,7 @@ items:
             The name of the network watcher resource.
         - id: parameters
           type:
-            - '@azure-arm-network.FlowLogInformation'
+            - azure-arm-network.FlowLogInformation
           description: |
             Parameters that define the configuration of flow
             log.
@@ -3784,7 +3784,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<FlowLogInformation>>
+          - Promise<FlowLogInformation!@>>
   - uid: azure-arm-network.NetworkWatchers.updateTags
     name: updateTags
     children: []
@@ -3809,7 +3809,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update network watcher
             tags.
@@ -3820,7 +3820,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.NetworkWatcher>
+          - Promise<azure-arm-network.NetworkWatcher>
   - uid: azure-arm-network.NetworkWatchers.updateTags_1
     name: updateTags
     children: []
@@ -3844,15 +3844,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NetworkWatcher>
+            - ServiceCallback<azure-arm-network.NetworkWatcher>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NetworkWatcher>
+          - Promise<azure-arm-network.NetworkWatcher>
   - uid: azure-arm-network.NetworkWatchers.updateTags_2
     name: updateTags
     children: []
@@ -3876,7 +3876,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -3884,11 +3884,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.NetworkWatcher>
+            - ServiceCallback<azure-arm-network.NetworkWatcher>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.NetworkWatcher>
+          - Promise<azure-arm-network.NetworkWatcher>
   - uid: azure-arm-network.NetworkWatchers.updateTagsWithHttpOperationResponse
     name: updateTagsWithHttpOperationResponse
     children: []
@@ -3913,7 +3913,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update network watcher
             tags.
@@ -3924,7 +3924,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkWatcher>>
+          - Promise<NetworkWatcher!@>>
   - uid: azure-arm-network.NetworkWatchers.verifyIPFlow
     name: verifyIPFlow
     children: []
@@ -3951,7 +3951,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.VerificationIPFlowParameters'
+            - azure-arm-network.VerificationIPFlowParameters
           description: |
             Parameters that define the IP flow to be
             verified.
@@ -3962,7 +3962,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VerificationIPFlowResult>
+          - Promise<azure-arm-network.VerificationIPFlowResult>
   - uid: azure-arm-network.NetworkWatchers.verifyIPFlow_1
     name: verifyIPFlow
     children: []
@@ -3988,15 +3988,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.VerificationIPFlowParameters'
+            - azure-arm-network.VerificationIPFlowParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VerificationIPFlowResult>
+            - ServiceCallback<azure-arm-network.VerificationIPFlowResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VerificationIPFlowResult>
+          - Promise<azure-arm-network.VerificationIPFlowResult>
   - uid: azure-arm-network.NetworkWatchers.verifyIPFlow_2
     name: verifyIPFlow
     children: []
@@ -4022,7 +4022,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.VerificationIPFlowParameters'
+            - azure-arm-network.VerificationIPFlowParameters
           description: ''
         - id: options
           type:
@@ -4030,11 +4030,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VerificationIPFlowResult>
+            - ServiceCallback<azure-arm-network.VerificationIPFlowResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VerificationIPFlowResult>
+          - Promise<azure-arm-network.VerificationIPFlowResult>
   - uid: azure-arm-network.NetworkWatchers.verifyIPFlowWithHttpOperationResponse
     name: verifyIPFlowWithHttpOperationResponse
     children: []
@@ -4062,7 +4062,7 @@ items:
             The name of the network watcher.
         - id: parameters
           type:
-            - '@azure-arm-network.VerificationIPFlowParameters'
+            - azure-arm-network.VerificationIPFlowParameters
           description: |
             Parameters that define the IP flow to be
             verified.
@@ -4073,4 +4073,268 @@ items:
           optional: true
       return:
         type:
-          - Promise<VerificationIPFlowResult>>
+          - Promise<VerificationIPFlowResult!@>>
+references:
+  - uid: azure-arm-network.ConnectivityParameters
+    spec.typeScript:
+      - name: ConnectivityParameters
+        fullName: ConnectivityParameters
+        uid: azure-arm-network.ConnectivityParameters
+  - uid: Promise<azure-arm-network.ConnectivityInformation>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ConnectivityInformation
+        fullName: ConnectivityInformation
+        uid: azure-arm-network.ConnectivityInformation
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ConnectivityInformation>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ConnectivityInformation
+        fullName: ConnectivityInformation
+        uid: azure-arm-network.ConnectivityInformation
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.AzureReachabilityReportParameters
+    spec.typeScript:
+      - name: AzureReachabilityReportParameters
+        fullName: AzureReachabilityReportParameters
+        uid: azure-arm-network.AzureReachabilityReportParameters
+  - uid: Promise<azure-arm-network.AzureReachabilityReport>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: AzureReachabilityReport
+        fullName: AzureReachabilityReport
+        uid: azure-arm-network.AzureReachabilityReport
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.AzureReachabilityReport>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: AzureReachabilityReport
+        fullName: AzureReachabilityReport
+        uid: azure-arm-network.AzureReachabilityReport
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.FlowLogStatusParameters
+    spec.typeScript:
+      - name: FlowLogStatusParameters
+        fullName: FlowLogStatusParameters
+        uid: azure-arm-network.FlowLogStatusParameters
+  - uid: Promise<azure-arm-network.FlowLogInformation>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: FlowLogInformation
+        fullName: FlowLogInformation
+        uid: azure-arm-network.FlowLogInformation
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.FlowLogInformation>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: FlowLogInformation
+        fullName: FlowLogInformation
+        uid: azure-arm-network.FlowLogInformation
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.NextHopParameters
+    spec.typeScript:
+      - name: NextHopParameters
+        fullName: NextHopParameters
+        uid: azure-arm-network.NextHopParameters
+  - uid: Promise<azure-arm-network.NextHopResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: NextHopResult
+        fullName: NextHopResult
+        uid: azure-arm-network.NextHopResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.NextHopResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: NextHopResult
+        fullName: NextHopResult
+        uid: azure-arm-network.NextHopResult
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.TroubleshootingParameters
+    spec.typeScript:
+      - name: TroubleshootingParameters
+        fullName: TroubleshootingParameters
+        uid: azure-arm-network.TroubleshootingParameters
+  - uid: Promise<azure-arm-network.TroubleshootingResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: TroubleshootingResult
+        fullName: TroubleshootingResult
+        uid: azure-arm-network.TroubleshootingResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.TroubleshootingResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: TroubleshootingResult
+        fullName: TroubleshootingResult
+        uid: azure-arm-network.TroubleshootingResult
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.QueryTroubleshootingParameters
+    spec.typeScript:
+      - name: QueryTroubleshootingParameters
+        fullName: QueryTroubleshootingParameters
+        uid: azure-arm-network.QueryTroubleshootingParameters
+  - uid: azure-arm-network.SecurityGroupViewParameters
+    spec.typeScript:
+      - name: SecurityGroupViewParameters
+        fullName: SecurityGroupViewParameters
+        uid: azure-arm-network.SecurityGroupViewParameters
+  - uid: Promise<azure-arm-network.SecurityGroupViewResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: SecurityGroupViewResult
+        fullName: SecurityGroupViewResult
+        uid: azure-arm-network.SecurityGroupViewResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.SecurityGroupViewResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: SecurityGroupViewResult
+        fullName: SecurityGroupViewResult
+        uid: azure-arm-network.SecurityGroupViewResult
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.AvailableProvidersListParameters
+    spec.typeScript:
+      - name: AvailableProvidersListParameters
+        fullName: AvailableProvidersListParameters
+        uid: azure-arm-network.AvailableProvidersListParameters
+  - uid: Promise<azure-arm-network.AvailableProvidersList>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: AvailableProvidersList
+        fullName: AvailableProvidersList
+        uid: azure-arm-network.AvailableProvidersList
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.AvailableProvidersList>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: AvailableProvidersList
+        fullName: AvailableProvidersList
+        uid: azure-arm-network.AvailableProvidersList
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.FlowLogInformation
+    spec.typeScript:
+      - name: FlowLogInformation
+        fullName: FlowLogInformation
+        uid: azure-arm-network.FlowLogInformation
+  - uid: azure-arm-network.VerificationIPFlowParameters
+    spec.typeScript:
+      - name: VerificationIPFlowParameters
+        fullName: VerificationIPFlowParameters
+        uid: azure-arm-network.VerificationIPFlowParameters
+  - uid: Promise<azure-arm-network.VerificationIPFlowResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VerificationIPFlowResult
+        fullName: VerificationIPFlowResult
+        uid: azure-arm-network.VerificationIPFlowResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.VerificationIPFlowResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VerificationIPFlowResult
+        fullName: VerificationIPFlowResult
+        uid: azure-arm-network.VerificationIPFlowResult
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.NetworkWatcher
+    spec.typeScript:
+      - name: NetworkWatcher
+        fullName: NetworkWatcher
+        uid: azure-arm-network.NetworkWatcher
+  - uid: Promise<azure-arm-network.NetworkWatcher>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: NetworkWatcher
+        fullName: NetworkWatcher
+        uid: azure-arm-network.NetworkWatcher
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.NetworkWatcher>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: NetworkWatcher
+        fullName: NetworkWatcher
+        uid: azure-arm-network.NetworkWatcher
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.TopologyParameters
+    spec.typeScript:
+      - name: TopologyParameters
+        fullName: TopologyParameters
+        uid: azure-arm-network.TopologyParameters
+  - uid: Promise<azure-arm-network.Topology>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Topology
+        fullName: Topology
+        uid: azure-arm-network.Topology
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.Topology>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Topology
+        fullName: Topology
+        uid: azure-arm-network.Topology
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.NetworkWatcherListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: NetworkWatcherListResult
+        fullName: NetworkWatcherListResult
+        uid: azure-arm-network.NetworkWatcherListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.NetworkWatcherListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: NetworkWatcherListResult
+        fullName: NetworkWatcherListResult
+        uid: azure-arm-network.NetworkWatcherListResult
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.TagsObject
+    spec.typeScript:
+      - name: TagsObject
+        fullName: TagsObject
+        uid: azure-arm-network.TagsObject

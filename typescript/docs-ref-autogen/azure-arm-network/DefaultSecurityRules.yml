@@ -57,7 +57,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.SecurityRule>
+          - Promise<azure-arm-network.SecurityRule>
   - uid: azure-arm-network.DefaultSecurityRules.get_2
     name: get
     children: []
@@ -89,11 +89,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.SecurityRule>
+            - ServiceCallback<azure-arm-network.SecurityRule>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.SecurityRule>
+          - Promise<azure-arm-network.SecurityRule>
   - uid: azure-arm-network.DefaultSecurityRules.get_1
     name: get
     children: []
@@ -121,11 +121,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.SecurityRule>
+            - ServiceCallback<azure-arm-network.SecurityRule>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.SecurityRule>
+          - Promise<azure-arm-network.SecurityRule>
   - uid: azure-arm-network.DefaultSecurityRules.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -163,7 +163,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SecurityRule>>
+          - Promise<SecurityRule!@>>
   - uid: azure-arm-network.DefaultSecurityRules.list
     name: list
     children: []
@@ -194,7 +194,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.SecurityRuleListResult>
+          - Promise<azure-arm-network.SecurityRuleListResult>
   - uid: azure-arm-network.DefaultSecurityRules.list_1
     name: list
     children: []
@@ -217,11 +217,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.SecurityRuleListResult>
+            - ServiceCallback<azure-arm-network.SecurityRuleListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.SecurityRuleListResult>
+          - Promise<azure-arm-network.SecurityRuleListResult>
   - uid: azure-arm-network.DefaultSecurityRules.list_2
     name: list
     children: []
@@ -249,11 +249,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.SecurityRuleListResult>
+            - ServiceCallback<azure-arm-network.SecurityRuleListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.SecurityRuleListResult>
+          - Promise<azure-arm-network.SecurityRuleListResult>
   - uid: azure-arm-network.DefaultSecurityRules.listNext
     name: listNext
     children: []
@@ -277,7 +277,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.SecurityRuleListResult>
+          - Promise<azure-arm-network.SecurityRuleListResult>
   - uid: azure-arm-network.DefaultSecurityRules.listNext_1
     name: listNext
     children: []
@@ -296,11 +296,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.SecurityRuleListResult>
+            - ServiceCallback<azure-arm-network.SecurityRuleListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.SecurityRuleListResult>
+          - Promise<azure-arm-network.SecurityRuleListResult>
   - uid: azure-arm-network.DefaultSecurityRules.listNext_2
     name: listNext
     children: []
@@ -323,11 +323,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.SecurityRuleListResult>
+            - ServiceCallback<azure-arm-network.SecurityRuleListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.SecurityRuleListResult>
+          - Promise<azure-arm-network.SecurityRuleListResult>
   - uid: azure-arm-network.DefaultSecurityRules.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -353,7 +353,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SecurityRuleListResult>>
+          - Promise<SecurityRuleListResult!@>>
   - uid: azure-arm-network.DefaultSecurityRules.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -384,4 +384,41 @@ items:
           optional: true
       return:
         type:
-          - Promise<SecurityRuleListResult>>
+          - Promise<SecurityRuleListResult!@>>
+references:
+  - uid: Promise<azure-arm-network.SecurityRule>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: SecurityRule
+        fullName: SecurityRule
+        uid: azure-arm-network.SecurityRule
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.SecurityRule>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: SecurityRule
+        fullName: SecurityRule
+        uid: azure-arm-network.SecurityRule
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.SecurityRuleListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: SecurityRuleListResult
+        fullName: SecurityRuleListResult
+        uid: azure-arm-network.SecurityRuleListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.SecurityRuleListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: SecurityRuleListResult
+        fullName: SecurityRuleListResult
+        uid: azure-arm-network.SecurityRuleListResult
+      - name: '>'
+        fullName: '>'

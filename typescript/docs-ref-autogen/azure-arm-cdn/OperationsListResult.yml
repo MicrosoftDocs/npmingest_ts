@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-cdn.Operation>
+      name: Array<azure-arm-cdn.Operation>
     package: azure-arm-cdn
   - uid: azure-arm-cdn.OperationsListResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-cdn.Operation>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: Operation
+        fullName: Operation
+        uid: azure-arm-cdn.Operation
+      - name: '>'
+        fullName: '>'

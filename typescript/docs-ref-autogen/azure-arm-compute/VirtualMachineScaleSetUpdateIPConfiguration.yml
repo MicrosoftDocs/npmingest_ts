@@ -22,7 +22,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.SubResource'
+      name: azure-arm-compute.SubResource
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetUpdateIPConfiguration.applicationGatewayBackendAddressPools
@@ -38,7 +38,7 @@ items:
       content: 'applicationGatewayBackendAddressPools?: SubResource[]'
       return:
         type:
-          - '@azure-arm-compute.SubResource[]'
+          - 'azure-arm-compute.SubResource[]'
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetUpdateIPConfiguration.loadBalancerBackendAddressPools
     name: loadBalancerBackendAddressPools
@@ -53,7 +53,7 @@ items:
       content: 'loadBalancerBackendAddressPools?: SubResource[]'
       return:
         type:
-          - '@azure-arm-compute.SubResource[]'
+          - 'azure-arm-compute.SubResource[]'
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetUpdateIPConfiguration.loadBalancerInboundNatPools
     name: loadBalancerInboundNatPools
@@ -68,7 +68,7 @@ items:
       content: 'loadBalancerInboundNatPools?: SubResource[]'
       return:
         type:
-          - '@azure-arm-compute.SubResource[]'
+          - 'azure-arm-compute.SubResource[]'
   - uid: azure-arm-compute.VirtualMachineScaleSetUpdateIPConfiguration.name
     name: name
     fullName: name
@@ -129,7 +129,7 @@ items:
       return:
         type:
           - >-
-            @azure-arm-compute.VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
+            azure-arm-compute.VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
   - uid: azure-arm-compute.VirtualMachineScaleSetUpdateIPConfiguration.subnet
     name: subnet
     fullName: subnet
@@ -143,4 +143,28 @@ items:
       content: 'subnet?: ApiEntityReference'
       return:
         type:
-          - '@azure-arm-compute.ApiEntityReference'
+          - azure-arm-compute.ApiEntityReference
+references:
+  - uid: azure-arm-compute.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute.SubResource
+  - uid: 'azure-arm-compute.SubResource[]'
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute.SubResource
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute.VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
+    spec.typeScript:
+      - name: VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
+        fullName: VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
+        uid: >-
+          azure-arm-compute.VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
+  - uid: azure-arm-compute.ApiEntityReference
+    spec.typeScript:
+      - name: ApiEntityReference
+        fullName: ApiEntityReference
+        uid: azure-arm-compute.ApiEntityReference

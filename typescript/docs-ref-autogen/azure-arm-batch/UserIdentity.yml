@@ -24,7 +24,7 @@ items:
       content: 'autoUser?: AutoUserSpecification'
       return:
         type:
-          - '@azure-arm-batch.AutoUserSpecification'
+          - azure-arm-batch.AutoUserSpecification
   - uid: azure-arm-batch.UserIdentity.userName
     name: userName
     fullName: userName
@@ -39,3 +39,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-batch.AutoUserSpecification
+    spec.typeScript:
+      - name: AutoUserSpecification
+        fullName: AutoUserSpecification
+        uid: azure-arm-batch.AutoUserSpecification

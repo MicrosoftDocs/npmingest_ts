@@ -13,7 +13,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.Resource'
+      name: azure-arm-network.Resource
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationGatewayFirewallRuleSet.provisioningState
     name: provisioningState
@@ -41,7 +41,7 @@ items:
       content: 'ruleGroups: ApplicationGatewayFirewallRuleGroup[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayFirewallRuleGroup[]'
+          - 'azure-arm-network.ApplicationGatewayFirewallRuleGroup[]'
   - uid: azure-arm-network.ApplicationGatewayFirewallRuleSet.ruleSetType
     name: ruleSetType
     fullName: ruleSetType
@@ -68,3 +68,16 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network.Resource
+  - uid: 'azure-arm-network.ApplicationGatewayFirewallRuleGroup[]'
+    spec.typeScript:
+      - name: ApplicationGatewayFirewallRuleGroup
+        fullName: ApplicationGatewayFirewallRuleGroup
+        uid: azure-arm-network.ApplicationGatewayFirewallRuleGroup
+      - name: '[]'
+        fullName: '[]'

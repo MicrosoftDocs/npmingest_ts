@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-cdn.Resource'
+      name: azure-arm-cdn.Resource
     package: azure-arm-cdn
   - uid: azure-arm-cdn.TrackedResource.location
     name: location
@@ -40,3 +40,9 @@ items:
       return:
         type:
           - function
+references:
+  - uid: azure-arm-cdn.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-cdn.Resource

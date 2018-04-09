@@ -69,7 +69,7 @@ items:
       content: 'name?: VirtualNetworkUsageName'
       return:
         type:
-          - '@azure-arm-network.VirtualNetworkUsageName'
+          - azure-arm-network.VirtualNetworkUsageName
   - uid: azure-arm-network.VirtualNetworkUsage.unit
     name: unit
     fullName: unit
@@ -84,3 +84,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.VirtualNetworkUsageName
+    spec.typeScript:
+      - name: VirtualNetworkUsageName
+        fullName: VirtualNetworkUsageName
+        uid: azure-arm-network.VirtualNetworkUsageName

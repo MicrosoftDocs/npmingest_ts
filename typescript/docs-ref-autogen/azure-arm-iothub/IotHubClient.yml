@@ -116,7 +116,7 @@ items:
       content: 'iotHubResource: IotHubResource'
       return:
         type:
-          - '@azure-arm-iothub.IotHubResource'
+          - azure-arm-iothub.IotHubResource
   - uid: azure-arm-iothub.IotHubClient.longRunningOperationRetryTimeout
     name: longRunningOperationRetryTimeout
     fullName: longRunningOperationRetryTimeout
@@ -142,7 +142,7 @@ items:
       content: 'operations: Operations'
       return:
         type:
-          - '@azure-arm-iothub.Operations'
+          - azure-arm-iothub.Operations
   - uid: azure-arm-iothub.IotHubClient.subscriptionId
     name: subscriptionId
     fullName: subscriptionId
@@ -156,3 +156,14 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-iothub.IotHubResource
+    spec.typeScript:
+      - name: IotHubResource
+        fullName: IotHubResource
+        uid: azure-arm-iothub.IotHubResource
+  - uid: azure-arm-iothub.Operations
+    spec.typeScript:
+      - name: Operations
+        fullName: Operations
+        uid: azure-arm-iothub.Operations

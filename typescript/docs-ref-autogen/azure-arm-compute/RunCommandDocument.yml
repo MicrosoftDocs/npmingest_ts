@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.RunCommandDocumentBase'
+      name: azure-arm-compute.RunCommandDocumentBase
     package: azure-arm-compute
   - uid: azure-arm-compute.RunCommandDocument.parameters
     name: parameters
@@ -26,7 +26,7 @@ items:
       content: 'parameters?: RunCommandParameterDefinition[]'
       return:
         type:
-          - '@azure-arm-compute.RunCommandParameterDefinition[]'
+          - 'azure-arm-compute.RunCommandParameterDefinition[]'
   - uid: azure-arm-compute.RunCommandDocument.script
     name: script
     fullName: script
@@ -40,3 +40,16 @@ items:
       return:
         type:
           - 'string[]'
+references:
+  - uid: azure-arm-compute.RunCommandDocumentBase
+    spec.typeScript:
+      - name: RunCommandDocumentBase
+        fullName: RunCommandDocumentBase
+        uid: azure-arm-compute.RunCommandDocumentBase
+  - uid: 'azure-arm-compute.RunCommandParameterDefinition[]'
+    spec.typeScript:
+      - name: RunCommandParameterDefinition
+        fullName: RunCommandParameterDefinition
+        uid: azure-arm-compute.RunCommandParameterDefinition
+      - name: '[]'
+        fullName: '[]'

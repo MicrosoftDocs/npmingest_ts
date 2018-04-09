@@ -16,7 +16,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.IPConfiguration.etag
     name: etag
@@ -101,7 +101,7 @@ items:
       content: 'publicIPAddress?: PublicIPAddress'
       return:
         type:
-          - '@azure-arm-network.PublicIPAddress'
+          - azure-arm-network.PublicIPAddress
   - uid: azure-arm-network.IPConfiguration.subnet
     name: subnet
     fullName: subnet
@@ -115,4 +115,20 @@ items:
       content: 'subnet?: Subnet'
       return:
         type:
-          - '@azure-arm-network.Subnet'
+          - azure-arm-network.Subnet
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: azure-arm-network.PublicIPAddress
+    spec.typeScript:
+      - name: PublicIPAddress
+        fullName: PublicIPAddress
+        uid: azure-arm-network.PublicIPAddress
+  - uid: azure-arm-network.Subnet
+    spec.typeScript:
+      - name: Subnet
+        fullName: Subnet
+        uid: azure-arm-network.Subnet

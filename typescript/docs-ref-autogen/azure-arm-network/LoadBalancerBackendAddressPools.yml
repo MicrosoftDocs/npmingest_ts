@@ -58,7 +58,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.BackendAddressPool>
+          - Promise<azure-arm-network.BackendAddressPool>
   - uid: azure-arm-network.LoadBalancerBackendAddressPools.get_2
     name: get
     children: []
@@ -90,11 +90,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.BackendAddressPool>
+            - ServiceCallback<azure-arm-network.BackendAddressPool>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.BackendAddressPool>
+          - Promise<azure-arm-network.BackendAddressPool>
   - uid: azure-arm-network.LoadBalancerBackendAddressPools.get_1
     name: get
     children: []
@@ -122,11 +122,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.BackendAddressPool>
+            - ServiceCallback<azure-arm-network.BackendAddressPool>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.BackendAddressPool>
+          - Promise<azure-arm-network.BackendAddressPool>
   - uid: >-
       azure-arm-network.LoadBalancerBackendAddressPools.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
@@ -163,7 +163,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BackendAddressPool>>
+          - Promise<BackendAddressPool!@>>
   - uid: azure-arm-network.LoadBalancerBackendAddressPools.list
     name: list
     children: []
@@ -193,7 +193,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerBackendAddressPoolListResult>
+          - Promise<azure-arm-network.LoadBalancerBackendAddressPoolListResult>
   - uid: azure-arm-network.LoadBalancerBackendAddressPools.list_1
     name: list
     children: []
@@ -217,11 +217,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.LoadBalancerBackendAddressPoolListResult>
+              ServiceCallback<azure-arm-network.LoadBalancerBackendAddressPoolListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerBackendAddressPoolListResult>
+          - Promise<azure-arm-network.LoadBalancerBackendAddressPoolListResult>
   - uid: azure-arm-network.LoadBalancerBackendAddressPools.list_2
     name: list
     children: []
@@ -250,11 +250,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.LoadBalancerBackendAddressPoolListResult>
+              ServiceCallback<azure-arm-network.LoadBalancerBackendAddressPoolListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerBackendAddressPoolListResult>
+          - Promise<azure-arm-network.LoadBalancerBackendAddressPoolListResult>
   - uid: azure-arm-network.LoadBalancerBackendAddressPools.listNext
     name: listNext
     children: []
@@ -278,7 +278,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerBackendAddressPoolListResult>
+          - Promise<azure-arm-network.LoadBalancerBackendAddressPoolListResult>
   - uid: azure-arm-network.LoadBalancerBackendAddressPools.listNext_1
     name: listNext
     children: []
@@ -298,11 +298,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.LoadBalancerBackendAddressPoolListResult>
+              ServiceCallback<azure-arm-network.LoadBalancerBackendAddressPoolListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerBackendAddressPoolListResult>
+          - Promise<azure-arm-network.LoadBalancerBackendAddressPoolListResult>
   - uid: azure-arm-network.LoadBalancerBackendAddressPools.listNext_2
     name: listNext
     children: []
@@ -326,11 +326,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.LoadBalancerBackendAddressPoolListResult>
+              ServiceCallback<azure-arm-network.LoadBalancerBackendAddressPoolListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerBackendAddressPoolListResult>
+          - Promise<azure-arm-network.LoadBalancerBackendAddressPoolListResult>
   - uid: >-
       azure-arm-network.LoadBalancerBackendAddressPools.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
@@ -357,7 +357,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerBackendAddressPoolListResult>>
+          - Promise<LoadBalancerBackendAddressPoolListResult!@>>
   - uid: >-
       azure-arm-network.LoadBalancerBackendAddressPools.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -388,4 +388,42 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerBackendAddressPoolListResult>>
+          - Promise<LoadBalancerBackendAddressPoolListResult!@>>
+references:
+  - uid: Promise<azure-arm-network.BackendAddressPool>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: BackendAddressPool
+        fullName: BackendAddressPool
+        uid: azure-arm-network.BackendAddressPool
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.BackendAddressPool>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: BackendAddressPool
+        fullName: BackendAddressPool
+        uid: azure-arm-network.BackendAddressPool
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.LoadBalancerBackendAddressPoolListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: LoadBalancerBackendAddressPoolListResult
+        fullName: LoadBalancerBackendAddressPoolListResult
+        uid: azure-arm-network.LoadBalancerBackendAddressPoolListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network.LoadBalancerBackendAddressPoolListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: LoadBalancerBackendAddressPoolListResult
+        fullName: LoadBalancerBackendAddressPoolListResult
+        uid: azure-arm-network.LoadBalancerBackendAddressPoolListResult
+      - name: '>'
+        fullName: '>'

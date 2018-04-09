@@ -10,7 +10,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.LogAnalyticsInputBase'
+      name: azure-arm-compute.LogAnalyticsInputBase
     package: azure-arm-compute
   - uid: azure-arm-compute.RequestRateByIntervalInput.intervalLength
     name: intervalLength
@@ -25,3 +25,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-compute.LogAnalyticsInputBase
+    spec.typeScript:
+      - name: LogAnalyticsInputBase
+        fullName: LogAnalyticsInputBase
+        uid: azure-arm-compute.LogAnalyticsInputBase

@@ -14,7 +14,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-batch.ProxyResource'
+      name: azure-arm-batch.ProxyResource
     package: azure-arm-batch
   - uid: azure-arm-batch.CertificateCreateOrUpdateParameters.data
     name: data
@@ -85,3 +85,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-batch.ProxyResource
+    spec.typeScript:
+      - name: ProxyResource
+        fullName: ProxyResource
+        uid: azure-arm-batch.ProxyResource

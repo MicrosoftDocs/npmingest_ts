@@ -13,7 +13,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.Resource'
+      name: azure-arm-compute.Resource
     package: azure-arm-compute
   - uid: azure-arm-compute.RollingUpgradeStatusInfo.error
     name: error
@@ -28,7 +28,7 @@ items:
       content: 'error?: ApiError'
       return:
         type:
-          - '@azure-arm-compute.ApiError'
+          - azure-arm-compute.ApiError
   - uid: azure-arm-compute.RollingUpgradeStatusInfo.policy
     name: policy
     fullName: policy
@@ -42,7 +42,7 @@ items:
       content: 'policy?: RollingUpgradePolicy'
       return:
         type:
-          - '@azure-arm-compute.RollingUpgradePolicy'
+          - azure-arm-compute.RollingUpgradePolicy
   - uid: azure-arm-compute.RollingUpgradeStatusInfo.progress
     name: progress
     fullName: progress
@@ -56,7 +56,7 @@ items:
       content: 'progress?: RollingUpgradeProgressInfo'
       return:
         type:
-          - '@azure-arm-compute.RollingUpgradeProgressInfo'
+          - azure-arm-compute.RollingUpgradeProgressInfo
   - uid: azure-arm-compute.RollingUpgradeStatusInfo.runningStatus
     name: runningStatus
     fullName: runningStatus
@@ -70,4 +70,30 @@ items:
       content: 'runningStatus?: RollingUpgradeRunningStatus'
       return:
         type:
-          - '@azure-arm-compute.RollingUpgradeRunningStatus'
+          - azure-arm-compute.RollingUpgradeRunningStatus
+references:
+  - uid: azure-arm-compute.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-compute.Resource
+  - uid: azure-arm-compute.ApiError
+    spec.typeScript:
+      - name: ApiError
+        fullName: ApiError
+        uid: azure-arm-compute.ApiError
+  - uid: azure-arm-compute.RollingUpgradePolicy
+    spec.typeScript:
+      - name: RollingUpgradePolicy
+        fullName: RollingUpgradePolicy
+        uid: azure-arm-compute.RollingUpgradePolicy
+  - uid: azure-arm-compute.RollingUpgradeProgressInfo
+    spec.typeScript:
+      - name: RollingUpgradeProgressInfo
+        fullName: RollingUpgradeProgressInfo
+        uid: azure-arm-compute.RollingUpgradeProgressInfo
+  - uid: azure-arm-compute.RollingUpgradeRunningStatus
+    spec.typeScript:
+      - name: RollingUpgradeRunningStatus
+        fullName: RollingUpgradeRunningStatus
+        uid: azure-arm-compute.RollingUpgradeRunningStatus

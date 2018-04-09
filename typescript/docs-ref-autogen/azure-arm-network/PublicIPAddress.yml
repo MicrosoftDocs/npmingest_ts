@@ -21,7 +21,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.Resource'
+      name: azure-arm-network.Resource
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPAddress.dnsSettings
     name: dnsSettings
@@ -36,7 +36,7 @@ items:
       content: 'dnsSettings?: PublicIPAddressDnsSettings'
       return:
         type:
-          - '@azure-arm-network.PublicIPAddressDnsSettings'
+          - azure-arm-network.PublicIPAddressDnsSettings
   - uid: azure-arm-network.PublicIPAddress.etag
     name: etag
     fullName: etag
@@ -92,7 +92,7 @@ items:
       content: 'ipConfiguration?: IPConfiguration'
       return:
         type:
-          - '@azure-arm-network.IPConfiguration'
+          - azure-arm-network.IPConfiguration
   - uid: azure-arm-network.PublicIPAddress.ipTags
     name: ipTags
     fullName: ipTags
@@ -106,7 +106,7 @@ items:
       content: 'ipTags?: IpTag[]'
       return:
         type:
-          - '@azure-arm-network.IpTag[]'
+          - 'azure-arm-network.IpTag[]'
   - uid: azure-arm-network.PublicIPAddress.provisioningState
     name: provisioningState
     fullName: provisioningState
@@ -176,7 +176,7 @@ items:
       content: 'sku?: PublicIPAddressSku'
       return:
         type:
-          - '@azure-arm-network.PublicIPAddressSku'
+          - azure-arm-network.PublicIPAddressSku
   - uid: azure-arm-network.PublicIPAddress.zones
     name: zones
     fullName: zones
@@ -191,3 +191,31 @@ items:
       return:
         type:
           - 'string[]'
+references:
+  - uid: azure-arm-network.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network.Resource
+  - uid: azure-arm-network.PublicIPAddressDnsSettings
+    spec.typeScript:
+      - name: PublicIPAddressDnsSettings
+        fullName: PublicIPAddressDnsSettings
+        uid: azure-arm-network.PublicIPAddressDnsSettings
+  - uid: azure-arm-network.IPConfiguration
+    spec.typeScript:
+      - name: IPConfiguration
+        fullName: IPConfiguration
+        uid: azure-arm-network.IPConfiguration
+  - uid: 'azure-arm-network.IpTag[]'
+    spec.typeScript:
+      - name: IpTag
+        fullName: IpTag
+        uid: azure-arm-network.IpTag
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network.PublicIPAddressSku
+    spec.typeScript:
+      - name: PublicIPAddressSku
+        fullName: PublicIPAddressSku
+        uid: azure-arm-network.PublicIPAddressSku

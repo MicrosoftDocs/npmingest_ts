@@ -16,7 +16,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.UpdateResource'
+      name: azure-arm-compute.UpdateResource
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetUpdate.identity
     name: identity
@@ -31,7 +31,7 @@ items:
       content: 'identity?: VirtualMachineScaleSetIdentity'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineScaleSetIdentity'
+          - azure-arm-compute.VirtualMachineScaleSetIdentity
   - uid: azure-arm-compute.VirtualMachineScaleSetUpdate.overprovision
     name: overprovision
     fullName: overprovision
@@ -59,7 +59,7 @@ items:
       content: 'plan?: Plan'
       return:
         type:
-          - '@azure-arm-compute.Plan'
+          - azure-arm-compute.Plan
   - uid: azure-arm-compute.VirtualMachineScaleSetUpdate.singlePlacementGroup
     name: singlePlacementGroup
     fullName: singlePlacementGroup
@@ -87,7 +87,7 @@ items:
       content: 'sku?: Sku'
       return:
         type:
-          - '@azure-arm-compute.Sku'
+          - azure-arm-compute.Sku
   - uid: azure-arm-compute.VirtualMachineScaleSetUpdate.upgradePolicy
     name: upgradePolicy
     fullName: upgradePolicy
@@ -101,7 +101,7 @@ items:
       content: 'upgradePolicy?: UpgradePolicy'
       return:
         type:
-          - '@azure-arm-compute.UpgradePolicy'
+          - azure-arm-compute.UpgradePolicy
   - uid: azure-arm-compute.VirtualMachineScaleSetUpdate.virtualMachineProfile
     name: virtualMachineProfile
     fullName: virtualMachineProfile
@@ -115,4 +115,35 @@ items:
       content: 'virtualMachineProfile?: VirtualMachineScaleSetUpdateVMProfile'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineScaleSetUpdateVMProfile'
+          - azure-arm-compute.VirtualMachineScaleSetUpdateVMProfile
+references:
+  - uid: azure-arm-compute.UpdateResource
+    spec.typeScript:
+      - name: UpdateResource
+        fullName: UpdateResource
+        uid: azure-arm-compute.UpdateResource
+  - uid: azure-arm-compute.VirtualMachineScaleSetIdentity
+    spec.typeScript:
+      - name: VirtualMachineScaleSetIdentity
+        fullName: VirtualMachineScaleSetIdentity
+        uid: azure-arm-compute.VirtualMachineScaleSetIdentity
+  - uid: azure-arm-compute.Plan
+    spec.typeScript:
+      - name: Plan
+        fullName: Plan
+        uid: azure-arm-compute.Plan
+  - uid: azure-arm-compute.Sku
+    spec.typeScript:
+      - name: Sku
+        fullName: Sku
+        uid: azure-arm-compute.Sku
+  - uid: azure-arm-compute.UpgradePolicy
+    spec.typeScript:
+      - name: UpgradePolicy
+        fullName: UpgradePolicy
+        uid: azure-arm-compute.UpgradePolicy
+  - uid: azure-arm-compute.VirtualMachineScaleSetUpdateVMProfile
+    spec.typeScript:
+      - name: VirtualMachineScaleSetUpdateVMProfile
+        fullName: VirtualMachineScaleSetUpdateVMProfile
+        uid: azure-arm-compute.VirtualMachineScaleSetUpdateVMProfile

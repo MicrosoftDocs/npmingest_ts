@@ -109,7 +109,7 @@ items:
       content: 'applicationGateways: ApplicationGateways'
       return:
         type:
-          - '@azure-arm-network.ApplicationGateways'
+          - azure-arm-network.ApplicationGateways
   - uid: azure-arm-network.NetworkManagementClient.applicationSecurityGroups
     name: applicationSecurityGroups
     fullName: applicationSecurityGroups
@@ -122,7 +122,7 @@ items:
       content: 'applicationSecurityGroups: ApplicationSecurityGroups'
       return:
         type:
-          - '@azure-arm-network.ApplicationSecurityGroups'
+          - azure-arm-network.ApplicationSecurityGroups
   - uid: azure-arm-network.NetworkManagementClient.availableEndpointServices
     name: availableEndpointServices
     fullName: availableEndpointServices
@@ -135,7 +135,7 @@ items:
       content: 'availableEndpointServices: AvailableEndpointServices'
       return:
         type:
-          - '@azure-arm-network.AvailableEndpointServices'
+          - azure-arm-network.AvailableEndpointServices
   - uid: azure-arm-network.NetworkManagementClient.bgpServiceCommunities
     name: bgpServiceCommunities
     fullName: bgpServiceCommunities
@@ -148,7 +148,7 @@ items:
       content: 'bgpServiceCommunities: BgpServiceCommunities'
       return:
         type:
-          - '@azure-arm-network.BgpServiceCommunities'
+          - azure-arm-network.BgpServiceCommunities
   - uid: azure-arm-network.NetworkManagementClient.checkDnsNameAvailability
     name: checkDnsNameAvailability
     children: []
@@ -185,7 +185,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.DnsNameAvailabilityResult>
+          - Promise<azure-arm-network.DnsNameAvailabilityResult>
   - uid: azure-arm-network.NetworkManagementClient.checkDnsNameAvailability_1
     name: checkDnsNameAvailability
     children: []
@@ -212,11 +212,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.DnsNameAvailabilityResult>
+            - ServiceCallback<azure-arm-network.DnsNameAvailabilityResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.DnsNameAvailabilityResult>
+          - Promise<azure-arm-network.DnsNameAvailabilityResult>
   - uid: azure-arm-network.NetworkManagementClient.checkDnsNameAvailability_2
     name: checkDnsNameAvailability
     children: []
@@ -248,11 +248,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.DnsNameAvailabilityResult>
+            - ServiceCallback<azure-arm-network.DnsNameAvailabilityResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.DnsNameAvailabilityResult>
+          - Promise<azure-arm-network.DnsNameAvailabilityResult>
   - uid: >-
       azure-arm-network.NetworkManagementClient.checkDnsNameAvailabilityWithHttpOperationResponse
     name: checkDnsNameAvailabilityWithHttpOperationResponse
@@ -290,7 +290,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<DnsNameAvailabilityResult>>
+          - Promise<DnsNameAvailabilityResult!@>>
   - uid: azure-arm-network.NetworkManagementClient.connectionMonitors
     name: connectionMonitors
     fullName: connectionMonitors
@@ -303,7 +303,7 @@ items:
       content: 'connectionMonitors: ConnectionMonitors'
       return:
         type:
-          - '@azure-arm-network.ConnectionMonitors'
+          - azure-arm-network.ConnectionMonitors
   - uid: azure-arm-network.NetworkManagementClient.credentials
     name: credentials
     fullName: credentials
@@ -329,7 +329,7 @@ items:
       content: 'ddosProtectionPlans: DdosProtectionPlans'
       return:
         type:
-          - '@azure-arm-network.DdosProtectionPlans'
+          - azure-arm-network.DdosProtectionPlans
   - uid: azure-arm-network.NetworkManagementClient.defaultSecurityRules
     name: defaultSecurityRules
     fullName: defaultSecurityRules
@@ -342,7 +342,7 @@ items:
       content: 'defaultSecurityRules: DefaultSecurityRules'
       return:
         type:
-          - '@azure-arm-network.DefaultSecurityRules'
+          - azure-arm-network.DefaultSecurityRules
   - uid: >-
       azure-arm-network.NetworkManagementClient.expressRouteCircuitAuthorizations
     name: expressRouteCircuitAuthorizations
@@ -356,7 +356,7 @@ items:
       content: 'expressRouteCircuitAuthorizations: ExpressRouteCircuitAuthorizations'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCircuitAuthorizations'
+          - azure-arm-network.ExpressRouteCircuitAuthorizations
   - uid: azure-arm-network.NetworkManagementClient.expressRouteCircuitConnections
     name: expressRouteCircuitConnections
     fullName: expressRouteCircuitConnections
@@ -369,7 +369,7 @@ items:
       content: 'expressRouteCircuitConnections: ExpressRouteCircuitConnections'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCircuitConnections'
+          - azure-arm-network.ExpressRouteCircuitConnections
   - uid: azure-arm-network.NetworkManagementClient.expressRouteCircuitPeerings
     name: expressRouteCircuitPeerings
     fullName: expressRouteCircuitPeerings
@@ -382,7 +382,7 @@ items:
       content: 'expressRouteCircuitPeerings: ExpressRouteCircuitPeerings'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCircuitPeerings'
+          - azure-arm-network.ExpressRouteCircuitPeerings
   - uid: azure-arm-network.NetworkManagementClient.expressRouteCircuits
     name: expressRouteCircuits
     fullName: expressRouteCircuits
@@ -395,7 +395,7 @@ items:
       content: 'expressRouteCircuits: ExpressRouteCircuits'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCircuits'
+          - azure-arm-network.ExpressRouteCircuits
   - uid: >-
       azure-arm-network.NetworkManagementClient.expressRouteCrossConnectionPeerings
     name: expressRouteCrossConnectionPeerings
@@ -409,7 +409,7 @@ items:
       content: 'expressRouteCrossConnectionPeerings: ExpressRouteCrossConnectionPeerings'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCrossConnectionPeerings'
+          - azure-arm-network.ExpressRouteCrossConnectionPeerings
   - uid: azure-arm-network.NetworkManagementClient.expressRouteCrossConnections
     name: expressRouteCrossConnections
     fullName: expressRouteCrossConnections
@@ -422,7 +422,7 @@ items:
       content: 'expressRouteCrossConnections: ExpressRouteCrossConnections'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteCrossConnections'
+          - azure-arm-network.ExpressRouteCrossConnections
   - uid: azure-arm-network.NetworkManagementClient.expressRouteServiceProviders
     name: expressRouteServiceProviders
     fullName: expressRouteServiceProviders
@@ -435,7 +435,7 @@ items:
       content: 'expressRouteServiceProviders: ExpressRouteServiceProviders'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteServiceProviders'
+          - azure-arm-network.ExpressRouteServiceProviders
   - uid: azure-arm-network.NetworkManagementClient.generateClientRequestId
     name: generateClientRequestId
     fullName: generateClientRequestId
@@ -461,7 +461,7 @@ items:
       content: 'inboundNatRules: InboundNatRules'
       return:
         type:
-          - '@azure-arm-network.InboundNatRules'
+          - azure-arm-network.InboundNatRules
   - uid: azure-arm-network.NetworkManagementClient.loadBalancerBackendAddressPools
     name: loadBalancerBackendAddressPools
     fullName: loadBalancerBackendAddressPools
@@ -474,7 +474,7 @@ items:
       content: 'loadBalancerBackendAddressPools: LoadBalancerBackendAddressPools'
       return:
         type:
-          - '@azure-arm-network.LoadBalancerBackendAddressPools'
+          - azure-arm-network.LoadBalancerBackendAddressPools
   - uid: >-
       azure-arm-network.NetworkManagementClient.loadBalancerFrontendIPConfigurations
     name: loadBalancerFrontendIPConfigurations
@@ -490,7 +490,7 @@ items:
         LoadBalancerFrontendIPConfigurations
       return:
         type:
-          - '@azure-arm-network.LoadBalancerFrontendIPConfigurations'
+          - azure-arm-network.LoadBalancerFrontendIPConfigurations
   - uid: azure-arm-network.NetworkManagementClient.loadBalancerLoadBalancingRules
     name: loadBalancerLoadBalancingRules
     fullName: loadBalancerLoadBalancingRules
@@ -503,7 +503,7 @@ items:
       content: 'loadBalancerLoadBalancingRules: LoadBalancerLoadBalancingRules'
       return:
         type:
-          - '@azure-arm-network.LoadBalancerLoadBalancingRules'
+          - azure-arm-network.LoadBalancerLoadBalancingRules
   - uid: azure-arm-network.NetworkManagementClient.loadBalancerNetworkInterfaces
     name: loadBalancerNetworkInterfaces
     fullName: loadBalancerNetworkInterfaces
@@ -516,7 +516,7 @@ items:
       content: 'loadBalancerNetworkInterfaces: LoadBalancerNetworkInterfaces'
       return:
         type:
-          - '@azure-arm-network.LoadBalancerNetworkInterfaces'
+          - azure-arm-network.LoadBalancerNetworkInterfaces
   - uid: azure-arm-network.NetworkManagementClient.loadBalancerProbes
     name: loadBalancerProbes
     fullName: loadBalancerProbes
@@ -529,7 +529,7 @@ items:
       content: 'loadBalancerProbes: LoadBalancerProbes'
       return:
         type:
-          - '@azure-arm-network.LoadBalancerProbes'
+          - azure-arm-network.LoadBalancerProbes
   - uid: azure-arm-network.NetworkManagementClient.loadBalancers
     name: loadBalancers
     fullName: loadBalancers
@@ -542,7 +542,7 @@ items:
       content: 'loadBalancers: LoadBalancers'
       return:
         type:
-          - '@azure-arm-network.LoadBalancers'
+          - azure-arm-network.LoadBalancers
   - uid: azure-arm-network.NetworkManagementClient.localNetworkGateways
     name: localNetworkGateways
     fullName: localNetworkGateways
@@ -555,7 +555,7 @@ items:
       content: 'localNetworkGateways: LocalNetworkGateways'
       return:
         type:
-          - '@azure-arm-network.LocalNetworkGateways'
+          - azure-arm-network.LocalNetworkGateways
   - uid: azure-arm-network.NetworkManagementClient.longRunningOperationRetryTimeout
     name: longRunningOperationRetryTimeout
     fullName: longRunningOperationRetryTimeout
@@ -581,7 +581,7 @@ items:
       content: 'networkInterfaceIPConfigurations: NetworkInterfaceIPConfigurations'
       return:
         type:
-          - '@azure-arm-network.NetworkInterfaceIPConfigurations'
+          - azure-arm-network.NetworkInterfaceIPConfigurations
   - uid: azure-arm-network.NetworkManagementClient.networkInterfaceLoadBalancers
     name: networkInterfaceLoadBalancers
     fullName: networkInterfaceLoadBalancers
@@ -594,7 +594,7 @@ items:
       content: 'networkInterfaceLoadBalancers: NetworkInterfaceLoadBalancers'
       return:
         type:
-          - '@azure-arm-network.NetworkInterfaceLoadBalancers'
+          - azure-arm-network.NetworkInterfaceLoadBalancers
   - uid: azure-arm-network.NetworkManagementClient.networkInterfaces
     name: networkInterfaces
     fullName: networkInterfaces
@@ -607,7 +607,7 @@ items:
       content: 'networkInterfaces: NetworkInterfaces'
       return:
         type:
-          - '@azure-arm-network.NetworkInterfaces'
+          - azure-arm-network.NetworkInterfaces
   - uid: azure-arm-network.NetworkManagementClient.constructor
     name: NetworkManagementClient
     children: []
@@ -655,7 +655,7 @@ items:
       content: 'networkSecurityGroups: NetworkSecurityGroups'
       return:
         type:
-          - '@azure-arm-network.NetworkSecurityGroups'
+          - azure-arm-network.NetworkSecurityGroups
   - uid: azure-arm-network.NetworkManagementClient.networkWatchers
     name: networkWatchers
     fullName: networkWatchers
@@ -668,7 +668,7 @@ items:
       content: 'networkWatchers: NetworkWatchers'
       return:
         type:
-          - '@azure-arm-network.NetworkWatchers'
+          - azure-arm-network.NetworkWatchers
   - uid: azure-arm-network.NetworkManagementClient.operations
     name: operations
     fullName: operations
@@ -681,7 +681,7 @@ items:
       content: 'operations: Operations'
       return:
         type:
-          - '@azure-arm-network.Operations'
+          - azure-arm-network.Operations
   - uid: azure-arm-network.NetworkManagementClient.packetCaptures
     name: packetCaptures
     fullName: packetCaptures
@@ -694,7 +694,7 @@ items:
       content: 'packetCaptures: PacketCaptures'
       return:
         type:
-          - '@azure-arm-network.PacketCaptures'
+          - azure-arm-network.PacketCaptures
   - uid: azure-arm-network.NetworkManagementClient.publicIPAddresses
     name: publicIPAddresses
     fullName: publicIPAddresses
@@ -707,7 +707,7 @@ items:
       content: 'publicIPAddresses: PublicIPAddresses'
       return:
         type:
-          - '@azure-arm-network.PublicIPAddresses'
+          - azure-arm-network.PublicIPAddresses
   - uid: azure-arm-network.NetworkManagementClient.routeFilterRules
     name: routeFilterRules
     fullName: routeFilterRules
@@ -720,7 +720,7 @@ items:
       content: 'routeFilterRules: RouteFilterRules'
       return:
         type:
-          - '@azure-arm-network.RouteFilterRules'
+          - azure-arm-network.RouteFilterRules
   - uid: azure-arm-network.NetworkManagementClient.routeFilters
     name: routeFilters
     fullName: routeFilters
@@ -733,7 +733,7 @@ items:
       content: 'routeFilters: RouteFilters'
       return:
         type:
-          - '@azure-arm-network.RouteFilters'
+          - azure-arm-network.RouteFilters
   - uid: azure-arm-network.NetworkManagementClient.routes
     name: routes
     fullName: routes
@@ -746,7 +746,7 @@ items:
       content: 'routes: Routes'
       return:
         type:
-          - '@azure-arm-network.Routes'
+          - azure-arm-network.Routes
   - uid: azure-arm-network.NetworkManagementClient.routeTables
     name: routeTables
     fullName: routeTables
@@ -759,7 +759,7 @@ items:
       content: 'routeTables: RouteTables'
       return:
         type:
-          - '@azure-arm-network.RouteTables'
+          - azure-arm-network.RouteTables
   - uid: azure-arm-network.NetworkManagementClient.securityRules
     name: securityRules
     fullName: securityRules
@@ -772,7 +772,7 @@ items:
       content: 'securityRules: SecurityRules'
       return:
         type:
-          - '@azure-arm-network.SecurityRules'
+          - azure-arm-network.SecurityRules
   - uid: azure-arm-network.NetworkManagementClient.subnets
     name: subnets
     fullName: subnets
@@ -785,7 +785,7 @@ items:
       content: 'subnets: Subnets'
       return:
         type:
-          - '@azure-arm-network.Subnets'
+          - azure-arm-network.Subnets
   - uid: azure-arm-network.NetworkManagementClient.subscriptionId
     name: subscriptionId
     fullName: subscriptionId
@@ -811,7 +811,7 @@ items:
       content: 'usages: Usages'
       return:
         type:
-          - '@azure-arm-network.Usages'
+          - azure-arm-network.Usages
   - uid: azure-arm-network.NetworkManagementClient.virtualNetworkGatewayConnections
     name: virtualNetworkGatewayConnections
     fullName: virtualNetworkGatewayConnections
@@ -824,7 +824,7 @@ items:
       content: 'virtualNetworkGatewayConnections: VirtualNetworkGatewayConnections'
       return:
         type:
-          - '@azure-arm-network.VirtualNetworkGatewayConnections'
+          - azure-arm-network.VirtualNetworkGatewayConnections
   - uid: azure-arm-network.NetworkManagementClient.virtualNetworkGateways
     name: virtualNetworkGateways
     fullName: virtualNetworkGateways
@@ -837,7 +837,7 @@ items:
       content: 'virtualNetworkGateways: VirtualNetworkGateways'
       return:
         type:
-          - '@azure-arm-network.VirtualNetworkGateways'
+          - azure-arm-network.VirtualNetworkGateways
   - uid: azure-arm-network.NetworkManagementClient.virtualNetworkPeerings
     name: virtualNetworkPeerings
     fullName: virtualNetworkPeerings
@@ -850,7 +850,7 @@ items:
       content: 'virtualNetworkPeerings: VirtualNetworkPeerings'
       return:
         type:
-          - '@azure-arm-network.VirtualNetworkPeerings'
+          - azure-arm-network.VirtualNetworkPeerings
   - uid: azure-arm-network.NetworkManagementClient.virtualNetworks
     name: virtualNetworks
     fullName: virtualNetworks
@@ -863,4 +863,228 @@ items:
       content: 'virtualNetworks: VirtualNetworks'
       return:
         type:
-          - '@azure-arm-network.VirtualNetworks'
+          - azure-arm-network.VirtualNetworks
+references:
+  - uid: azure-arm-network.ApplicationGateways
+    spec.typeScript:
+      - name: ApplicationGateways
+        fullName: ApplicationGateways
+        uid: azure-arm-network.ApplicationGateways
+  - uid: azure-arm-network.ApplicationSecurityGroups
+    spec.typeScript:
+      - name: ApplicationSecurityGroups
+        fullName: ApplicationSecurityGroups
+        uid: azure-arm-network.ApplicationSecurityGroups
+  - uid: azure-arm-network.AvailableEndpointServices
+    spec.typeScript:
+      - name: AvailableEndpointServices
+        fullName: AvailableEndpointServices
+        uid: azure-arm-network.AvailableEndpointServices
+  - uid: azure-arm-network.BgpServiceCommunities
+    spec.typeScript:
+      - name: BgpServiceCommunities
+        fullName: BgpServiceCommunities
+        uid: azure-arm-network.BgpServiceCommunities
+  - uid: azure-arm-network.ConnectionMonitors
+    spec.typeScript:
+      - name: ConnectionMonitors
+        fullName: ConnectionMonitors
+        uid: azure-arm-network.ConnectionMonitors
+  - uid: azure-arm-network.DdosProtectionPlans
+    spec.typeScript:
+      - name: DdosProtectionPlans
+        fullName: DdosProtectionPlans
+        uid: azure-arm-network.DdosProtectionPlans
+  - uid: azure-arm-network.DefaultSecurityRules
+    spec.typeScript:
+      - name: DefaultSecurityRules
+        fullName: DefaultSecurityRules
+        uid: azure-arm-network.DefaultSecurityRules
+  - uid: azure-arm-network.ExpressRouteCircuitAuthorizations
+    spec.typeScript:
+      - name: ExpressRouteCircuitAuthorizations
+        fullName: ExpressRouteCircuitAuthorizations
+        uid: azure-arm-network.ExpressRouteCircuitAuthorizations
+  - uid: azure-arm-network.ExpressRouteCircuitConnections
+    spec.typeScript:
+      - name: ExpressRouteCircuitConnections
+        fullName: ExpressRouteCircuitConnections
+        uid: azure-arm-network.ExpressRouteCircuitConnections
+  - uid: azure-arm-network.ExpressRouteCircuitPeerings
+    spec.typeScript:
+      - name: ExpressRouteCircuitPeerings
+        fullName: ExpressRouteCircuitPeerings
+        uid: azure-arm-network.ExpressRouteCircuitPeerings
+  - uid: azure-arm-network.ExpressRouteCircuits
+    spec.typeScript:
+      - name: ExpressRouteCircuits
+        fullName: ExpressRouteCircuits
+        uid: azure-arm-network.ExpressRouteCircuits
+  - uid: azure-arm-network.ExpressRouteCrossConnectionPeerings
+    spec.typeScript:
+      - name: ExpressRouteCrossConnectionPeerings
+        fullName: ExpressRouteCrossConnectionPeerings
+        uid: azure-arm-network.ExpressRouteCrossConnectionPeerings
+  - uid: azure-arm-network.ExpressRouteCrossConnections
+    spec.typeScript:
+      - name: ExpressRouteCrossConnections
+        fullName: ExpressRouteCrossConnections
+        uid: azure-arm-network.ExpressRouteCrossConnections
+  - uid: azure-arm-network.ExpressRouteServiceProviders
+    spec.typeScript:
+      - name: ExpressRouteServiceProviders
+        fullName: ExpressRouteServiceProviders
+        uid: azure-arm-network.ExpressRouteServiceProviders
+  - uid: azure-arm-network.InboundNatRules
+    spec.typeScript:
+      - name: InboundNatRules
+        fullName: InboundNatRules
+        uid: azure-arm-network.InboundNatRules
+  - uid: azure-arm-network.LoadBalancerBackendAddressPools
+    spec.typeScript:
+      - name: LoadBalancerBackendAddressPools
+        fullName: LoadBalancerBackendAddressPools
+        uid: azure-arm-network.LoadBalancerBackendAddressPools
+  - uid: azure-arm-network.LoadBalancerFrontendIPConfigurations
+    spec.typeScript:
+      - name: LoadBalancerFrontendIPConfigurations
+        fullName: LoadBalancerFrontendIPConfigurations
+        uid: azure-arm-network.LoadBalancerFrontendIPConfigurations
+  - uid: azure-arm-network.LoadBalancerLoadBalancingRules
+    spec.typeScript:
+      - name: LoadBalancerLoadBalancingRules
+        fullName: LoadBalancerLoadBalancingRules
+        uid: azure-arm-network.LoadBalancerLoadBalancingRules
+  - uid: azure-arm-network.LoadBalancerNetworkInterfaces
+    spec.typeScript:
+      - name: LoadBalancerNetworkInterfaces
+        fullName: LoadBalancerNetworkInterfaces
+        uid: azure-arm-network.LoadBalancerNetworkInterfaces
+  - uid: azure-arm-network.LoadBalancerProbes
+    spec.typeScript:
+      - name: LoadBalancerProbes
+        fullName: LoadBalancerProbes
+        uid: azure-arm-network.LoadBalancerProbes
+  - uid: azure-arm-network.LoadBalancers
+    spec.typeScript:
+      - name: LoadBalancers
+        fullName: LoadBalancers
+        uid: azure-arm-network.LoadBalancers
+  - uid: azure-arm-network.LocalNetworkGateways
+    spec.typeScript:
+      - name: LocalNetworkGateways
+        fullName: LocalNetworkGateways
+        uid: azure-arm-network.LocalNetworkGateways
+  - uid: azure-arm-network.NetworkInterfaceIPConfigurations
+    spec.typeScript:
+      - name: NetworkInterfaceIPConfigurations
+        fullName: NetworkInterfaceIPConfigurations
+        uid: azure-arm-network.NetworkInterfaceIPConfigurations
+  - uid: azure-arm-network.NetworkInterfaceLoadBalancers
+    spec.typeScript:
+      - name: NetworkInterfaceLoadBalancers
+        fullName: NetworkInterfaceLoadBalancers
+        uid: azure-arm-network.NetworkInterfaceLoadBalancers
+  - uid: azure-arm-network.NetworkInterfaces
+    spec.typeScript:
+      - name: NetworkInterfaces
+        fullName: NetworkInterfaces
+        uid: azure-arm-network.NetworkInterfaces
+  - uid: azure-arm-network.NetworkSecurityGroups
+    spec.typeScript:
+      - name: NetworkSecurityGroups
+        fullName: NetworkSecurityGroups
+        uid: azure-arm-network.NetworkSecurityGroups
+  - uid: azure-arm-network.NetworkWatchers
+    spec.typeScript:
+      - name: NetworkWatchers
+        fullName: NetworkWatchers
+        uid: azure-arm-network.NetworkWatchers
+  - uid: azure-arm-network.Operations
+    spec.typeScript:
+      - name: Operations
+        fullName: Operations
+        uid: azure-arm-network.Operations
+  - uid: azure-arm-network.PacketCaptures
+    spec.typeScript:
+      - name: PacketCaptures
+        fullName: PacketCaptures
+        uid: azure-arm-network.PacketCaptures
+  - uid: azure-arm-network.PublicIPAddresses
+    spec.typeScript:
+      - name: PublicIPAddresses
+        fullName: PublicIPAddresses
+        uid: azure-arm-network.PublicIPAddresses
+  - uid: azure-arm-network.RouteFilterRules
+    spec.typeScript:
+      - name: RouteFilterRules
+        fullName: RouteFilterRules
+        uid: azure-arm-network.RouteFilterRules
+  - uid: azure-arm-network.RouteFilters
+    spec.typeScript:
+      - name: RouteFilters
+        fullName: RouteFilters
+        uid: azure-arm-network.RouteFilters
+  - uid: azure-arm-network.RouteTables
+    spec.typeScript:
+      - name: RouteTables
+        fullName: RouteTables
+        uid: azure-arm-network.RouteTables
+  - uid: azure-arm-network.Routes
+    spec.typeScript:
+      - name: Routes
+        fullName: Routes
+        uid: azure-arm-network.Routes
+  - uid: azure-arm-network.SecurityRules
+    spec.typeScript:
+      - name: SecurityRules
+        fullName: SecurityRules
+        uid: azure-arm-network.SecurityRules
+  - uid: azure-arm-network.Subnets
+    spec.typeScript:
+      - name: Subnets
+        fullName: Subnets
+        uid: azure-arm-network.Subnets
+  - uid: azure-arm-network.Usages
+    spec.typeScript:
+      - name: Usages
+        fullName: Usages
+        uid: azure-arm-network.Usages
+  - uid: azure-arm-network.VirtualNetworkGatewayConnections
+    spec.typeScript:
+      - name: VirtualNetworkGatewayConnections
+        fullName: VirtualNetworkGatewayConnections
+        uid: azure-arm-network.VirtualNetworkGatewayConnections
+  - uid: azure-arm-network.VirtualNetworkGateways
+    spec.typeScript:
+      - name: VirtualNetworkGateways
+        fullName: VirtualNetworkGateways
+        uid: azure-arm-network.VirtualNetworkGateways
+  - uid: azure-arm-network.VirtualNetworkPeerings
+    spec.typeScript:
+      - name: VirtualNetworkPeerings
+        fullName: VirtualNetworkPeerings
+        uid: azure-arm-network.VirtualNetworkPeerings
+  - uid: azure-arm-network.VirtualNetworks
+    spec.typeScript:
+      - name: VirtualNetworks
+        fullName: VirtualNetworks
+        uid: azure-arm-network.VirtualNetworks
+  - uid: Promise<azure-arm-network.DnsNameAvailabilityResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: DnsNameAvailabilityResult
+        fullName: DnsNameAvailabilityResult
+        uid: azure-arm-network.DnsNameAvailabilityResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.DnsNameAvailabilityResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: DnsNameAvailabilityResult
+        fullName: DnsNameAvailabilityResult
+        uid: azure-arm-network.DnsNameAvailabilityResult
+      - name: '>'
+        fullName: '>'

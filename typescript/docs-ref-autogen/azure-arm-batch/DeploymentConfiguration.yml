@@ -24,7 +24,7 @@ items:
       content: 'cloudServiceConfiguration?: CloudServiceConfiguration'
       return:
         type:
-          - '@azure-arm-batch.CloudServiceConfiguration'
+          - azure-arm-batch.CloudServiceConfiguration
   - uid: azure-arm-batch.DeploymentConfiguration.virtualMachineConfiguration
     name: virtualMachineConfiguration
     fullName: virtualMachineConfiguration
@@ -38,4 +38,15 @@ items:
       content: 'virtualMachineConfiguration?: VirtualMachineConfiguration'
       return:
         type:
-          - '@azure-arm-batch.VirtualMachineConfiguration'
+          - azure-arm-batch.VirtualMachineConfiguration
+references:
+  - uid: azure-arm-batch.CloudServiceConfiguration
+    spec.typeScript:
+      - name: CloudServiceConfiguration
+        fullName: CloudServiceConfiguration
+        uid: azure-arm-batch.CloudServiceConfiguration
+  - uid: azure-arm-batch.VirtualMachineConfiguration
+    spec.typeScript:
+      - name: VirtualMachineConfiguration
+        fullName: VirtualMachineConfiguration
+        uid: azure-arm-batch.VirtualMachineConfiguration

@@ -38,7 +38,7 @@ items:
       content: 'parameters?: RunCommandInputParameter[]'
       return:
         type:
-          - '@azure-arm-compute.RunCommandInputParameter[]'
+          - 'azure-arm-compute.RunCommandInputParameter[]'
   - uid: azure-arm-compute.RunCommandInput.script
     name: script
     fullName: script
@@ -53,3 +53,11 @@ items:
       return:
         type:
           - 'string[]'
+references:
+  - uid: 'azure-arm-compute.RunCommandInputParameter[]'
+    spec.typeScript:
+      - name: RunCommandInputParameter
+        fullName: RunCommandInputParameter
+        uid: azure-arm-compute.RunCommandInputParameter
+      - name: '[]'
+        fullName: '[]'

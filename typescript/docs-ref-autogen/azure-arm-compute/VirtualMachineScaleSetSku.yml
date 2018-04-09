@@ -25,7 +25,7 @@ items:
       content: 'capacity?: VirtualMachineScaleSetSkuCapacity'
       return:
         type:
-          - '@azure-arm-compute.VirtualMachineScaleSetSkuCapacity'
+          - azure-arm-compute.VirtualMachineScaleSetSkuCapacity
   - uid: azure-arm-compute.VirtualMachineScaleSetSku.resourceType
     name: resourceType
     fullName: resourceType
@@ -53,4 +53,15 @@ items:
       content: 'sku?: Sku'
       return:
         type:
-          - '@azure-arm-compute.Sku'
+          - azure-arm-compute.Sku
+references:
+  - uid: azure-arm-compute.VirtualMachineScaleSetSkuCapacity
+    spec.typeScript:
+      - name: VirtualMachineScaleSetSkuCapacity
+        fullName: VirtualMachineScaleSetSkuCapacity
+        uid: azure-arm-compute.VirtualMachineScaleSetSkuCapacity
+  - uid: azure-arm-compute.Sku
+    spec.typeScript:
+      - name: Sku
+        fullName: Sku
+        uid: azure-arm-compute.Sku

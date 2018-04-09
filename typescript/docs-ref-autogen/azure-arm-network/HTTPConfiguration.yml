@@ -25,7 +25,7 @@ items:
       content: 'headers?: HTTPHeader[]'
       return:
         type:
-          - '@azure-arm-network.HTTPHeader[]'
+          - 'azure-arm-network.HTTPHeader[]'
   - uid: azure-arm-network.HTTPConfiguration.method
     name: method
     fullName: method
@@ -54,3 +54,11 @@ items:
       return:
         type:
           - 'number[]'
+references:
+  - uid: 'azure-arm-network.HTTPHeader[]'
+    spec.typeScript:
+      - name: HTTPHeader
+        fullName: HTTPHeader
+        uid: azure-arm-network.HTTPHeader
+      - name: '[]'
+        fullName: '[]'

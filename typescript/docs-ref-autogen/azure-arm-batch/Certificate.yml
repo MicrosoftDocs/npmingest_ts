@@ -18,7 +18,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-batch.ProxyResource'
+      name: azure-arm-batch.ProxyResource
     package: azure-arm-batch
   - uid: azure-arm-batch.Certificate.deleteCertificateError
     name: deleteCertificateError
@@ -33,7 +33,7 @@ items:
       content: 'deleteCertificateError?: DeleteCertificateError'
       return:
         type:
-          - '@azure-arm-batch.DeleteCertificateError'
+          - azure-arm-batch.DeleteCertificateError
   - uid: azure-arm-batch.Certificate.format
     name: format
     fullName: format
@@ -146,3 +146,14 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-batch.ProxyResource
+    spec.typeScript:
+      - name: ProxyResource
+        fullName: ProxyResource
+        uid: azure-arm-batch.ProxyResource
+  - uid: azure-arm-batch.DeleteCertificateError
+    spec.typeScript:
+      - name: DeleteCertificateError
+        fullName: DeleteCertificateError
+        uid: azure-arm-batch.DeleteCertificateError

@@ -27,7 +27,7 @@ items:
       content: 'logSpecifications?: LogSpecification[]'
       return:
         type:
-          - '@azure-arm-network.LogSpecification[]'
+          - 'azure-arm-network.LogSpecification[]'
   - uid: >-
       azure-arm-network.OperationPropertiesFormatServiceSpecification.metricSpecifications
     name: metricSpecifications
@@ -42,4 +42,19 @@ items:
       content: 'metricSpecifications?: MetricSpecification[]'
       return:
         type:
-          - '@azure-arm-network.MetricSpecification[]'
+          - 'azure-arm-network.MetricSpecification[]'
+references:
+  - uid: 'azure-arm-network.LogSpecification[]'
+    spec.typeScript:
+      - name: LogSpecification
+        fullName: LogSpecification
+        uid: azure-arm-network.LogSpecification
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.MetricSpecification[]'
+    spec.typeScript:
+      - name: MetricSpecification
+        fullName: MetricSpecification
+        uid: azure-arm-network.MetricSpecification
+      - name: '[]'
+        fullName: '[]'

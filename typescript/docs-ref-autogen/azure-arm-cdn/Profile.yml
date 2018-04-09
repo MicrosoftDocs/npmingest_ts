@@ -12,7 +12,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-cdn.TrackedResource'
+      name: azure-arm-cdn.TrackedResource
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Profile.provisioningState
     name: provisioningState
@@ -54,4 +54,15 @@ items:
       content: 'sku: Sku'
       return:
         type:
-          - '@azure-arm-cdn.Sku'
+          - azure-arm-cdn.Sku
+references:
+  - uid: azure-arm-cdn.TrackedResource
+    spec.typeScript:
+      - name: TrackedResource
+        fullName: TrackedResource
+        uid: azure-arm-cdn.TrackedResource
+  - uid: azure-arm-cdn.Sku
+    spec.typeScript:
+      - name: Sku
+        fullName: Sku
+        uid: azure-arm-cdn.Sku

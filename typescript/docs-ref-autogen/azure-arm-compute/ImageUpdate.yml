@@ -12,7 +12,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-compute.UpdateResource'
+      name: azure-arm-compute.UpdateResource
     package: azure-arm-compute
   - uid: azure-arm-compute.ImageUpdate.provisioningState
     name: provisioningState
@@ -41,7 +41,7 @@ items:
       content: 'sourceVirtualMachine?: SubResource'
       return:
         type:
-          - '@azure-arm-compute.SubResource'
+          - azure-arm-compute.SubResource
   - uid: azure-arm-compute.ImageUpdate.storageProfile
     name: storageProfile
     fullName: storageProfile
@@ -55,4 +55,20 @@ items:
       content: 'storageProfile?: ImageStorageProfile'
       return:
         type:
-          - '@azure-arm-compute.ImageStorageProfile'
+          - azure-arm-compute.ImageStorageProfile
+references:
+  - uid: azure-arm-compute.UpdateResource
+    spec.typeScript:
+      - name: UpdateResource
+        fullName: UpdateResource
+        uid: azure-arm-compute.UpdateResource
+  - uid: azure-arm-compute.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute.SubResource
+  - uid: azure-arm-compute.ImageStorageProfile
+    spec.typeScript:
+      - name: ImageStorageProfile
+        fullName: ImageStorageProfile
+        uid: azure-arm-compute.ImageStorageProfile

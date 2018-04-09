@@ -112,7 +112,7 @@ items:
             http://accountname.region.batch.azure.com/.
         - id: parameters
           type:
-            - '@azure-arm-batch.BatchAccountCreateParameters'
+            - azure-arm-batch.BatchAccountCreateParameters
           description: |
             Additional parameters for account creation.
         - id: options
@@ -122,7 +122,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccount>
+          - Promise<azure-arm-batch.BatchAccount>
   - uid: azure-arm-batch.BatchAccountOperations.beginCreate_1
     name: beginCreate
     children: []
@@ -152,15 +152,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-batch.BatchAccountCreateParameters'
+            - azure-arm-batch.BatchAccountCreateParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccount>
+            - ServiceCallback<azure-arm-batch.BatchAccount>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccount>
+          - Promise<azure-arm-batch.BatchAccount>
   - uid: azure-arm-batch.BatchAccountOperations.beginCreate_2
     name: beginCreate
     children: []
@@ -190,7 +190,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-batch.BatchAccountCreateParameters'
+            - azure-arm-batch.BatchAccountCreateParameters
           description: ''
         - id: options
           type:
@@ -198,11 +198,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccount>
+            - ServiceCallback<azure-arm-batch.BatchAccount>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccount>
+          - Promise<azure-arm-batch.BatchAccount>
   - uid: >-
       azure-arm-batch.BatchAccountOperations.beginCreateWithHttpOperationResponse
     name: beginCreateWithHttpOperationResponse
@@ -249,7 +249,7 @@ items:
             http://accountname.region.batch.azure.com/.
         - id: parameters
           type:
-            - '@azure-arm-batch.BatchAccountCreateParameters'
+            - azure-arm-batch.BatchAccountCreateParameters
           description: |
             Additional parameters for account creation.
         - id: options
@@ -259,7 +259,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccount>>
+          - Promise<BatchAccount!@>>
   - uid: azure-arm-batch.BatchAccountOperations.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -425,7 +425,7 @@ items:
             http://accountname.region.batch.azure.com/.
         - id: parameters
           type:
-            - '@azure-arm-batch.BatchAccountCreateParameters'
+            - azure-arm-batch.BatchAccountCreateParameters
           description: |
             Additional parameters for account creation.
         - id: options
@@ -435,7 +435,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccount>
+          - Promise<azure-arm-batch.BatchAccount>
   - uid: azure-arm-batch.BatchAccountOperations.create_1
     name: create
     children: []
@@ -465,15 +465,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-batch.BatchAccountCreateParameters'
+            - azure-arm-batch.BatchAccountCreateParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccount>
+            - ServiceCallback<azure-arm-batch.BatchAccount>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccount>
+          - Promise<azure-arm-batch.BatchAccount>
   - uid: azure-arm-batch.BatchAccountOperations.create_2
     name: create
     children: []
@@ -503,7 +503,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-batch.BatchAccountCreateParameters'
+            - azure-arm-batch.BatchAccountCreateParameters
           description: ''
         - id: options
           type:
@@ -511,11 +511,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccount>
+            - ServiceCallback<azure-arm-batch.BatchAccount>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccount>
+          - Promise<azure-arm-batch.BatchAccount>
   - uid: azure-arm-batch.BatchAccountOperations.createWithHttpOperationResponse
     name: createWithHttpOperationResponse
     children: []
@@ -561,7 +561,7 @@ items:
             http://accountname.region.batch.azure.com/.
         - id: parameters
           type:
-            - '@azure-arm-batch.BatchAccountCreateParameters'
+            - azure-arm-batch.BatchAccountCreateParameters
           description: |
             Additional parameters for account creation.
         - id: options
@@ -571,7 +571,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccount>>
+          - Promise<BatchAccount!@>>
   - uid: azure-arm-batch.BatchAccountOperations.deleteMethod_1
     name: deleteMethod
     children: []
@@ -723,7 +723,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccount>
+          - Promise<azure-arm-batch.BatchAccount>
   - uid: azure-arm-batch.BatchAccountOperations.get_1
     name: get
     children: []
@@ -746,11 +746,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccount>
+            - ServiceCallback<azure-arm-batch.BatchAccount>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccount>
+          - Promise<azure-arm-batch.BatchAccount>
   - uid: azure-arm-batch.BatchAccountOperations.get_2
     name: get
     children: []
@@ -777,11 +777,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccount>
+            - ServiceCallback<azure-arm-batch.BatchAccount>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccount>
+          - Promise<azure-arm-batch.BatchAccount>
   - uid: azure-arm-batch.BatchAccountOperations.getKeys
     name: getKeys
     children: []
@@ -812,7 +812,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountKeys>
+          - Promise<azure-arm-batch.BatchAccountKeys>
   - uid: azure-arm-batch.BatchAccountOperations.getKeys_1
     name: getKeys
     children: []
@@ -835,11 +835,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccountKeys>
+            - ServiceCallback<azure-arm-batch.BatchAccountKeys>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountKeys>
+          - Promise<azure-arm-batch.BatchAccountKeys>
   - uid: azure-arm-batch.BatchAccountOperations.getKeys_2
     name: getKeys
     children: []
@@ -866,11 +866,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccountKeys>
+            - ServiceCallback<azure-arm-batch.BatchAccountKeys>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountKeys>
+          - Promise<azure-arm-batch.BatchAccountKeys>
   - uid: azure-arm-batch.BatchAccountOperations.getKeysWithHttpOperationResponse
     name: getKeysWithHttpOperationResponse
     children: []
@@ -901,7 +901,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccountKeys>>
+          - Promise<BatchAccountKeys!@>>
   - uid: azure-arm-batch.BatchAccountOperations.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -932,7 +932,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccount>>
+          - Promise<BatchAccount!@>>
   - uid: azure-arm-batch.BatchAccountOperations.list
     name: list
     children: []
@@ -952,7 +952,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountListResult>
+          - Promise<azure-arm-batch.BatchAccountListResult>
   - uid: azure-arm-batch.BatchAccountOperations.list_1
     name: list
     children: []
@@ -967,11 +967,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccountListResult>
+            - ServiceCallback<azure-arm-batch.BatchAccountListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountListResult>
+          - Promise<azure-arm-batch.BatchAccountListResult>
   - uid: azure-arm-batch.BatchAccountOperations.list_2
     name: list
     children: []
@@ -992,11 +992,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccountListResult>
+            - ServiceCallback<azure-arm-batch.BatchAccountListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountListResult>
+          - Promise<azure-arm-batch.BatchAccountListResult>
   - uid: azure-arm-batch.BatchAccountOperations.listByResourceGroup
     name: listByResourceGroup
     children: []
@@ -1024,7 +1024,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountListResult>
+          - Promise<azure-arm-batch.BatchAccountListResult>
   - uid: azure-arm-batch.BatchAccountOperations.listByResourceGroup_1
     name: listByResourceGroup
     children: []
@@ -1045,11 +1045,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccountListResult>
+            - ServiceCallback<azure-arm-batch.BatchAccountListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountListResult>
+          - Promise<azure-arm-batch.BatchAccountListResult>
   - uid: azure-arm-batch.BatchAccountOperations.listByResourceGroup_2
     name: listByResourceGroup
     children: []
@@ -1074,11 +1074,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccountListResult>
+            - ServiceCallback<azure-arm-batch.BatchAccountListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountListResult>
+          - Promise<azure-arm-batch.BatchAccountListResult>
   - uid: azure-arm-batch.BatchAccountOperations.listByResourceGroupNext_1
     name: listByResourceGroupNext
     children: []
@@ -1099,11 +1099,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccountListResult>
+            - ServiceCallback<azure-arm-batch.BatchAccountListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountListResult>
+          - Promise<azure-arm-batch.BatchAccountListResult>
   - uid: azure-arm-batch.BatchAccountOperations.listByResourceGroupNext_2
     name: listByResourceGroupNext
     children: []
@@ -1128,11 +1128,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccountListResult>
+            - ServiceCallback<azure-arm-batch.BatchAccountListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountListResult>
+          - Promise<azure-arm-batch.BatchAccountListResult>
   - uid: azure-arm-batch.BatchAccountOperations.listByResourceGroupNext
     name: listByResourceGroupNext
     children: []
@@ -1160,7 +1160,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountListResult>
+          - Promise<azure-arm-batch.BatchAccountListResult>
   - uid: >-
       azure-arm-batch.BatchAccountOperations.listByResourceGroupNextWithHttpOperationResponse
     name: listByResourceGroupNextWithHttpOperationResponse
@@ -1189,7 +1189,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccountListResult>>
+          - Promise<BatchAccountListResult!@>>
   - uid: >-
       azure-arm-batch.BatchAccountOperations.listByResourceGroupWithHttpOperationResponse
     name: listByResourceGroupWithHttpOperationResponse
@@ -1218,7 +1218,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccountListResult>>
+          - Promise<BatchAccountListResult!@>>
   - uid: azure-arm-batch.BatchAccountOperations.listNext
     name: listNext
     children: []
@@ -1244,7 +1244,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountListResult>
+          - Promise<azure-arm-batch.BatchAccountListResult>
   - uid: azure-arm-batch.BatchAccountOperations.listNext_1
     name: listNext
     children: []
@@ -1265,11 +1265,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccountListResult>
+            - ServiceCallback<azure-arm-batch.BatchAccountListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountListResult>
+          - Promise<azure-arm-batch.BatchAccountListResult>
   - uid: azure-arm-batch.BatchAccountOperations.listNext_2
     name: listNext
     children: []
@@ -1294,11 +1294,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccountListResult>
+            - ServiceCallback<azure-arm-batch.BatchAccountListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountListResult>
+          - Promise<azure-arm-batch.BatchAccountListResult>
   - uid: azure-arm-batch.BatchAccountOperations.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -1326,7 +1326,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccountListResult>>
+          - Promise<BatchAccountListResult!@>>
   - uid: azure-arm-batch.BatchAccountOperations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1346,7 +1346,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccountListResult>>
+          - Promise<BatchAccountListResult!@>>
   - uid: azure-arm-batch.BatchAccountOperations.regenerateKey
     name: regenerateKey
     children: []
@@ -1383,7 +1383,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountKeys>
+          - Promise<azure-arm-batch.BatchAccountKeys>
   - uid: azure-arm-batch.BatchAccountOperations.regenerateKey_2
     name: regenerateKey
     children: []
@@ -1415,11 +1415,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccountKeys>
+            - ServiceCallback<azure-arm-batch.BatchAccountKeys>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountKeys>
+          - Promise<azure-arm-batch.BatchAccountKeys>
   - uid: azure-arm-batch.BatchAccountOperations.regenerateKey_1
     name: regenerateKey
     children: []
@@ -1446,11 +1446,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccountKeys>
+            - ServiceCallback<azure-arm-batch.BatchAccountKeys>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccountKeys>
+          - Promise<azure-arm-batch.BatchAccountKeys>
   - uid: >-
       azure-arm-batch.BatchAccountOperations.regenerateKeyWithHttpOperationResponse
     name: regenerateKeyWithHttpOperationResponse
@@ -1488,7 +1488,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccountKeys>>
+          - Promise<BatchAccountKeys!@>>
   - uid: azure-arm-batch.BatchAccountOperations.synchronizeAutoStorageKeys
     name: synchronizeAutoStorageKeys
     children: []
@@ -1644,7 +1644,7 @@ items:
             The name of the Batch account.
         - id: parameters
           type:
-            - '@azure-arm-batch.BatchAccountUpdateParameters'
+            - azure-arm-batch.BatchAccountUpdateParameters
           description: |
             Additional parameters for account update.
         - id: options
@@ -1654,7 +1654,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccount>
+          - Promise<azure-arm-batch.BatchAccount>
   - uid: azure-arm-batch.BatchAccountOperations.update_1
     name: update
     children: []
@@ -1678,15 +1678,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-batch.BatchAccountUpdateParameters'
+            - azure-arm-batch.BatchAccountUpdateParameters
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccount>
+            - ServiceCallback<azure-arm-batch.BatchAccount>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccount>
+          - Promise<azure-arm-batch.BatchAccount>
   - uid: azure-arm-batch.BatchAccountOperations.update_2
     name: update
     children: []
@@ -1710,7 +1710,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-batch.BatchAccountUpdateParameters'
+            - azure-arm-batch.BatchAccountUpdateParameters
           description: ''
         - id: options
           type:
@@ -1718,11 +1718,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-batch.BatchAccount>
+            - ServiceCallback<azure-arm-batch.BatchAccount>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-batch.BatchAccount>
+          - Promise<azure-arm-batch.BatchAccount>
   - uid: azure-arm-batch.BatchAccountOperations.updateWithHttpOperationResponse
     name: updateWithHttpOperationResponse
     children: []
@@ -1749,7 +1749,7 @@ items:
             The name of the Batch account.
         - id: parameters
           type:
-            - '@azure-arm-batch.BatchAccountUpdateParameters'
+            - azure-arm-batch.BatchAccountUpdateParameters
           description: |
             Additional parameters for account update.
         - id: options
@@ -1759,4 +1759,69 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccount>>
+          - Promise<BatchAccount!@>>
+references:
+  - uid: azure-arm-batch.BatchAccountCreateParameters
+    spec.typeScript:
+      - name: BatchAccountCreateParameters
+        fullName: BatchAccountCreateParameters
+        uid: azure-arm-batch.BatchAccountCreateParameters
+  - uid: Promise<azure-arm-batch.BatchAccount>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: BatchAccount
+        fullName: BatchAccount
+        uid: azure-arm-batch.BatchAccount
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch.BatchAccount>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: BatchAccount
+        fullName: BatchAccount
+        uid: azure-arm-batch.BatchAccount
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-batch.BatchAccountKeys>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: BatchAccountKeys
+        fullName: BatchAccountKeys
+        uid: azure-arm-batch.BatchAccountKeys
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch.BatchAccountKeys>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: BatchAccountKeys
+        fullName: BatchAccountKeys
+        uid: azure-arm-batch.BatchAccountKeys
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-batch.BatchAccountListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: BatchAccountListResult
+        fullName: BatchAccountListResult
+        uid: azure-arm-batch.BatchAccountListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch.BatchAccountListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: BatchAccountListResult
+        fullName: BatchAccountListResult
+        uid: azure-arm-batch.BatchAccountListResult
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-batch.BatchAccountUpdateParameters
+    spec.typeScript:
+      - name: BatchAccountUpdateParameters
+        fullName: BatchAccountUpdateParameters
+        uid: azure-arm-batch.BatchAccountUpdateParameters

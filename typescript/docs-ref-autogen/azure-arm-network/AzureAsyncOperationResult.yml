@@ -24,7 +24,7 @@ items:
       content: 'error?: ErrorModel'
       return:
         type:
-          - '@azure-arm-network.ErrorModel'
+          - azure-arm-network.ErrorModel
   - uid: azure-arm-network.AzureAsyncOperationResult.status
     name: status
     fullName: status
@@ -39,3 +39,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.ErrorModel
+    spec.typeScript:
+      - name: ErrorModel
+        fullName: ErrorModel
+        uid: azure-arm-network.ErrorModel

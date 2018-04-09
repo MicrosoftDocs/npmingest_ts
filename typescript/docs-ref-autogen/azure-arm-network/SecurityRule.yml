@@ -27,7 +27,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.SubResource'
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.SecurityRule.access
     name: access
@@ -97,7 +97,7 @@ items:
       content: 'destinationApplicationSecurityGroups?: ApplicationSecurityGroup[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationSecurityGroup[]'
+          - 'azure-arm-network.ApplicationSecurityGroup[]'
   - uid: azure-arm-network.SecurityRule.destinationPortRange
     name: destinationPortRange
     fullName: destinationPortRange
@@ -249,7 +249,7 @@ items:
       content: 'sourceApplicationSecurityGroups?: ApplicationSecurityGroup[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationSecurityGroup[]'
+          - 'azure-arm-network.ApplicationSecurityGroup[]'
   - uid: azure-arm-network.SecurityRule.sourcePortRange
     name: sourcePortRange
     fullName: sourcePortRange
@@ -278,3 +278,16 @@ items:
       return:
         type:
           - 'string[]'
+references:
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource
+  - uid: 'azure-arm-network.ApplicationSecurityGroup[]'
+    spec.typeScript:
+      - name: ApplicationSecurityGroup
+        fullName: ApplicationSecurityGroup
+        uid: azure-arm-network.ApplicationSecurityGroup
+      - name: '[]'
+        fullName: '[]'

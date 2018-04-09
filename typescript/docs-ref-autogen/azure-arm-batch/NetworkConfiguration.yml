@@ -24,7 +24,7 @@ items:
       content: 'endpointConfiguration?: PoolEndpointConfiguration'
       return:
         type:
-          - '@azure-arm-batch.PoolEndpointConfiguration'
+          - azure-arm-batch.PoolEndpointConfiguration
   - uid: azure-arm-batch.NetworkConfiguration.subnetId
     name: subnetId
     fullName: subnetId
@@ -39,3 +39,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-batch.PoolEndpointConfiguration
+    spec.typeScript:
+      - name: PoolEndpointConfiguration
+        fullName: PoolEndpointConfiguration
+        uid: azure-arm-batch.PoolEndpointConfiguration

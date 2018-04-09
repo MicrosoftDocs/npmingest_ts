@@ -79,7 +79,7 @@ items:
             The name of the load balancer.
         - id: parameters
           type:
-            - '@azure-arm-network.LoadBalancer'
+            - azure-arm-network.LoadBalancer
           description: |
             Parameters supplied to the create or update load
             balancer operation.
@@ -90,7 +90,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancer>
+          - Promise<azure-arm-network.LoadBalancer>
   - uid: azure-arm-network.LoadBalancers.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -114,15 +114,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.LoadBalancer'
+            - azure-arm-network.LoadBalancer
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancer>
+            - ServiceCallback<azure-arm-network.LoadBalancer>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancer>
+          - Promise<azure-arm-network.LoadBalancer>
   - uid: azure-arm-network.LoadBalancers.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -146,7 +146,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.LoadBalancer'
+            - azure-arm-network.LoadBalancer
           description: ''
         - id: options
           type:
@@ -154,11 +154,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancer>
+            - ServiceCallback<azure-arm-network.LoadBalancer>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancer>
+          - Promise<azure-arm-network.LoadBalancer>
   - uid: >-
       azure-arm-network.LoadBalancers.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
@@ -185,7 +185,7 @@ items:
             The name of the load balancer.
         - id: parameters
           type:
-            - '@azure-arm-network.LoadBalancer'
+            - azure-arm-network.LoadBalancer
           description: |
             Parameters supplied to the create or update load
             balancer operation.
@@ -196,7 +196,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancer>>
+          - Promise<LoadBalancer!@>>
   - uid: azure-arm-network.LoadBalancers.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -339,7 +339,7 @@ items:
             The name of the load balancer.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update load balancer tags.
         - id: options
@@ -349,7 +349,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancer>
+          - Promise<azure-arm-network.LoadBalancer>
   - uid: azure-arm-network.LoadBalancers.beginUpdateTags_1
     name: beginUpdateTags
     children: []
@@ -372,15 +372,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancer>
+            - ServiceCallback<azure-arm-network.LoadBalancer>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancer>
+          - Promise<azure-arm-network.LoadBalancer>
   - uid: azure-arm-network.LoadBalancers.beginUpdateTags_2
     name: beginUpdateTags
     children: []
@@ -404,7 +404,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -412,11 +412,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancer>
+            - ServiceCallback<azure-arm-network.LoadBalancer>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancer>
+          - Promise<azure-arm-network.LoadBalancer>
   - uid: azure-arm-network.LoadBalancers.beginUpdateTagsWithHttpOperationResponse
     name: beginUpdateTagsWithHttpOperationResponse
     children: []
@@ -442,7 +442,7 @@ items:
             The name of the load balancer.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update load balancer tags.
         - id: options
@@ -452,7 +452,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancer>>
+          - Promise<LoadBalancer!@>>
   - uid: azure-arm-network.LoadBalancers.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -476,15 +476,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.LoadBalancer'
+            - azure-arm-network.LoadBalancer
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancer>
+            - ServiceCallback<azure-arm-network.LoadBalancer>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancer>
+          - Promise<azure-arm-network.LoadBalancer>
   - uid: azure-arm-network.LoadBalancers.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -508,7 +508,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.LoadBalancer'
+            - azure-arm-network.LoadBalancer
           description: ''
         - id: options
           type:
@@ -516,11 +516,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancer>
+            - ServiceCallback<azure-arm-network.LoadBalancer>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancer>
+          - Promise<azure-arm-network.LoadBalancer>
   - uid: azure-arm-network.LoadBalancers.createOrUpdate
     name: createOrUpdate
     children: []
@@ -545,7 +545,7 @@ items:
             The name of the load balancer.
         - id: parameters
           type:
-            - '@azure-arm-network.LoadBalancer'
+            - azure-arm-network.LoadBalancer
           description: |
             Parameters supplied to the create or update load
             balancer operation.
@@ -556,7 +556,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancer>
+          - Promise<azure-arm-network.LoadBalancer>
   - uid: azure-arm-network.LoadBalancers.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
     children: []
@@ -582,7 +582,7 @@ items:
             The name of the load balancer.
         - id: parameters
           type:
-            - '@azure-arm-network.LoadBalancer'
+            - azure-arm-network.LoadBalancer
           description: |
             Parameters supplied to the create or update load
             balancer operation.
@@ -593,7 +593,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancer>>
+          - Promise<LoadBalancer!@>>
   - uid: azure-arm-network.LoadBalancers.deleteMethod
     name: deleteMethod
     children: []
@@ -741,7 +741,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancer>
+          - Promise<azure-arm-network.LoadBalancer>
   - uid: azure-arm-network.LoadBalancers.get_1
     name: get
     children: []
@@ -764,11 +764,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancer>
+            - ServiceCallback<azure-arm-network.LoadBalancer>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancer>
+          - Promise<azure-arm-network.LoadBalancer>
   - uid: azure-arm-network.LoadBalancers.get_2
     name: get
     children: []
@@ -795,11 +795,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancer>
+            - ServiceCallback<azure-arm-network.LoadBalancer>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancer>
+          - Promise<azure-arm-network.LoadBalancer>
   - uid: azure-arm-network.LoadBalancers.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -829,7 +829,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancer>>
+          - Promise<LoadBalancer!@>>
   - uid: azure-arm-network.LoadBalancers.list_1
     name: list
     children: []
@@ -848,11 +848,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancerListResult>
+            - ServiceCallback<azure-arm-network.LoadBalancerListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerListResult>
+          - Promise<azure-arm-network.LoadBalancerListResult>
   - uid: azure-arm-network.LoadBalancers.list_2
     name: list
     children: []
@@ -875,11 +875,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancerListResult>
+            - ServiceCallback<azure-arm-network.LoadBalancerListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerListResult>
+          - Promise<azure-arm-network.LoadBalancerListResult>
   - uid: azure-arm-network.LoadBalancers.list
     name: list
     children: []
@@ -902,7 +902,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerListResult>
+          - Promise<azure-arm-network.LoadBalancerListResult>
   - uid: azure-arm-network.LoadBalancers.listAll
     name: listAll
     children: []
@@ -920,7 +920,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerListResult>
+          - Promise<azure-arm-network.LoadBalancerListResult>
   - uid: azure-arm-network.LoadBalancers.listAll_1
     name: listAll
     children: []
@@ -933,11 +933,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancerListResult>
+            - ServiceCallback<azure-arm-network.LoadBalancerListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerListResult>
+          - Promise<azure-arm-network.LoadBalancerListResult>
   - uid: azure-arm-network.LoadBalancers.listAll_2
     name: listAll
     children: []
@@ -956,11 +956,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancerListResult>
+            - ServiceCallback<azure-arm-network.LoadBalancerListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerListResult>
+          - Promise<azure-arm-network.LoadBalancerListResult>
   - uid: azure-arm-network.LoadBalancers.listAllNext
     name: listAllNext
     children: []
@@ -984,7 +984,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerListResult>
+          - Promise<azure-arm-network.LoadBalancerListResult>
   - uid: azure-arm-network.LoadBalancers.listAllNext_1
     name: listAllNext
     children: []
@@ -1003,11 +1003,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancerListResult>
+            - ServiceCallback<azure-arm-network.LoadBalancerListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerListResult>
+          - Promise<azure-arm-network.LoadBalancerListResult>
   - uid: azure-arm-network.LoadBalancers.listAllNext_2
     name: listAllNext
     children: []
@@ -1030,11 +1030,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancerListResult>
+            - ServiceCallback<azure-arm-network.LoadBalancerListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerListResult>
+          - Promise<azure-arm-network.LoadBalancerListResult>
   - uid: azure-arm-network.LoadBalancers.listAllNextWithHttpOperationResponse
     name: listAllNextWithHttpOperationResponse
     children: []
@@ -1060,7 +1060,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerListResult>>
+          - Promise<LoadBalancerListResult!@>>
   - uid: azure-arm-network.LoadBalancers.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse
     children: []
@@ -1078,7 +1078,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerListResult>>
+          - Promise<LoadBalancerListResult!@>>
   - uid: azure-arm-network.LoadBalancers.listNext
     name: listNext
     children: []
@@ -1102,7 +1102,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerListResult>
+          - Promise<azure-arm-network.LoadBalancerListResult>
   - uid: azure-arm-network.LoadBalancers.listNext_1
     name: listNext
     children: []
@@ -1121,11 +1121,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancerListResult>
+            - ServiceCallback<azure-arm-network.LoadBalancerListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerListResult>
+          - Promise<azure-arm-network.LoadBalancerListResult>
   - uid: azure-arm-network.LoadBalancers.listNext_2
     name: listNext
     children: []
@@ -1148,11 +1148,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancerListResult>
+            - ServiceCallback<azure-arm-network.LoadBalancerListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerListResult>
+          - Promise<azure-arm-network.LoadBalancerListResult>
   - uid: azure-arm-network.LoadBalancers.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -1178,7 +1178,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerListResult>>
+          - Promise<LoadBalancerListResult!@>>
   - uid: azure-arm-network.LoadBalancers.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1203,7 +1203,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerListResult>>
+          - Promise<LoadBalancerListResult!@>>
   - uid: azure-arm-network.LoadBalancers.updateTags
     name: updateTags
     children: []
@@ -1228,7 +1228,7 @@ items:
             The name of the load balancer.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update load balancer tags.
         - id: options
@@ -1238,7 +1238,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancer>
+          - Promise<azure-arm-network.LoadBalancer>
   - uid: azure-arm-network.LoadBalancers.updateTags_1
     name: updateTags
     children: []
@@ -1261,15 +1261,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancer>
+            - ServiceCallback<azure-arm-network.LoadBalancer>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancer>
+          - Promise<azure-arm-network.LoadBalancer>
   - uid: azure-arm-network.LoadBalancers.updateTags_2
     name: updateTags
     children: []
@@ -1293,7 +1293,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -1301,11 +1301,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancer>
+            - ServiceCallback<azure-arm-network.LoadBalancer>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancer>
+          - Promise<azure-arm-network.LoadBalancer>
   - uid: azure-arm-network.LoadBalancers.updateTagsWithHttpOperationResponse
     name: updateTagsWithHttpOperationResponse
     children: []
@@ -1330,7 +1330,7 @@ items:
             The name of the load balancer.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update load balancer tags.
         - id: options
@@ -1340,4 +1340,51 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancer>>
+          - Promise<LoadBalancer!@>>
+references:
+  - uid: azure-arm-network.LoadBalancer
+    spec.typeScript:
+      - name: LoadBalancer
+        fullName: LoadBalancer
+        uid: azure-arm-network.LoadBalancer
+  - uid: Promise<azure-arm-network.LoadBalancer>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: LoadBalancer
+        fullName: LoadBalancer
+        uid: azure-arm-network.LoadBalancer
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.LoadBalancer>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: LoadBalancer
+        fullName: LoadBalancer
+        uid: azure-arm-network.LoadBalancer
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.TagsObject
+    spec.typeScript:
+      - name: TagsObject
+        fullName: TagsObject
+        uid: azure-arm-network.TagsObject
+  - uid: Promise<azure-arm-network.LoadBalancerListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: LoadBalancerListResult
+        fullName: LoadBalancerListResult
+        uid: azure-arm-network.LoadBalancerListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.LoadBalancerListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: LoadBalancerListResult
+        fullName: LoadBalancerListResult
+        uid: azure-arm-network.LoadBalancerListResult
+      - name: '>'
+        fullName: '>'

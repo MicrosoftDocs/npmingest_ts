@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-network.ApplicationGateway>
+      name: Array<azure-arm-network.ApplicationGateway>
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationGatewayListResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-network.ApplicationGateway>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: ApplicationGateway
+        fullName: ApplicationGateway
+        uid: azure-arm-network.ApplicationGateway
+      - name: '>'
+        fullName: '>'

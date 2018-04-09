@@ -41,7 +41,7 @@ items:
       content: 'details?: ApiErrorBase[]'
       return:
         type:
-          - '@azure-arm-compute.ApiErrorBase[]'
+          - 'azure-arm-compute.ApiErrorBase[]'
   - uid: azure-arm-compute.ApiError.innererror
     name: innererror
     fullName: innererror
@@ -55,7 +55,7 @@ items:
       content: 'innererror?: InnerError'
       return:
         type:
-          - '@azure-arm-compute.InnerError'
+          - azure-arm-compute.InnerError
   - uid: azure-arm-compute.ApiError.message
     name: message
     fullName: message
@@ -84,3 +84,16 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'azure-arm-compute.ApiErrorBase[]'
+    spec.typeScript:
+      - name: ApiErrorBase
+        fullName: ApiErrorBase
+        uid: azure-arm-compute.ApiErrorBase
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute.InnerError
+    spec.typeScript:
+      - name: InnerError
+        fullName: InnerError
+        uid: azure-arm-compute.InnerError

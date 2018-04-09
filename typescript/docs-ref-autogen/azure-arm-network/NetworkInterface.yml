@@ -20,7 +20,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.Resource'
+      name: azure-arm-network.Resource
     package: azure-arm-network
   - uid: azure-arm-network.NetworkInterface.dnsSettings
     name: dnsSettings
@@ -35,7 +35,7 @@ items:
       content: 'dnsSettings?: NetworkInterfaceDnsSettings'
       return:
         type:
-          - '@azure-arm-network.NetworkInterfaceDnsSettings'
+          - azure-arm-network.NetworkInterfaceDnsSettings
   - uid: azure-arm-network.NetworkInterface.enableAcceleratedNetworking
     name: enableAcceleratedNetworking
     fullName: enableAcceleratedNetworking
@@ -91,7 +91,7 @@ items:
       content: 'ipConfigurations?: NetworkInterfaceIPConfiguration[]'
       return:
         type:
-          - '@azure-arm-network.NetworkInterfaceIPConfiguration[]'
+          - 'azure-arm-network.NetworkInterfaceIPConfiguration[]'
   - uid: azure-arm-network.NetworkInterface.macAddress
     name: macAddress
     fullName: macAddress
@@ -119,7 +119,7 @@ items:
       content: 'networkSecurityGroup?: NetworkSecurityGroup'
       return:
         type:
-          - '@azure-arm-network.NetworkSecurityGroup'
+          - azure-arm-network.NetworkSecurityGroup
   - uid: azure-arm-network.NetworkInterface.primary
     name: primary
     fullName: primary
@@ -175,4 +175,32 @@ items:
       content: 'virtualMachine?: SubResource'
       return:
         type:
-          - '@azure-arm-network.SubResource'
+          - azure-arm-network.SubResource
+references:
+  - uid: azure-arm-network.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network.Resource
+  - uid: azure-arm-network.NetworkInterfaceDnsSettings
+    spec.typeScript:
+      - name: NetworkInterfaceDnsSettings
+        fullName: NetworkInterfaceDnsSettings
+        uid: azure-arm-network.NetworkInterfaceDnsSettings
+  - uid: 'azure-arm-network.NetworkInterfaceIPConfiguration[]'
+    spec.typeScript:
+      - name: NetworkInterfaceIPConfiguration
+        fullName: NetworkInterfaceIPConfiguration
+        uid: azure-arm-network.NetworkInterfaceIPConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network.NetworkSecurityGroup
+    spec.typeScript:
+      - name: NetworkSecurityGroup
+        fullName: NetworkSecurityGroup
+        uid: azure-arm-network.NetworkSecurityGroup
+  - uid: azure-arm-network.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource

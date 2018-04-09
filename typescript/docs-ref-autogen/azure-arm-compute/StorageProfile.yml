@@ -25,7 +25,7 @@ items:
       content: 'dataDisks?: DataDisk[]'
       return:
         type:
-          - '@azure-arm-compute.DataDisk[]'
+          - 'azure-arm-compute.DataDisk[]'
   - uid: azure-arm-compute.StorageProfile.imageReference
     name: imageReference
     fullName: imageReference
@@ -39,7 +39,7 @@ items:
       content: 'imageReference?: ImageReference'
       return:
         type:
-          - '@azure-arm-compute.ImageReference'
+          - azure-arm-compute.ImageReference
   - uid: azure-arm-compute.StorageProfile.osDisk
     name: osDisk
     fullName: osDisk
@@ -53,4 +53,22 @@ items:
       content: 'osDisk?: OSDisk'
       return:
         type:
-          - '@azure-arm-compute.OSDisk'
+          - azure-arm-compute.OSDisk
+references:
+  - uid: 'azure-arm-compute.DataDisk[]'
+    spec.typeScript:
+      - name: DataDisk
+        fullName: DataDisk
+        uid: azure-arm-compute.DataDisk
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute.ImageReference
+    spec.typeScript:
+      - name: ImageReference
+        fullName: ImageReference
+        uid: azure-arm-compute.ImageReference
+  - uid: azure-arm-compute.OSDisk
+    spec.typeScript:
+      - name: OSDisk
+        fullName: OSDisk
+        uid: azure-arm-compute.OSDisk

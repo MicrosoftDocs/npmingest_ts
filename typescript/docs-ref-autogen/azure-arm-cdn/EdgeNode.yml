@@ -10,7 +10,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-cdn.ProxyResource'
+      name: azure-arm-cdn.ProxyResource
     package: azure-arm-cdn
   - uid: azure-arm-cdn.EdgeNode.ipAddressGroups
     name: ipAddressGroups
@@ -24,4 +24,17 @@ items:
       content: 'ipAddressGroups: IpAddressGroup[]'
       return:
         type:
-          - '@azure-arm-cdn.IpAddressGroup[]'
+          - 'azure-arm-cdn.IpAddressGroup[]'
+references:
+  - uid: azure-arm-cdn.ProxyResource
+    spec.typeScript:
+      - name: ProxyResource
+        fullName: ProxyResource
+        uid: azure-arm-cdn.ProxyResource
+  - uid: 'azure-arm-cdn.IpAddressGroup[]'
+    spec.typeScript:
+      - name: IpAddressGroup
+        fullName: IpAddressGroup
+        uid: azure-arm-cdn.IpAddressGroup
+      - name: '[]'
+        fullName: '[]'

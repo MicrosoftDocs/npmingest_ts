@@ -73,7 +73,7 @@ items:
             The name of the peering.
         - id: virtualNetworkPeeringParameters
           type:
-            - '@azure-arm-network.VirtualNetworkPeering'
+            - azure-arm-network.VirtualNetworkPeering
           description: |
             Parameters supplied to the
             create or update virtual network peering operation.
@@ -84,7 +84,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkPeering>
+          - Promise<azure-arm-network.VirtualNetworkPeering>
   - uid: azure-arm-network.VirtualNetworkPeerings.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -113,15 +113,15 @@ items:
           description: ''
         - id: virtualNetworkPeeringParameters
           type:
-            - '@azure-arm-network.VirtualNetworkPeering'
+            - azure-arm-network.VirtualNetworkPeering
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkPeering>
+            - ServiceCallback<azure-arm-network.VirtualNetworkPeering>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkPeering>
+          - Promise<azure-arm-network.VirtualNetworkPeering>
   - uid: azure-arm-network.VirtualNetworkPeerings.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -150,7 +150,7 @@ items:
           description: ''
         - id: virtualNetworkPeeringParameters
           type:
-            - '@azure-arm-network.VirtualNetworkPeering'
+            - azure-arm-network.VirtualNetworkPeering
           description: ''
         - id: options
           type:
@@ -158,11 +158,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkPeering>
+            - ServiceCallback<azure-arm-network.VirtualNetworkPeering>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkPeering>
+          - Promise<azure-arm-network.VirtualNetworkPeering>
   - uid: >-
       azure-arm-network.VirtualNetworkPeerings.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
@@ -195,7 +195,7 @@ items:
             The name of the peering.
         - id: virtualNetworkPeeringParameters
           type:
-            - '@azure-arm-network.VirtualNetworkPeering'
+            - azure-arm-network.VirtualNetworkPeering
           description: |
             Parameters supplied to the
             create or update virtual network peering operation.
@@ -206,7 +206,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkPeering>>
+          - Promise<VirtualNetworkPeering!@>>
   - uid: azure-arm-network.VirtualNetworkPeerings.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -381,7 +381,7 @@ items:
             The name of the peering.
         - id: virtualNetworkPeeringParameters
           type:
-            - '@azure-arm-network.VirtualNetworkPeering'
+            - azure-arm-network.VirtualNetworkPeering
           description: |
             Parameters supplied to the
             create or update virtual network peering operation.
@@ -392,7 +392,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkPeering>
+          - Promise<azure-arm-network.VirtualNetworkPeering>
   - uid: azure-arm-network.VirtualNetworkPeerings.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -421,15 +421,15 @@ items:
           description: ''
         - id: virtualNetworkPeeringParameters
           type:
-            - '@azure-arm-network.VirtualNetworkPeering'
+            - azure-arm-network.VirtualNetworkPeering
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkPeering>
+            - ServiceCallback<azure-arm-network.VirtualNetworkPeering>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkPeering>
+          - Promise<azure-arm-network.VirtualNetworkPeering>
   - uid: azure-arm-network.VirtualNetworkPeerings.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -458,7 +458,7 @@ items:
           description: ''
         - id: virtualNetworkPeeringParameters
           type:
-            - '@azure-arm-network.VirtualNetworkPeering'
+            - azure-arm-network.VirtualNetworkPeering
           description: ''
         - id: options
           type:
@@ -466,11 +466,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkPeering>
+            - ServiceCallback<azure-arm-network.VirtualNetworkPeering>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkPeering>
+          - Promise<azure-arm-network.VirtualNetworkPeering>
   - uid: >-
       azure-arm-network.VirtualNetworkPeerings.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
@@ -503,7 +503,7 @@ items:
             The name of the peering.
         - id: virtualNetworkPeeringParameters
           type:
-            - '@azure-arm-network.VirtualNetworkPeering'
+            - azure-arm-network.VirtualNetworkPeering
           description: |
             Parameters supplied to the
             create or update virtual network peering operation.
@@ -514,7 +514,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkPeering>>
+          - Promise<VirtualNetworkPeering!@>>
   - uid: azure-arm-network.VirtualNetworkPeerings.deleteMethod
     name: deleteMethod
     children: []
@@ -684,11 +684,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkPeering>
+            - ServiceCallback<azure-arm-network.VirtualNetworkPeering>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkPeering>
+          - Promise<azure-arm-network.VirtualNetworkPeering>
   - uid: azure-arm-network.VirtualNetworkPeerings.get_2
     name: get
     children: []
@@ -720,11 +720,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.VirtualNetworkPeering>
+            - ServiceCallback<azure-arm-network.VirtualNetworkPeering>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkPeering>
+          - Promise<azure-arm-network.VirtualNetworkPeering>
   - uid: azure-arm-network.VirtualNetworkPeerings.get
     name: get
     children: []
@@ -760,7 +760,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkPeering>
+          - Promise<azure-arm-network.VirtualNetworkPeering>
   - uid: azure-arm-network.VirtualNetworkPeerings.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -797,7 +797,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkPeering>>
+          - Promise<VirtualNetworkPeering!@>>
   - uid: azure-arm-network.VirtualNetworkPeerings.list
     name: list
     children: []
@@ -827,7 +827,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkPeeringListResult>
+          - Promise<azure-arm-network.VirtualNetworkPeeringListResult>
   - uid: azure-arm-network.VirtualNetworkPeerings.list_1
     name: list
     children: []
@@ -850,12 +850,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkPeeringListResult>
+            - ServiceCallback<azure-arm-network.VirtualNetworkPeeringListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkPeeringListResult>
+          - Promise<azure-arm-network.VirtualNetworkPeeringListResult>
   - uid: azure-arm-network.VirtualNetworkPeerings.list_2
     name: list
     children: []
@@ -883,12 +882,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkPeeringListResult>
+            - ServiceCallback<azure-arm-network.VirtualNetworkPeeringListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkPeeringListResult>
+          - Promise<azure-arm-network.VirtualNetworkPeeringListResult>
   - uid: azure-arm-network.VirtualNetworkPeerings.listNext
     name: listNext
     children: []
@@ -912,7 +910,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkPeeringListResult>
+          - Promise<azure-arm-network.VirtualNetworkPeeringListResult>
   - uid: azure-arm-network.VirtualNetworkPeerings.listNext_1
     name: listNext
     children: []
@@ -931,12 +929,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkPeeringListResult>
+            - ServiceCallback<azure-arm-network.VirtualNetworkPeeringListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkPeeringListResult>
+          - Promise<azure-arm-network.VirtualNetworkPeeringListResult>
   - uid: azure-arm-network.VirtualNetworkPeerings.listNext_2
     name: listNext
     children: []
@@ -959,12 +956,11 @@ items:
           description: ''
         - id: callback
           type:
-            - >-
-              ServiceCallback<@azure-arm-network.VirtualNetworkPeeringListResult>
+            - ServiceCallback<azure-arm-network.VirtualNetworkPeeringListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.VirtualNetworkPeeringListResult>
+          - Promise<azure-arm-network.VirtualNetworkPeeringListResult>
   - uid: azure-arm-network.VirtualNetworkPeerings.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -990,7 +986,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkPeeringListResult>>
+          - Promise<VirtualNetworkPeeringListResult!@>>
   - uid: azure-arm-network.VirtualNetworkPeerings.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1020,4 +1016,46 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkPeeringListResult>>
+          - Promise<VirtualNetworkPeeringListResult!@>>
+references:
+  - uid: azure-arm-network.VirtualNetworkPeering
+    spec.typeScript:
+      - name: VirtualNetworkPeering
+        fullName: VirtualNetworkPeering
+        uid: azure-arm-network.VirtualNetworkPeering
+  - uid: Promise<azure-arm-network.VirtualNetworkPeering>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualNetworkPeering
+        fullName: VirtualNetworkPeering
+        uid: azure-arm-network.VirtualNetworkPeering
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.VirtualNetworkPeering>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualNetworkPeering
+        fullName: VirtualNetworkPeering
+        uid: azure-arm-network.VirtualNetworkPeering
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.VirtualNetworkPeeringListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualNetworkPeeringListResult
+        fullName: VirtualNetworkPeeringListResult
+        uid: azure-arm-network.VirtualNetworkPeeringListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.VirtualNetworkPeeringListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualNetworkPeeringListResult
+        fullName: VirtualNetworkPeeringListResult
+        uid: azure-arm-network.VirtualNetworkPeeringListResult
+      - name: '>'
+        fullName: '>'

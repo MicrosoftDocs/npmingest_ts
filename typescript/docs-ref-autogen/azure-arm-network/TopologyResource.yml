@@ -26,7 +26,7 @@ items:
       content: 'associations?: TopologyAssociation[]'
       return:
         type:
-          - '@azure-arm-network.TopologyAssociation[]'
+          - 'azure-arm-network.TopologyAssociation[]'
   - uid: azure-arm-network.TopologyResource.id
     name: id
     fullName: id
@@ -69,3 +69,11 @@ items:
       return:
         type:
           - string
+references:
+  - uid: 'azure-arm-network.TopologyAssociation[]'
+    spec.typeScript:
+      - name: TopologyAssociation
+        fullName: TopologyAssociation
+        uid: azure-arm-network.TopologyAssociation
+      - name: '[]'
+        fullName: '[]'

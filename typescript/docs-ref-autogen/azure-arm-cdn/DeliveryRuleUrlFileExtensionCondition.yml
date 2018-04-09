@@ -10,7 +10,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-cdn.DeliveryRuleCondition'
+      name: azure-arm-cdn.DeliveryRuleCondition
     package: azure-arm-cdn
   - uid: azure-arm-cdn.DeliveryRuleUrlFileExtensionCondition.parameters
     name: parameters
@@ -24,4 +24,15 @@ items:
       content: 'parameters: UrlFileExtensionConditionParameters'
       return:
         type:
-          - '@azure-arm-cdn.UrlFileExtensionConditionParameters'
+          - azure-arm-cdn.UrlFileExtensionConditionParameters
+references:
+  - uid: azure-arm-cdn.DeliveryRuleCondition
+    spec.typeScript:
+      - name: DeliveryRuleCondition
+        fullName: DeliveryRuleCondition
+        uid: azure-arm-cdn.DeliveryRuleCondition
+  - uid: azure-arm-cdn.UrlFileExtensionConditionParameters
+    spec.typeScript:
+      - name: UrlFileExtensionConditionParameters
+        fullName: UrlFileExtensionConditionParameters
+        uid: azure-arm-cdn.UrlFileExtensionConditionParameters

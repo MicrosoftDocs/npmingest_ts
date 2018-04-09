@@ -55,7 +55,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.Probe>
+          - Promise<azure-arm-network.Probe>
   - uid: azure-arm-network.LoadBalancerProbes.get_2
     name: get
     children: []
@@ -86,11 +86,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.Probe>
+            - ServiceCallback<azure-arm-network.Probe>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.Probe>
+          - Promise<azure-arm-network.Probe>
   - uid: azure-arm-network.LoadBalancerProbes.get_1
     name: get
     children: []
@@ -117,11 +117,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.Probe>
+            - ServiceCallback<azure-arm-network.Probe>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.Probe>
+          - Promise<azure-arm-network.Probe>
   - uid: azure-arm-network.LoadBalancerProbes.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -156,7 +156,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Probe>>
+          - Promise<Probe!@>>
   - uid: azure-arm-network.LoadBalancerProbes.list
     name: list
     children: []
@@ -186,7 +186,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerProbeListResult>
+          - Promise<azure-arm-network.LoadBalancerProbeListResult>
   - uid: azure-arm-network.LoadBalancerProbes.list_1
     name: list
     children: []
@@ -209,11 +209,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancerProbeListResult>
+            - ServiceCallback<azure-arm-network.LoadBalancerProbeListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerProbeListResult>
+          - Promise<azure-arm-network.LoadBalancerProbeListResult>
   - uid: azure-arm-network.LoadBalancerProbes.list_2
     name: list
     children: []
@@ -241,11 +241,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancerProbeListResult>
+            - ServiceCallback<azure-arm-network.LoadBalancerProbeListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerProbeListResult>
+          - Promise<azure-arm-network.LoadBalancerProbeListResult>
   - uid: azure-arm-network.LoadBalancerProbes.listNext
     name: listNext
     children: []
@@ -269,7 +269,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerProbeListResult>
+          - Promise<azure-arm-network.LoadBalancerProbeListResult>
   - uid: azure-arm-network.LoadBalancerProbes.listNext_1
     name: listNext
     children: []
@@ -288,11 +288,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancerProbeListResult>
+            - ServiceCallback<azure-arm-network.LoadBalancerProbeListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerProbeListResult>
+          - Promise<azure-arm-network.LoadBalancerProbeListResult>
   - uid: azure-arm-network.LoadBalancerProbes.listNext_2
     name: listNext
     children: []
@@ -315,11 +315,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.LoadBalancerProbeListResult>
+            - ServiceCallback<azure-arm-network.LoadBalancerProbeListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.LoadBalancerProbeListResult>
+          - Promise<azure-arm-network.LoadBalancerProbeListResult>
   - uid: azure-arm-network.LoadBalancerProbes.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -345,7 +345,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerProbeListResult>>
+          - Promise<LoadBalancerProbeListResult!@>>
   - uid: azure-arm-network.LoadBalancerProbes.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -375,4 +375,41 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerProbeListResult>>
+          - Promise<LoadBalancerProbeListResult!@>>
+references:
+  - uid: Promise<azure-arm-network.Probe>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Probe
+        fullName: Probe
+        uid: azure-arm-network.Probe
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.Probe>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Probe
+        fullName: Probe
+        uid: azure-arm-network.Probe
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.LoadBalancerProbeListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: LoadBalancerProbeListResult
+        fullName: LoadBalancerProbeListResult
+        uid: azure-arm-network.LoadBalancerProbeListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.LoadBalancerProbeListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: LoadBalancerProbeListResult
+        fullName: LoadBalancerProbeListResult
+        uid: azure-arm-network.LoadBalancerProbeListResult
+      - name: '>'
+        fullName: '>'

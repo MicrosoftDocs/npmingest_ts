@@ -25,7 +25,7 @@ items:
       content: 'endpoints?: RoutingEndpoints'
       return:
         type:
-          - '@azure-arm-iothub.RoutingEndpoints'
+          - azure-arm-iothub.RoutingEndpoints
   - uid: azure-arm-iothub.RoutingProperties.fallbackRoute
     name: fallbackRoute
     fullName: fallbackRoute
@@ -39,7 +39,7 @@ items:
       content: 'fallbackRoute?: FallbackRouteProperties'
       return:
         type:
-          - '@azure-arm-iothub.FallbackRouteProperties'
+          - azure-arm-iothub.FallbackRouteProperties
   - uid: azure-arm-iothub.RoutingProperties.routes
     name: routes
     fullName: routes
@@ -53,4 +53,22 @@ items:
       content: 'routes?: RouteProperties[]'
       return:
         type:
-          - '@azure-arm-iothub.RouteProperties[]'
+          - 'azure-arm-iothub.RouteProperties[]'
+references:
+  - uid: azure-arm-iothub.RoutingEndpoints
+    spec.typeScript:
+      - name: RoutingEndpoints
+        fullName: RoutingEndpoints
+        uid: azure-arm-iothub.RoutingEndpoints
+  - uid: azure-arm-iothub.FallbackRouteProperties
+    spec.typeScript:
+      - name: FallbackRouteProperties
+        fullName: FallbackRouteProperties
+        uid: azure-arm-iothub.FallbackRouteProperties
+  - uid: 'azure-arm-iothub.RouteProperties[]'
+    spec.typeScript:
+      - name: RouteProperties
+        fullName: RouteProperties
+        uid: azure-arm-iothub.RouteProperties
+      - name: '[]'
+        fullName: '[]'

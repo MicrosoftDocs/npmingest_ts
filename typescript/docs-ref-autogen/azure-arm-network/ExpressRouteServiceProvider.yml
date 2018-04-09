@@ -12,7 +12,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.Resource'
+      name: azure-arm-network.Resource
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteServiceProvider.bandwidthsOffered
     name: bandwidthsOffered
@@ -27,7 +27,7 @@ items:
       content: 'bandwidthsOffered?: ExpressRouteServiceProviderBandwidthsOffered[]'
       return:
         type:
-          - '@azure-arm-network.ExpressRouteServiceProviderBandwidthsOffered[]'
+          - 'azure-arm-network.ExpressRouteServiceProviderBandwidthsOffered[]'
   - uid: azure-arm-network.ExpressRouteServiceProvider.peeringLocations
     name: peeringLocations
     fullName: peeringLocations
@@ -56,3 +56,16 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-network.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network.Resource
+  - uid: 'azure-arm-network.ExpressRouteServiceProviderBandwidthsOffered[]'
+    spec.typeScript:
+      - name: ExpressRouteServiceProviderBandwidthsOffered
+        fullName: ExpressRouteServiceProviderBandwidthsOffered
+        uid: azure-arm-network.ExpressRouteServiceProviderBandwidthsOffered
+      - name: '[]'
+        fullName: '[]'

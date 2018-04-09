@@ -79,7 +79,7 @@ items:
             security group.
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationSecurityGroup'
+            - azure-arm-network.ApplicationSecurityGroup
           description: |
             Parameters supplied to the create or update
             ApplicationSecurityGroup operation.
@@ -90,7 +90,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroup>
+          - Promise<azure-arm-network.ApplicationSecurityGroup>
   - uid: azure-arm-network.ApplicationSecurityGroups.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -115,15 +115,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationSecurityGroup'
+            - azure-arm-network.ApplicationSecurityGroup
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationSecurityGroup>
+            - ServiceCallback<azure-arm-network.ApplicationSecurityGroup>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroup>
+          - Promise<azure-arm-network.ApplicationSecurityGroup>
   - uid: azure-arm-network.ApplicationSecurityGroups.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -148,7 +148,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationSecurityGroup'
+            - azure-arm-network.ApplicationSecurityGroup
           description: ''
         - id: options
           type:
@@ -156,11 +156,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationSecurityGroup>
+            - ServiceCallback<azure-arm-network.ApplicationSecurityGroup>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroup>
+          - Promise<azure-arm-network.ApplicationSecurityGroup>
   - uid: >-
       azure-arm-network.ApplicationSecurityGroups.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
@@ -188,7 +188,7 @@ items:
             security group.
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationSecurityGroup'
+            - azure-arm-network.ApplicationSecurityGroup
           description: |
             Parameters supplied to the create or update
             ApplicationSecurityGroup operation.
@@ -199,7 +199,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationSecurityGroup>>
+          - Promise<ApplicationSecurityGroup!@>>
   - uid: azure-arm-network.ApplicationSecurityGroups.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -346,15 +346,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationSecurityGroup'
+            - azure-arm-network.ApplicationSecurityGroup
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationSecurityGroup>
+            - ServiceCallback<azure-arm-network.ApplicationSecurityGroup>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroup>
+          - Promise<azure-arm-network.ApplicationSecurityGroup>
   - uid: azure-arm-network.ApplicationSecurityGroups.createOrUpdate
     name: createOrUpdate
     children: []
@@ -381,7 +381,7 @@ items:
             security group.
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationSecurityGroup'
+            - azure-arm-network.ApplicationSecurityGroup
           description: |
             Parameters supplied to the create or update
             ApplicationSecurityGroup operation.
@@ -392,7 +392,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroup>
+          - Promise<azure-arm-network.ApplicationSecurityGroup>
   - uid: azure-arm-network.ApplicationSecurityGroups.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -417,7 +417,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationSecurityGroup'
+            - azure-arm-network.ApplicationSecurityGroup
           description: ''
         - id: options
           type:
@@ -425,11 +425,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationSecurityGroup>
+            - ServiceCallback<azure-arm-network.ApplicationSecurityGroup>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroup>
+          - Promise<azure-arm-network.ApplicationSecurityGroup>
   - uid: >-
       azure-arm-network.ApplicationSecurityGroups.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
@@ -457,7 +457,7 @@ items:
             security group.
         - id: parameters
           type:
-            - '@azure-arm-network.ApplicationSecurityGroup'
+            - azure-arm-network.ApplicationSecurityGroup
           description: |
             Parameters supplied to the create or update
             ApplicationSecurityGroup operation.
@@ -468,7 +468,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationSecurityGroup>>
+          - Promise<ApplicationSecurityGroup!@>>
   - uid: azure-arm-network.ApplicationSecurityGroups.deleteMethod
     name: deleteMethod
     children: []
@@ -621,7 +621,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroup>
+          - Promise<azure-arm-network.ApplicationSecurityGroup>
   - uid: azure-arm-network.ApplicationSecurityGroups.get_1
     name: get
     children: []
@@ -644,11 +644,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationSecurityGroup>
+            - ServiceCallback<azure-arm-network.ApplicationSecurityGroup>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroup>
+          - Promise<azure-arm-network.ApplicationSecurityGroup>
   - uid: azure-arm-network.ApplicationSecurityGroups.get_2
     name: get
     children: []
@@ -676,11 +676,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.ApplicationSecurityGroup>
+            - ServiceCallback<azure-arm-network.ApplicationSecurityGroup>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroup>
+          - Promise<azure-arm-network.ApplicationSecurityGroup>
   - uid: azure-arm-network.ApplicationSecurityGroups.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -711,7 +711,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationSecurityGroup>>
+          - Promise<ApplicationSecurityGroup!@>>
   - uid: azure-arm-network.ApplicationSecurityGroups.list_1
     name: list
     children: []
@@ -731,11 +731,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationSecurityGroupListResult>
+              ServiceCallback<azure-arm-network.ApplicationSecurityGroupListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroupListResult>
+          - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
   - uid: azure-arm-network.ApplicationSecurityGroups.list_2
     name: list
     children: []
@@ -759,11 +759,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationSecurityGroupListResult>
+              ServiceCallback<azure-arm-network.ApplicationSecurityGroupListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroupListResult>
+          - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
   - uid: azure-arm-network.ApplicationSecurityGroups.list
     name: list
     children: []
@@ -786,7 +786,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroupListResult>
+          - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
   - uid: azure-arm-network.ApplicationSecurityGroups.listAll
     name: listAll
     children: []
@@ -804,7 +804,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroupListResult>
+          - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
   - uid: azure-arm-network.ApplicationSecurityGroups.listAll_1
     name: listAll
     children: []
@@ -820,11 +820,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationSecurityGroupListResult>
+              ServiceCallback<azure-arm-network.ApplicationSecurityGroupListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroupListResult>
+          - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
   - uid: azure-arm-network.ApplicationSecurityGroups.listAll_2
     name: listAll
     children: []
@@ -844,11 +844,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationSecurityGroupListResult>
+              ServiceCallback<azure-arm-network.ApplicationSecurityGroupListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroupListResult>
+          - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
   - uid: azure-arm-network.ApplicationSecurityGroups.listAllNext
     name: listAllNext
     children: []
@@ -872,7 +872,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroupListResult>
+          - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
   - uid: azure-arm-network.ApplicationSecurityGroups.listAllNext_1
     name: listAllNext
     children: []
@@ -892,11 +892,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationSecurityGroupListResult>
+              ServiceCallback<azure-arm-network.ApplicationSecurityGroupListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroupListResult>
+          - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
   - uid: azure-arm-network.ApplicationSecurityGroups.listAllNext_2
     name: listAllNext
     children: []
@@ -920,11 +920,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationSecurityGroupListResult>
+              ServiceCallback<azure-arm-network.ApplicationSecurityGroupListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroupListResult>
+          - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
   - uid: >-
       azure-arm-network.ApplicationSecurityGroups.listAllNextWithHttpOperationResponse
     name: listAllNextWithHttpOperationResponse
@@ -951,7 +951,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationSecurityGroupListResult>>
+          - Promise<ApplicationSecurityGroupListResult!@>>
   - uid: >-
       azure-arm-network.ApplicationSecurityGroups.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse
@@ -970,7 +970,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationSecurityGroupListResult>>
+          - Promise<ApplicationSecurityGroupListResult!@>>
   - uid: azure-arm-network.ApplicationSecurityGroups.listNext
     name: listNext
     children: []
@@ -994,7 +994,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroupListResult>
+          - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
   - uid: azure-arm-network.ApplicationSecurityGroups.listNext_1
     name: listNext
     children: []
@@ -1014,11 +1014,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationSecurityGroupListResult>
+              ServiceCallback<azure-arm-network.ApplicationSecurityGroupListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroupListResult>
+          - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
   - uid: azure-arm-network.ApplicationSecurityGroups.listNext_2
     name: listNext
     children: []
@@ -1042,11 +1042,11 @@ items:
         - id: callback
           type:
             - >-
-              ServiceCallback<@azure-arm-network.ApplicationSecurityGroupListResult>
+              ServiceCallback<azure-arm-network.ApplicationSecurityGroupListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.ApplicationSecurityGroupListResult>
+          - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
   - uid: >-
       azure-arm-network.ApplicationSecurityGroups.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
@@ -1073,7 +1073,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationSecurityGroupListResult>>
+          - Promise<ApplicationSecurityGroupListResult!@>>
   - uid: azure-arm-network.ApplicationSecurityGroups.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1098,4 +1098,46 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationSecurityGroupListResult>>
+          - Promise<ApplicationSecurityGroupListResult!@>>
+references:
+  - uid: azure-arm-network.ApplicationSecurityGroup
+    spec.typeScript:
+      - name: ApplicationSecurityGroup
+        fullName: ApplicationSecurityGroup
+        uid: azure-arm-network.ApplicationSecurityGroup
+  - uid: Promise<azure-arm-network.ApplicationSecurityGroup>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ApplicationSecurityGroup
+        fullName: ApplicationSecurityGroup
+        uid: azure-arm-network.ApplicationSecurityGroup
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ApplicationSecurityGroup>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ApplicationSecurityGroup
+        fullName: ApplicationSecurityGroup
+        uid: azure-arm-network.ApplicationSecurityGroup
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<azure-arm-network.ApplicationSecurityGroupListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ApplicationSecurityGroupListResult
+        fullName: ApplicationSecurityGroupListResult
+        uid: azure-arm-network.ApplicationSecurityGroupListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.ApplicationSecurityGroupListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ApplicationSecurityGroupListResult
+        fullName: ApplicationSecurityGroupListResult
+        uid: azure-arm-network.ApplicationSecurityGroupListResult
+      - name: '>'
+        fullName: '>'

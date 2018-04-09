@@ -26,7 +26,7 @@ items:
       content: 'backendHttpSettings?: ApplicationGatewayBackendHttpSettings'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayBackendHttpSettings'
+          - azure-arm-network.ApplicationGatewayBackendHttpSettings
   - uid: azure-arm-network.ApplicationGatewayBackendHealthHttpSettings.servers
     name: servers
     fullName: servers
@@ -40,4 +40,17 @@ items:
       content: 'servers?: ApplicationGatewayBackendHealthServer[]'
       return:
         type:
-          - '@azure-arm-network.ApplicationGatewayBackendHealthServer[]'
+          - 'azure-arm-network.ApplicationGatewayBackendHealthServer[]'
+references:
+  - uid: azure-arm-network.ApplicationGatewayBackendHttpSettings
+    spec.typeScript:
+      - name: ApplicationGatewayBackendHttpSettings
+        fullName: ApplicationGatewayBackendHttpSettings
+        uid: azure-arm-network.ApplicationGatewayBackendHttpSettings
+  - uid: 'azure-arm-network.ApplicationGatewayBackendHealthServer[]'
+    spec.typeScript:
+      - name: ApplicationGatewayBackendHealthServer
+        fullName: ApplicationGatewayBackendHealthServer
+        uid: azure-arm-network.ApplicationGatewayBackendHealthServer
+      - name: '[]'
+        fullName: '[]'

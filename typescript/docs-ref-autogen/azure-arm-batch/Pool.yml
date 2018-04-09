@@ -33,7 +33,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-batch.ProxyResource'
+      name: azure-arm-batch.ProxyResource
     package: azure-arm-batch
   - uid: azure-arm-batch.Pool.allocationState
     name: allocationState
@@ -90,7 +90,7 @@ items:
       content: 'applicationPackages?: ApplicationPackageReference[]'
       return:
         type:
-          - '@azure-arm-batch.ApplicationPackageReference[]'
+          - 'azure-arm-batch.ApplicationPackageReference[]'
   - uid: azure-arm-batch.Pool.autoScaleRun
     name: autoScaleRun
     fullName: autoScaleRun
@@ -104,7 +104,7 @@ items:
       content: 'autoScaleRun?: AutoScaleRun'
       return:
         type:
-          - '@azure-arm-batch.AutoScaleRun'
+          - azure-arm-batch.AutoScaleRun
   - uid: azure-arm-batch.Pool.certificates
     name: certificates
     fullName: certificates
@@ -118,7 +118,7 @@ items:
       content: 'certificates?: CertificateReference[]'
       return:
         type:
-          - '@azure-arm-batch.CertificateReference[]'
+          - 'azure-arm-batch.CertificateReference[]'
   - uid: azure-arm-batch.Pool.creationTime
     name: creationTime
     fullName: creationTime
@@ -174,7 +174,7 @@ items:
       content: 'deploymentConfiguration?: DeploymentConfiguration'
       return:
         type:
-          - '@azure-arm-batch.DeploymentConfiguration'
+          - azure-arm-batch.DeploymentConfiguration
   - uid: azure-arm-batch.Pool.displayName
     name: displayName
     fullName: displayName
@@ -244,7 +244,7 @@ items:
       content: 'metadata?: MetadataItem[]'
       return:
         type:
-          - '@azure-arm-batch.MetadataItem[]'
+          - 'azure-arm-batch.MetadataItem[]'
   - uid: azure-arm-batch.Pool.networkConfiguration
     name: networkConfiguration
     fullName: networkConfiguration
@@ -258,7 +258,7 @@ items:
       content: 'networkConfiguration?: NetworkConfiguration'
       return:
         type:
-          - '@azure-arm-batch.NetworkConfiguration'
+          - azure-arm-batch.NetworkConfiguration
   - uid: azure-arm-batch.Pool.provisioningState
     name: provisioningState
     fullName: provisioningState
@@ -300,7 +300,7 @@ items:
       content: 'resizeOperationStatus?: ResizeOperationStatus'
       return:
         type:
-          - '@azure-arm-batch.ResizeOperationStatus'
+          - azure-arm-batch.ResizeOperationStatus
   - uid: azure-arm-batch.Pool.scaleSettings
     name: scaleSettings
     fullName: scaleSettings
@@ -314,7 +314,7 @@ items:
       content: 'scaleSettings?: ScaleSettings'
       return:
         type:
-          - '@azure-arm-batch.ScaleSettings'
+          - azure-arm-batch.ScaleSettings
   - uid: azure-arm-batch.Pool.startTask
     name: startTask
     fullName: startTask
@@ -328,7 +328,7 @@ items:
       content: 'startTask?: StartTask'
       return:
         type:
-          - '@azure-arm-batch.StartTask'
+          - azure-arm-batch.StartTask
   - uid: azure-arm-batch.Pool.taskSchedulingPolicy
     name: taskSchedulingPolicy
     fullName: taskSchedulingPolicy
@@ -342,7 +342,7 @@ items:
       content: 'taskSchedulingPolicy?: TaskSchedulingPolicy'
       return:
         type:
-          - '@azure-arm-batch.TaskSchedulingPolicy'
+          - azure-arm-batch.TaskSchedulingPolicy
   - uid: azure-arm-batch.Pool.userAccounts
     name: userAccounts
     fullName: userAccounts
@@ -356,7 +356,7 @@ items:
       content: 'userAccounts?: UserAccount[]'
       return:
         type:
-          - '@azure-arm-batch.UserAccount[]'
+          - 'azure-arm-batch.UserAccount[]'
   - uid: azure-arm-batch.Pool.vmSize
     name: vmSize
     fullName: vmSize
@@ -371,3 +371,72 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-batch.ProxyResource
+    spec.typeScript:
+      - name: ProxyResource
+        fullName: ProxyResource
+        uid: azure-arm-batch.ProxyResource
+  - uid: 'azure-arm-batch.ApplicationPackageReference[]'
+    spec.typeScript:
+      - name: ApplicationPackageReference
+        fullName: ApplicationPackageReference
+        uid: azure-arm-batch.ApplicationPackageReference
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-batch.AutoScaleRun
+    spec.typeScript:
+      - name: AutoScaleRun
+        fullName: AutoScaleRun
+        uid: azure-arm-batch.AutoScaleRun
+  - uid: 'azure-arm-batch.CertificateReference[]'
+    spec.typeScript:
+      - name: CertificateReference
+        fullName: CertificateReference
+        uid: azure-arm-batch.CertificateReference
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-batch.DeploymentConfiguration
+    spec.typeScript:
+      - name: DeploymentConfiguration
+        fullName: DeploymentConfiguration
+        uid: azure-arm-batch.DeploymentConfiguration
+  - uid: 'azure-arm-batch.MetadataItem[]'
+    spec.typeScript:
+      - name: MetadataItem
+        fullName: MetadataItem
+        uid: azure-arm-batch.MetadataItem
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-batch.NetworkConfiguration
+    spec.typeScript:
+      - name: NetworkConfiguration
+        fullName: NetworkConfiguration
+        uid: azure-arm-batch.NetworkConfiguration
+  - uid: azure-arm-batch.ResizeOperationStatus
+    spec.typeScript:
+      - name: ResizeOperationStatus
+        fullName: ResizeOperationStatus
+        uid: azure-arm-batch.ResizeOperationStatus
+  - uid: azure-arm-batch.ScaleSettings
+    spec.typeScript:
+      - name: ScaleSettings
+        fullName: ScaleSettings
+        uid: azure-arm-batch.ScaleSettings
+  - uid: azure-arm-batch.StartTask
+    spec.typeScript:
+      - name: StartTask
+        fullName: StartTask
+        uid: azure-arm-batch.StartTask
+  - uid: azure-arm-batch.TaskSchedulingPolicy
+    spec.typeScript:
+      - name: TaskSchedulingPolicy
+        fullName: TaskSchedulingPolicy
+        uid: azure-arm-batch.TaskSchedulingPolicy
+  - uid: 'azure-arm-batch.UserAccount[]'
+    spec.typeScript:
+      - name: UserAccount
+        fullName: UserAccount
+        uid: azure-arm-batch.UserAccount
+      - name: '[]'
+        fullName: '[]'

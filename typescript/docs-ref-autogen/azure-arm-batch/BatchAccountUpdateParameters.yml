@@ -24,7 +24,7 @@ items:
       content: 'autoStorage?: AutoStorageBaseProperties'
       return:
         type:
-          - '@azure-arm-batch.AutoStorageBaseProperties'
+          - azure-arm-batch.AutoStorageBaseProperties
   - uid: azure-arm-batch.BatchAccountUpdateParameters.tags
     name: tags
     fullName: tags
@@ -39,3 +39,9 @@ items:
       return:
         type:
           - function
+references:
+  - uid: azure-arm-batch.AutoStorageBaseProperties
+    spec.typeScript:
+      - name: AutoStorageBaseProperties
+        fullName: AutoStorageBaseProperties
+        uid: azure-arm-batch.AutoStorageBaseProperties

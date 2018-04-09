@@ -123,7 +123,7 @@ items:
             The name of the public IP address.
         - id: parameters
           type:
-            - '@azure-arm-network.PublicIPAddress'
+            - azure-arm-network.PublicIPAddress
           description: |
             Parameters supplied to the create or update
             public IP address operation.
@@ -134,7 +134,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: azure-arm-network.PublicIPAddresses.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -158,15 +158,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.PublicIPAddress'
+            - azure-arm-network.PublicIPAddress
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+            - ServiceCallback<azure-arm-network.PublicIPAddress>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: azure-arm-network.PublicIPAddresses.beginCreateOrUpdate_2
     name: beginCreateOrUpdate
     children: []
@@ -190,7 +190,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.PublicIPAddress'
+            - azure-arm-network.PublicIPAddress
           description: ''
         - id: options
           type:
@@ -198,11 +198,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+            - ServiceCallback<azure-arm-network.PublicIPAddress>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: >-
       azure-arm-network.PublicIPAddresses.beginCreateOrUpdateWithHttpOperationResponse
     name: beginCreateOrUpdateWithHttpOperationResponse
@@ -229,7 +229,7 @@ items:
             The name of the public IP address.
         - id: parameters
           type:
-            - '@azure-arm-network.PublicIPAddress'
+            - azure-arm-network.PublicIPAddress
           description: |
             Parameters supplied to the create or update
             public IP address operation.
@@ -240,7 +240,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddress>>
+          - Promise<PublicIPAddress!@>>
   - uid: azure-arm-network.PublicIPAddresses.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -384,15 +384,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+            - ServiceCallback<azure-arm-network.PublicIPAddress>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: azure-arm-network.PublicIPAddresses.beginUpdateTags_2
     name: beginUpdateTags
     children: []
@@ -416,7 +416,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -424,11 +424,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+            - ServiceCallback<azure-arm-network.PublicIPAddress>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: azure-arm-network.PublicIPAddresses.beginUpdateTags
     name: beginUpdateTags
     children: []
@@ -453,7 +453,7 @@ items:
             The name of the public IP address.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update public IP address
             tags.
@@ -464,7 +464,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: >-
       azure-arm-network.PublicIPAddresses.beginUpdateTagsWithHttpOperationResponse
     name: beginUpdateTagsWithHttpOperationResponse
@@ -491,7 +491,7 @@ items:
             The name of the public IP address.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update public IP address
             tags.
@@ -502,7 +502,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddress>>
+          - Promise<PublicIPAddress!@>>
   - uid: azure-arm-network.PublicIPAddresses.createOrUpdate
     name: createOrUpdate
     children: []
@@ -527,7 +527,7 @@ items:
             The name of the public IP address.
         - id: parameters
           type:
-            - '@azure-arm-network.PublicIPAddress'
+            - azure-arm-network.PublicIPAddress
           description: |
             Parameters supplied to the create or update
             public IP address operation.
@@ -538,7 +538,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: azure-arm-network.PublicIPAddresses.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -562,15 +562,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.PublicIPAddress'
+            - azure-arm-network.PublicIPAddress
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+            - ServiceCallback<azure-arm-network.PublicIPAddress>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: azure-arm-network.PublicIPAddresses.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -594,7 +594,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.PublicIPAddress'
+            - azure-arm-network.PublicIPAddress
           description: ''
         - id: options
           type:
@@ -602,11 +602,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+            - ServiceCallback<azure-arm-network.PublicIPAddress>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: >-
       azure-arm-network.PublicIPAddresses.createOrUpdateWithHttpOperationResponse
     name: createOrUpdateWithHttpOperationResponse
@@ -633,7 +633,7 @@ items:
             The name of the public IP address.
         - id: parameters
           type:
-            - '@azure-arm-network.PublicIPAddress'
+            - azure-arm-network.PublicIPAddress
           description: |
             Parameters supplied to the create or update
             public IP address operation.
@@ -644,7 +644,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddress>>
+          - Promise<PublicIPAddress!@>>
   - uid: azure-arm-network.PublicIPAddresses.deleteMethod_1
     name: deleteMethod
     children: []
@@ -785,11 +785,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+            - ServiceCallback<azure-arm-network.PublicIPAddress>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: azure-arm-network.PublicIPAddresses.get
     name: get
     children: []
@@ -819,7 +819,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: azure-arm-network.PublicIPAddresses.get_2
     name: get
     children: []
@@ -846,11 +846,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+            - ServiceCallback<azure-arm-network.PublicIPAddress>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: >-
       azure-arm-network.PublicIPAddresses.getVirtualMachineScaleSetPublicIPAddress_1
     name: getVirtualMachineScaleSetPublicIPAddress
@@ -892,11 +892,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+            - ServiceCallback<azure-arm-network.PublicIPAddress>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: >-
       azure-arm-network.PublicIPAddresses.getVirtualMachineScaleSetPublicIPAddress_2
     name: getVirtualMachineScaleSetPublicIPAddress
@@ -943,11 +943,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+            - ServiceCallback<azure-arm-network.PublicIPAddress>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: >-
       azure-arm-network.PublicIPAddresses.getVirtualMachineScaleSetPublicIPAddress
     name: getVirtualMachineScaleSetPublicIPAddress
@@ -1001,7 +1001,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: >-
       azure-arm-network.PublicIPAddresses.getVirtualMachineScaleSetPublicIPAddressWithHttpOperationResponse
     name: getVirtualMachineScaleSetPublicIPAddressWithHttpOperationResponse
@@ -1056,7 +1056,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddress>>
+          - Promise<PublicIPAddress!@>>
   - uid: azure-arm-network.PublicIPAddresses.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -1086,7 +1086,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddress>>
+          - Promise<PublicIPAddress!@>>
   - uid: azure-arm-network.PublicIPAddresses.list
     name: list
     children: []
@@ -1109,7 +1109,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: azure-arm-network.PublicIPAddresses.list_1
     name: list
     children: []
@@ -1128,11 +1128,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+            - ServiceCallback<azure-arm-network.PublicIPAddressListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: azure-arm-network.PublicIPAddresses.list_2
     name: list
     children: []
@@ -1155,11 +1155,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+            - ServiceCallback<azure-arm-network.PublicIPAddressListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: azure-arm-network.PublicIPAddresses.listAll
     name: listAll
     children: []
@@ -1177,7 +1177,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: azure-arm-network.PublicIPAddresses.listAll_1
     name: listAll
     children: []
@@ -1190,11 +1190,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+            - ServiceCallback<azure-arm-network.PublicIPAddressListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: azure-arm-network.PublicIPAddresses.listAll_2
     name: listAll
     children: []
@@ -1213,11 +1213,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+            - ServiceCallback<azure-arm-network.PublicIPAddressListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: azure-arm-network.PublicIPAddresses.listAllNext
     name: listAllNext
     children: []
@@ -1241,7 +1241,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: azure-arm-network.PublicIPAddresses.listAllNext_1
     name: listAllNext
     children: []
@@ -1260,11 +1260,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+            - ServiceCallback<azure-arm-network.PublicIPAddressListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: azure-arm-network.PublicIPAddresses.listAllNext_2
     name: listAllNext
     children: []
@@ -1287,11 +1287,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+            - ServiceCallback<azure-arm-network.PublicIPAddressListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: azure-arm-network.PublicIPAddresses.listAllNextWithHttpOperationResponse
     name: listAllNextWithHttpOperationResponse
     children: []
@@ -1317,7 +1317,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddressListResult>>
+          - Promise<PublicIPAddressListResult!@>>
   - uid: azure-arm-network.PublicIPAddresses.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse
     children: []
@@ -1335,7 +1335,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddressListResult>>
+          - Promise<PublicIPAddressListResult!@>>
   - uid: azure-arm-network.PublicIPAddresses.listNext_1
     name: listNext
     children: []
@@ -1354,11 +1354,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+            - ServiceCallback<azure-arm-network.PublicIPAddressListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: azure-arm-network.PublicIPAddresses.listNext_2
     name: listNext
     children: []
@@ -1381,11 +1381,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+            - ServiceCallback<azure-arm-network.PublicIPAddressListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: azure-arm-network.PublicIPAddresses.listNext
     name: listNext
     children: []
@@ -1409,7 +1409,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: azure-arm-network.PublicIPAddresses.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -1435,7 +1435,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddressListResult>>
+          - Promise<PublicIPAddressListResult!@>>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddresses
     name: listVirtualMachineScaleSetPublicIPAddresses
@@ -1469,7 +1469,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddresses_2
     name: listVirtualMachineScaleSetPublicIPAddresses
@@ -1500,11 +1500,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+            - ServiceCallback<azure-arm-network.PublicIPAddressListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddresses_1
     name: listVirtualMachineScaleSetPublicIPAddresses
@@ -1531,11 +1531,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+            - ServiceCallback<azure-arm-network.PublicIPAddressListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddressesNext
     name: listVirtualMachineScaleSetPublicIPAddressesNext
@@ -1564,7 +1564,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddressesNext_1
     name: listVirtualMachineScaleSetPublicIPAddressesNext
@@ -1586,11 +1586,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+            - ServiceCallback<azure-arm-network.PublicIPAddressListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddressesNext_2
     name: listVirtualMachineScaleSetPublicIPAddressesNext
@@ -1617,11 +1617,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+            - ServiceCallback<azure-arm-network.PublicIPAddressListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddressesNextWithHttpOperationResponse
     name: listVirtualMachineScaleSetPublicIPAddressesNextWithHttpOperationResponse
@@ -1651,7 +1651,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddressListResult>>
+          - Promise<PublicIPAddressListResult!@>>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddressesWithHttpOperationResponse
     name: listVirtualMachineScaleSetPublicIPAddressesWithHttpOperationResponse
@@ -1686,7 +1686,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddressListResult>>
+          - Promise<PublicIPAddressListResult!@>>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddresses_1
     name: listVirtualMachineScaleSetVMPublicIPAddresses
@@ -1727,11 +1727,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+            - ServiceCallback<azure-arm-network.PublicIPAddressListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddresses_2
     name: listVirtualMachineScaleSetVMPublicIPAddresses
@@ -1776,11 +1776,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+            - ServiceCallback<azure-arm-network.PublicIPAddressListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddresses
     name: listVirtualMachineScaleSetVMPublicIPAddresses
@@ -1832,7 +1832,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddressesNext
     name: listVirtualMachineScaleSetVMPublicIPAddressesNext
@@ -1861,7 +1861,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddressesNext_1
     name: listVirtualMachineScaleSetVMPublicIPAddressesNext
@@ -1883,11 +1883,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+            - ServiceCallback<azure-arm-network.PublicIPAddressListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddressesNext_2
     name: listVirtualMachineScaleSetVMPublicIPAddressesNext
@@ -1914,11 +1914,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddressListResult>
+            - ServiceCallback<azure-arm-network.PublicIPAddressListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddressListResult>
+          - Promise<azure-arm-network.PublicIPAddressListResult>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddressesNextWithHttpOperationResponse
     name: listVirtualMachineScaleSetVMPublicIPAddressesNextWithHttpOperationResponse
@@ -1948,7 +1948,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddressListResult>>
+          - Promise<PublicIPAddressListResult!@>>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddressesWithHttpOperationResponse
     name: listVirtualMachineScaleSetVMPublicIPAddressesWithHttpOperationResponse
@@ -2000,7 +2000,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddressListResult>>
+          - Promise<PublicIPAddressListResult!@>>
   - uid: azure-arm-network.PublicIPAddresses.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -2025,7 +2025,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddressListResult>>
+          - Promise<PublicIPAddressListResult!@>>
   - uid: azure-arm-network.PublicIPAddresses.updateTags
     name: updateTags
     children: []
@@ -2050,7 +2050,7 @@ items:
             The name of the public IP address.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update public IP address
             tags.
@@ -2061,7 +2061,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: azure-arm-network.PublicIPAddresses.updateTags_1
     name: updateTags
     children: []
@@ -2085,15 +2085,15 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+            - ServiceCallback<azure-arm-network.PublicIPAddress>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: azure-arm-network.PublicIPAddresses.updateTags_2
     name: updateTags
     children: []
@@ -2117,7 +2117,7 @@ items:
           description: ''
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: ''
         - id: options
           type:
@@ -2125,11 +2125,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-network.PublicIPAddress>
+            - ServiceCallback<azure-arm-network.PublicIPAddress>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-network.PublicIPAddress>
+          - Promise<azure-arm-network.PublicIPAddress>
   - uid: azure-arm-network.PublicIPAddresses.updateTagsWithHttpOperationResponse
     name: updateTagsWithHttpOperationResponse
     children: []
@@ -2154,7 +2154,7 @@ items:
             The name of the public IP address.
         - id: parameters
           type:
-            - '@azure-arm-network.TagsObject'
+            - azure-arm-network.TagsObject
           description: |
             Parameters supplied to update public IP address
             tags.
@@ -2165,4 +2165,51 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddress>>
+          - Promise<PublicIPAddress!@>>
+references:
+  - uid: azure-arm-network.PublicIPAddress
+    spec.typeScript:
+      - name: PublicIPAddress
+        fullName: PublicIPAddress
+        uid: azure-arm-network.PublicIPAddress
+  - uid: Promise<azure-arm-network.PublicIPAddress>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: PublicIPAddress
+        fullName: PublicIPAddress
+        uid: azure-arm-network.PublicIPAddress
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.PublicIPAddress>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: PublicIPAddress
+        fullName: PublicIPAddress
+        uid: azure-arm-network.PublicIPAddress
+      - name: '>'
+        fullName: '>'
+  - uid: azure-arm-network.TagsObject
+    spec.typeScript:
+      - name: TagsObject
+        fullName: TagsObject
+        uid: azure-arm-network.TagsObject
+  - uid: Promise<azure-arm-network.PublicIPAddressListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: PublicIPAddressListResult
+        fullName: PublicIPAddressListResult
+        uid: azure-arm-network.PublicIPAddressListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.PublicIPAddressListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: PublicIPAddressListResult
+        fullName: PublicIPAddressListResult
+        uid: azure-arm-network.PublicIPAddressListResult
+      - name: '>'
+        fullName: '>'

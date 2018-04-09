@@ -14,7 +14,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: '@azure-arm-network.Resource'
+      name: azure-arm-network.Resource
     package: azure-arm-network
   - uid: azure-arm-network.RouteTable.disableBgpRoutePropagation
     name: disableBgpRoutePropagation
@@ -71,7 +71,7 @@ items:
       content: 'routes?: Route[]'
       return:
         type:
-          - '@azure-arm-network.Route[]'
+          - 'azure-arm-network.Route[]'
   - uid: azure-arm-network.RouteTable.subnets
     name: subnets
     fullName: subnets
@@ -85,4 +85,24 @@ items:
       content: 'subnets?: Subnet[]'
       return:
         type:
-          - '@azure-arm-network.Subnet[]'
+          - 'azure-arm-network.Subnet[]'
+references:
+  - uid: azure-arm-network.Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network.Resource
+  - uid: 'azure-arm-network.Route[]'
+    spec.typeScript:
+      - name: Route
+        fullName: Route
+        uid: azure-arm-network.Route
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.Subnet[]'
+    spec.typeScript:
+      - name: Subnet
+        fullName: Subnet
+        uid: azure-arm-network.Subnet
+      - name: '[]'
+        fullName: '[]'

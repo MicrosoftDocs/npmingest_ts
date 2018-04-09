@@ -72,7 +72,7 @@ items:
       content: 'managedDisk?: SubResource'
       return:
         type:
-          - '@azure-arm-compute.SubResource'
+          - azure-arm-compute.SubResource
   - uid: azure-arm-compute.ImageOSDisk.osState
     name: osState
     fullName: osState
@@ -112,7 +112,7 @@ items:
       content: 'snapshot?: SubResource'
       return:
         type:
-          - '@azure-arm-compute.SubResource'
+          - azure-arm-compute.SubResource
   - uid: azure-arm-compute.ImageOSDisk.storageAccountType
     name: storageAccountType
     fullName: storageAccountType
@@ -127,3 +127,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-compute.SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute.SubResource

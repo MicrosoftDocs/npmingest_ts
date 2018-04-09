@@ -34,7 +34,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.OperationListResult>
+          - Promise<azure-arm-iothub.OperationListResult>
   - uid: azure-arm-iothub.Operations.list_1
     name: list
     children: []
@@ -47,11 +47,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.OperationListResult>
+            - ServiceCallback<azure-arm-iothub.OperationListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.OperationListResult>
+          - Promise<azure-arm-iothub.OperationListResult>
   - uid: azure-arm-iothub.Operations.list_2
     name: list
     children: []
@@ -70,11 +70,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.OperationListResult>
+            - ServiceCallback<azure-arm-iothub.OperationListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.OperationListResult>
+          - Promise<azure-arm-iothub.OperationListResult>
   - uid: azure-arm-iothub.Operations.listNext
     name: listNext
     children: []
@@ -98,7 +98,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-iothub.OperationListResult>
+          - Promise<azure-arm-iothub.OperationListResult>
   - uid: azure-arm-iothub.Operations.listNext_1
     name: listNext
     children: []
@@ -117,11 +117,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.OperationListResult>
+            - ServiceCallback<azure-arm-iothub.OperationListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.OperationListResult>
+          - Promise<azure-arm-iothub.OperationListResult>
   - uid: azure-arm-iothub.Operations.listNext_2
     name: listNext
     children: []
@@ -144,11 +144,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-iothub.OperationListResult>
+            - ServiceCallback<azure-arm-iothub.OperationListResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-iothub.OperationListResult>
+          - Promise<azure-arm-iothub.OperationListResult>
   - uid: azure-arm-iothub.Operations.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -174,7 +174,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationListResult>>
+          - Promise<OperationListResult!@>>
   - uid: azure-arm-iothub.Operations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -192,4 +192,23 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationListResult>>
+          - Promise<OperationListResult!@>>
+references:
+  - uid: Promise<azure-arm-iothub.OperationListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: OperationListResult
+        fullName: OperationListResult
+        uid: azure-arm-iothub.OperationListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-iothub.OperationListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: OperationListResult
+        fullName: OperationListResult
+        uid: azure-arm-iothub.OperationListResult
+      - name: '>'
+        fullName: '>'

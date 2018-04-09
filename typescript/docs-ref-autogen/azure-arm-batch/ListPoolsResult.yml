@@ -11,7 +11,7 @@ items:
     type: interface
     summary: ''
     extends:
-      name: Array<@azure-arm-batch.Pool>
+      name: Array<azure-arm-batch.Pool>
     package: azure-arm-batch
   - uid: azure-arm-batch.ListPoolsResult.Array
     name: Array
@@ -40,3 +40,13 @@ items:
       return:
         type:
           - string
+references:
+  - uid: Array<azure-arm-batch.Pool>
+    spec.typeScript:
+      - name: Array<
+        fullName: Array<
+      - name: Pool
+        fullName: Pool
+        uid: azure-arm-batch.Pool
+      - name: '>'
+        fullName: '>'

@@ -36,7 +36,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.EdgenodeResult>
+          - Promise<azure-arm-cdn.EdgenodeResult>
   - uid: azure-arm-cdn.EdgeNodes.list_1
     name: list
     children: []
@@ -51,11 +51,11 @@ items:
       parameters:
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.EdgenodeResult>
+            - ServiceCallback<azure-arm-cdn.EdgenodeResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.EdgenodeResult>
+          - Promise<azure-arm-cdn.EdgenodeResult>
   - uid: azure-arm-cdn.EdgeNodes.list_2
     name: list
     children: []
@@ -76,11 +76,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.EdgenodeResult>
+            - ServiceCallback<azure-arm-cdn.EdgenodeResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.EdgenodeResult>
+          - Promise<azure-arm-cdn.EdgenodeResult>
   - uid: azure-arm-cdn.EdgeNodes.listNext
     name: listNext
     children: []
@@ -106,7 +106,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<@azure-arm-cdn.EdgenodeResult>
+          - Promise<azure-arm-cdn.EdgenodeResult>
   - uid: azure-arm-cdn.EdgeNodes.listNext_1
     name: listNext
     children: []
@@ -127,11 +127,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.EdgenodeResult>
+            - ServiceCallback<azure-arm-cdn.EdgenodeResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.EdgenodeResult>
+          - Promise<azure-arm-cdn.EdgenodeResult>
   - uid: azure-arm-cdn.EdgeNodes.listNext_2
     name: listNext
     children: []
@@ -156,11 +156,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<@azure-arm-cdn.EdgenodeResult>
+            - ServiceCallback<azure-arm-cdn.EdgenodeResult>
           description: ''
       return:
         type:
-          - Promise<@azure-arm-cdn.EdgenodeResult>
+          - Promise<azure-arm-cdn.EdgenodeResult>
   - uid: azure-arm-cdn.EdgeNodes.listNextWithHttpOperationResponse
     name: listNextWithHttpOperationResponse
     children: []
@@ -188,7 +188,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<EdgenodeResult>>
+          - Promise<EdgenodeResult!@>>
   - uid: azure-arm-cdn.EdgeNodes.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -208,4 +208,23 @@ items:
           optional: true
       return:
         type:
-          - Promise<EdgenodeResult>>
+          - Promise<EdgenodeResult!@>>
+references:
+  - uid: Promise<azure-arm-cdn.EdgenodeResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: EdgenodeResult
+        fullName: EdgenodeResult
+        uid: azure-arm-cdn.EdgenodeResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-cdn.EdgenodeResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: EdgenodeResult
+        fullName: EdgenodeResult
+        uid: azure-arm-cdn.EdgenodeResult
+      - name: '>'
+        fullName: '>'
