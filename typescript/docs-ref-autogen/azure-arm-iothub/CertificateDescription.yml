@@ -1,14 +1,14 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: azure-arm-iothub.EventHubConsumerGroupInfo
-    name: EventHubConsumerGroupInfo
-    fullName: EventHubConsumerGroupInfo
+  - uid: azure-arm-iothub.CertificateDescription
+    name: CertificateDescription
+    fullName: CertificateDescription
     children:
-      - azure-arm-iothub.EventHubConsumerGroupInfo.etag
-      - azure-arm-iothub.EventHubConsumerGroupInfo.id
-      - azure-arm-iothub.EventHubConsumerGroupInfo.name
-      - azure-arm-iothub.EventHubConsumerGroupInfo.properties
-      - azure-arm-iothub.EventHubConsumerGroupInfo.type
+      - azure-arm-iothub.CertificateDescription.etag
+      - azure-arm-iothub.CertificateDescription.id
+      - azure-arm-iothub.CertificateDescription.name
+      - azure-arm-iothub.CertificateDescription.properties
+      - azure-arm-iothub.CertificateDescription.type
     langs:
       - typeScript
     type: interface
@@ -16,7 +16,7 @@ items:
     extends:
       name: BaseResource
     package: azure-arm-iothub
-  - uid: azure-arm-iothub.EventHubConsumerGroupInfo.etag
+  - uid: azure-arm-iothub.CertificateDescription.etag
     name: etag
     fullName: etag
     children: []
@@ -30,7 +30,7 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-iothub.EventHubConsumerGroupInfo.id
+  - uid: azure-arm-iothub.CertificateDescription.id
     name: id
     fullName: id
     children: []
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-iothub.EventHubConsumerGroupInfo.name
+  - uid: azure-arm-iothub.CertificateDescription.name
     name: name
     fullName: name
     children: []
@@ -58,7 +58,7 @@ items:
       return:
         type:
           - string
-  - uid: azure-arm-iothub.EventHubConsumerGroupInfo.properties
+  - uid: azure-arm-iothub.CertificateDescription.properties
     name: properties
     fullName: properties
     children: []
@@ -68,11 +68,11 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'properties?: function'
+      content: 'properties?: CertificateProperties'
       return:
         type:
-          - function
-  - uid: azure-arm-iothub.EventHubConsumerGroupInfo.type
+          - azure-arm-iothub.CertificateProperties
+  - uid: azure-arm-iothub.CertificateDescription.type
     name: type
     fullName: type
     children: []
@@ -86,3 +86,9 @@ items:
       return:
         type:
           - string
+references:
+  - uid: azure-arm-iothub.CertificateProperties
+    spec.typeScript:
+      - name: CertificateProperties
+        fullName: CertificateProperties
+        uid: azure-arm-iothub.CertificateProperties

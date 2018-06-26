@@ -7,6 +7,7 @@ items:
       - azure-arm-iothub.FallbackRouteProperties.condition
       - azure-arm-iothub.FallbackRouteProperties.endpointNames
       - azure-arm-iothub.FallbackRouteProperties.isEnabled
+      - azure-arm-iothub.FallbackRouteProperties.name
     langs:
       - typeScript
     type: interface
@@ -52,3 +53,17 @@ items:
       return:
         type:
           - boolean
+  - uid: azure-arm-iothub.FallbackRouteProperties.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string

@@ -16,6 +16,7 @@ items:
       - azure-arm-iothub.IotHubProperties.operationsMonitoringProperties
       - azure-arm-iothub.IotHubProperties.provisioningState
       - azure-arm-iothub.IotHubProperties.routing
+      - azure-arm-iothub.IotHubProperties.state
       - azure-arm-iothub.IotHubProperties.storageEndpoints
     langs:
       - typeScript
@@ -190,6 +191,20 @@ items:
       return:
         type:
           - azure-arm-iothub.RoutingProperties
+  - uid: azure-arm-iothub.IotHubProperties.state
+    name: state
+    fullName: state
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'state?: string'
+      return:
+        type:
+          - string
   - uid: azure-arm-iothub.IotHubProperties.storageEndpoints
     name: storageEndpoints
     fullName: storageEndpoints

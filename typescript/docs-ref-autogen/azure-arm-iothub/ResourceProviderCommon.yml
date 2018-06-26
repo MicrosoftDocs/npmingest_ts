@@ -1,0 +1,116 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-iothub.ResourceProviderCommon
+    name: ResourceProviderCommon
+    fullName: ResourceProviderCommon
+    children:
+      - azure-arm-iothub.ResourceProviderCommon.getSubscriptionQuota
+      - azure-arm-iothub.ResourceProviderCommon.getSubscriptionQuota_1
+      - azure-arm-iothub.ResourceProviderCommon.getSubscriptionQuota_2
+      - >-
+        azure-arm-iothub.ResourceProviderCommon.getSubscriptionQuotaWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-iothub
+  - uid: azure-arm-iothub.ResourceProviderCommon.getSubscriptionQuota
+    name: getSubscriptionQuota
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getSubscriptionQuota(options?: function)'
+      parameters:
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-iothub.UserSubscriptionQuotaListResult>
+  - uid: azure-arm-iothub.ResourceProviderCommon.getSubscriptionQuota_1
+    name: getSubscriptionQuota
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function getSubscriptionQuota(callback:
+        ServiceCallback<UserSubscriptionQuotaListResult>)
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-iothub.UserSubscriptionQuotaListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-iothub.UserSubscriptionQuotaListResult>
+  - uid: azure-arm-iothub.ResourceProviderCommon.getSubscriptionQuota_2
+    name: getSubscriptionQuota
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function getSubscriptionQuota(options: function, callback:
+        ServiceCallback<UserSubscriptionQuotaListResult>)
+      parameters:
+        - id: options
+          type:
+            - function
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-iothub.UserSubscriptionQuotaListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-iothub.UserSubscriptionQuotaListResult>
+  - uid: >-
+      azure-arm-iothub.ResourceProviderCommon.getSubscriptionQuotaWithHttpOperationResponse
+    name: getSubscriptionQuotaWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function getSubscriptionQuotaWithHttpOperationResponse(options?:
+        function)
+      parameters:
+        - id: options
+          type:
+            - function
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<UserSubscriptionQuotaListResult!@>>
+references:
+  - uid: Promise<azure-arm-iothub.UserSubscriptionQuotaListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: UserSubscriptionQuotaListResult
+        fullName: UserSubscriptionQuotaListResult
+        uid: azure-arm-iothub.UserSubscriptionQuotaListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-iothub.UserSubscriptionQuotaListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: UserSubscriptionQuotaListResult
+        fullName: UserSubscriptionQuotaListResult
+        uid: azure-arm-iothub.UserSubscriptionQuotaListResult
+      - name: '>'
+        fullName: '>'

@@ -6,9 +6,7 @@ items:
     children:
       - azure-arm-iothub.IotHubDescription.etag
       - azure-arm-iothub.IotHubDescription.properties
-      - azure-arm-iothub.IotHubDescription.resourcegroup
       - azure-arm-iothub.IotHubDescription.sku
-      - azure-arm-iothub.IotHubDescription.subscriptionid
     langs:
       - typeScript
     type: interface
@@ -44,19 +42,6 @@ items:
       return:
         type:
           - azure-arm-iothub.IotHubProperties
-  - uid: azure-arm-iothub.IotHubDescription.resourcegroup
-    name: resourcegroup
-    fullName: resourcegroup
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      content: 'resourcegroup: string'
-      return:
-        type:
-          - string
   - uid: azure-arm-iothub.IotHubDescription.sku
     name: sku
     fullName: sku
@@ -70,19 +55,6 @@ items:
       return:
         type:
           - azure-arm-iothub.IotHubSkuInfo
-  - uid: azure-arm-iothub.IotHubDescription.subscriptionid
-    name: subscriptionid
-    fullName: subscriptionid
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: ''
-    syntax:
-      content: 'subscriptionid: string'
-      return:
-        type:
-          - string
 references:
   - uid: azure-arm-iothub.Resource
     spec.typeScript:
