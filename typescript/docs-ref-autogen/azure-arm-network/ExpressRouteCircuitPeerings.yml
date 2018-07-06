@@ -206,7 +206,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitPeering!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCircuitPeering>>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -506,7 +507,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitPeering!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCircuitPeering>>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.deleteMethod
     name: deleteMethod
     children: []
@@ -781,7 +783,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitPeering!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCircuitPeering>>
   - uid: azure-arm-network.ExpressRouteCircuitPeerings.list
     name: list
     children: []
@@ -975,7 +978,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitPeeringListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCircuitPeeringListResult>>
   - uid: >-
       azure-arm-network.ExpressRouteCircuitPeerings.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -1006,7 +1010,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitPeeringListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCircuitPeeringListResult>>
 references:
   - uid: azure-arm-network.ExpressRouteCircuitPeering
     spec.typeScript:
@@ -1031,6 +1036,16 @@ references:
         uid: azure-arm-network.ExpressRouteCircuitPeering
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCircuitPeering>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ExpressRouteCircuitPeering
+        fullName: ExpressRouteCircuitPeering
+        uid: azure-arm-network.ExpressRouteCircuitPeering
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.ExpressRouteCircuitPeeringListResult>
     spec.typeScript:
       - name: Promise<
@@ -1049,3 +1064,13 @@ references:
         uid: azure-arm-network.ExpressRouteCircuitPeeringListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCircuitPeeringListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ExpressRouteCircuitPeeringListResult
+        fullName: ExpressRouteCircuitPeeringListResult
+        uid: azure-arm-network.ExpressRouteCircuitPeeringListResult
+      - name: '>>'
+        fullName: '>>'

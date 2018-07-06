@@ -175,7 +175,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<BgpServiceCommunityListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.BgpServiceCommunityListResult>>
   - uid: azure-arm-network.BgpServiceCommunities.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -193,7 +194,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<BgpServiceCommunityListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.BgpServiceCommunityListResult>>
 references:
   - uid: Promise<azure-arm-network.BgpServiceCommunityListResult>
     spec.typeScript:
@@ -213,3 +215,13 @@ references:
         uid: azure-arm-network.BgpServiceCommunityListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.BgpServiceCommunityListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: BgpServiceCommunityListResult
+        fullName: BgpServiceCommunityListResult
+        uid: azure-arm-network.BgpServiceCommunityListResult
+      - name: '>>'
+        fullName: '>>'

@@ -163,7 +163,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkInterfaceIPConfiguration!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkInterfaceIPConfiguration>>
   - uid: azure-arm-network.NetworkInterfaceIPConfigurations.list
     name: list
     children: []
@@ -357,7 +358,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkInterfaceIPConfigurationListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkInterfaceIPConfigurationListResult>>
   - uid: >-
       azure-arm-network.NetworkInterfaceIPConfigurations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -388,7 +390,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkInterfaceIPConfigurationListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkInterfaceIPConfigurationListResult>>
 references:
   - uid: Promise<azure-arm-network.NetworkInterfaceIPConfiguration>
     spec.typeScript:
@@ -408,6 +411,16 @@ references:
         uid: azure-arm-network.NetworkInterfaceIPConfiguration
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.NetworkInterfaceIPConfiguration>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: NetworkInterfaceIPConfiguration
+        fullName: NetworkInterfaceIPConfiguration
+        uid: azure-arm-network.NetworkInterfaceIPConfiguration
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.NetworkInterfaceIPConfigurationListResult>
     spec.typeScript:
       - name: Promise<
@@ -427,3 +440,13 @@ references:
         uid: azure-arm-network.NetworkInterfaceIPConfigurationListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.NetworkInterfaceIPConfigurationListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: NetworkInterfaceIPConfigurationListResult
+        fullName: NetworkInterfaceIPConfigurationListResult
+        uid: azure-arm-network.NetworkInterfaceIPConfigurationListResult
+      - name: '>>'
+        fullName: '>>'

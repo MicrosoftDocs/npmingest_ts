@@ -205,7 +205,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineImage!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineImage>>
   - uid: azure-arm-compute.VirtualMachineImages.list
     name: list
     children: []
@@ -452,7 +453,8 @@ items:
           optional: true
       return:
         type:
-          - 'Promise<VirtualMachineImageResource!@[]>>'
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineImageResource[]>>
   - uid: azure-arm-compute.VirtualMachineImages.listPublishers
     name: listPublishers
     children: []
@@ -559,7 +561,8 @@ items:
           optional: true
       return:
         type:
-          - 'Promise<VirtualMachineImageResource!@[]>>'
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineImageResource[]>>
   - uid: azure-arm-compute.VirtualMachineImages.listSkus
     name: listSkus
     children: []
@@ -704,7 +707,8 @@ items:
           optional: true
       return:
         type:
-          - 'Promise<VirtualMachineImageResource!@[]>>'
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineImageResource[]>>
   - uid: azure-arm-compute.VirtualMachineImages.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -746,7 +750,8 @@ items:
           optional: true
       return:
         type:
-          - 'Promise<VirtualMachineImageResource!@[]>>'
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineImageResource[]>>
 references:
   - uid: Promise<azure-arm-compute.VirtualMachineImage>
     spec.typeScript:
@@ -766,6 +771,15 @@ references:
         uid: azure-arm-compute.VirtualMachineImage
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineImage>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VirtualMachineImage
+        fullName: VirtualMachineImage
+        uid: azure-arm-compute.VirtualMachineImage
+      - name: '>>'
+        fullName: '>>'
   - uid: 'Promise<azure-arm-compute.VirtualMachineImageResource[]>'
     spec.typeScript:
       - name: Promise<
@@ -784,3 +798,13 @@ references:
         uid: azure-arm-compute.VirtualMachineImageResource
       - name: '[]>'
         fullName: '[]>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineImageResource[]>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VirtualMachineImageResource
+        fullName: VirtualMachineImageResource
+        uid: azure-arm-compute.VirtualMachineImageResource
+      - name: '[]>>'
+        fullName: '[]>>'

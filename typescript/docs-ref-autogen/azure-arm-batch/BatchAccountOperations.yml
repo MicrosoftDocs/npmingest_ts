@@ -259,7 +259,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccount!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.BatchAccount>>
   - uid: azure-arm-batch.BatchAccountOperations.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -571,7 +571,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccount!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.BatchAccount>>
   - uid: azure-arm-batch.BatchAccountOperations.deleteMethod_1
     name: deleteMethod
     children: []
@@ -901,7 +901,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccountKeys!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.BatchAccountKeys>>
   - uid: azure-arm-batch.BatchAccountOperations.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -932,7 +932,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccount!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.BatchAccount>>
   - uid: azure-arm-batch.BatchAccountOperations.list
     name: list
     children: []
@@ -1189,7 +1189,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccountListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch.BatchAccountListResult>>
   - uid: >-
       azure-arm-batch.BatchAccountOperations.listByResourceGroupWithHttpOperationResponse
     name: listByResourceGroupWithHttpOperationResponse
@@ -1218,7 +1219,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccountListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch.BatchAccountListResult>>
   - uid: azure-arm-batch.BatchAccountOperations.listNext
     name: listNext
     children: []
@@ -1326,7 +1328,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccountListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch.BatchAccountListResult>>
   - uid: azure-arm-batch.BatchAccountOperations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1346,7 +1349,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccountListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch.BatchAccountListResult>>
   - uid: azure-arm-batch.BatchAccountOperations.regenerateKey
     name: regenerateKey
     children: []
@@ -1488,7 +1492,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccountKeys!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.BatchAccountKeys>>
   - uid: azure-arm-batch.BatchAccountOperations.synchronizeAutoStorageKeys
     name: synchronizeAutoStorageKeys
     children: []
@@ -1759,7 +1763,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchAccount!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.BatchAccount>>
 references:
   - uid: azure-arm-batch.BatchAccountCreateParameters
     spec.typeScript:
@@ -1784,6 +1788,15 @@ references:
         uid: azure-arm-batch.BatchAccount
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-batch.BatchAccount>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: BatchAccount
+        fullName: BatchAccount
+        uid: azure-arm-batch.BatchAccount
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-batch.BatchAccountKeys>
     spec.typeScript:
       - name: Promise<
@@ -1802,6 +1815,15 @@ references:
         uid: azure-arm-batch.BatchAccountKeys
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-batch.BatchAccountKeys>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: BatchAccountKeys
+        fullName: BatchAccountKeys
+        uid: azure-arm-batch.BatchAccountKeys
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-batch.BatchAccountListResult>
     spec.typeScript:
       - name: Promise<
@@ -1820,6 +1842,15 @@ references:
         uid: azure-arm-batch.BatchAccountListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-batch.BatchAccountListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: BatchAccountListResult
+        fullName: BatchAccountListResult
+        uid: azure-arm-batch.BatchAccountListResult
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-batch.BatchAccountUpdateParameters
     spec.typeScript:
       - name: BatchAccountUpdateParameters

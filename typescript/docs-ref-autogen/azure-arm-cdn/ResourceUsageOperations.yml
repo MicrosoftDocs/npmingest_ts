@@ -188,7 +188,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ResourceUsageListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn.ResourceUsageListResult>>
   - uid: azure-arm-cdn.ResourceUsageOperations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -208,7 +209,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ResourceUsageListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn.ResourceUsageListResult>>
 references:
   - uid: Promise<azure-arm-cdn.ResourceUsageListResult>
     spec.typeScript:
@@ -228,3 +230,12 @@ references:
         uid: azure-arm-cdn.ResourceUsageListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.ResourceUsageListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ResourceUsageListResult
+        fullName: ResourceUsageListResult
+        uid: azure-arm-cdn.ResourceUsageListResult
+      - name: '>>'
+        fullName: '>>'

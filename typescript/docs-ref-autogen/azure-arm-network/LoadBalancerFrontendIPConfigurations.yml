@@ -165,7 +165,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<FrontendIPConfiguration!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.FrontendIPConfiguration>>
   - uid: azure-arm-network.LoadBalancerFrontendIPConfigurations.list
     name: list
     children: []
@@ -366,7 +367,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerFrontendIPConfigurationListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>>
   - uid: >-
       azure-arm-network.LoadBalancerFrontendIPConfigurations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -397,7 +399,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerFrontendIPConfigurationListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>>
 references:
   - uid: Promise<azure-arm-network.FrontendIPConfiguration>
     spec.typeScript:
@@ -417,6 +420,15 @@ references:
         uid: azure-arm-network.FrontendIPConfiguration
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.FrontendIPConfiguration>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: FrontendIPConfiguration
+        fullName: FrontendIPConfiguration
+        uid: azure-arm-network.FrontendIPConfiguration
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>
     spec.typeScript:
       - name: Promise<
@@ -436,3 +448,13 @@ references:
         uid: azure-arm-network.LoadBalancerFrontendIPConfigurationListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.LoadBalancerFrontendIPConfigurationListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: LoadBalancerFrontendIPConfigurationListResult
+        fullName: LoadBalancerFrontendIPConfigurationListResult
+        uid: azure-arm-network.LoadBalancerFrontendIPConfigurationListResult
+      - name: '>>'
+        fullName: '>>'

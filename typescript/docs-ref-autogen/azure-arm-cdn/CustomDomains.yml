@@ -230,7 +230,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<CustomDomain!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.CustomDomain>>
   - uid: azure-arm-cdn.CustomDomains.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -396,7 +396,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<CustomDomain!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.CustomDomain>>
   - uid: azure-arm-cdn.CustomDomains.create_1
     name: create
     children: []
@@ -582,7 +582,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<CustomDomain!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.CustomDomain>>
   - uid: azure-arm-cdn.CustomDomains.deleteMethod
     name: deleteMethod
     children: []
@@ -747,7 +747,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<CustomDomain!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.CustomDomain>>
   - uid: azure-arm-cdn.CustomDomains.disableCustomHttps
     name: disableCustomHttps
     children: []
@@ -913,7 +913,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<CustomDomain!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.CustomDomain>>
   - uid: azure-arm-cdn.CustomDomains.enableCustomHttps_1
     name: enableCustomHttps
     children: []
@@ -1079,7 +1079,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<CustomDomain!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.CustomDomain>>
   - uid: azure-arm-cdn.CustomDomains.get
     name: get
     children: []
@@ -1244,7 +1244,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<CustomDomain!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.CustomDomain>>
   - uid: azure-arm-cdn.CustomDomains.listByEndpoint
     name: listByEndpoint
     children: []
@@ -1449,7 +1449,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<CustomDomainListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.CustomDomainListResult>>
   - uid: azure-arm-cdn.CustomDomains.listByEndpointWithHttpOperationResponse
     name: listByEndpointWithHttpOperationResponse
     children: []
@@ -1487,7 +1487,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<CustomDomainListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.CustomDomainListResult>>
 references:
   - uid: Promise<azure-arm-cdn.CustomDomain>
     spec.typeScript:
@@ -1507,6 +1507,15 @@ references:
         uid: azure-arm-cdn.CustomDomain
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.CustomDomain>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: CustomDomain
+        fullName: CustomDomain
+        uid: azure-arm-cdn.CustomDomain
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-cdn.CustomDomainListResult>
     spec.typeScript:
       - name: Promise<
@@ -1525,3 +1534,12 @@ references:
         uid: azure-arm-cdn.CustomDomainListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.CustomDomainListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: CustomDomainListResult
+        fullName: CustomDomainListResult
+        uid: azure-arm-cdn.CustomDomainListResult
+      - name: '>>'
+        fullName: '>>'

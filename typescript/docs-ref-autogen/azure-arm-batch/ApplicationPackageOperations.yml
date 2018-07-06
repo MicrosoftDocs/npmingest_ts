@@ -367,7 +367,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationPackage!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.ApplicationPackage>>
   - uid: azure-arm-batch.ApplicationPackageOperations.deleteMethod
     name: deleteMethod
     children: []
@@ -685,7 +685,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationPackage!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.ApplicationPackage>>
 references:
   - uid: Promise<azure-arm-batch.ApplicationPackage>
     spec.typeScript:
@@ -705,3 +705,12 @@ references:
         uid: azure-arm-batch.ApplicationPackage
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-batch.ApplicationPackage>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ApplicationPackage
+        fullName: ApplicationPackage
+        uid: azure-arm-batch.ApplicationPackage
+      - name: '>>'
+        fullName: '>>'

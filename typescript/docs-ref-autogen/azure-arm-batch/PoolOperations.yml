@@ -211,7 +211,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Pool!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.Pool>>
   - uid: azure-arm-batch.PoolOperations.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -512,7 +512,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Pool!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.Pool>>
   - uid: azure-arm-batch.PoolOperations.deleteMethod_1
     name: deleteMethod
     children: []
@@ -793,7 +793,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Pool!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.Pool>>
   - uid: azure-arm-batch.PoolOperations.get
     name: get
     children: []
@@ -933,7 +933,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Pool!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.Pool>>
   - uid: azure-arm-batch.PoolOperations.listByBatchAccount_1
     name: listByBatchAccount
     children: []
@@ -1125,7 +1125,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ListPoolsResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.ListPoolsResult>>
   - uid: azure-arm-batch.PoolOperations.listByBatchAccountWithHttpOperationResponse
     name: listByBatchAccountWithHttpOperationResponse
     children: []
@@ -1156,7 +1156,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ListPoolsResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.ListPoolsResult>>
   - uid: azure-arm-batch.PoolOperations.stopResize
     name: stopResize
     children: []
@@ -1296,7 +1296,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Pool!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.Pool>>
   - uid: azure-arm-batch.PoolOperations.update
     name: update
     children: []
@@ -1466,7 +1466,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Pool!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.Pool>>
 references:
   - uid: azure-arm-batch.Pool
     spec.typeScript:
@@ -1491,6 +1491,15 @@ references:
         uid: azure-arm-batch.Pool
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-batch.Pool>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: Pool
+        fullName: Pool
+        uid: azure-arm-batch.Pool
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-batch.ListPoolsResult>
     spec.typeScript:
       - name: Promise<
@@ -1509,3 +1518,12 @@ references:
         uid: azure-arm-batch.ListPoolsResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-batch.ListPoolsResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ListPoolsResult
+        fullName: ListPoolsResult
+        uid: azure-arm-batch.ListPoolsResult
+      - name: '>>'
+        fullName: '>>'

@@ -233,7 +233,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkGatewayConnection!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkGatewayConnection>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -543,7 +544,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionResetSharedKey!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ConnectionResetSharedKey>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.beginSetSharedKey
     name: beginSetSharedKey
     children: []
@@ -729,7 +731,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionSharedKey!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ConnectionSharedKey>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.beginUpdateTags_1
     name: beginUpdateTags
     children: []
@@ -877,7 +880,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkGatewayConnectionListEntity!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.createOrUpdate
     name: createOrUpdate
     children: []
@@ -1032,7 +1036,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkGatewayConnection!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkGatewayConnection>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.deleteMethod
     name: deleteMethod
     children: []
@@ -1381,7 +1386,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionSharedKey!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ConnectionSharedKey>>
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnections.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
@@ -1413,7 +1419,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkGatewayConnection!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkGatewayConnection>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.list
     name: list
     children: []
@@ -1605,7 +1612,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkGatewayConnectionListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkGatewayConnectionListResult>>
   - uid: >-
       azure-arm-network.VirtualNetworkGatewayConnections.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -1633,7 +1641,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkGatewayConnectionListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkGatewayConnectionListResult>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.resetSharedKey
     name: resetSharedKey
     children: []
@@ -1820,7 +1829,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionResetSharedKey!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ConnectionResetSharedKey>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.setSharedKey
     name: setSharedKey
     children: []
@@ -2006,7 +2016,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionSharedKey!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ConnectionSharedKey>>
   - uid: azure-arm-network.VirtualNetworkGatewayConnections.updateTags
     name: updateTags
     children: []
@@ -2154,7 +2165,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkGatewayConnectionListEntity!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>>
 references:
   - uid: azure-arm-network.VirtualNetworkGatewayConnection
     spec.typeScript:
@@ -2179,6 +2191,16 @@ references:
         uid: azure-arm-network.VirtualNetworkGatewayConnection
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkGatewayConnection>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VirtualNetworkGatewayConnection
+        fullName: VirtualNetworkGatewayConnection
+        uid: azure-arm-network.VirtualNetworkGatewayConnection
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.ConnectionResetSharedKey
     spec.typeScript:
       - name: ConnectionResetSharedKey
@@ -2202,6 +2224,15 @@ references:
         uid: azure-arm-network.ConnectionResetSharedKey
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.ConnectionResetSharedKey>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ConnectionResetSharedKey
+        fullName: ConnectionResetSharedKey
+        uid: azure-arm-network.ConnectionResetSharedKey
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.ConnectionSharedKey
     spec.typeScript:
       - name: ConnectionSharedKey
@@ -2225,6 +2256,15 @@ references:
         uid: azure-arm-network.ConnectionSharedKey
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.ConnectionSharedKey>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ConnectionSharedKey
+        fullName: ConnectionSharedKey
+        uid: azure-arm-network.ConnectionSharedKey
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.TagsObject
     spec.typeScript:
       - name: TagsObject
@@ -2249,6 +2289,16 @@ references:
         uid: azure-arm-network.VirtualNetworkGatewayConnectionListEntity
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VirtualNetworkGatewayConnectionListEntity
+        fullName: VirtualNetworkGatewayConnectionListEntity
+        uid: azure-arm-network.VirtualNetworkGatewayConnectionListEntity
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.VirtualNetworkGatewayConnectionListResult>
     spec.typeScript:
       - name: Promise<
@@ -2268,3 +2318,13 @@ references:
         uid: azure-arm-network.VirtualNetworkGatewayConnectionListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkGatewayConnectionListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VirtualNetworkGatewayConnectionListResult
+        fullName: VirtualNetworkGatewayConnectionListResult
+        uid: azure-arm-network.VirtualNetworkGatewayConnectionListResult
+      - name: '>>'
+        fullName: '>>'

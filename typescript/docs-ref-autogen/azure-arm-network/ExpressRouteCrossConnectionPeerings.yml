@@ -218,7 +218,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCrossConnectionPeering!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCrossConnectionPeering>>
   - uid: azure-arm-network.ExpressRouteCrossConnectionPeerings.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -528,7 +529,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCrossConnectionPeering!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCrossConnectionPeering>>
   - uid: azure-arm-network.ExpressRouteCrossConnectionPeerings.deleteMethod
     name: deleteMethod
     children: []
@@ -812,7 +814,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCrossConnectionPeering!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCrossConnectionPeering>>
   - uid: azure-arm-network.ExpressRouteCrossConnectionPeerings.list
     name: list
     children: []
@@ -1007,7 +1010,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCrossConnectionPeeringList!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCrossConnectionPeeringList>>
   - uid: >-
       azure-arm-network.ExpressRouteCrossConnectionPeerings.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -1039,7 +1043,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCrossConnectionPeeringList!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCrossConnectionPeeringList>>
 references:
   - uid: azure-arm-network.ExpressRouteCrossConnectionPeering
     spec.typeScript:
@@ -1064,6 +1069,16 @@ references:
         uid: azure-arm-network.ExpressRouteCrossConnectionPeering
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCrossConnectionPeering>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ExpressRouteCrossConnectionPeering
+        fullName: ExpressRouteCrossConnectionPeering
+        uid: azure-arm-network.ExpressRouteCrossConnectionPeering
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.ExpressRouteCrossConnectionPeeringList>
     spec.typeScript:
       - name: Promise<
@@ -1082,3 +1097,13 @@ references:
         uid: azure-arm-network.ExpressRouteCrossConnectionPeeringList
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCrossConnectionPeeringList>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ExpressRouteCrossConnectionPeeringList
+        fullName: ExpressRouteCrossConnectionPeeringList
+        uid: azure-arm-network.ExpressRouteCrossConnectionPeeringList
+      - name: '>>'
+        fullName: '>>'

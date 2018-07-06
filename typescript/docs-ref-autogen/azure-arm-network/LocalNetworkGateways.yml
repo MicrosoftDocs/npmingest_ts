@@ -203,7 +203,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LocalNetworkGateway!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LocalNetworkGateway>>
   - uid: azure-arm-network.LocalNetworkGateways.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -470,7 +471,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LocalNetworkGateway!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LocalNetworkGateway>>
   - uid: azure-arm-network.LocalNetworkGateways.createOrUpdate
     name: createOrUpdate
     children: []
@@ -623,7 +625,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LocalNetworkGateway!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LocalNetworkGateway>>
   - uid: azure-arm-network.LocalNetworkGateways.deleteMethod
     name: deleteMethod
     children: []
@@ -865,7 +868,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LocalNetworkGateway!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LocalNetworkGateway>>
   - uid: azure-arm-network.LocalNetworkGateways.list
     name: list
     children: []
@@ -1038,7 +1042,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LocalNetworkGatewayListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LocalNetworkGatewayListResult>>
   - uid: azure-arm-network.LocalNetworkGateways.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1063,7 +1068,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LocalNetworkGatewayListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LocalNetworkGatewayListResult>>
   - uid: azure-arm-network.LocalNetworkGateways.updateTags
     name: updateTags
     children: []
@@ -1206,7 +1212,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LocalNetworkGateway!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LocalNetworkGateway>>
 references:
   - uid: azure-arm-network.LocalNetworkGateway
     spec.typeScript:
@@ -1231,6 +1238,15 @@ references:
         uid: azure-arm-network.LocalNetworkGateway
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.LocalNetworkGateway>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: LocalNetworkGateway
+        fullName: LocalNetworkGateway
+        uid: azure-arm-network.LocalNetworkGateway
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.TagsObject
     spec.typeScript:
       - name: TagsObject
@@ -1254,3 +1270,13 @@ references:
         uid: azure-arm-network.LocalNetworkGatewayListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.LocalNetworkGatewayListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: LocalNetworkGatewayListResult
+        fullName: LocalNetworkGatewayListResult
+        uid: azure-arm-network.LocalNetworkGatewayListResult
+      - name: '>>'
+        fullName: '>>'

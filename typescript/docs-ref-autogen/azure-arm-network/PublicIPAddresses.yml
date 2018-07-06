@@ -240,7 +240,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddress!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.PublicIPAddress>>
   - uid: azure-arm-network.PublicIPAddresses.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -502,7 +502,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddress!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.PublicIPAddress>>
   - uid: azure-arm-network.PublicIPAddresses.createOrUpdate
     name: createOrUpdate
     children: []
@@ -644,7 +644,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddress!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.PublicIPAddress>>
   - uid: azure-arm-network.PublicIPAddresses.deleteMethod_1
     name: deleteMethod
     children: []
@@ -1056,7 +1056,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddress!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.PublicIPAddress>>
   - uid: azure-arm-network.PublicIPAddresses.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -1086,7 +1086,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddress!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.PublicIPAddress>>
   - uid: azure-arm-network.PublicIPAddresses.list
     name: list
     children: []
@@ -1317,7 +1317,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddressListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.PublicIPAddressListResult>>
   - uid: azure-arm-network.PublicIPAddresses.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse
     children: []
@@ -1335,7 +1336,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddressListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.PublicIPAddressListResult>>
   - uid: azure-arm-network.PublicIPAddresses.listNext_1
     name: listNext
     children: []
@@ -1435,7 +1437,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddressListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.PublicIPAddressListResult>>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddresses
     name: listVirtualMachineScaleSetPublicIPAddresses
@@ -1651,7 +1654,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddressListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.PublicIPAddressListResult>>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetPublicIPAddressesWithHttpOperationResponse
     name: listVirtualMachineScaleSetPublicIPAddressesWithHttpOperationResponse
@@ -1686,7 +1690,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddressListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.PublicIPAddressListResult>>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddresses_1
     name: listVirtualMachineScaleSetVMPublicIPAddresses
@@ -1948,7 +1953,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddressListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.PublicIPAddressListResult>>
   - uid: >-
       azure-arm-network.PublicIPAddresses.listVirtualMachineScaleSetVMPublicIPAddressesWithHttpOperationResponse
     name: listVirtualMachineScaleSetVMPublicIPAddressesWithHttpOperationResponse
@@ -2000,7 +2006,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddressListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.PublicIPAddressListResult>>
   - uid: azure-arm-network.PublicIPAddresses.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -2025,7 +2032,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddressListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.PublicIPAddressListResult>>
   - uid: azure-arm-network.PublicIPAddresses.updateTags
     name: updateTags
     children: []
@@ -2165,7 +2173,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<PublicIPAddress!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.PublicIPAddress>>
 references:
   - uid: azure-arm-network.PublicIPAddress
     spec.typeScript:
@@ -2190,6 +2198,15 @@ references:
         uid: azure-arm-network.PublicIPAddress
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.PublicIPAddress>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: PublicIPAddress
+        fullName: PublicIPAddress
+        uid: azure-arm-network.PublicIPAddress
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.TagsObject
     spec.typeScript:
       - name: TagsObject
@@ -2213,3 +2230,13 @@ references:
         uid: azure-arm-network.PublicIPAddressListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.PublicIPAddressListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: PublicIPAddressListResult
+        fullName: PublicIPAddressListResult
+        uid: azure-arm-network.PublicIPAddressListResult
+      - name: '>>'
+        fullName: '>>'

@@ -245,7 +245,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayBackendHealth!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewayBackendHealth>>
   - uid: azure-arm-network.ApplicationGateways.beginBackendHealth
     name: beginBackendHealth
     children: []
@@ -374,7 +375,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayBackendHealth!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewayBackendHealth>>
   - uid: azure-arm-network.ApplicationGateways.beginCreateOrUpdate_1
     name: beginCreateOrUpdate
     children: []
@@ -517,7 +519,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGateway!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.ApplicationGateway>>
   - uid: azure-arm-network.ApplicationGateways.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -1016,7 +1018,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGateway!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.ApplicationGateway>>
   - uid: azure-arm-network.ApplicationGateways.createOrUpdate
     name: createOrUpdate
     children: []
@@ -1159,7 +1161,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGateway!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.ApplicationGateway>>
   - uid: azure-arm-network.ApplicationGateways.deleteMethod
     name: deleteMethod
     children: []
@@ -1471,7 +1473,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewaySslPredefinedPolicy!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewaySslPredefinedPolicy>>
   - uid: azure-arm-network.ApplicationGateways.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -1501,7 +1504,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGateway!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.ApplicationGateway>>
   - uid: azure-arm-network.ApplicationGateways.list
     name: list
     children: []
@@ -1734,7 +1737,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewayListResult>>
   - uid: azure-arm-network.ApplicationGateways.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse
     children: []
@@ -1752,7 +1756,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewayListResult>>
   - uid: azure-arm-network.ApplicationGateways.listAvailableSslOptions
     name: listAvailableSslOptions
     children: []
@@ -1835,7 +1840,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayAvailableSslOptions!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewayAvailableSslOptions>>
   - uid: azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPolicies_1
     name: listAvailableSslPredefinedPolicies
     children: []
@@ -2014,7 +2020,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayAvailableSslPredefinedPolicies!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>>
   - uid: >-
       azure-arm-network.ApplicationGateways.listAvailableSslPredefinedPoliciesWithHttpOperationResponse
     name: listAvailableSslPredefinedPoliciesWithHttpOperationResponse
@@ -2036,7 +2043,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayAvailableSslPredefinedPolicies!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>>
   - uid: azure-arm-network.ApplicationGateways.listAvailableWafRuleSets
     name: listAvailableWafRuleSets
     children: []
@@ -2122,7 +2130,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayAvailableWafRuleSetsResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>>
   - uid: azure-arm-network.ApplicationGateways.listNext_1
     name: listNext
     children: []
@@ -2222,7 +2231,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewayListResult>>
   - uid: azure-arm-network.ApplicationGateways.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -2247,7 +2257,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGatewayListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewayListResult>>
   - uid: azure-arm-network.ApplicationGateways.start
     name: start
     children: []
@@ -2624,7 +2635,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ApplicationGateway!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.ApplicationGateway>>
 references:
   - uid: Promise<azure-arm-network.ApplicationGatewayBackendHealth>
     spec.typeScript:
@@ -2644,6 +2655,16 @@ references:
         uid: azure-arm-network.ApplicationGatewayBackendHealth
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewayBackendHealth>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ApplicationGatewayBackendHealth
+        fullName: ApplicationGatewayBackendHealth
+        uid: azure-arm-network.ApplicationGatewayBackendHealth
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.ApplicationGateway
     spec.typeScript:
       - name: ApplicationGateway
@@ -2667,6 +2688,15 @@ references:
         uid: azure-arm-network.ApplicationGateway
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.ApplicationGateway>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ApplicationGateway
+        fullName: ApplicationGateway
+        uid: azure-arm-network.ApplicationGateway
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.TagsObject
     spec.typeScript:
       - name: TagsObject
@@ -2690,6 +2720,16 @@ references:
         uid: azure-arm-network.ApplicationGatewaySslPredefinedPolicy
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewaySslPredefinedPolicy>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ApplicationGatewaySslPredefinedPolicy
+        fullName: ApplicationGatewaySslPredefinedPolicy
+        uid: azure-arm-network.ApplicationGatewaySslPredefinedPolicy
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.ApplicationGatewayListResult>
     spec.typeScript:
       - name: Promise<
@@ -2708,6 +2748,16 @@ references:
         uid: azure-arm-network.ApplicationGatewayListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewayListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ApplicationGatewayListResult
+        fullName: ApplicationGatewayListResult
+        uid: azure-arm-network.ApplicationGatewayListResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.ApplicationGatewayAvailableSslOptions>
     spec.typeScript:
       - name: Promise<
@@ -2726,6 +2776,16 @@ references:
         uid: azure-arm-network.ApplicationGatewayAvailableSslOptions
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewayAvailableSslOptions>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ApplicationGatewayAvailableSslOptions
+        fullName: ApplicationGatewayAvailableSslOptions
+        uid: azure-arm-network.ApplicationGatewayAvailableSslOptions
+      - name: '>>'
+        fullName: '>>'
   - uid: >-
       Promise<azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>
     spec.typeScript:
@@ -2746,6 +2806,16 @@ references:
         uid: azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ApplicationGatewayAvailableSslPredefinedPolicies
+        fullName: ApplicationGatewayAvailableSslPredefinedPolicies
+        uid: azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>
     spec.typeScript:
       - name: Promise<
@@ -2765,3 +2835,13 @@ references:
         uid: azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ApplicationGatewayAvailableWafRuleSetsResult
+        fullName: ApplicationGatewayAvailableWafRuleSetsResult
+        uid: azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult
+      - name: '>>'
+        fullName: '>>'

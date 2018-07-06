@@ -305,7 +305,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubDescription!@>>
+          - Promise<HttpOperationResponse<azure-arm-iothub.IotHubDescription>>
   - uid: azure-arm-iothub.IotHubResource.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -543,7 +543,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubDescription!@>>
+          - Promise<HttpOperationResponse<azure-arm-iothub.IotHubDescription>>
   - uid: azure-arm-iothub.IotHubResource.checkNameAvailability_2
     name: checkNameAvailability
     children: []
@@ -642,7 +642,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubNameAvailabilityInfo!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.IotHubNameAvailabilityInfo>>
   - uid: azure-arm-iothub.IotHubResource.createEventHubConsumerGroup_1
     name: createEventHubConsumerGroup
     children: []
@@ -806,7 +807,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<EventHubConsumerGroupInfo!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.EventHubConsumerGroupInfo>>
   - uid: azure-arm-iothub.IotHubResource.createOrUpdate_2
     name: createOrUpdate
     children: []
@@ -949,7 +951,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubDescription!@>>
+          - Promise<HttpOperationResponse<azure-arm-iothub.IotHubDescription>>
   - uid: azure-arm-iothub.IotHubResource.deleteEventHubConsumerGroup_1
     name: deleteEventHubConsumerGroup
     children: []
@@ -1376,7 +1378,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<JobResponse!@>>
+          - Promise<HttpOperationResponse<azure-arm-iothub.JobResponse>>
   - uid: azure-arm-iothub.IotHubResource.get
     name: get
     children: []
@@ -1655,7 +1657,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<EndpointHealthDataListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.EndpointHealthDataListResult>>
   - uid: azure-arm-iothub.IotHubResource.getEndpointHealthWithHttpOperationResponse
     name: getEndpointHealthWithHttpOperationResponse
     children: []
@@ -1685,7 +1688,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<EndpointHealthDataListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.EndpointHealthDataListResult>>
   - uid: azure-arm-iothub.IotHubResource.getEventHubConsumerGroup_1
     name: getEventHubConsumerGroup
     children: []
@@ -1849,7 +1853,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<EventHubConsumerGroupInfo!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.EventHubConsumerGroupInfo>>
   - uid: azure-arm-iothub.IotHubResource.getJob_1
     name: getJob
     children: []
@@ -1987,7 +1992,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<JobResponse!@>>
+          - Promise<HttpOperationResponse<azure-arm-iothub.JobResponse>>
   - uid: azure-arm-iothub.IotHubResource.getKeysForKeyName
     name: getKeysForKeyName
     children: []
@@ -2129,7 +2134,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<SharedAccessSignatureAuthorizationRule!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.SharedAccessSignatureAuthorizationRule>>
   - uid: azure-arm-iothub.IotHubResource.getQuotaMetrics
     name: getQuotaMetrics
     children: []
@@ -2320,7 +2326,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubQuotaMetricInfoListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.IotHubQuotaMetricInfoListResult>>
   - uid: azure-arm-iothub.IotHubResource.getQuotaMetricsWithHttpOperationResponse
     name: getQuotaMetricsWithHttpOperationResponse
     children: []
@@ -2351,7 +2358,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubQuotaMetricInfoListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.IotHubQuotaMetricInfoListResult>>
   - uid: azure-arm-iothub.IotHubResource.getStats
     name: getStats
     children: []
@@ -2471,7 +2479,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RegistryStatistics!@>>
+          - Promise<HttpOperationResponse<azure-arm-iothub.RegistryStatistics>>
   - uid: azure-arm-iothub.IotHubResource.getValidSkus
     name: getValidSkus
     children: []
@@ -2661,7 +2669,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubSkuDescriptionListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.IotHubSkuDescriptionListResult>>
   - uid: azure-arm-iothub.IotHubResource.getValidSkusWithHttpOperationResponse
     name: getValidSkusWithHttpOperationResponse
     children: []
@@ -2692,7 +2701,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubSkuDescriptionListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.IotHubSkuDescriptionListResult>>
   - uid: azure-arm-iothub.IotHubResource.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -2723,7 +2733,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubDescription!@>>
+          - Promise<HttpOperationResponse<azure-arm-iothub.IotHubDescription>>
   - uid: azure-arm-iothub.IotHubResource.importDevices
     name: importDevices
     children: []
@@ -2866,7 +2876,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<JobResponse!@>>
+          - Promise<HttpOperationResponse<azure-arm-iothub.JobResponse>>
   - uid: azure-arm-iothub.IotHubResource.listByResourceGroup
     name: listByResourceGroup
     children: []
@@ -3045,7 +3055,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubDescriptionListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.IotHubDescriptionListResult>>
   - uid: >-
       azure-arm-iothub.IotHubResource.listByResourceGroupWithHttpOperationResponse
     name: listByResourceGroupWithHttpOperationResponse
@@ -3072,7 +3083,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubDescriptionListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.IotHubDescriptionListResult>>
   - uid: azure-arm-iothub.IotHubResource.listBySubscription
     name: listBySubscription
     children: []
@@ -3235,7 +3247,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubDescriptionListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.IotHubDescriptionListResult>>
   - uid: >-
       azure-arm-iothub.IotHubResource.listBySubscriptionWithHttpOperationResponse
     name: listBySubscriptionWithHttpOperationResponse
@@ -3254,7 +3267,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubDescriptionListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.IotHubDescriptionListResult>>
   - uid: azure-arm-iothub.IotHubResource.listEventHubConsumerGroups
     name: listEventHubConsumerGroups
     children: []
@@ -3463,7 +3477,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<EventHubConsumerGroupsListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.EventHubConsumerGroupsListResult>>
   - uid: >-
       azure-arm-iothub.IotHubResource.listEventHubConsumerGroupsWithHttpOperationResponse
     name: listEventHubConsumerGroupsWithHttpOperationResponse
@@ -3503,7 +3518,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<EventHubConsumerGroupsListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.EventHubConsumerGroupsListResult>>
   - uid: azure-arm-iothub.IotHubResource.listJobs_1
     name: listJobs
     children: []
@@ -3692,7 +3708,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<JobResponseListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.JobResponseListResult>>
   - uid: azure-arm-iothub.IotHubResource.listJobsWithHttpOperationResponse
     name: listJobsWithHttpOperationResponse
     children: []
@@ -3723,7 +3740,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<JobResponseListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.JobResponseListResult>>
   - uid: azure-arm-iothub.IotHubResource.listKeys
     name: listKeys
     children: []
@@ -3924,7 +3942,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<SharedAccessSignatureAuthorizationRuleListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>>
   - uid: azure-arm-iothub.IotHubResource.listKeysWithHttpOperationResponse
     name: listKeysWithHttpOperationResponse
     children: []
@@ -3955,7 +3974,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<SharedAccessSignatureAuthorizationRuleListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>>
   - uid: azure-arm-iothub.IotHubResource.testAllRoutes
     name: testAllRoutes
     children: []
@@ -4094,7 +4114,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<TestAllRoutesResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-iothub.TestAllRoutesResult>>
   - uid: azure-arm-iothub.IotHubResource.testRoute
     name: testRoute
     children: []
@@ -4231,7 +4251,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<TestRouteResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-iothub.TestRouteResult>>
   - uid: azure-arm-iothub.IotHubResource.update
     name: update
     children: []
@@ -4349,7 +4369,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<IotHubDescription!@>>
+          - Promise<HttpOperationResponse<azure-arm-iothub.IotHubDescription>>
 references:
   - uid: azure-arm-iothub.IotHubDescription
     spec.typeScript:
@@ -4374,6 +4394,15 @@ references:
         uid: azure-arm-iothub.IotHubDescription
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-iothub.IotHubDescription>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: IotHubDescription
+        fullName: IotHubDescription
+        uid: azure-arm-iothub.IotHubDescription
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-iothub.IotHubNameAvailabilityInfo>
     spec.typeScript:
       - name: Promise<
@@ -4392,6 +4421,16 @@ references:
         uid: azure-arm-iothub.IotHubNameAvailabilityInfo
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-iothub.IotHubNameAvailabilityInfo>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: IotHubNameAvailabilityInfo
+        fullName: IotHubNameAvailabilityInfo
+        uid: azure-arm-iothub.IotHubNameAvailabilityInfo
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-iothub.EventHubConsumerGroupInfo>
     spec.typeScript:
       - name: Promise<
@@ -4410,6 +4449,15 @@ references:
         uid: azure-arm-iothub.EventHubConsumerGroupInfo
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-iothub.EventHubConsumerGroupInfo>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: EventHubConsumerGroupInfo
+        fullName: EventHubConsumerGroupInfo
+        uid: azure-arm-iothub.EventHubConsumerGroupInfo
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-iothub.ExportDevicesRequest
     spec.typeScript:
       - name: ExportDevicesRequest
@@ -4433,6 +4481,15 @@ references:
         uid: azure-arm-iothub.JobResponse
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-iothub.JobResponse>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: JobResponse
+        fullName: JobResponse
+        uid: azure-arm-iothub.JobResponse
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-iothub.EndpointHealthDataListResult>
     spec.typeScript:
       - name: Promise<
@@ -4451,6 +4508,16 @@ references:
         uid: azure-arm-iothub.EndpointHealthDataListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-iothub.EndpointHealthDataListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: EndpointHealthDataListResult
+        fullName: EndpointHealthDataListResult
+        uid: azure-arm-iothub.EndpointHealthDataListResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
     spec.typeScript:
       - name: Promise<
@@ -4469,6 +4536,16 @@ references:
         uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRule
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-iothub.SharedAccessSignatureAuthorizationRule>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: SharedAccessSignatureAuthorizationRule
+        fullName: SharedAccessSignatureAuthorizationRule
+        uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRule
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-iothub.IotHubQuotaMetricInfoListResult>
     spec.typeScript:
       - name: Promise<
@@ -4487,6 +4564,16 @@ references:
         uid: azure-arm-iothub.IotHubQuotaMetricInfoListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-iothub.IotHubQuotaMetricInfoListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: IotHubQuotaMetricInfoListResult
+        fullName: IotHubQuotaMetricInfoListResult
+        uid: azure-arm-iothub.IotHubQuotaMetricInfoListResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-iothub.RegistryStatistics>
     spec.typeScript:
       - name: Promise<
@@ -4505,6 +4592,15 @@ references:
         uid: azure-arm-iothub.RegistryStatistics
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-iothub.RegistryStatistics>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: RegistryStatistics
+        fullName: RegistryStatistics
+        uid: azure-arm-iothub.RegistryStatistics
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-iothub.IotHubSkuDescriptionListResult>
     spec.typeScript:
       - name: Promise<
@@ -4523,6 +4619,16 @@ references:
         uid: azure-arm-iothub.IotHubSkuDescriptionListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-iothub.IotHubSkuDescriptionListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: IotHubSkuDescriptionListResult
+        fullName: IotHubSkuDescriptionListResult
+        uid: azure-arm-iothub.IotHubSkuDescriptionListResult
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-iothub.ImportDevicesRequest
     spec.typeScript:
       - name: ImportDevicesRequest
@@ -4546,6 +4652,16 @@ references:
         uid: azure-arm-iothub.IotHubDescriptionListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-iothub.IotHubDescriptionListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: IotHubDescriptionListResult
+        fullName: IotHubDescriptionListResult
+        uid: azure-arm-iothub.IotHubDescriptionListResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-iothub.EventHubConsumerGroupsListResult>
     spec.typeScript:
       - name: Promise<
@@ -4564,6 +4680,16 @@ references:
         uid: azure-arm-iothub.EventHubConsumerGroupsListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-iothub.EventHubConsumerGroupsListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: EventHubConsumerGroupsListResult
+        fullName: EventHubConsumerGroupsListResult
+        uid: azure-arm-iothub.EventHubConsumerGroupsListResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-iothub.JobResponseListResult>
     spec.typeScript:
       - name: Promise<
@@ -4582,6 +4708,15 @@ references:
         uid: azure-arm-iothub.JobResponseListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-iothub.JobResponseListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: JobResponseListResult
+        fullName: JobResponseListResult
+        uid: azure-arm-iothub.JobResponseListResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>
     spec.typeScript:
       - name: Promise<
@@ -4601,6 +4736,16 @@ references:
         uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: SharedAccessSignatureAuthorizationRuleListResult
+        fullName: SharedAccessSignatureAuthorizationRuleListResult
+        uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-iothub.TestAllRoutesInput
     spec.typeScript:
       - name: TestAllRoutesInput
@@ -4624,6 +4769,15 @@ references:
         uid: azure-arm-iothub.TestAllRoutesResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-iothub.TestAllRoutesResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: TestAllRoutesResult
+        fullName: TestAllRoutesResult
+        uid: azure-arm-iothub.TestAllRoutesResult
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-iothub.TestRouteInput
     spec.typeScript:
       - name: TestRouteInput
@@ -4647,3 +4801,12 @@ references:
         uid: azure-arm-iothub.TestRouteResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-iothub.TestRouteResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: TestRouteResult
+        fullName: TestRouteResult
+        uid: azure-arm-iothub.TestRouteResult
+      - name: '>>'
+        fullName: '>>'

@@ -217,7 +217,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Profile!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Profile>>
   - uid: azure-arm-cdn.Profiles.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -481,7 +481,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Profile!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Profile>>
   - uid: azure-arm-cdn.Profiles.create
     name: create
     children: []
@@ -629,7 +629,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Profile!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Profile>>
   - uid: azure-arm-cdn.Profiles.deleteMethod_1
     name: deleteMethod
     children: []
@@ -941,7 +941,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SsoUri!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.SsoUri>>
   - uid: azure-arm-cdn.Profiles.get
     name: get
     children: []
@@ -1071,7 +1071,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Profile!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Profile>>
   - uid: azure-arm-cdn.Profiles.list
     name: list
     children: []
@@ -1307,7 +1307,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ProfileListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.ProfileListResult>>
   - uid: azure-arm-cdn.Profiles.listByResourceGroupWithHttpOperationResponse
     name: listByResourceGroupWithHttpOperationResponse
     children: []
@@ -1333,7 +1333,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ProfileListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.ProfileListResult>>
   - uid: azure-arm-cdn.Profiles.listNext
     name: listNext
     children: []
@@ -1433,7 +1433,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ProfileListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.ProfileListResult>>
   - uid: azure-arm-cdn.Profiles.listResourceUsage
     name: listResourceUsage
     children: []
@@ -1638,7 +1638,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ResourceUsageListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn.ResourceUsageListResult>>
   - uid: azure-arm-cdn.Profiles.listResourceUsageWithHttpOperationResponse
     name: listResourceUsageWithHttpOperationResponse
     children: []
@@ -1672,7 +1673,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ResourceUsageListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn.ResourceUsageListResult>>
   - uid: azure-arm-cdn.Profiles.listSupportedOptimizationTypes
     name: listSupportedOptimizationTypes
     children: []
@@ -1808,7 +1810,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<SupportedOptimizationTypesListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn.SupportedOptimizationTypesListResult>>
   - uid: azure-arm-cdn.Profiles.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1826,7 +1829,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ProfileListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.ProfileListResult>>
   - uid: azure-arm-cdn.Profiles.update
     name: update
     children: []
@@ -1956,7 +1959,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Profile!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Profile>>
 references:
   - uid: azure-arm-cdn.Profile
     spec.typeScript:
@@ -1981,6 +1984,15 @@ references:
         uid: azure-arm-cdn.Profile
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.Profile>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: Profile
+        fullName: Profile
+        uid: azure-arm-cdn.Profile
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-cdn.SsoUri>
     spec.typeScript:
       - name: Promise<
@@ -1999,6 +2011,15 @@ references:
         uid: azure-arm-cdn.SsoUri
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.SsoUri>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: SsoUri
+        fullName: SsoUri
+        uid: azure-arm-cdn.SsoUri
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-cdn.ProfileListResult>
     spec.typeScript:
       - name: Promise<
@@ -2017,6 +2038,15 @@ references:
         uid: azure-arm-cdn.ProfileListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.ProfileListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ProfileListResult
+        fullName: ProfileListResult
+        uid: azure-arm-cdn.ProfileListResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-cdn.ResourceUsageListResult>
     spec.typeScript:
       - name: Promise<
@@ -2035,6 +2065,15 @@ references:
         uid: azure-arm-cdn.ResourceUsageListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.ResourceUsageListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ResourceUsageListResult
+        fullName: ResourceUsageListResult
+        uid: azure-arm-cdn.ResourceUsageListResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-cdn.SupportedOptimizationTypesListResult>
     spec.typeScript:
       - name: Promise<
@@ -2053,3 +2092,13 @@ references:
         uid: azure-arm-cdn.SupportedOptimizationTypesListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-cdn.SupportedOptimizationTypesListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: SupportedOptimizationTypesListResult
+        fullName: SupportedOptimizationTypesListResult
+        uid: azure-arm-cdn.SupportedOptimizationTypesListResult
+      - name: '>>'
+        fullName: '>>'

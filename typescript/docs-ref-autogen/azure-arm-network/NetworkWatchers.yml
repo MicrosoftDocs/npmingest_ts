@@ -298,7 +298,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectivityInformation!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ConnectivityInformation>>
   - uid: azure-arm-network.NetworkWatchers.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -574,7 +575,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<AzureReachabilityReport!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.AzureReachabilityReport>>
   - uid: azure-arm-network.NetworkWatchers.beginGetFlowLogStatus
     name: beginGetFlowLogStatus
     children: []
@@ -720,7 +722,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<FlowLogInformation!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.FlowLogInformation>>
   - uid: azure-arm-network.NetworkWatchers.beginGetNextHop_2
     name: beginGetNextHop
     children: []
@@ -861,7 +863,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<NextHopResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.NextHopResult>>
   - uid: azure-arm-network.NetworkWatchers.beginGetTroubleshooting_1
     name: beginGetTroubleshooting
     children: []
@@ -1110,7 +1112,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<TroubleshootingResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.TroubleshootingResult>>
   - uid: >-
       azure-arm-network.NetworkWatchers.beginGetTroubleshootingWithHttpOperationResponse
     name: beginGetTroubleshootingWithHttpOperationResponse
@@ -1149,7 +1152,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<TroubleshootingResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.TroubleshootingResult>>
   - uid: azure-arm-network.NetworkWatchers.beginGetVMSecurityRules_1
     name: beginGetVMSecurityRules
     children: []
@@ -1301,7 +1305,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<SecurityGroupViewResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.SecurityGroupViewResult>>
   - uid: azure-arm-network.NetworkWatchers.beginListAvailableProviders_1
     name: beginListAvailableProviders
     children: []
@@ -1457,7 +1462,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<AvailableProvidersList!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.AvailableProvidersList>>
   - uid: azure-arm-network.NetworkWatchers.beginSetFlowLogConfiguration_1
     name: beginSetFlowLogConfiguration
     children: []
@@ -1603,7 +1609,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<FlowLogInformation!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.FlowLogInformation>>
   - uid: azure-arm-network.NetworkWatchers.beginVerifyIPFlow_1
     name: beginVerifyIPFlow
     children: []
@@ -1754,7 +1760,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VerificationIPFlowResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.VerificationIPFlowResult>>
   - uid: azure-arm-network.NetworkWatchers.checkConnectivity
     name: checkConnectivity
     children: []
@@ -1911,7 +1918,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectivityInformation!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ConnectivityInformation>>
   - uid: azure-arm-network.NetworkWatchers.createOrUpdate
     name: createOrUpdate
     children: []
@@ -2052,7 +2060,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkWatcher!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.NetworkWatcher>>
   - uid: azure-arm-network.NetworkWatchers.deleteMethod
     name: deleteMethod
     children: []
@@ -2414,7 +2422,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<AzureReachabilityReport!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.AzureReachabilityReport>>
   - uid: azure-arm-network.NetworkWatchers.getFlowLogStatus
     name: getFlowLogStatus
     children: []
@@ -2558,7 +2567,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<FlowLogInformation!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.FlowLogInformation>>
   - uid: azure-arm-network.NetworkWatchers.getNextHop
     name: getNextHop
     children: []
@@ -2699,7 +2708,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<NextHopResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.NextHopResult>>
   - uid: azure-arm-network.NetworkWatchers.getTopology_1
     name: getTopology
     children: []
@@ -2840,7 +2849,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Topology!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.Topology>>
   - uid: azure-arm-network.NetworkWatchers.getTroubleshooting
     name: getTroubleshooting
     children: []
@@ -3089,7 +3098,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<TroubleshootingResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.TroubleshootingResult>>
   - uid: >-
       azure-arm-network.NetworkWatchers.getTroubleshootingWithHttpOperationResponse
     name: getTroubleshootingWithHttpOperationResponse
@@ -3127,7 +3137,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<TroubleshootingResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.TroubleshootingResult>>
   - uid: azure-arm-network.NetworkWatchers.getVMSecurityRules
     name: getVMSecurityRules
     children: []
@@ -3278,7 +3289,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<SecurityGroupViewResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.SecurityGroupViewResult>>
   - uid: azure-arm-network.NetworkWatchers.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -3308,7 +3320,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkWatcher!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.NetworkWatcher>>
   - uid: azure-arm-network.NetworkWatchers.list_1
     name: list
     children: []
@@ -3457,7 +3469,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkWatcherListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkWatcherListResult>>
   - uid: azure-arm-network.NetworkWatchers.listAvailableProviders
     name: listAvailableProviders
     children: []
@@ -3613,7 +3626,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<AvailableProvidersList!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.AvailableProvidersList>>
   - uid: azure-arm-network.NetworkWatchers.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -3638,7 +3652,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkWatcherListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkWatcherListResult>>
   - uid: azure-arm-network.NetworkWatchers.setFlowLogConfiguration
     name: setFlowLogConfiguration
     children: []
@@ -3784,7 +3799,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<FlowLogInformation!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.FlowLogInformation>>
   - uid: azure-arm-network.NetworkWatchers.updateTags
     name: updateTags
     children: []
@@ -3924,7 +3939,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkWatcher!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.NetworkWatcher>>
   - uid: azure-arm-network.NetworkWatchers.verifyIPFlow
     name: verifyIPFlow
     children: []
@@ -4073,7 +4088,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VerificationIPFlowResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.VerificationIPFlowResult>>
 references:
   - uid: azure-arm-network.ConnectivityParameters
     spec.typeScript:
@@ -4098,6 +4114,15 @@ references:
         uid: azure-arm-network.ConnectivityInformation
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.ConnectivityInformation>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ConnectivityInformation
+        fullName: ConnectivityInformation
+        uid: azure-arm-network.ConnectivityInformation
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.AzureReachabilityReportParameters
     spec.typeScript:
       - name: AzureReachabilityReportParameters
@@ -4121,6 +4146,15 @@ references:
         uid: azure-arm-network.AzureReachabilityReport
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.AzureReachabilityReport>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: AzureReachabilityReport
+        fullName: AzureReachabilityReport
+        uid: azure-arm-network.AzureReachabilityReport
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.FlowLogStatusParameters
     spec.typeScript:
       - name: FlowLogStatusParameters
@@ -4144,6 +4178,15 @@ references:
         uid: azure-arm-network.FlowLogInformation
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.FlowLogInformation>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: FlowLogInformation
+        fullName: FlowLogInformation
+        uid: azure-arm-network.FlowLogInformation
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.NextHopParameters
     spec.typeScript:
       - name: NextHopParameters
@@ -4167,6 +4210,15 @@ references:
         uid: azure-arm-network.NextHopResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.NextHopResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: NextHopResult
+        fullName: NextHopResult
+        uid: azure-arm-network.NextHopResult
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.TroubleshootingParameters
     spec.typeScript:
       - name: TroubleshootingParameters
@@ -4195,6 +4247,15 @@ references:
       - name: QueryTroubleshootingParameters
         fullName: QueryTroubleshootingParameters
         uid: azure-arm-network.QueryTroubleshootingParameters
+  - uid: Promise<HttpOperationResponse<azure-arm-network.TroubleshootingResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: TroubleshootingResult
+        fullName: TroubleshootingResult
+        uid: azure-arm-network.TroubleshootingResult
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.SecurityGroupViewParameters
     spec.typeScript:
       - name: SecurityGroupViewParameters
@@ -4218,6 +4279,15 @@ references:
         uid: azure-arm-network.SecurityGroupViewResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.SecurityGroupViewResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: SecurityGroupViewResult
+        fullName: SecurityGroupViewResult
+        uid: azure-arm-network.SecurityGroupViewResult
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.AvailableProvidersListParameters
     spec.typeScript:
       - name: AvailableProvidersListParameters
@@ -4241,6 +4311,15 @@ references:
         uid: azure-arm-network.AvailableProvidersList
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.AvailableProvidersList>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: AvailableProvidersList
+        fullName: AvailableProvidersList
+        uid: azure-arm-network.AvailableProvidersList
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.FlowLogInformation
     spec.typeScript:
       - name: FlowLogInformation
@@ -4269,6 +4348,15 @@ references:
         uid: azure-arm-network.VerificationIPFlowResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.VerificationIPFlowResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VerificationIPFlowResult
+        fullName: VerificationIPFlowResult
+        uid: azure-arm-network.VerificationIPFlowResult
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.NetworkWatcher
     spec.typeScript:
       - name: NetworkWatcher
@@ -4292,6 +4380,15 @@ references:
         uid: azure-arm-network.NetworkWatcher
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.NetworkWatcher>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: NetworkWatcher
+        fullName: NetworkWatcher
+        uid: azure-arm-network.NetworkWatcher
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.TopologyParameters
     spec.typeScript:
       - name: TopologyParameters
@@ -4315,6 +4412,15 @@ references:
         uid: azure-arm-network.Topology
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.Topology>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: Topology
+        fullName: Topology
+        uid: azure-arm-network.Topology
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.NetworkWatcherListResult>
     spec.typeScript:
       - name: Promise<
@@ -4333,6 +4439,15 @@ references:
         uid: azure-arm-network.NetworkWatcherListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.NetworkWatcherListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: NetworkWatcherListResult
+        fullName: NetworkWatcherListResult
+        uid: azure-arm-network.NetworkWatcherListResult
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.TagsObject
     spec.typeScript:
       - name: TagsObject

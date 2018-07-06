@@ -174,7 +174,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ResourceSkusResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.ResourceSkusResult>>
   - uid: azure-arm-compute.ResourceSkus.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -192,7 +192,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ResourceSkusResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.ResourceSkusResult>>
 references:
   - uid: Promise<azure-arm-compute.ResourceSkusResult>
     spec.typeScript:
@@ -212,3 +212,12 @@ references:
         uid: azure-arm-compute.ResourceSkusResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.ResourceSkusResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ResourceSkusResult
+        fullName: ResourceSkusResult
+        uid: azure-arm-compute.ResourceSkusResult
+      - name: '>>'
+        fullName: '>>'

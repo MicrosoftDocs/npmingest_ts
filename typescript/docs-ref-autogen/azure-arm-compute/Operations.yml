@@ -88,7 +88,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ComputeOperationListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.ComputeOperationListResult>>
 references:
   - uid: Promise<azure-arm-compute.ComputeOperationListResult>
     spec.typeScript:
@@ -108,3 +109,13 @@ references:
         uid: azure-arm-compute.ComputeOperationListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-compute.ComputeOperationListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ComputeOperationListResult
+        fullName: ComputeOperationListResult
+        uid: azure-arm-compute.ComputeOperationListResult
+      - name: '>>'
+        fullName: '>>'

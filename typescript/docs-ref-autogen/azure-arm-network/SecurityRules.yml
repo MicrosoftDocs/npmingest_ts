@@ -211,7 +211,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SecurityRule!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.SecurityRule>>
   - uid: azure-arm-network.SecurityRules.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -525,7 +525,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SecurityRule!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.SecurityRule>>
   - uid: azure-arm-network.SecurityRules.deleteMethod
     name: deleteMethod
     children: []
@@ -808,7 +808,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SecurityRule!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.SecurityRule>>
   - uid: azure-arm-network.SecurityRules.list
     name: list
     children: []
@@ -998,7 +998,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<SecurityRuleListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.SecurityRuleListResult>>
   - uid: azure-arm-network.SecurityRules.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1029,7 +1030,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<SecurityRuleListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.SecurityRuleListResult>>
 references:
   - uid: azure-arm-network.SecurityRule
     spec.typeScript:
@@ -1054,6 +1056,15 @@ references:
         uid: azure-arm-network.SecurityRule
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.SecurityRule>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: SecurityRule
+        fullName: SecurityRule
+        uid: azure-arm-network.SecurityRule
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.SecurityRuleListResult>
     spec.typeScript:
       - name: Promise<
@@ -1072,3 +1083,12 @@ references:
         uid: azure-arm-network.SecurityRuleListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.SecurityRuleListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: SecurityRuleListResult
+        fullName: SecurityRuleListResult
+        uid: azure-arm-network.SecurityRuleListResult
+      - name: '>>'
+        fullName: '>>'

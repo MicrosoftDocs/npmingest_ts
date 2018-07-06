@@ -231,7 +231,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitConnection!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCircuitConnection>>
   - uid: azure-arm-network.ExpressRouteCircuitConnections.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -597,7 +598,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitConnection!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCircuitConnection>>
   - uid: azure-arm-network.ExpressRouteCircuitConnections.deleteMethod
     name: deleteMethod
     children: []
@@ -933,7 +935,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitConnection!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCircuitConnection>>
 references:
   - uid: azure-arm-network.ExpressRouteCircuitConnection
     spec.typeScript:
@@ -958,3 +961,13 @@ references:
         uid: azure-arm-network.ExpressRouteCircuitConnection
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCircuitConnection>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ExpressRouteCircuitConnection
+        fullName: ExpressRouteCircuitConnection
+        uid: azure-arm-network.ExpressRouteCircuitConnection
+      - name: '>>'
+        fullName: '>>'

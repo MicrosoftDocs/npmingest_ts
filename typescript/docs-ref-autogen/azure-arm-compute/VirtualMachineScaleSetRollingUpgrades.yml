@@ -155,7 +155,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginStartOSUpgrade
     name: beginStartOSUpgrade
@@ -306,7 +307,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.cancel
     name: cancel
     children: []
@@ -425,7 +427,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.getLatest
     name: getLatest
     children: []
@@ -544,7 +547,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<RollingUpgradeStatusInfo!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.RollingUpgradeStatusInfo>>
   - uid: azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.startOSUpgrade
     name: startOSUpgrade
     children: []
@@ -692,7 +696,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
 references:
   - uid: Promise<azure-arm-compute.OperationStatusResponse>
     spec.typeScript:
@@ -712,6 +717,15 @@ references:
         uid: azure-arm-compute.OperationStatusResponse
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-compute.RollingUpgradeStatusInfo>
     spec.typeScript:
       - name: Promise<
@@ -730,3 +744,12 @@ references:
         uid: azure-arm-compute.RollingUpgradeStatusInfo
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.RollingUpgradeStatusInfo>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: RollingUpgradeStatusInfo
+        fullName: RollingUpgradeStatusInfo
+        uid: azure-arm-compute.RollingUpgradeStatusInfo
+      - name: '>>'
+        fullName: '>>'

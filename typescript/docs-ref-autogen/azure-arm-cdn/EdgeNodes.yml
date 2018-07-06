@@ -188,7 +188,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<EdgenodeResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.EdgenodeResult>>
   - uid: azure-arm-cdn.EdgeNodes.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -208,7 +208,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<EdgenodeResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.EdgenodeResult>>
 references:
   - uid: Promise<azure-arm-cdn.EdgenodeResult>
     spec.typeScript:
@@ -228,3 +228,12 @@ references:
         uid: azure-arm-cdn.EdgenodeResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.EdgenodeResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: EdgenodeResult
+        fullName: EdgenodeResult
+        uid: azure-arm-cdn.EdgenodeResult
+      - name: '>>'
+        fullName: '>>'

@@ -259,7 +259,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
   - uid: azure-arm-cdn.Endpoints.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -893,7 +893,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
   - uid: azure-arm-cdn.Endpoints.beginStop_1
     name: beginStop
     children: []
@@ -1036,7 +1036,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
   - uid: azure-arm-cdn.Endpoints.beginUpdate_1
     name: beginUpdate
     children: []
@@ -1249,7 +1249,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
   - uid: azure-arm-cdn.Endpoints.create
     name: create
     children: []
@@ -1420,7 +1420,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
   - uid: azure-arm-cdn.Endpoints.deleteMethod
     name: deleteMethod
     children: []
@@ -1730,7 +1730,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
   - uid: azure-arm-cdn.Endpoints.listByProfile
     name: listByProfile
     children: []
@@ -1920,7 +1920,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<EndpointListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.EndpointListResult>>
   - uid: azure-arm-cdn.Endpoints.listByProfileWithHttpOperationResponse
     name: listByProfileWithHttpOperationResponse
     children: []
@@ -1952,7 +1952,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<EndpointListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.EndpointListResult>>
   - uid: azure-arm-cdn.Endpoints.listResourceUsage_1
     name: listResourceUsage
     children: []
@@ -2186,7 +2186,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ResourceUsageListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn.ResourceUsageListResult>>
   - uid: azure-arm-cdn.Endpoints.listResourceUsageWithHttpOperationResponse
     name: listResourceUsageWithHttpOperationResponse
     children: []
@@ -2228,7 +2229,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ResourceUsageListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn.ResourceUsageListResult>>
   - uid: azure-arm-cdn.Endpoints.loadContent
     name: loadContent
     children: []
@@ -2701,7 +2703,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
   - uid: azure-arm-cdn.Endpoints.stop
     name: stop
     children: []
@@ -2844,7 +2846,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
   - uid: azure-arm-cdn.Endpoints.update
     name: update
     children: []
@@ -3057,7 +3059,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Endpoint!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
   - uid: azure-arm-cdn.Endpoints.validateCustomDomain
     name: validateCustomDomain
     children: []
@@ -3231,7 +3233,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ValidateCustomDomainOutput!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn.ValidateCustomDomainOutput>>
 references:
   - uid: azure-arm-cdn.Endpoint
     spec.typeScript:
@@ -3256,6 +3259,15 @@ references:
         uid: azure-arm-cdn.Endpoint
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: Endpoint
+        fullName: Endpoint
+        uid: azure-arm-cdn.Endpoint
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-cdn.EndpointUpdateParameters
     spec.typeScript:
       - name: EndpointUpdateParameters
@@ -3279,6 +3291,15 @@ references:
         uid: azure-arm-cdn.EndpointListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.EndpointListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: EndpointListResult
+        fullName: EndpointListResult
+        uid: azure-arm-cdn.EndpointListResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-cdn.ResourceUsageListResult>
     spec.typeScript:
       - name: Promise<
@@ -3297,6 +3318,15 @@ references:
         uid: azure-arm-cdn.ResourceUsageListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.ResourceUsageListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ResourceUsageListResult
+        fullName: ResourceUsageListResult
+        uid: azure-arm-cdn.ResourceUsageListResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-cdn.ValidateCustomDomainOutput>
     spec.typeScript:
       - name: Promise<
@@ -3315,3 +3345,12 @@ references:
         uid: azure-arm-cdn.ValidateCustomDomainOutput
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.ValidateCustomDomainOutput>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ValidateCustomDomainOutput
+        fullName: ValidateCustomDomainOutput
+        uid: azure-arm-cdn.ValidateCustomDomainOutput
+      - name: '>>'
+        fullName: '>>'

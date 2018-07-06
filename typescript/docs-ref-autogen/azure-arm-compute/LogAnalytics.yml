@@ -162,7 +162,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LogAnalyticsOperationResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.LogAnalyticsOperationResult>>
   - uid: azure-arm-compute.LogAnalytics.beginExportThrottledRequests
     name: beginExportThrottledRequests
     children: []
@@ -304,7 +305,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LogAnalyticsOperationResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.LogAnalyticsOperationResult>>
   - uid: azure-arm-compute.LogAnalytics.exportRequestRateByInterval
     name: exportRequestRateByInterval
     children: []
@@ -438,7 +440,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LogAnalyticsOperationResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.LogAnalyticsOperationResult>>
   - uid: azure-arm-compute.LogAnalytics.exportThrottledRequests
     name: exportThrottledRequests
     children: []
@@ -579,7 +582,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LogAnalyticsOperationResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.LogAnalyticsOperationResult>>
 references:
   - uid: azure-arm-compute.RequestRateByIntervalInput
     spec.typeScript:
@@ -604,6 +608,16 @@ references:
         uid: azure-arm-compute.LogAnalyticsOperationResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-compute.LogAnalyticsOperationResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: LogAnalyticsOperationResult
+        fullName: LogAnalyticsOperationResult
+        uid: azure-arm-compute.LogAnalyticsOperationResult
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-compute.ThrottledRequestsInput
     spec.typeScript:
       - name: ThrottledRequestsInput

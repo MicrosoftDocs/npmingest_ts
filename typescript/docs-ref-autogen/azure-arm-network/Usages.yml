@@ -189,7 +189,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<UsagesListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.UsagesListResult>>
   - uid: azure-arm-network.Usages.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -214,7 +214,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<UsagesListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.UsagesListResult>>
 references:
   - uid: Promise<azure-arm-network.UsagesListResult>
     spec.typeScript:
@@ -234,3 +234,12 @@ references:
         uid: azure-arm-network.UsagesListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.UsagesListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: UsagesListResult
+        fullName: UsagesListResult
+        uid: azure-arm-network.UsagesListResult
+      - name: '>>'
+        fullName: '>>'

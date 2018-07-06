@@ -213,7 +213,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Origin!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Origin>>
   - uid: azure-arm-cdn.Origins.get
     name: get
     children: []
@@ -378,7 +378,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Origin!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Origin>>
   - uid: azure-arm-cdn.Origins.listByEndpoint
     name: listByEndpoint
     children: []
@@ -583,7 +583,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OriginListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.OriginListResult>>
   - uid: azure-arm-cdn.Origins.listByEndpointWithHttpOperationResponse
     name: listByEndpointWithHttpOperationResponse
     children: []
@@ -621,7 +621,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OriginListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.OriginListResult>>
   - uid: azure-arm-cdn.Origins.update
     name: update
     children: []
@@ -806,7 +806,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Origin!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.Origin>>
 references:
   - uid: azure-arm-cdn.OriginUpdateParameters
     spec.typeScript:
@@ -831,6 +831,15 @@ references:
         uid: azure-arm-cdn.Origin
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.Origin>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: Origin
+        fullName: Origin
+        uid: azure-arm-cdn.Origin
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-cdn.OriginListResult>
     spec.typeScript:
       - name: Promise<
@@ -849,3 +858,12 @@ references:
         uid: azure-arm-cdn.OriginListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.OriginListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: OriginListResult
+        fullName: OriginListResult
+        uid: azure-arm-cdn.OriginListResult
+      - name: '>>'
+        fullName: '>>'

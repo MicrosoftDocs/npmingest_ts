@@ -156,7 +156,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Probe!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.Probe>>
   - uid: azure-arm-network.LoadBalancerProbes.list
     name: list
     children: []
@@ -345,7 +345,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerProbeListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LoadBalancerProbeListResult>>
   - uid: azure-arm-network.LoadBalancerProbes.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -375,7 +376,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerProbeListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LoadBalancerProbeListResult>>
 references:
   - uid: Promise<azure-arm-network.Probe>
     spec.typeScript:
@@ -395,6 +397,15 @@ references:
         uid: azure-arm-network.Probe
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.Probe>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: Probe
+        fullName: Probe
+        uid: azure-arm-network.Probe
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.LoadBalancerProbeListResult>
     spec.typeScript:
       - name: Promise<
@@ -413,3 +424,13 @@ references:
         uid: azure-arm-network.LoadBalancerProbeListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.LoadBalancerProbeListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: LoadBalancerProbeListResult
+        fullName: LoadBalancerProbeListResult
+        uid: azure-arm-network.LoadBalancerProbeListResult
+      - name: '>>'
+        fullName: '>>'

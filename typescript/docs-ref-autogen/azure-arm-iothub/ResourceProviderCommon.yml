@@ -94,7 +94,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<UserSubscriptionQuotaListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-iothub.UserSubscriptionQuotaListResult>>
 references:
   - uid: Promise<azure-arm-iothub.UserSubscriptionQuotaListResult>
     spec.typeScript:
@@ -114,3 +115,13 @@ references:
         uid: azure-arm-iothub.UserSubscriptionQuotaListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-iothub.UserSubscriptionQuotaListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: UserSubscriptionQuotaListResult
+        fullName: UserSubscriptionQuotaListResult
+        uid: azure-arm-iothub.UserSubscriptionQuotaListResult
+      - name: '>>'
+        fullName: '>>'

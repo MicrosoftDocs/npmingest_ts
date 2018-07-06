@@ -224,7 +224,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionMonitorResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ConnectionMonitorResult>>
   - uid: azure-arm-network.ConnectionMonitors.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -510,7 +511,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionMonitorQueryResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ConnectionMonitorQueryResult>>
   - uid: azure-arm-network.ConnectionMonitors.beginStart_1
     name: beginStart
     children: []
@@ -953,7 +955,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionMonitorResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ConnectionMonitorResult>>
   - uid: azure-arm-network.ConnectionMonitors.deleteMethod
     name: deleteMethod
     children: []
@@ -1234,7 +1237,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionMonitorResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ConnectionMonitorResult>>
   - uid: azure-arm-network.ConnectionMonitors.list
     name: list
     children: []
@@ -1355,7 +1359,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionMonitorListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ConnectionMonitorListResult>>
   - uid: azure-arm-network.ConnectionMonitors.query
     name: query
     children: []
@@ -1498,7 +1503,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ConnectionMonitorQueryResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ConnectionMonitorQueryResult>>
   - uid: azure-arm-network.ConnectionMonitors.start
     name: start
     children: []
@@ -1803,6 +1809,15 @@ references:
         uid: azure-arm-network.ConnectionMonitorResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.ConnectionMonitorResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ConnectionMonitorResult
+        fullName: ConnectionMonitorResult
+        uid: azure-arm-network.ConnectionMonitorResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.ConnectionMonitorQueryResult>
     spec.typeScript:
       - name: Promise<
@@ -1821,6 +1836,16 @@ references:
         uid: azure-arm-network.ConnectionMonitorQueryResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.ConnectionMonitorQueryResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ConnectionMonitorQueryResult
+        fullName: ConnectionMonitorQueryResult
+        uid: azure-arm-network.ConnectionMonitorQueryResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.ConnectionMonitorListResult>
     spec.typeScript:
       - name: Promise<
@@ -1839,3 +1864,13 @@ references:
         uid: azure-arm-network.ConnectionMonitorListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.ConnectionMonitorListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ConnectionMonitorListResult
+        fullName: ConnectionMonitorListResult
+        uid: azure-arm-network.ConnectionMonitorListResult
+      - name: '>>'
+        fullName: '>>'

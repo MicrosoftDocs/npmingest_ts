@@ -183,7 +183,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteServiceProviderListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteServiceProviderListResult>>
   - uid: >-
       azure-arm-network.ExpressRouteServiceProviders.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -202,7 +203,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteServiceProviderListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteServiceProviderListResult>>
 references:
   - uid: Promise<azure-arm-network.ExpressRouteServiceProviderListResult>
     spec.typeScript:
@@ -222,3 +224,13 @@ references:
         uid: azure-arm-network.ExpressRouteServiceProviderListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.ExpressRouteServiceProviderListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ExpressRouteServiceProviderListResult
+        fullName: ExpressRouteServiceProviderListResult
+        uid: azure-arm-network.ExpressRouteServiceProviderListResult
+      - name: '>>'
+        fullName: '>>'

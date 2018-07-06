@@ -222,7 +222,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Snapshot!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.Snapshot>>
   - uid: azure-arm-compute.Snapshots.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -355,7 +355,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.Snapshots.beginGrantAccess_1
     name: beginGrantAccess
     children: []
@@ -510,7 +511,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AccessUri!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.AccessUri>>
   - uid: azure-arm-compute.Snapshots.beginRevokeAccess
     name: beginRevokeAccess
     children: []
@@ -643,7 +644,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.Snapshots.beginUpdate_1
     name: beginUpdate
     children: []
@@ -796,7 +798,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Snapshot!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.Snapshot>>
   - uid: azure-arm-compute.Snapshots.createOrUpdate
     name: createOrUpdate
     children: []
@@ -949,7 +951,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Snapshot!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.Snapshot>>
   - uid: azure-arm-compute.Snapshots.deleteMethod
     name: deleteMethod
     children: []
@@ -1081,7 +1083,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.Snapshots.get
     name: get
     children: []
@@ -1213,7 +1216,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Snapshot!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.Snapshot>>
   - uid: azure-arm-compute.Snapshots.grantAccess
     name: grantAccess
     children: []
@@ -1367,7 +1370,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AccessUri!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.AccessUri>>
   - uid: azure-arm-compute.Snapshots.list
     name: list
     children: []
@@ -1603,7 +1606,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SnapshotList!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.SnapshotList>>
   - uid: azure-arm-compute.Snapshots.listByResourceGroupWithHttpOperationResponse
     name: listByResourceGroupWithHttpOperationResponse
     children: []
@@ -1628,7 +1631,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SnapshotList!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.SnapshotList>>
   - uid: azure-arm-compute.Snapshots.listNext_1
     name: listNext
     children: []
@@ -1728,7 +1731,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SnapshotList!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.SnapshotList>>
   - uid: azure-arm-compute.Snapshots.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1746,7 +1749,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SnapshotList!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.SnapshotList>>
   - uid: azure-arm-compute.Snapshots.revokeAccess
     name: revokeAccess
     children: []
@@ -1878,7 +1881,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.Snapshots.update
     name: update
     children: []
@@ -2031,7 +2035,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Snapshot!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.Snapshot>>
 references:
   - uid: azure-arm-compute.Snapshot
     spec.typeScript:
@@ -2056,6 +2060,15 @@ references:
         uid: azure-arm-compute.Snapshot
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.Snapshot>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: Snapshot
+        fullName: Snapshot
+        uid: azure-arm-compute.Snapshot
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-compute.OperationStatusResponse>
     spec.typeScript:
       - name: Promise<
@@ -2074,6 +2087,15 @@ references:
         uid: azure-arm-compute.OperationStatusResponse
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-compute.GrantAccessData
     spec.typeScript:
       - name: GrantAccessData
@@ -2097,6 +2119,15 @@ references:
         uid: azure-arm-compute.AccessUri
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.AccessUri>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: AccessUri
+        fullName: AccessUri
+        uid: azure-arm-compute.AccessUri
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-compute.SnapshotUpdate
     spec.typeScript:
       - name: SnapshotUpdate
@@ -2120,3 +2151,12 @@ references:
         uid: azure-arm-compute.SnapshotList
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.SnapshotList>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: SnapshotList
+        fullName: SnapshotList
+        uid: azure-arm-compute.SnapshotList
+      - name: '>>'
+        fullName: '>>'

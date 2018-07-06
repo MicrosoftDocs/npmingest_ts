@@ -212,7 +212,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetwork!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.VirtualNetwork>>
   - uid: azure-arm-network.VirtualNetworks.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -473,7 +473,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetwork!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.VirtualNetwork>>
   - uid: azure-arm-network.VirtualNetworks.checkIPAddressAvailability
     name: checkIPAddressAvailability
     children: []
@@ -595,7 +595,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<IPAddressAvailabilityResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.IPAddressAvailabilityResult>>
   - uid: azure-arm-network.VirtualNetworks.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -736,7 +737,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetwork!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.VirtualNetwork>>
   - uid: azure-arm-network.VirtualNetworks.deleteMethod
     name: deleteMethod
     children: []
@@ -972,7 +973,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetwork!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.VirtualNetwork>>
   - uid: azure-arm-network.VirtualNetworks.list
     name: list
     children: []
@@ -1203,7 +1204,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkListResult>>
   - uid: azure-arm-network.VirtualNetworks.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse
     children: []
@@ -1221,7 +1223,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkListResult>>
   - uid: azure-arm-network.VirtualNetworks.listNext
     name: listNext
     children: []
@@ -1321,7 +1324,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkListResult>>
   - uid: azure-arm-network.VirtualNetworks.listUsage
     name: listUsage
     children: []
@@ -1510,7 +1514,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkListUsageResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkListUsageResult>>
   - uid: azure-arm-network.VirtualNetworks.listUsageWithHttpOperationResponse
     name: listUsageWithHttpOperationResponse
     children: []
@@ -1540,7 +1545,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkListUsageResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkListUsageResult>>
   - uid: azure-arm-network.VirtualNetworks.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1565,7 +1571,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetworkListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkListResult>>
   - uid: azure-arm-network.VirtualNetworks.updateTags
     name: updateTags
     children: []
@@ -1705,7 +1712,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualNetwork!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.VirtualNetwork>>
 references:
   - uid: azure-arm-network.VirtualNetwork
     spec.typeScript:
@@ -1730,6 +1737,15 @@ references:
         uid: azure-arm-network.VirtualNetwork
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.VirtualNetwork>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VirtualNetwork
+        fullName: VirtualNetwork
+        uid: azure-arm-network.VirtualNetwork
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.TagsObject
     spec.typeScript:
       - name: TagsObject
@@ -1753,6 +1769,16 @@ references:
         uid: azure-arm-network.IPAddressAvailabilityResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.IPAddressAvailabilityResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: IPAddressAvailabilityResult
+        fullName: IPAddressAvailabilityResult
+        uid: azure-arm-network.IPAddressAvailabilityResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.VirtualNetworkListResult>
     spec.typeScript:
       - name: Promise<
@@ -1771,6 +1797,15 @@ references:
         uid: azure-arm-network.VirtualNetworkListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VirtualNetworkListResult
+        fullName: VirtualNetworkListResult
+        uid: azure-arm-network.VirtualNetworkListResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.VirtualNetworkListUsageResult>
     spec.typeScript:
       - name: Promise<
@@ -1789,3 +1824,13 @@ references:
         uid: azure-arm-network.VirtualNetworkListUsageResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.VirtualNetworkListUsageResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VirtualNetworkListUsageResult
+        fullName: VirtualNetworkListUsageResult
+        uid: azure-arm-network.VirtualNetworkListUsageResult
+      - name: '>>'
+        fullName: '>>'

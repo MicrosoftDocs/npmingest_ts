@@ -205,7 +205,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineExtension!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineExtension>>
   - uid: azure-arm-compute.VirtualMachineExtensions.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -346,7 +347,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.VirtualMachineExtensions.beginUpdate
     name: beginUpdate
     children: []
@@ -511,7 +513,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineExtension!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineExtension>>
   - uid: azure-arm-compute.VirtualMachineExtensions.createOrUpdate
     name: createOrUpdate
     children: []
@@ -674,7 +677,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineExtension!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineExtension>>
   - uid: azure-arm-compute.VirtualMachineExtensions.deleteMethod_1
     name: deleteMethod
     children: []
@@ -815,7 +819,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.VirtualMachineExtensions.get
     name: get
     children: []
@@ -954,7 +959,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineExtension!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineExtension>>
   - uid: azure-arm-compute.VirtualMachineExtensions.update
     name: update
     children: []
@@ -1118,7 +1124,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineExtension!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineExtension>>
 references:
   - uid: azure-arm-compute.VirtualMachineExtension
     spec.typeScript:
@@ -1143,6 +1150,15 @@ references:
         uid: azure-arm-compute.VirtualMachineExtension
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineExtension>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VirtualMachineExtension
+        fullName: VirtualMachineExtension
+        uid: azure-arm-compute.VirtualMachineExtension
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-compute.OperationStatusResponse>
     spec.typeScript:
       - name: Promise<
@@ -1161,6 +1177,15 @@ references:
         uid: azure-arm-compute.OperationStatusResponse
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-compute.VirtualMachineExtensionUpdate
     spec.typeScript:
       - name: VirtualMachineExtensionUpdate

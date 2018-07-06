@@ -143,7 +143,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<CheckNameAvailabilityResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch.CheckNameAvailabilityResult>>
   - uid: azure-arm-batch.Location.getQuotas
     name: getQuotas
     children: []
@@ -251,7 +252,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<BatchLocationQuota!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.BatchLocationQuota>>
 references:
   - uid: Promise<azure-arm-batch.CheckNameAvailabilityResult>
     spec.typeScript:
@@ -271,6 +272,16 @@ references:
         uid: azure-arm-batch.CheckNameAvailabilityResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-batch.CheckNameAvailabilityResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: CheckNameAvailabilityResult
+        fullName: CheckNameAvailabilityResult
+        uid: azure-arm-batch.CheckNameAvailabilityResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-batch.BatchLocationQuota>
     spec.typeScript:
       - name: Promise<
@@ -289,3 +300,12 @@ references:
         uid: azure-arm-batch.BatchLocationQuota
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-batch.BatchLocationQuota>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: BatchLocationQuota
+        fullName: BatchLocationQuota
+        uid: azure-arm-batch.BatchLocationQuota
+      - name: '>>'
+        fullName: '>>'

@@ -174,7 +174,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationsListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.OperationsListResult>>
   - uid: azure-arm-cdn.Operations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -192,7 +192,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationsListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.OperationsListResult>>
 references:
   - uid: Promise<azure-arm-cdn.OperationsListResult>
     spec.typeScript:
@@ -212,3 +212,12 @@ references:
         uid: azure-arm-cdn.OperationsListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.OperationsListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: OperationsListResult
+        fullName: OperationsListResult
+        uid: azure-arm-cdn.OperationsListResult
+      - name: '>>'
+        fullName: '>>'

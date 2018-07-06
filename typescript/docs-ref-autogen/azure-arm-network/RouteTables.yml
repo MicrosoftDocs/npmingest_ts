@@ -193,7 +193,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTable!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteTable>>
   - uid: azure-arm-network.RouteTables.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -449,7 +449,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTable!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteTable>>
   - uid: azure-arm-network.RouteTables.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -589,7 +589,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTable!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteTable>>
   - uid: azure-arm-network.RouteTables.deleteMethod
     name: deleteMethod
     children: []
@@ -825,7 +825,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTable!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteTable>>
   - uid: azure-arm-network.RouteTables.list_1
     name: list
     children: []
@@ -1056,7 +1056,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTableListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.RouteTableListResult>>
   - uid: azure-arm-network.RouteTables.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse
     children: []
@@ -1074,7 +1075,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTableListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.RouteTableListResult>>
   - uid: azure-arm-network.RouteTables.listNext
     name: listNext
     children: []
@@ -1174,7 +1176,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTableListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.RouteTableListResult>>
   - uid: azure-arm-network.RouteTables.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1199,7 +1202,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTableListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.RouteTableListResult>>
   - uid: azure-arm-network.RouteTables.updateTags
     name: updateTags
     children: []
@@ -1336,7 +1340,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteTable!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteTable>>
 references:
   - uid: azure-arm-network.RouteTable
     spec.typeScript:
@@ -1361,6 +1365,15 @@ references:
         uid: azure-arm-network.RouteTable
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.RouteTable>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: RouteTable
+        fullName: RouteTable
+        uid: azure-arm-network.RouteTable
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.TagsObject
     spec.typeScript:
       - name: TagsObject
@@ -1384,3 +1397,12 @@ references:
         uid: azure-arm-network.RouteTableListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.RouteTableListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: RouteTableListResult
+        fullName: RouteTableListResult
+        uid: azure-arm-network.RouteTableListResult
+      - name: '>>'
+        fullName: '>>'

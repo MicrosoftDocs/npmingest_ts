@@ -209,7 +209,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineScaleSetExtension!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineScaleSetExtension>>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -351,7 +352,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.createOrUpdate
     name: createOrUpdate
     children: []
@@ -517,7 +519,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineScaleSetExtension!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineScaleSetExtension>>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.deleteMethod
     name: deleteMethod
     children: []
@@ -659,7 +662,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.get_1
     name: get
     children: []
@@ -800,7 +804,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineScaleSetExtension!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineScaleSetExtension>>
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.list
     name: list
     children: []
@@ -995,7 +1000,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineScaleSetExtensionListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>>
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetExtensions.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -1027,7 +1033,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineScaleSetExtensionListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>>
 references:
   - uid: azure-arm-compute.VirtualMachineScaleSetExtension
     spec.typeScript:
@@ -1052,6 +1059,16 @@ references:
         uid: azure-arm-compute.VirtualMachineScaleSetExtension
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineScaleSetExtension>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VirtualMachineScaleSetExtension
+        fullName: VirtualMachineScaleSetExtension
+        uid: azure-arm-compute.VirtualMachineScaleSetExtension
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-compute.OperationStatusResponse>
     spec.typeScript:
       - name: Promise<
@@ -1070,6 +1087,15 @@ references:
         uid: azure-arm-compute.OperationStatusResponse
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
     spec.typeScript:
       - name: Promise<
@@ -1089,3 +1115,13 @@ references:
         uid: azure-arm-compute.VirtualMachineScaleSetExtensionListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VirtualMachineScaleSetExtensionListResult
+        fullName: VirtualMachineScaleSetExtensionListResult
+        uid: azure-arm-compute.VirtualMachineScaleSetExtensionListResult
+      - name: '>>'
+        fullName: '>>'

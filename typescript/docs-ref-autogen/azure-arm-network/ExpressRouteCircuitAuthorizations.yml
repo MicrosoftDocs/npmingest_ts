@@ -219,7 +219,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitAuthorization!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCircuitAuthorization>>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -540,7 +541,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitAuthorization!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCircuitAuthorization>>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.deleteMethod
     name: deleteMethod
     children: []
@@ -828,7 +830,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ExpressRouteCircuitAuthorization!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCircuitAuthorization>>
   - uid: azure-arm-network.ExpressRouteCircuitAuthorizations.list
     name: list
     children: []
@@ -1017,7 +1020,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<AuthorizationListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.AuthorizationListResult>>
   - uid: >-
       azure-arm-network.ExpressRouteCircuitAuthorizations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -1048,7 +1052,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<AuthorizationListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.AuthorizationListResult>>
 references:
   - uid: azure-arm-network.ExpressRouteCircuitAuthorization
     spec.typeScript:
@@ -1073,6 +1078,16 @@ references:
         uid: azure-arm-network.ExpressRouteCircuitAuthorization
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.ExpressRouteCircuitAuthorization>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ExpressRouteCircuitAuthorization
+        fullName: ExpressRouteCircuitAuthorization
+        uid: azure-arm-network.ExpressRouteCircuitAuthorization
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.AuthorizationListResult>
     spec.typeScript:
       - name: Promise<
@@ -1091,3 +1106,12 @@ references:
         uid: azure-arm-network.AuthorizationListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.AuthorizationListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: AuthorizationListResult
+        fullName: AuthorizationListResult
+        uid: azure-arm-network.AuthorizationListResult
+      - name: '>>'
+        fullName: '>>'

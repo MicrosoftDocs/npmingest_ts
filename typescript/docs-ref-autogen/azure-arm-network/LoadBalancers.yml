@@ -196,7 +196,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancer!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.LoadBalancer>>
   - uid: azure-arm-network.LoadBalancers.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -452,7 +452,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancer!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.LoadBalancer>>
   - uid: azure-arm-network.LoadBalancers.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -593,7 +593,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancer!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.LoadBalancer>>
   - uid: azure-arm-network.LoadBalancers.deleteMethod
     name: deleteMethod
     children: []
@@ -829,7 +829,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancer!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.LoadBalancer>>
   - uid: azure-arm-network.LoadBalancers.list_1
     name: list
     children: []
@@ -1060,7 +1060,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LoadBalancerListResult>>
   - uid: azure-arm-network.LoadBalancers.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse
     children: []
@@ -1078,7 +1079,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LoadBalancerListResult>>
   - uid: azure-arm-network.LoadBalancers.listNext
     name: listNext
     children: []
@@ -1178,7 +1180,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LoadBalancerListResult>>
   - uid: azure-arm-network.LoadBalancers.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1203,7 +1206,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LoadBalancerListResult>>
   - uid: azure-arm-network.LoadBalancers.updateTags
     name: updateTags
     children: []
@@ -1340,7 +1344,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancer!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.LoadBalancer>>
 references:
   - uid: azure-arm-network.LoadBalancer
     spec.typeScript:
@@ -1365,6 +1369,15 @@ references:
         uid: azure-arm-network.LoadBalancer
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.LoadBalancer>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: LoadBalancer
+        fullName: LoadBalancer
+        uid: azure-arm-network.LoadBalancer
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.TagsObject
     spec.typeScript:
       - name: TagsObject
@@ -1388,3 +1401,12 @@ references:
         uid: azure-arm-network.LoadBalancerListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.LoadBalancerListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: LoadBalancerListResult
+        fullName: LoadBalancerListResult
+        uid: azure-arm-network.LoadBalancerListResult
+      - name: '>>'
+        fullName: '>>'

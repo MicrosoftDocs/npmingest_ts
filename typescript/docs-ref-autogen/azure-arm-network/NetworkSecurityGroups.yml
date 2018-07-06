@@ -213,7 +213,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkSecurityGroup!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkSecurityGroup>>
   - uid: azure-arm-network.NetworkSecurityGroups.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -480,7 +481,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkSecurityGroup!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkSecurityGroup>>
   - uid: azure-arm-network.NetworkSecurityGroups.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -633,7 +635,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkSecurityGroup!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkSecurityGroup>>
   - uid: azure-arm-network.NetworkSecurityGroups.deleteMethod
     name: deleteMethod
     children: []
@@ -876,7 +879,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkSecurityGroup!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkSecurityGroup>>
   - uid: azure-arm-network.NetworkSecurityGroups.list_1
     name: list
     children: []
@@ -1110,7 +1114,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkSecurityGroupListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkSecurityGroupListResult>>
   - uid: azure-arm-network.NetworkSecurityGroups.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse
     children: []
@@ -1128,7 +1133,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkSecurityGroupListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkSecurityGroupListResult>>
   - uid: azure-arm-network.NetworkSecurityGroups.listNext
     name: listNext
     children: []
@@ -1228,7 +1234,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkSecurityGroupListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkSecurityGroupListResult>>
   - uid: azure-arm-network.NetworkSecurityGroups.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1253,7 +1260,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkSecurityGroupListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkSecurityGroupListResult>>
   - uid: azure-arm-network.NetworkSecurityGroups.updateTags
     name: updateTags
     children: []
@@ -1397,7 +1405,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkSecurityGroup!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkSecurityGroup>>
 references:
   - uid: azure-arm-network.NetworkSecurityGroup
     spec.typeScript:
@@ -1422,6 +1431,15 @@ references:
         uid: azure-arm-network.NetworkSecurityGroup
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.NetworkSecurityGroup>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: NetworkSecurityGroup
+        fullName: NetworkSecurityGroup
+        uid: azure-arm-network.NetworkSecurityGroup
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.TagsObject
     spec.typeScript:
       - name: TagsObject
@@ -1445,3 +1463,13 @@ references:
         uid: azure-arm-network.NetworkSecurityGroupListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.NetworkSecurityGroupListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: NetworkSecurityGroupListResult
+        fullName: NetworkSecurityGroupListResult
+        uid: azure-arm-network.NetworkSecurityGroupListResult
+      - name: '>>'
+        fullName: '>>'

@@ -209,7 +209,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<PacketCaptureResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.PacketCaptureResult>>
   - uid: azure-arm-network.PacketCaptures.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -491,7 +492,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<PacketCaptureQueryStatusResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.PacketCaptureQueryStatusResult>>
   - uid: azure-arm-network.PacketCaptures.beginStop_1
     name: beginStop
     children: []
@@ -789,7 +791,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<PacketCaptureResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.PacketCaptureResult>>
   - uid: azure-arm-network.PacketCaptures.deleteMethod
     name: deleteMethod
     children: []
@@ -1171,7 +1174,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<PacketCaptureQueryStatusResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.PacketCaptureQueryStatusResult>>
   - uid: azure-arm-network.PacketCaptures.getWithHttpOperationResponse
     name: getWithHttpOperationResponse
     children: []
@@ -1207,7 +1211,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<PacketCaptureResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.PacketCaptureResult>>
   - uid: azure-arm-network.PacketCaptures.list
     name: list
     children: []
@@ -1325,7 +1330,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<PacketCaptureListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.PacketCaptureListResult>>
   - uid: azure-arm-network.PacketCaptures.stop
     name: stop
     children: []
@@ -1488,6 +1494,15 @@ references:
         uid: azure-arm-network.PacketCaptureResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.PacketCaptureResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: PacketCaptureResult
+        fullName: PacketCaptureResult
+        uid: azure-arm-network.PacketCaptureResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.PacketCaptureQueryStatusResult>
     spec.typeScript:
       - name: Promise<
@@ -1506,6 +1521,16 @@ references:
         uid: azure-arm-network.PacketCaptureQueryStatusResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.PacketCaptureQueryStatusResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: PacketCaptureQueryStatusResult
+        fullName: PacketCaptureQueryStatusResult
+        uid: azure-arm-network.PacketCaptureQueryStatusResult
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.PacketCaptureListResult>
     spec.typeScript:
       - name: Promise<
@@ -1524,3 +1549,12 @@ references:
         uid: azure-arm-network.PacketCaptureListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.PacketCaptureListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: PacketCaptureListResult
+        fullName: PacketCaptureListResult
+        uid: azure-arm-network.PacketCaptureListResult
+      - name: '>>'
+        fullName: '>>'

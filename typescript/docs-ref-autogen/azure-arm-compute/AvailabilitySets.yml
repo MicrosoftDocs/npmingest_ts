@@ -175,7 +175,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AvailabilitySet!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.AvailabilitySet>>
   - uid: azure-arm-compute.AvailabilitySets.deleteMethod
     name: deleteMethod
     children: []
@@ -294,7 +294,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.AvailabilitySets.get
     name: get
     children: []
@@ -412,7 +413,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AvailabilitySet!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.AvailabilitySet>>
   - uid: azure-arm-compute.AvailabilitySets.list
     name: list
     children: []
@@ -614,7 +615,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineSizeListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineSizeListResult>>
   - uid: azure-arm-compute.AvailabilitySets.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -639,7 +641,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<AvailabilitySetListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.AvailabilitySetListResult>>
   - uid: azure-arm-compute.AvailabilitySets.update
     name: update
     children: []
@@ -780,7 +783,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AvailabilitySet!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.AvailabilitySet>>
 references:
   - uid: azure-arm-compute.AvailabilitySet
     spec.typeScript:
@@ -805,6 +808,15 @@ references:
         uid: azure-arm-compute.AvailabilitySet
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.AvailabilitySet>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: AvailabilitySet
+        fullName: AvailabilitySet
+        uid: azure-arm-compute.AvailabilitySet
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-compute.OperationStatusResponse>
     spec.typeScript:
       - name: Promise<
@@ -823,6 +835,15 @@ references:
         uid: azure-arm-compute.OperationStatusResponse
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-compute.AvailabilitySetListResult>
     spec.typeScript:
       - name: Promise<
@@ -859,6 +880,26 @@ references:
         uid: azure-arm-compute.VirtualMachineSizeListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineSizeListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VirtualMachineSizeListResult
+        fullName: VirtualMachineSizeListResult
+        uid: azure-arm-compute.VirtualMachineSizeListResult
+      - name: '>>'
+        fullName: '>>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-compute.AvailabilitySetListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: AvailabilitySetListResult
+        fullName: AvailabilitySetListResult
+        uid: azure-arm-compute.AvailabilitySetListResult
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-compute.AvailabilitySetUpdate
     spec.typeScript:
       - name: AvailabilitySetUpdate

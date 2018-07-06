@@ -172,7 +172,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Application!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.Application>>
   - uid: azure-arm-batch.ApplicationOperations.deleteMethod
     name: deleteMethod
     children: []
@@ -451,7 +451,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Application!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.Application>>
   - uid: azure-arm-batch.ApplicationOperations.list
     name: list
     children: []
@@ -640,7 +640,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ListApplicationsResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch.ListApplicationsResult>>
   - uid: azure-arm-batch.ApplicationOperations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -671,7 +672,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ListApplicationsResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch.ListApplicationsResult>>
   - uid: azure-arm-batch.ApplicationOperations.update
     name: update
     children: []
@@ -851,6 +853,15 @@ references:
         uid: azure-arm-batch.Application
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-batch.Application>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: Application
+        fullName: Application
+        uid: azure-arm-batch.Application
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-batch.ListApplicationsResult>
     spec.typeScript:
       - name: Promise<
@@ -869,6 +880,15 @@ references:
         uid: azure-arm-batch.ListApplicationsResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-batch.ListApplicationsResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ListApplicationsResult
+        fullName: ListApplicationsResult
+        uid: azure-arm-batch.ListApplicationsResult
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-batch.ApplicationUpdateParameters
     spec.typeScript:
       - name: ApplicationUpdateParameters

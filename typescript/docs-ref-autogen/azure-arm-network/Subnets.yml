@@ -196,7 +196,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Subnet!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.Subnet>>
   - uid: azure-arm-network.Subnets.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -495,7 +495,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Subnet!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.Subnet>>
   - uid: azure-arm-network.Subnets.deleteMethod
     name: deleteMethod
     children: []
@@ -770,7 +770,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Subnet!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.Subnet>>
   - uid: azure-arm-network.Subnets.list
     name: list
     children: []
@@ -958,7 +958,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SubnetListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.SubnetListResult>>
   - uid: azure-arm-network.Subnets.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -988,7 +988,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<SubnetListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.SubnetListResult>>
 references:
   - uid: azure-arm-network.Subnet
     spec.typeScript:
@@ -1013,6 +1013,15 @@ references:
         uid: azure-arm-network.Subnet
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.Subnet>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: Subnet
+        fullName: Subnet
+        uid: azure-arm-network.Subnet
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.SubnetListResult>
     spec.typeScript:
       - name: Promise<
@@ -1031,3 +1040,12 @@ references:
         uid: azure-arm-network.SubnetListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.SubnetListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: SubnetListResult
+        fullName: SubnetListResult
+        uid: azure-arm-network.SubnetListResult
+      - name: '>>'
+        fullName: '>>'

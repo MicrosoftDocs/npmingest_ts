@@ -192,7 +192,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Image!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.Image>>
   - uid: azure-arm-compute.Images.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -310,7 +310,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.Images.beginUpdate
     name: beginUpdate
     children: []
@@ -449,7 +450,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Image!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.Image>>
   - uid: azure-arm-compute.Images.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -587,7 +588,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Image!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.Image>>
   - uid: azure-arm-compute.Images.deleteMethod
     name: deleteMethod
     children: []
@@ -705,7 +706,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.Images.get
     name: get
     children: []
@@ -823,7 +825,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Image!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.Image>>
   - uid: azure-arm-compute.Images.list_1
     name: list
     children: []
@@ -1067,7 +1069,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ImageListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.ImageListResult>>
   - uid: azure-arm-compute.Images.listByResourceGroupWithHttpOperationResponse
     name: listByResourceGroupWithHttpOperationResponse
     children: []
@@ -1092,7 +1094,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ImageListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.ImageListResult>>
   - uid: azure-arm-compute.Images.listNext
     name: listNext
     children: []
@@ -1204,7 +1206,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ImageListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.ImageListResult>>
   - uid: azure-arm-compute.Images.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1225,7 +1227,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ImageListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.ImageListResult>>
   - uid: azure-arm-compute.Images.update
     name: update
     children: []
@@ -1364,7 +1366,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Image!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.Image>>
 references:
   - uid: azure-arm-compute.Image
     spec.typeScript:
@@ -1389,6 +1391,15 @@ references:
         uid: azure-arm-compute.Image
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.Image>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: Image
+        fullName: Image
+        uid: azure-arm-compute.Image
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-compute.OperationStatusResponse>
     spec.typeScript:
       - name: Promise<
@@ -1407,6 +1418,15 @@ references:
         uid: azure-arm-compute.OperationStatusResponse
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-compute.ImageUpdate
     spec.typeScript:
       - name: ImageUpdate
@@ -1430,3 +1450,12 @@ references:
         uid: azure-arm-compute.ImageListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.ImageListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ImageListResult
+        fullName: ImageListResult
+        uid: azure-arm-compute.ImageListResult
+      - name: '>>'
+        fullName: '>>'

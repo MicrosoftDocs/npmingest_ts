@@ -290,7 +290,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<DnsNameAvailabilityResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.DnsNameAvailabilityResult>>
   - uid: azure-arm-network.NetworkManagementClient.connectionMonitors
     name: connectionMonitors
     fullName: connectionMonitors
@@ -1088,3 +1089,13 @@ references:
         uid: azure-arm-network.DnsNameAvailabilityResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.DnsNameAvailabilityResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: DnsNameAvailabilityResult
+        fullName: DnsNameAvailabilityResult
+        uid: azure-arm-network.DnsNameAvailabilityResult
+      - name: '>>'
+        fullName: '>>'

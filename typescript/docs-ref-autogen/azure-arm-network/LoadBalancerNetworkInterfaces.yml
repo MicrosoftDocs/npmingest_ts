@@ -208,7 +208,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkInterfaceListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkInterfaceListResult>>
   - uid: >-
       azure-arm-network.LoadBalancerNetworkInterfaces.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -239,7 +240,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<NetworkInterfaceListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkInterfaceListResult>>
 references:
   - uid: Promise<azure-arm-network.NetworkInterfaceListResult>
     spec.typeScript:
@@ -259,3 +261,13 @@ references:
         uid: azure-arm-network.NetworkInterfaceListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.NetworkInterfaceListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: NetworkInterfaceListResult
+        fullName: NetworkInterfaceListResult
+        uid: azure-arm-network.NetworkInterfaceListResult
+      - name: '>>'
+        fullName: '>>'

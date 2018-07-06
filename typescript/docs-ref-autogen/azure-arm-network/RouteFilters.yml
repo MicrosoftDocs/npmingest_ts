@@ -198,7 +198,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteFilter!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteFilter>>
   - uid: azure-arm-network.RouteFilters.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -457,7 +457,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteFilter!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteFilter>>
   - uid: azure-arm-network.RouteFilters.createOrUpdate_1
     name: createOrUpdate
     children: []
@@ -598,7 +598,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteFilter!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteFilter>>
   - uid: azure-arm-network.RouteFilters.deleteMethod
     name: deleteMethod
     children: []
@@ -834,7 +834,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteFilter!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteFilter>>
   - uid: azure-arm-network.RouteFilters.list_1
     name: list
     children: []
@@ -1070,7 +1070,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteFilterListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.RouteFilterListResult>>
   - uid: >-
       azure-arm-network.RouteFilters.listByResourceGroupWithHttpOperationResponse
     name: listByResourceGroupWithHttpOperationResponse
@@ -1096,7 +1097,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteFilterListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.RouteFilterListResult>>
   - uid: azure-arm-network.RouteFilters.listNext
     name: listNext
     children: []
@@ -1196,7 +1198,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteFilterListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.RouteFilterListResult>>
   - uid: azure-arm-network.RouteFilters.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1214,7 +1217,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteFilterListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.RouteFilterListResult>>
   - uid: azure-arm-network.RouteFilters.update
     name: update
     children: []
@@ -1355,7 +1359,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteFilter!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteFilter>>
 references:
   - uid: azure-arm-network.RouteFilter
     spec.typeScript:
@@ -1380,6 +1384,15 @@ references:
         uid: azure-arm-network.RouteFilter
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.RouteFilter>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: RouteFilter
+        fullName: RouteFilter
+        uid: azure-arm-network.RouteFilter
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.PatchRouteFilter
     spec.typeScript:
       - name: PatchRouteFilter
@@ -1403,3 +1416,12 @@ references:
         uid: azure-arm-network.RouteFilterListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.RouteFilterListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: RouteFilterListResult
+        fullName: RouteFilterListResult
+        uid: azure-arm-network.RouteFilterListResult
+      - name: '>>'
+        fullName: '>>'

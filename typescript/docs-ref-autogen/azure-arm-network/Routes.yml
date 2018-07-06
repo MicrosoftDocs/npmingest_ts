@@ -195,7 +195,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Route!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.Route>>
   - uid: azure-arm-network.Routes.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -491,7 +491,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Route!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.Route>>
   - uid: azure-arm-network.Routes.deleteMethod
     name: deleteMethod
     children: []
@@ -763,7 +763,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Route!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.Route>>
   - uid: azure-arm-network.Routes.list
     name: list
     children: []
@@ -951,7 +951,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteListResult>>
   - uid: azure-arm-network.Routes.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -981,7 +981,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteListResult>>
 references:
   - uid: azure-arm-network.Route
     spec.typeScript:
@@ -1006,6 +1006,15 @@ references:
         uid: azure-arm-network.Route
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.Route>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: Route
+        fullName: Route
+        uid: azure-arm-network.Route
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.RouteListResult>
     spec.typeScript:
       - name: Promise<
@@ -1024,3 +1033,12 @@ references:
         uid: azure-arm-network.RouteListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.RouteListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: RouteListResult
+        fullName: RouteListResult
+        uid: azure-arm-network.RouteListResult
+      - name: '>>'
+        fullName: '>>'

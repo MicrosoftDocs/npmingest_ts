@@ -120,7 +120,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<VirtualMachineSizeListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineSizeListResult>>
 references:
   - uid: Promise<azure-arm-compute.VirtualMachineSizeListResult>
     spec.typeScript:
@@ -140,3 +141,13 @@ references:
         uid: azure-arm-compute.VirtualMachineSizeListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineSizeListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VirtualMachineSizeListResult
+        fullName: VirtualMachineSizeListResult
+        uid: azure-arm-compute.VirtualMachineSizeListResult
+      - name: '>>'
+        fullName: '>>'

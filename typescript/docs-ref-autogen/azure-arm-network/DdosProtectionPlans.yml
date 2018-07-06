@@ -193,7 +193,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<DdosProtectionPlan!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.DdosProtectionPlan>>
   - uid: azure-arm-network.DdosProtectionPlans.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -456,7 +456,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<DdosProtectionPlan!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.DdosProtectionPlan>>
   - uid: azure-arm-network.DdosProtectionPlans.deleteMethod
     name: deleteMethod
     children: []
@@ -693,7 +693,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<DdosProtectionPlan!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.DdosProtectionPlan>>
   - uid: azure-arm-network.DdosProtectionPlans.list_1
     name: list
     children: []
@@ -929,7 +929,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<DdosProtectionPlanListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.DdosProtectionPlanListResult>>
   - uid: >-
       azure-arm-network.DdosProtectionPlans.listByResourceGroupWithHttpOperationResponse
     name: listByResourceGroupWithHttpOperationResponse
@@ -955,7 +956,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<DdosProtectionPlanListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.DdosProtectionPlanListResult>>
   - uid: azure-arm-network.DdosProtectionPlans.listNext
     name: listNext
     children: []
@@ -1055,7 +1057,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<DdosProtectionPlanListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.DdosProtectionPlanListResult>>
   - uid: azure-arm-network.DdosProtectionPlans.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1073,7 +1076,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<DdosProtectionPlanListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.DdosProtectionPlanListResult>>
 references:
   - uid: azure-arm-network.DdosProtectionPlan
     spec.typeScript:
@@ -1098,6 +1102,15 @@ references:
         uid: azure-arm-network.DdosProtectionPlan
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.DdosProtectionPlan>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: DdosProtectionPlan
+        fullName: DdosProtectionPlan
+        uid: azure-arm-network.DdosProtectionPlan
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.DdosProtectionPlanListResult>
     spec.typeScript:
       - name: Promise<
@@ -1116,3 +1129,13 @@ references:
         uid: azure-arm-network.DdosProtectionPlanListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.DdosProtectionPlanListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: DdosProtectionPlanListResult
+        fullName: DdosProtectionPlanListResult
+        uid: azure-arm-network.DdosProtectionPlanListResult
+      - name: '>>'
+        fullName: '>>'

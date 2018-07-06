@@ -163,7 +163,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancingRule!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.LoadBalancingRule>>
   - uid: azure-arm-network.LoadBalancerLoadBalancingRules.list
     name: list
     children: []
@@ -357,7 +357,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerLoadBalancingRuleListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LoadBalancerLoadBalancingRuleListResult>>
   - uid: >-
       azure-arm-network.LoadBalancerLoadBalancingRules.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
@@ -388,7 +389,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<LoadBalancerLoadBalancingRuleListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.LoadBalancerLoadBalancingRuleListResult>>
 references:
   - uid: Promise<azure-arm-network.LoadBalancingRule>
     spec.typeScript:
@@ -408,6 +410,15 @@ references:
         uid: azure-arm-network.LoadBalancingRule
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.LoadBalancingRule>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: LoadBalancingRule
+        fullName: LoadBalancingRule
+        uid: azure-arm-network.LoadBalancingRule
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-network.LoadBalancerLoadBalancingRuleListResult>
     spec.typeScript:
       - name: Promise<
@@ -426,3 +437,13 @@ references:
         uid: azure-arm-network.LoadBalancerLoadBalancingRuleListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.LoadBalancerLoadBalancingRuleListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: LoadBalancerLoadBalancingRuleListResult
+        fullName: LoadBalancerLoadBalancingRuleListResult
+        uid: azure-arm-network.LoadBalancerLoadBalancingRuleListResult
+      - name: '>>'
+        fullName: '>>'

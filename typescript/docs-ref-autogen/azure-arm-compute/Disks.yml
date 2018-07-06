@@ -220,7 +220,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Disk!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.Disk>>
   - uid: azure-arm-compute.Disks.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -352,7 +352,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.Disks.beginGrantAccess_1
     name: beginGrantAccess
     children: []
@@ -506,7 +507,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AccessUri!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.AccessUri>>
   - uid: azure-arm-compute.Disks.beginRevokeAccess
     name: beginRevokeAccess
     children: []
@@ -638,7 +639,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.Disks.beginUpdate_1
     name: beginUpdate
     children: []
@@ -790,7 +792,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Disk!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.Disk>>
   - uid: azure-arm-compute.Disks.createOrUpdate
     name: createOrUpdate
     children: []
@@ -942,7 +944,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Disk!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.Disk>>
   - uid: azure-arm-compute.Disks.deleteMethod
     name: deleteMethod
     children: []
@@ -1074,7 +1076,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.Disks.get
     name: get
     children: []
@@ -1206,7 +1209,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Disk!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.Disk>>
   - uid: azure-arm-compute.Disks.grantAccess
     name: grantAccess
     children: []
@@ -1359,7 +1362,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<AccessUri!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.AccessUri>>
   - uid: azure-arm-compute.Disks.list
     name: list
     children: []
@@ -1592,7 +1595,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<DiskList!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.DiskList>>
   - uid: azure-arm-compute.Disks.listByResourceGroupWithHttpOperationResponse
     name: listByResourceGroupWithHttpOperationResponse
     children: []
@@ -1617,7 +1620,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<DiskList!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.DiskList>>
   - uid: azure-arm-compute.Disks.listNext_1
     name: listNext
     children: []
@@ -1717,7 +1720,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<DiskList!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.DiskList>>
   - uid: azure-arm-compute.Disks.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -1735,7 +1738,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<DiskList!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.DiskList>>
   - uid: azure-arm-compute.Disks.revokeAccess
     name: revokeAccess
     children: []
@@ -1867,7 +1870,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationStatusResponse!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
   - uid: azure-arm-compute.Disks.update
     name: update
     children: []
@@ -2019,7 +2023,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Disk!@>>
+          - Promise<HttpOperationResponse<azure-arm-compute.Disk>>
 references:
   - uid: azure-arm-compute.Disk
     spec.typeScript:
@@ -2044,6 +2048,15 @@ references:
         uid: azure-arm-compute.Disk
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.Disk>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: Disk
+        fullName: Disk
+        uid: azure-arm-compute.Disk
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-compute.OperationStatusResponse>
     spec.typeScript:
       - name: Promise<
@@ -2062,6 +2075,15 @@ references:
         uid: azure-arm-compute.OperationStatusResponse
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: OperationStatusResponse
+        fullName: OperationStatusResponse
+        uid: azure-arm-compute.OperationStatusResponse
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-compute.GrantAccessData
     spec.typeScript:
       - name: GrantAccessData
@@ -2085,6 +2107,15 @@ references:
         uid: azure-arm-compute.AccessUri
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.AccessUri>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: AccessUri
+        fullName: AccessUri
+        uid: azure-arm-compute.AccessUri
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-compute.DiskUpdate
     spec.typeScript:
       - name: DiskUpdate
@@ -2108,3 +2139,12 @@ references:
         uid: azure-arm-compute.DiskList
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.DiskList>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: DiskList
+        fullName: DiskList
+        uid: azure-arm-compute.DiskList
+      - name: '>>'
+        fullName: '>>'

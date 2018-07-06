@@ -206,7 +206,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<CheckNameAvailabilityOutput!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn.CheckNameAvailabilityOutput>>
   - uid: azure-arm-cdn.CdnManagementClient.checkNameAvailabilityWithSubscription_2
     name: checkNameAvailabilityWithSubscription
     children: []
@@ -316,7 +317,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<CheckNameAvailabilityOutput!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn.CheckNameAvailabilityOutput>>
   - uid: azure-arm-cdn.CdnManagementClient.credentials
     name: credentials
     fullName: credentials
@@ -593,7 +595,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<ValidateProbeOutput!@>>
+          - Promise<HttpOperationResponse<azure-arm-cdn.ValidateProbeOutput>>
 references:
   - uid: azure-arm-cdn.CustomDomains
     spec.typeScript:
@@ -648,6 +650,15 @@ references:
         uid: azure-arm-cdn.CheckNameAvailabilityOutput
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.CheckNameAvailabilityOutput>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: CheckNameAvailabilityOutput
+        fullName: CheckNameAvailabilityOutput
+        uid: azure-arm-cdn.CheckNameAvailabilityOutput
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-cdn.ValidateProbeOutput>
     spec.typeScript:
       - name: Promise<
@@ -666,3 +677,12 @@ references:
         uid: azure-arm-cdn.ValidateProbeOutput
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn.ValidateProbeOutput>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ValidateProbeOutput
+        fullName: ValidateProbeOutput
+        uid: azure-arm-cdn.ValidateProbeOutput
+      - name: '>>'
+        fullName: '>>'

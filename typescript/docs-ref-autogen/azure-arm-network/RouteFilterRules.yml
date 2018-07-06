@@ -210,7 +210,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteFilterRule!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteFilterRule>>
   - uid: azure-arm-network.RouteFilterRules.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -508,7 +508,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteFilterRule!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteFilterRule>>
   - uid: azure-arm-network.RouteFilterRules.createOrUpdate
     name: createOrUpdate
     children: []
@@ -668,7 +668,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteFilterRule!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteFilterRule>>
   - uid: azure-arm-network.RouteFilterRules.deleteMethod
     name: deleteMethod
     children: []
@@ -942,7 +942,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteFilterRule!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteFilterRule>>
   - uid: azure-arm-network.RouteFilterRules.listByRouteFilter
     name: listByRouteFilter
     children: []
@@ -1132,7 +1132,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteFilterRuleListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.RouteFilterRuleListResult>>
   - uid: >-
       azure-arm-network.RouteFilterRules.listByRouteFilterWithHttpOperationResponse
     name: listByRouteFilterWithHttpOperationResponse
@@ -1163,7 +1164,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteFilterRuleListResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.RouteFilterRuleListResult>>
   - uid: azure-arm-network.RouteFilterRules.update
     name: update
     children: []
@@ -1323,7 +1325,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<RouteFilterRule!@>>
+          - Promise<HttpOperationResponse<azure-arm-network.RouteFilterRule>>
 references:
   - uid: azure-arm-network.RouteFilterRule
     spec.typeScript:
@@ -1348,6 +1350,15 @@ references:
         uid: azure-arm-network.RouteFilterRule
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network.RouteFilterRule>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: RouteFilterRule
+        fullName: RouteFilterRule
+        uid: azure-arm-network.RouteFilterRule
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.PatchRouteFilterRule
     spec.typeScript:
       - name: PatchRouteFilterRule
@@ -1371,3 +1382,13 @@ references:
         uid: azure-arm-network.RouteFilterRuleListResult
       - name: '>'
         fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.RouteFilterRuleListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: RouteFilterRuleListResult
+        fullName: RouteFilterRuleListResult
+        uid: azure-arm-network.RouteFilterRuleListResult
+      - name: '>>'
+        fullName: '>>'

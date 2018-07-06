@@ -174,7 +174,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-iothub.OperationListResult>>
   - uid: azure-arm-iothub.Operations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse
     children: []
@@ -192,7 +192,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<OperationListResult!@>>
+          - Promise<HttpOperationResponse<azure-arm-iothub.OperationListResult>>
 references:
   - uid: Promise<azure-arm-iothub.OperationListResult>
     spec.typeScript:
@@ -212,3 +212,12 @@ references:
         uid: azure-arm-iothub.OperationListResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-iothub.OperationListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: OperationListResult
+        fullName: OperationListResult
+        uid: azure-arm-iothub.OperationListResult
+      - name: '>>'
+        fullName: '>>'

@@ -222,7 +222,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Certificate!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.Certificate>>
   - uid: azure-arm-batch.CertificateOperations.beginDeleteMethod
     name: beginDeleteMethod
     children: []
@@ -524,7 +524,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Certificate!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.Certificate>>
   - uid: azure-arm-batch.CertificateOperations.create
     name: create
     children: []
@@ -696,7 +696,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Certificate!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.Certificate>>
   - uid: azure-arm-batch.CertificateOperations.deleteMethod
     name: deleteMethod
     children: []
@@ -996,7 +996,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Certificate!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.Certificate>>
   - uid: azure-arm-batch.CertificateOperations.listByBatchAccount
     name: listByBatchAccount
     children: []
@@ -1189,7 +1189,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ListCertificatesResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch.ListCertificatesResult>>
   - uid: >-
       azure-arm-batch.CertificateOperations.listByBatchAccountWithHttpOperationResponse
     name: listByBatchAccountWithHttpOperationResponse
@@ -1221,7 +1222,8 @@ items:
           optional: true
       return:
         type:
-          - Promise<ListCertificatesResult!@>>
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch.ListCertificatesResult>>
   - uid: azure-arm-batch.CertificateOperations.update
     name: update
     children: []
@@ -1393,7 +1395,7 @@ items:
           optional: true
       return:
         type:
-          - Promise<Certificate!@>>
+          - Promise<HttpOperationResponse<azure-arm-batch.Certificate>>
 references:
   - uid: azure-arm-batch.CertificateCreateOrUpdateParameters
     spec.typeScript:
@@ -1418,6 +1420,15 @@ references:
         uid: azure-arm-batch.Certificate
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-batch.Certificate>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: Certificate
+        fullName: Certificate
+        uid: azure-arm-batch.Certificate
+      - name: '>>'
+        fullName: '>>'
   - uid: Promise<azure-arm-batch.ListCertificatesResult>
     spec.typeScript:
       - name: Promise<
@@ -1436,3 +1447,12 @@ references:
         uid: azure-arm-batch.ListCertificatesResult
       - name: '>'
         fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-batch.ListCertificatesResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ListCertificatesResult
+        fullName: ListCertificatesResult
+        uid: azure-arm-batch.ListCertificatesResult
+      - name: '>>'
+        fullName: '>>'
