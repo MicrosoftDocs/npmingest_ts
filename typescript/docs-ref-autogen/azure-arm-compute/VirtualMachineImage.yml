@@ -28,6 +28,7 @@ items:
       return:
         type:
           - 'azure-arm-compute.DataDiskImage[]'
+    package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineImage.osDiskImage
     name: osDiskImage
     fullName: osDiskImage
@@ -42,6 +43,7 @@ items:
       return:
         type:
           - azure-arm-compute.OSDiskImage
+    package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineImage.plan
     name: plan
     fullName: plan
@@ -56,6 +58,7 @@ items:
       return:
         type:
           - azure-arm-compute.PurchasePlan
+    package: azure-arm-compute
 references:
   - uid: azure-arm-compute.VirtualMachineImageResource
     spec.typeScript:

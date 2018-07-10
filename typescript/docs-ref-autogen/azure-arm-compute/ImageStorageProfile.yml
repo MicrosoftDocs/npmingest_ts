@@ -26,6 +26,7 @@ items:
       return:
         type:
           - 'azure-arm-compute.ImageDataDisk[]'
+    package: azure-arm-compute
   - uid: azure-arm-compute.ImageStorageProfile.osDisk
     name: osDisk
     fullName: osDisk
@@ -40,6 +41,7 @@ items:
       return:
         type:
           - azure-arm-compute.ImageOSDisk
+    package: azure-arm-compute
   - uid: azure-arm-compute.ImageStorageProfile.zoneResilient
     name: zoneResilient
     fullName: zoneResilient
@@ -54,6 +56,7 @@ items:
       return:
         type:
           - boolean
+    package: azure-arm-compute
 references:
   - uid: 'azure-arm-compute.ImageDataDisk[]'
     spec.typeScript:
