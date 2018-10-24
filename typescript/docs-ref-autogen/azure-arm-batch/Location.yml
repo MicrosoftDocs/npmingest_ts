@@ -29,7 +29,7 @@ items:
     syntax:
       content: >-
         function checkNameAvailability(locationName: string, name: string,
-        options?: function)
+        options?: Object)
       parameters:
         - id: locationName
           type:
@@ -43,7 +43,7 @@ items:
             The name to check for availability
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -92,8 +92,7 @@ items:
     syntax:
       content: >-
         function checkNameAvailability(locationName: string, name: string,
-        options: function, callback:
-        ServiceCallback<CheckNameAvailabilityResult>)
+        options: Object, callback: ServiceCallback<CheckNameAvailabilityResult>)
       parameters:
         - id: locationName
           type:
@@ -105,7 +104,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -127,7 +126,7 @@ items:
     syntax:
       content: >-
         function checkNameAvailabilityWithHttpOperationResponse(locationName:
-        string, name: string, options?: function)
+        string, name: string, options?: Object)
       parameters:
         - id: locationName
           type:
@@ -141,7 +140,7 @@ items:
             The name to check for availability
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -159,7 +158,7 @@ items:
       Gets the Batch service quotas for the specified subscription at the given
       location.
     syntax:
-      content: 'function getQuotas(locationName: string, options?: function)'
+      content: 'function getQuotas(locationName: string, options?: Object)'
       parameters:
         - id: locationName
           type:
@@ -169,7 +168,7 @@ items:
             quotas.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -213,7 +212,7 @@ items:
       location.
     syntax:
       content: >-
-        function getQuotas(locationName: string, options: function, callback:
+        function getQuotas(locationName: string, options: Object, callback:
         ServiceCallback<BatchLocationQuota>)
       parameters:
         - id: locationName
@@ -222,7 +221,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -244,7 +243,7 @@ items:
     syntax:
       content: >-
         function getQuotasWithHttpOperationResponse(locationName: string,
-        options?: function)
+        options?: Object)
       parameters:
         - id: locationName
           type:
@@ -254,7 +253,7 @@ items:
             quotas.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -263,6 +262,7 @@ items:
     package: azure-arm-batch
 references:
   - uid: Promise<azure-arm-batch.CheckNameAvailabilityResult>
+    name: CheckNameAvailabilityResult>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -272,6 +272,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-batch.CheckNameAvailabilityResult>
+    name: CheckNameAvailabilityResult>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -282,6 +283,7 @@ references:
         fullName: '>'
   - uid: >-
       Promise<HttpOperationResponse<azure-arm-batch.CheckNameAvailabilityResult>>
+    name: CheckNameAvailabilityResult>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
@@ -291,6 +293,7 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: Promise<azure-arm-batch.BatchLocationQuota>
+    name: BatchLocationQuota>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -300,6 +303,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-batch.BatchLocationQuota>
+    name: BatchLocationQuota>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -309,6 +313,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: Promise<HttpOperationResponse<azure-arm-batch.BatchLocationQuota>>
+    name: BatchLocationQuota>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<

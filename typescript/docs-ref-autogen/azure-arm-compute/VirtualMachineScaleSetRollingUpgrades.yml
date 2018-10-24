@@ -5,10 +5,18 @@ items:
     fullName: VirtualMachineScaleSetRollingUpgrades
     children:
       - azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginCancel
-      - azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginCancel_2
       - azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginCancel_1
+      - azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginCancel_2
       - >-
         azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginCancelWithHttpOperationResponse
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginStartExtensionUpgrade
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginStartExtensionUpgrade_1
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginStartExtensionUpgrade_2
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginStartExtensionUpgradeWithHttpOperationResponse
       - >-
         azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginStartOSUpgrade
       - >-
@@ -22,11 +30,19 @@ items:
       - azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.cancel_2
       - >-
         azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.cancelWithHttpOperationResponse
-      - azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.getLatest
       - azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.getLatest_1
       - azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.getLatest_2
+      - azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.getLatest
       - >-
         azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.getLatestWithHttpOperationResponse
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.startExtensionUpgrade
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.startExtensionUpgrade_1
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.startExtensionUpgrade_2
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.startExtensionUpgradeWithHttpOperationResponse
       - azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.startOSUpgrade
       - azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.startOSUpgrade_1
       - azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.startOSUpgrade_2
@@ -47,7 +63,7 @@ items:
     syntax:
       content: >-
         function beginCancel(resourceGroupName: string, vmScaleSetName: string,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -61,44 +77,12 @@ items:
             The name of the VM scale set.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
-    package: azure-arm-compute
-  - uid: azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginCancel_2
-    name: beginCancel
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Cancels the current virtual machine scale set rolling upgrade.
-    syntax:
-      content: >-
-        function beginCancel(resourceGroupName: string, vmScaleSetName: string,
-        options: function, callback: ServiceCallback<OperationStatusResponse>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: vmScaleSetName
-          type:
-            - string
-          description: ''
-        - id: options
-          type:
-            - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
-          description: ''
-      return:
-        type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginCancel_1
     name: beginCancel
@@ -110,7 +94,7 @@ items:
     syntax:
       content: >-
         function beginCancel(resourceGroupName: string, vmScaleSetName: string,
-        callback: ServiceCallback<OperationStatusResponse>)
+        callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -122,11 +106,43 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginCancel_2
+    name: beginCancel
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Cancels the current virtual machine scale set rolling upgrade.
+    syntax:
+      content: >-
+        function beginCancel(resourceGroupName: string, vmScaleSetName: string,
+        options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmScaleSetName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginCancelWithHttpOperationResponse
@@ -139,7 +155,7 @@ items:
     syntax:
       content: >-
         function beginCancelWithHttpOperationResponse(resourceGroupName: string,
-        vmScaleSetName: string, options?: function)
+        vmScaleSetName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -153,13 +169,152 @@ items:
             The name of the VM scale set.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
+    package: azure-arm-compute
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginStartExtensionUpgrade
+    name: beginStartExtensionUpgrade
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Starts a rolling upgrade to move all extensions for all virtual machine
+      scale set instances to the latest available extension version. Instances
+      which are already running the latest extension versions are not affected.
+    syntax:
+      content: >-
+        function beginStartExtensionUpgrade(resourceGroupName: string,
+        vmScaleSetName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmScaleSetName
+          type:
+            - string
+          description: |
+            The name of the VM scale set.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+    package: azure-arm-compute
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginStartExtensionUpgrade_1
+    name: beginStartExtensionUpgrade
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Starts a rolling upgrade to move all extensions for all virtual machine
+      scale set instances to the latest available extension version. Instances
+      which are already running the latest extension versions are not affected.
+    syntax:
+      content: >-
+        function beginStartExtensionUpgrade(resourceGroupName: string,
+        vmScaleSetName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmScaleSetName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+    package: azure-arm-compute
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginStartExtensionUpgrade_2
+    name: beginStartExtensionUpgrade
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Starts a rolling upgrade to move all extensions for all virtual machine
+      scale set instances to the latest available extension version. Instances
+      which are already running the latest extension versions are not affected.
+    syntax:
+      content: >-
+        function beginStartExtensionUpgrade(resourceGroupName: string,
+        vmScaleSetName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmScaleSetName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+    package: azure-arm-compute
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginStartExtensionUpgradeWithHttpOperationResponse
+    name: beginStartExtensionUpgradeWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Starts a rolling upgrade to move all extensions for all virtual machine
+      scale set instances to the latest available extension version. Instances
+      which are already running the latest extension versions are not affected.
+    syntax:
+      content: >-
+        function
+        beginStartExtensionUpgradeWithHttpOperationResponse(resourceGroupName:
+        string, vmScaleSetName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmScaleSetName
+          type:
+            - string
+          description: |
+            The name of the VM scale set.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginStartOSUpgrade
@@ -179,7 +334,7 @@ items:
     syntax:
       content: >-
         function beginStartOSUpgrade(resourceGroupName: string, vmScaleSetName:
-        string, options?: function)
+        string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -193,12 +348,12 @@ items:
             The name of the VM scale set.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginStartOSUpgrade_1
@@ -218,7 +373,7 @@ items:
     syntax:
       content: >-
         function beginStartOSUpgrade(resourceGroupName: string, vmScaleSetName:
-        string, callback: ServiceCallback<OperationStatusResponse>)
+        string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -230,11 +385,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginStartOSUpgrade_2
@@ -254,8 +409,7 @@ items:
     syntax:
       content: >-
         function beginStartOSUpgrade(resourceGroupName: string, vmScaleSetName:
-        string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        string, options: Object, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -267,15 +421,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.beginStartOSUpgradeWithHttpOperationResponse
@@ -295,7 +449,7 @@ items:
     syntax:
       content: >-
         function beginStartOSUpgradeWithHttpOperationResponse(resourceGroupName:
-        string, vmScaleSetName: string, options?: function)
+        string, vmScaleSetName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -309,13 +463,12 @@ items:
             The name of the VM scale set.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.cancel
     name: cancel
@@ -327,7 +480,7 @@ items:
     syntax:
       content: >-
         function cancel(resourceGroupName: string, vmScaleSetName: string,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -341,12 +494,12 @@ items:
             The name of the VM scale set.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.cancel_1
     name: cancel
@@ -358,7 +511,7 @@ items:
     syntax:
       content: >-
         function cancel(resourceGroupName: string, vmScaleSetName: string,
-        callback: ServiceCallback<OperationStatusResponse>)
+        callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -370,11 +523,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.cancel_2
     name: cancel
@@ -386,7 +539,7 @@ items:
     syntax:
       content: >-
         function cancel(resourceGroupName: string, vmScaleSetName: string,
-        options: function, callback: ServiceCallback<OperationStatusResponse>)
+        options: Object, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -398,15 +551,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.cancelWithHttpOperationResponse
@@ -419,7 +572,7 @@ items:
     syntax:
       content: >-
         function cancelWithHttpOperationResponse(resourceGroupName: string,
-        vmScaleSetName: string, options?: function)
+        vmScaleSetName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -433,44 +586,12 @@ items:
             The name of the VM scale set.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
-    package: azure-arm-compute
-  - uid: azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.getLatest
-    name: getLatest
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Gets the status of the latest virtual machine scale set rolling upgrade.
-    syntax:
-      content: >-
-        function getLatest(resourceGroupName: string, vmScaleSetName: string,
-        options?: function)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: |
-            The name of the resource group.
-        - id: vmScaleSetName
-          type:
-            - string
-          description: |
-            The name of the VM scale set.
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<azure-arm-compute.RollingUpgradeStatusInfo>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.getLatest_1
     name: getLatest
@@ -510,7 +631,7 @@ items:
     syntax:
       content: >-
         function getLatest(resourceGroupName: string, vmScaleSetName: string,
-        options: function, callback: ServiceCallback<RollingUpgradeStatusInfo>)
+        options: Object, callback: ServiceCallback<RollingUpgradeStatusInfo>)
       parameters:
         - id: resourceGroupName
           type:
@@ -522,12 +643,43 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
             - ServiceCallback<azure-arm-compute.RollingUpgradeStatusInfo>
           description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute.RollingUpgradeStatusInfo>
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.getLatest
+    name: getLatest
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the status of the latest virtual machine scale set rolling upgrade.
+    syntax:
+      content: >-
+        function getLatest(resourceGroupName: string, vmScaleSetName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmScaleSetName
+          type:
+            - string
+          description: |
+            The name of the VM scale set.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
       return:
         type:
           - Promise<azure-arm-compute.RollingUpgradeStatusInfo>
@@ -543,7 +695,7 @@ items:
     syntax:
       content: >-
         function getLatestWithHttpOperationResponse(resourceGroupName: string,
-        vmScaleSetName: string, options?: function)
+        vmScaleSetName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -557,13 +709,153 @@ items:
             The name of the VM scale set.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-compute.RollingUpgradeStatusInfo>>
+    package: azure-arm-compute
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.startExtensionUpgrade
+    name: startExtensionUpgrade
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Starts a rolling upgrade to move all extensions for all virtual machine
+      scale set instances to the latest available extension version. Instances
+      which are already running the latest extension versions are not affected.
+    syntax:
+      content: >-
+        function startExtensionUpgrade(resourceGroupName: string,
+        vmScaleSetName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmScaleSetName
+          type:
+            - string
+          description: |
+            The name of the VM scale set.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+    package: azure-arm-compute
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.startExtensionUpgrade_1
+    name: startExtensionUpgrade
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Starts a rolling upgrade to move all extensions for all virtual machine
+      scale set instances to the latest available extension version. Instances
+      which are already running the latest extension versions are not affected.
+    syntax:
+      content: >-
+        function startExtensionUpgrade(resourceGroupName: string,
+        vmScaleSetName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmScaleSetName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+    package: azure-arm-compute
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.startExtensionUpgrade_2
+    name: startExtensionUpgrade
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Starts a rolling upgrade to move all extensions for all virtual machine
+      scale set instances to the latest available extension version. Instances
+      which are already running the latest extension versions are not affected.
+    syntax:
+      content: >-
+        function startExtensionUpgrade(resourceGroupName: string,
+        vmScaleSetName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmScaleSetName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+    package: azure-arm-compute
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.startExtensionUpgradeWithHttpOperationResponse
+    name: startExtensionUpgradeWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Starts a rolling upgrade to move all extensions for all virtual machine
+      scale set instances to the latest available extension version. Instances
+      which are already running the latest extension versions are not affected.
+    syntax:
+      content: >-
+        function
+        startExtensionUpgradeWithHttpOperationResponse(resourceGroupName:
+        string, vmScaleSetName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmScaleSetName
+          type:
+            - string
+          description: |
+            The name of the VM scale set.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.startOSUpgrade
     name: startOSUpgrade
@@ -582,7 +874,7 @@ items:
     syntax:
       content: >-
         function startOSUpgrade(resourceGroupName: string, vmScaleSetName:
-        string, options?: function)
+        string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -596,12 +888,12 @@ items:
             The name of the VM scale set.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.startOSUpgrade_1
     name: startOSUpgrade
@@ -620,7 +912,7 @@ items:
     syntax:
       content: >-
         function startOSUpgrade(resourceGroupName: string, vmScaleSetName:
-        string, callback: ServiceCallback<OperationStatusResponse>)
+        string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -632,11 +924,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.startOSUpgrade_2
     name: startOSUpgrade
@@ -655,8 +947,7 @@ items:
     syntax:
       content: >-
         function startOSUpgrade(resourceGroupName: string, vmScaleSetName:
-        string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        string, options: Object, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -668,15 +959,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetRollingUpgrades.startOSUpgradeWithHttpOperationResponse
@@ -696,7 +987,7 @@ items:
     syntax:
       content: >-
         function startOSUpgradeWithHttpOperationResponse(resourceGroupName:
-        string, vmScaleSetName: string, options?: function)
+        string, vmScaleSetName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -710,43 +1001,16 @@ items:
             The name of the VM scale set.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
 references:
-  - uid: Promise<azure-arm-compute.OperationStatusResponse>
-    spec.typeScript:
-      - name: Promise<
-        fullName: Promise<
-      - name: OperationStatusResponse
-        fullName: OperationStatusResponse
-        uid: azure-arm-compute.OperationStatusResponse
-      - name: '>'
-        fullName: '>'
-  - uid: ServiceCallback<azure-arm-compute.OperationStatusResponse>
-    spec.typeScript:
-      - name: ServiceCallback<
-        fullName: ServiceCallback<
-      - name: OperationStatusResponse
-        fullName: OperationStatusResponse
-        uid: azure-arm-compute.OperationStatusResponse
-      - name: '>'
-        fullName: '>'
-  - uid: Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
-    spec.typeScript:
-      - name: Promise<HttpOperationResponse<
-        fullName: Promise<HttpOperationResponse<
-      - name: OperationStatusResponse
-        fullName: OperationStatusResponse
-        uid: azure-arm-compute.OperationStatusResponse
-      - name: '>>'
-        fullName: '>>'
   - uid: Promise<azure-arm-compute.RollingUpgradeStatusInfo>
+    name: RollingUpgradeStatusInfo>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -756,6 +1020,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-compute.RollingUpgradeStatusInfo>
+    name: RollingUpgradeStatusInfo>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -765,6 +1030,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: Promise<HttpOperationResponse<azure-arm-compute.RollingUpgradeStatusInfo>>
+    name: RollingUpgradeStatusInfo>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<

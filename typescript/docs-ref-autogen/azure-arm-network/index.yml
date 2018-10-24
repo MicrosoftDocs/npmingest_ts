@@ -7,6 +7,7 @@ items:
       - azure-arm-network.AddressSpace
       - azure-arm-network.ApplicationGateway
       - azure-arm-network.ApplicationGatewayAuthenticationCertificate
+      - azure-arm-network.ApplicationGatewayAutoscaleConfiguration
       - azure-arm-network.ApplicationGatewayAvailableSslOptions
       - azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies
       - azure-arm-network.ApplicationGatewayAvailableWafRuleSetsResult
@@ -36,18 +37,35 @@ items:
       - azure-arm-network.ApplicationGatewaySslCertificate
       - azure-arm-network.ApplicationGatewaySslPolicy
       - azure-arm-network.ApplicationGatewaySslPredefinedPolicy
+      - azure-arm-network.ApplicationGatewayTrustedRootCertificate
       - azure-arm-network.ApplicationGatewayUrlPathMap
       - azure-arm-network.ApplicationGatewayWebApplicationFirewallConfiguration
       - azure-arm-network.ApplicationSecurityGroup
       - azure-arm-network.ApplicationSecurityGroupListResult
       - azure-arm-network.AuthorizationListResult
       - azure-arm-network.Availability
+      - azure-arm-network.AvailableDelegation
+      - azure-arm-network.AvailableDelegationsResult
       - azure-arm-network.AvailableProvidersList
       - azure-arm-network.AvailableProvidersListCity
       - azure-arm-network.AvailableProvidersListCountry
       - azure-arm-network.AvailableProvidersListParameters
       - azure-arm-network.AvailableProvidersListState
       - azure-arm-network.AzureAsyncOperationResult
+      - azure-arm-network.AzureFirewall
+      - azure-arm-network.AzureFirewallApplicationRule
+      - azure-arm-network.AzureFirewallApplicationRuleCollection
+      - azure-arm-network.AzureFirewallApplicationRuleProtocol
+      - azure-arm-network.AzureFirewallFqdnTag
+      - azure-arm-network.AzureFirewallFqdnTagListResult
+      - azure-arm-network.AzureFirewallIPConfiguration
+      - azure-arm-network.AzureFirewallListResult
+      - azure-arm-network.AzureFirewallNatRCAction
+      - azure-arm-network.AzureFirewallNatRule
+      - azure-arm-network.AzureFirewallNatRuleCollection
+      - azure-arm-network.AzureFirewallNetworkRule
+      - azure-arm-network.AzureFirewallNetworkRuleCollection
+      - azure-arm-network.AzureFirewallRCAction
       - azure-arm-network.AzureReachabilityReport
       - azure-arm-network.AzureReachabilityReportItem
       - azure-arm-network.AzureReachabilityReportLatencyInfo
@@ -76,8 +94,14 @@ items:
       - azure-arm-network.ConnectivityIssue
       - azure-arm-network.ConnectivityParameters
       - azure-arm-network.ConnectivitySource
+      - azure-arm-network.Container
+      - azure-arm-network.ContainerNetworkInterface
+      - azure-arm-network.ContainerNetworkInterfaceConfiguration
+      - azure-arm-network.ContainerNetworkInterfaceIpConfiguration
       - azure-arm-network.DdosProtectionPlan
       - azure-arm-network.DdosProtectionPlanListResult
+      - azure-arm-network.Delegation
+      - azure-arm-network.DeviceProperties
       - azure-arm-network.DhcpOptions
       - azure-arm-network.Dimension
       - azure-arm-network.DnsNameAvailabilityResult
@@ -87,10 +111,13 @@ items:
       - azure-arm-network.EffectiveNetworkSecurityRule
       - azure-arm-network.EffectiveRoute
       - azure-arm-network.EffectiveRouteListResult
+      - azure-arm-network.EndpointService
       - azure-arm-network.EndpointServiceResult
       - azure-arm-network.EndpointServicesListResult
       - azure-arm-network.ErrorDetails
       - azure-arm-network.ErrorModel
+      - azure-arm-network.ErrorResponse
+      - azure-arm-network.EvaluatedNetworkSecurityGroup
       - azure-arm-network.ExpressRouteCircuit
       - azure-arm-network.ExpressRouteCircuitArpTable
       - azure-arm-network.ExpressRouteCircuitAuthorization
@@ -98,6 +125,7 @@ items:
       - azure-arm-network.ExpressRouteCircuitListResult
       - azure-arm-network.ExpressRouteCircuitPeering
       - azure-arm-network.ExpressRouteCircuitPeeringConfig
+      - azure-arm-network.ExpressRouteCircuitPeeringId
       - azure-arm-network.ExpressRouteCircuitPeeringListResult
       - azure-arm-network.ExpressRouteCircuitReference
       - azure-arm-network.ExpressRouteCircuitRoutesTable
@@ -108,6 +136,9 @@ items:
       - azure-arm-network.ExpressRouteCircuitsArpTableListResult
       - azure-arm-network.ExpressRouteCircuitsRoutesTableListResult
       - azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult
+      - azure-arm-network.ExpressRouteConnection
+      - azure-arm-network.ExpressRouteConnectionId
+      - azure-arm-network.ExpressRouteConnectionList
       - azure-arm-network.ExpressRouteCrossConnection
       - azure-arm-network.ExpressRouteCrossConnectionListResult
       - azure-arm-network.ExpressRouteCrossConnectionPeering
@@ -115,6 +146,11 @@ items:
       - azure-arm-network.ExpressRouteCrossConnectionRoutesTableSummary
       - >-
         azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult
+      - azure-arm-network.ExpressRouteGateway
+      - azure-arm-network.ExpressRouteGatewayList
+      - azure-arm-network.ExpressRouteGatewayPropertiesAutoScaleConfiguration
+      - >-
+        azure-arm-network.ExpressRouteGatewayPropertiesAutoScaleConfigurationBounds
       - azure-arm-network.ExpressRouteServiceProvider
       - azure-arm-network.ExpressRouteServiceProviderBandwidthsOffered
       - azure-arm-network.ExpressRouteServiceProviderListResult
@@ -123,16 +159,29 @@ items:
       - azure-arm-network.FrontendIPConfiguration
       - azure-arm-network.GatewayRoute
       - azure-arm-network.GatewayRouteListResult
+      - azure-arm-network.GetVpnSitesConfigurationRequest
       - azure-arm-network.HTTPConfiguration
       - azure-arm-network.HTTPHeader
+      - azure-arm-network.HubVirtualNetworkConnection
       - azure-arm-network.IPAddressAvailabilityResult
       - azure-arm-network.IPConfiguration
+      - azure-arm-network.IPConfigurationProfile
       - azure-arm-network.InboundNatPool
       - azure-arm-network.InboundNatRule
       - azure-arm-network.InboundNatRuleListResult
+      - azure-arm-network.InterfaceEndpoint
+      - azure-arm-network.InterfaceEndpointListResult
       - azure-arm-network.IpTag
       - azure-arm-network.IpsecPolicy
       - azure-arm-network.Ipv6ExpressRouteCircuitPeeringConfig
+      - azure-arm-network.ListHubVirtualNetworkConnectionsResult
+      - azure-arm-network.ListP2SVpnGatewaysResult
+      - azure-arm-network.ListP2SVpnServerConfigurationsResult
+      - azure-arm-network.ListVirtualHubsResult
+      - azure-arm-network.ListVirtualWANsResult
+      - azure-arm-network.ListVpnConnectionsResult
+      - azure-arm-network.ListVpnGatewaysResult
+      - azure-arm-network.ListVpnSitesResult
       - azure-arm-network.LoadBalancer
       - azure-arm-network.LoadBalancerBackendAddressPoolListResult
       - azure-arm-network.LoadBalancerFrontendIPConfigurationListResult
@@ -144,7 +193,11 @@ items:
       - azure-arm-network.LocalNetworkGateway
       - azure-arm-network.LocalNetworkGatewayListResult
       - azure-arm-network.LogSpecification
+      - azure-arm-network.MatchedRule
       - azure-arm-network.MetricSpecification
+      - azure-arm-network.NetworkConfigurationDiagnosticParameters
+      - azure-arm-network.NetworkConfigurationDiagnosticResponse
+      - azure-arm-network.NetworkConfigurationDiagnosticResult
       - azure-arm-network.NetworkInterface
       - azure-arm-network.NetworkInterfaceAssociation
       - azure-arm-network.NetworkInterfaceDnsSettings
@@ -152,8 +205,14 @@ items:
       - azure-arm-network.NetworkInterfaceIPConfigurationListResult
       - azure-arm-network.NetworkInterfaceListResult
       - azure-arm-network.NetworkInterfaceLoadBalancerListResult
+      - azure-arm-network.NetworkInterfaceTapConfiguration
+      - azure-arm-network.NetworkInterfaceTapConfigurationListResult
+      - azure-arm-network.NetworkProfile
+      - azure-arm-network.NetworkProfileListResult
       - azure-arm-network.NetworkSecurityGroup
       - azure-arm-network.NetworkSecurityGroupListResult
+      - azure-arm-network.NetworkSecurityGroupResult
+      - azure-arm-network.NetworkSecurityRulesEvaluationResult
       - azure-arm-network.NetworkWatcher
       - azure-arm-network.NetworkWatcherListResult
       - azure-arm-network.NextHopParameters
@@ -162,7 +221,14 @@ items:
       - azure-arm-network.OperationDisplay
       - azure-arm-network.OperationListResult
       - azure-arm-network.OperationPropertiesFormatServiceSpecification
-      - azure-arm-network.OutboundNatRule
+      - azure-arm-network.OutboundRule
+      - azure-arm-network.P2SVpnGateway
+      - azure-arm-network.P2SVpnProfileParameters
+      - azure-arm-network.P2SVpnServerConfigRadiusClientRootCertificate
+      - azure-arm-network.P2SVpnServerConfigRadiusServerRootCertificate
+      - azure-arm-network.P2SVpnServerConfigVpnClientRevokedCertificate
+      - azure-arm-network.P2SVpnServerConfigVpnClientRootCertificate
+      - azure-arm-network.P2SVpnServerConfiguration
       - azure-arm-network.PacketCapture
       - azure-arm-network.PacketCaptureFilter
       - azure-arm-network.PacketCaptureListResult
@@ -178,7 +244,11 @@ items:
       - azure-arm-network.PublicIPAddressDnsSettings
       - azure-arm-network.PublicIPAddressListResult
       - azure-arm-network.PublicIPAddressSku
+      - azure-arm-network.PublicIPPrefix
+      - azure-arm-network.PublicIPPrefixListResult
+      - azure-arm-network.PublicIPPrefixSku
       - azure-arm-network.QueryTroubleshootingParameters
+      - azure-arm-network.ReferencedPublicIpAddress
       - azure-arm-network.Resource
       - azure-arm-network.ResourceNavigationLink
       - azure-arm-network.RetentionPolicyParameters
@@ -196,6 +266,11 @@ items:
       - azure-arm-network.SecurityRule
       - azure-arm-network.SecurityRuleAssociations
       - azure-arm-network.SecurityRuleListResult
+      - azure-arm-network.ServiceAssociationLink
+      - azure-arm-network.ServiceEndpointPolicy
+      - azure-arm-network.ServiceEndpointPolicyDefinition
+      - azure-arm-network.ServiceEndpointPolicyDefinitionListResult
+      - azure-arm-network.ServiceEndpointPolicyListResult
       - azure-arm-network.ServiceEndpointPropertiesFormat
       - azure-arm-network.SubResource
       - azure-arm-network.Subnet
@@ -206,6 +281,9 @@ items:
       - azure-arm-network.TopologyAssociation
       - azure-arm-network.TopologyParameters
       - azure-arm-network.TopologyResource
+      - azure-arm-network.TrafficAnalyticsConfigurationProperties
+      - azure-arm-network.TrafficAnalyticsProperties
+      - azure-arm-network.TrafficQuery
       - azure-arm-network.TroubleshootingDetails
       - azure-arm-network.TroubleshootingParameters
       - azure-arm-network.TroubleshootingRecommendedActions
@@ -216,6 +294,10 @@ items:
       - azure-arm-network.UsagesListResult
       - azure-arm-network.VerificationIPFlowParameters
       - azure-arm-network.VerificationIPFlowResult
+      - azure-arm-network.VirtualHub
+      - azure-arm-network.VirtualHubId
+      - azure-arm-network.VirtualHubRoute
+      - azure-arm-network.VirtualHubRouteTable
       - azure-arm-network.VirtualNetwork
       - azure-arm-network.VirtualNetworkConnectionGatewayReference
       - azure-arm-network.VirtualNetworkGateway
@@ -230,18 +312,33 @@ items:
       - azure-arm-network.VirtualNetworkListUsageResult
       - azure-arm-network.VirtualNetworkPeering
       - azure-arm-network.VirtualNetworkPeeringListResult
+      - azure-arm-network.VirtualNetworkTap
+      - azure-arm-network.VirtualNetworkTapListResult
       - azure-arm-network.VirtualNetworkUsage
       - azure-arm-network.VirtualNetworkUsageName
+      - azure-arm-network.VirtualWAN
+      - azure-arm-network.VirtualWanSecurityProvider
+      - azure-arm-network.VirtualWanSecurityProviders
       - azure-arm-network.VpnClientConfiguration
+      - azure-arm-network.VpnClientConnectionHealth
       - azure-arm-network.VpnClientIPsecParameters
       - azure-arm-network.VpnClientParameters
       - azure-arm-network.VpnClientRevokedCertificate
       - azure-arm-network.VpnClientRootCertificate
+      - azure-arm-network.VpnConnection
       - azure-arm-network.VpnDeviceScriptParameters
+      - azure-arm-network.VpnGateway
+      - azure-arm-network.VpnProfileResponse
+      - azure-arm-network.VpnSite
+      - azure-arm-network.VpnSiteId
       - azure-arm-network.NetworkManagementClient
       - azure-arm-network.ApplicationGateways
       - azure-arm-network.ApplicationSecurityGroups
+      - azure-arm-network.AvailableDelegations
       - azure-arm-network.AvailableEndpointServices
+      - azure-arm-network.AvailableResourceGroupDelegations
+      - azure-arm-network.AzureFirewallFqdnTags
+      - azure-arm-network.AzureFirewalls
       - azure-arm-network.BgpServiceCommunities
       - azure-arm-network.ConnectionMonitors
       - azure-arm-network.DdosProtectionPlans
@@ -250,10 +347,14 @@ items:
       - azure-arm-network.ExpressRouteCircuitConnections
       - azure-arm-network.ExpressRouteCircuitPeerings
       - azure-arm-network.ExpressRouteCircuits
+      - azure-arm-network.ExpressRouteConnections
       - azure-arm-network.ExpressRouteCrossConnectionPeerings
       - azure-arm-network.ExpressRouteCrossConnections
+      - azure-arm-network.ExpressRouteGateways
       - azure-arm-network.ExpressRouteServiceProviders
+      - azure-arm-network.HubVirtualNetworkConnections
       - azure-arm-network.InboundNatRules
+      - azure-arm-network.InterfaceEndpoints
       - azure-arm-network.LoadBalancerBackendAddressPools
       - azure-arm-network.LoadBalancerFrontendIPConfigurations
       - azure-arm-network.LoadBalancerLoadBalancingRules
@@ -263,23 +364,37 @@ items:
       - azure-arm-network.LocalNetworkGateways
       - azure-arm-network.NetworkInterfaceIPConfigurations
       - azure-arm-network.NetworkInterfaceLoadBalancers
+      - azure-arm-network.NetworkInterfaceTapConfigurations
       - azure-arm-network.NetworkInterfaces
+      - azure-arm-network.NetworkProfiles
       - azure-arm-network.NetworkSecurityGroups
       - azure-arm-network.NetworkWatchers
       - azure-arm-network.Operations
+      - azure-arm-network.P2sVpnGateways
+      - azure-arm-network.P2sVpnServerConfigurations
       - azure-arm-network.PacketCaptures
       - azure-arm-network.PublicIPAddresses
+      - azure-arm-network.PublicIPPrefixes
       - azure-arm-network.RouteFilterRules
       - azure-arm-network.RouteFilters
       - azure-arm-network.RouteTables
       - azure-arm-network.Routes
       - azure-arm-network.SecurityRules
+      - azure-arm-network.ServiceEndpointPolicies
+      - azure-arm-network.ServiceEndpointPolicyDefinitions
       - azure-arm-network.Subnets
       - azure-arm-network.Usages
+      - azure-arm-network.VirtualHubs
       - azure-arm-network.VirtualNetworkGatewayConnections
       - azure-arm-network.VirtualNetworkGateways
       - azure-arm-network.VirtualNetworkPeerings
+      - azure-arm-network.VirtualNetworkTaps
       - azure-arm-network.VirtualNetworks
+      - azure-arm-network.VirtualWans
+      - azure-arm-network.VpnConnections
+      - azure-arm-network.VpnGateways
+      - azure-arm-network.VpnSites
+      - azure-arm-network.VpnSitesConfiguration
     type: package
     langs:
       - typeScript
@@ -290,6 +405,8 @@ references:
     name: ApplicationGateway
   - uid: azure-arm-network.ApplicationGatewayAuthenticationCertificate
     name: ApplicationGatewayAuthenticationCertificate
+  - uid: azure-arm-network.ApplicationGatewayAutoscaleConfiguration
+    name: ApplicationGatewayAutoscaleConfiguration
   - uid: azure-arm-network.ApplicationGatewayAvailableSslOptions
     name: ApplicationGatewayAvailableSslOptions
   - uid: azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies
@@ -348,6 +465,8 @@ references:
     name: ApplicationGatewaySslPolicy
   - uid: azure-arm-network.ApplicationGatewaySslPredefinedPolicy
     name: ApplicationGatewaySslPredefinedPolicy
+  - uid: azure-arm-network.ApplicationGatewayTrustedRootCertificate
+    name: ApplicationGatewayTrustedRootCertificate
   - uid: azure-arm-network.ApplicationGatewayUrlPathMap
     name: ApplicationGatewayUrlPathMap
   - uid: azure-arm-network.ApplicationGatewayWebApplicationFirewallConfiguration
@@ -360,6 +479,10 @@ references:
     name: AuthorizationListResult
   - uid: azure-arm-network.Availability
     name: Availability
+  - uid: azure-arm-network.AvailableDelegation
+    name: AvailableDelegation
+  - uid: azure-arm-network.AvailableDelegationsResult
+    name: AvailableDelegationsResult
   - uid: azure-arm-network.AvailableProvidersList
     name: AvailableProvidersList
   - uid: azure-arm-network.AvailableProvidersListCity
@@ -372,6 +495,34 @@ references:
     name: AvailableProvidersListState
   - uid: azure-arm-network.AzureAsyncOperationResult
     name: AzureAsyncOperationResult
+  - uid: azure-arm-network.AzureFirewall
+    name: AzureFirewall
+  - uid: azure-arm-network.AzureFirewallApplicationRule
+    name: AzureFirewallApplicationRule
+  - uid: azure-arm-network.AzureFirewallApplicationRuleCollection
+    name: AzureFirewallApplicationRuleCollection
+  - uid: azure-arm-network.AzureFirewallApplicationRuleProtocol
+    name: AzureFirewallApplicationRuleProtocol
+  - uid: azure-arm-network.AzureFirewallFqdnTag
+    name: AzureFirewallFqdnTag
+  - uid: azure-arm-network.AzureFirewallFqdnTagListResult
+    name: AzureFirewallFqdnTagListResult
+  - uid: azure-arm-network.AzureFirewallIPConfiguration
+    name: AzureFirewallIPConfiguration
+  - uid: azure-arm-network.AzureFirewallListResult
+    name: AzureFirewallListResult
+  - uid: azure-arm-network.AzureFirewallNatRCAction
+    name: AzureFirewallNatRCAction
+  - uid: azure-arm-network.AzureFirewallNatRule
+    name: AzureFirewallNatRule
+  - uid: azure-arm-network.AzureFirewallNatRuleCollection
+    name: AzureFirewallNatRuleCollection
+  - uid: azure-arm-network.AzureFirewallNetworkRule
+    name: AzureFirewallNetworkRule
+  - uid: azure-arm-network.AzureFirewallNetworkRuleCollection
+    name: AzureFirewallNetworkRuleCollection
+  - uid: azure-arm-network.AzureFirewallRCAction
+    name: AzureFirewallRCAction
   - uid: azure-arm-network.AzureReachabilityReport
     name: AzureReachabilityReport
   - uid: azure-arm-network.AzureReachabilityReportItem
@@ -428,10 +579,22 @@ references:
     name: ConnectivityParameters
   - uid: azure-arm-network.ConnectivitySource
     name: ConnectivitySource
+  - uid: azure-arm-network.Container
+    name: Container
+  - uid: azure-arm-network.ContainerNetworkInterface
+    name: ContainerNetworkInterface
+  - uid: azure-arm-network.ContainerNetworkInterfaceConfiguration
+    name: ContainerNetworkInterfaceConfiguration
+  - uid: azure-arm-network.ContainerNetworkInterfaceIpConfiguration
+    name: ContainerNetworkInterfaceIpConfiguration
   - uid: azure-arm-network.DdosProtectionPlan
     name: DdosProtectionPlan
   - uid: azure-arm-network.DdosProtectionPlanListResult
     name: DdosProtectionPlanListResult
+  - uid: azure-arm-network.Delegation
+    name: Delegation
+  - uid: azure-arm-network.DeviceProperties
+    name: DeviceProperties
   - uid: azure-arm-network.DhcpOptions
     name: DhcpOptions
   - uid: azure-arm-network.Dimension
@@ -450,6 +613,8 @@ references:
     name: EffectiveRoute
   - uid: azure-arm-network.EffectiveRouteListResult
     name: EffectiveRouteListResult
+  - uid: azure-arm-network.EndpointService
+    name: EndpointService
   - uid: azure-arm-network.EndpointServiceResult
     name: EndpointServiceResult
   - uid: azure-arm-network.EndpointServicesListResult
@@ -458,6 +623,10 @@ references:
     name: ErrorDetails
   - uid: azure-arm-network.ErrorModel
     name: ErrorModel
+  - uid: azure-arm-network.ErrorResponse
+    name: ErrorResponse
+  - uid: azure-arm-network.EvaluatedNetworkSecurityGroup
+    name: EvaluatedNetworkSecurityGroup
   - uid: azure-arm-network.ExpressRouteCircuit
     name: ExpressRouteCircuit
   - uid: azure-arm-network.ExpressRouteCircuitArpTable
@@ -472,6 +641,8 @@ references:
     name: ExpressRouteCircuitPeering
   - uid: azure-arm-network.ExpressRouteCircuitPeeringConfig
     name: ExpressRouteCircuitPeeringConfig
+  - uid: azure-arm-network.ExpressRouteCircuitPeeringId
+    name: ExpressRouteCircuitPeeringId
   - uid: azure-arm-network.ExpressRouteCircuitPeeringListResult
     name: ExpressRouteCircuitPeeringListResult
   - uid: azure-arm-network.ExpressRouteCircuitReference
@@ -492,6 +663,12 @@ references:
     name: ExpressRouteCircuitsRoutesTableListResult
   - uid: azure-arm-network.ExpressRouteCircuitsRoutesTableSummaryListResult
     name: ExpressRouteCircuitsRoutesTableSummaryListResult
+  - uid: azure-arm-network.ExpressRouteConnection
+    name: ExpressRouteConnection
+  - uid: azure-arm-network.ExpressRouteConnectionId
+    name: ExpressRouteConnectionId
+  - uid: azure-arm-network.ExpressRouteConnectionList
+    name: ExpressRouteConnectionList
   - uid: azure-arm-network.ExpressRouteCrossConnection
     name: ExpressRouteCrossConnection
   - uid: azure-arm-network.ExpressRouteCrossConnectionListResult
@@ -504,6 +681,15 @@ references:
     name: ExpressRouteCrossConnectionRoutesTableSummary
   - uid: azure-arm-network.ExpressRouteCrossConnectionsRoutesTableSummaryListResult
     name: ExpressRouteCrossConnectionsRoutesTableSummaryListResult
+  - uid: azure-arm-network.ExpressRouteGateway
+    name: ExpressRouteGateway
+  - uid: azure-arm-network.ExpressRouteGatewayList
+    name: ExpressRouteGatewayList
+  - uid: azure-arm-network.ExpressRouteGatewayPropertiesAutoScaleConfiguration
+    name: ExpressRouteGatewayPropertiesAutoScaleConfiguration
+  - uid: >-
+      azure-arm-network.ExpressRouteGatewayPropertiesAutoScaleConfigurationBounds
+    name: ExpressRouteGatewayPropertiesAutoScaleConfigurationBounds
   - uid: azure-arm-network.ExpressRouteServiceProvider
     name: ExpressRouteServiceProvider
   - uid: azure-arm-network.ExpressRouteServiceProviderBandwidthsOffered
@@ -520,26 +706,52 @@ references:
     name: GatewayRoute
   - uid: azure-arm-network.GatewayRouteListResult
     name: GatewayRouteListResult
+  - uid: azure-arm-network.GetVpnSitesConfigurationRequest
+    name: GetVpnSitesConfigurationRequest
   - uid: azure-arm-network.HTTPConfiguration
     name: HTTPConfiguration
   - uid: azure-arm-network.HTTPHeader
     name: HTTPHeader
+  - uid: azure-arm-network.HubVirtualNetworkConnection
+    name: HubVirtualNetworkConnection
   - uid: azure-arm-network.IPAddressAvailabilityResult
     name: IPAddressAvailabilityResult
   - uid: azure-arm-network.IPConfiguration
     name: IPConfiguration
+  - uid: azure-arm-network.IPConfigurationProfile
+    name: IPConfigurationProfile
   - uid: azure-arm-network.InboundNatPool
     name: InboundNatPool
   - uid: azure-arm-network.InboundNatRule
     name: InboundNatRule
   - uid: azure-arm-network.InboundNatRuleListResult
     name: InboundNatRuleListResult
+  - uid: azure-arm-network.InterfaceEndpoint
+    name: InterfaceEndpoint
+  - uid: azure-arm-network.InterfaceEndpointListResult
+    name: InterfaceEndpointListResult
   - uid: azure-arm-network.IpTag
     name: IpTag
   - uid: azure-arm-network.IpsecPolicy
     name: IpsecPolicy
   - uid: azure-arm-network.Ipv6ExpressRouteCircuitPeeringConfig
     name: Ipv6ExpressRouteCircuitPeeringConfig
+  - uid: azure-arm-network.ListHubVirtualNetworkConnectionsResult
+    name: ListHubVirtualNetworkConnectionsResult
+  - uid: azure-arm-network.ListP2SVpnGatewaysResult
+    name: ListP2SVpnGatewaysResult
+  - uid: azure-arm-network.ListP2SVpnServerConfigurationsResult
+    name: ListP2SVpnServerConfigurationsResult
+  - uid: azure-arm-network.ListVirtualHubsResult
+    name: ListVirtualHubsResult
+  - uid: azure-arm-network.ListVirtualWANsResult
+    name: ListVirtualWANsResult
+  - uid: azure-arm-network.ListVpnConnectionsResult
+    name: ListVpnConnectionsResult
+  - uid: azure-arm-network.ListVpnGatewaysResult
+    name: ListVpnGatewaysResult
+  - uid: azure-arm-network.ListVpnSitesResult
+    name: ListVpnSitesResult
   - uid: azure-arm-network.LoadBalancer
     name: LoadBalancer
   - uid: azure-arm-network.LoadBalancerBackendAddressPoolListResult
@@ -562,8 +774,16 @@ references:
     name: LocalNetworkGatewayListResult
   - uid: azure-arm-network.LogSpecification
     name: LogSpecification
+  - uid: azure-arm-network.MatchedRule
+    name: MatchedRule
   - uid: azure-arm-network.MetricSpecification
     name: MetricSpecification
+  - uid: azure-arm-network.NetworkConfigurationDiagnosticParameters
+    name: NetworkConfigurationDiagnosticParameters
+  - uid: azure-arm-network.NetworkConfigurationDiagnosticResponse
+    name: NetworkConfigurationDiagnosticResponse
+  - uid: azure-arm-network.NetworkConfigurationDiagnosticResult
+    name: NetworkConfigurationDiagnosticResult
   - uid: azure-arm-network.NetworkInterface
     name: NetworkInterface
   - uid: azure-arm-network.NetworkInterfaceAssociation
@@ -578,10 +798,22 @@ references:
     name: NetworkInterfaceListResult
   - uid: azure-arm-network.NetworkInterfaceLoadBalancerListResult
     name: NetworkInterfaceLoadBalancerListResult
+  - uid: azure-arm-network.NetworkInterfaceTapConfiguration
+    name: NetworkInterfaceTapConfiguration
+  - uid: azure-arm-network.NetworkInterfaceTapConfigurationListResult
+    name: NetworkInterfaceTapConfigurationListResult
+  - uid: azure-arm-network.NetworkProfile
+    name: NetworkProfile
+  - uid: azure-arm-network.NetworkProfileListResult
+    name: NetworkProfileListResult
   - uid: azure-arm-network.NetworkSecurityGroup
     name: NetworkSecurityGroup
   - uid: azure-arm-network.NetworkSecurityGroupListResult
     name: NetworkSecurityGroupListResult
+  - uid: azure-arm-network.NetworkSecurityGroupResult
+    name: NetworkSecurityGroupResult
+  - uid: azure-arm-network.NetworkSecurityRulesEvaluationResult
+    name: NetworkSecurityRulesEvaluationResult
   - uid: azure-arm-network.NetworkWatcher
     name: NetworkWatcher
   - uid: azure-arm-network.NetworkWatcherListResult
@@ -598,8 +830,22 @@ references:
     name: OperationListResult
   - uid: azure-arm-network.OperationPropertiesFormatServiceSpecification
     name: OperationPropertiesFormatServiceSpecification
-  - uid: azure-arm-network.OutboundNatRule
-    name: OutboundNatRule
+  - uid: azure-arm-network.OutboundRule
+    name: OutboundRule
+  - uid: azure-arm-network.P2SVpnGateway
+    name: P2SVpnGateway
+  - uid: azure-arm-network.P2SVpnProfileParameters
+    name: P2SVpnProfileParameters
+  - uid: azure-arm-network.P2SVpnServerConfigRadiusClientRootCertificate
+    name: P2SVpnServerConfigRadiusClientRootCertificate
+  - uid: azure-arm-network.P2SVpnServerConfigRadiusServerRootCertificate
+    name: P2SVpnServerConfigRadiusServerRootCertificate
+  - uid: azure-arm-network.P2SVpnServerConfigVpnClientRevokedCertificate
+    name: P2SVpnServerConfigVpnClientRevokedCertificate
+  - uid: azure-arm-network.P2SVpnServerConfigVpnClientRootCertificate
+    name: P2SVpnServerConfigVpnClientRootCertificate
+  - uid: azure-arm-network.P2SVpnServerConfiguration
+    name: P2SVpnServerConfiguration
   - uid: azure-arm-network.PacketCapture
     name: PacketCapture
   - uid: azure-arm-network.PacketCaptureFilter
@@ -630,8 +876,16 @@ references:
     name: PublicIPAddressListResult
   - uid: azure-arm-network.PublicIPAddressSku
     name: PublicIPAddressSku
+  - uid: azure-arm-network.PublicIPPrefix
+    name: PublicIPPrefix
+  - uid: azure-arm-network.PublicIPPrefixListResult
+    name: PublicIPPrefixListResult
+  - uid: azure-arm-network.PublicIPPrefixSku
+    name: PublicIPPrefixSku
   - uid: azure-arm-network.QueryTroubleshootingParameters
     name: QueryTroubleshootingParameters
+  - uid: azure-arm-network.ReferencedPublicIpAddress
+    name: ReferencedPublicIpAddress
   - uid: azure-arm-network.Resource
     name: Resource
   - uid: azure-arm-network.ResourceNavigationLink
@@ -666,6 +920,16 @@ references:
     name: SecurityRuleAssociations
   - uid: azure-arm-network.SecurityRuleListResult
     name: SecurityRuleListResult
+  - uid: azure-arm-network.ServiceAssociationLink
+    name: ServiceAssociationLink
+  - uid: azure-arm-network.ServiceEndpointPolicy
+    name: ServiceEndpointPolicy
+  - uid: azure-arm-network.ServiceEndpointPolicyDefinition
+    name: ServiceEndpointPolicyDefinition
+  - uid: azure-arm-network.ServiceEndpointPolicyDefinitionListResult
+    name: ServiceEndpointPolicyDefinitionListResult
+  - uid: azure-arm-network.ServiceEndpointPolicyListResult
+    name: ServiceEndpointPolicyListResult
   - uid: azure-arm-network.ServiceEndpointPropertiesFormat
     name: ServiceEndpointPropertiesFormat
   - uid: azure-arm-network.SubResource
@@ -686,6 +950,12 @@ references:
     name: TopologyParameters
   - uid: azure-arm-network.TopologyResource
     name: TopologyResource
+  - uid: azure-arm-network.TrafficAnalyticsConfigurationProperties
+    name: TrafficAnalyticsConfigurationProperties
+  - uid: azure-arm-network.TrafficAnalyticsProperties
+    name: TrafficAnalyticsProperties
+  - uid: azure-arm-network.TrafficQuery
+    name: TrafficQuery
   - uid: azure-arm-network.TroubleshootingDetails
     name: TroubleshootingDetails
   - uid: azure-arm-network.TroubleshootingParameters
@@ -706,6 +976,14 @@ references:
     name: VerificationIPFlowParameters
   - uid: azure-arm-network.VerificationIPFlowResult
     name: VerificationIPFlowResult
+  - uid: azure-arm-network.VirtualHub
+    name: VirtualHub
+  - uid: azure-arm-network.VirtualHubId
+    name: VirtualHubId
+  - uid: azure-arm-network.VirtualHubRoute
+    name: VirtualHubRoute
+  - uid: azure-arm-network.VirtualHubRouteTable
+    name: VirtualHubRouteTable
   - uid: azure-arm-network.VirtualNetwork
     name: VirtualNetwork
   - uid: azure-arm-network.VirtualNetworkConnectionGatewayReference
@@ -734,12 +1012,24 @@ references:
     name: VirtualNetworkPeering
   - uid: azure-arm-network.VirtualNetworkPeeringListResult
     name: VirtualNetworkPeeringListResult
+  - uid: azure-arm-network.VirtualNetworkTap
+    name: VirtualNetworkTap
+  - uid: azure-arm-network.VirtualNetworkTapListResult
+    name: VirtualNetworkTapListResult
   - uid: azure-arm-network.VirtualNetworkUsage
     name: VirtualNetworkUsage
   - uid: azure-arm-network.VirtualNetworkUsageName
     name: VirtualNetworkUsageName
+  - uid: azure-arm-network.VirtualWAN
+    name: VirtualWAN
+  - uid: azure-arm-network.VirtualWanSecurityProvider
+    name: VirtualWanSecurityProvider
+  - uid: azure-arm-network.VirtualWanSecurityProviders
+    name: VirtualWanSecurityProviders
   - uid: azure-arm-network.VpnClientConfiguration
     name: VpnClientConfiguration
+  - uid: azure-arm-network.VpnClientConnectionHealth
+    name: VpnClientConnectionHealth
   - uid: azure-arm-network.VpnClientIPsecParameters
     name: VpnClientIPsecParameters
   - uid: azure-arm-network.VpnClientParameters
@@ -748,16 +1038,34 @@ references:
     name: VpnClientRevokedCertificate
   - uid: azure-arm-network.VpnClientRootCertificate
     name: VpnClientRootCertificate
+  - uid: azure-arm-network.VpnConnection
+    name: VpnConnection
   - uid: azure-arm-network.VpnDeviceScriptParameters
     name: VpnDeviceScriptParameters
+  - uid: azure-arm-network.VpnGateway
+    name: VpnGateway
+  - uid: azure-arm-network.VpnProfileResponse
+    name: VpnProfileResponse
+  - uid: azure-arm-network.VpnSite
+    name: VpnSite
+  - uid: azure-arm-network.VpnSiteId
+    name: VpnSiteId
   - uid: azure-arm-network.NetworkManagementClient
     name: NetworkManagementClient
   - uid: azure-arm-network.ApplicationGateways
     name: ApplicationGateways
   - uid: azure-arm-network.ApplicationSecurityGroups
     name: ApplicationSecurityGroups
+  - uid: azure-arm-network.AvailableDelegations
+    name: AvailableDelegations
   - uid: azure-arm-network.AvailableEndpointServices
     name: AvailableEndpointServices
+  - uid: azure-arm-network.AvailableResourceGroupDelegations
+    name: AvailableResourceGroupDelegations
+  - uid: azure-arm-network.AzureFirewallFqdnTags
+    name: AzureFirewallFqdnTags
+  - uid: azure-arm-network.AzureFirewalls
+    name: AzureFirewalls
   - uid: azure-arm-network.BgpServiceCommunities
     name: BgpServiceCommunities
   - uid: azure-arm-network.ConnectionMonitors
@@ -774,14 +1082,22 @@ references:
     name: ExpressRouteCircuitPeerings
   - uid: azure-arm-network.ExpressRouteCircuits
     name: ExpressRouteCircuits
+  - uid: azure-arm-network.ExpressRouteConnections
+    name: ExpressRouteConnections
   - uid: azure-arm-network.ExpressRouteCrossConnectionPeerings
     name: ExpressRouteCrossConnectionPeerings
   - uid: azure-arm-network.ExpressRouteCrossConnections
     name: ExpressRouteCrossConnections
+  - uid: azure-arm-network.ExpressRouteGateways
+    name: ExpressRouteGateways
   - uid: azure-arm-network.ExpressRouteServiceProviders
     name: ExpressRouteServiceProviders
+  - uid: azure-arm-network.HubVirtualNetworkConnections
+    name: HubVirtualNetworkConnections
   - uid: azure-arm-network.InboundNatRules
     name: InboundNatRules
+  - uid: azure-arm-network.InterfaceEndpoints
+    name: InterfaceEndpoints
   - uid: azure-arm-network.LoadBalancerBackendAddressPools
     name: LoadBalancerBackendAddressPools
   - uid: azure-arm-network.LoadBalancerFrontendIPConfigurations
@@ -800,18 +1116,28 @@ references:
     name: NetworkInterfaceIPConfigurations
   - uid: azure-arm-network.NetworkInterfaceLoadBalancers
     name: NetworkInterfaceLoadBalancers
+  - uid: azure-arm-network.NetworkInterfaceTapConfigurations
+    name: NetworkInterfaceTapConfigurations
   - uid: azure-arm-network.NetworkInterfaces
     name: NetworkInterfaces
+  - uid: azure-arm-network.NetworkProfiles
+    name: NetworkProfiles
   - uid: azure-arm-network.NetworkSecurityGroups
     name: NetworkSecurityGroups
   - uid: azure-arm-network.NetworkWatchers
     name: NetworkWatchers
   - uid: azure-arm-network.Operations
     name: Operations
+  - uid: azure-arm-network.P2sVpnGateways
+    name: P2sVpnGateways
+  - uid: azure-arm-network.P2sVpnServerConfigurations
+    name: P2sVpnServerConfigurations
   - uid: azure-arm-network.PacketCaptures
     name: PacketCaptures
   - uid: azure-arm-network.PublicIPAddresses
     name: PublicIPAddresses
+  - uid: azure-arm-network.PublicIPPrefixes
+    name: PublicIPPrefixes
   - uid: azure-arm-network.RouteFilterRules
     name: RouteFilterRules
   - uid: azure-arm-network.RouteFilters
@@ -822,15 +1148,33 @@ references:
     name: Routes
   - uid: azure-arm-network.SecurityRules
     name: SecurityRules
+  - uid: azure-arm-network.ServiceEndpointPolicies
+    name: ServiceEndpointPolicies
+  - uid: azure-arm-network.ServiceEndpointPolicyDefinitions
+    name: ServiceEndpointPolicyDefinitions
   - uid: azure-arm-network.Subnets
     name: Subnets
   - uid: azure-arm-network.Usages
     name: Usages
+  - uid: azure-arm-network.VirtualHubs
+    name: VirtualHubs
   - uid: azure-arm-network.VirtualNetworkGatewayConnections
     name: VirtualNetworkGatewayConnections
   - uid: azure-arm-network.VirtualNetworkGateways
     name: VirtualNetworkGateways
   - uid: azure-arm-network.VirtualNetworkPeerings
     name: VirtualNetworkPeerings
+  - uid: azure-arm-network.VirtualNetworkTaps
+    name: VirtualNetworkTaps
   - uid: azure-arm-network.VirtualNetworks
     name: VirtualNetworks
+  - uid: azure-arm-network.VirtualWans
+    name: VirtualWans
+  - uid: azure-arm-network.VpnConnections
+    name: VpnConnections
+  - uid: azure-arm-network.VpnGateways
+    name: VpnGateways
+  - uid: azure-arm-network.VpnSites
+    name: VpnSites
+  - uid: azure-arm-network.VpnSitesConfiguration
+    name: VpnSitesConfiguration

@@ -37,13 +37,14 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'tags?: function'
+      content: 'tags?: [key: string]: string'
       return:
         type:
-          - function
+          - '[key: string]: string'
     package: azure-arm-cdn
 references:
   - uid: azure-arm-cdn.Resource
+    name: Resource
     spec.typeScript:
       - name: Resource
         fullName: Resource

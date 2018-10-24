@@ -29,12 +29,12 @@ items:
       - azure-arm-compute.VirtualMachineScaleSetVMs.beginRedeploy_1
       - >-
         azure-arm-compute.VirtualMachineScaleSetVMs.beginRedeployWithHttpOperationResponse
-      - azure-arm-compute.VirtualMachineScaleSetVMs.beginReimage
       - azure-arm-compute.VirtualMachineScaleSetVMs.beginReimage_1
       - azure-arm-compute.VirtualMachineScaleSetVMs.beginReimage_2
+      - azure-arm-compute.VirtualMachineScaleSetVMs.beginReimage
+      - azure-arm-compute.VirtualMachineScaleSetVMs.beginReimageAll
       - azure-arm-compute.VirtualMachineScaleSetVMs.beginReimageAll_1
       - azure-arm-compute.VirtualMachineScaleSetVMs.beginReimageAll_2
-      - azure-arm-compute.VirtualMachineScaleSetVMs.beginReimageAll
       - >-
         azure-arm-compute.VirtualMachineScaleSetVMs.beginReimageAllWithHttpOperationResponse
       - >-
@@ -44,14 +44,19 @@ items:
       - azure-arm-compute.VirtualMachineScaleSetVMs.beginRestart_2
       - >-
         azure-arm-compute.VirtualMachineScaleSetVMs.beginRestartWithHttpOperationResponse
+      - azure-arm-compute.VirtualMachineScaleSetVMs.beginRunCommand
+      - azure-arm-compute.VirtualMachineScaleSetVMs.beginRunCommand_2
+      - azure-arm-compute.VirtualMachineScaleSetVMs.beginRunCommand_1
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetVMs.beginRunCommandWithHttpOperationResponse
       - azure-arm-compute.VirtualMachineScaleSetVMs.beginStart
       - azure-arm-compute.VirtualMachineScaleSetVMs.beginStart_1
       - azure-arm-compute.VirtualMachineScaleSetVMs.beginStart_2
       - >-
         azure-arm-compute.VirtualMachineScaleSetVMs.beginStartWithHttpOperationResponse
       - azure-arm-compute.VirtualMachineScaleSetVMs.beginUpdate_1
-      - azure-arm-compute.VirtualMachineScaleSetVMs.beginUpdate_2
       - azure-arm-compute.VirtualMachineScaleSetVMs.beginUpdate
+      - azure-arm-compute.VirtualMachineScaleSetVMs.beginUpdate_2
       - >-
         azure-arm-compute.VirtualMachineScaleSetVMs.beginUpdateWithHttpOperationResponse
       - azure-arm-compute.VirtualMachineScaleSetVMs.deallocate
@@ -83,9 +88,9 @@ items:
         azure-arm-compute.VirtualMachineScaleSetVMs.listNextWithHttpOperationResponse
       - >-
         azure-arm-compute.VirtualMachineScaleSetVMs.listWithHttpOperationResponse
-      - azure-arm-compute.VirtualMachineScaleSetVMs.performMaintenance_1
-      - azure-arm-compute.VirtualMachineScaleSetVMs.performMaintenance_2
       - azure-arm-compute.VirtualMachineScaleSetVMs.performMaintenance
+      - azure-arm-compute.VirtualMachineScaleSetVMs.performMaintenance_2
+      - azure-arm-compute.VirtualMachineScaleSetVMs.performMaintenance_1
       - >-
         azure-arm-compute.VirtualMachineScaleSetVMs.performMaintenanceWithHttpOperationResponse
       - azure-arm-compute.VirtualMachineScaleSetVMs.powerOff
@@ -98,12 +103,12 @@ items:
       - azure-arm-compute.VirtualMachineScaleSetVMs.redeploy_2
       - >-
         azure-arm-compute.VirtualMachineScaleSetVMs.redeployWithHttpOperationResponse
+      - azure-arm-compute.VirtualMachineScaleSetVMs.reimage
       - azure-arm-compute.VirtualMachineScaleSetVMs.reimage_1
       - azure-arm-compute.VirtualMachineScaleSetVMs.reimage_2
-      - azure-arm-compute.VirtualMachineScaleSetVMs.reimage
-      - azure-arm-compute.VirtualMachineScaleSetVMs.reimageAll
       - azure-arm-compute.VirtualMachineScaleSetVMs.reimageAll_1
       - azure-arm-compute.VirtualMachineScaleSetVMs.reimageAll_2
+      - azure-arm-compute.VirtualMachineScaleSetVMs.reimageAll
       - >-
         azure-arm-compute.VirtualMachineScaleSetVMs.reimageAllWithHttpOperationResponse
       - >-
@@ -113,6 +118,11 @@ items:
       - azure-arm-compute.VirtualMachineScaleSetVMs.restart_2
       - >-
         azure-arm-compute.VirtualMachineScaleSetVMs.restartWithHttpOperationResponse
+      - azure-arm-compute.VirtualMachineScaleSetVMs.runCommand
+      - azure-arm-compute.VirtualMachineScaleSetVMs.runCommand_1
+      - azure-arm-compute.VirtualMachineScaleSetVMs.runCommand_2
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetVMs.runCommandWithHttpOperationResponse
       - azure-arm-compute.VirtualMachineScaleSetVMs.start
       - azure-arm-compute.VirtualMachineScaleSetVMs.start_1
       - azure-arm-compute.VirtualMachineScaleSetVMs.start_2
@@ -142,7 +152,7 @@ items:
     syntax:
       content: >-
         function beginDeallocate(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, options?: function)
+        string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -161,12 +171,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginDeallocate_1
     name: beginDeallocate
@@ -182,8 +192,7 @@ items:
     syntax:
       content: >-
         function beginDeallocate(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, callback:
-        ServiceCallback<OperationStatusResponse>)
+        string, instanceId: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -199,11 +208,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginDeallocate_2
     name: beginDeallocate
@@ -219,8 +228,8 @@ items:
     syntax:
       content: >-
         function beginDeallocate(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        string, instanceId: string, options: Object, callback:
+        ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -236,15 +245,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.beginDeallocateWithHttpOperationResponse
@@ -261,7 +270,7 @@ items:
     syntax:
       content: >-
         function beginDeallocateWithHttpOperationResponse(resourceGroupName:
-        string, vmScaleSetName: string, instanceId: string, options?: function)
+        string, vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -280,13 +289,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginDeleteMethod
     name: beginDeleteMethod
@@ -298,7 +306,7 @@ items:
     syntax:
       content: >-
         function beginDeleteMethod(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, options?: function)
+        string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -317,12 +325,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginDeleteMethod_1
     name: beginDeleteMethod
@@ -334,8 +342,7 @@ items:
     syntax:
       content: >-
         function beginDeleteMethod(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, callback:
-        ServiceCallback<OperationStatusResponse>)
+        string, instanceId: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -351,11 +358,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginDeleteMethod_2
     name: beginDeleteMethod
@@ -367,8 +374,8 @@ items:
     syntax:
       content: >-
         function beginDeleteMethod(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        string, instanceId: string, options: Object, callback:
+        ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -384,15 +391,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.beginDeleteMethodWithHttpOperationResponse
@@ -405,7 +412,7 @@ items:
     syntax:
       content: >-
         function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
-        string, vmScaleSetName: string, instanceId: string, options?: function)
+        string, vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -424,13 +431,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginPerformMaintenance_1
     name: beginPerformMaintenance
@@ -443,7 +449,7 @@ items:
       content: >-
         function beginPerformMaintenance(resourceGroupName: string,
         vmScaleSetName: string, instanceId: string, callback:
-        ServiceCallback<OperationStatusResponse>)
+        ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -459,11 +465,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginPerformMaintenance
     name: beginPerformMaintenance
@@ -475,7 +481,7 @@ items:
     syntax:
       content: >-
         function beginPerformMaintenance(resourceGroupName: string,
-        vmScaleSetName: string, instanceId: string, options?: function)
+        vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -494,12 +500,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginPerformMaintenance_2
     name: beginPerformMaintenance
@@ -511,8 +517,8 @@ items:
     syntax:
       content: >-
         function beginPerformMaintenance(resourceGroupName: string,
-        vmScaleSetName: string, instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        vmScaleSetName: string, instanceId: string, options: Object, callback:
+        ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -528,15 +534,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.beginPerformMaintenanceWithHttpOperationResponse
@@ -550,7 +556,7 @@ items:
       content: >-
         function
         beginPerformMaintenanceWithHttpOperationResponse(resourceGroupName:
-        string, vmScaleSetName: string, instanceId: string, options?: function)
+        string, vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -569,13 +575,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginPowerOff
     name: beginPowerOff
@@ -590,7 +595,7 @@ items:
     syntax:
       content: >-
         function beginPowerOff(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, options?: function)
+        string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -609,12 +614,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginPowerOff_1
     name: beginPowerOff
@@ -629,8 +634,7 @@ items:
     syntax:
       content: >-
         function beginPowerOff(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, callback:
-        ServiceCallback<OperationStatusResponse>)
+        string, instanceId: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -646,11 +650,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginPowerOff_2
     name: beginPowerOff
@@ -665,8 +669,8 @@ items:
     syntax:
       content: >-
         function beginPowerOff(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        string, instanceId: string, options: Object, callback:
+        ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -682,15 +686,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.beginPowerOffWithHttpOperationResponse
@@ -706,7 +710,7 @@ items:
     syntax:
       content: >-
         function beginPowerOffWithHttpOperationResponse(resourceGroupName:
-        string, vmScaleSetName: string, instanceId: string, options?: function)
+        string, vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -725,13 +729,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginRedeploy_2
     name: beginRedeploy
@@ -743,8 +746,8 @@ items:
     syntax:
       content: >-
         function beginRedeploy(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        string, instanceId: string, options: Object, callback:
+        ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -760,15 +763,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginRedeploy
     name: beginRedeploy
@@ -780,7 +783,7 @@ items:
     syntax:
       content: >-
         function beginRedeploy(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, options?: function)
+        string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -799,12 +802,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginRedeploy_1
     name: beginRedeploy
@@ -816,8 +819,7 @@ items:
     syntax:
       content: >-
         function beginRedeploy(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, callback:
-        ServiceCallback<OperationStatusResponse>)
+        string, instanceId: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -833,11 +835,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.beginRedeployWithHttpOperationResponse
@@ -850,7 +852,7 @@ items:
     syntax:
       content: >-
         function beginRedeployWithHttpOperationResponse(resourceGroupName:
-        string, vmScaleSetName: string, instanceId: string, options?: function)
+        string, vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -869,51 +871,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
-    package: azure-arm-compute
-  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginReimage
-    name: beginReimage
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: |-
-      Reimages (upgrade the operating system) a specific virtual machine in a VM
-      scale set.
-    syntax:
-      content: >-
-        function beginReimage(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options?: function)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: |
-            The name of the resource group.
-        - id: vmScaleSetName
-          type:
-            - string
-          description: |
-            The name of the VM scale set.
-        - id: instanceId
-          type:
-            - string
-          description: |
-            The instance ID of the virtual machine.
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginReimage_1
     name: beginReimage
@@ -927,7 +890,7 @@ items:
     syntax:
       content: >-
         function beginReimage(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, callback: ServiceCallback<OperationStatusResponse>)
+        instanceId: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -943,11 +906,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginReimage_2
     name: beginReimage
@@ -961,8 +924,7 @@ items:
     syntax:
       content: >-
         function beginReimage(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        instanceId: string, options: Object, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -978,103 +940,29 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
-  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginReimageAll_1
-    name: beginReimageAll
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginReimage
+    name: beginReimage
     children: []
     type: method
     langs:
       - typeScript
     summary: |-
-      Allows you to re-image all the disks ( including data disks ) in the a VM
-      scale set instance. This operation is only supported for managed disks.
+      Reimages (upgrade the operating system) a specific virtual machine in a VM
+      scale set.
     syntax:
       content: >-
-        function beginReimageAll(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, callback:
-        ServiceCallback<OperationStatusResponse>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: vmScaleSetName
-          type:
-            - string
-          description: ''
-        - id: instanceId
-          type:
-            - string
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
-          description: ''
-      return:
-        type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
-    package: azure-arm-compute
-  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginReimageAll_2
-    name: beginReimageAll
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: |-
-      Allows you to re-image all the disks ( including data disks ) in the a VM
-      scale set instance. This operation is only supported for managed disks.
-    syntax:
-      content: >-
-        function beginReimageAll(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: vmScaleSetName
-          type:
-            - string
-          description: ''
-        - id: instanceId
-          type:
-            - string
-          description: ''
-        - id: options
-          type:
-            - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
-          description: ''
-      return:
-        type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
-    package: azure-arm-compute
-  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginReimageAll
-    name: beginReimageAll
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: |-
-      Allows you to re-image all the disks ( including data disks ) in the a VM
-      scale set instance. This operation is only supported for managed disks.
-    syntax:
-      content: >-
-        function beginReimageAll(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, options?: function)
+        function beginReimage(resourceGroupName: string, vmScaleSetName: string,
+        instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1093,12 +981,123 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginReimageAll
+    name: beginReimageAll
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Allows you to re-image all the disks ( including data disks ) in the a VM
+      scale set instance. This operation is only supported for managed disks.
+    syntax:
+      content: >-
+        function beginReimageAll(resourceGroupName: string, vmScaleSetName:
+        string, instanceId: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmScaleSetName
+          type:
+            - string
+          description: |
+            The name of the VM scale set.
+        - id: instanceId
+          type:
+            - string
+          description: |
+            The instance ID of the virtual machine.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginReimageAll_1
+    name: beginReimageAll
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Allows you to re-image all the disks ( including data disks ) in the a VM
+      scale set instance. This operation is only supported for managed disks.
+    syntax:
+      content: >-
+        function beginReimageAll(resourceGroupName: string, vmScaleSetName:
+        string, instanceId: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmScaleSetName
+          type:
+            - string
+          description: ''
+        - id: instanceId
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginReimageAll_2
+    name: beginReimageAll
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Allows you to re-image all the disks ( including data disks ) in the a VM
+      scale set instance. This operation is only supported for managed disks.
+    syntax:
+      content: >-
+        function beginReimageAll(resourceGroupName: string, vmScaleSetName:
+        string, instanceId: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmScaleSetName
+          type:
+            - string
+          description: ''
+        - id: instanceId
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.beginReimageAllWithHttpOperationResponse
@@ -1113,7 +1112,7 @@ items:
     syntax:
       content: >-
         function beginReimageAllWithHttpOperationResponse(resourceGroupName:
-        string, vmScaleSetName: string, instanceId: string, options?: function)
+        string, vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1132,13 +1131,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.beginReimageWithHttpOperationResponse
@@ -1153,7 +1151,7 @@ items:
     syntax:
       content: >-
         function beginReimageWithHttpOperationResponse(resourceGroupName:
-        string, vmScaleSetName: string, instanceId: string, options?: function)
+        string, vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1172,13 +1170,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginRestart_1
     name: beginRestart
@@ -1190,7 +1187,7 @@ items:
     syntax:
       content: >-
         function beginRestart(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, callback: ServiceCallback<OperationStatusResponse>)
+        instanceId: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -1206,11 +1203,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginRestart
     name: beginRestart
@@ -1222,7 +1219,7 @@ items:
     syntax:
       content: >-
         function beginRestart(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options?: function)
+        instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1241,12 +1238,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginRestart_2
     name: beginRestart
@@ -1258,8 +1255,7 @@ items:
     syntax:
       content: >-
         function beginRestart(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        instanceId: string, options: Object, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -1275,15 +1271,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.beginRestartWithHttpOperationResponse
@@ -1296,7 +1292,7 @@ items:
     syntax:
       content: >-
         function beginRestartWithHttpOperationResponse(resourceGroupName:
-        string, vmScaleSetName: string, instanceId: string, options?: function)
+        string, vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1315,13 +1311,175 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginRunCommand
+    name: beginRunCommand
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Run command on a virtual machine in a VM scale set.
+    syntax:
+      content: >-
+        function beginRunCommand(resourceGroupName: string, vmScaleSetName:
+        string, instanceId: string, parameters: RunCommandInput, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmScaleSetName
+          type:
+            - string
+          description: |
+            The name of the VM scale set.
+        - id: instanceId
+          type:
+            - string
+          description: |
+            The instance ID of the virtual machine.
+        - id: parameters
+          type:
+            - azure-arm-compute.RunCommandInput
+          description: |
+            Parameters supplied to the Run command operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-compute.RunCommandResult>
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginRunCommand_2
+    name: beginRunCommand
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Run command on a virtual machine in a VM scale set.
+    syntax:
+      content: >-
+        function beginRunCommand(resourceGroupName: string, vmScaleSetName:
+        string, instanceId: string, parameters: RunCommandInput, options:
+        Object, callback: ServiceCallback<RunCommandResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmScaleSetName
+          type:
+            - string
+          description: ''
+        - id: instanceId
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-compute.RunCommandInput
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-compute.RunCommandResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute.RunCommandResult>
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginRunCommand_1
+    name: beginRunCommand
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Run command on a virtual machine in a VM scale set.
+    syntax:
+      content: >-
+        function beginRunCommand(resourceGroupName: string, vmScaleSetName:
+        string, instanceId: string, parameters: RunCommandInput, callback:
+        ServiceCallback<RunCommandResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmScaleSetName
+          type:
+            - string
+          description: ''
+        - id: instanceId
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-compute.RunCommandInput
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-compute.RunCommandResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute.RunCommandResult>
+    package: azure-arm-compute
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetVMs.beginRunCommandWithHttpOperationResponse
+    name: beginRunCommandWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Run command on a virtual machine in a VM scale set.
+    syntax:
+      content: >-
+        function beginRunCommandWithHttpOperationResponse(resourceGroupName:
+        string, vmScaleSetName: string, instanceId: string, parameters:
+        RunCommandInput, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmScaleSetName
+          type:
+            - string
+          description: |
+            The name of the VM scale set.
+        - id: instanceId
+          type:
+            - string
+          description: |
+            The instance ID of the virtual machine.
+        - id: parameters
+          type:
+            - azure-arm-compute.RunCommandInput
+          description: |
+            Parameters supplied to the Run command operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<azure-arm-compute.RunCommandResult>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginStart
     name: beginStart
@@ -1333,7 +1491,7 @@ items:
     syntax:
       content: >-
         function beginStart(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options?: function)
+        instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1352,12 +1510,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginStart_1
     name: beginStart
@@ -1369,7 +1527,7 @@ items:
     syntax:
       content: >-
         function beginStart(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, callback: ServiceCallback<OperationStatusResponse>)
+        instanceId: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -1385,11 +1543,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginStart_2
     name: beginStart
@@ -1401,8 +1559,7 @@ items:
     syntax:
       content: >-
         function beginStart(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        instanceId: string, options: Object, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -1418,15 +1575,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.beginStartWithHttpOperationResponse
@@ -1439,7 +1596,7 @@ items:
     syntax:
       content: >-
         function beginStartWithHttpOperationResponse(resourceGroupName: string,
-        vmScaleSetName: string, instanceId: string, options?: function)
+        vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1458,13 +1615,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginUpdate_1
     name: beginUpdate
@@ -1503,47 +1659,6 @@ items:
         type:
           - Promise<azure-arm-compute.VirtualMachineScaleSetVM>
     package: azure-arm-compute
-  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginUpdate_2
-    name: beginUpdate
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Updates a virtual machine of a VM scale set.
-    syntax:
-      content: >-
-        function beginUpdate(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, parameters: VirtualMachineScaleSetVM, options:
-        function, callback: ServiceCallback<VirtualMachineScaleSetVM>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: vmScaleSetName
-          type:
-            - string
-          description: ''
-        - id: instanceId
-          type:
-            - string
-          description: ''
-        - id: parameters
-          type:
-            - azure-arm-compute.VirtualMachineScaleSetVM
-          description: ''
-        - id: options
-          type:
-            - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<azure-arm-compute.VirtualMachineScaleSetVM>
-          description: ''
-      return:
-        type:
-          - Promise<azure-arm-compute.VirtualMachineScaleSetVM>
-    package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginUpdate
     name: beginUpdate
     children: []
@@ -1555,7 +1670,7 @@ items:
       content: >-
         function beginUpdate(resourceGroupName: string, vmScaleSetName: string,
         instanceId: string, parameters: VirtualMachineScaleSetVM, options?:
-        function)
+        Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1581,9 +1696,50 @@ items:
             Scale Sets VM operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
+      return:
+        type:
+          - Promise<azure-arm-compute.VirtualMachineScaleSetVM>
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.beginUpdate_2
+    name: beginUpdate
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a virtual machine of a VM scale set.
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, vmScaleSetName: string,
+        instanceId: string, parameters: VirtualMachineScaleSetVM, options:
+        Object, callback: ServiceCallback<VirtualMachineScaleSetVM>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmScaleSetName
+          type:
+            - string
+          description: ''
+        - id: instanceId
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-compute.VirtualMachineScaleSetVM
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-compute.VirtualMachineScaleSetVM>
+          description: ''
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineScaleSetVM>
@@ -1600,7 +1756,7 @@ items:
       content: >-
         function beginUpdateWithHttpOperationResponse(resourceGroupName: string,
         vmScaleSetName: string, instanceId: string, parameters:
-        VirtualMachineScaleSetVM, options?: function)
+        VirtualMachineScaleSetVM, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1626,7 +1782,7 @@ items:
             Scale Sets VM operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -1648,7 +1804,7 @@ items:
     syntax:
       content: >-
         function deallocate(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options?: function)
+        instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1667,12 +1823,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.deallocate_1
     name: deallocate
@@ -1688,7 +1844,7 @@ items:
     syntax:
       content: >-
         function deallocate(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, callback: ServiceCallback<OperationStatusResponse>)
+        instanceId: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -1704,11 +1860,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.deallocate_2
     name: deallocate
@@ -1724,8 +1880,7 @@ items:
     syntax:
       content: >-
         function deallocate(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        instanceId: string, options: Object, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -1741,15 +1896,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.deallocateWithHttpOperationResponse
@@ -1766,7 +1921,7 @@ items:
     syntax:
       content: >-
         function deallocateWithHttpOperationResponse(resourceGroupName: string,
-        vmScaleSetName: string, instanceId: string, options?: function)
+        vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1785,13 +1940,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.deleteMethod
     name: deleteMethod
@@ -1803,7 +1957,7 @@ items:
     syntax:
       content: >-
         function deleteMethod(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options?: function)
+        instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1822,12 +1976,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.deleteMethod_1
     name: deleteMethod
@@ -1839,7 +1993,7 @@ items:
     syntax:
       content: >-
         function deleteMethod(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, callback: ServiceCallback<OperationStatusResponse>)
+        instanceId: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -1855,11 +2009,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.deleteMethod_2
     name: deleteMethod
@@ -1871,8 +2025,7 @@ items:
     syntax:
       content: >-
         function deleteMethod(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        instanceId: string, options: Object, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -1888,15 +2041,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.deleteMethodWithHttpOperationResponse
@@ -1909,7 +2062,7 @@ items:
     syntax:
       content: >-
         function deleteMethodWithHttpOperationResponse(resourceGroupName:
-        string, vmScaleSetName: string, instanceId: string, options?: function)
+        string, vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1928,13 +2081,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.get
     name: get
@@ -1946,7 +2098,7 @@ items:
     syntax:
       content: >-
         function get(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options?: function)
+        instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1965,7 +2117,7 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2014,7 +2166,7 @@ items:
     syntax:
       content: >-
         function get(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options: function, callback:
+        instanceId: string, options: Object, callback:
         ServiceCallback<VirtualMachineScaleSetVM>)
       parameters:
         - id: resourceGroupName
@@ -2031,7 +2183,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -2051,7 +2203,7 @@ items:
     syntax:
       content: >-
         function getInstanceView(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, options?: function)
+        string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2070,7 +2222,7 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2121,7 +2273,7 @@ items:
     syntax:
       content: >-
         function getInstanceView(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, options: function, callback:
+        string, instanceId: string, options: Object, callback:
         ServiceCallback<VirtualMachineScaleSetVMInstanceView>)
       parameters:
         - id: resourceGroupName
@@ -2138,7 +2290,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -2160,7 +2312,7 @@ items:
     syntax:
       content: >-
         function getInstanceViewWithHttpOperationResponse(resourceGroupName:
-        string, vmScaleSetName: string, instanceId: string, options?: function)
+        string, vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2179,7 +2331,7 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2197,7 +2349,7 @@ items:
     syntax:
       content: >-
         function getWithHttpOperationResponse(resourceGroupName: string,
-        vmScaleSetName: string, instanceId: string, options?: function)
+        vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2216,7 +2368,7 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2263,7 +2415,7 @@ items:
     syntax:
       content: >-
         function list(resourceGroupName: string, virtualMachineScaleSetName:
-        string, options: function, callback:
+        string, options: Object, callback:
         ServiceCallback<VirtualMachineScaleSetVMListResult>)
       parameters:
         - id: resourceGroupName
@@ -2276,7 +2428,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -2297,7 +2449,7 @@ items:
     syntax:
       content: >-
         function list(resourceGroupName: string, virtualMachineScaleSetName:
-        string, options?: function)
+        string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2311,7 +2463,7 @@ items:
             The name of the VM scale set.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2326,7 +2478,7 @@ items:
       - typeScript
     summary: Gets a list of all virtual machines in a VM scale sets.
     syntax:
-      content: 'function listNext(nextPageLink: string, options?: function)'
+      content: 'function listNext(nextPageLink: string, options?: Object)'
       parameters:
         - id: nextPageLink
           type:
@@ -2336,7 +2488,7 @@ items:
             to List operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2377,7 +2529,7 @@ items:
     summary: Gets a list of all virtual machines in a VM scale sets.
     syntax:
       content: >-
-        function listNext(nextPageLink: string, options: function, callback:
+        function listNext(nextPageLink: string, options: Object, callback:
         ServiceCallback<VirtualMachineScaleSetVMListResult>)
       parameters:
         - id: nextPageLink
@@ -2386,7 +2538,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -2408,7 +2560,7 @@ items:
     syntax:
       content: >-
         function listNextWithHttpOperationResponse(nextPageLink: string,
-        options?: function)
+        options?: Object)
       parameters:
         - id: nextPageLink
           type:
@@ -2418,7 +2570,7 @@ items:
             to List operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2436,7 +2588,7 @@ items:
     syntax:
       content: >-
         function listWithHttpOperationResponse(resourceGroupName: string,
-        virtualMachineScaleSetName: string, options?: function)
+        virtualMachineScaleSetName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2450,83 +2602,13 @@ items:
             The name of the VM scale set.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineScaleSetVMListResult>>
-    package: azure-arm-compute
-  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.performMaintenance_1
-    name: performMaintenance
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Performs maintenance on a virtual machine in a VM scale set.
-    syntax:
-      content: >-
-        function performMaintenance(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, callback:
-        ServiceCallback<OperationStatusResponse>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: vmScaleSetName
-          type:
-            - string
-          description: ''
-        - id: instanceId
-          type:
-            - string
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
-          description: ''
-      return:
-        type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
-    package: azure-arm-compute
-  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.performMaintenance_2
-    name: performMaintenance
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Performs maintenance on a virtual machine in a VM scale set.
-    syntax:
-      content: >-
-        function performMaintenance(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: vmScaleSetName
-          type:
-            - string
-          description: ''
-        - id: instanceId
-          type:
-            - string
-          description: ''
-        - id: options
-          type:
-            - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
-          description: ''
-      return:
-        type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.performMaintenance
     name: performMaintenance
@@ -2538,7 +2620,7 @@ items:
     syntax:
       content: >-
         function performMaintenance(resourceGroupName: string, vmScaleSetName:
-        string, instanceId: string, options?: function)
+        string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2557,12 +2639,81 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.performMaintenance_2
+    name: performMaintenance
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Performs maintenance on a virtual machine in a VM scale set.
+    syntax:
+      content: >-
+        function performMaintenance(resourceGroupName: string, vmScaleSetName:
+        string, instanceId: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmScaleSetName
+          type:
+            - string
+          description: ''
+        - id: instanceId
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.performMaintenance_1
+    name: performMaintenance
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Performs maintenance on a virtual machine in a VM scale set.
+    syntax:
+      content: >-
+        function performMaintenance(resourceGroupName: string, vmScaleSetName:
+        string, instanceId: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmScaleSetName
+          type:
+            - string
+          description: ''
+        - id: instanceId
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.performMaintenanceWithHttpOperationResponse
@@ -2575,7 +2726,7 @@ items:
     syntax:
       content: >-
         function performMaintenanceWithHttpOperationResponse(resourceGroupName:
-        string, vmScaleSetName: string, instanceId: string, options?: function)
+        string, vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2594,13 +2745,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.powerOff
     name: powerOff
@@ -2615,7 +2765,7 @@ items:
     syntax:
       content: >-
         function powerOff(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options?: function)
+        instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2634,12 +2784,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.powerOff_1
     name: powerOff
@@ -2654,7 +2804,7 @@ items:
     syntax:
       content: >-
         function powerOff(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, callback: ServiceCallback<OperationStatusResponse>)
+        instanceId: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -2670,11 +2820,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.powerOff_2
     name: powerOff
@@ -2689,8 +2839,7 @@ items:
     syntax:
       content: >-
         function powerOff(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        instanceId: string, options: Object, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -2706,15 +2855,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.powerOffWithHttpOperationResponse
@@ -2730,7 +2879,7 @@ items:
     syntax:
       content: >-
         function powerOffWithHttpOperationResponse(resourceGroupName: string,
-        vmScaleSetName: string, instanceId: string, options?: function)
+        vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2749,13 +2898,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.redeploy
     name: redeploy
@@ -2767,7 +2915,7 @@ items:
     syntax:
       content: >-
         function redeploy(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options?: function)
+        instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2786,12 +2934,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.redeploy_1
     name: redeploy
@@ -2803,7 +2951,7 @@ items:
     syntax:
       content: >-
         function redeploy(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, callback: ServiceCallback<OperationStatusResponse>)
+        instanceId: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -2819,11 +2967,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.redeploy_2
     name: redeploy
@@ -2835,8 +2983,7 @@ items:
     syntax:
       content: >-
         function redeploy(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        instanceId: string, options: Object, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -2852,15 +2999,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.redeployWithHttpOperationResponse
@@ -2873,7 +3020,7 @@ items:
     syntax:
       content: >-
         function redeployWithHttpOperationResponse(resourceGroupName: string,
-        vmScaleSetName: string, instanceId: string, options?: function)
+        vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2892,86 +3039,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
-    package: azure-arm-compute
-  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.reimage_1
-    name: reimage
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: |-
-      Reimages (upgrade the operating system) a specific virtual machine in a VM
-      scale set.
-    syntax:
-      content: >-
-        function reimage(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, callback: ServiceCallback<OperationStatusResponse>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: vmScaleSetName
-          type:
-            - string
-          description: ''
-        - id: instanceId
-          type:
-            - string
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
-          description: ''
-      return:
-        type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
-    package: azure-arm-compute
-  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.reimage_2
-    name: reimage
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: |-
-      Reimages (upgrade the operating system) a specific virtual machine in a VM
-      scale set.
-    syntax:
-      content: >-
-        function reimage(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: vmScaleSetName
-          type:
-            - string
-          description: ''
-        - id: instanceId
-          type:
-            - string
-          description: ''
-        - id: options
-          type:
-            - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
-          description: ''
-      return:
-        type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.reimage
     name: reimage
@@ -2985,7 +3058,7 @@ items:
     syntax:
       content: >-
         function reimage(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options?: function)
+        instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3004,50 +3077,84 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
-  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.reimageAll
-    name: reimageAll
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.reimage_1
+    name: reimage
     children: []
     type: method
     langs:
       - typeScript
     summary: |-
-      Allows you to re-image all the disks ( including data disks ) in the a VM
-      scale set instance. This operation is only supported for managed disks.
+      Reimages (upgrade the operating system) a specific virtual machine in a VM
+      scale set.
     syntax:
       content: >-
-        function reimageAll(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options?: function)
+        function reimage(resourceGroupName: string, vmScaleSetName: string,
+        instanceId: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |
-            The name of the resource group.
+          description: ''
         - id: vmScaleSetName
           type:
             - string
-          description: |
-            The name of the VM scale set.
+          description: ''
         - id: instanceId
           type:
             - string
-          description: |
-            The instance ID of the virtual machine.
-        - id: options
-          type:
-            - function
           description: ''
-          optional: true
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.reimage_2
+    name: reimage
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Reimages (upgrade the operating system) a specific virtual machine in a VM
+      scale set.
+    syntax:
+      content: >-
+        function reimage(resourceGroupName: string, vmScaleSetName: string,
+        instanceId: string, options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmScaleSetName
+          type:
+            - string
+          description: ''
+        - id: instanceId
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.reimageAll_1
     name: reimageAll
@@ -3061,7 +3168,7 @@ items:
     syntax:
       content: >-
         function reimageAll(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, callback: ServiceCallback<OperationStatusResponse>)
+        instanceId: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -3077,11 +3184,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.reimageAll_2
     name: reimageAll
@@ -3095,8 +3202,7 @@ items:
     syntax:
       content: >-
         function reimageAll(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        instanceId: string, options: Object, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -3112,15 +3218,53 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.reimageAll
+    name: reimageAll
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Allows you to re-image all the disks ( including data disks ) in the a VM
+      scale set instance. This operation is only supported for managed disks.
+    syntax:
+      content: >-
+        function reimageAll(resourceGroupName: string, vmScaleSetName: string,
+        instanceId: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmScaleSetName
+          type:
+            - string
+          description: |
+            The name of the VM scale set.
+        - id: instanceId
+          type:
+            - string
+          description: |
+            The instance ID of the virtual machine.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.reimageAllWithHttpOperationResponse
@@ -3135,7 +3279,7 @@ items:
     syntax:
       content: >-
         function reimageAllWithHttpOperationResponse(resourceGroupName: string,
-        vmScaleSetName: string, instanceId: string, options?: function)
+        vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3154,13 +3298,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.reimageWithHttpOperationResponse
@@ -3175,7 +3318,7 @@ items:
     syntax:
       content: >-
         function reimageWithHttpOperationResponse(resourceGroupName: string,
-        vmScaleSetName: string, instanceId: string, options?: function)
+        vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3194,13 +3337,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.restart
     name: restart
@@ -3212,7 +3354,7 @@ items:
     syntax:
       content: >-
         function restart(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options?: function)
+        instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3231,12 +3373,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.restart_1
     name: restart
@@ -3248,7 +3390,7 @@ items:
     syntax:
       content: >-
         function restart(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, callback: ServiceCallback<OperationStatusResponse>)
+        instanceId: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -3264,11 +3406,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.restart_2
     name: restart
@@ -3280,8 +3422,7 @@ items:
     syntax:
       content: >-
         function restart(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        instanceId: string, options: Object, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -3297,15 +3438,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetVMs.restartWithHttpOperationResponse
@@ -3318,7 +3459,7 @@ items:
     syntax:
       content: >-
         function restartWithHttpOperationResponse(resourceGroupName: string,
-        vmScaleSetName: string, instanceId: string, options?: function)
+        vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3337,13 +3478,174 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.runCommand
+    name: runCommand
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Run command on a virtual machine in a VM scale set.
+    syntax:
+      content: >-
+        function runCommand(resourceGroupName: string, vmScaleSetName: string,
+        instanceId: string, parameters: RunCommandInput, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmScaleSetName
+          type:
+            - string
+          description: |
+            The name of the VM scale set.
+        - id: instanceId
+          type:
+            - string
+          description: |
+            The instance ID of the virtual machine.
+        - id: parameters
+          type:
+            - azure-arm-compute.RunCommandInput
+          description: |
+            Parameters supplied to the Run command operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-compute.RunCommandResult>
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.runCommand_1
+    name: runCommand
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Run command on a virtual machine in a VM scale set.
+    syntax:
+      content: >-
+        function runCommand(resourceGroupName: string, vmScaleSetName: string,
+        instanceId: string, parameters: RunCommandInput, callback:
+        ServiceCallback<RunCommandResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmScaleSetName
+          type:
+            - string
+          description: ''
+        - id: instanceId
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-compute.RunCommandInput
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-compute.RunCommandResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute.RunCommandResult>
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMs.runCommand_2
+    name: runCommand
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Run command on a virtual machine in a VM scale set.
+    syntax:
+      content: >-
+        function runCommand(resourceGroupName: string, vmScaleSetName: string,
+        instanceId: string, parameters: RunCommandInput, options: Object,
+        callback: ServiceCallback<RunCommandResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: vmScaleSetName
+          type:
+            - string
+          description: ''
+        - id: instanceId
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-compute.RunCommandInput
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-compute.RunCommandResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute.RunCommandResult>
+    package: azure-arm-compute
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetVMs.runCommandWithHttpOperationResponse
+    name: runCommandWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Run command on a virtual machine in a VM scale set.
+    syntax:
+      content: >-
+        function runCommandWithHttpOperationResponse(resourceGroupName: string,
+        vmScaleSetName: string, instanceId: string, parameters: RunCommandInput,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: vmScaleSetName
+          type:
+            - string
+          description: |
+            The name of the VM scale set.
+        - id: instanceId
+          type:
+            - string
+          description: |
+            The instance ID of the virtual machine.
+        - id: parameters
+          type:
+            - azure-arm-compute.RunCommandInput
+          description: |
+            Parameters supplied to the Run command operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<azure-arm-compute.RunCommandResult>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.start
     name: start
@@ -3355,7 +3657,7 @@ items:
     syntax:
       content: >-
         function start(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options?: function)
+        instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3374,12 +3676,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.start_1
     name: start
@@ -3391,7 +3693,7 @@ items:
     syntax:
       content: >-
         function start(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, callback: ServiceCallback<OperationStatusResponse>)
+        instanceId: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -3407,11 +3709,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.start_2
     name: start
@@ -3423,8 +3725,7 @@ items:
     syntax:
       content: >-
         function start(resourceGroupName: string, vmScaleSetName: string,
-        instanceId: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        instanceId: string, options: Object, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -3440,15 +3741,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.startWithHttpOperationResponse
     name: startWithHttpOperationResponse
@@ -3460,7 +3761,7 @@ items:
     syntax:
       content: >-
         function startWithHttpOperationResponse(resourceGroupName: string,
-        vmScaleSetName: string, instanceId: string, options?: function)
+        vmScaleSetName: string, instanceId: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3479,13 +3780,12 @@ items:
             The instance ID of the virtual machine.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVMs.update
     name: update
@@ -3498,7 +3798,7 @@ items:
       content: >-
         function update(resourceGroupName: string, vmScaleSetName: string,
         instanceId: string, parameters: VirtualMachineScaleSetVM, options?:
-        function)
+        Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3524,7 +3824,7 @@ items:
             Scale Sets VM operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -3579,7 +3879,7 @@ items:
       content: >-
         function update(resourceGroupName: string, vmScaleSetName: string,
         instanceId: string, parameters: VirtualMachineScaleSetVM, options:
-        function, callback: ServiceCallback<VirtualMachineScaleSetVM>)
+        Object, callback: ServiceCallback<VirtualMachineScaleSetVM>)
       parameters:
         - id: resourceGroupName
           type:
@@ -3599,7 +3899,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -3621,7 +3921,7 @@ items:
       content: >-
         function updateWithHttpOperationResponse(resourceGroupName: string,
         vmScaleSetName: string, instanceId: string, parameters:
-        VirtualMachineScaleSetVM, options?: function)
+        VirtualMachineScaleSetVM, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3647,7 +3947,7 @@ items:
             Scale Sets VM operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -3656,39 +3956,50 @@ items:
             Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineScaleSetVM>>
     package: azure-arm-compute
 references:
-  - uid: Promise<azure-arm-compute.OperationStatusResponse>
+  - uid: azure-arm-compute.RunCommandInput
+    name: RunCommandInput
+    spec.typeScript:
+      - name: RunCommandInput
+        fullName: RunCommandInput
+        uid: azure-arm-compute.RunCommandInput
+  - uid: Promise<azure-arm-compute.RunCommandResult>
+    name: RunCommandResult>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
-      - name: OperationStatusResponse
-        fullName: OperationStatusResponse
-        uid: azure-arm-compute.OperationStatusResponse
+      - name: RunCommandResult
+        fullName: RunCommandResult
+        uid: azure-arm-compute.RunCommandResult
       - name: '>'
         fullName: '>'
-  - uid: ServiceCallback<azure-arm-compute.OperationStatusResponse>
+  - uid: ServiceCallback<azure-arm-compute.RunCommandResult>
+    name: RunCommandResult>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
-      - name: OperationStatusResponse
-        fullName: OperationStatusResponse
-        uid: azure-arm-compute.OperationStatusResponse
+      - name: RunCommandResult
+        fullName: RunCommandResult
+        uid: azure-arm-compute.RunCommandResult
       - name: '>'
         fullName: '>'
-  - uid: Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+  - uid: Promise<HttpOperationResponse<azure-arm-compute.RunCommandResult>>
+    name: RunCommandResult>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
-      - name: OperationStatusResponse
-        fullName: OperationStatusResponse
-        uid: azure-arm-compute.OperationStatusResponse
+      - name: RunCommandResult
+        fullName: RunCommandResult
+        uid: azure-arm-compute.RunCommandResult
       - name: '>>'
         fullName: '>>'
   - uid: azure-arm-compute.VirtualMachineScaleSetVM
+    name: VirtualMachineScaleSetVM
     spec.typeScript:
       - name: VirtualMachineScaleSetVM
         fullName: VirtualMachineScaleSetVM
         uid: azure-arm-compute.VirtualMachineScaleSetVM
   - uid: Promise<azure-arm-compute.VirtualMachineScaleSetVM>
+    name: VirtualMachineScaleSetVM>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -3698,6 +4009,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-compute.VirtualMachineScaleSetVM>
+    name: VirtualMachineScaleSetVM>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -3707,6 +4019,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineScaleSetVM>>
+    name: VirtualMachineScaleSetVM>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
@@ -3716,6 +4029,7 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: Promise<azure-arm-compute.VirtualMachineScaleSetVMInstanceView>
+    name: VirtualMachineScaleSetVMInstanceView>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -3725,6 +4039,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-compute.VirtualMachineScaleSetVMInstanceView>
+    name: VirtualMachineScaleSetVMInstanceView>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -3735,6 +4050,7 @@ references:
         fullName: '>'
   - uid: >-
       Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineScaleSetVMInstanceView>>
+    name: VirtualMachineScaleSetVMInstanceView>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
@@ -3744,6 +4060,7 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: Promise<azure-arm-compute.VirtualMachineScaleSetVMListResult>
+    name: VirtualMachineScaleSetVMListResult>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -3753,6 +4070,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-compute.VirtualMachineScaleSetVMListResult>
+    name: VirtualMachineScaleSetVMListResult>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -3763,6 +4081,7 @@ references:
         fullName: '>'
   - uid: >-
       Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineScaleSetVMListResult>>
+    name: VirtualMachineScaleSetVMListResult>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<

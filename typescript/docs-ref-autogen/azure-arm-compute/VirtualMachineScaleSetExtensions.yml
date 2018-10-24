@@ -55,7 +55,7 @@ items:
       content: >-
         function beginCreateOrUpdate(resourceGroupName: string, vmScaleSetName:
         string, vmssExtensionName: string, extensionParameters:
-        VirtualMachineScaleSetExtension, options?: function)
+        VirtualMachineScaleSetExtension, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -81,7 +81,7 @@ items:
             scale set Extension operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -137,7 +137,7 @@ items:
       content: >-
         function beginCreateOrUpdate(resourceGroupName: string, vmScaleSetName:
         string, vmssExtensionName: string, extensionParameters:
-        VirtualMachineScaleSetExtension, options: function, callback:
+        VirtualMachineScaleSetExtension, options: Object, callback:
         ServiceCallback<VirtualMachineScaleSetExtension>)
       parameters:
         - id: resourceGroupName
@@ -158,7 +158,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -180,8 +180,7 @@ items:
       content: >-
         function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName:
         string, vmScaleSetName: string, vmssExtensionName: string,
-        extensionParameters: VirtualMachineScaleSetExtension, options?:
-        function)
+        extensionParameters: VirtualMachineScaleSetExtension, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -207,7 +206,7 @@ items:
             scale set Extension operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -225,7 +224,7 @@ items:
     syntax:
       content: >-
         function beginDeleteMethod(resourceGroupName: string, vmScaleSetName:
-        string, vmssExtensionName: string, options?: function)
+        string, vmssExtensionName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -245,12 +244,12 @@ items:
             The name of the VM scale set extension.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.beginDeleteMethod_1
     name: beginDeleteMethod
@@ -262,8 +261,7 @@ items:
     syntax:
       content: >-
         function beginDeleteMethod(resourceGroupName: string, vmScaleSetName:
-        string, vmssExtensionName: string, callback:
-        ServiceCallback<OperationStatusResponse>)
+        string, vmssExtensionName: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -279,11 +277,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.beginDeleteMethod_2
     name: beginDeleteMethod
@@ -295,8 +293,8 @@ items:
     syntax:
       content: >-
         function beginDeleteMethod(resourceGroupName: string, vmScaleSetName:
-        string, vmssExtensionName: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        string, vmssExtensionName: string, options: Object, callback:
+        ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -312,15 +310,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetExtensions.beginDeleteMethodWithHttpOperationResponse
@@ -334,7 +332,7 @@ items:
       content: >-
         function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
         string, vmScaleSetName: string, vmssExtensionName: string, options?:
-        function)
+        Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -354,13 +352,12 @@ items:
             The name of the VM scale set extension.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.createOrUpdate
     name: createOrUpdate
@@ -373,7 +370,7 @@ items:
       content: >-
         function createOrUpdate(resourceGroupName: string, vmScaleSetName:
         string, vmssExtensionName: string, extensionParameters:
-        VirtualMachineScaleSetExtension, options?: function)
+        VirtualMachineScaleSetExtension, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -399,7 +396,7 @@ items:
             scale set Extension operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -455,7 +452,7 @@ items:
       content: >-
         function createOrUpdate(resourceGroupName: string, vmScaleSetName:
         string, vmssExtensionName: string, extensionParameters:
-        VirtualMachineScaleSetExtension, options: function, callback:
+        VirtualMachineScaleSetExtension, options: Object, callback:
         ServiceCallback<VirtualMachineScaleSetExtension>)
       parameters:
         - id: resourceGroupName
@@ -476,7 +473,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -498,8 +495,7 @@ items:
       content: >-
         function createOrUpdateWithHttpOperationResponse(resourceGroupName:
         string, vmScaleSetName: string, vmssExtensionName: string,
-        extensionParameters: VirtualMachineScaleSetExtension, options?:
-        function)
+        extensionParameters: VirtualMachineScaleSetExtension, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -525,7 +521,7 @@ items:
             scale set Extension operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -543,7 +539,7 @@ items:
     syntax:
       content: >-
         function deleteMethod(resourceGroupName: string, vmScaleSetName: string,
-        vmssExtensionName: string, options?: function)
+        vmssExtensionName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -563,12 +559,12 @@ items:
             The name of the VM scale set extension.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.deleteMethod_1
     name: deleteMethod
@@ -580,8 +576,7 @@ items:
     syntax:
       content: >-
         function deleteMethod(resourceGroupName: string, vmScaleSetName: string,
-        vmssExtensionName: string, callback:
-        ServiceCallback<OperationStatusResponse>)
+        vmssExtensionName: string, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -597,11 +592,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.deleteMethod_2
     name: deleteMethod
@@ -613,8 +608,8 @@ items:
     syntax:
       content: >-
         function deleteMethod(resourceGroupName: string, vmScaleSetName: string,
-        vmssExtensionName: string, options: function, callback:
-        ServiceCallback<OperationStatusResponse>)
+        vmssExtensionName: string, options: Object, callback:
+        ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -630,15 +625,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineScaleSetExtensions.deleteMethodWithHttpOperationResponse
@@ -652,7 +647,7 @@ items:
       content: >-
         function deleteMethodWithHttpOperationResponse(resourceGroupName:
         string, vmScaleSetName: string, vmssExtensionName: string, options?:
-        function)
+        Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -672,13 +667,12 @@ items:
             The name of the VM scale set extension.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetExtensions.get_1
     name: get
@@ -723,7 +717,7 @@ items:
     syntax:
       content: >-
         function get(resourceGroupName: string, vmScaleSetName: string,
-        vmssExtensionName: string, options: function, callback:
+        vmssExtensionName: string, options: Object, callback:
         ServiceCallback<VirtualMachineScaleSetExtension>)
       parameters:
         - id: resourceGroupName
@@ -740,7 +734,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -760,7 +754,7 @@ items:
     syntax:
       content: >-
         function get(resourceGroupName: string, vmScaleSetName: string,
-        vmssExtensionName: string, options?: function)
+        vmssExtensionName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -780,7 +774,7 @@ items:
             The name of the VM scale set extension.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -798,7 +792,7 @@ items:
     syntax:
       content: >-
         function getWithHttpOperationResponse(resourceGroupName: string,
-        vmScaleSetName: string, vmssExtensionName: string, options?: function)
+        vmScaleSetName: string, vmssExtensionName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -818,7 +812,7 @@ items:
             The name of the VM scale set extension.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -836,7 +830,7 @@ items:
     syntax:
       content: >-
         function list(resourceGroupName: string, vmScaleSetName: string,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -851,7 +845,7 @@ items:
             extension.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -897,7 +891,7 @@ items:
     syntax:
       content: >-
         function list(resourceGroupName: string, vmScaleSetName: string,
-        options: function, callback:
+        options: Object, callback:
         ServiceCallback<VirtualMachineScaleSetExtensionListResult>)
       parameters:
         - id: resourceGroupName
@@ -910,7 +904,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -929,7 +923,7 @@ items:
       - typeScript
     summary: Gets a list of all extensions in a VM scale set.
     syntax:
-      content: 'function listNext(nextPageLink: string, options?: function)'
+      content: 'function listNext(nextPageLink: string, options?: Object)'
       parameters:
         - id: nextPageLink
           type:
@@ -939,7 +933,7 @@ items:
             to List operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -980,7 +974,7 @@ items:
     summary: Gets a list of all extensions in a VM scale set.
     syntax:
       content: >-
-        function listNext(nextPageLink: string, options: function, callback:
+        function listNext(nextPageLink: string, options: Object, callback:
         ServiceCallback<VirtualMachineScaleSetExtensionListResult>)
       parameters:
         - id: nextPageLink
@@ -989,7 +983,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -1011,7 +1005,7 @@ items:
     syntax:
       content: >-
         function listNextWithHttpOperationResponse(nextPageLink: string,
-        options?: function)
+        options?: Object)
       parameters:
         - id: nextPageLink
           type:
@@ -1021,7 +1015,7 @@ items:
             to List operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -1040,7 +1034,7 @@ items:
     syntax:
       content: >-
         function listWithHttpOperationResponse(resourceGroupName: string,
-        vmScaleSetName: string, options?: function)
+        vmScaleSetName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1055,7 +1049,7 @@ items:
             extension.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -1065,11 +1059,13 @@ items:
     package: azure-arm-compute
 references:
   - uid: azure-arm-compute.VirtualMachineScaleSetExtension
+    name: VirtualMachineScaleSetExtension
     spec.typeScript:
       - name: VirtualMachineScaleSetExtension
         fullName: VirtualMachineScaleSetExtension
         uid: azure-arm-compute.VirtualMachineScaleSetExtension
   - uid: Promise<azure-arm-compute.VirtualMachineScaleSetExtension>
+    name: VirtualMachineScaleSetExtension>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -1079,6 +1075,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-compute.VirtualMachineScaleSetExtension>
+    name: VirtualMachineScaleSetExtension>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -1089,6 +1086,7 @@ references:
         fullName: '>'
   - uid: >-
       Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineScaleSetExtension>>
+    name: VirtualMachineScaleSetExtension>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
@@ -1097,34 +1095,8 @@ references:
         uid: azure-arm-compute.VirtualMachineScaleSetExtension
       - name: '>>'
         fullName: '>>'
-  - uid: Promise<azure-arm-compute.OperationStatusResponse>
-    spec.typeScript:
-      - name: Promise<
-        fullName: Promise<
-      - name: OperationStatusResponse
-        fullName: OperationStatusResponse
-        uid: azure-arm-compute.OperationStatusResponse
-      - name: '>'
-        fullName: '>'
-  - uid: ServiceCallback<azure-arm-compute.OperationStatusResponse>
-    spec.typeScript:
-      - name: ServiceCallback<
-        fullName: ServiceCallback<
-      - name: OperationStatusResponse
-        fullName: OperationStatusResponse
-        uid: azure-arm-compute.OperationStatusResponse
-      - name: '>'
-        fullName: '>'
-  - uid: Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
-    spec.typeScript:
-      - name: Promise<HttpOperationResponse<
-        fullName: Promise<HttpOperationResponse<
-      - name: OperationStatusResponse
-        fullName: OperationStatusResponse
-        uid: azure-arm-compute.OperationStatusResponse
-      - name: '>>'
-        fullName: '>>'
   - uid: Promise<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
+    name: VirtualMachineScaleSetExtensionListResult>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -1135,6 +1107,7 @@ references:
         fullName: '>'
   - uid: >-
       ServiceCallback<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>
+    name: VirtualMachineScaleSetExtensionListResult>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -1145,6 +1118,7 @@ references:
         fullName: '>'
   - uid: >-
       Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineScaleSetExtensionListResult>>
+    name: VirtualMachineScaleSetExtensionListResult>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<

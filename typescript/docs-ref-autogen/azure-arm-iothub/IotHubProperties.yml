@@ -93,10 +93,10 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'eventHubEndpoints?: function'
+      content: 'eventHubEndpoints?: [key: string]: EventHubProperties'
       return:
         type:
-          - function
+          - '[key: string]: azure-arm-iothub.EventHubProperties'
     package: azure-arm-iothub
   - uid: azure-arm-iothub.IotHubProperties.features
     name: features
@@ -153,10 +153,10 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'messagingEndpoints?: function'
+      content: 'messagingEndpoints?: [key: string]: MessagingEndpointProperties'
       return:
         type:
-          - function
+          - '[key: string]: azure-arm-iothub.MessagingEndpointProperties'
     package: azure-arm-iothub
   - uid: azure-arm-iothub.IotHubProperties.operationsMonitoringProperties
     name: operationsMonitoringProperties
@@ -228,13 +228,14 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'storageEndpoints?: function'
+      content: 'storageEndpoints?: [key: string]: StorageEndpointProperties'
       return:
         type:
-          - function
+          - '[key: string]: azure-arm-iothub.StorageEndpointProperties'
     package: azure-arm-iothub
 references:
   - uid: 'azure-arm-iothub.SharedAccessSignatureAuthorizationRule[]'
+    name: 'SharedAccessSignatureAuthorizationRule[]'
     spec.typeScript:
       - name: SharedAccessSignatureAuthorizationRule
         fullName: SharedAccessSignatureAuthorizationRule
@@ -242,24 +243,52 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: azure-arm-iothub.CloudToDeviceProperties
+    name: CloudToDeviceProperties
     spec.typeScript:
       - name: CloudToDeviceProperties
         fullName: CloudToDeviceProperties
         uid: azure-arm-iothub.CloudToDeviceProperties
+  - uid: '[key: string]: azure-arm-iothub.EventHubProperties'
+    name: EventHubProperties
+    spec.typeScript:
+      - name: '[key: string]: '
+        fullName: '[key: string]: '
+      - name: EventHubProperties
+        fullName: EventHubProperties
+        uid: azure-arm-iothub.EventHubProperties
   - uid: 'azure-arm-iothub.IpFilterRule[]'
+    name: 'IpFilterRule[]'
     spec.typeScript:
       - name: IpFilterRule
         fullName: IpFilterRule
         uid: azure-arm-iothub.IpFilterRule
       - name: '[]'
         fullName: '[]'
+  - uid: '[key: string]: azure-arm-iothub.MessagingEndpointProperties'
+    name: MessagingEndpointProperties
+    spec.typeScript:
+      - name: '[key: string]: '
+        fullName: '[key: string]: '
+      - name: MessagingEndpointProperties
+        fullName: MessagingEndpointProperties
+        uid: azure-arm-iothub.MessagingEndpointProperties
   - uid: azure-arm-iothub.OperationsMonitoringProperties
+    name: OperationsMonitoringProperties
     spec.typeScript:
       - name: OperationsMonitoringProperties
         fullName: OperationsMonitoringProperties
         uid: azure-arm-iothub.OperationsMonitoringProperties
   - uid: azure-arm-iothub.RoutingProperties
+    name: RoutingProperties
     spec.typeScript:
       - name: RoutingProperties
         fullName: RoutingProperties
         uid: azure-arm-iothub.RoutingProperties
+  - uid: '[key: string]: azure-arm-iothub.StorageEndpointProperties'
+    name: StorageEndpointProperties
+    spec.typeScript:
+      - name: '[key: string]: '
+        fullName: '[key: string]: '
+      - name: StorageEndpointProperties
+        fullName: StorageEndpointProperties
+        uid: azure-arm-iothub.StorageEndpointProperties

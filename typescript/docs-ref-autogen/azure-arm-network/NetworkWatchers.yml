@@ -15,26 +15,33 @@ items:
       - >-
         azure-arm-network.NetworkWatchers.beginDeleteMethodWithHttpOperationResponse
       - azure-arm-network.NetworkWatchers.beginGetAzureReachabilityReport_1
-      - azure-arm-network.NetworkWatchers.beginGetAzureReachabilityReport
       - azure-arm-network.NetworkWatchers.beginGetAzureReachabilityReport_2
+      - azure-arm-network.NetworkWatchers.beginGetAzureReachabilityReport
       - >-
         azure-arm-network.NetworkWatchers.beginGetAzureReachabilityReportWithHttpOperationResponse
-      - azure-arm-network.NetworkWatchers.beginGetFlowLogStatus
-      - azure-arm-network.NetworkWatchers.beginGetFlowLogStatus_1
       - azure-arm-network.NetworkWatchers.beginGetFlowLogStatus_2
+      - azure-arm-network.NetworkWatchers.beginGetFlowLogStatus_1
+      - azure-arm-network.NetworkWatchers.beginGetFlowLogStatus
       - >-
         azure-arm-network.NetworkWatchers.beginGetFlowLogStatusWithHttpOperationResponse
+      - >-
+        azure-arm-network.NetworkWatchers.beginGetNetworkConfigurationDiagnostic_1
+      - >-
+        azure-arm-network.NetworkWatchers.beginGetNetworkConfigurationDiagnostic_2
+      - azure-arm-network.NetworkWatchers.beginGetNetworkConfigurationDiagnostic
+      - >-
+        azure-arm-network.NetworkWatchers.beginGetNetworkConfigurationDiagnosticWithHttpOperationResponse
       - azure-arm-network.NetworkWatchers.beginGetNextHop_2
-      - azure-arm-network.NetworkWatchers.beginGetNextHop
       - azure-arm-network.NetworkWatchers.beginGetNextHop_1
+      - azure-arm-network.NetworkWatchers.beginGetNextHop
       - >-
         azure-arm-network.NetworkWatchers.beginGetNextHopWithHttpOperationResponse
       - azure-arm-network.NetworkWatchers.beginGetTroubleshooting_1
       - azure-arm-network.NetworkWatchers.beginGetTroubleshooting_2
       - azure-arm-network.NetworkWatchers.beginGetTroubleshooting
-      - azure-arm-network.NetworkWatchers.beginGetTroubleshootingResult
       - azure-arm-network.NetworkWatchers.beginGetTroubleshootingResult_1
       - azure-arm-network.NetworkWatchers.beginGetTroubleshootingResult_2
+      - azure-arm-network.NetworkWatchers.beginGetTroubleshootingResult
       - >-
         azure-arm-network.NetworkWatchers.beginGetTroubleshootingResultWithHttpOperationResponse
       - >-
@@ -44,9 +51,9 @@ items:
       - azure-arm-network.NetworkWatchers.beginGetVMSecurityRules_2
       - >-
         azure-arm-network.NetworkWatchers.beginGetVMSecurityRulesWithHttpOperationResponse
+      - azure-arm-network.NetworkWatchers.beginListAvailableProviders
       - azure-arm-network.NetworkWatchers.beginListAvailableProviders_1
       - azure-arm-network.NetworkWatchers.beginListAvailableProviders_2
-      - azure-arm-network.NetworkWatchers.beginListAvailableProviders
       - >-
         azure-arm-network.NetworkWatchers.beginListAvailableProvidersWithHttpOperationResponse
       - azure-arm-network.NetworkWatchers.beginSetFlowLogConfiguration_1
@@ -54,14 +61,14 @@ items:
       - azure-arm-network.NetworkWatchers.beginSetFlowLogConfiguration
       - >-
         azure-arm-network.NetworkWatchers.beginSetFlowLogConfigurationWithHttpOperationResponse
+      - azure-arm-network.NetworkWatchers.beginVerifyIPFlow
       - azure-arm-network.NetworkWatchers.beginVerifyIPFlow_1
       - azure-arm-network.NetworkWatchers.beginVerifyIPFlow_2
-      - azure-arm-network.NetworkWatchers.beginVerifyIPFlow
       - >-
         azure-arm-network.NetworkWatchers.beginVerifyIPFlowWithHttpOperationResponse
+      - azure-arm-network.NetworkWatchers.checkConnectivity_1
       - azure-arm-network.NetworkWatchers.checkConnectivity
       - azure-arm-network.NetworkWatchers.checkConnectivity_2
-      - azure-arm-network.NetworkWatchers.checkConnectivity_1
       - >-
         azure-arm-network.NetworkWatchers.checkConnectivityWithHttpOperationResponse
       - azure-arm-network.NetworkWatchers.createOrUpdate
@@ -82,10 +89,15 @@ items:
       - >-
         azure-arm-network.NetworkWatchers.getAzureReachabilityReportWithHttpOperationResponse
       - azure-arm-network.NetworkWatchers.getFlowLogStatus
-      - azure-arm-network.NetworkWatchers.getFlowLogStatus_2
       - azure-arm-network.NetworkWatchers.getFlowLogStatus_1
+      - azure-arm-network.NetworkWatchers.getFlowLogStatus_2
       - >-
         azure-arm-network.NetworkWatchers.getFlowLogStatusWithHttpOperationResponse
+      - azure-arm-network.NetworkWatchers.getNetworkConfigurationDiagnostic_1
+      - azure-arm-network.NetworkWatchers.getNetworkConfigurationDiagnostic_2
+      - azure-arm-network.NetworkWatchers.getNetworkConfigurationDiagnostic
+      - >-
+        azure-arm-network.NetworkWatchers.getNetworkConfigurationDiagnosticWithHttpOperationResponse
       - azure-arm-network.NetworkWatchers.getNextHop
       - azure-arm-network.NetworkWatchers.getNextHop_1
       - azure-arm-network.NetworkWatchers.getNextHop_2
@@ -97,9 +109,9 @@ items:
       - azure-arm-network.NetworkWatchers.getTroubleshooting
       - azure-arm-network.NetworkWatchers.getTroubleshooting_1
       - azure-arm-network.NetworkWatchers.getTroubleshooting_2
-      - azure-arm-network.NetworkWatchers.getTroubleshootingResult
       - azure-arm-network.NetworkWatchers.getTroubleshootingResult_1
       - azure-arm-network.NetworkWatchers.getTroubleshootingResult_2
+      - azure-arm-network.NetworkWatchers.getTroubleshootingResult
       - >-
         azure-arm-network.NetworkWatchers.getTroubleshootingResultWithHttpOperationResponse
       - >-
@@ -155,7 +167,7 @@ items:
       content: >-
         function beginCheckConnectivity(resourceGroupName: string,
         networkWatcherName: string, parameters: ConnectivityParameters,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -176,7 +188,7 @@ items:
             check will be performed.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -233,7 +245,7 @@ items:
       content: >-
         function beginCheckConnectivity(resourceGroupName: string,
         networkWatcherName: string, parameters: ConnectivityParameters, options:
-        function, callback: ServiceCallback<ConnectivityInformation>)
+        Object, callback: ServiceCallback<ConnectivityInformation>)
       parameters:
         - id: resourceGroupName
           type:
@@ -249,7 +261,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -275,7 +287,7 @@ items:
         function
         beginCheckConnectivityWithHttpOperationResponse(resourceGroupName:
         string, networkWatcherName: string, parameters: ConnectivityParameters,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -296,7 +308,7 @@ items:
             check will be performed.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -314,7 +326,7 @@ items:
     syntax:
       content: >-
         function beginDeleteMethod(resourceGroupName: string,
-        networkWatcherName: string, options?: function)
+        networkWatcherName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -328,7 +340,7 @@ items:
             The name of the network watcher.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -373,7 +385,7 @@ items:
     syntax:
       content: >-
         function beginDeleteMethod(resourceGroupName: string,
-        networkWatcherName: string, options: function, callback:
+        networkWatcherName: string, options: Object, callback:
         ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
@@ -386,7 +398,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -407,7 +419,7 @@ items:
     syntax:
       content: >-
         function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
-        string, networkWatcherName: string, options?: function)
+        string, networkWatcherName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -421,7 +433,7 @@ items:
             The name of the network watcher.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -464,6 +476,46 @@ items:
         type:
           - Promise<azure-arm-network.AzureReachabilityReport>
     package: azure-arm-network
+  - uid: azure-arm-network.NetworkWatchers.beginGetAzureReachabilityReport_2
+    name: beginGetAzureReachabilityReport
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets the relative latency score for internet service providers from a
+      specified location to Azure regions.
+    syntax:
+      content: >-
+        function beginGetAzureReachabilityReport(resourceGroupName: string,
+        networkWatcherName: string, parameters:
+        AzureReachabilityReportParameters, options: Object, callback:
+        ServiceCallback<AzureReachabilityReport>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network.AzureReachabilityReportParameters
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network.AzureReachabilityReport>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network.AzureReachabilityReport>
+    package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetAzureReachabilityReport
     name: beginGetAzureReachabilityReport
     children: []
@@ -477,7 +529,7 @@ items:
       content: >-
         function beginGetAzureReachabilityReport(resourceGroupName: string,
         networkWatcherName: string, parameters:
-        AzureReachabilityReportParameters, options?: function)
+        AzureReachabilityReportParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -498,49 +550,9 @@ items:
             report configuration.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
-      return:
-        type:
-          - Promise<azure-arm-network.AzureReachabilityReport>
-    package: azure-arm-network
-  - uid: azure-arm-network.NetworkWatchers.beginGetAzureReachabilityReport_2
-    name: beginGetAzureReachabilityReport
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: |-
-      Gets the relative latency score for internet service providers from a
-      specified location to Azure regions.
-    syntax:
-      content: >-
-        function beginGetAzureReachabilityReport(resourceGroupName: string,
-        networkWatcherName: string, parameters:
-        AzureReachabilityReportParameters, options: function, callback:
-        ServiceCallback<AzureReachabilityReport>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: networkWatcherName
-          type:
-            - string
-          description: ''
-        - id: parameters
-          type:
-            - azure-arm-network.AzureReachabilityReportParameters
-          description: ''
-        - id: options
-          type:
-            - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<azure-arm-network.AzureReachabilityReport>
-          description: ''
       return:
         type:
           - Promise<azure-arm-network.AzureReachabilityReport>
@@ -560,7 +572,7 @@ items:
         function
         beginGetAzureReachabilityReportWithHttpOperationResponse(resourceGroupName:
         string, networkWatcherName: string, parameters:
-        AzureReachabilityReportParameters, options?: function)
+        AzureReachabilityReportParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -581,7 +593,7 @@ items:
             report configuration.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -589,41 +601,41 @@ items:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.AzureReachabilityReport>>
     package: azure-arm-network
-  - uid: azure-arm-network.NetworkWatchers.beginGetFlowLogStatus
+  - uid: azure-arm-network.NetworkWatchers.beginGetFlowLogStatus_2
     name: beginGetFlowLogStatus
     children: []
     type: method
     langs:
       - typeScript
-    summary: Queries status of flow log on a specified resource.
+    summary: |-
+      Queries status of flow log and traffic analytics (optional) on a specified
+      resource.
     syntax:
       content: >-
         function beginGetFlowLogStatus(resourceGroupName: string,
         networkWatcherName: string, parameters: FlowLogStatusParameters,
-        options?: function)
+        options: Object, callback: ServiceCallback<FlowLogInformation>)
       parameters:
         - id: resourceGroupName
           type:
             - string
-          description: |
-            The name of the network watcher resource
-            group.
+          description: ''
         - id: networkWatcherName
           type:
             - string
-          description: |
-            The name of the network watcher resource.
+          description: ''
         - id: parameters
           type:
             - azure-arm-network.FlowLogStatusParameters
-          description: |
-            Parameters that define a resource to query flow
-            log status.
+          description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
-          optional: true
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network.FlowLogInformation>
+          description: ''
       return:
         type:
           - Promise<azure-arm-network.FlowLogInformation>
@@ -634,7 +646,9 @@ items:
     type: method
     langs:
       - typeScript
-    summary: Queries status of flow log on a specified resource.
+    summary: |-
+      Queries status of flow log and traffic analytics (optional) on a specified
+      resource.
     syntax:
       content: >-
         function beginGetFlowLogStatus(resourceGroupName: string,
@@ -661,57 +675,20 @@ items:
         type:
           - Promise<azure-arm-network.FlowLogInformation>
     package: azure-arm-network
-  - uid: azure-arm-network.NetworkWatchers.beginGetFlowLogStatus_2
+  - uid: azure-arm-network.NetworkWatchers.beginGetFlowLogStatus
     name: beginGetFlowLogStatus
     children: []
     type: method
     langs:
       - typeScript
-    summary: Queries status of flow log on a specified resource.
+    summary: |-
+      Queries status of flow log and traffic analytics (optional) on a specified
+      resource.
     syntax:
       content: >-
         function beginGetFlowLogStatus(resourceGroupName: string,
         networkWatcherName: string, parameters: FlowLogStatusParameters,
-        options: function, callback: ServiceCallback<FlowLogInformation>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: networkWatcherName
-          type:
-            - string
-          description: ''
-        - id: parameters
-          type:
-            - azure-arm-network.FlowLogStatusParameters
-          description: ''
-        - id: options
-          type:
-            - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<azure-arm-network.FlowLogInformation>
-          description: ''
-      return:
-        type:
-          - Promise<azure-arm-network.FlowLogInformation>
-    package: azure-arm-network
-  - uid: >-
-      azure-arm-network.NetworkWatchers.beginGetFlowLogStatusWithHttpOperationResponse
-    name: beginGetFlowLogStatusWithHttpOperationResponse
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Queries status of flow log on a specified resource.
-    syntax:
-      content: >-
-        function
-        beginGetFlowLogStatusWithHttpOperationResponse(resourceGroupName:
-        string, networkWatcherName: string, parameters: FlowLogStatusParameters,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -729,15 +706,211 @@ items:
             - azure-arm-network.FlowLogStatusParameters
           description: |
             Parameters that define a resource to query flow
-            log status.
+            log and traffic analytics (optional)  status.
         - id: options
           type:
-            - function
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network.FlowLogInformation>
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.NetworkWatchers.beginGetFlowLogStatusWithHttpOperationResponse
+    name: beginGetFlowLogStatusWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Queries status of flow log and traffic analytics (optional) on a specified
+      resource.
+    syntax:
+      content: >-
+        function
+        beginGetFlowLogStatusWithHttpOperationResponse(resourceGroupName:
+        string, networkWatcherName: string, parameters: FlowLogStatusParameters,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the network watcher resource
+            group.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the network watcher resource.
+        - id: parameters
+          type:
+            - azure-arm-network.FlowLogStatusParameters
+          description: |
+            Parameters that define a resource to query flow
+            log and traffic analytics (optional)  status.
+        - id: options
+          type:
+            - Object
           description: ''
           optional: true
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.FlowLogInformation>>
+    package: azure-arm-network
+  - uid: azure-arm-network.NetworkWatchers.beginGetNetworkConfigurationDiagnostic_1
+    name: beginGetNetworkConfigurationDiagnostic
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get network configuration diagnostic.
+    syntax:
+      content: >-
+        function beginGetNetworkConfigurationDiagnostic(resourceGroupName:
+        string, networkWatcherName: string, parameters:
+        NetworkConfigurationDiagnosticParameters, callback:
+        ServiceCallback<NetworkConfigurationDiagnosticResponse>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network.NetworkConfigurationDiagnosticParameters
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+    package: azure-arm-network
+  - uid: azure-arm-network.NetworkWatchers.beginGetNetworkConfigurationDiagnostic_2
+    name: beginGetNetworkConfigurationDiagnostic
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get network configuration diagnostic.
+    syntax:
+      content: >-
+        function beginGetNetworkConfigurationDiagnostic(resourceGroupName:
+        string, networkWatcherName: string, parameters:
+        NetworkConfigurationDiagnosticParameters, options: Object, callback:
+        ServiceCallback<NetworkConfigurationDiagnosticResponse>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network.NetworkConfigurationDiagnosticParameters
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+    package: azure-arm-network
+  - uid: azure-arm-network.NetworkWatchers.beginGetNetworkConfigurationDiagnostic
+    name: beginGetNetworkConfigurationDiagnostic
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get network configuration diagnostic.
+    syntax:
+      content: >-
+        function beginGetNetworkConfigurationDiagnostic(resourceGroupName:
+        string, networkWatcherName: string, parameters:
+        NetworkConfigurationDiagnosticParameters, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the network watcher.
+        - id: parameters
+          type:
+            - azure-arm-network.NetworkConfigurationDiagnosticParameters
+          description: |
+            Parameters to get network configuration
+            diagnostic.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.NetworkWatchers.beginGetNetworkConfigurationDiagnosticWithHttpOperationResponse
+    name: beginGetNetworkConfigurationDiagnosticWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get network configuration diagnostic.
+    syntax:
+      content: >-
+        function
+        beginGetNetworkConfigurationDiagnosticWithHttpOperationResponse(resourceGroupName:
+        string, networkWatcherName: string, parameters:
+        NetworkConfigurationDiagnosticParameters, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the network watcher.
+        - id: parameters
+          type:
+            - azure-arm-network.NetworkConfigurationDiagnosticParameters
+          description: |
+            Parameters to get network configuration
+            diagnostic.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkConfigurationDiagnosticResponse>>
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetNextHop_2
     name: beginGetNextHop
@@ -749,7 +922,7 @@ items:
     syntax:
       content: >-
         function beginGetNextHop(resourceGroupName: string, networkWatcherName:
-        string, parameters: NextHopParameters, options: function, callback:
+        string, parameters: NextHopParameters, options: Object, callback:
         ServiceCallback<NextHopResult>)
       parameters:
         - id: resourceGroupName
@@ -766,49 +939,12 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
             - ServiceCallback<azure-arm-network.NextHopResult>
           description: ''
-      return:
-        type:
-          - Promise<azure-arm-network.NextHopResult>
-    package: azure-arm-network
-  - uid: azure-arm-network.NetworkWatchers.beginGetNextHop
-    name: beginGetNextHop
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Gets the next hop from the specified VM.
-    syntax:
-      content: >-
-        function beginGetNextHop(resourceGroupName: string, networkWatcherName:
-        string, parameters: NextHopParameters, options?: function)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: |
-            The name of the resource group.
-        - id: networkWatcherName
-          type:
-            - string
-          description: |
-            The name of the network watcher.
-        - id: parameters
-          type:
-            - azure-arm-network.NextHopParameters
-          description: |
-            Parameters that define the source and destination
-            endpoint.
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
       return:
         type:
           - Promise<azure-arm-network.NextHopResult>
@@ -846,8 +982,8 @@ items:
         type:
           - Promise<azure-arm-network.NextHopResult>
     package: azure-arm-network
-  - uid: azure-arm-network.NetworkWatchers.beginGetNextHopWithHttpOperationResponse
-    name: beginGetNextHopWithHttpOperationResponse
+  - uid: azure-arm-network.NetworkWatchers.beginGetNextHop
+    name: beginGetNextHop
     children: []
     type: method
     langs:
@@ -855,9 +991,8 @@ items:
     summary: Gets the next hop from the specified VM.
     syntax:
       content: >-
-        function beginGetNextHopWithHttpOperationResponse(resourceGroupName:
-        string, networkWatcherName: string, parameters: NextHopParameters,
-        options?: function)
+        function beginGetNextHop(resourceGroupName: string, networkWatcherName:
+        string, parameters: NextHopParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -877,7 +1012,45 @@ items:
             endpoint.
         - id: options
           type:
-            - function
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network.NextHopResult>
+    package: azure-arm-network
+  - uid: azure-arm-network.NetworkWatchers.beginGetNextHopWithHttpOperationResponse
+    name: beginGetNextHopWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the next hop from the specified VM.
+    syntax:
+      content: >-
+        function beginGetNextHopWithHttpOperationResponse(resourceGroupName:
+        string, networkWatcherName: string, parameters: NextHopParameters,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the network watcher.
+        - id: parameters
+          type:
+            - azure-arm-network.NextHopParameters
+          description: |
+            Parameters that define the source and destination
+            endpoint.
+        - id: options
+          type:
+            - Object
           description: ''
           optional: true
       return:
@@ -928,7 +1101,7 @@ items:
       content: >-
         function beginGetTroubleshooting(resourceGroupName: string,
         networkWatcherName: string, parameters: TroubleshootingParameters,
-        options: function, callback: ServiceCallback<TroubleshootingResult>)
+        options: Object, callback: ServiceCallback<TroubleshootingResult>)
       parameters:
         - id: resourceGroupName
           type:
@@ -944,7 +1117,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -965,7 +1138,7 @@ items:
       content: >-
         function beginGetTroubleshooting(resourceGroupName: string,
         networkWatcherName: string, parameters: TroubleshootingParameters,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -985,45 +1158,7 @@ items:
             troubleshoot.
         - id: options
           type:
-            - function
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<azure-arm-network.TroubleshootingResult>
-    package: azure-arm-network
-  - uid: azure-arm-network.NetworkWatchers.beginGetTroubleshootingResult
-    name: beginGetTroubleshootingResult
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Get the last completed troubleshooting result on a specified resource
-    syntax:
-      content: >-
-        function beginGetTroubleshootingResult(resourceGroupName: string,
-        networkWatcherName: string, parameters: QueryTroubleshootingParameters,
-        options?: function)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: |
-            The name of the resource group.
-        - id: networkWatcherName
-          type:
-            - string
-          description: |
-            The name of the network watcher resource.
-        - id: parameters
-          type:
-            - azure-arm-network.QueryTroubleshootingParameters
-          description: |
-            Parameters that define the resource to query the
-            troubleshooting result.
-        - id: options
-          type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -1074,7 +1209,7 @@ items:
       content: >-
         function beginGetTroubleshootingResult(resourceGroupName: string,
         networkWatcherName: string, parameters: QueryTroubleshootingParameters,
-        options: function, callback: ServiceCallback<TroubleshootingResult>)
+        options: Object, callback: ServiceCallback<TroubleshootingResult>)
       parameters:
         - id: resourceGroupName
           type:
@@ -1090,7 +1225,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -1100,9 +1235,8 @@ items:
         type:
           - Promise<azure-arm-network.TroubleshootingResult>
     package: azure-arm-network
-  - uid: >-
-      azure-arm-network.NetworkWatchers.beginGetTroubleshootingResultWithHttpOperationResponse
-    name: beginGetTroubleshootingResultWithHttpOperationResponse
+  - uid: azure-arm-network.NetworkWatchers.beginGetTroubleshootingResult
+    name: beginGetTroubleshootingResult
     children: []
     type: method
     langs:
@@ -1110,10 +1244,9 @@ items:
     summary: Get the last completed troubleshooting result on a specified resource
     syntax:
       content: >-
-        function
-        beginGetTroubleshootingResultWithHttpOperationResponse(resourceGroupName:
-        string, networkWatcherName: string, parameters:
-        QueryTroubleshootingParameters, options?: function)
+        function beginGetTroubleshootingResult(resourceGroupName: string,
+        networkWatcherName: string, parameters: QueryTroubleshootingParameters,
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1133,7 +1266,47 @@ items:
             troubleshooting result.
         - id: options
           type:
-            - function
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network.TroubleshootingResult>
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.NetworkWatchers.beginGetTroubleshootingResultWithHttpOperationResponse
+    name: beginGetTroubleshootingResultWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get the last completed troubleshooting result on a specified resource
+    syntax:
+      content: >-
+        function
+        beginGetTroubleshootingResultWithHttpOperationResponse(resourceGroupName:
+        string, networkWatcherName: string, parameters:
+        QueryTroubleshootingParameters, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the network watcher resource.
+        - id: parameters
+          type:
+            - azure-arm-network.QueryTroubleshootingParameters
+          description: |
+            Parameters that define the resource to query the
+            troubleshooting result.
+        - id: options
+          type:
+            - Object
           description: ''
           optional: true
       return:
@@ -1154,7 +1327,7 @@ items:
         function
         beginGetTroubleshootingWithHttpOperationResponse(resourceGroupName:
         string, networkWatcherName: string, parameters:
-        TroubleshootingParameters, options?: function)
+        TroubleshootingParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1174,7 +1347,7 @@ items:
             troubleshoot.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -1230,7 +1403,7 @@ items:
       content: >-
         function beginGetVMSecurityRules(resourceGroupName: string,
         networkWatcherName: string, parameters: SecurityGroupViewParameters,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1250,7 +1423,7 @@ items:
             groups for.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -1270,7 +1443,7 @@ items:
       content: >-
         function beginGetVMSecurityRules(resourceGroupName: string,
         networkWatcherName: string, parameters: SecurityGroupViewParameters,
-        options: function, callback: ServiceCallback<SecurityGroupViewResult>)
+        options: Object, callback: ServiceCallback<SecurityGroupViewResult>)
       parameters:
         - id: resourceGroupName
           type:
@@ -1286,7 +1459,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -1311,7 +1484,7 @@ items:
         function
         beginGetVMSecurityRulesWithHttpOperationResponse(resourceGroupName:
         string, networkWatcherName: string, parameters:
-        SecurityGroupViewParameters, options?: function)
+        SecurityGroupViewParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1331,13 +1504,54 @@ items:
             groups for.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.SecurityGroupViewResult>>
+    package: azure-arm-network
+  - uid: azure-arm-network.NetworkWatchers.beginListAvailableProviders
+    name: beginListAvailableProviders
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Lists all available internet service providers for a specified Azure
+      region.
+    syntax:
+      content: >-
+        function beginListAvailableProviders(resourceGroupName: string,
+        networkWatcherName: string, parameters:
+        AvailableProvidersListParameters, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the network watcher resource
+            group.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the network watcher resource.
+        - id: parameters
+          type:
+            - azure-arm-network.AvailableProvidersListParameters
+          description: |
+            Parameters that scope the list of available
+            providers.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network.AvailableProvidersList>
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginListAvailableProviders_1
     name: beginListAvailableProviders
@@ -1388,7 +1602,7 @@ items:
       content: >-
         function beginListAvailableProviders(resourceGroupName: string,
         networkWatcherName: string, parameters:
-        AvailableProvidersListParameters, options: function, callback:
+        AvailableProvidersListParameters, options: Object, callback:
         ServiceCallback<AvailableProvidersList>)
       parameters:
         - id: resourceGroupName
@@ -1405,53 +1619,12 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
             - ServiceCallback<azure-arm-network.AvailableProvidersList>
           description: ''
-      return:
-        type:
-          - Promise<azure-arm-network.AvailableProvidersList>
-    package: azure-arm-network
-  - uid: azure-arm-network.NetworkWatchers.beginListAvailableProviders
-    name: beginListAvailableProviders
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: >-
-      Lists all available internet service providers for a specified Azure
-      region.
-    syntax:
-      content: >-
-        function beginListAvailableProviders(resourceGroupName: string,
-        networkWatcherName: string, parameters:
-        AvailableProvidersListParameters, options?: function)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: |
-            The name of the network watcher resource
-            group.
-        - id: networkWatcherName
-          type:
-            - string
-          description: |
-            The name of the network watcher resource.
-        - id: parameters
-          type:
-            - azure-arm-network.AvailableProvidersListParameters
-          description: |
-            Parameters that scope the list of available
-            providers.
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
       return:
         type:
           - Promise<azure-arm-network.AvailableProvidersList>
@@ -1471,7 +1644,7 @@ items:
         function
         beginListAvailableProvidersWithHttpOperationResponse(resourceGroupName:
         string, networkWatcherName: string, parameters:
-        AvailableProvidersListParameters, options?: function)
+        AvailableProvidersListParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1492,7 +1665,7 @@ items:
             providers.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -1506,7 +1679,9 @@ items:
     type: method
     langs:
       - typeScript
-    summary: Configures flow log on a specified resource.
+    summary: |-
+      Configures flow log  and traffic analytics (optional) on a specified
+      resource.
     syntax:
       content: >-
         function beginSetFlowLogConfiguration(resourceGroupName: string,
@@ -1539,12 +1714,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: Configures flow log on a specified resource.
+    summary: |-
+      Configures flow log  and traffic analytics (optional) on a specified
+      resource.
     syntax:
       content: >-
         function beginSetFlowLogConfiguration(resourceGroupName: string,
         networkWatcherName: string, parameters: FlowLogInformation, options:
-        function, callback: ServiceCallback<FlowLogInformation>)
+        Object, callback: ServiceCallback<FlowLogInformation>)
       parameters:
         - id: resourceGroupName
           type:
@@ -1560,7 +1737,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -1576,12 +1753,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: Configures flow log on a specified resource.
+    summary: |-
+      Configures flow log  and traffic analytics (optional) on a specified
+      resource.
     syntax:
       content: >-
         function beginSetFlowLogConfiguration(resourceGroupName: string,
         networkWatcherName: string, parameters: FlowLogInformation, options?:
-        function)
+        Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1602,7 +1781,7 @@ items:
             log.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -1616,13 +1795,15 @@ items:
     type: method
     langs:
       - typeScript
-    summary: Configures flow log on a specified resource.
+    summary: |-
+      Configures flow log  and traffic analytics (optional) on a specified
+      resource.
     syntax:
       content: >-
         function
         beginSetFlowLogConfigurationWithHttpOperationResponse(resourceGroupName:
         string, networkWatcherName: string, parameters: FlowLogInformation,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1643,12 +1824,52 @@ items:
             log.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.FlowLogInformation>>
+    package: azure-arm-network
+  - uid: azure-arm-network.NetworkWatchers.beginVerifyIPFlow
+    name: beginVerifyIPFlow
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Verify IP flow from the specified VM to a location given the currently
+      configured NSG rules.
+    syntax:
+      content: >-
+        function beginVerifyIPFlow(resourceGroupName: string,
+        networkWatcherName: string, parameters: VerificationIPFlowParameters,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the network watcher.
+        - id: parameters
+          type:
+            - azure-arm-network.VerificationIPFlowParameters
+          description: |
+            Parameters that define the IP flow to be
+            verified.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network.VerificationIPFlowResult>
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginVerifyIPFlow_1
     name: beginVerifyIPFlow
@@ -1698,7 +1919,7 @@ items:
       content: >-
         function beginVerifyIPFlow(resourceGroupName: string,
         networkWatcherName: string, parameters: VerificationIPFlowParameters,
-        options: function, callback: ServiceCallback<VerificationIPFlowResult>)
+        options: Object, callback: ServiceCallback<VerificationIPFlowResult>)
       parameters:
         - id: resourceGroupName
           type:
@@ -1714,52 +1935,12 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
             - ServiceCallback<azure-arm-network.VerificationIPFlowResult>
           description: ''
-      return:
-        type:
-          - Promise<azure-arm-network.VerificationIPFlowResult>
-    package: azure-arm-network
-  - uid: azure-arm-network.NetworkWatchers.beginVerifyIPFlow
-    name: beginVerifyIPFlow
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: |-
-      Verify IP flow from the specified VM to a location given the currently
-      configured NSG rules.
-    syntax:
-      content: >-
-        function beginVerifyIPFlow(resourceGroupName: string,
-        networkWatcherName: string, parameters: VerificationIPFlowParameters,
-        options?: function)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: |
-            The name of the resource group.
-        - id: networkWatcherName
-          type:
-            - string
-          description: |
-            The name of the network watcher.
-        - id: parameters
-          type:
-            - azure-arm-network.VerificationIPFlowParameters
-          description: |
-            Parameters that define the IP flow to be
-            verified.
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
       return:
         type:
           - Promise<azure-arm-network.VerificationIPFlowResult>
@@ -1778,7 +1959,7 @@ items:
       content: >-
         function beginVerifyIPFlowWithHttpOperationResponse(resourceGroupName:
         string, networkWatcherName: string, parameters:
-        VerificationIPFlowParameters, options?: function)
+        VerificationIPFlowParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1798,95 +1979,13 @@ items:
             verified.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.VerificationIPFlowResult>>
-    package: azure-arm-network
-  - uid: azure-arm-network.NetworkWatchers.checkConnectivity
-    name: checkConnectivity
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: |-
-      Verifies the possibility of establishing a direct TCP connection from a
-      virtual machine to a given endpoint including another VM or an arbitrary
-      remote server.
-    syntax:
-      content: >-
-        function checkConnectivity(resourceGroupName: string,
-        networkWatcherName: string, parameters: ConnectivityParameters,
-        options?: function)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: |
-            The name of the network watcher resource
-            group.
-        - id: networkWatcherName
-          type:
-            - string
-          description: |
-            The name of the network watcher resource.
-        - id: parameters
-          type:
-            - azure-arm-network.ConnectivityParameters
-          description: |
-            Parameters that determine how the connectivity
-            check will be performed.
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
-      return:
-        type:
-          - Promise<azure-arm-network.ConnectivityInformation>
-    package: azure-arm-network
-  - uid: azure-arm-network.NetworkWatchers.checkConnectivity_2
-    name: checkConnectivity
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: |-
-      Verifies the possibility of establishing a direct TCP connection from a
-      virtual machine to a given endpoint including another VM or an arbitrary
-      remote server.
-    syntax:
-      content: >-
-        function checkConnectivity(resourceGroupName: string,
-        networkWatcherName: string, parameters: ConnectivityParameters, options:
-        function, callback: ServiceCallback<ConnectivityInformation>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: networkWatcherName
-          type:
-            - string
-          description: ''
-        - id: parameters
-          type:
-            - azure-arm-network.ConnectivityParameters
-          description: ''
-        - id: options
-          type:
-            - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<azure-arm-network.ConnectivityInformation>
-          description: ''
-      return:
-        type:
-          - Promise<azure-arm-network.ConnectivityInformation>
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.checkConnectivity_1
     name: checkConnectivity
@@ -1924,9 +2023,8 @@ items:
         type:
           - Promise<azure-arm-network.ConnectivityInformation>
     package: azure-arm-network
-  - uid: >-
-      azure-arm-network.NetworkWatchers.checkConnectivityWithHttpOperationResponse
-    name: checkConnectivityWithHttpOperationResponse
+  - uid: azure-arm-network.NetworkWatchers.checkConnectivity
+    name: checkConnectivity
     children: []
     type: method
     langs:
@@ -1937,9 +2035,9 @@ items:
       remote server.
     syntax:
       content: >-
-        function checkConnectivityWithHttpOperationResponse(resourceGroupName:
-        string, networkWatcherName: string, parameters: ConnectivityParameters,
-        options?: function)
+        function checkConnectivity(resourceGroupName: string,
+        networkWatcherName: string, parameters: ConnectivityParameters,
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1960,7 +2058,90 @@ items:
             check will be performed.
         - id: options
           type:
-            - function
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network.ConnectivityInformation>
+    package: azure-arm-network
+  - uid: azure-arm-network.NetworkWatchers.checkConnectivity_2
+    name: checkConnectivity
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Verifies the possibility of establishing a direct TCP connection from a
+      virtual machine to a given endpoint including another VM or an arbitrary
+      remote server.
+    syntax:
+      content: >-
+        function checkConnectivity(resourceGroupName: string,
+        networkWatcherName: string, parameters: ConnectivityParameters, options:
+        Object, callback: ServiceCallback<ConnectivityInformation>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network.ConnectivityParameters
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network.ConnectivityInformation>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network.ConnectivityInformation>
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.NetworkWatchers.checkConnectivityWithHttpOperationResponse
+    name: checkConnectivityWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Verifies the possibility of establishing a direct TCP connection from a
+      virtual machine to a given endpoint including another VM or an arbitrary
+      remote server.
+    syntax:
+      content: >-
+        function checkConnectivityWithHttpOperationResponse(resourceGroupName:
+        string, networkWatcherName: string, parameters: ConnectivityParameters,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the network watcher resource
+            group.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the network watcher resource.
+        - id: parameters
+          type:
+            - azure-arm-network.ConnectivityParameters
+          description: |
+            Parameters that determine how the connectivity
+            check will be performed.
+        - id: options
+          type:
+            - Object
           description: ''
           optional: true
       return:
@@ -1978,7 +2159,7 @@ items:
     syntax:
       content: >-
         function createOrUpdate(resourceGroupName: string, networkWatcherName:
-        string, parameters: NetworkWatcher, options?: function)
+        string, parameters: NetworkWatcher, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1998,7 +2179,7 @@ items:
             resource.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2048,7 +2229,7 @@ items:
     syntax:
       content: >-
         function createOrUpdate(resourceGroupName: string, networkWatcherName:
-        string, parameters: NetworkWatcher, options: function, callback:
+        string, parameters: NetworkWatcher, options: Object, callback:
         ServiceCallback<NetworkWatcher>)
       parameters:
         - id: resourceGroupName
@@ -2065,7 +2246,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -2086,7 +2267,7 @@ items:
       content: >-
         function createOrUpdateWithHttpOperationResponse(resourceGroupName:
         string, networkWatcherName: string, parameters: NetworkWatcher,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2106,7 +2287,7 @@ items:
             resource.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2123,7 +2304,7 @@ items:
     syntax:
       content: >-
         function deleteMethod(resourceGroupName: string, networkWatcherName:
-        string, options?: function)
+        string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2137,7 +2318,7 @@ items:
             The name of the network watcher.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2182,7 +2363,7 @@ items:
     syntax:
       content: >-
         function deleteMethod(resourceGroupName: string, networkWatcherName:
-        string, options: function, callback: ServiceCallback<void>)
+        string, options: Object, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -2194,7 +2375,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -2214,7 +2395,7 @@ items:
     syntax:
       content: >-
         function deleteMethodWithHttpOperationResponse(resourceGroupName:
-        string, networkWatcherName: string, options?: function)
+        string, networkWatcherName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2228,7 +2409,7 @@ items:
             The name of the network watcher.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2245,7 +2426,7 @@ items:
     syntax:
       content: >-
         function get(resourceGroupName: string, networkWatcherName: string,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2259,7 +2440,7 @@ items:
             The name of the network watcher.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2304,7 +2485,7 @@ items:
     syntax:
       content: >-
         function get(resourceGroupName: string, networkWatcherName: string,
-        options: function, callback: ServiceCallback<NetworkWatcher>)
+        options: Object, callback: ServiceCallback<NetworkWatcher>)
       parameters:
         - id: resourceGroupName
           type:
@@ -2316,7 +2497,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -2339,7 +2520,7 @@ items:
       content: >-
         function getAzureReachabilityReport(resourceGroupName: string,
         networkWatcherName: string, parameters:
-        AzureReachabilityReportParameters, options?: function)
+        AzureReachabilityReportParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2360,7 +2541,7 @@ items:
             report configuration.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2416,7 +2597,7 @@ items:
       content: >-
         function getAzureReachabilityReport(resourceGroupName: string,
         networkWatcherName: string, parameters:
-        AzureReachabilityReportParameters, options: function, callback:
+        AzureReachabilityReportParameters, options: Object, callback:
         ServiceCallback<AzureReachabilityReport>)
       parameters:
         - id: resourceGroupName
@@ -2433,7 +2614,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -2458,7 +2639,7 @@ items:
         function
         getAzureReachabilityReportWithHttpOperationResponse(resourceGroupName:
         string, networkWatcherName: string, parameters:
-        AzureReachabilityReportParameters, options?: function)
+        AzureReachabilityReportParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2479,7 +2660,7 @@ items:
             report configuration.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2493,11 +2674,13 @@ items:
     type: method
     langs:
       - typeScript
-    summary: Queries status of flow log on a specified resource.
+    summary: |-
+      Queries status of flow log and traffic analytics (optional) on a specified
+      resource.
     syntax:
       content: >-
         function getFlowLogStatus(resourceGroupName: string, networkWatcherName:
-        string, parameters: FlowLogStatusParameters, options?: function)
+        string, parameters: FlowLogStatusParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2515,49 +2698,12 @@ items:
             - azure-arm-network.FlowLogStatusParameters
           description: |
             Parameters that define a resource to query flow
-            log status.
+            log and traffic analytics (optional)  status.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
-      return:
-        type:
-          - Promise<azure-arm-network.FlowLogInformation>
-    package: azure-arm-network
-  - uid: azure-arm-network.NetworkWatchers.getFlowLogStatus_2
-    name: getFlowLogStatus
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Queries status of flow log on a specified resource.
-    syntax:
-      content: >-
-        function getFlowLogStatus(resourceGroupName: string, networkWatcherName:
-        string, parameters: FlowLogStatusParameters, options: function,
-        callback: ServiceCallback<FlowLogInformation>)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: ''
-        - id: networkWatcherName
-          type:
-            - string
-          description: ''
-        - id: parameters
-          type:
-            - azure-arm-network.FlowLogStatusParameters
-          description: ''
-        - id: options
-          type:
-            - function
-          description: ''
-        - id: callback
-          type:
-            - ServiceCallback<azure-arm-network.FlowLogInformation>
-          description: ''
       return:
         type:
           - Promise<azure-arm-network.FlowLogInformation>
@@ -2568,7 +2714,9 @@ items:
     type: method
     langs:
       - typeScript
-    summary: Queries status of flow log on a specified resource.
+    summary: |-
+      Queries status of flow log and traffic analytics (optional) on a specified
+      resource.
     syntax:
       content: >-
         function getFlowLogStatus(resourceGroupName: string, networkWatcherName:
@@ -2595,6 +2743,45 @@ items:
         type:
           - Promise<azure-arm-network.FlowLogInformation>
     package: azure-arm-network
+  - uid: azure-arm-network.NetworkWatchers.getFlowLogStatus_2
+    name: getFlowLogStatus
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Queries status of flow log and traffic analytics (optional) on a specified
+      resource.
+    syntax:
+      content: >-
+        function getFlowLogStatus(resourceGroupName: string, networkWatcherName:
+        string, parameters: FlowLogStatusParameters, options: Object, callback:
+        ServiceCallback<FlowLogInformation>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network.FlowLogStatusParameters
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network.FlowLogInformation>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network.FlowLogInformation>
+    package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.getFlowLogStatusWithHttpOperationResponse
     name: getFlowLogStatusWithHttpOperationResponse
@@ -2602,12 +2789,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: Queries status of flow log on a specified resource.
+    summary: |-
+      Queries status of flow log and traffic analytics (optional) on a specified
+      resource.
     syntax:
       content: >-
         function getFlowLogStatusWithHttpOperationResponse(resourceGroupName:
         string, networkWatcherName: string, parameters: FlowLogStatusParameters,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2625,15 +2814,168 @@ items:
             - azure-arm-network.FlowLogStatusParameters
           description: |
             Parameters that define a resource to query flow
-            log status.
+            log and traffic analytics (optional)  status.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.FlowLogInformation>>
+    package: azure-arm-network
+  - uid: azure-arm-network.NetworkWatchers.getNetworkConfigurationDiagnostic_1
+    name: getNetworkConfigurationDiagnostic
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get network configuration diagnostic.
+    syntax:
+      content: >-
+        function getNetworkConfigurationDiagnostic(resourceGroupName: string,
+        networkWatcherName: string, parameters:
+        NetworkConfigurationDiagnosticParameters, callback:
+        ServiceCallback<NetworkConfigurationDiagnosticResponse>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network.NetworkConfigurationDiagnosticParameters
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+    package: azure-arm-network
+  - uid: azure-arm-network.NetworkWatchers.getNetworkConfigurationDiagnostic_2
+    name: getNetworkConfigurationDiagnostic
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get network configuration diagnostic.
+    syntax:
+      content: >-
+        function getNetworkConfigurationDiagnostic(resourceGroupName: string,
+        networkWatcherName: string, parameters:
+        NetworkConfigurationDiagnosticParameters, options: Object, callback:
+        ServiceCallback<NetworkConfigurationDiagnosticResponse>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network.NetworkConfigurationDiagnosticParameters
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+    package: azure-arm-network
+  - uid: azure-arm-network.NetworkWatchers.getNetworkConfigurationDiagnostic
+    name: getNetworkConfigurationDiagnostic
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get network configuration diagnostic.
+    syntax:
+      content: >-
+        function getNetworkConfigurationDiagnostic(resourceGroupName: string,
+        networkWatcherName: string, parameters:
+        NetworkConfigurationDiagnosticParameters, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the network watcher.
+        - id: parameters
+          type:
+            - azure-arm-network.NetworkConfigurationDiagnosticParameters
+          description: |
+            Parameters to get network configuration
+            diagnostic.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.NetworkWatchers.getNetworkConfigurationDiagnosticWithHttpOperationResponse
+    name: getNetworkConfigurationDiagnosticWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get network configuration diagnostic.
+    syntax:
+      content: >-
+        function
+        getNetworkConfigurationDiagnosticWithHttpOperationResponse(resourceGroupName:
+        string, networkWatcherName: string, parameters:
+        NetworkConfigurationDiagnosticParameters, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the network watcher.
+        - id: parameters
+          type:
+            - azure-arm-network.NetworkConfigurationDiagnosticParameters
+          description: |
+            Parameters to get network configuration
+            diagnostic.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network.NetworkConfigurationDiagnosticResponse>>
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getNextHop
     name: getNextHop
@@ -2645,7 +2987,7 @@ items:
     syntax:
       content: >-
         function getNextHop(resourceGroupName: string, networkWatcherName:
-        string, parameters: NextHopParameters, options?: function)
+        string, parameters: NextHopParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2665,7 +3007,7 @@ items:
             endpoint.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2715,7 +3057,7 @@ items:
     syntax:
       content: >-
         function getNextHop(resourceGroupName: string, networkWatcherName:
-        string, parameters: NextHopParameters, options: function, callback:
+        string, parameters: NextHopParameters, options: Object, callback:
         ServiceCallback<NextHopResult>)
       parameters:
         - id: resourceGroupName
@@ -2732,7 +3074,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -2753,7 +3095,7 @@ items:
       content: >-
         function getNextHopWithHttpOperationResponse(resourceGroupName: string,
         networkWatcherName: string, parameters: NextHopParameters, options?:
-        function)
+        Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2773,7 +3115,7 @@ items:
             endpoint.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2823,7 +3165,7 @@ items:
     syntax:
       content: >-
         function getTopology(resourceGroupName: string, networkWatcherName:
-        string, parameters: TopologyParameters, options?: function)
+        string, parameters: TopologyParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2843,7 +3185,7 @@ items:
             topology.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2860,7 +3202,7 @@ items:
     syntax:
       content: >-
         function getTopology(resourceGroupName: string, networkWatcherName:
-        string, parameters: TopologyParameters, options: function, callback:
+        string, parameters: TopologyParameters, options: Object, callback:
         ServiceCallback<Topology>)
       parameters:
         - id: resourceGroupName
@@ -2877,7 +3219,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -2898,7 +3240,7 @@ items:
       content: >-
         function getTopologyWithHttpOperationResponse(resourceGroupName: string,
         networkWatcherName: string, parameters: TopologyParameters, options?:
-        function)
+        Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2918,7 +3260,7 @@ items:
             topology.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -2936,7 +3278,7 @@ items:
       content: >-
         function getTroubleshooting(resourceGroupName: string,
         networkWatcherName: string, parameters: TroubleshootingParameters,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -2956,7 +3298,7 @@ items:
             troubleshoot.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -3007,7 +3349,7 @@ items:
       content: >-
         function getTroubleshooting(resourceGroupName: string,
         networkWatcherName: string, parameters: TroubleshootingParameters,
-        options: function, callback: ServiceCallback<TroubleshootingResult>)
+        options: Object, callback: ServiceCallback<TroubleshootingResult>)
       parameters:
         - id: resourceGroupName
           type:
@@ -3023,50 +3365,12 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
             - ServiceCallback<azure-arm-network.TroubleshootingResult>
           description: ''
-      return:
-        type:
-          - Promise<azure-arm-network.TroubleshootingResult>
-    package: azure-arm-network
-  - uid: azure-arm-network.NetworkWatchers.getTroubleshootingResult
-    name: getTroubleshootingResult
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: Get the last completed troubleshooting result on a specified resource
-    syntax:
-      content: >-
-        function getTroubleshootingResult(resourceGroupName: string,
-        networkWatcherName: string, parameters: QueryTroubleshootingParameters,
-        options?: function)
-      parameters:
-        - id: resourceGroupName
-          type:
-            - string
-          description: |
-            The name of the resource group.
-        - id: networkWatcherName
-          type:
-            - string
-          description: |
-            The name of the network watcher resource.
-        - id: parameters
-          type:
-            - azure-arm-network.QueryTroubleshootingParameters
-          description: |
-            Parameters that define the resource to query the
-            troubleshooting result.
-        - id: options
-          type:
-            - function
-          description: ''
-          optional: true
       return:
         type:
           - Promise<azure-arm-network.TroubleshootingResult>
@@ -3115,7 +3419,7 @@ items:
       content: >-
         function getTroubleshootingResult(resourceGroupName: string,
         networkWatcherName: string, parameters: QueryTroubleshootingParameters,
-        options: function, callback: ServiceCallback<TroubleshootingResult>)
+        options: Object, callback: ServiceCallback<TroubleshootingResult>)
       parameters:
         - id: resourceGroupName
           type:
@@ -3131,7 +3435,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -3141,9 +3445,8 @@ items:
         type:
           - Promise<azure-arm-network.TroubleshootingResult>
     package: azure-arm-network
-  - uid: >-
-      azure-arm-network.NetworkWatchers.getTroubleshootingResultWithHttpOperationResponse
-    name: getTroubleshootingResultWithHttpOperationResponse
+  - uid: azure-arm-network.NetworkWatchers.getTroubleshootingResult
+    name: getTroubleshootingResult
     children: []
     type: method
     langs:
@@ -3151,10 +3454,9 @@ items:
     summary: Get the last completed troubleshooting result on a specified resource
     syntax:
       content: >-
-        function
-        getTroubleshootingResultWithHttpOperationResponse(resourceGroupName:
-        string, networkWatcherName: string, parameters:
-        QueryTroubleshootingParameters, options?: function)
+        function getTroubleshootingResult(resourceGroupName: string,
+        networkWatcherName: string, parameters: QueryTroubleshootingParameters,
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3174,7 +3476,47 @@ items:
             troubleshooting result.
         - id: options
           type:
-            - function
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network.TroubleshootingResult>
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.NetworkWatchers.getTroubleshootingResultWithHttpOperationResponse
+    name: getTroubleshootingResultWithHttpOperationResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get the last completed troubleshooting result on a specified resource
+    syntax:
+      content: >-
+        function
+        getTroubleshootingResultWithHttpOperationResponse(resourceGroupName:
+        string, networkWatcherName: string, parameters:
+        QueryTroubleshootingParameters, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the network watcher resource.
+        - id: parameters
+          type:
+            - azure-arm-network.QueryTroubleshootingParameters
+          description: |
+            Parameters that define the resource to query the
+            troubleshooting result.
+        - id: options
+          type:
+            - Object
           description: ''
           optional: true
       return:
@@ -3194,7 +3536,7 @@ items:
       content: >-
         function getTroubleshootingWithHttpOperationResponse(resourceGroupName:
         string, networkWatcherName: string, parameters:
-        TroubleshootingParameters, options?: function)
+        TroubleshootingParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3214,7 +3556,7 @@ items:
             troubleshoot.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -3235,7 +3577,7 @@ items:
       content: >-
         function getVMSecurityRules(resourceGroupName: string,
         networkWatcherName: string, parameters: SecurityGroupViewParameters,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3255,7 +3597,7 @@ items:
             groups for.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -3310,7 +3652,7 @@ items:
       content: >-
         function getVMSecurityRules(resourceGroupName: string,
         networkWatcherName: string, parameters: SecurityGroupViewParameters,
-        options: function, callback: ServiceCallback<SecurityGroupViewResult>)
+        options: Object, callback: ServiceCallback<SecurityGroupViewResult>)
       parameters:
         - id: resourceGroupName
           type:
@@ -3326,7 +3668,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -3350,7 +3692,7 @@ items:
       content: >-
         function getVMSecurityRulesWithHttpOperationResponse(resourceGroupName:
         string, networkWatcherName: string, parameters:
-        SecurityGroupViewParameters, options?: function)
+        SecurityGroupViewParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3370,7 +3712,7 @@ items:
             groups for.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -3388,7 +3730,7 @@ items:
     syntax:
       content: >-
         function getWithHttpOperationResponse(resourceGroupName: string,
-        networkWatcherName: string, options?: function)
+        networkWatcherName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3402,7 +3744,7 @@ items:
             The name of the network watcher.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -3441,7 +3783,7 @@ items:
       - typeScript
     summary: Gets all network watchers by resource group.
     syntax:
-      content: 'function list(resourceGroupName: string, options?: function)'
+      content: 'function list(resourceGroupName: string, options?: Object)'
       parameters:
         - id: resourceGroupName
           type:
@@ -3450,7 +3792,7 @@ items:
             The name of the resource group.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -3466,7 +3808,7 @@ items:
     summary: Gets all network watchers by resource group.
     syntax:
       content: >-
-        function list(resourceGroupName: string, options: function, callback:
+        function list(resourceGroupName: string, options: Object, callback:
         ServiceCallback<NetworkWatcherListResult>)
       parameters:
         - id: resourceGroupName
@@ -3475,7 +3817,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -3512,12 +3854,12 @@ items:
     summary: Gets all network watchers by subscription.
     syntax:
       content: >-
-        function listAll(options: function, callback:
+        function listAll(options: Object, callback:
         ServiceCallback<NetworkWatcherListResult>)
       parameters:
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -3535,11 +3877,11 @@ items:
       - typeScript
     summary: Gets all network watchers by subscription.
     syntax:
-      content: 'function listAll(options?: function)'
+      content: 'function listAll(options?: Object)'
       parameters:
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -3554,11 +3896,11 @@ items:
       - typeScript
     summary: Gets all network watchers by subscription.
     syntax:
-      content: 'function listAllWithHttpOperationResponse(options?: function)'
+      content: 'function listAllWithHttpOperationResponse(options?: Object)'
       parameters:
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -3579,7 +3921,7 @@ items:
       content: >-
         function listAvailableProviders(resourceGroupName: string,
         networkWatcherName: string, parameters:
-        AvailableProvidersListParameters, options?: function)
+        AvailableProvidersListParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3600,7 +3942,7 @@ items:
             providers.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -3656,7 +3998,7 @@ items:
       content: >-
         function listAvailableProviders(resourceGroupName: string,
         networkWatcherName: string, parameters:
-        AvailableProvidersListParameters, options: function, callback:
+        AvailableProvidersListParameters, options: Object, callback:
         ServiceCallback<AvailableProvidersList>)
       parameters:
         - id: resourceGroupName
@@ -3673,7 +4015,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -3698,7 +4040,7 @@ items:
         function
         listAvailableProvidersWithHttpOperationResponse(resourceGroupName:
         string, networkWatcherName: string, parameters:
-        AvailableProvidersListParameters, options?: function)
+        AvailableProvidersListParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3719,7 +4061,7 @@ items:
             providers.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -3737,7 +4079,7 @@ items:
     syntax:
       content: >-
         function listWithHttpOperationResponse(resourceGroupName: string,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3746,7 +4088,7 @@ items:
             The name of the resource group.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -3760,12 +4102,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: Configures flow log on a specified resource.
+    summary: |-
+      Configures flow log  and traffic analytics (optional) on a specified
+      resource.
     syntax:
       content: >-
         function setFlowLogConfiguration(resourceGroupName: string,
         networkWatcherName: string, parameters: FlowLogInformation, options?:
-        function)
+        Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3786,7 +4130,7 @@ items:
             log.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -3799,12 +4143,14 @@ items:
     type: method
     langs:
       - typeScript
-    summary: Configures flow log on a specified resource.
+    summary: |-
+      Configures flow log  and traffic analytics (optional) on a specified
+      resource.
     syntax:
       content: >-
         function setFlowLogConfiguration(resourceGroupName: string,
         networkWatcherName: string, parameters: FlowLogInformation, options:
-        function, callback: ServiceCallback<FlowLogInformation>)
+        Object, callback: ServiceCallback<FlowLogInformation>)
       parameters:
         - id: resourceGroupName
           type:
@@ -3820,7 +4166,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -3836,7 +4182,9 @@ items:
     type: method
     langs:
       - typeScript
-    summary: Configures flow log on a specified resource.
+    summary: |-
+      Configures flow log  and traffic analytics (optional) on a specified
+      resource.
     syntax:
       content: >-
         function setFlowLogConfiguration(resourceGroupName: string,
@@ -3870,13 +4218,15 @@ items:
     type: method
     langs:
       - typeScript
-    summary: Configures flow log on a specified resource.
+    summary: |-
+      Configures flow log  and traffic analytics (optional) on a specified
+      resource.
     syntax:
       content: >-
         function
         setFlowLogConfigurationWithHttpOperationResponse(resourceGroupName:
         string, networkWatcherName: string, parameters: FlowLogInformation,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3897,7 +4247,7 @@ items:
             log.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -3914,7 +4264,7 @@ items:
     syntax:
       content: >-
         function updateTags(resourceGroupName: string, networkWatcherName:
-        string, parameters: TagsObject, options?: function)
+        string, parameters: TagsObject, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -3934,7 +4284,7 @@ items:
             tags.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -3984,7 +4334,7 @@ items:
     syntax:
       content: >-
         function updateTags(resourceGroupName: string, networkWatcherName:
-        string, parameters: TagsObject, options: function, callback:
+        string, parameters: TagsObject, options: Object, callback:
         ServiceCallback<NetworkWatcher>)
       parameters:
         - id: resourceGroupName
@@ -4001,7 +4351,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -4021,7 +4371,7 @@ items:
     syntax:
       content: >-
         function updateTagsWithHttpOperationResponse(resourceGroupName: string,
-        networkWatcherName: string, parameters: TagsObject, options?: function)
+        networkWatcherName: string, parameters: TagsObject, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -4041,7 +4391,7 @@ items:
             tags.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -4060,7 +4410,7 @@ items:
     syntax:
       content: >-
         function verifyIPFlow(resourceGroupName: string, networkWatcherName:
-        string, parameters: VerificationIPFlowParameters, options?: function)
+        string, parameters: VerificationIPFlowParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -4080,7 +4430,7 @@ items:
             verified.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -4134,7 +4484,7 @@ items:
     syntax:
       content: >-
         function verifyIPFlow(resourceGroupName: string, networkWatcherName:
-        string, parameters: VerificationIPFlowParameters, options: function,
+        string, parameters: VerificationIPFlowParameters, options: Object,
         callback: ServiceCallback<VerificationIPFlowResult>)
       parameters:
         - id: resourceGroupName
@@ -4151,7 +4501,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -4174,7 +4524,7 @@ items:
       content: >-
         function verifyIPFlowWithHttpOperationResponse(resourceGroupName:
         string, networkWatcherName: string, parameters:
-        VerificationIPFlowParameters, options?: function)
+        VerificationIPFlowParameters, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -4194,7 +4544,7 @@ items:
             verified.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -4204,11 +4554,13 @@ items:
     package: azure-arm-network
 references:
   - uid: azure-arm-network.ConnectivityParameters
+    name: ConnectivityParameters
     spec.typeScript:
       - name: ConnectivityParameters
         fullName: ConnectivityParameters
         uid: azure-arm-network.ConnectivityParameters
   - uid: Promise<azure-arm-network.ConnectivityInformation>
+    name: ConnectivityInformation>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -4218,6 +4570,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-network.ConnectivityInformation>
+    name: ConnectivityInformation>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -4227,6 +4580,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: Promise<HttpOperationResponse<azure-arm-network.ConnectivityInformation>>
+    name: ConnectivityInformation>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
@@ -4236,11 +4590,13 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: azure-arm-network.AzureReachabilityReportParameters
+    name: AzureReachabilityReportParameters
     spec.typeScript:
       - name: AzureReachabilityReportParameters
         fullName: AzureReachabilityReportParameters
         uid: azure-arm-network.AzureReachabilityReportParameters
   - uid: Promise<azure-arm-network.AzureReachabilityReport>
+    name: AzureReachabilityReport>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -4250,6 +4606,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-network.AzureReachabilityReport>
+    name: AzureReachabilityReport>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -4259,6 +4616,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: Promise<HttpOperationResponse<azure-arm-network.AzureReachabilityReport>>
+    name: AzureReachabilityReport>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
@@ -4268,11 +4626,13 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: azure-arm-network.FlowLogStatusParameters
+    name: FlowLogStatusParameters
     spec.typeScript:
       - name: FlowLogStatusParameters
         fullName: FlowLogStatusParameters
         uid: azure-arm-network.FlowLogStatusParameters
   - uid: Promise<azure-arm-network.FlowLogInformation>
+    name: FlowLogInformation>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -4282,6 +4642,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-network.FlowLogInformation>
+    name: FlowLogInformation>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -4291,6 +4652,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: Promise<HttpOperationResponse<azure-arm-network.FlowLogInformation>>
+    name: FlowLogInformation>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
@@ -4299,12 +4661,51 @@ references:
         uid: azure-arm-network.FlowLogInformation
       - name: '>>'
         fullName: '>>'
+  - uid: azure-arm-network.NetworkConfigurationDiagnosticParameters
+    name: NetworkConfigurationDiagnosticParameters
+    spec.typeScript:
+      - name: NetworkConfigurationDiagnosticParameters
+        fullName: NetworkConfigurationDiagnosticParameters
+        uid: azure-arm-network.NetworkConfigurationDiagnosticParameters
+  - uid: Promise<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+    name: NetworkConfigurationDiagnosticResponse>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: NetworkConfigurationDiagnosticResponse
+        fullName: NetworkConfigurationDiagnosticResponse
+        uid: azure-arm-network.NetworkConfigurationDiagnosticResponse
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+    name: NetworkConfigurationDiagnosticResponse>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: NetworkConfigurationDiagnosticResponse
+        fullName: NetworkConfigurationDiagnosticResponse
+        uid: azure-arm-network.NetworkConfigurationDiagnosticResponse
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network.NetworkConfigurationDiagnosticResponse>>
+    name: NetworkConfigurationDiagnosticResponse>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: NetworkConfigurationDiagnosticResponse
+        fullName: NetworkConfigurationDiagnosticResponse
+        uid: azure-arm-network.NetworkConfigurationDiagnosticResponse
+      - name: '>>'
+        fullName: '>>'
   - uid: azure-arm-network.NextHopParameters
+    name: NextHopParameters
     spec.typeScript:
       - name: NextHopParameters
         fullName: NextHopParameters
         uid: azure-arm-network.NextHopParameters
   - uid: Promise<azure-arm-network.NextHopResult>
+    name: NextHopResult>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -4314,6 +4715,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-network.NextHopResult>
+    name: NextHopResult>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -4323,6 +4725,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: Promise<HttpOperationResponse<azure-arm-network.NextHopResult>>
+    name: NextHopResult>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
@@ -4332,11 +4735,13 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: azure-arm-network.TroubleshootingParameters
+    name: TroubleshootingParameters
     spec.typeScript:
       - name: TroubleshootingParameters
         fullName: TroubleshootingParameters
         uid: azure-arm-network.TroubleshootingParameters
   - uid: Promise<azure-arm-network.TroubleshootingResult>
+    name: TroubleshootingResult>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -4346,6 +4751,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-network.TroubleshootingResult>
+    name: TroubleshootingResult>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -4355,11 +4761,13 @@ references:
       - name: '>'
         fullName: '>'
   - uid: azure-arm-network.QueryTroubleshootingParameters
+    name: QueryTroubleshootingParameters
     spec.typeScript:
       - name: QueryTroubleshootingParameters
         fullName: QueryTroubleshootingParameters
         uid: azure-arm-network.QueryTroubleshootingParameters
   - uid: Promise<HttpOperationResponse<azure-arm-network.TroubleshootingResult>>
+    name: TroubleshootingResult>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
@@ -4369,11 +4777,13 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: azure-arm-network.SecurityGroupViewParameters
+    name: SecurityGroupViewParameters
     spec.typeScript:
       - name: SecurityGroupViewParameters
         fullName: SecurityGroupViewParameters
         uid: azure-arm-network.SecurityGroupViewParameters
   - uid: Promise<azure-arm-network.SecurityGroupViewResult>
+    name: SecurityGroupViewResult>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -4383,6 +4793,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-network.SecurityGroupViewResult>
+    name: SecurityGroupViewResult>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -4392,6 +4803,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: Promise<HttpOperationResponse<azure-arm-network.SecurityGroupViewResult>>
+    name: SecurityGroupViewResult>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
@@ -4401,11 +4813,13 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: azure-arm-network.AvailableProvidersListParameters
+    name: AvailableProvidersListParameters
     spec.typeScript:
       - name: AvailableProvidersListParameters
         fullName: AvailableProvidersListParameters
         uid: azure-arm-network.AvailableProvidersListParameters
   - uid: Promise<azure-arm-network.AvailableProvidersList>
+    name: AvailableProvidersList>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -4415,6 +4829,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-network.AvailableProvidersList>
+    name: AvailableProvidersList>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -4424,6 +4839,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: Promise<HttpOperationResponse<azure-arm-network.AvailableProvidersList>>
+    name: AvailableProvidersList>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
@@ -4433,16 +4849,19 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: azure-arm-network.FlowLogInformation
+    name: FlowLogInformation
     spec.typeScript:
       - name: FlowLogInformation
         fullName: FlowLogInformation
         uid: azure-arm-network.FlowLogInformation
   - uid: azure-arm-network.VerificationIPFlowParameters
+    name: VerificationIPFlowParameters
     spec.typeScript:
       - name: VerificationIPFlowParameters
         fullName: VerificationIPFlowParameters
         uid: azure-arm-network.VerificationIPFlowParameters
   - uid: Promise<azure-arm-network.VerificationIPFlowResult>
+    name: VerificationIPFlowResult>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -4452,6 +4871,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-network.VerificationIPFlowResult>
+    name: VerificationIPFlowResult>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -4461,6 +4881,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: Promise<HttpOperationResponse<azure-arm-network.VerificationIPFlowResult>>
+    name: VerificationIPFlowResult>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
@@ -4470,11 +4891,13 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: azure-arm-network.NetworkWatcher
+    name: NetworkWatcher
     spec.typeScript:
       - name: NetworkWatcher
         fullName: NetworkWatcher
         uid: azure-arm-network.NetworkWatcher
   - uid: Promise<azure-arm-network.NetworkWatcher>
+    name: NetworkWatcher>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -4484,6 +4907,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-network.NetworkWatcher>
+    name: NetworkWatcher>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -4493,6 +4917,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: Promise<HttpOperationResponse<azure-arm-network.NetworkWatcher>>
+    name: NetworkWatcher>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
@@ -4502,11 +4927,13 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: azure-arm-network.TopologyParameters
+    name: TopologyParameters
     spec.typeScript:
       - name: TopologyParameters
         fullName: TopologyParameters
         uid: azure-arm-network.TopologyParameters
   - uid: Promise<azure-arm-network.Topology>
+    name: Topology>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -4516,6 +4943,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-network.Topology>
+    name: Topology>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -4525,6 +4953,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: Promise<HttpOperationResponse<azure-arm-network.Topology>>
+    name: Topology>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
@@ -4534,6 +4963,7 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: Promise<azure-arm-network.NetworkWatcherListResult>
+    name: NetworkWatcherListResult>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -4543,6 +4973,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-network.NetworkWatcherListResult>
+    name: NetworkWatcherListResult>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -4552,6 +4983,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: Promise<HttpOperationResponse<azure-arm-network.NetworkWatcherListResult>>
+    name: NetworkWatcherListResult>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
@@ -4561,6 +4993,7 @@ references:
       - name: '>>'
         fullName: '>>'
   - uid: azure-arm-network.TagsObject
+    name: TagsObject
     spec.typeScript:
       - name: TagsObject
         fullName: TagsObject

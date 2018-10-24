@@ -5,6 +5,7 @@ items:
     fullName: FlowLogInformation
     children:
       - azure-arm-network.FlowLogInformation.enabled
+      - azure-arm-network.FlowLogInformation.flowAnalyticsConfiguration
       - azure-arm-network.FlowLogInformation.retentionPolicy
       - azure-arm-network.FlowLogInformation.storageId
       - azure-arm-network.FlowLogInformation.targetResourceId
@@ -26,6 +27,21 @@ items:
       return:
         type:
           - boolean
+    package: azure-arm-network
+  - uid: azure-arm-network.FlowLogInformation.flowAnalyticsConfiguration
+    name: flowAnalyticsConfiguration
+    fullName: flowAnalyticsConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'flowAnalyticsConfiguration?: TrafficAnalyticsProperties'
+      return:
+        type:
+          - azure-arm-network.TrafficAnalyticsProperties
     package: azure-arm-network
   - uid: azure-arm-network.FlowLogInformation.retentionPolicy
     name: retentionPolicy
@@ -71,7 +87,14 @@ items:
           - string
     package: azure-arm-network
 references:
+  - uid: azure-arm-network.TrafficAnalyticsProperties
+    name: TrafficAnalyticsProperties
+    spec.typeScript:
+      - name: TrafficAnalyticsProperties
+        fullName: TrafficAnalyticsProperties
+        uid: azure-arm-network.TrafficAnalyticsProperties
   - uid: azure-arm-network.RetentionPolicyParameters
+    name: RetentionPolicyParameters
     spec.typeScript:
       - name: RetentionPolicyParameters
         fullName: RetentionPolicyParameters

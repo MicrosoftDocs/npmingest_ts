@@ -64,7 +64,7 @@ items:
     syntax:
       content: >-
         function beginCreateOrUpdate(resourceGroupName: string, imageName:
-        string, parameters: Image, options?: function)
+        string, parameters: Image, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -84,7 +84,7 @@ items:
             operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -133,7 +133,7 @@ items:
     syntax:
       content: >-
         function beginCreateOrUpdate(resourceGroupName: string, imageName:
-        string, parameters: Image, options: function, callback:
+        string, parameters: Image, options: Object, callback:
         ServiceCallback<Image>)
       parameters:
         - id: resourceGroupName
@@ -150,7 +150,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -170,7 +170,7 @@ items:
     syntax:
       content: >-
         function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName:
-        string, imageName: string, parameters: Image, options?: function)
+        string, imageName: string, parameters: Image, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -190,7 +190,7 @@ items:
             operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -207,7 +207,7 @@ items:
     syntax:
       content: >-
         function beginDeleteMethod(resourceGroupName: string, imageName: string,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -221,12 +221,12 @@ items:
             The name of the image.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.Images.beginDeleteMethod_2
     name: beginDeleteMethod
@@ -238,7 +238,7 @@ items:
     syntax:
       content: >-
         function beginDeleteMethod(resourceGroupName: string, imageName: string,
-        options: function, callback: ServiceCallback<OperationStatusResponse>)
+        options: Object, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -250,15 +250,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.Images.beginDeleteMethod_1
     name: beginDeleteMethod
@@ -270,7 +270,7 @@ items:
     syntax:
       content: >-
         function beginDeleteMethod(resourceGroupName: string, imageName: string,
-        callback: ServiceCallback<OperationStatusResponse>)
+        callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -282,11 +282,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.Images.beginDeleteMethodWithHttpOperationResponse
     name: beginDeleteMethodWithHttpOperationResponse
@@ -298,7 +298,7 @@ items:
     syntax:
       content: >-
         function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
-        string, imageName: string, options?: function)
+        string, imageName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -312,13 +312,12 @@ items:
             The name of the image.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.Images.beginUpdate
     name: beginUpdate
@@ -330,7 +329,7 @@ items:
     syntax:
       content: >-
         function beginUpdate(resourceGroupName: string, imageName: string,
-        parameters: ImageUpdate, options?: function)
+        parameters: ImageUpdate, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -350,7 +349,7 @@ items:
             operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -399,7 +398,7 @@ items:
     syntax:
       content: >-
         function beginUpdate(resourceGroupName: string, imageName: string,
-        parameters: ImageUpdate, options: function, callback:
+        parameters: ImageUpdate, options: Object, callback:
         ServiceCallback<Image>)
       parameters:
         - id: resourceGroupName
@@ -416,7 +415,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -436,7 +435,7 @@ items:
     syntax:
       content: >-
         function beginUpdateWithHttpOperationResponse(resourceGroupName: string,
-        imageName: string, parameters: ImageUpdate, options?: function)
+        imageName: string, parameters: ImageUpdate, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -456,7 +455,7 @@ items:
             operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -505,7 +504,7 @@ items:
     syntax:
       content: >-
         function createOrUpdate(resourceGroupName: string, imageName: string,
-        parameters: Image, options: function, callback: ServiceCallback<Image>)
+        parameters: Image, options: Object, callback: ServiceCallback<Image>)
       parameters:
         - id: resourceGroupName
           type:
@@ -521,7 +520,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -541,7 +540,7 @@ items:
     syntax:
       content: >-
         function createOrUpdate(resourceGroupName: string, imageName: string,
-        parameters: Image, options?: function)
+        parameters: Image, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -561,7 +560,7 @@ items:
             operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -578,7 +577,7 @@ items:
     syntax:
       content: >-
         function createOrUpdateWithHttpOperationResponse(resourceGroupName:
-        string, imageName: string, parameters: Image, options?: function)
+        string, imageName: string, parameters: Image, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -598,7 +597,7 @@ items:
             operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -615,7 +614,7 @@ items:
     syntax:
       content: >-
         function deleteMethod(resourceGroupName: string, imageName: string,
-        options?: function)
+        options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -629,12 +628,12 @@ items:
             The name of the image.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.Images.deleteMethod_1
     name: deleteMethod
@@ -646,7 +645,7 @@ items:
     syntax:
       content: >-
         function deleteMethod(resourceGroupName: string, imageName: string,
-        callback: ServiceCallback<OperationStatusResponse>)
+        callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -658,11 +657,11 @@ items:
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.Images.deleteMethod_2
     name: deleteMethod
@@ -674,7 +673,7 @@ items:
     syntax:
       content: >-
         function deleteMethod(resourceGroupName: string, imageName: string,
-        options: function, callback: ServiceCallback<OperationStatusResponse>)
+        options: Object, callback: ServiceCallback<void>)
       parameters:
         - id: resourceGroupName
           type:
@@ -686,15 +685,15 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
-            - ServiceCallback<azure-arm-compute.OperationStatusResponse>
+            - ServiceCallback<void>
           description: ''
       return:
         type:
-          - Promise<azure-arm-compute.OperationStatusResponse>
+          - Promise<void>
     package: azure-arm-compute
   - uid: azure-arm-compute.Images.deleteMethodWithHttpOperationResponse
     name: deleteMethodWithHttpOperationResponse
@@ -706,7 +705,7 @@ items:
     syntax:
       content: >-
         function deleteMethodWithHttpOperationResponse(resourceGroupName:
-        string, imageName: string, options?: function)
+        string, imageName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -720,13 +719,12 @@ items:
             The name of the image.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
         type:
-          - >-
-            Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
+          - Promise<HttpOperationResponse<void>>
     package: azure-arm-compute
   - uid: azure-arm-compute.Images.get
     name: get
@@ -738,7 +736,7 @@ items:
     syntax:
       content: >-
         function get(resourceGroupName: string, imageName: string, options?:
-        function)
+        Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -752,7 +750,7 @@ items:
             The name of the image.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -797,7 +795,7 @@ items:
     syntax:
       content: >-
         function get(resourceGroupName: string, imageName: string, options:
-        function, callback: ServiceCallback<Image>)
+        Object, callback: ServiceCallback<Image>)
       parameters:
         - id: resourceGroupName
           type:
@@ -809,7 +807,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -829,7 +827,7 @@ items:
     syntax:
       content: >-
         function getWithHttpOperationResponse(resourceGroupName: string,
-        imageName: string, options?: function)
+        imageName: string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -843,7 +841,7 @@ items:
             The name of the image.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -883,12 +881,12 @@ items:
       fetch all the Images.
     syntax:
       content: >-
-        function list(options: function, callback:
+        function list(options: Object, callback:
         ServiceCallback<ImageListResult>)
       parameters:
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -909,11 +907,11 @@ items:
       response to get the next page of Images. Do this till nextLink is null to
       fetch all the Images.
     syntax:
-      content: 'function list(options?: function)'
+      content: 'function list(options?: Object)'
       parameters:
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -930,7 +928,7 @@ items:
     syntax:
       content: >-
         function listByResourceGroup(resourceGroupName: string, options?:
-        function)
+        Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -939,7 +937,7 @@ items:
             The name of the resource group.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -979,8 +977,8 @@ items:
     summary: Gets the list of images under a resource group.
     syntax:
       content: >-
-        function listByResourceGroup(resourceGroupName: string, options:
-        function, callback: ServiceCallback<ImageListResult>)
+        function listByResourceGroup(resourceGroupName: string, options: Object,
+        callback: ServiceCallback<ImageListResult>)
       parameters:
         - id: resourceGroupName
           type:
@@ -988,7 +986,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -1006,9 +1004,7 @@ items:
       - typeScript
     summary: Gets the list of images under a resource group.
     syntax:
-      content: >-
-        function listByResourceGroupNext(nextPageLink: string, options?:
-        function)
+      content: 'function listByResourceGroupNext(nextPageLink: string, options?: Object)'
       parameters:
         - id: nextPageLink
           type:
@@ -1018,7 +1014,7 @@ items:
             to List operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -1058,8 +1054,8 @@ items:
     summary: Gets the list of images under a resource group.
     syntax:
       content: >-
-        function listByResourceGroupNext(nextPageLink: string, options:
-        function, callback: ServiceCallback<ImageListResult>)
+        function listByResourceGroupNext(nextPageLink: string, options: Object,
+        callback: ServiceCallback<ImageListResult>)
       parameters:
         - id: nextPageLink
           type:
@@ -1067,7 +1063,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -1087,7 +1083,7 @@ items:
     syntax:
       content: >-
         function listByResourceGroupNextWithHttpOperationResponse(nextPageLink:
-        string, options?: function)
+        string, options?: Object)
       parameters:
         - id: nextPageLink
           type:
@@ -1097,7 +1093,7 @@ items:
             to List operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -1114,7 +1110,7 @@ items:
     syntax:
       content: >-
         function listByResourceGroupWithHttpOperationResponse(resourceGroupName:
-        string, options?: function)
+        string, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1123,7 +1119,7 @@ items:
             The name of the resource group.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -1141,7 +1137,7 @@ items:
       response to get the next page of Images. Do this till nextLink is null to
       fetch all the Images.
     syntax:
-      content: 'function listNext(nextPageLink: string, options?: function)'
+      content: 'function listNext(nextPageLink: string, options?: Object)'
       parameters:
         - id: nextPageLink
           type:
@@ -1151,7 +1147,7 @@ items:
             to List operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -1197,7 +1193,7 @@ items:
       fetch all the Images.
     syntax:
       content: >-
-        function listNext(nextPageLink: string, options: function, callback:
+        function listNext(nextPageLink: string, options: Object, callback:
         ServiceCallback<ImageListResult>)
       parameters:
         - id: nextPageLink
@@ -1206,7 +1202,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -1229,7 +1225,7 @@ items:
     syntax:
       content: >-
         function listNextWithHttpOperationResponse(nextPageLink: string,
-        options?: function)
+        options?: Object)
       parameters:
         - id: nextPageLink
           type:
@@ -1239,7 +1235,7 @@ items:
             to List operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -1257,11 +1253,11 @@ items:
       response to get the next page of Images. Do this till nextLink is null to
       fetch all the Images.
     syntax:
-      content: 'function listWithHttpOperationResponse(options?: function)'
+      content: 'function listWithHttpOperationResponse(options?: Object)'
       parameters:
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -1278,7 +1274,7 @@ items:
     syntax:
       content: >-
         function update(resourceGroupName: string, imageName: string,
-        parameters: ImageUpdate, options?: function)
+        parameters: ImageUpdate, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1298,7 +1294,7 @@ items:
             operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -1347,7 +1343,7 @@ items:
     syntax:
       content: >-
         function update(resourceGroupName: string, imageName: string,
-        parameters: ImageUpdate, options: function, callback:
+        parameters: ImageUpdate, options: Object, callback:
         ServiceCallback<Image>)
       parameters:
         - id: resourceGroupName
@@ -1364,7 +1360,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -1384,7 +1380,7 @@ items:
     syntax:
       content: >-
         function updateWithHttpOperationResponse(resourceGroupName: string,
-        imageName: string, parameters: ImageUpdate, options?: function)
+        imageName: string, parameters: ImageUpdate, options?: Object)
       parameters:
         - id: resourceGroupName
           type:
@@ -1404,7 +1400,7 @@ items:
             operation.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -1413,11 +1409,13 @@ items:
     package: azure-arm-compute
 references:
   - uid: azure-arm-compute.Image
+    name: Image
     spec.typeScript:
       - name: Image
         fullName: Image
         uid: azure-arm-compute.Image
   - uid: Promise<azure-arm-compute.Image>
+    name: Image>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -1427,6 +1425,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-compute.Image>
+    name: Image>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -1436,6 +1435,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: Promise<HttpOperationResponse<azure-arm-compute.Image>>
+    name: Image>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<
@@ -1444,39 +1444,14 @@ references:
         uid: azure-arm-compute.Image
       - name: '>>'
         fullName: '>>'
-  - uid: Promise<azure-arm-compute.OperationStatusResponse>
-    spec.typeScript:
-      - name: Promise<
-        fullName: Promise<
-      - name: OperationStatusResponse
-        fullName: OperationStatusResponse
-        uid: azure-arm-compute.OperationStatusResponse
-      - name: '>'
-        fullName: '>'
-  - uid: ServiceCallback<azure-arm-compute.OperationStatusResponse>
-    spec.typeScript:
-      - name: ServiceCallback<
-        fullName: ServiceCallback<
-      - name: OperationStatusResponse
-        fullName: OperationStatusResponse
-        uid: azure-arm-compute.OperationStatusResponse
-      - name: '>'
-        fullName: '>'
-  - uid: Promise<HttpOperationResponse<azure-arm-compute.OperationStatusResponse>>
-    spec.typeScript:
-      - name: Promise<HttpOperationResponse<
-        fullName: Promise<HttpOperationResponse<
-      - name: OperationStatusResponse
-        fullName: OperationStatusResponse
-        uid: azure-arm-compute.OperationStatusResponse
-      - name: '>>'
-        fullName: '>>'
   - uid: azure-arm-compute.ImageUpdate
+    name: ImageUpdate
     spec.typeScript:
       - name: ImageUpdate
         fullName: ImageUpdate
         uid: azure-arm-compute.ImageUpdate
   - uid: Promise<azure-arm-compute.ImageListResult>
+    name: ImageListResult>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -1486,6 +1461,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-compute.ImageListResult>
+    name: ImageListResult>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -1495,6 +1471,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: Promise<HttpOperationResponse<azure-arm-compute.ImageListResult>>
+    name: ImageListResult>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<

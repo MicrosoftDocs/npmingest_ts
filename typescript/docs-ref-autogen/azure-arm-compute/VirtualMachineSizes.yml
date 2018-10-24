@@ -19,11 +19,11 @@ items:
     type: method
     langs:
       - typeScript
-    summary: >-
-      Lists all available virtual machine sizes for a subscription in a
-      location.
+    summary: |-
+      This API is deprecated. Use [Resources
+      Skus](https://docs.microsoft.com/en-us/rest/api/compute/resourceskus/list)
     syntax:
-      content: 'function list(location: string, options?: function)'
+      content: 'function list(location: string, options?: Object)'
       parameters:
         - id: location
           type:
@@ -33,7 +33,7 @@ items:
             queried.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -46,9 +46,9 @@ items:
     type: method
     langs:
       - typeScript
-    summary: >-
-      Lists all available virtual machine sizes for a subscription in a
-      location.
+    summary: |-
+      This API is deprecated. Use [Resources
+      Skus](https://docs.microsoft.com/en-us/rest/api/compute/resourceskus/list)
     syntax:
       content: >-
         function list(location: string, callback:
@@ -72,12 +72,12 @@ items:
     type: method
     langs:
       - typeScript
-    summary: >-
-      Lists all available virtual machine sizes for a subscription in a
-      location.
+    summary: |-
+      This API is deprecated. Use [Resources
+      Skus](https://docs.microsoft.com/en-us/rest/api/compute/resourceskus/list)
     syntax:
       content: >-
-        function list(location: string, options: function, callback:
+        function list(location: string, options: Object, callback:
         ServiceCallback<VirtualMachineSizeListResult>)
       parameters:
         - id: location
@@ -86,7 +86,7 @@ items:
           description: ''
         - id: options
           type:
-            - function
+            - Object
           description: ''
         - id: callback
           type:
@@ -102,13 +102,13 @@ items:
     type: method
     langs:
       - typeScript
-    summary: >-
-      Lists all available virtual machine sizes for a subscription in a
-      location.
+    summary: |-
+      This API is deprecated. Use [Resources
+      Skus](https://docs.microsoft.com/en-us/rest/api/compute/resourceskus/list)
     syntax:
       content: >-
         function listWithHttpOperationResponse(location: string, options?:
-        function)
+        Object)
       parameters:
         - id: location
           type:
@@ -118,7 +118,7 @@ items:
             queried.
         - id: options
           type:
-            - function
+            - Object
           description: ''
           optional: true
       return:
@@ -128,6 +128,7 @@ items:
     package: azure-arm-compute
 references:
   - uid: Promise<azure-arm-compute.VirtualMachineSizeListResult>
+    name: VirtualMachineSizeListResult>
     spec.typeScript:
       - name: Promise<
         fullName: Promise<
@@ -137,6 +138,7 @@ references:
       - name: '>'
         fullName: '>'
   - uid: ServiceCallback<azure-arm-compute.VirtualMachineSizeListResult>
+    name: VirtualMachineSizeListResult>
     spec.typeScript:
       - name: ServiceCallback<
         fullName: ServiceCallback<
@@ -147,6 +149,7 @@ references:
         fullName: '>'
   - uid: >-
       Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineSizeListResult>>
+    name: VirtualMachineSizeListResult>>
     spec.typeScript:
       - name: Promise<HttpOperationResponse<
         fullName: Promise<HttpOperationResponse<

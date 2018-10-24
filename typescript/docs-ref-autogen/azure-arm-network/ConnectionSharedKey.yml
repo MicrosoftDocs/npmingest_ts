@@ -9,6 +9,8 @@ items:
       - typeScript
     type: interface
     summary: ''
+    extends:
+      name: azure-arm-network.SubResource
     package: azure-arm-network
   - uid: azure-arm-network.ConnectionSharedKey.value
     name: value
@@ -24,3 +26,10 @@ items:
         type:
           - string
     package: azure-arm-network
+references:
+  - uid: azure-arm-network.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network.SubResource

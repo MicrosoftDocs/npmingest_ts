@@ -83,18 +83,20 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'tags?: function'
+      content: 'tags?: [key: string]: string'
       return:
         type:
-          - function
+          - '[key: string]: string'
     package: azure-arm-batch
 references:
   - uid: azure-arm-batch.AutoStorageBaseProperties
+    name: AutoStorageBaseProperties
     spec.typeScript:
       - name: AutoStorageBaseProperties
         fullName: AutoStorageBaseProperties
         uid: azure-arm-batch.AutoStorageBaseProperties
   - uid: azure-arm-batch.KeyVaultReference
+    name: KeyVaultReference
     spec.typeScript:
       - name: KeyVaultReference
         fullName: KeyVaultReference

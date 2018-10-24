@@ -103,10 +103,10 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'tags?: function'
+      content: 'tags?: [key: string]: string'
       return:
         type:
-          - function
+          - '[key: string]: string'
     package: azure-arm-network
   - uid: azure-arm-network.PatchRouteFilter.type
     name: type
@@ -125,11 +125,13 @@ items:
     package: azure-arm-network
 references:
   - uid: azure-arm-network.SubResource
+    name: SubResource
     spec.typeScript:
       - name: SubResource
         fullName: SubResource
         uid: azure-arm-network.SubResource
   - uid: 'azure-arm-network.ExpressRouteCircuitPeering[]'
+    name: 'ExpressRouteCircuitPeering[]'
     spec.typeScript:
       - name: ExpressRouteCircuitPeering
         fullName: ExpressRouteCircuitPeering
@@ -137,6 +139,7 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: 'azure-arm-network.RouteFilterRule[]'
+    name: 'RouteFilterRule[]'
     spec.typeScript:
       - name: RouteFilterRule
         fullName: RouteFilterRule

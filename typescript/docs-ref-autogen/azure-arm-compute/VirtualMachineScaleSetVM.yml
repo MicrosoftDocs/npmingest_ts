@@ -4,6 +4,7 @@ items:
     name: VirtualMachineScaleSetVM
     fullName: VirtualMachineScaleSetVM
     children:
+      - azure-arm-compute.VirtualMachineScaleSetVM.additionalCapabilities
       - azure-arm-compute.VirtualMachineScaleSetVM.availabilitySet
       - azure-arm-compute.VirtualMachineScaleSetVM.diagnosticsProfile
       - azure-arm-compute.VirtualMachineScaleSetVM.hardwareProfile
@@ -19,12 +20,28 @@ items:
       - azure-arm-compute.VirtualMachineScaleSetVM.sku
       - azure-arm-compute.VirtualMachineScaleSetVM.storageProfile
       - azure-arm-compute.VirtualMachineScaleSetVM.vmId
+      - azure-arm-compute.VirtualMachineScaleSetVM.zones
     langs:
       - typeScript
     type: interface
     summary: ''
     extends:
       name: azure-arm-compute.Resource
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.additionalCapabilities
+    name: additionalCapabilities
+    fullName: additionalCapabilities
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'additionalCapabilities?: AdditionalCapabilities'
+      return:
+        type:
+          - azure-arm-compute.AdditionalCapabilities
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVM.availabilitySet
     name: availabilitySet
@@ -96,10 +113,10 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'instanceView?: VirtualMachineInstanceView'
+      content: 'instanceView?: VirtualMachineScaleSetVMInstanceView'
       return:
         type:
-          - azure-arm-compute.VirtualMachineInstanceView
+          - azure-arm-compute.VirtualMachineScaleSetVMInstanceView
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVM.latestModelApplied
     name: latestModelApplied
@@ -251,48 +268,78 @@ items:
         type:
           - string
     package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.zones
+    name: zones
+    fullName: zones
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'zones?: string[]'
+      return:
+        type:
+          - 'string[]'
+    package: azure-arm-compute
 references:
   - uid: azure-arm-compute.Resource
+    name: Resource
     spec.typeScript:
       - name: Resource
         fullName: Resource
         uid: azure-arm-compute.Resource
+  - uid: azure-arm-compute.AdditionalCapabilities
+    name: AdditionalCapabilities
+    spec.typeScript:
+      - name: AdditionalCapabilities
+        fullName: AdditionalCapabilities
+        uid: azure-arm-compute.AdditionalCapabilities
   - uid: azure-arm-compute.SubResource
+    name: SubResource
     spec.typeScript:
       - name: SubResource
         fullName: SubResource
         uid: azure-arm-compute.SubResource
   - uid: azure-arm-compute.DiagnosticsProfile
+    name: DiagnosticsProfile
     spec.typeScript:
       - name: DiagnosticsProfile
         fullName: DiagnosticsProfile
         uid: azure-arm-compute.DiagnosticsProfile
   - uid: azure-arm-compute.HardwareProfile
+    name: HardwareProfile
     spec.typeScript:
       - name: HardwareProfile
         fullName: HardwareProfile
         uid: azure-arm-compute.HardwareProfile
-  - uid: azure-arm-compute.VirtualMachineInstanceView
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMInstanceView
+    name: VirtualMachineScaleSetVMInstanceView
     spec.typeScript:
-      - name: VirtualMachineInstanceView
-        fullName: VirtualMachineInstanceView
-        uid: azure-arm-compute.VirtualMachineInstanceView
+      - name: VirtualMachineScaleSetVMInstanceView
+        fullName: VirtualMachineScaleSetVMInstanceView
+        uid: azure-arm-compute.VirtualMachineScaleSetVMInstanceView
   - uid: azure-arm-compute.NetworkProfile
+    name: NetworkProfile
     spec.typeScript:
       - name: NetworkProfile
         fullName: NetworkProfile
         uid: azure-arm-compute.NetworkProfile
   - uid: azure-arm-compute.OSProfile
+    name: OSProfile
     spec.typeScript:
       - name: OSProfile
         fullName: OSProfile
         uid: azure-arm-compute.OSProfile
   - uid: azure-arm-compute.Plan
+    name: Plan
     spec.typeScript:
       - name: Plan
         fullName: Plan
         uid: azure-arm-compute.Plan
   - uid: 'azure-arm-compute.VirtualMachineExtension[]'
+    name: 'VirtualMachineExtension[]'
     spec.typeScript:
       - name: VirtualMachineExtension
         fullName: VirtualMachineExtension
@@ -300,11 +347,13 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: azure-arm-compute.Sku
+    name: Sku
     spec.typeScript:
       - name: Sku
         fullName: Sku
         uid: azure-arm-compute.Sku
   - uid: azure-arm-compute.StorageProfile
+    name: StorageProfile
     spec.typeScript:
       - name: StorageProfile
         fullName: StorageProfile
