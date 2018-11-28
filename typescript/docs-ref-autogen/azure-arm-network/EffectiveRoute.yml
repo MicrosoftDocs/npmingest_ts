@@ -13,7 +13,15 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: >-
+      {string} [nextHopType] The type of Azure hop the packet should be
+
+      sent to. Possible values are: 'VirtualNetworkGateway', 'VnetLocal',
+
+      'Internet', 'VirtualAppliance', and 'None'. Possible values include:
+
+      'VirtualNetworkGateway', 'VnetLocal', 'Internet', 'VirtualAppliance',
+      'None'
     package: azure-arm-network
   - uid: azure-arm-network.EffectiveRoute.addressPrefix
     name: addressPrefix

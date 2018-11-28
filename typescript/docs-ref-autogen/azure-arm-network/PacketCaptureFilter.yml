@@ -12,7 +12,11 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: |-
+      {string} [remotePort] Remote port to be filtered on. Notation:
+      "80" for single port entry."80-85" for range. "80;443;" for multiple
+      entries. Multiple ranges not currently supported. Mixing ranges with
+      multiple entries not currently supported. Default = null.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptureFilter.localIPAddress
     name: localIPAddress

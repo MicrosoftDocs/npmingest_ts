@@ -12,7 +12,15 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: >-
+      {string} [internalDomainNameSuffix] Even if internalDnsNameLabel
+
+      is not specified, a DNS entry is created for the primary NIC of the VM.
+      This
+
+      DNS name can be constructed by concatenating the VM name with the value of
+
+      internalDomainNameSuffix.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkInterfaceDnsSettings.appliedDnsServers
     name: appliedDnsServers

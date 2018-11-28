@@ -10,7 +10,11 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: |-
+      {string} [filePath] A valid local path on the targeting VM. Must
+      include the name of the capture file (*.cap). For linux virtual machine it
+      must start with /var/captures. Required if no storage ID is provided,
+      otherwise optional.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptureStorageLocation.filePath
     name: filePath

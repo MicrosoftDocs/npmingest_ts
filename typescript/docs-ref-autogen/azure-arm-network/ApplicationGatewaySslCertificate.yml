@@ -6,6 +6,7 @@ items:
     children:
       - azure-arm-network.ApplicationGatewaySslCertificate.data
       - azure-arm-network.ApplicationGatewaySslCertificate.etag
+      - azure-arm-network.ApplicationGatewaySslCertificate.keyVaultSecretId
       - azure-arm-network.ApplicationGatewaySslCertificate.name
       - azure-arm-network.ApplicationGatewaySslCertificate.password
       - azure-arm-network.ApplicationGatewaySslCertificate.provisioningState
@@ -14,7 +15,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: '{string} [type] Type of the resource.'
     extends:
       name: azure-arm-network.SubResource
     package: azure-arm-network
@@ -44,6 +45,21 @@ items:
     optional: true
     syntax:
       content: 'etag?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-network
+  - uid: azure-arm-network.ApplicationGatewaySslCertificate.keyVaultSecretId
+    name: keyVaultSecretId
+    fullName: keyVaultSecretId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'keyVaultSecretId?: string'
       return:
         type:
           - string

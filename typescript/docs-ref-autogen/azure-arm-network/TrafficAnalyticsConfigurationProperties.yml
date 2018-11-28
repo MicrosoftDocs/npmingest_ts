@@ -5,6 +5,8 @@ items:
     fullName: TrafficAnalyticsConfigurationProperties
     children:
       - azure-arm-network.TrafficAnalyticsConfigurationProperties.enabled
+      - >-
+        azure-arm-network.TrafficAnalyticsConfigurationProperties.trafficAnalyticsInterval
       - azure-arm-network.TrafficAnalyticsConfigurationProperties.workspaceId
       - >-
         azure-arm-network.TrafficAnalyticsConfigurationProperties.workspaceRegion
@@ -13,7 +15,9 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: |-
+      {number} [trafficAnalyticsInterval] The interval in minutes which
+      would decide how frequently TA service should do flow analytics
     package: azure-arm-network
   - uid: azure-arm-network.TrafficAnalyticsConfigurationProperties.enabled
     name: enabled
@@ -28,6 +32,22 @@ items:
       return:
         type:
           - boolean
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.TrafficAnalyticsConfigurationProperties.trafficAnalyticsInterval
+    name: trafficAnalyticsInterval
+    fullName: trafficAnalyticsInterval
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'trafficAnalyticsInterval?: number'
+      return:
+        type:
+          - number
     package: azure-arm-network
   - uid: azure-arm-network.TrafficAnalyticsConfigurationProperties.workspaceId
     name: workspaceId

@@ -16,12 +16,14 @@ items:
       - azure-arm-network.ApplicationGateway.frontendPorts
       - azure-arm-network.ApplicationGateway.gatewayIPConfigurations
       - azure-arm-network.ApplicationGateway.httpListeners
+      - azure-arm-network.ApplicationGateway.identity
       - azure-arm-network.ApplicationGateway.operationalState
       - azure-arm-network.ApplicationGateway.probes
       - azure-arm-network.ApplicationGateway.provisioningState
       - azure-arm-network.ApplicationGateway.redirectConfigurations
       - azure-arm-network.ApplicationGateway.requestRoutingRules
       - azure-arm-network.ApplicationGateway.resourceGuid
+      - azure-arm-network.ApplicationGateway.rewriteRuleSets
       - azure-arm-network.ApplicationGateway.sku
       - azure-arm-network.ApplicationGateway.sslCertificates
       - azure-arm-network.ApplicationGateway.sslPolicy
@@ -32,7 +34,14 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: >-
+      {object} [identity.userAssignedIdentities] The list of user
+
+      identities associated with resource. The user identity dictionary key
+
+      references will be ARM resource ids in the form:
+
+      '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
     extends:
       name: azure-arm-network.Resource
     package: azure-arm-network
@@ -218,6 +227,21 @@ items:
         type:
           - 'azure-arm-network.ApplicationGatewayHttpListener[]'
     package: azure-arm-network
+  - uid: azure-arm-network.ApplicationGateway.identity
+    name: identity
+    fullName: identity
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'identity?: ManagedServiceIdentity'
+      return:
+        type:
+          - azure-arm-network.ManagedServiceIdentity
+    package: azure-arm-network
   - uid: azure-arm-network.ApplicationGateway.operationalState
     name: operationalState
     fullName: operationalState
@@ -307,6 +331,21 @@ items:
       return:
         type:
           - string
+    package: azure-arm-network
+  - uid: azure-arm-network.ApplicationGateway.rewriteRuleSets
+    name: rewriteRuleSets
+    fullName: rewriteRuleSets
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'rewriteRuleSets?: ApplicationGatewayRewriteRuleSet[]'
+      return:
+        type:
+          - 'azure-arm-network.ApplicationGatewayRewriteRuleSet[]'
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationGateway.sku
     name: sku
@@ -493,6 +532,12 @@ references:
         uid: azure-arm-network.ApplicationGatewayHttpListener
       - name: '[]'
         fullName: '[]'
+  - uid: azure-arm-network.ManagedServiceIdentity
+    name: ManagedServiceIdentity
+    spec.typeScript:
+      - name: ManagedServiceIdentity
+        fullName: ManagedServiceIdentity
+        uid: azure-arm-network.ManagedServiceIdentity
   - uid: 'azure-arm-network.ApplicationGatewayProbe[]'
     name: 'ApplicationGatewayProbe[]'
     spec.typeScript:
@@ -515,6 +560,14 @@ references:
       - name: ApplicationGatewayRequestRoutingRule
         fullName: ApplicationGatewayRequestRoutingRule
         uid: azure-arm-network.ApplicationGatewayRequestRoutingRule
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network.ApplicationGatewayRewriteRuleSet[]'
+    name: 'ApplicationGatewayRewriteRuleSet[]'
+    spec.typeScript:
+      - name: ApplicationGatewayRewriteRuleSet
+        fullName: ApplicationGatewayRewriteRuleSet
+        uid: azure-arm-network.ApplicationGatewayRewriteRuleSet
       - name: '[]'
         fullName: '[]'
   - uid: azure-arm-network.ApplicationGatewaySku

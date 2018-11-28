@@ -6,13 +6,22 @@ items:
     children:
       - azure-arm-network.FlowLogInformation.enabled
       - azure-arm-network.FlowLogInformation.flowAnalyticsConfiguration
+      - azure-arm-network.FlowLogInformation.format
       - azure-arm-network.FlowLogInformation.retentionPolicy
       - azure-arm-network.FlowLogInformation.storageId
       - azure-arm-network.FlowLogInformation.targetResourceId
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: >-
+      {number}
+
+      [flowAnalyticsConfiguration.networkWatcherFlowAnalyticsConfiguration.trafficAnalyticsInterval]
+
+      The interval in minutes which would decide how frequently TA service
+      should
+
+      do flow analytics
     package: azure-arm-network
   - uid: azure-arm-network.FlowLogInformation.enabled
     name: enabled
@@ -42,6 +51,21 @@ items:
       return:
         type:
           - azure-arm-network.TrafficAnalyticsProperties
+    package: azure-arm-network
+  - uid: azure-arm-network.FlowLogInformation.format
+    name: format
+    fullName: format
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'format?: FlowLogFormatParameters'
+      return:
+        type:
+          - azure-arm-network.FlowLogFormatParameters
     package: azure-arm-network
   - uid: azure-arm-network.FlowLogInformation.retentionPolicy
     name: retentionPolicy
@@ -93,6 +117,12 @@ references:
       - name: TrafficAnalyticsProperties
         fullName: TrafficAnalyticsProperties
         uid: azure-arm-network.TrafficAnalyticsProperties
+  - uid: azure-arm-network.FlowLogFormatParameters
+    name: FlowLogFormatParameters
+    spec.typeScript:
+      - name: FlowLogFormatParameters
+        fullName: FlowLogFormatParameters
+        uid: azure-arm-network.FlowLogFormatParameters
   - uid: azure-arm-network.RetentionPolicyParameters
     name: RetentionPolicyParameters
     spec.typeScript:

@@ -7,7 +7,7 @@ items:
       - azure-arm-network.ApplicationGatewayTrustedRootCertificate.data
       - azure-arm-network.ApplicationGatewayTrustedRootCertificate.etag
       - >-
-        azure-arm-network.ApplicationGatewayTrustedRootCertificate.keyvaultSecretId
+        azure-arm-network.ApplicationGatewayTrustedRootCertificate.keyVaultSecretId
       - azure-arm-network.ApplicationGatewayTrustedRootCertificate.name
       - >-
         azure-arm-network.ApplicationGatewayTrustedRootCertificate.provisioningState
@@ -15,7 +15,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: '{string} [type] Type of the resource.'
     extends:
       name: azure-arm-network.SubResource
     package: azure-arm-network
@@ -50,9 +50,9 @@ items:
           - string
     package: azure-arm-network
   - uid: >-
-      azure-arm-network.ApplicationGatewayTrustedRootCertificate.keyvaultSecretId
-    name: keyvaultSecretId
-    fullName: keyvaultSecretId
+      azure-arm-network.ApplicationGatewayTrustedRootCertificate.keyVaultSecretId
+    name: keyVaultSecretId
+    fullName: keyVaultSecretId
     children: []
     langs:
       - typeScript
@@ -60,7 +60,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'keyvaultSecretId?: string'
+      content: 'keyVaultSecretId?: string'
       return:
         type:
           - string

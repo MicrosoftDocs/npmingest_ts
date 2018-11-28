@@ -11,11 +11,12 @@ items:
       - azure-arm-network.ApplicationGatewayPathRule.paths
       - azure-arm-network.ApplicationGatewayPathRule.provisioningState
       - azure-arm-network.ApplicationGatewayPathRule.redirectConfiguration
+      - azure-arm-network.ApplicationGatewayPathRule.rewriteRuleSet
       - azure-arm-network.ApplicationGatewayPathRule.type
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: '{string} [type] Type of the resource.'
     extends:
       name: azure-arm-network.SubResource
     package: azure-arm-network
@@ -120,6 +121,21 @@ items:
     optional: true
     syntax:
       content: 'redirectConfiguration?: SubResource'
+      return:
+        type:
+          - azure-arm-network.SubResource
+    package: azure-arm-network
+  - uid: azure-arm-network.ApplicationGatewayPathRule.rewriteRuleSet
+    name: rewriteRuleSet
+    fullName: rewriteRuleSet
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'rewriteRuleSet?: SubResource'
       return:
         type:
           - azure-arm-network.SubResource
