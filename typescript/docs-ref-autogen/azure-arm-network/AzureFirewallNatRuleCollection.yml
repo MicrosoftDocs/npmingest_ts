@@ -13,9 +13,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: |-
-      {string} [etag] Gets a unique read-only string that changes
-      whenever the resource is updated.
+    summary: NAT rule collection resource
     extends:
       name: azure-arm-network.SubResource
     package: azure-arm-network
@@ -26,7 +24,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The action type of a NAT rule collection
     optional: true
     syntax:
       content: 'action?: AzureFirewallNatRCAction'
@@ -41,7 +39,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Gets a unique read-only string that changes whenever the resource is
+      updated.
     optional: true
     syntax:
       content: 'etag?: string'
@@ -56,7 +56,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Gets name of the resource that is unique within a resource group. This
+      name can be used to
+
+      access the resource.
     optional: true
     syntax:
       content: 'name?: string'
@@ -71,7 +75,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Priority of the NAT rule collection resource.
     optional: true
     syntax:
       content: 'priority?: number'
@@ -86,7 +90,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The provisioning state of the resource. Possible values include:
+      'Succeeded', 'Updating',
+
+      'Deleting', 'Failed'
     optional: true
     syntax:
       content: 'provisioningState?: string'
@@ -101,7 +109,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Collection of rules used by a NAT rule collection.
     optional: true
     syntax:
       content: 'rules?: AzureFirewallNatRule[]'

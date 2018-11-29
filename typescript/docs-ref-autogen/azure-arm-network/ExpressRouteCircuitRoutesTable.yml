@@ -12,9 +12,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: |-
-      {string} [path] Autonomous system paths to the destination
-      network.
+    summary: The routes table associated with the ExpressRouteCircuit
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteCircuitRoutesTable.locPrf
     name: locPrf
@@ -23,7 +21,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Local preference value as set with the set local-preference route-map
+      configuration command
     optional: true
     syntax:
       content: 'locPrf?: string'
@@ -38,7 +38,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: IP address of a network entity
     optional: true
     syntax:
       content: 'network?: string'
@@ -53,7 +53,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: NextHop address
     optional: true
     syntax:
       content: 'nextHop?: string'
@@ -68,7 +68,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Autonomous system paths to the destination network.
     optional: true
     syntax:
       content: 'path?: string'
@@ -83,7 +83,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Route Weight.
     optional: true
     syntax:
       content: 'weight?: number'

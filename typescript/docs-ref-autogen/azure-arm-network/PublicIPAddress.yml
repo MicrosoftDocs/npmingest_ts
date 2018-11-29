@@ -20,9 +20,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: |-
-      {array} [zones] A list of availability zones denoting the IP
-      allocated for the resource needs to come from.
+    summary: Public IP address resource.
     extends:
       name: azure-arm-network.Resource
     package: azure-arm-network
@@ -33,7 +31,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The FQDN of the DNS record associated with the public IP address.
     optional: true
     syntax:
       content: 'dnsSettings?: PublicIPAddressDnsSettings'
@@ -48,7 +46,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: A unique read-only string that changes whenever the resource is updated.
     optional: true
     syntax:
       content: 'etag?: string'
@@ -63,7 +61,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The idle timeout of the public IP address.
     optional: true
     syntax:
       content: 'idleTimeoutInMinutes?: number'
@@ -78,7 +76,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The IP address associated with the public IP address resource.
     optional: true
     syntax:
       content: 'ipAddress?: string'
@@ -93,7 +91,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The IP configuration associated with the public IP address.
     optional: true
     syntax:
       content: 'ipConfiguration?: IPConfiguration'
@@ -108,7 +106,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The list of tags associated with the public IP address.
     optional: true
     syntax:
       content: 'ipTags?: IpTag[]'
@@ -123,7 +121,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The provisioning state of the PublicIP resource. Possible values are:
+      'Updating', 'Deleting',
+
+      and 'Failed'.
     optional: true
     syntax:
       content: 'provisioningState?: string'
@@ -138,7 +140,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The public IP address version. Possible values are: 'IPv4' and 'IPv6'.
+      Possible values
+
+      include: 'IPv4', 'IPv6'
     optional: true
     syntax:
       content: 'publicIPAddressVersion?: string'
@@ -153,7 +159,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The public IP allocation method. Possible values are: 'Static' and
+      'Dynamic'. Possible values
+
+      include: 'Static', 'Dynamic'
     optional: true
     syntax:
       content: 'publicIPAllocationMethod?: string'
@@ -168,7 +178,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The Public IP Prefix this Public IP Address should be allocated from.
     optional: true
     syntax:
       content: 'publicIPPrefix?: SubResource'
@@ -183,7 +193,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The resource GUID property of the public IP resource.
     optional: true
     syntax:
       content: 'resourceGuid?: string'
@@ -198,7 +208,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The public IP address SKU.
     optional: true
     syntax:
       content: 'sku?: PublicIPAddressSku'
@@ -213,7 +223,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      A list of availability zones denoting the IP allocated for the resource
+      needs to come from.
     optional: true
     syntax:
       content: 'zones?: string[]'

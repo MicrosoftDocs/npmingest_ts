@@ -14,9 +14,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: |-
-      {string} [etag] Gets a unique read-only string that changes
-      whenever the resource is updated.
+    summary: Interface endpoint resource.
     extends:
       name: azure-arm-network.Resource
     package: azure-arm-network
@@ -27,7 +25,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: A reference to the service being brought into the virtual network.
     optional: true
     syntax:
       content: 'endpointService?: EndpointService'
@@ -42,7 +40,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Gets a unique read-only string that changes whenever the resource is
+      updated.
     optional: true
     syntax:
       content: 'etag?: string'
@@ -57,7 +57,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      A first-party service's FQDN that is mapped to the private IP allocated
+      via this interface
+
+      endpoint.
     optional: true
     syntax:
       content: 'fqdn?: string'
@@ -72,7 +76,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Gets an array of references to the network interfaces created for this
+      interface endpoint.
     optional: true
     syntax:
       content: 'networkInterfaces?: NetworkInterface[]'
@@ -87,7 +93,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: A read-only property that identifies who created this interface endpoint.
     optional: true
     syntax:
       content: 'owner?: string'
@@ -102,7 +108,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The provisioning state of the interface endpoint. Possible values are:
+      'Updating', 'Deleting',
+
+      and 'Failed'.
     optional: true
     syntax:
       content: 'provisioningState?: string'
@@ -117,7 +127,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The ID of the subnet from which the private IP will be allocated.
     optional: true
     syntax:
       content: 'subnet?: Subnet'

@@ -20,9 +20,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: |-
-      {string} [monitoringStatus] The monitoring status of the
-      connection monitor.
+    summary: Information about the connection monitor.
     extends:
       name: BaseResource
     package: azure-arm-network
@@ -33,7 +31,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Determines if the connection monitor will start automatically once
+      created.
     optional: true
     syntax:
       content: 'autoStart?: boolean'
@@ -77,7 +77,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: ID of the connection monitor.
     optional: true
     syntax:
       content: 'id?: string'
@@ -92,7 +92,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Connection monitor location.
     optional: true
     syntax:
       content: 'location?: string'
@@ -107,7 +107,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Monitoring interval in seconds.
     optional: true
     syntax:
       content: 'monitoringIntervalInSeconds?: number'
@@ -122,7 +122,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The monitoring status of the connection monitor.
     optional: true
     syntax:
       content: 'monitoringStatus?: string'
@@ -137,7 +137,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Name of the connection monitor.
     optional: true
     syntax:
       content: 'name?: string'
@@ -152,7 +152,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The provisioning state of the connection monitor. Possible values include:
+      'Succeeded',
+
+      'Updating', 'Deleting', 'Failed'
     optional: true
     syntax:
       content: 'provisioningState?: string'
@@ -181,7 +185,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The date and time when the connection monitor was started.
     optional: true
     syntax:
       content: 'startTime?: Date'
@@ -196,7 +200,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Connection monitor tags.
     optional: true
     syntax:
       content: 'tags?: [key: string]: string'
@@ -211,7 +215,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Connection monitor type.
     optional: true
     syntax:
       content: 'type?: string'

@@ -11,10 +11,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: |-
-      {string} [provisioningState] The provisioning state of the
-      ExpressRoutePortLocation resource. Possible values are: 'Succeeded',
-      'Updating', 'Deleting', and 'Failed'.
+    summary: Definition of the ExpressRoutePorts peering location resource.
     extends:
       name: azure-arm-network.Resource
     package: azure-arm-network
@@ -25,7 +22,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Address of peering location.
     optional: true
     syntax:
       content: 'address?: string'
@@ -40,7 +37,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The inventory of available ExpressRoutePort bandwidths.
     optional: true
     syntax:
       content: 'availableBandwidths?: ExpressRoutePortsLocationBandwidths[]'
@@ -55,7 +52,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Contact details of peering locations.
     optional: true
     syntax:
       content: 'contact?: string'
@@ -70,7 +67,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The provisioning state of the ExpressRoutePortLocation resource. Possible
+      values are:
+
+      'Succeeded', 'Updating', 'Deleting', and 'Failed'.
     optional: true
     syntax:
       content: 'provisioningState?: string'

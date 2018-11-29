@@ -17,9 +17,7 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: |-
-      {string} [etag] Gets a unique read-only string that changes
-      whenever the resource is updated.
+    summary: VirtualWAN Resource.
     extends:
       name: azure-arm-network.Resource
     package: azure-arm-network
@@ -30,7 +28,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: True if branch to branch traffic is allowed.
     optional: true
     syntax:
       content: 'allowBranchToBranchTraffic?: boolean'
@@ -45,7 +43,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: True if Vnet to Vnet traffic is allowed.
     optional: true
     syntax:
       content: 'allowVnetToVnetTraffic?: boolean'
@@ -60,7 +58,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Vpn encryption to be disabled or not.
     optional: true
     syntax:
       content: 'disableVpnEncryption?: boolean'
@@ -75,7 +73,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Gets a unique read-only string that changes whenever the resource is
+      updated.
     optional: true
     syntax:
       content: 'etag?: string'
@@ -90,7 +90,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The office local breakout category. Possible values include: 'Optimize',
+      'OptimizeAndAllow',
+
+      'All', 'None'
     optional: true
     syntax:
       content: 'office365LocalBreakoutCategory?: string'
@@ -105,7 +109,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: list of all P2SVpnServerConfigurations associated with the virtual wan.
     optional: true
     syntax:
       content: 'p2SVpnServerConfigurations?: P2SVpnServerConfiguration[]'
@@ -120,7 +124,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The provisioning state of the resource. Possible values include:
+      'Succeeded', 'Updating',
+
+      'Deleting', 'Failed'
     optional: true
     syntax:
       content: 'provisioningState?: string'
@@ -135,7 +143,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The Security Provider name.
     optional: true
     syntax:
       content: 'securityProviderName?: string'
@@ -150,7 +158,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: List of VirtualHubs in the VirtualWAN.
     optional: true
     syntax:
       content: 'virtualHubs?: SubResource[]'
