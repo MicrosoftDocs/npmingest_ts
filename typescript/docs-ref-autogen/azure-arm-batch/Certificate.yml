@@ -5,7 +5,10 @@ items:
     fullName: Certificate
     children:
       - azure-arm-batch.Certificate.deleteCertificateError
+      - azure-arm-batch.Certificate.etag
       - azure-arm-batch.Certificate.format
+      - azure-arm-batch.Certificate.id
+      - azure-arm-batch.Certificate.name
       - azure-arm-batch.Certificate.previousProvisioningState
       - azure-arm-batch.Certificate.previousProvisioningStateTransitionTime
       - azure-arm-batch.Certificate.provisioningState
@@ -13,10 +16,11 @@ items:
       - azure-arm-batch.Certificate.publicData
       - azure-arm-batch.Certificate.thumbprint
       - azure-arm-batch.Certificate.thumbprintAlgorithm
+      - azure-arm-batch.Certificate.type
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: Contains information about a certificate.
     extends:
       name: azure-arm-batch.ProxyResource
     package: azure-arm-batch
@@ -27,13 +31,28 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: This is only returned when the certificate provisioningState is 'Failed'.
     optional: true
     syntax:
       content: 'deleteCertificateError?: DeleteCertificateError'
       return:
         type:
           - azure-arm-batch.DeleteCertificateError
+    package: azure-arm-batch
+  - uid: azure-arm-batch.Certificate.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The ETag of the resource, used for concurrency statements.'
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
     package: azure-arm-batch
   - uid: azure-arm-batch.Certificate.format
     name: format
@@ -42,10 +61,44 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The format of the certificate - either Pfx or Cer. If omitted, the default
+      is Pfx. Possible
+
+      values include: 'Pfx', 'Cer'
     optional: true
     syntax:
       content: 'format?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-batch
+  - uid: azure-arm-batch.Certificate.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The ID of the resource.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-batch
+  - uid: azure-arm-batch.Certificate.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The name of the resource.
+    optional: true
+    syntax:
+      content: 'name?: string'
       return:
         type:
           - string
@@ -57,7 +110,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The previous provisioned state of the resource. Possible values include:
+      'Succeeded',
+
+      'Deleting', 'Failed'
     optional: true
     syntax:
       content: 'previousProvisioningState?: string'
@@ -87,7 +144,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 'Possible values include: ''Succeeded'', ''Deleting'', ''Failed'''
     optional: true
     syntax:
       content: 'provisioningState?: string'
@@ -117,7 +174,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The public key of the certificate.
     optional: true
     syntax:
       content: 'publicData?: string'
@@ -132,7 +189,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: This must match the thumbprint from the name.
     optional: true
     syntax:
       content: 'thumbprint?: string'
@@ -147,10 +204,29 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      This must match the first portion of the certificate name. Currently
+      required to
+
+      be 'SHA1'.
     optional: true
     syntax:
       content: 'thumbprintAlgorithm?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-batch
+  - uid: azure-arm-batch.Certificate.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The type of the resource.
+    optional: true
+    syntax:
+      content: 'type?: string'
       return:
         type:
           - string

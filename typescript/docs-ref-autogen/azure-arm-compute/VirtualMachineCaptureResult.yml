@@ -5,13 +5,14 @@ items:
     fullName: VirtualMachineCaptureResult
     children:
       - azure-arm-compute.VirtualMachineCaptureResult.contentVersion
+      - azure-arm-compute.VirtualMachineCaptureResult.id
       - azure-arm-compute.VirtualMachineCaptureResult.parameters
       - azure-arm-compute.VirtualMachineCaptureResult.resources
       - azure-arm-compute.VirtualMachineCaptureResult.schema
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: Output of virtual machine capture operation.
     extends:
       name: azure-arm-compute.SubResource
     package: azure-arm-compute
@@ -22,10 +23,25 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: the version of the content
     optional: true
     syntax:
       content: 'contentVersion?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineCaptureResult.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
       return:
         type:
           - string
@@ -37,7 +53,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: parameters of the captured virtual machine
     optional: true
     syntax:
       content: 'parameters?: any'
@@ -52,7 +68,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: a list of resource items of the captured virtual machine
     optional: true
     syntax:
       content: 'resources?: any[]'
@@ -67,7 +83,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: the schema of the captured virtual machine
     optional: true
     syntax:
       content: 'schema?: string'

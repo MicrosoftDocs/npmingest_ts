@@ -7,9 +7,6 @@
     - uid: azure-arm-batch.Application
       name: Application
       items: []
-    - uid: azure-arm-batch.ApplicationCreateParameters
-      name: ApplicationCreateParameters
-      items: []
     - uid: azure-arm-batch.ApplicationOperations
       name: ApplicationOperations
       items: []
@@ -21,9 +18,6 @@
       items: []
     - uid: azure-arm-batch.ApplicationPackageReference
       name: ApplicationPackageReference
-      items: []
-    - uid: azure-arm-batch.ApplicationUpdateParameters
-      name: ApplicationUpdateParameters
       items: []
     - uid: azure-arm-batch.AutoScaleRun
       name: AutoScaleRun
@@ -94,6 +88,12 @@
     - uid: azure-arm-batch.CloudServiceConfiguration
       name: CloudServiceConfiguration
       items: []
+    - uid: azure-arm-batch.ContainerConfiguration
+      name: ContainerConfiguration
+      items: []
+    - uid: azure-arm-batch.ContainerRegistry
+      name: ContainerRegistry
+      items: []
     - uid: azure-arm-batch.DataDisk
       name: DataDisk
       items: []
@@ -120,6 +120,9 @@
       items: []
     - uid: azure-arm-batch.LinuxUserConfiguration
       name: LinuxUserConfiguration
+      items: []
+    - uid: azure-arm-batch.ListApplicationPackagesResult
+      name: ListApplicationPackagesResult
       items: []
     - uid: azure-arm-batch.ListApplicationsResult
       name: ListApplicationsResult
@@ -154,9 +157,6 @@
     - uid: azure-arm-batch.Operations
       name: Operations
       items: []
-    - uid: azure-arm-batch.OSDisk
-      name: OSDisk
-      items: []
     - uid: azure-arm-batch.Pool
       name: Pool
       items: []
@@ -187,6 +187,9 @@
     - uid: azure-arm-batch.StartTask
       name: StartTask
       items: []
+    - uid: azure-arm-batch.TaskContainerSettings
+      name: TaskContainerSettings
+      items: []
     - uid: azure-arm-batch.TaskSchedulingPolicy
       name: TaskSchedulingPolicy
       items: []
@@ -202,11 +205,20 @@
     - uid: azure-arm-batch.WindowsConfiguration
       name: WindowsConfiguration
       items: []
+    - uid: azure-arm-batch.WindowsUserConfiguration
+      name: WindowsUserConfiguration
+      items: []
 - uid: azure-arm-cdn
   name: azure-arm-cdn
   items:
     - uid: azure-arm-cdn.CacheExpirationActionParameters
       name: CacheExpirationActionParameters
+      items: []
+    - uid: azure-arm-cdn.CdnCertificateSourceParameters
+      name: CdnCertificateSourceParameters
+      items: []
+    - uid: azure-arm-cdn.CdnManagedHttpsParameters
+      name: CdnManagedHttpsParameters
       items: []
     - uid: azure-arm-cdn.CdnManagementClient
       name: CdnManagementClient
@@ -222,6 +234,9 @@
       items: []
     - uid: azure-arm-cdn.CustomDomain
       name: CustomDomain
+      items: []
+    - uid: azure-arm-cdn.CustomDomainHttpsParameters
+      name: CustomDomainHttpsParameters
       items: []
     - uid: azure-arm-cdn.CustomDomainListResult
       name: CustomDomainListResult
@@ -285,6 +300,9 @@
       items: []
     - uid: azure-arm-cdn.IpAddressGroup
       name: IpAddressGroup
+      items: []
+    - uid: azure-arm-cdn.KeyVaultCertificateSourceParameters
+      name: KeyVaultCertificateSourceParameters
       items: []
     - uid: azure-arm-cdn.LoadParameters
       name: LoadParameters
@@ -360,6 +378,9 @@
       items: []
     - uid: azure-arm-cdn.UrlPathConditionParameters
       name: UrlPathConditionParameters
+      items: []
+    - uid: azure-arm-cdn.UserManagedHttpsParameters
+      name: UserManagedHttpsParameters
       items: []
     - uid: azure-arm-cdn.ValidateCustomDomainInput
       name: ValidateCustomDomainInput
@@ -508,8 +529,11 @@
     - uid: azure-arm-compute.DiskUpdate
       name: DiskUpdate
       items: []
-    - uid: azure-arm-compute.EncryptionSettings
-      name: EncryptionSettings
+    - uid: azure-arm-compute.EncryptionSettingsCollection
+      name: EncryptionSettingsCollection
+      items: []
+    - uid: azure-arm-compute.EncryptionSettingsElement
+      name: EncryptionSettingsElement
       items: []
     - uid: azure-arm-compute.Galleries
       name: Galleries
@@ -959,6 +983,9 @@
     - uid: azure-arm-compute.VirtualMachineScaleSetNetworkProfile
       name: VirtualMachineScaleSetNetworkProfile
       items: []
+    - uid: azure-arm-compute.VirtualMachineScaleSetOperations
+      name: VirtualMachineScaleSetOperations
+      items: []
     - uid: azure-arm-compute.VirtualMachineScaleSetOSDisk
       name: VirtualMachineScaleSetOSDisk
       items: []
@@ -1036,8 +1063,14 @@
     - uid: azure-arm-compute.VirtualMachineScaleSetVMListResult
       name: VirtualMachineScaleSetVMListResult
       items: []
+    - uid: azure-arm-compute.VirtualMachineScaleSetVMNetworkProfileConfiguration
+      name: VirtualMachineScaleSetVMNetworkProfileConfiguration
+      items: []
     - uid: azure-arm-compute.VirtualMachineScaleSetVMProfile
       name: VirtualMachineScaleSetVMProfile
+      items: []
+    - uid: azure-arm-compute.VirtualMachineScaleSetVMProtectionPolicy
+      name: VirtualMachineScaleSetVMProtectionPolicy
       items: []
     - uid: azure-arm-compute.VirtualMachineScaleSetVMReimageParameters
       name: VirtualMachineScaleSetVMReimageParameters
@@ -1059,6 +1092,9 @@
       items: []
     - uid: azure-arm-compute.VirtualMachineUpdate
       name: VirtualMachineUpdate
+      items: []
+    - uid: azure-arm-compute.VMScaleSetConvertToSinglePlacementGroupInput
+      name: VMScaleSetConvertToSinglePlacementGroupInput
       items: []
     - uid: azure-arm-compute.WindowsConfiguration
       name: WindowsConfiguration
@@ -1312,6 +1348,9 @@
     - uid: azure-arm-network.ApplicationGatewayBackendHealthHttpSettings
       name: ApplicationGatewayBackendHealthHttpSettings
       items: []
+    - uid: azure-arm-network.ApplicationGatewayBackendHealthOnDemand
+      name: ApplicationGatewayBackendHealthOnDemand
+      items: []
     - uid: azure-arm-network.ApplicationGatewayBackendHealthPool
       name: ApplicationGatewayBackendHealthPool
       items: []
@@ -1360,6 +1399,9 @@
     - uid: azure-arm-network.ApplicationGatewayListResult
       name: ApplicationGatewayListResult
       items: []
+    - uid: azure-arm-network.ApplicationGatewayOnDemandProbe
+      name: ApplicationGatewayOnDemandProbe
+      items: []
     - uid: azure-arm-network.ApplicationGatewayPathRule
       name: ApplicationGatewayPathRule
       items: []
@@ -1380,6 +1422,9 @@
       items: []
     - uid: azure-arm-network.ApplicationGatewayRewriteRuleActionSet
       name: ApplicationGatewayRewriteRuleActionSet
+      items: []
+    - uid: azure-arm-network.ApplicationGatewayRewriteRuleCondition
+      name: ApplicationGatewayRewriteRuleCondition
       items: []
     - uid: azure-arm-network.ApplicationGatewayRewriteRuleSet
       name: ApplicationGatewayRewriteRuleSet
@@ -1606,6 +1651,12 @@
     - uid: azure-arm-network.ContainerNetworkInterfaceIpConfiguration
       name: ContainerNetworkInterfaceIpConfiguration
       items: []
+    - uid: azure-arm-network.DdosCustomPolicies
+      name: DdosCustomPolicies
+      items: []
+    - uid: azure-arm-network.DdosCustomPolicy
+      name: DdosCustomPolicy
+      items: []
     - uid: azure-arm-network.DdosProtectionPlan
       name: DdosProtectionPlan
       items: []
@@ -1614,6 +1665,9 @@
       items: []
     - uid: azure-arm-network.DdosProtectionPlans
       name: DdosProtectionPlans
+      items: []
+    - uid: azure-arm-network.DdosSettings
+      name: DdosSettings
       items: []
     - uid: azure-arm-network.DefaultSecurityRules
       name: DefaultSecurityRules
@@ -1998,11 +2052,29 @@
     - uid: azure-arm-network.ManagedServiceIdentityUserAssignedIdentitiesValue
       name: ManagedServiceIdentityUserAssignedIdentitiesValue
       items: []
+    - uid: azure-arm-network.MatchCondition
+      name: MatchCondition
+      items: []
     - uid: azure-arm-network.MatchedRule
       name: MatchedRule
       items: []
+    - uid: azure-arm-network.MatchVariable
+      name: MatchVariable
+      items: []
     - uid: azure-arm-network.MetricSpecification
       name: MetricSpecification
+      items: []
+    - uid: azure-arm-network.NatGateway
+      name: NatGateway
+      items: []
+    - uid: azure-arm-network.NatGatewayListResult
+      name: NatGatewayListResult
+      items: []
+    - uid: azure-arm-network.NatGateways
+      name: NatGateways
+      items: []
+    - uid: azure-arm-network.NatGatewaySku
+      name: NatGatewaySku
       items: []
     - uid: azure-arm-network.NetworkConfigurationDiagnosticParameters
       name: NetworkConfigurationDiagnosticParameters
@@ -2015,6 +2087,12 @@
       items: []
     - uid: azure-arm-network.NetworkConfigurationDiagnosticResult
       name: NetworkConfigurationDiagnosticResult
+      items: []
+    - uid: azure-arm-network.NetworkIntentPolicy
+      name: NetworkIntentPolicy
+      items: []
+    - uid: azure-arm-network.NetworkIntentPolicyConfiguration
+      name: NetworkIntentPolicyConfiguration
       items: []
     - uid: azure-arm-network.NetworkInterface
       name: NetworkInterface
@@ -2172,11 +2250,29 @@
     - uid: azure-arm-network.PatchRouteFilterRule
       name: PatchRouteFilterRule
       items: []
+    - uid: azure-arm-network.PeerExpressRouteCircuitConnection
+      name: PeerExpressRouteCircuitConnection
+      items: []
+    - uid: azure-arm-network.PeerExpressRouteCircuitConnectionListResult
+      name: PeerExpressRouteCircuitConnectionListResult
+      items: []
+    - uid: azure-arm-network.PeerExpressRouteCircuitConnections
+      name: PeerExpressRouteCircuitConnections
+      items: []
+    - uid: azure-arm-network.PolicySettings
+      name: PolicySettings
+      items: []
+    - uid: azure-arm-network.PrepareNetworkPoliciesRequest
+      name: PrepareNetworkPoliciesRequest
+      items: []
     - uid: azure-arm-network.Probe
       name: Probe
       items: []
     - uid: azure-arm-network.ProtocolConfiguration
       name: ProtocolConfiguration
+      items: []
+    - uid: azure-arm-network.ProtocolCustomSettingsFormat
+      name: ProtocolCustomSettingsFormat
       items: []
     - uid: azure-arm-network.PublicIPAddress
       name: PublicIPAddress
@@ -2513,4 +2609,16 @@
       items: []
     - uid: azure-arm-network.VpnSitesConfiguration
       name: VpnSitesConfiguration
+      items: []
+    - uid: azure-arm-network.WebApplicationFirewallCustomRule
+      name: WebApplicationFirewallCustomRule
+      items: []
+    - uid: azure-arm-network.WebApplicationFirewallPolicies
+      name: WebApplicationFirewallPolicies
+      items: []
+    - uid: azure-arm-network.WebApplicationFirewallPolicy
+      name: WebApplicationFirewallPolicy
+      items: []
+    - uid: azure-arm-network.WebApplicationFirewallPolicyListResult
+      name: WebApplicationFirewallPolicyListResult
       items: []

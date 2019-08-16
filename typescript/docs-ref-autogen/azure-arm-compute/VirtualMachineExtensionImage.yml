@@ -6,14 +6,19 @@ items:
     children:
       - azure-arm-compute.VirtualMachineExtensionImage.computeRole
       - azure-arm-compute.VirtualMachineExtensionImage.handlerSchema
+      - azure-arm-compute.VirtualMachineExtensionImage.id
+      - azure-arm-compute.VirtualMachineExtensionImage.location
+      - azure-arm-compute.VirtualMachineExtensionImage.name
       - azure-arm-compute.VirtualMachineExtensionImage.operatingSystem
       - >-
         azure-arm-compute.VirtualMachineExtensionImage.supportsMultipleExtensions
+      - azure-arm-compute.VirtualMachineExtensionImage.tags
+      - azure-arm-compute.VirtualMachineExtensionImage.type
       - azure-arm-compute.VirtualMachineExtensionImage.vmScaleSetEnabled
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: Describes a Virtual Machine Extension Image.
     extends:
       name: azure-arm-compute.Resource
     package: azure-arm-compute
@@ -24,7 +29,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The type of role (IaaS or PaaS) this extension supports.
     syntax:
       content: 'computeRole: string'
       return:
@@ -38,9 +43,57 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The schema defined by publisher, where extension consumers should provide
+      settings in a
+
+      matching schema.
     syntax:
       content: 'handlerSchema: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineExtensionImage.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineExtensionImage.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location
+    syntax:
+      content: 'location: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineExtensionImage.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name
+    optional: true
+    syntax:
+      content: 'name?: string'
       return:
         type:
           - string
@@ -52,7 +105,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The operating system this extension supports.
     syntax:
       content: 'operatingSystem: string'
       return:
@@ -66,13 +119,43 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Whether the handler can support multiple extensions.
     optional: true
     syntax:
       content: 'supportsMultipleExtensions?: boolean'
       return:
         type:
           - boolean
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineExtensionImage.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineExtensionImage.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensionImage.vmScaleSetEnabled
     name: vmScaleSetEnabled
@@ -81,7 +164,14 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Whether the extension can be used on xRP VMScaleSets. By default existing
+      extensions are
+
+      usable on scalesets, but there might be cases where a publisher wants to
+      explicitly indicate
+
+      the extension is only enabled for CRP VMs but not VMSS.
     optional: true
     syntax:
       content: 'vmScaleSetEnabled?: boolean'

@@ -15,6 +15,7 @@ items:
       - azure-arm-network.ApplicationGatewayBackendAddressPool
       - azure-arm-network.ApplicationGatewayBackendHealth
       - azure-arm-network.ApplicationGatewayBackendHealthHttpSettings
+      - azure-arm-network.ApplicationGatewayBackendHealthOnDemand
       - azure-arm-network.ApplicationGatewayBackendHealthPool
       - azure-arm-network.ApplicationGatewayBackendHealthServer
       - azure-arm-network.ApplicationGatewayBackendHttpSettings
@@ -31,6 +32,7 @@ items:
       - azure-arm-network.ApplicationGatewayHttpListener
       - azure-arm-network.ApplicationGatewayIPConfiguration
       - azure-arm-network.ApplicationGatewayListResult
+      - azure-arm-network.ApplicationGatewayOnDemandProbe
       - azure-arm-network.ApplicationGatewayPathRule
       - azure-arm-network.ApplicationGatewayProbe
       - azure-arm-network.ApplicationGatewayProbeHealthResponseMatch
@@ -38,6 +40,7 @@ items:
       - azure-arm-network.ApplicationGatewayRequestRoutingRule
       - azure-arm-network.ApplicationGatewayRewriteRule
       - azure-arm-network.ApplicationGatewayRewriteRuleActionSet
+      - azure-arm-network.ApplicationGatewayRewriteRuleCondition
       - azure-arm-network.ApplicationGatewayRewriteRuleSet
       - azure-arm-network.ApplicationGatewaySku
       - azure-arm-network.ApplicationGatewaySslCertificate
@@ -104,8 +107,10 @@ items:
       - azure-arm-network.ContainerNetworkInterface
       - azure-arm-network.ContainerNetworkInterfaceConfiguration
       - azure-arm-network.ContainerNetworkInterfaceIpConfiguration
+      - azure-arm-network.DdosCustomPolicy
       - azure-arm-network.DdosProtectionPlan
       - azure-arm-network.DdosProtectionPlanListResult
+      - azure-arm-network.DdosSettings
       - azure-arm-network.Delegation
       - azure-arm-network.DeviceProperties
       - azure-arm-network.DhcpOptions
@@ -211,12 +216,19 @@ items:
       - azure-arm-network.LogSpecification
       - azure-arm-network.ManagedServiceIdentity
       - azure-arm-network.ManagedServiceIdentityUserAssignedIdentitiesValue
+      - azure-arm-network.MatchCondition
+      - azure-arm-network.MatchVariable
       - azure-arm-network.MatchedRule
       - azure-arm-network.MetricSpecification
+      - azure-arm-network.NatGateway
+      - azure-arm-network.NatGatewayListResult
+      - azure-arm-network.NatGatewaySku
       - azure-arm-network.NetworkConfigurationDiagnosticParameters
       - azure-arm-network.NetworkConfigurationDiagnosticProfile
       - azure-arm-network.NetworkConfigurationDiagnosticResponse
       - azure-arm-network.NetworkConfigurationDiagnosticResult
+      - azure-arm-network.NetworkIntentPolicy
+      - azure-arm-network.NetworkIntentPolicyConfiguration
       - azure-arm-network.NetworkInterface
       - azure-arm-network.NetworkInterfaceAssociation
       - azure-arm-network.NetworkInterfaceDnsSettings
@@ -257,8 +269,13 @@ items:
       - azure-arm-network.PacketCaptureStorageLocation
       - azure-arm-network.PatchRouteFilter
       - azure-arm-network.PatchRouteFilterRule
+      - azure-arm-network.PeerExpressRouteCircuitConnection
+      - azure-arm-network.PeerExpressRouteCircuitConnectionListResult
+      - azure-arm-network.PolicySettings
+      - azure-arm-network.PrepareNetworkPoliciesRequest
       - azure-arm-network.Probe
       - azure-arm-network.ProtocolConfiguration
+      - azure-arm-network.ProtocolCustomSettingsFormat
       - azure-arm-network.PublicIPAddress
       - azure-arm-network.PublicIPAddressDnsSettings
       - azure-arm-network.PublicIPAddressListResult
@@ -349,6 +366,9 @@ items:
       - azure-arm-network.VpnProfileResponse
       - azure-arm-network.VpnSite
       - azure-arm-network.VpnSiteId
+      - azure-arm-network.WebApplicationFirewallCustomRule
+      - azure-arm-network.WebApplicationFirewallPolicy
+      - azure-arm-network.WebApplicationFirewallPolicyListResult
       - azure-arm-network.NetworkManagementClient
       - azure-arm-network.ApplicationGateways
       - azure-arm-network.ApplicationSecurityGroups
@@ -359,6 +379,7 @@ items:
       - azure-arm-network.AzureFirewalls
       - azure-arm-network.BgpServiceCommunities
       - azure-arm-network.ConnectionMonitors
+      - azure-arm-network.DdosCustomPolicies
       - azure-arm-network.DdosProtectionPlans
       - azure-arm-network.DefaultSecurityRules
       - azure-arm-network.ExpressRouteCircuitAuthorizations
@@ -384,6 +405,7 @@ items:
       - azure-arm-network.LoadBalancerProbes
       - azure-arm-network.LoadBalancers
       - azure-arm-network.LocalNetworkGateways
+      - azure-arm-network.NatGateways
       - azure-arm-network.NetworkInterfaceIPConfigurations
       - azure-arm-network.NetworkInterfaceLoadBalancers
       - azure-arm-network.NetworkInterfaceTapConfigurations
@@ -395,6 +417,7 @@ items:
       - azure-arm-network.P2sVpnGateways
       - azure-arm-network.P2sVpnServerConfigurations
       - azure-arm-network.PacketCaptures
+      - azure-arm-network.PeerExpressRouteCircuitConnections
       - azure-arm-network.PublicIPAddresses
       - azure-arm-network.PublicIPPrefixes
       - azure-arm-network.RouteFilterRules
@@ -417,6 +440,7 @@ items:
       - azure-arm-network.VpnGateways
       - azure-arm-network.VpnSites
       - azure-arm-network.VpnSitesConfiguration
+      - azure-arm-network.WebApplicationFirewallPolicies
     type: package
     langs:
       - typeScript
@@ -443,6 +467,8 @@ references:
     name: ApplicationGatewayBackendHealth
   - uid: azure-arm-network.ApplicationGatewayBackendHealthHttpSettings
     name: ApplicationGatewayBackendHealthHttpSettings
+  - uid: azure-arm-network.ApplicationGatewayBackendHealthOnDemand
+    name: ApplicationGatewayBackendHealthOnDemand
   - uid: azure-arm-network.ApplicationGatewayBackendHealthPool
     name: ApplicationGatewayBackendHealthPool
   - uid: azure-arm-network.ApplicationGatewayBackendHealthServer
@@ -475,6 +501,8 @@ references:
     name: ApplicationGatewayIPConfiguration
   - uid: azure-arm-network.ApplicationGatewayListResult
     name: ApplicationGatewayListResult
+  - uid: azure-arm-network.ApplicationGatewayOnDemandProbe
+    name: ApplicationGatewayOnDemandProbe
   - uid: azure-arm-network.ApplicationGatewayPathRule
     name: ApplicationGatewayPathRule
   - uid: azure-arm-network.ApplicationGatewayProbe
@@ -489,6 +517,8 @@ references:
     name: ApplicationGatewayRewriteRule
   - uid: azure-arm-network.ApplicationGatewayRewriteRuleActionSet
     name: ApplicationGatewayRewriteRuleActionSet
+  - uid: azure-arm-network.ApplicationGatewayRewriteRuleCondition
+    name: ApplicationGatewayRewriteRuleCondition
   - uid: azure-arm-network.ApplicationGatewayRewriteRuleSet
     name: ApplicationGatewayRewriteRuleSet
   - uid: azure-arm-network.ApplicationGatewaySku
@@ -621,10 +651,14 @@ references:
     name: ContainerNetworkInterfaceConfiguration
   - uid: azure-arm-network.ContainerNetworkInterfaceIpConfiguration
     name: ContainerNetworkInterfaceIpConfiguration
+  - uid: azure-arm-network.DdosCustomPolicy
+    name: DdosCustomPolicy
   - uid: azure-arm-network.DdosProtectionPlan
     name: DdosProtectionPlan
   - uid: azure-arm-network.DdosProtectionPlanListResult
     name: DdosProtectionPlanListResult
+  - uid: azure-arm-network.DdosSettings
+    name: DdosSettings
   - uid: azure-arm-network.Delegation
     name: Delegation
   - uid: azure-arm-network.DeviceProperties
@@ -832,10 +866,20 @@ references:
     name: ManagedServiceIdentity
   - uid: azure-arm-network.ManagedServiceIdentityUserAssignedIdentitiesValue
     name: ManagedServiceIdentityUserAssignedIdentitiesValue
+  - uid: azure-arm-network.MatchCondition
+    name: MatchCondition
+  - uid: azure-arm-network.MatchVariable
+    name: MatchVariable
   - uid: azure-arm-network.MatchedRule
     name: MatchedRule
   - uid: azure-arm-network.MetricSpecification
     name: MetricSpecification
+  - uid: azure-arm-network.NatGateway
+    name: NatGateway
+  - uid: azure-arm-network.NatGatewayListResult
+    name: NatGatewayListResult
+  - uid: azure-arm-network.NatGatewaySku
+    name: NatGatewaySku
   - uid: azure-arm-network.NetworkConfigurationDiagnosticParameters
     name: NetworkConfigurationDiagnosticParameters
   - uid: azure-arm-network.NetworkConfigurationDiagnosticProfile
@@ -844,6 +888,10 @@ references:
     name: NetworkConfigurationDiagnosticResponse
   - uid: azure-arm-network.NetworkConfigurationDiagnosticResult
     name: NetworkConfigurationDiagnosticResult
+  - uid: azure-arm-network.NetworkIntentPolicy
+    name: NetworkIntentPolicy
+  - uid: azure-arm-network.NetworkIntentPolicyConfiguration
+    name: NetworkIntentPolicyConfiguration
   - uid: azure-arm-network.NetworkInterface
     name: NetworkInterface
   - uid: azure-arm-network.NetworkInterfaceAssociation
@@ -924,10 +972,20 @@ references:
     name: PatchRouteFilter
   - uid: azure-arm-network.PatchRouteFilterRule
     name: PatchRouteFilterRule
+  - uid: azure-arm-network.PeerExpressRouteCircuitConnection
+    name: PeerExpressRouteCircuitConnection
+  - uid: azure-arm-network.PeerExpressRouteCircuitConnectionListResult
+    name: PeerExpressRouteCircuitConnectionListResult
+  - uid: azure-arm-network.PolicySettings
+    name: PolicySettings
+  - uid: azure-arm-network.PrepareNetworkPoliciesRequest
+    name: PrepareNetworkPoliciesRequest
   - uid: azure-arm-network.Probe
     name: Probe
   - uid: azure-arm-network.ProtocolConfiguration
     name: ProtocolConfiguration
+  - uid: azure-arm-network.ProtocolCustomSettingsFormat
+    name: ProtocolCustomSettingsFormat
   - uid: azure-arm-network.PublicIPAddress
     name: PublicIPAddress
   - uid: azure-arm-network.PublicIPAddressDnsSettings
@@ -1108,6 +1166,12 @@ references:
     name: VpnSite
   - uid: azure-arm-network.VpnSiteId
     name: VpnSiteId
+  - uid: azure-arm-network.WebApplicationFirewallCustomRule
+    name: WebApplicationFirewallCustomRule
+  - uid: azure-arm-network.WebApplicationFirewallPolicy
+    name: WebApplicationFirewallPolicy
+  - uid: azure-arm-network.WebApplicationFirewallPolicyListResult
+    name: WebApplicationFirewallPolicyListResult
   - uid: azure-arm-network.NetworkManagementClient
     name: NetworkManagementClient
   - uid: azure-arm-network.ApplicationGateways
@@ -1128,6 +1192,8 @@ references:
     name: BgpServiceCommunities
   - uid: azure-arm-network.ConnectionMonitors
     name: ConnectionMonitors
+  - uid: azure-arm-network.DdosCustomPolicies
+    name: DdosCustomPolicies
   - uid: azure-arm-network.DdosProtectionPlans
     name: DdosProtectionPlans
   - uid: azure-arm-network.DefaultSecurityRules
@@ -1178,6 +1244,8 @@ references:
     name: LoadBalancers
   - uid: azure-arm-network.LocalNetworkGateways
     name: LocalNetworkGateways
+  - uid: azure-arm-network.NatGateways
+    name: NatGateways
   - uid: azure-arm-network.NetworkInterfaceIPConfigurations
     name: NetworkInterfaceIPConfigurations
   - uid: azure-arm-network.NetworkInterfaceLoadBalancers
@@ -1200,6 +1268,8 @@ references:
     name: P2sVpnServerConfigurations
   - uid: azure-arm-network.PacketCaptures
     name: PacketCaptures
+  - uid: azure-arm-network.PeerExpressRouteCircuitConnections
+    name: PeerExpressRouteCircuitConnections
   - uid: azure-arm-network.PublicIPAddresses
     name: PublicIPAddresses
   - uid: azure-arm-network.PublicIPPrefixes
@@ -1244,3 +1314,5 @@ references:
     name: VpnSites
   - uid: azure-arm-network.VpnSitesConfiguration
     name: VpnSitesConfiguration
+  - uid: azure-arm-network.WebApplicationFirewallPolicies
+    name: WebApplicationFirewallPolicies

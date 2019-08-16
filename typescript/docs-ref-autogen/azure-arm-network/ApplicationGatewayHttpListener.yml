@@ -10,6 +10,7 @@ items:
       - azure-arm-network.ApplicationGatewayHttpListener.frontendIPConfiguration
       - azure-arm-network.ApplicationGatewayHttpListener.frontendPort
       - azure-arm-network.ApplicationGatewayHttpListener.hostName
+      - azure-arm-network.ApplicationGatewayHttpListener.id
       - azure-arm-network.ApplicationGatewayHttpListener.name
       - azure-arm-network.ApplicationGatewayHttpListener.protocol
       - azure-arm-network.ApplicationGatewayHttpListener.provisioningState
@@ -99,6 +100,21 @@ items:
         type:
           - string
     package: azure-arm-network
+  - uid: azure-arm-network.ApplicationGatewayHttpListener.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-network
   - uid: azure-arm-network.ApplicationGatewayHttpListener.name
     name: name
     fullName: name
@@ -121,11 +137,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: >-
-      Protocol of the HTTP listener. Possible values are 'Http' and 'Https'.
-      Possible values
-
-      include: 'Http', 'Https'
+    summary: 'Protocol of the HTTP listener. Possible values include: ''Http'', ''Https'''
     optional: true
     syntax:
       content: 'protocol?: string'

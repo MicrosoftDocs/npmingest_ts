@@ -7,12 +7,16 @@ items:
       - azure-arm-batch.Application.allowUpdates
       - azure-arm-batch.Application.defaultVersion
       - azure-arm-batch.Application.displayName
+      - azure-arm-batch.Application.etag
       - azure-arm-batch.Application.id
-      - azure-arm-batch.Application.packages
+      - azure-arm-batch.Application.name
+      - azure-arm-batch.Application.type
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: Contains information about an application in a Batch account.
+    extends:
+      name: azure-arm-batch.ProxyResource
     package: azure-arm-batch
   - uid: azure-arm-batch.Application.allowUpdates
     name: allowUpdates
@@ -21,7 +25,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      A value indicating whether packages within the application may be
+      overwritten using the same
+
+      version string.
     optional: true
     syntax:
       content: 'allowUpdates?: boolean'
@@ -36,7 +44,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The package to use if a client requests the application but does not
+      specify a version. This
+
+      property can only be set to the name of an existing package.
     optional: true
     syntax:
       content: 'defaultVersion?: string'
@@ -51,10 +63,25 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The display name for the application.
     optional: true
     syntax:
       content: 'displayName?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-batch
+  - uid: azure-arm-batch.Application.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The ETag of the resource, used for concurrency statements.'
+    optional: true
+    syntax:
+      content: 'etag?: string'
       return:
         type:
           - string
@@ -66,7 +93,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The ID of the resource.
     optional: true
     syntax:
       content: 'id?: string'
@@ -74,27 +101,40 @@ items:
         type:
           - string
     package: azure-arm-batch
-  - uid: azure-arm-batch.Application.packages
-    name: packages
-    fullName: packages
+  - uid: azure-arm-batch.Application.name
+    name: name
+    fullName: name
     children: []
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The name of the resource.
     optional: true
     syntax:
-      content: 'packages?: ApplicationPackage[]'
+      content: 'name?: string'
       return:
         type:
-          - 'azure-arm-batch.ApplicationPackage[]'
+          - string
+    package: azure-arm-batch
+  - uid: azure-arm-batch.Application.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The type of the resource.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
     package: azure-arm-batch
 references:
-  - uid: 'azure-arm-batch.ApplicationPackage[]'
-    name: 'ApplicationPackage[]'
+  - uid: azure-arm-batch.ProxyResource
+    name: ProxyResource
     spec.typeScript:
-      - name: ApplicationPackage
-        fullName: ApplicationPackage
-        uid: azure-arm-batch.ApplicationPackage
-      - name: '[]'
-        fullName: '[]'
+      - name: ProxyResource
+        fullName: ProxyResource
+        uid: azure-arm-batch.ProxyResource

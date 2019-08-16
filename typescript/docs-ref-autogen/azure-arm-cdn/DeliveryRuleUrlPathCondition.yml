@@ -4,13 +4,28 @@ items:
     name: DeliveryRuleUrlPathCondition
     fullName: DeliveryRuleUrlPathCondition
     children:
+      - azure-arm-cdn.DeliveryRuleUrlPathCondition.name
       - azure-arm-cdn.DeliveryRuleUrlPathCondition.parameters
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: Defines the URL path condition for the delivery rule.
     extends:
       name: azure-arm-cdn.DeliveryRuleCondition
+    package: azure-arm-cdn
+  - uid: azure-arm-cdn.DeliveryRuleUrlPathCondition.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Polymorphic Discriminator
+    syntax:
+      content: 'name: string'
+      return:
+        type:
+          - string
     package: azure-arm-cdn
   - uid: azure-arm-cdn.DeliveryRuleUrlPathCondition.parameters
     name: parameters
@@ -19,7 +34,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Defines the parameters for the condition.
     syntax:
       content: 'parameters: UrlPathConditionParameters'
       return:

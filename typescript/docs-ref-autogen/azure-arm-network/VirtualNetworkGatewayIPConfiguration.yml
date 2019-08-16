@@ -5,6 +5,7 @@ items:
     fullName: VirtualNetworkGatewayIPConfiguration
     children:
       - azure-arm-network.VirtualNetworkGatewayIPConfiguration.etag
+      - azure-arm-network.VirtualNetworkGatewayIPConfiguration.id
       - azure-arm-network.VirtualNetworkGatewayIPConfiguration.name
       - >-
         azure-arm-network.VirtualNetworkGatewayIPConfiguration.privateIPAllocationMethod
@@ -29,6 +30,21 @@ items:
     optional: true
     syntax:
       content: 'etag?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-network
+  - uid: azure-arm-network.VirtualNetworkGatewayIPConfiguration.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
       return:
         type:
           - string
@@ -61,10 +77,8 @@ items:
       - typeScript
     type: property
     summary: >-
-      The private IP allocation method. Possible values are: 'Static' and
-      'Dynamic'. Possible values
-
-      include: 'Static', 'Dynamic'
+      The private IP address allocation method. Possible values include:
+      'Static', 'Dynamic'
     optional: true
     syntax:
       content: 'privateIPAllocationMethod?: string'

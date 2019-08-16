@@ -6,14 +6,20 @@ items:
     children:
       - azure-arm-network.VirtualNetworkGateway.activeActive
       - azure-arm-network.VirtualNetworkGateway.bgpSettings
+      - azure-arm-network.VirtualNetworkGateway.customRoutes
       - azure-arm-network.VirtualNetworkGateway.enableBgp
       - azure-arm-network.VirtualNetworkGateway.etag
       - azure-arm-network.VirtualNetworkGateway.gatewayDefaultSite
       - azure-arm-network.VirtualNetworkGateway.gatewayType
+      - azure-arm-network.VirtualNetworkGateway.id
       - azure-arm-network.VirtualNetworkGateway.ipConfigurations
+      - azure-arm-network.VirtualNetworkGateway.location
+      - azure-arm-network.VirtualNetworkGateway.name
       - azure-arm-network.VirtualNetworkGateway.provisioningState
       - azure-arm-network.VirtualNetworkGateway.resourceGuid
       - azure-arm-network.VirtualNetworkGateway.sku
+      - azure-arm-network.VirtualNetworkGateway.tags
+      - azure-arm-network.VirtualNetworkGateway.type
       - azure-arm-network.VirtualNetworkGateway.vpnClientConfiguration
       - azure-arm-network.VirtualNetworkGateway.vpnType
     langs:
@@ -52,6 +58,25 @@ items:
       return:
         type:
           - azure-arm-network.BgpSettings
+    package: azure-arm-network
+  - uid: azure-arm-network.VirtualNetworkGateway.customRoutes
+    name: customRoutes
+    fullName: customRoutes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The reference of the address space resource which represents the custom
+      routes address space
+
+      specified by the the customer for virtual network gateway and VpnClient.
+    optional: true
+    syntax:
+      content: 'customRoutes?: AddressSpace'
+      return:
+        type:
+          - azure-arm-network.AddressSpace
     package: azure-arm-network
   - uid: azure-arm-network.VirtualNetworkGateway.enableBgp
     name: enableBgp
@@ -124,6 +149,21 @@ items:
         type:
           - string
     package: azure-arm-network
+  - uid: azure-arm-network.VirtualNetworkGateway.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-network
   - uid: azure-arm-network.VirtualNetworkGateway.ipConfigurations
     name: ipConfigurations
     fullName: ipConfigurations
@@ -138,6 +178,36 @@ items:
       return:
         type:
           - 'azure-arm-network.VirtualNetworkGatewayIPConfiguration[]'
+    package: azure-arm-network
+  - uid: azure-arm-network.VirtualNetworkGateway.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-network
+  - uid: azure-arm-network.VirtualNetworkGateway.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
     package: azure-arm-network
   - uid: azure-arm-network.VirtualNetworkGateway.provisioningState
     name: provisioningState
@@ -192,6 +262,36 @@ items:
         type:
           - azure-arm-network.VirtualNetworkGatewaySku
     package: azure-arm-network
+  - uid: azure-arm-network.VirtualNetworkGateway.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+    package: azure-arm-network
+  - uid: azure-arm-network.VirtualNetworkGateway.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-network
   - uid: azure-arm-network.VirtualNetworkGateway.vpnClientConfiguration
     name: vpnClientConfiguration
     fullName: vpnClientConfiguration
@@ -243,6 +343,12 @@ references:
       - name: BgpSettings
         fullName: BgpSettings
         uid: azure-arm-network.BgpSettings
+  - uid: azure-arm-network.AddressSpace
+    name: AddressSpace
+    spec.typeScript:
+      - name: AddressSpace
+        fullName: AddressSpace
+        uid: azure-arm-network.AddressSpace
   - uid: azure-arm-network.SubResource
     name: SubResource
     spec.typeScript:

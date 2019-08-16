@@ -7,16 +7,21 @@ items:
       - azure-arm-compute.ContainerService.agentPoolProfiles
       - azure-arm-compute.ContainerService.customProfile
       - azure-arm-compute.ContainerService.diagnosticsProfile
+      - azure-arm-compute.ContainerService.id
       - azure-arm-compute.ContainerService.linuxProfile
+      - azure-arm-compute.ContainerService.location
       - azure-arm-compute.ContainerService.masterProfile
+      - azure-arm-compute.ContainerService.name
       - azure-arm-compute.ContainerService.orchestratorProfile
       - azure-arm-compute.ContainerService.provisioningState
       - azure-arm-compute.ContainerService.servicePrincipalProfile
+      - azure-arm-compute.ContainerService.tags
+      - azure-arm-compute.ContainerService.type
       - azure-arm-compute.ContainerService.windowsProfile
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: Container service.
     extends:
       name: azure-arm-compute.Resource
     package: azure-arm-compute
@@ -27,7 +32,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Properties of the agent pool.
     syntax:
       content: 'agentPoolProfiles: ContainerServiceAgentPoolProfile[]'
       return:
@@ -41,7 +46,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Properties for custom clusters.
     optional: true
     syntax:
       content: 'customProfile?: ContainerServiceCustomProfile'
@@ -56,13 +61,28 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Properties of the diagnostic agent.
     optional: true
     syntax:
       content: 'diagnosticsProfile?: ContainerServiceDiagnosticsProfile'
       return:
         type:
           - azure-arm-compute.ContainerServiceDiagnosticsProfile
+    package: azure-arm-compute
+  - uid: azure-arm-compute.ContainerService.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
     package: azure-arm-compute
   - uid: azure-arm-compute.ContainerService.linuxProfile
     name: linuxProfile
@@ -71,12 +91,26 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Properties of Linux VMs.
     syntax:
       content: 'linuxProfile: ContainerServiceLinuxProfile'
       return:
         type:
           - azure-arm-compute.ContainerServiceLinuxProfile
+    package: azure-arm-compute
+  - uid: azure-arm-compute.ContainerService.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location
+    syntax:
+      content: 'location: string'
+      return:
+        type:
+          - string
     package: azure-arm-compute
   - uid: azure-arm-compute.ContainerService.masterProfile
     name: masterProfile
@@ -85,12 +119,27 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Properties of master agents.
     syntax:
       content: 'masterProfile: ContainerServiceMasterProfile'
       return:
         type:
           - azure-arm-compute.ContainerServiceMasterProfile
+    package: azure-arm-compute
+  - uid: azure-arm-compute.ContainerService.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
     package: azure-arm-compute
   - uid: azure-arm-compute.ContainerService.orchestratorProfile
     name: orchestratorProfile
@@ -99,7 +148,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Properties of the orchestrator.
     optional: true
     syntax:
       content: 'orchestratorProfile?: ContainerServiceOrchestratorProfile'
@@ -114,7 +163,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      the current deployment or provisioning state, which only appears in the
+      response.
     optional: true
     syntax:
       content: 'provisioningState?: string'
@@ -129,13 +180,43 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Properties for cluster service principals.
     optional: true
     syntax:
       content: 'servicePrincipalProfile?: ContainerServiceServicePrincipalProfile'
       return:
         type:
           - azure-arm-compute.ContainerServiceServicePrincipalProfile
+    package: azure-arm-compute
+  - uid: azure-arm-compute.ContainerService.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+    package: azure-arm-compute
+  - uid: azure-arm-compute.ContainerService.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
     package: azure-arm-compute
   - uid: azure-arm-compute.ContainerService.windowsProfile
     name: windowsProfile
@@ -144,7 +225,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Properties of Windows VMs.
     optional: true
     syntax:
       content: 'windowsProfile?: ContainerServiceWindowsProfile'

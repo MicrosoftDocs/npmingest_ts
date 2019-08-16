@@ -5,6 +5,7 @@ items:
     fullName: FrontendIPConfiguration
     children:
       - azure-arm-network.FrontendIPConfiguration.etag
+      - azure-arm-network.FrontendIPConfiguration.id
       - azure-arm-network.FrontendIPConfiguration.inboundNatPools
       - azure-arm-network.FrontendIPConfiguration.inboundNatRules
       - azure-arm-network.FrontendIPConfiguration.loadBalancingRules
@@ -35,6 +36,21 @@ items:
     optional: true
     syntax:
       content: 'etag?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-network
+  - uid: azure-arm-network.FrontendIPConfiguration.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
       return:
         type:
           - string
@@ -141,10 +157,8 @@ items:
       - typeScript
     type: property
     summary: >-
-      The Private IP allocation method. Possible values are: 'Static' and
-      'Dynamic'. Possible values
-
-      include: 'Static', 'Dynamic'
+      The Private IP allocation method. Possible values include: 'Static',
+      'Dynamic'
     optional: true
     syntax:
       content: 'privateIPAllocationMethod?: string'

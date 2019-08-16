@@ -11,6 +11,7 @@ items:
       - azure-arm-network.VpnConnection.enableInternetSecurity
       - azure-arm-network.VpnConnection.enableRateLimiting
       - azure-arm-network.VpnConnection.etag
+      - azure-arm-network.VpnConnection.id
       - azure-arm-network.VpnConnection.ingressBytesTransferred
       - azure-arm-network.VpnConnection.ipsecPolicies
       - azure-arm-network.VpnConnection.name
@@ -18,6 +19,7 @@ items:
       - azure-arm-network.VpnConnection.remoteVpnSite
       - azure-arm-network.VpnConnection.routingWeight
       - azure-arm-network.VpnConnection.sharedKey
+      - azure-arm-network.VpnConnection.useLocalAzureIpAddress
       - azure-arm-network.VpnConnection.vpnConnectionProtocolType
     langs:
       - typeScript
@@ -137,6 +139,21 @@ items:
         type:
           - string
     package: azure-arm-network
+  - uid: azure-arm-network.VpnConnection.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-network
   - uid: azure-arm-network.VpnConnection.ingressBytesTransferred
     name: ingressBytesTransferred
     fullName: ingressBytesTransferred
@@ -227,7 +244,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: routing weight for vpn connection.
+    summary: Routing weight for vpn connection.
     optional: true
     syntax:
       content: 'routingWeight?: number'
@@ -249,6 +266,21 @@ items:
       return:
         type:
           - string
+    package: azure-arm-network
+  - uid: azure-arm-network.VpnConnection.useLocalAzureIpAddress
+    name: useLocalAzureIpAddress
+    fullName: useLocalAzureIpAddress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Use local azure ip to initiate connection
+    optional: true
+    syntax:
+      content: 'useLocalAzureIpAddress?: boolean'
+      return:
+        type:
+          - boolean
     package: azure-arm-network
   - uid: azure-arm-network.VpnConnection.vpnConnectionProtocolType
     name: vpnConnectionProtocolType

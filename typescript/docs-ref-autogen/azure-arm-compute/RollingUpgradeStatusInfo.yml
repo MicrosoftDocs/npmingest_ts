@@ -5,13 +5,18 @@ items:
     fullName: RollingUpgradeStatusInfo
     children:
       - azure-arm-compute.RollingUpgradeStatusInfo.error
+      - azure-arm-compute.RollingUpgradeStatusInfo.id
+      - azure-arm-compute.RollingUpgradeStatusInfo.location
+      - azure-arm-compute.RollingUpgradeStatusInfo.name
       - azure-arm-compute.RollingUpgradeStatusInfo.policy
       - azure-arm-compute.RollingUpgradeStatusInfo.progress
       - azure-arm-compute.RollingUpgradeStatusInfo.runningStatus
+      - azure-arm-compute.RollingUpgradeStatusInfo.tags
+      - azure-arm-compute.RollingUpgradeStatusInfo.type
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: The status of the latest virtual machine scale set rolling upgrade.
     extends:
       name: azure-arm-compute.Resource
     package: azure-arm-compute
@@ -22,13 +27,57 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 'Error details for this upgrade, if there are any.'
     optional: true
     syntax:
       content: 'error?: ApiError'
       return:
         type:
           - azure-arm-compute.ApiError
+    package: azure-arm-compute
+  - uid: azure-arm-compute.RollingUpgradeStatusInfo.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.RollingUpgradeStatusInfo.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location
+    syntax:
+      content: 'location: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.RollingUpgradeStatusInfo.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
     package: azure-arm-compute
   - uid: azure-arm-compute.RollingUpgradeStatusInfo.policy
     name: policy
@@ -37,7 +86,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The rolling upgrade policies applied for this upgrade.
     optional: true
     syntax:
       content: 'policy?: RollingUpgradePolicy'
@@ -52,7 +101,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Information about the number of virtual machine instances in each upgrade
+      state.
     optional: true
     syntax:
       content: 'progress?: RollingUpgradeProgressInfo'
@@ -67,13 +118,43 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Information about the current running state of the overall upgrade.
     optional: true
     syntax:
       content: 'runningStatus?: RollingUpgradeRunningStatus'
       return:
         type:
           - azure-arm-compute.RollingUpgradeRunningStatus
+    package: azure-arm-compute
+  - uid: azure-arm-compute.RollingUpgradeStatusInfo.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+    package: azure-arm-compute
+  - uid: azure-arm-compute.RollingUpgradeStatusInfo.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
     package: azure-arm-compute
 references:
   - uid: azure-arm-compute.Resource

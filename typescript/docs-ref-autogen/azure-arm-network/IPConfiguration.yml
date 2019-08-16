@@ -5,6 +5,7 @@ items:
     fullName: IPConfiguration
     children:
       - azure-arm-network.IPConfiguration.etag
+      - azure-arm-network.IPConfiguration.id
       - azure-arm-network.IPConfiguration.name
       - azure-arm-network.IPConfiguration.privateIPAddress
       - azure-arm-network.IPConfiguration.privateIPAllocationMethod
@@ -29,6 +30,21 @@ items:
     optional: true
     syntax:
       content: 'etag?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-network
+  - uid: azure-arm-network.IPConfiguration.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
       return:
         type:
           - string
@@ -75,10 +91,8 @@ items:
       - typeScript
     type: property
     summary: >-
-      The private IP allocation method. Possible values are 'Static' and
-      'Dynamic'. Possible values
-
-      include: 'Static', 'Dynamic'
+      The private IP address allocation method. Possible values include:
+      'Static', 'Dynamic'
     optional: true
     syntax:
       content: 'privateIPAllocationMethod?: string'

@@ -8,11 +8,16 @@ items:
       - azure-arm-compute.AvailabilitySetUpdate.platformUpdateDomainCount
       - azure-arm-compute.AvailabilitySetUpdate.sku
       - azure-arm-compute.AvailabilitySetUpdate.statuses
+      - azure-arm-compute.AvailabilitySetUpdate.tags
       - azure-arm-compute.AvailabilitySetUpdate.virtualMachines
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: >-
+      Specifies information about the availability set that the virtual machine
+      should be assigned to.
+
+      Only tags may be updated.
     extends:
       name: azure-arm-compute.UpdateResource
     package: azure-arm-compute
@@ -23,7 +28,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Fault Domain count.
     optional: true
     syntax:
       content: 'platformFaultDomainCount?: number'
@@ -38,7 +43,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Update Domain count.
     optional: true
     syntax:
       content: 'platformUpdateDomainCount?: number'
@@ -53,7 +58,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Sku of the availability set
     optional: true
     syntax:
       content: 'sku?: Sku'
@@ -68,13 +73,28 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The resource status information.
     optional: true
     syntax:
       content: 'statuses?: InstanceViewStatus[]'
       return:
         type:
           - 'azure-arm-compute.InstanceViewStatus[]'
+    package: azure-arm-compute
+  - uid: azure-arm-compute.AvailabilitySetUpdate.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
     package: azure-arm-compute
   - uid: azure-arm-compute.AvailabilitySetUpdate.virtualMachines
     name: virtualMachines
@@ -83,7 +103,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: A list of references to all virtual machines in the availability set.
     optional: true
     syntax:
       content: 'virtualMachines?: SubResource[]'

@@ -8,23 +8,31 @@ items:
       - azure-arm-compute.VirtualMachineScaleSetVM.availabilitySet
       - azure-arm-compute.VirtualMachineScaleSetVM.diagnosticsProfile
       - azure-arm-compute.VirtualMachineScaleSetVM.hardwareProfile
+      - azure-arm-compute.VirtualMachineScaleSetVM.id
       - azure-arm-compute.VirtualMachineScaleSetVM.instanceId
       - azure-arm-compute.VirtualMachineScaleSetVM.instanceView
       - azure-arm-compute.VirtualMachineScaleSetVM.latestModelApplied
       - azure-arm-compute.VirtualMachineScaleSetVM.licenseType
+      - azure-arm-compute.VirtualMachineScaleSetVM.location
+      - azure-arm-compute.VirtualMachineScaleSetVM.modelDefinitionApplied
+      - azure-arm-compute.VirtualMachineScaleSetVM.name
       - azure-arm-compute.VirtualMachineScaleSetVM.networkProfile
+      - azure-arm-compute.VirtualMachineScaleSetVM.networkProfileConfiguration
       - azure-arm-compute.VirtualMachineScaleSetVM.osProfile
       - azure-arm-compute.VirtualMachineScaleSetVM.plan
+      - azure-arm-compute.VirtualMachineScaleSetVM.protectionPolicy
       - azure-arm-compute.VirtualMachineScaleSetVM.provisioningState
       - azure-arm-compute.VirtualMachineScaleSetVM.resources
       - azure-arm-compute.VirtualMachineScaleSetVM.sku
       - azure-arm-compute.VirtualMachineScaleSetVM.storageProfile
+      - azure-arm-compute.VirtualMachineScaleSetVM.tags
+      - azure-arm-compute.VirtualMachineScaleSetVM.type
       - azure-arm-compute.VirtualMachineScaleSetVM.vmId
       - azure-arm-compute.VirtualMachineScaleSetVM.zones
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: Describes a virtual machine scale set virtual machine.
     extends:
       name: azure-arm-compute.Resource
     package: azure-arm-compute
@@ -35,7 +43,14 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Specifies additional capabilities enabled or disabled on the virtual
+      machine in the scale set.
+
+      For instance: whether the virtual machine has the capability to support
+      attaching managed data
+
+      disks with UltraSSD_LRS storage account type.
     optional: true
     syntax:
       content: 'additionalCapabilities?: AdditionalCapabilities'
@@ -50,7 +65,31 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Specifies information about the availability set that the virtual machine
+      should be assigned
+
+      to. Virtual machines specified in the same availability set are allocated
+      to different nodes
+
+      to maximize availability. For more information about availability sets,
+      see [Manage the
+
+      availability of virtual
+
+      machines](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-manage-availability?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json).
+
+      <br><br> For more information on Azure planned maintenance, see [Planned
+      maintenance for
+
+      virtual machines in
+
+      Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-planned-maintenance?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json)
+
+      <br><br> Currently, a VM can only be added to availability set at creation
+      time. An existing
+
+      VM cannot be added to an availability set.
     optional: true
     syntax:
       content: 'availabilitySet?: SubResource'
@@ -65,7 +104,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Specifies the boot diagnostic settings state. <br><br>Minimum api-version:
+      2015-06-15.
     optional: true
     syntax:
       content: 'diagnosticsProfile?: DiagnosticsProfile'
@@ -80,13 +121,28 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Specifies the hardware settings for the virtual machine.
     optional: true
     syntax:
       content: 'hardwareProfile?: HardwareProfile'
       return:
         type:
           - azure-arm-compute.HardwareProfile
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVM.instanceId
     name: instanceId
@@ -95,7 +151,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The virtual machine instance ID.
     optional: true
     syntax:
       content: 'instanceId?: string'
@@ -110,7 +166,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The virtual machine instance view.
     optional: true
     syntax:
       content: 'instanceView?: VirtualMachineScaleSetVMInstanceView'
@@ -125,7 +181,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Specifies whether the latest model has been applied to the virtual
+      machine.
     optional: true
     syntax:
       content: 'latestModelApplied?: boolean'
@@ -140,10 +198,76 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Specifies that the image or disk that is being used was licensed
+      on-premises. This element is
+
+      only used for images that contain the Windows Server operating system.
+      <br><br> Possible
+
+      values are: <br><br> Windows_Client <br><br> Windows_Server <br><br> If
+      this element is
+
+      included in a request for an update, the value must match the initial
+      value. This value cannot
+
+      be updated. <br><br> For more information, see [Azure Hybrid Use Benefit
+      for Windows
+
+      Server](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json)
+
+      <br><br> Minimum api-version: 2015-06-15
     optional: true
     syntax:
       content: 'licenseType?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location
+    syntax:
+      content: 'location: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.modelDefinitionApplied
+    name: modelDefinitionApplied
+    fullName: modelDefinitionApplied
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies whether the model applied to the virtual machine is the model of
+      the virtual machine
+
+      scale set or the customized model for the virtual machine.
+    optional: true
+    syntax:
+      content: 'modelDefinitionApplied?: string'
+      return:
+        type:
+          - string
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name
+    optional: true
+    syntax:
+      content: 'name?: string'
       return:
         type:
           - string
@@ -155,13 +279,31 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Specifies the network interfaces of the virtual machine.
     optional: true
     syntax:
       content: 'networkProfile?: NetworkProfile'
       return:
         type:
           - azure-arm-compute.NetworkProfile
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.networkProfileConfiguration
+    name: networkProfileConfiguration
+    fullName: networkProfileConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies the network profile configuration of the virtual machine.
+    optional: true
+    syntax:
+      content: >-
+        networkProfileConfiguration?:
+        VirtualMachineScaleSetVMNetworkProfileConfiguration
+      return:
+        type:
+          - >-
+            azure-arm-compute.VirtualMachineScaleSetVMNetworkProfileConfiguration
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVM.osProfile
     name: osProfile
@@ -170,7 +312,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Specifies the operating system settings for the virtual machine.
     optional: true
     syntax:
       content: 'osProfile?: OSProfile'
@@ -185,13 +327,41 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Specifies information about the marketplace image used to create the
+      virtual machine. This
+
+      element is only used for marketplace images. Before you can use a
+      marketplace image from an
+
+      API, you must enable the image for programmatic use.  In the Azure portal,
+      find the
+
+      marketplace image that you want to use and then click **Want to deploy
+      programmatically, Get
+
+      Started ->**. Enter any required information and then click **Save**.
     optional: true
     syntax:
       content: 'plan?: Plan'
       return:
         type:
           - azure-arm-compute.Plan
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.protectionPolicy
+    name: protectionPolicy
+    fullName: protectionPolicy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies the protection policy of the virtual machine.
+    optional: true
+    syntax:
+      content: 'protectionPolicy?: VirtualMachineScaleSetVMProtectionPolicy'
+      return:
+        type:
+          - azure-arm-compute.VirtualMachineScaleSetVMProtectionPolicy
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVM.provisioningState
     name: provisioningState
@@ -200,7 +370,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 'The provisioning state, which only appears in the response.'
     optional: true
     syntax:
       content: 'provisioningState?: string'
@@ -215,7 +385,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The virtual machine child extension resources.
     optional: true
     syntax:
       content: 'resources?: VirtualMachineExtension[]'
@@ -230,7 +400,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The virtual machine SKU.
     optional: true
     syntax:
       content: 'sku?: Sku'
@@ -245,13 +415,43 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Specifies the storage settings for the virtual machine disks.
     optional: true
     syntax:
       content: 'storageProfile?: StorageProfile'
       return:
         type:
           - azure-arm-compute.StorageProfile
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineScaleSetVM.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineScaleSetVM.vmId
     name: vmId
@@ -260,7 +460,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Azure VM unique ID.
     optional: true
     syntax:
       content: 'vmId?: string'
@@ -275,7 +475,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The virtual machine zones.
     optional: true
     syntax:
       content: 'zones?: string[]'
@@ -326,6 +526,12 @@ references:
       - name: NetworkProfile
         fullName: NetworkProfile
         uid: azure-arm-compute.NetworkProfile
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMNetworkProfileConfiguration
+    name: VirtualMachineScaleSetVMNetworkProfileConfiguration
+    spec.typeScript:
+      - name: VirtualMachineScaleSetVMNetworkProfileConfiguration
+        fullName: VirtualMachineScaleSetVMNetworkProfileConfiguration
+        uid: azure-arm-compute.VirtualMachineScaleSetVMNetworkProfileConfiguration
   - uid: azure-arm-compute.OSProfile
     name: OSProfile
     spec.typeScript:
@@ -338,6 +544,12 @@ references:
       - name: Plan
         fullName: Plan
         uid: azure-arm-compute.Plan
+  - uid: azure-arm-compute.VirtualMachineScaleSetVMProtectionPolicy
+    name: VirtualMachineScaleSetVMProtectionPolicy
+    spec.typeScript:
+      - name: VirtualMachineScaleSetVMProtectionPolicy
+        fullName: VirtualMachineScaleSetVMProtectionPolicy
+        uid: azure-arm-compute.VirtualMachineScaleSetVMProtectionPolicy
   - uid: 'azure-arm-compute.VirtualMachineExtension[]'
     name: 'VirtualMachineExtension[]'
     spec.typeScript:

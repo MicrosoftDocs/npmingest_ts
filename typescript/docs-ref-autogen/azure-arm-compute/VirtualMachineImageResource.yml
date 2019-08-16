@@ -4,15 +4,31 @@ items:
     name: VirtualMachineImageResource
     fullName: VirtualMachineImageResource
     children:
+      - azure-arm-compute.VirtualMachineImageResource.id
       - azure-arm-compute.VirtualMachineImageResource.location
       - azure-arm-compute.VirtualMachineImageResource.name
       - azure-arm-compute.VirtualMachineImageResource.tags
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: Virtual machine image resource information.
     extends:
       name: azure-arm-compute.SubResource
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineImageResource.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineImageResource.location
     name: location
@@ -21,7 +37,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The supported Azure location of the resource.
     syntax:
       content: 'location: string'
       return:
@@ -35,7 +51,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The name of the resource.
     syntax:
       content: 'name: string'
       return:
@@ -49,7 +65,13 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Specifies the tags that are assigned to the virtual machine. For more
+      information about using
+
+      tags, see [Using tags to organize your Azure
+
+      resources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags.md).
     optional: true
     syntax:
       content: 'tags?: [key: string]: string'

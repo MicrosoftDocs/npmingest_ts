@@ -10,6 +10,7 @@ items:
       - azure-arm-network.ExpressRouteCircuitConnection.etag
       - >-
         azure-arm-network.ExpressRouteCircuitConnection.expressRouteCircuitPeering
+      - azure-arm-network.ExpressRouteCircuitConnection.id
       - azure-arm-network.ExpressRouteCircuitConnection.name
       - >-
         azure-arm-network.ExpressRouteCircuitConnection.peerExpressRouteCircuitPeering
@@ -61,10 +62,10 @@ items:
       - typeScript
     type: property
     summary: >-
-      Express Route Circuit Connection State. Possible values are: 'Connected'
-      and 'Disconnected'.
+      Express Route Circuit connection state. Possible values include:
+      'Connected', 'Connecting',
 
-      Possible values include: 'Connected', 'Connecting', 'Disconnected'
+      'Disconnected'
     optional: true
     syntax:
       content: 'circuitConnectionStatus?: string'
@@ -105,6 +106,21 @@ items:
       return:
         type:
           - azure-arm-network.SubResource
+    package: azure-arm-network
+  - uid: azure-arm-network.ExpressRouteCircuitConnection.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteCircuitConnection.name
     name: name
@@ -152,7 +168,7 @@ items:
     type: property
     summary: >-
       Provisioning state of the circuit connection resource. Possible values
-      are: 'Succeded',
+      are: 'Succeeded',
 
       'Updating', 'Deleting', and 'Failed'.
     optional: true

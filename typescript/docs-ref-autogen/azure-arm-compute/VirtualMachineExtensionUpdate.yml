@@ -9,12 +9,13 @@ items:
       - azure-arm-compute.VirtualMachineExtensionUpdate.protectedSettings
       - azure-arm-compute.VirtualMachineExtensionUpdate.publisher
       - azure-arm-compute.VirtualMachineExtensionUpdate.settings
+      - azure-arm-compute.VirtualMachineExtensionUpdate.tags
       - azure-arm-compute.VirtualMachineExtensionUpdate.type
       - azure-arm-compute.VirtualMachineExtensionUpdate.typeHandlerVersion
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: Describes a Virtual Machine Extension.
     extends:
       name: azure-arm-compute.UpdateResource
     package: azure-arm-compute
@@ -25,7 +26,14 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Indicates whether the extension should use a newer minor version if one is
+      available at
+
+      deployment time. Once deployed, however, the extension will not upgrade
+      minor versions unless
+
+      redeployed, even with this property set to true.
     optional: true
     syntax:
       content: 'autoUpgradeMinorVersion?: boolean'
@@ -40,7 +48,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      How the extension handler should be forced to update even if the extension
+      configuration has
+
+      not changed.
     optional: true
     syntax:
       content: 'forceUpdateTag?: string'
@@ -55,7 +67,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The extension can contain either protectedSettings or
+      protectedSettingsFromKeyVault or no
+
+      protected settings at all.
     optional: true
     syntax:
       content: 'protectedSettings?: any'
@@ -70,7 +86,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The name of the extension handler publisher.
     optional: true
     syntax:
       content: 'publisher?: string'
@@ -85,13 +101,28 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Json formatted public settings for the extension.
     optional: true
     syntax:
       content: 'settings?: any'
       return:
         type:
           - any
+    package: azure-arm-compute
+  - uid: azure-arm-compute.VirtualMachineExtensionUpdate.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensionUpdate.type
     name: type
@@ -100,7 +131,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      Specifies the type of the extension; an example is
+      "CustomScriptExtension".
     optional: true
     syntax:
       content: 'type?: string'
@@ -115,7 +148,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Specifies the version of the script handler.
     optional: true
     syntax:
       content: 'typeHandlerVersion?: string'
