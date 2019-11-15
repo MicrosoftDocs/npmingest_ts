@@ -11,8 +11,8 @@ items:
       - azure-arm-network.ListVpnConnectionsResult.entries
       - azure-arm-network.ListVpnConnectionsResult.every
       - azure-arm-network.ListVpnConnectionsResult.fill
-      - azure-arm-network.ListVpnConnectionsResult.filter
       - azure-arm-network.ListVpnConnectionsResult.filter_1
+      - azure-arm-network.ListVpnConnectionsResult.filter
       - azure-arm-network.ListVpnConnectionsResult.find
       - azure-arm-network.ListVpnConnectionsResult.find_1
       - azure-arm-network.ListVpnConnectionsResult.findIndex
@@ -183,15 +183,21 @@ items:
               unknown
           description: >-
             A function that accepts up to three arguments. The every method
-            calls the callbackfn function for each element in array1 until the
-            callbackfn returns false, or until the end of the array.
+            calls
+
+            the callbackfn function for each element in the array until the
+            callbackfn returns a value
+
+            which is coercible to the Boolean value false, or until the end of
+            the array.
         - id: thisArg
           type:
             - any
           description: >
             An object to which the this keyword can refer in the callbackfn
-            function. If thisArg is omitted, undefined is used as the this
-            value.
+            function.
+
+            If thisArg is omitted, undefined is used as the this value.
           optional: true
       return:
         type:
@@ -235,43 +241,6 @@ items:
         type:
           - this
     package: azure-arm-network
-  - uid: azure-arm-network.ListVpnConnectionsResult.filter
-    name: >-
-      filter((value: VpnConnection, index: number, array: VpnConnection[]) =>
-      boolean, any)
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: >-
-      Returns the elements of an array that meet the condition specified in a
-      callback function.
-    syntax:
-      content: >-
-        function filter<S>(callbackfn: (value: VpnConnection, index: number,
-        array: VpnConnection[]) => boolean, thisArg?: any)
-      parameters:
-        - id: callbackfn
-          type:
-            - >-
-              (value: VpnConnection, index: number, array: VpnConnection[]) =>
-              boolean
-          description: >-
-            A function that accepts up to three arguments. The filter method
-            calls the callbackfn function one time for each element in the
-            array.
-        - id: thisArg
-          type:
-            - any
-          description: >
-            An object to which the this keyword can refer in the callbackfn
-            function. If thisArg is omitted, undefined is used as the this
-            value.
-          optional: true
-      return:
-        type:
-          - 'S[]'
-    package: azure-arm-network
   - uid: azure-arm-network.ListVpnConnectionsResult.filter_1
     name: >-
       filter((value: VpnConnection, index: number, array: VpnConnection[]) =>
@@ -309,10 +278,47 @@ items:
         type:
           - 'azure-arm-network.VpnConnection[]'
     package: azure-arm-network
+  - uid: azure-arm-network.ListVpnConnectionsResult.filter
+    name: >-
+      filter((value: VpnConnection, index: number, array: VpnConnection[]) =>
+      value, any)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Returns the elements of an array that meet the condition specified in a
+      callback function.
+    syntax:
+      content: >-
+        function filter<S>(callbackfn: (value: VpnConnection, index: number,
+        array: VpnConnection[]) => value, thisArg?: any)
+      parameters:
+        - id: callbackfn
+          type:
+            - >-
+              (value: VpnConnection, index: number, array: VpnConnection[]) =>
+              value
+          description: >-
+            A function that accepts up to three arguments. The filter method
+            calls the callbackfn function one time for each element in the
+            array.
+        - id: thisArg
+          type:
+            - any
+          description: >
+            An object to which the this keyword can refer in the callbackfn
+            function. If thisArg is omitted, undefined is used as the this
+            value.
+          optional: true
+      return:
+        type:
+          - 'S[]'
+    package: azure-arm-network
   - uid: azure-arm-network.ListVpnConnectionsResult.find
     name: >-
       find((this: void, value: VpnConnection, index: number, obj:
-      VpnConnection[]) => boolean, any)
+      VpnConnection[]) => value, any)
     children: []
     type: method
     langs:
@@ -325,13 +331,13 @@ items:
     syntax:
       content: >-
         function find<S>(predicate: (this: void, value: VpnConnection, index:
-        number, obj: VpnConnection[]) => boolean, thisArg?: any)
+        number, obj: VpnConnection[]) => value, thisArg?: any)
       parameters:
         - id: predicate
           type:
             - >-
               (this: void, value: VpnConnection, index: number, obj:
-              VpnConnection[]) => boolean
+              VpnConnection[]) => value
           description: >-
             find calls predicate once for each element of the array, in
             ascending
@@ -929,8 +935,9 @@ items:
         - id: end
           type:
             - number
-          description: |
-            The end of the specified portion of the array.
+          description: >
+            The end of the specified portion of the array. This is exclusive of
+            the element at the index 'end'.
           optional: true
       return:
         type:
@@ -959,15 +966,20 @@ items:
               unknown
           description: >-
             A function that accepts up to three arguments. The some method calls
-            the callbackfn function for each element in array1 until the
-            callbackfn returns true, or until the end of the array.
+
+            the callbackfn function for each element in the array until the
+            callbackfn returns a value
+
+            which is coercible to the Boolean value true, or until the end of
+            the array.
         - id: thisArg
           type:
             - any
           description: >
             An object to which the this keyword can refer in the callbackfn
-            function. If thisArg is omitted, undefined is used as the this
-            value.
+            function.
+
+            If thisArg is omitted, undefined is used as the this value.
           optional: true
       return:
         type:
@@ -989,9 +1001,20 @@ items:
           type:
             - '(a: VpnConnection, b: VpnConnection) => number'
           description: >
-            The name of the function used to determine the order of the
-            elements. If omitted, the elements are sorted in ascending, ASCII
-            character order.
+            Function used to determine the order of the elements. It is expected
+            to return
+
+            a negative value if first argument is less than second argument,
+            zero if they're equal and a positive
+
+            value otherwise. If omitted, the elements are sorted in ascending,
+            ASCII character order.
+
+            ```ts
+
+            [11,2,22,1].sort((a, b) => a - b)
+
+            ```
           optional: true
       return:
         type:

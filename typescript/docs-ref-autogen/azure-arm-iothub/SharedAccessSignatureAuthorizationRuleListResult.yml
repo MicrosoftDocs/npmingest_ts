@@ -14,9 +14,9 @@ items:
         azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.entries
       - azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.every
       - azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.fill
-      - azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.filter
       - >-
         azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.filter_1
+      - azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.filter
       - azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.find
       - azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.find_1
       - >-
@@ -204,15 +204,21 @@ items:
               array: SharedAccessSignatureAuthorizationRule[]) => unknown
           description: >-
             A function that accepts up to three arguments. The every method
-            calls the callbackfn function for each element in array1 until the
-            callbackfn returns false, or until the end of the array.
+            calls
+
+            the callbackfn function for each element in the array until the
+            callbackfn returns a value
+
+            which is coercible to the Boolean value false, or until the end of
+            the array.
         - id: thisArg
           type:
             - any
           description: >
             An object to which the this keyword can refer in the callbackfn
-            function. If thisArg is omitted, undefined is used as the this
-            value.
+            function.
+
+            If thisArg is omitted, undefined is used as the this value.
           optional: true
       return:
         type:
@@ -258,44 +264,6 @@ items:
         type:
           - this
     package: azure-arm-iothub
-  - uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.filter
-    name: >-
-      filter((value: SharedAccessSignatureAuthorizationRule, index: number,
-      array: SharedAccessSignatureAuthorizationRule[]) => boolean, any)
-    children: []
-    type: method
-    langs:
-      - typeScript
-    summary: >-
-      Returns the elements of an array that meet the condition specified in a
-      callback function.
-    syntax:
-      content: >-
-        function filter<S>(callbackfn: (value:
-        SharedAccessSignatureAuthorizationRule, index: number, array:
-        SharedAccessSignatureAuthorizationRule[]) => boolean, thisArg?: any)
-      parameters:
-        - id: callbackfn
-          type:
-            - >-
-              (value: SharedAccessSignatureAuthorizationRule, index: number,
-              array: SharedAccessSignatureAuthorizationRule[]) => boolean
-          description: >-
-            A function that accepts up to three arguments. The filter method
-            calls the callbackfn function one time for each element in the
-            array.
-        - id: thisArg
-          type:
-            - any
-          description: >
-            An object to which the this keyword can refer in the callbackfn
-            function. If thisArg is omitted, undefined is used as the this
-            value.
-          optional: true
-      return:
-        type:
-          - 'S[]'
-    package: azure-arm-iothub
   - uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.filter_1
     name: >-
       filter((value: SharedAccessSignatureAuthorizationRule, index: number,
@@ -334,10 +302,48 @@ items:
         type:
           - 'azure-arm-iothub.SharedAccessSignatureAuthorizationRule[]'
     package: azure-arm-iothub
+  - uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.filter
+    name: >-
+      filter((value: SharedAccessSignatureAuthorizationRule, index: number,
+      array: SharedAccessSignatureAuthorizationRule[]) => value, any)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Returns the elements of an array that meet the condition specified in a
+      callback function.
+    syntax:
+      content: >-
+        function filter<S>(callbackfn: (value:
+        SharedAccessSignatureAuthorizationRule, index: number, array:
+        SharedAccessSignatureAuthorizationRule[]) => value, thisArg?: any)
+      parameters:
+        - id: callbackfn
+          type:
+            - >-
+              (value: SharedAccessSignatureAuthorizationRule, index: number,
+              array: SharedAccessSignatureAuthorizationRule[]) => value
+          description: >-
+            A function that accepts up to three arguments. The filter method
+            calls the callbackfn function one time for each element in the
+            array.
+        - id: thisArg
+          type:
+            - any
+          description: >
+            An object to which the this keyword can refer in the callbackfn
+            function. If thisArg is omitted, undefined is used as the this
+            value.
+          optional: true
+      return:
+        type:
+          - 'S[]'
+    package: azure-arm-iothub
   - uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.find
     name: >-
       find((this: void, value: SharedAccessSignatureAuthorizationRule, index:
-      number, obj: SharedAccessSignatureAuthorizationRule[]) => boolean, any)
+      number, obj: SharedAccessSignatureAuthorizationRule[]) => value, any)
     children: []
     type: method
     langs:
@@ -351,13 +357,13 @@ items:
       content: >-
         function find<S>(predicate: (this: void, value:
         SharedAccessSignatureAuthorizationRule, index: number, obj:
-        SharedAccessSignatureAuthorizationRule[]) => boolean, thisArg?: any)
+        SharedAccessSignatureAuthorizationRule[]) => value, thisArg?: any)
       parameters:
         - id: predicate
           type:
             - >-
               (this: void, value: SharedAccessSignatureAuthorizationRule, index:
-              number, obj: SharedAccessSignatureAuthorizationRule[]) => boolean
+              number, obj: SharedAccessSignatureAuthorizationRule[]) => value
           description: >-
             find calls predicate once for each element of the array, in
             ascending
@@ -1006,8 +1012,9 @@ items:
         - id: end
           type:
             - number
-          description: |
-            The end of the specified portion of the array.
+          description: >
+            The end of the specified portion of the array. This is exclusive of
+            the element at the index 'end'.
           optional: true
       return:
         type:
@@ -1037,15 +1044,20 @@ items:
               array: SharedAccessSignatureAuthorizationRule[]) => unknown
           description: >-
             A function that accepts up to three arguments. The some method calls
-            the callbackfn function for each element in array1 until the
-            callbackfn returns true, or until the end of the array.
+
+            the callbackfn function for each element in the array until the
+            callbackfn returns a value
+
+            which is coercible to the Boolean value true, or until the end of
+            the array.
         - id: thisArg
           type:
             - any
           description: >
             An object to which the this keyword can refer in the callbackfn
-            function. If thisArg is omitted, undefined is used as the this
-            value.
+            function.
+
+            If thisArg is omitted, undefined is used as the this value.
           optional: true
       return:
         type:
@@ -1071,9 +1083,20 @@ items:
               (a: SharedAccessSignatureAuthorizationRule, b:
               SharedAccessSignatureAuthorizationRule) => number
           description: >
-            The name of the function used to determine the order of the
-            elements. If omitted, the elements are sorted in ascending, ASCII
-            character order.
+            Function used to determine the order of the elements. It is expected
+            to return
+
+            a negative value if first argument is less than second argument,
+            zero if they're equal and a positive
+
+            value otherwise. If omitted, the elements are sorted in ascending,
+            ASCII character order.
+
+            ```ts
+
+            [11,2,22,1].sort((a, b) => a - b)
+
+            ```
           optional: true
       return:
         type:
