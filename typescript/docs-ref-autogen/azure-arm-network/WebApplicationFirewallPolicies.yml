@@ -79,6 +79,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -111,6 +130,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
@@ -139,6 +177,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.WebApplicationFirewallPolicies.beginDeleteMethodWithHttpOperationResponse
@@ -171,6 +228,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.createOrUpdate
     name: 'createOrUpdate(string, string, WebApplicationFirewallPolicy, Object)'
@@ -209,6 +267,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicy} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.createOrUpdate_2
     name: >-
@@ -250,6 +329,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicy} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.createOrUpdate_1
     name: >-
@@ -287,6 +387,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicy} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.WebApplicationFirewallPolicies.createOrUpdateWithHttpOperationResponse
@@ -330,6 +451,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.WebApplicationFirewallPolicy>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.deleteMethod
     name: 'deleteMethod(string, string, Object)'
@@ -361,6 +483,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.deleteMethod_2
     name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -393,6 +534,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.deleteMethod_1
     name: 'deleteMethod(string, string, ServiceCallback<void>)'
@@ -421,6 +581,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.WebApplicationFirewallPolicies.deleteMethodWithHttpOperationResponse
@@ -453,6 +632,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.get
     name: 'get(string, string, Object)'
@@ -484,6 +664,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicy} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.get_2
     name: 'get(string, string, Object, ServiceCallback<WebApplicationFirewallPolicy>)'
@@ -516,6 +717,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicy} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.get_1
     name: 'get(string, string, ServiceCallback<WebApplicationFirewallPolicy>)'
@@ -544,6 +766,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicy} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.WebApplicationFirewallPolicies.getWithHttpOperationResponse
@@ -577,6 +820,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.WebApplicationFirewallPolicy>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.list
     name: 'list(string, Object)'
@@ -601,6 +845,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicyListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.list_2
     name: >-
@@ -632,6 +897,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicyListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.list_1
     name: 'list(string, ServiceCallback<WebApplicationFirewallPolicyListResult>)'
@@ -657,6 +943,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicyListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.listAll
     name: listAll(Object)
@@ -676,6 +983,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicyListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.listAll_2
     name: 'listAll(Object, ServiceCallback<WebApplicationFirewallPolicyListResult>)'
@@ -701,6 +1029,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicyListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.listAll_1
     name: listAll(ServiceCallback<WebApplicationFirewallPolicyListResult>)
@@ -722,6 +1071,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicyListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.listAllNext
     name: 'listAllNext(string, Object)'
@@ -747,6 +1117,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicyListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.listAllNext_2
     name: >-
@@ -778,6 +1169,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicyListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.listAllNext_1
     name: >-
@@ -805,6 +1217,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicyListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.WebApplicationFirewallPolicies.listAllNextWithHttpOperationResponse
@@ -834,6 +1267,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.WebApplicationFirewallPolicyListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: >-
       azure-arm-network.WebApplicationFirewallPolicies.listAllWithHttpOperationResponse
@@ -855,6 +1289,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.WebApplicationFirewallPolicyListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.listNext
     name: 'listNext(string, Object)'
@@ -880,6 +1315,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicyListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.listNext_2
     name: >-
@@ -911,6 +1367,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicyListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.WebApplicationFirewallPolicies.listNext_1
     name: 'listNext(string, ServiceCallback<WebApplicationFirewallPolicyListResult>)'
@@ -936,6 +1413,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.WebApplicationFirewallPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {WebApplicationFirewallPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {WebApplicationFirewallPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link WebApplicationFirewallPolicyListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.WebApplicationFirewallPolicies.listNextWithHttpOperationResponse
@@ -965,6 +1463,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.WebApplicationFirewallPolicyListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: >-
       azure-arm-network.WebApplicationFirewallPolicies.listWithHttpOperationResponse
@@ -993,6 +1492,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.WebApplicationFirewallPolicyListResult>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: azure-arm-network.WebApplicationFirewallPolicy

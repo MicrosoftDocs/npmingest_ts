@@ -88,6 +88,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.beginCreateOrUpdate_2
     name: >-
@@ -127,6 +147,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.beginCreateOrUpdate_1
     name: >-
@@ -162,6 +202,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.InterfaceEndpoints.beginCreateOrUpdateWithHttpOperationResponse
@@ -203,6 +263,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.InterfaceEndpoint>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, Object)'
@@ -234,6 +295,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -267,6 +347,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
@@ -295,6 +394,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.InterfaceEndpoints.beginDeleteMethodWithHttpOperationResponse
@@ -327,6 +445,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.createOrUpdate
     name: 'createOrUpdate(string, string, InterfaceEndpoint, Object)'
@@ -365,6 +484,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.createOrUpdate_2
     name: >-
@@ -404,6 +543,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.createOrUpdate_1
     name: >-
@@ -439,6 +598,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.InterfaceEndpoints.createOrUpdateWithHttpOperationResponse
@@ -480,6 +659,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.InterfaceEndpoint>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.deleteMethod
     name: 'deleteMethod(string, string, Object)'
@@ -511,6 +691,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.deleteMethod_2
     name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -543,6 +742,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.deleteMethod_1
     name: 'deleteMethod(string, string, ServiceCallback<void>)'
@@ -571,6 +789,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.deleteMethodWithHttpOperationResponse
     name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -602,6 +839,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.get
     name: 'get(string, string, Object)'
@@ -633,6 +871,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.get_2
     name: 'get(string, string, Object, ServiceCallback<InterfaceEndpoint>)'
@@ -665,6 +923,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.get_1
     name: 'get(string, string, ServiceCallback<InterfaceEndpoint>)'
@@ -693,6 +971,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, Object)'
@@ -724,6 +1022,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.InterfaceEndpoint>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.list
     name: 'list(string, Object)'
@@ -748,6 +1047,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.list_2
     name: 'list(string, Object, ServiceCallback<InterfaceEndpointListResult>)'
@@ -776,6 +1096,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.list_1
     name: 'list(string, ServiceCallback<InterfaceEndpointListResult>)'
@@ -800,6 +1141,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.listBySubscription
     name: listBySubscription(Object)
@@ -819,6 +1181,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.listBySubscription_2
     name: 'listBySubscription(Object, ServiceCallback<InterfaceEndpointListResult>)'
@@ -843,6 +1226,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.listBySubscription_1
     name: listBySubscription(ServiceCallback<InterfaceEndpointListResult>)
@@ -863,6 +1267,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.listBySubscriptionNext
     name: 'listBySubscriptionNext(string, Object)'
@@ -888,6 +1313,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.listBySubscriptionNext_2
     name: >-
@@ -918,6 +1364,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.listBySubscriptionNext_1
     name: >-
@@ -944,6 +1411,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.InterfaceEndpoints.listBySubscriptionNextWithHttpOperationResponse
@@ -973,6 +1461,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.InterfaceEndpointListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: >-
       azure-arm-network.InterfaceEndpoints.listBySubscriptionWithHttpOperationResponse
@@ -994,6 +1483,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.InterfaceEndpointListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.listNext
     name: 'listNext(string, Object)'
@@ -1019,6 +1509,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.listNext_2
     name: 'listNext(string, Object, ServiceCallback<InterfaceEndpointListResult>)'
@@ -1047,6 +1558,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.listNext_1
     name: 'listNext(string, ServiceCallback<InterfaceEndpointListResult>)'
@@ -1071,6 +1603,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.listNextWithHttpOperationResponse
     name: 'listNextWithHttpOperationResponse(string, Object)'
@@ -1099,6 +1652,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.InterfaceEndpointListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.InterfaceEndpoints.listWithHttpOperationResponse
     name: 'listWithHttpOperationResponse(string, Object)'
@@ -1126,6 +1680,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.InterfaceEndpointListResult>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: azure-arm-network.InterfaceEndpoint

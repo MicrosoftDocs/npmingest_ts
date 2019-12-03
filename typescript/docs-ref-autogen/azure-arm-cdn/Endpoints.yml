@@ -134,6 +134,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginCreate_2
     name: >-
@@ -179,6 +199,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginCreate_1
     name: 'beginCreate(string, string, string, Endpoint, ServiceCallback<Endpoint>)'
@@ -218,6 +258,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginCreateWithHttpOperationResponse
     name: >-
@@ -267,6 +327,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, string, Object)'
@@ -310,6 +371,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, string, Object, ServiceCallback<void>)'
@@ -351,6 +431,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, string, ServiceCallback<void>)'
@@ -387,6 +486,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginDeleteMethodWithHttpOperationResponse
     name: 'beginDeleteMethodWithHttpOperationResponse(string, string, string, Object)'
@@ -430,6 +548,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginLoadContent
     name: 'beginLoadContent(string, string, string, string[], Object)'
@@ -475,6 +594,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginLoadContent_2
     name: >-
@@ -518,6 +656,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginLoadContent_1
     name: 'beginLoadContent(string, string, string, string[], ServiceCallback<void>)'
@@ -555,6 +712,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginLoadContentWithHttpOperationResponse
     name: >-
@@ -603,6 +779,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginPurgeContent
     name: 'beginPurgeContent(string, string, string, string[], Object)'
@@ -648,6 +825,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginPurgeContent_2
     name: >-
@@ -691,6 +887,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginPurgeContent_1
     name: 'beginPurgeContent(string, string, string, string[], ServiceCallback<void>)'
@@ -728,6 +943,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginPurgeContentWithHttpOperationResponse
     name: >-
@@ -776,6 +1010,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginStart
     name: 'beginStart(string, string, string, Object)'
@@ -815,6 +1050,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginStart_2
     name: 'beginStart(string, string, string, Object, ServiceCallback<Endpoint>)'
@@ -852,6 +1107,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginStart_1
     name: 'beginStart(string, string, string, ServiceCallback<Endpoint>)'
@@ -884,6 +1159,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginStartWithHttpOperationResponse
     name: 'beginStartWithHttpOperationResponse(string, string, string, Object)'
@@ -923,6 +1218,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginStop
     name: 'beginStop(string, string, string, Object)'
@@ -962,6 +1258,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginStop_2
     name: 'beginStop(string, string, string, Object, ServiceCallback<Endpoint>)'
@@ -999,6 +1315,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginStop_1
     name: 'beginStop(string, string, string, ServiceCallback<Endpoint>)'
@@ -1031,6 +1367,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginStopWithHttpOperationResponse
     name: 'beginStopWithHttpOperationResponse(string, string, string, Object)'
@@ -1070,6 +1426,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginUpdate
     name: 'beginUpdate(string, string, string, EndpointUpdateParameters, Object)'
@@ -1127,6 +1484,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginUpdate_2
     name: >-
@@ -1183,6 +1560,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginUpdate_1
     name: >-
@@ -1234,6 +1631,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.beginUpdateWithHttpOperationResponse
     name: >-
@@ -1293,6 +1710,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.create
     name: 'create(string, string, string, Endpoint, Object)'
@@ -1339,6 +1757,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.create_2
     name: >-
@@ -1384,6 +1822,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.create_1
     name: 'create(string, string, string, Endpoint, ServiceCallback<Endpoint>)'
@@ -1423,6 +1881,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.createWithHttpOperationResponse
     name: 'createWithHttpOperationResponse(string, string, string, Endpoint, Object)'
@@ -1470,6 +1948,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.deleteMethod
     name: 'deleteMethod(string, string, string, Object)'
@@ -1513,6 +1992,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.deleteMethod_2
     name: 'deleteMethod(string, string, string, Object, ServiceCallback<void>)'
@@ -1553,6 +2051,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.deleteMethod_1
     name: 'deleteMethod(string, string, string, ServiceCallback<void>)'
@@ -1589,6 +2106,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.deleteMethodWithHttpOperationResponse
     name: 'deleteMethodWithHttpOperationResponse(string, string, string, Object)'
@@ -1632,6 +2168,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.get
     name: 'get(string, string, string, Object)'
@@ -1673,6 +2210,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.get_2
     name: 'get(string, string, string, Object, ServiceCallback<Endpoint>)'
@@ -1712,6 +2269,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.get_1
     name: 'get(string, string, string, ServiceCallback<Endpoint>)'
@@ -1746,6 +2323,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, string, Object)'
@@ -1787,6 +2384,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.listByProfile
     name: 'listByProfile(string, string, Object)'
@@ -1820,6 +2418,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.EndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {EndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {EndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link EndpointListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.listByProfile_2
     name: 'listByProfile(string, string, Object, ServiceCallback<EndpointListResult>)'
@@ -1852,6 +2470,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.EndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {EndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {EndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link EndpointListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.listByProfile_1
     name: 'listByProfile(string, string, ServiceCallback<EndpointListResult>)'
@@ -1880,6 +2518,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.EndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {EndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {EndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link EndpointListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.listByProfileNext
     name: 'listByProfileNext(string, Object)'
@@ -1905,6 +2563,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.EndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {EndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {EndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link EndpointListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.listByProfileNext_2
     name: 'listByProfileNext(string, Object, ServiceCallback<EndpointListResult>)'
@@ -1933,6 +2611,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.EndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {EndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {EndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link EndpointListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.listByProfileNext_1
     name: 'listByProfileNext(string, ServiceCallback<EndpointListResult>)'
@@ -1957,6 +2655,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.EndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {EndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {EndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link EndpointListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.listByProfileNextWithHttpOperationResponse
     name: 'listByProfileNextWithHttpOperationResponse(string, Object)'
@@ -1984,6 +2702,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-cdn.EndpointListResult>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.listByProfileWithHttpOperationResponse
     name: 'listByProfileWithHttpOperationResponse(string, string, Object)'
@@ -2017,6 +2736,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-cdn.EndpointListResult>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.listResourceUsage
     name: 'listResourceUsage(string, string, string, Object)'
@@ -2060,6 +2780,27 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.ResourceUsageListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceUsageListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceUsageListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceUsageListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.listResourceUsage_2
     name: >-
@@ -2103,6 +2844,27 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.ResourceUsageListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceUsageListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceUsageListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceUsageListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.listResourceUsage_1
     name: >-
@@ -2142,6 +2904,27 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.ResourceUsageListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceUsageListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceUsageListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceUsageListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.listResourceUsageNext
     name: 'listResourceUsageNext(string, Object)'
@@ -2171,6 +2954,27 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.ResourceUsageListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceUsageListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceUsageListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceUsageListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.listResourceUsageNext_2
     name: >-
@@ -2205,6 +3009,27 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.ResourceUsageListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceUsageListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceUsageListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceUsageListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.listResourceUsageNext_1
     name: 'listResourceUsageNext(string, ServiceCallback<ResourceUsageListResult>)'
@@ -2233,6 +3058,27 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.ResourceUsageListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceUsageListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceUsageListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceUsageListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.listResourceUsageNextWithHttpOperationResponse
     name: 'listResourceUsageNextWithHttpOperationResponse(string, Object)'
@@ -2265,6 +3111,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-cdn.ResourceUsageListResult>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.listResourceUsageWithHttpOperationResponse
     name: 'listResourceUsageWithHttpOperationResponse(string, string, string, Object)'
@@ -2309,6 +3156,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-cdn.ResourceUsageListResult>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.loadContent
     name: 'loadContent(string, string, string, string[], Object)'
@@ -2354,6 +3202,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.loadContent_2
     name: >-
@@ -2397,6 +3264,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.loadContent_1
     name: 'loadContent(string, string, string, string[], ServiceCallback<void>)'
@@ -2434,6 +3320,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.loadContentWithHttpOperationResponse
     name: >-
@@ -2482,6 +3387,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.purgeContent
     name: 'purgeContent(string, string, string, string[], Object)'
@@ -2527,6 +3433,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.purgeContent_2
     name: >-
@@ -2570,6 +3495,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.purgeContent_1
     name: 'purgeContent(string, string, string, string[], ServiceCallback<void>)'
@@ -2607,6 +3551,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.purgeContentWithHttpOperationResponse
     name: >-
@@ -2655,6 +3618,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.start
     name: 'start(string, string, string, Object)'
@@ -2694,6 +3658,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.start_2
     name: 'start(string, string, string, Object, ServiceCallback<Endpoint>)'
@@ -2731,6 +3715,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.start_1
     name: 'start(string, string, string, ServiceCallback<Endpoint>)'
@@ -2763,6 +3767,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.startWithHttpOperationResponse
     name: 'startWithHttpOperationResponse(string, string, string, Object)'
@@ -2802,6 +3826,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.stop
     name: 'stop(string, string, string, Object)'
@@ -2841,6 +3866,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.stop_2
     name: 'stop(string, string, string, Object, ServiceCallback<Endpoint>)'
@@ -2878,6 +3923,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.stop_1
     name: 'stop(string, string, string, ServiceCallback<Endpoint>)'
@@ -2910,6 +3975,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.stopWithHttpOperationResponse
     name: 'stopWithHttpOperationResponse(string, string, string, Object)'
@@ -2949,6 +4034,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.update
     name: 'update(string, string, string, EndpointUpdateParameters, Object)'
@@ -3006,6 +4092,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.update_2
     name: >-
@@ -3062,6 +4168,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.update_1
     name: >-
@@ -3113,6 +4239,26 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.Endpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Endpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Endpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Endpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.updateWithHttpOperationResponse
     name: >-
@@ -3172,6 +4318,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-cdn.Endpoint>>
+        description: A promise is returned
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.validateCustomDomain
     name: 'validateCustomDomain(string, string, string, string, Object)'
@@ -3219,6 +4366,27 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.ValidateCustomDomainOutput>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ValidateCustomDomainOutput} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ValidateCustomDomainOutput} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ValidateCustomDomainOutput} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.validateCustomDomain_2
     name: >-
@@ -3264,6 +4432,27 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.ValidateCustomDomainOutput>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ValidateCustomDomainOutput} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ValidateCustomDomainOutput} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ValidateCustomDomainOutput} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.validateCustomDomain_1
     name: >-
@@ -3305,6 +4494,27 @@ items:
       return:
         type:
           - Promise<azure-arm-cdn.ValidateCustomDomainOutput>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ValidateCustomDomainOutput} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ValidateCustomDomainOutput} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ValidateCustomDomainOutput} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-cdn
   - uid: azure-arm-cdn.Endpoints.validateCustomDomainWithHttpOperationResponse
     name: >-
@@ -3357,6 +4567,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-cdn.ValidateCustomDomainOutput>>
+        description: A promise is returned
     package: azure-arm-cdn
 references:
   - uid: azure-arm-cdn.Endpoint

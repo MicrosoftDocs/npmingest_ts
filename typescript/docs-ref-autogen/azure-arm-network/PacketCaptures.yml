@@ -92,6 +92,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.beginCreate_2
     name: >-
@@ -135,6 +155,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.beginCreate_1
     name: >-
@@ -174,6 +214,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.beginCreateWithHttpOperationResponse
     name: >-
@@ -220,6 +280,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.PacketCaptureResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, string, Object)'
@@ -256,6 +317,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, string, Object, ServiceCallback<void>)'
@@ -293,6 +373,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, string, ServiceCallback<void>)'
@@ -326,6 +425,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.PacketCaptures.beginDeleteMethodWithHttpOperationResponse
@@ -364,6 +482,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.beginGetStatus
     name: 'beginGetStatus(string, string, string, Object)'
@@ -401,6 +520,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureQueryStatusResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureQueryStatusResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureQueryStatusResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureQueryStatusResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.beginGetStatus_2
     name: >-
@@ -440,6 +580,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureQueryStatusResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureQueryStatusResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureQueryStatusResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureQueryStatusResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.beginGetStatus_1
     name: >-
@@ -475,6 +636,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureQueryStatusResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureQueryStatusResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureQueryStatusResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureQueryStatusResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.beginGetStatusWithHttpOperationResponse
     name: 'beginGetStatusWithHttpOperationResponse(string, string, string, Object)'
@@ -514,6 +696,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.PacketCaptureQueryStatusResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.beginStop
     name: 'beginStop(string, string, string, Object)'
@@ -550,6 +733,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.beginStop_2
     name: 'beginStop(string, string, string, Object, ServiceCallback<void>)'
@@ -587,6 +789,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.beginStop_1
     name: 'beginStop(string, string, string, ServiceCallback<void>)'
@@ -619,6 +840,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.beginStopWithHttpOperationResponse
     name: 'beginStopWithHttpOperationResponse(string, string, string, Object)'
@@ -655,6 +895,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.create
     name: 'create(string, string, string, PacketCapture, Object)'
@@ -697,6 +938,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.create_2
     name: >-
@@ -740,6 +1001,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.create_1
     name: >-
@@ -779,6 +1060,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.createWithHttpOperationResponse
     name: >-
@@ -825,6 +1126,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.PacketCaptureResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.deleteMethod
     name: 'deleteMethod(string, string, string, Object)'
@@ -861,6 +1163,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.deleteMethod_2
     name: 'deleteMethod(string, string, string, Object, ServiceCallback<void>)'
@@ -898,6 +1219,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.deleteMethod_1
     name: 'deleteMethod(string, string, string, ServiceCallback<void>)'
@@ -930,6 +1270,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.deleteMethodWithHttpOperationResponse
     name: 'deleteMethodWithHttpOperationResponse(string, string, string, Object)'
@@ -967,6 +1326,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.get
     name: 'get(string, string, string, Object)'
@@ -1003,6 +1363,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.get_2
     name: 'get(string, string, string, Object, ServiceCallback<PacketCaptureResult>)'
@@ -1040,6 +1420,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.get_1
     name: 'get(string, string, string, ServiceCallback<PacketCaptureResult>)'
@@ -1073,6 +1473,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.getStatus
     name: 'getStatus(string, string, string, Object)'
@@ -1110,6 +1530,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureQueryStatusResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureQueryStatusResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureQueryStatusResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureQueryStatusResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.getStatus_2
     name: >-
@@ -1149,6 +1590,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureQueryStatusResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureQueryStatusResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureQueryStatusResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureQueryStatusResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.getStatus_1
     name: >-
@@ -1184,6 +1646,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureQueryStatusResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureQueryStatusResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureQueryStatusResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureQueryStatusResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.getStatusWithHttpOperationResponse
     name: 'getStatusWithHttpOperationResponse(string, string, string, Object)'
@@ -1222,6 +1705,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.PacketCaptureQueryStatusResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, string, Object)'
@@ -1259,6 +1743,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.PacketCaptureResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.list
     name: 'list(string, string, Object)'
@@ -1290,6 +1775,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.list_2
     name: 'list(string, string, Object, ServiceCallback<PacketCaptureListResult>)'
@@ -1322,6 +1828,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.list_1
     name: 'list(string, string, ServiceCallback<PacketCaptureListResult>)'
@@ -1350,6 +1877,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PacketCaptureListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PacketCaptureListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PacketCaptureListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PacketCaptureListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.listWithHttpOperationResponse
     name: 'listWithHttpOperationResponse(string, string, Object)'
@@ -1382,6 +1930,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.PacketCaptureListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.stop
     name: 'stop(string, string, string, Object)'
@@ -1418,6 +1967,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.stop_2
     name: 'stop(string, string, string, Object, ServiceCallback<void>)'
@@ -1455,6 +2023,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.stop_1
     name: 'stop(string, string, string, ServiceCallback<void>)'
@@ -1487,6 +2074,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PacketCaptures.stopWithHttpOperationResponse
     name: 'stopWithHttpOperationResponse(string, string, string, Object)'
@@ -1523,6 +2129,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: azure-arm-network.PacketCapture

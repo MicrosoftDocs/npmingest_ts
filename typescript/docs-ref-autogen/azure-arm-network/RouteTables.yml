@@ -90,6 +90,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.beginCreateOrUpdate_2
     name: >-
@@ -129,6 +149,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.beginCreateOrUpdate_1
     name: >-
@@ -163,6 +203,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.beginCreateOrUpdateWithHttpOperationResponse
     name: >-
@@ -203,6 +263,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.RouteTable>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, Object)'
@@ -234,6 +295,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -266,6 +346,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
@@ -294,6 +393,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.beginDeleteMethodWithHttpOperationResponse
     name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -325,6 +443,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.beginUpdateTags
     name: 'beginUpdateTags(string, string, TagsObject, Object)'
@@ -361,6 +480,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.beginUpdateTags_2
     name: >-
@@ -400,6 +539,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.beginUpdateTags_1
     name: 'beginUpdateTags(string, string, TagsObject, ServiceCallback<RouteTable>)'
@@ -432,6 +591,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.beginUpdateTagsWithHttpOperationResponse
     name: >-
@@ -471,6 +650,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.RouteTable>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.createOrUpdate
     name: 'createOrUpdate(string, string, RouteTable, Object)'
@@ -508,6 +688,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.createOrUpdate_2
     name: >-
@@ -547,6 +747,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.createOrUpdate_1
     name: 'createOrUpdate(string, string, RouteTable, ServiceCallback<RouteTable>)'
@@ -579,6 +799,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.createOrUpdateWithHttpOperationResponse
     name: >-
@@ -619,6 +859,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.RouteTable>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.deleteMethod
     name: 'deleteMethod(string, string, Object)'
@@ -650,6 +891,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.deleteMethod_2
     name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -682,6 +942,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.deleteMethod_1
     name: 'deleteMethod(string, string, ServiceCallback<void>)'
@@ -710,6 +989,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.deleteMethodWithHttpOperationResponse
     name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -741,6 +1039,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.get
     name: 'get(string, string, Object)'
@@ -772,6 +1071,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.get_2
     name: 'get(string, string, Object, ServiceCallback<RouteTable>)'
@@ -804,6 +1123,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.get_1
     name: 'get(string, string, ServiceCallback<RouteTable>)'
@@ -832,6 +1171,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, Object)'
@@ -863,6 +1222,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.RouteTable>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.list
     name: 'list(string, Object)'
@@ -887,6 +1247,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.list_2
     name: 'list(string, Object, ServiceCallback<RouteTableListResult>)'
@@ -915,6 +1295,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.list_1
     name: 'list(string, ServiceCallback<RouteTableListResult>)'
@@ -939,6 +1339,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.listAll
     name: listAll(Object)
@@ -958,6 +1378,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.listAll_2
     name: 'listAll(Object, ServiceCallback<RouteTableListResult>)'
@@ -982,6 +1422,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.listAll_1
     name: listAll(ServiceCallback<RouteTableListResult>)
@@ -1000,6 +1460,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.listAllNext
     name: 'listAllNext(string, Object)'
@@ -1025,6 +1505,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.listAllNext_2
     name: 'listAllNext(string, Object, ServiceCallback<RouteTableListResult>)'
@@ -1053,6 +1553,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.listAllNext_1
     name: 'listAllNext(string, ServiceCallback<RouteTableListResult>)'
@@ -1077,6 +1597,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.listAllNextWithHttpOperationResponse
     name: 'listAllNextWithHttpOperationResponse(string, Object)'
@@ -1105,6 +1645,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.RouteTableListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse(Object)
@@ -1125,6 +1666,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.RouteTableListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.listNext
     name: 'listNext(string, Object)'
@@ -1150,6 +1692,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.listNext_2
     name: 'listNext(string, Object, ServiceCallback<RouteTableListResult>)'
@@ -1178,6 +1740,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.listNext_1
     name: 'listNext(string, ServiceCallback<RouteTableListResult>)'
@@ -1202,6 +1784,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.listNextWithHttpOperationResponse
     name: 'listNextWithHttpOperationResponse(string, Object)'
@@ -1230,6 +1832,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.RouteTableListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.listWithHttpOperationResponse
     name: 'listWithHttpOperationResponse(string, Object)'
@@ -1257,6 +1860,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.RouteTableListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.updateTags
     name: 'updateTags(string, string, TagsObject, Object)'
@@ -1293,6 +1897,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.updateTags_2
     name: >-
@@ -1332,6 +1956,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.updateTags_1
     name: 'updateTags(string, string, TagsObject, ServiceCallback<RouteTable>)'
@@ -1364,6 +2008,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteTables.updateTagsWithHttpOperationResponse
     name: 'updateTagsWithHttpOperationResponse(string, string, TagsObject, Object)'
@@ -1400,6 +2064,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.RouteTable>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: azure-arm-network.RouteTable

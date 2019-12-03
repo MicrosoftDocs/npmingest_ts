@@ -58,6 +58,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.SecurityRule>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SecurityRule} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SecurityRule} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SecurityRule} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.DefaultSecurityRules.get_2
     name: 'get(string, string, string, Object, ServiceCallback<SecurityRule>)'
@@ -95,6 +115,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.SecurityRule>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SecurityRule} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SecurityRule} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SecurityRule} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.DefaultSecurityRules.get_1
     name: 'get(string, string, string, ServiceCallback<SecurityRule>)'
@@ -128,6 +168,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.SecurityRule>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SecurityRule} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SecurityRule} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SecurityRule} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.DefaultSecurityRules.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, string, Object)'
@@ -167,6 +227,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.SecurityRule>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.DefaultSecurityRules.list
     name: 'list(string, string, Object)'
@@ -199,6 +260,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.SecurityRuleListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SecurityRuleListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SecurityRuleListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SecurityRuleListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.DefaultSecurityRules.list_2
     name: 'list(string, string, Object, ServiceCallback<SecurityRuleListResult>)'
@@ -232,6 +314,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.SecurityRuleListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SecurityRuleListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SecurityRuleListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SecurityRuleListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.DefaultSecurityRules.list_1
     name: 'list(string, string, ServiceCallback<SecurityRuleListResult>)'
@@ -260,6 +363,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.SecurityRuleListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SecurityRuleListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SecurityRuleListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SecurityRuleListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.DefaultSecurityRules.listNext
     name: 'listNext(string, Object)'
@@ -285,6 +409,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.SecurityRuleListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SecurityRuleListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SecurityRuleListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SecurityRuleListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.DefaultSecurityRules.listNext_2
     name: 'listNext(string, Object, ServiceCallback<SecurityRuleListResult>)'
@@ -313,6 +458,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.SecurityRuleListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SecurityRuleListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SecurityRuleListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SecurityRuleListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.DefaultSecurityRules.listNext_1
     name: 'listNext(string, ServiceCallback<SecurityRuleListResult>)'
@@ -337,6 +503,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.SecurityRuleListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SecurityRuleListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SecurityRuleListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SecurityRuleListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.DefaultSecurityRules.listNextWithHttpOperationResponse
     name: 'listNextWithHttpOperationResponse(string, Object)'
@@ -365,6 +552,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.SecurityRuleListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.DefaultSecurityRules.listWithHttpOperationResponse
     name: 'listWithHttpOperationResponse(string, string, Object)'
@@ -398,6 +586,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.SecurityRuleListResult>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: Promise<azure-arm-network.SecurityRule>

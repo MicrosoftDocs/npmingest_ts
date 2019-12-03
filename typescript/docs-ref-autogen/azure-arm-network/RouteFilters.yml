@@ -93,6 +93,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilter>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilter} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilter} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilter} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.beginCreateOrUpdate_2
     name: >-
@@ -132,6 +152,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilter>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilter} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilter} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilter} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.beginCreateOrUpdate_1
     name: >-
@@ -167,6 +207,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilter>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilter} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilter} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilter} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.RouteFilters.beginCreateOrUpdateWithHttpOperationResponse
@@ -208,6 +268,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.RouteFilter>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, Object)'
@@ -239,6 +300,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -271,6 +351,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
@@ -299,6 +398,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.beginDeleteMethodWithHttpOperationResponse
     name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -330,6 +448,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.beginUpdate
     name: 'beginUpdate(string, string, PatchRouteFilter, Object)'
@@ -367,6 +486,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilter>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilter} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilter} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilter} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.beginUpdate_2
     name: >-
@@ -406,6 +545,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilter>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilter} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilter} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilter} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.beginUpdate_1
     name: >-
@@ -441,6 +600,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilter>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilter} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilter} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilter} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.beginUpdateWithHttpOperationResponse
     name: >-
@@ -481,6 +660,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.RouteFilter>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.createOrUpdate
     name: 'createOrUpdate(string, string, RouteFilter, Object)'
@@ -518,6 +698,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilter>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilter} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilter} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilter} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.createOrUpdate_2
     name: >-
@@ -557,6 +757,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilter>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilter} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilter} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilter} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.createOrUpdate_1
     name: 'createOrUpdate(string, string, RouteFilter, ServiceCallback<RouteFilter>)'
@@ -590,6 +810,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilter>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilter} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilter} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilter} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.createOrUpdateWithHttpOperationResponse
     name: >-
@@ -630,6 +870,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.RouteFilter>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.deleteMethod
     name: 'deleteMethod(string, string, Object)'
@@ -661,6 +902,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.deleteMethod_2
     name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -693,6 +953,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.deleteMethod_1
     name: 'deleteMethod(string, string, ServiceCallback<void>)'
@@ -721,6 +1000,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.deleteMethodWithHttpOperationResponse
     name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -752,6 +1050,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.get
     name: 'get(string, string, Object)'
@@ -783,6 +1082,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilter>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilter} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilter} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilter} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.get_2
     name: 'get(string, string, Object, ServiceCallback<RouteFilter>)'
@@ -815,6 +1134,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilter>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilter} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilter} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilter} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.get_1
     name: 'get(string, string, ServiceCallback<RouteFilter>)'
@@ -843,6 +1182,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilter>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilter} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilter} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilter} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, Object)'
@@ -874,6 +1233,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.RouteFilter>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.list
     name: list(Object)
@@ -893,6 +1253,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilterListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilterListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilterListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilterListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.list_2
     name: 'list(Object, ServiceCallback<RouteFilterListResult>)'
@@ -917,6 +1297,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilterListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilterListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilterListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilterListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.list_1
     name: list(ServiceCallback<RouteFilterListResult>)
@@ -935,6 +1335,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilterListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilterListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilterListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilterListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.listByResourceGroup
     name: 'listByResourceGroup(string, Object)'
@@ -961,6 +1381,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilterListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilterListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilterListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilterListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.listByResourceGroup_2
     name: >-
@@ -991,6 +1431,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilterListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilterListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilterListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilterListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.listByResourceGroup_1
     name: 'listByResourceGroup(string, ServiceCallback<RouteFilterListResult>)'
@@ -1015,6 +1475,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilterListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilterListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilterListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilterListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.listByResourceGroupNext
     name: 'listByResourceGroupNext(string, Object)'
@@ -1040,6 +1520,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilterListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilterListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilterListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilterListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.listByResourceGroupNext_2
     name: >-
@@ -1070,6 +1570,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilterListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilterListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilterListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilterListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.listByResourceGroupNext_1
     name: 'listByResourceGroupNext(string, ServiceCallback<RouteFilterListResult>)'
@@ -1094,6 +1614,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilterListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilterListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilterListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilterListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.RouteFilters.listByResourceGroupNextWithHttpOperationResponse
@@ -1123,6 +1663,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.RouteFilterListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: >-
       azure-arm-network.RouteFilters.listByResourceGroupWithHttpOperationResponse
@@ -1151,6 +1692,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.RouteFilterListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.listNext
     name: 'listNext(string, Object)'
@@ -1176,6 +1718,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilterListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilterListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilterListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilterListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.listNext_2
     name: 'listNext(string, Object, ServiceCallback<RouteFilterListResult>)'
@@ -1204,6 +1766,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilterListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilterListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilterListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilterListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.listNext_1
     name: 'listNext(string, ServiceCallback<RouteFilterListResult>)'
@@ -1228,6 +1810,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilterListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilterListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilterListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilterListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.listNextWithHttpOperationResponse
     name: 'listNextWithHttpOperationResponse(string, Object)'
@@ -1256,6 +1858,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.RouteFilterListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.listWithHttpOperationResponse
     name: listWithHttpOperationResponse(Object)
@@ -1276,6 +1879,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.RouteFilterListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.update
     name: 'update(string, string, PatchRouteFilter, Object)'
@@ -1313,6 +1917,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilter>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilter} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilter} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilter} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.update_2
     name: >-
@@ -1352,6 +1976,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilter>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilter} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilter} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilter} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.update_1
     name: 'update(string, string, PatchRouteFilter, ServiceCallback<RouteFilter>)'
@@ -1385,6 +2029,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.RouteFilter>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteFilter} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteFilter} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteFilter} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.RouteFilters.updateWithHttpOperationResponse
     name: 'updateWithHttpOperationResponse(string, string, PatchRouteFilter, Object)'
@@ -1423,6 +2087,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.RouteFilter>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: azure-arm-network.RouteFilter

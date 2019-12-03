@@ -31,6 +31,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.ComputeOperationListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ComputeOperationListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ComputeOperationListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ComputeOperationListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Operations.list_2
     name: 'list(Object, ServiceCallback<ComputeOperationListResult>)'
@@ -55,6 +76,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.ComputeOperationListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ComputeOperationListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ComputeOperationListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ComputeOperationListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Operations.list_1
     name: list(ServiceCallback<ComputeOperationListResult>)
@@ -73,6 +115,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.ComputeOperationListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ComputeOperationListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ComputeOperationListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ComputeOperationListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Operations.listWithHttpOperationResponse
     name: listWithHttpOperationResponse(Object)
@@ -93,6 +156,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-compute.ComputeOperationListResult>>
+        description: A promise is returned
     package: azure-arm-compute
 references:
   - uid: Promise<azure-arm-compute.ComputeOperationListResult>

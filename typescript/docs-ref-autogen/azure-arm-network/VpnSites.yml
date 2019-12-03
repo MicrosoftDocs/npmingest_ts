@@ -93,6 +93,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VpnSite>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnSite} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnSite} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnSite} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.beginCreateOrUpdate_2
     name: >-
@@ -134,6 +154,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VpnSite>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnSite} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnSite} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnSite} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.beginCreateOrUpdate_1
     name: 'beginCreateOrUpdate(string, string, VpnSite, ServiceCallback<VpnSite>)'
@@ -168,6 +208,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VpnSite>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnSite} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnSite} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnSite} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.beginCreateOrUpdateWithHttpOperationResponse
     name: >-
@@ -211,6 +271,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.VpnSite>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, Object)'
@@ -242,6 +303,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -274,6 +354,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
@@ -302,6 +401,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.beginDeleteMethodWithHttpOperationResponse
     name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -333,6 +451,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.beginUpdateTags
     name: 'beginUpdateTags(string, string, TagsObject, Object)'
@@ -370,6 +489,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VpnSite>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnSite} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnSite} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnSite} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.beginUpdateTags_2
     name: >-
@@ -409,6 +548,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VpnSite>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnSite} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnSite} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnSite} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.beginUpdateTags_1
     name: 'beginUpdateTags(string, string, TagsObject, ServiceCallback<VpnSite>)'
@@ -441,6 +600,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VpnSite>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnSite} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnSite} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnSite} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.beginUpdateTagsWithHttpOperationResponse
     name: >-
@@ -481,6 +660,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.VpnSite>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.createOrUpdate
     name: 'createOrUpdate(string, string, VpnSite, Object)'
@@ -521,6 +701,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VpnSite>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnSite} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnSite} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnSite} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.createOrUpdate_2
     name: 'createOrUpdate(string, string, VpnSite, Object, ServiceCallback<VpnSite>)'
@@ -560,6 +760,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VpnSite>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnSite} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnSite} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnSite} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.createOrUpdate_1
     name: 'createOrUpdate(string, string, VpnSite, ServiceCallback<VpnSite>)'
@@ -594,6 +814,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VpnSite>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnSite} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnSite} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnSite} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.createOrUpdateWithHttpOperationResponse
     name: 'createOrUpdateWithHttpOperationResponse(string, string, VpnSite, Object)'
@@ -635,6 +875,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.VpnSite>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.deleteMethod
     name: 'deleteMethod(string, string, Object)'
@@ -666,6 +907,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.deleteMethod_2
     name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -698,6 +958,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.deleteMethod_1
     name: 'deleteMethod(string, string, ServiceCallback<void>)'
@@ -726,6 +1005,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.deleteMethodWithHttpOperationResponse
     name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -757,6 +1055,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.get
     name: 'get(string, string, Object)'
@@ -788,6 +1087,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VpnSite>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnSite} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnSite} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnSite} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.get_2
     name: 'get(string, string, Object, ServiceCallback<VpnSite>)'
@@ -820,6 +1139,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VpnSite>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnSite} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnSite} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnSite} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.get_1
     name: 'get(string, string, ServiceCallback<VpnSite>)'
@@ -848,6 +1187,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VpnSite>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnSite} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnSite} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnSite} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, Object)'
@@ -879,6 +1238,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.VpnSite>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.list
     name: list(Object)
@@ -898,6 +1258,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVpnSitesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnSitesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnSitesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnSitesResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.list_2
     name: 'list(Object, ServiceCallback<ListVpnSitesResult>)'
@@ -922,6 +1302,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVpnSitesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnSitesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnSitesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnSitesResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.list_1
     name: list(ServiceCallback<ListVpnSitesResult>)
@@ -940,6 +1340,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVpnSitesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnSitesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnSitesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnSitesResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.listByResourceGroup
     name: 'listByResourceGroup(string, Object)'
@@ -966,6 +1386,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVpnSitesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnSitesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnSitesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnSitesResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.listByResourceGroup_2
     name: 'listByResourceGroup(string, Object, ServiceCallback<ListVpnSitesResult>)'
@@ -994,6 +1434,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVpnSitesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnSitesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnSitesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnSitesResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.listByResourceGroup_1
     name: 'listByResourceGroup(string, ServiceCallback<ListVpnSitesResult>)'
@@ -1018,6 +1478,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVpnSitesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnSitesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnSitesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnSitesResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.listByResourceGroupNext
     name: 'listByResourceGroupNext(string, Object)'
@@ -1043,6 +1523,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVpnSitesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnSitesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnSitesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnSitesResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.listByResourceGroupNext_2
     name: >-
@@ -1073,6 +1573,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVpnSitesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnSitesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnSitesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnSitesResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.listByResourceGroupNext_1
     name: 'listByResourceGroupNext(string, ServiceCallback<ListVpnSitesResult>)'
@@ -1097,6 +1617,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVpnSitesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnSitesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnSitesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnSitesResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.VpnSites.listByResourceGroupNextWithHttpOperationResponse
@@ -1125,6 +1665,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.ListVpnSitesResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.listByResourceGroupWithHttpOperationResponse
     name: 'listByResourceGroupWithHttpOperationResponse(string, Object)'
@@ -1151,6 +1692,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.ListVpnSitesResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.listNext
     name: 'listNext(string, Object)'
@@ -1176,6 +1718,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVpnSitesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnSitesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnSitesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnSitesResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.listNext_2
     name: 'listNext(string, Object, ServiceCallback<ListVpnSitesResult>)'
@@ -1204,6 +1766,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVpnSitesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnSitesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnSitesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnSitesResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.listNext_1
     name: 'listNext(string, ServiceCallback<ListVpnSitesResult>)'
@@ -1228,6 +1810,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVpnSitesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnSitesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnSitesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnSitesResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.listNextWithHttpOperationResponse
     name: 'listNextWithHttpOperationResponse(string, Object)'
@@ -1255,6 +1857,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.ListVpnSitesResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.listWithHttpOperationResponse
     name: listWithHttpOperationResponse(Object)
@@ -1274,6 +1877,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.ListVpnSitesResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.updateTags
     name: 'updateTags(string, string, TagsObject, Object)'
@@ -1311,6 +1915,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VpnSite>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnSite} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnSite} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnSite} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.updateTags_2
     name: 'updateTags(string, string, TagsObject, Object, ServiceCallback<VpnSite>)'
@@ -1348,6 +1972,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VpnSite>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnSite} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnSite} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnSite} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.updateTags_1
     name: 'updateTags(string, string, TagsObject, ServiceCallback<VpnSite>)'
@@ -1380,6 +2024,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VpnSite>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnSite} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnSite} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnSite} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VpnSites.updateTagsWithHttpOperationResponse
     name: 'updateTagsWithHttpOperationResponse(string, string, TagsObject, Object)'
@@ -1417,6 +2081,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.VpnSite>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: azure-arm-network.VpnSite

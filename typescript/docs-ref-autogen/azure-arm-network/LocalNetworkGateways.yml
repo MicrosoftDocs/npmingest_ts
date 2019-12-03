@@ -91,6 +91,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.beginCreateOrUpdate_2
     name: >-
@@ -132,6 +152,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.beginCreateOrUpdate_1
     name: >-
@@ -169,6 +209,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.LocalNetworkGateways.beginCreateOrUpdateWithHttpOperationResponse
@@ -214,6 +274,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.LocalNetworkGateway>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, Object)'
@@ -246,6 +307,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -279,6 +359,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
@@ -307,6 +406,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.LocalNetworkGateways.beginDeleteMethodWithHttpOperationResponse
@@ -340,6 +458,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.beginUpdateTags
     name: 'beginUpdateTags(string, string, TagsObject, Object)'
@@ -379,6 +498,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.beginUpdateTags_2
     name: >-
@@ -418,6 +557,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.beginUpdateTags_1
     name: >-
@@ -453,6 +612,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.LocalNetworkGateways.beginUpdateTagsWithHttpOperationResponse
@@ -496,6 +675,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.LocalNetworkGateway>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.createOrUpdate
     name: 'createOrUpdate(string, string, LocalNetworkGateway, Object)'
@@ -537,6 +717,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.createOrUpdate_2
     name: >-
@@ -578,6 +778,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.createOrUpdate_1
     name: >-
@@ -615,6 +835,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.LocalNetworkGateways.createOrUpdateWithHttpOperationResponse
@@ -660,6 +900,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.LocalNetworkGateway>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.deleteMethod
     name: 'deleteMethod(string, string, Object)'
@@ -692,6 +933,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.deleteMethod_2
     name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -725,6 +985,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.deleteMethod_1
     name: 'deleteMethod(string, string, ServiceCallback<void>)'
@@ -753,6 +1032,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.LocalNetworkGateways.deleteMethodWithHttpOperationResponse
@@ -786,6 +1084,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.get
     name: 'get(string, string, Object)'
@@ -818,6 +1117,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.get_2
     name: 'get(string, string, Object, ServiceCallback<LocalNetworkGateway>)'
@@ -850,6 +1169,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.get_1
     name: 'get(string, string, ServiceCallback<LocalNetworkGateway>)'
@@ -878,6 +1217,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, Object)'
@@ -911,6 +1270,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.LocalNetworkGateway>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.list
     name: 'list(string, Object)'
@@ -935,6 +1295,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGatewayListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.list_2
     name: 'list(string, Object, ServiceCallback<LocalNetworkGatewayListResult>)'
@@ -963,6 +1344,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGatewayListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.list_1
     name: 'list(string, ServiceCallback<LocalNetworkGatewayListResult>)'
@@ -987,6 +1389,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGatewayListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.listNext
     name: 'listNext(string, Object)'
@@ -1012,6 +1435,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGatewayListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.listNext_2
     name: 'listNext(string, Object, ServiceCallback<LocalNetworkGatewayListResult>)'
@@ -1040,6 +1484,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGatewayListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.listNext_1
     name: 'listNext(string, ServiceCallback<LocalNetworkGatewayListResult>)'
@@ -1064,6 +1529,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGatewayListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.listNextWithHttpOperationResponse
     name: 'listNextWithHttpOperationResponse(string, Object)'
@@ -1092,6 +1578,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.LocalNetworkGatewayListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.listWithHttpOperationResponse
     name: 'listWithHttpOperationResponse(string, Object)'
@@ -1119,6 +1606,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.LocalNetworkGatewayListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.updateTags
     name: 'updateTags(string, string, TagsObject, Object)'
@@ -1157,6 +1645,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.updateTags_2
     name: >-
@@ -1196,6 +1704,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.updateTags_1
     name: >-
@@ -1231,6 +1759,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LocalNetworkGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LocalNetworkGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LocalNetworkGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LocalNetworkGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LocalNetworkGateways.updateTagsWithHttpOperationResponse
     name: 'updateTagsWithHttpOperationResponse(string, string, TagsObject, Object)'
@@ -1271,6 +1819,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.LocalNetworkGateway>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: azure-arm-network.LocalNetworkGateway

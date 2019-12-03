@@ -94,6 +94,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefix>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefix} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefix} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefix} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.beginCreateOrUpdate_2
     name: >-
@@ -133,6 +153,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefix>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefix} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefix} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefix} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.beginCreateOrUpdate_1
     name: >-
@@ -168,6 +208,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefix>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefix} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefix} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefix} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.PublicIPPrefixes.beginCreateOrUpdateWithHttpOperationResponse
@@ -209,6 +269,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.PublicIPPrefix>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, Object)'
@@ -240,6 +301,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -273,6 +353,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
@@ -301,6 +400,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.PublicIPPrefixes.beginDeleteMethodWithHttpOperationResponse
@@ -333,6 +451,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.beginUpdateTags
     name: 'beginUpdateTags(string, string, TagsObject, Object)'
@@ -370,6 +489,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefix>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefix} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefix} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefix} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.beginUpdateTags_2
     name: >-
@@ -409,6 +548,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefix>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefix} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefix} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefix} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.beginUpdateTags_1
     name: >-
@@ -444,6 +603,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefix>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefix} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefix} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefix} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.PublicIPPrefixes.beginUpdateTagsWithHttpOperationResponse
@@ -485,6 +664,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.PublicIPPrefix>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.createOrUpdate
     name: 'createOrUpdate(string, string, PublicIPPrefix, Object)'
@@ -522,6 +702,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefix>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefix} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefix} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefix} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.createOrUpdate_2
     name: >-
@@ -561,6 +761,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefix>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefix} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefix} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefix} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.createOrUpdate_1
     name: >-
@@ -596,6 +816,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefix>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefix} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefix} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefix} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.createOrUpdateWithHttpOperationResponse
     name: >-
@@ -636,6 +876,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.PublicIPPrefix>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.deleteMethod
     name: 'deleteMethod(string, string, Object)'
@@ -667,6 +908,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.deleteMethod_2
     name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -699,6 +959,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.deleteMethod_1
     name: 'deleteMethod(string, string, ServiceCallback<void>)'
@@ -727,6 +1006,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.deleteMethodWithHttpOperationResponse
     name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -758,6 +1056,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.get
     name: 'get(string, string, Object)'
@@ -789,6 +1088,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefix>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefix} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefix} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefix} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.get_2
     name: 'get(string, string, Object, ServiceCallback<PublicIPPrefix>)'
@@ -821,6 +1140,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefix>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefix} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefix} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefix} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.get_1
     name: 'get(string, string, ServiceCallback<PublicIPPrefix>)'
@@ -849,6 +1188,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefix>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefix} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefix} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefix} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, Object)'
@@ -880,6 +1239,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.PublicIPPrefix>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.list
     name: 'list(string, Object)'
@@ -904,6 +1264,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefixListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefixListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefixListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefixListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.list_2
     name: 'list(string, Object, ServiceCallback<PublicIPPrefixListResult>)'
@@ -932,6 +1313,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefixListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefixListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefixListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefixListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.list_1
     name: 'list(string, ServiceCallback<PublicIPPrefixListResult>)'
@@ -956,6 +1358,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefixListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefixListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefixListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefixListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.listAll
     name: listAll(Object)
@@ -975,6 +1398,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefixListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefixListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefixListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefixListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.listAll_2
     name: 'listAll(Object, ServiceCallback<PublicIPPrefixListResult>)'
@@ -999,6 +1443,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefixListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefixListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefixListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefixListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.listAll_1
     name: listAll(ServiceCallback<PublicIPPrefixListResult>)
@@ -1017,6 +1482,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefixListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefixListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefixListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefixListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.listAllNext
     name: 'listAllNext(string, Object)'
@@ -1042,6 +1528,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefixListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefixListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefixListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefixListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.listAllNext_2
     name: 'listAllNext(string, Object, ServiceCallback<PublicIPPrefixListResult>)'
@@ -1070,6 +1577,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefixListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefixListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefixListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefixListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.listAllNext_1
     name: 'listAllNext(string, ServiceCallback<PublicIPPrefixListResult>)'
@@ -1094,6 +1622,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefixListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefixListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefixListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefixListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.listAllNextWithHttpOperationResponse
     name: 'listAllNextWithHttpOperationResponse(string, Object)'
@@ -1122,6 +1671,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.PublicIPPrefixListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse(Object)
@@ -1142,6 +1692,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.PublicIPPrefixListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.listNext
     name: 'listNext(string, Object)'
@@ -1167,6 +1718,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefixListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefixListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefixListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefixListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.listNext_2
     name: 'listNext(string, Object, ServiceCallback<PublicIPPrefixListResult>)'
@@ -1195,6 +1767,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefixListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefixListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefixListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefixListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.listNext_1
     name: 'listNext(string, ServiceCallback<PublicIPPrefixListResult>)'
@@ -1219,6 +1812,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefixListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefixListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefixListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefixListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.listNextWithHttpOperationResponse
     name: 'listNextWithHttpOperationResponse(string, Object)'
@@ -1247,6 +1861,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.PublicIPPrefixListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.listWithHttpOperationResponse
     name: 'listWithHttpOperationResponse(string, Object)'
@@ -1274,6 +1889,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.PublicIPPrefixListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.updateTags
     name: 'updateTags(string, string, TagsObject, Object)'
@@ -1311,6 +1927,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefix>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefix} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefix} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefix} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.updateTags_2
     name: >-
@@ -1350,6 +1986,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefix>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefix} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefix} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefix} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.updateTags_1
     name: 'updateTags(string, string, TagsObject, ServiceCallback<PublicIPPrefix>)'
@@ -1383,6 +2039,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.PublicIPPrefix>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {PublicIPPrefix} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {PublicIPPrefix} [result]   - The deserialized result object if an error did not occur.
+                               See {@link PublicIPPrefix} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.PublicIPPrefixes.updateTagsWithHttpOperationResponse
     name: 'updateTagsWithHttpOperationResponse(string, string, TagsObject, Object)'
@@ -1420,6 +2096,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.PublicIPPrefix>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: azure-arm-network.PublicIPPrefix

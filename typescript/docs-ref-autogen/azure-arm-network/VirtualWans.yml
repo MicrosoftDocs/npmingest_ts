@@ -97,6 +97,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.beginCreateOrUpdate_2
     name: >-
@@ -140,6 +160,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.beginCreateOrUpdate_1
     name: >-
@@ -179,6 +219,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.beginCreateOrUpdateWithHttpOperationResponse
     name: >-
@@ -224,6 +284,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.VirtualWAN>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, Object)'
@@ -255,6 +316,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -287,6 +367,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
@@ -315,6 +414,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.beginDeleteMethodWithHttpOperationResponse
     name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -346,6 +464,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.beginUpdateTags
     name: 'beginUpdateTags(string, string, TagsObject, Object)'
@@ -382,6 +501,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.beginUpdateTags_2
     name: >-
@@ -421,6 +560,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.beginUpdateTags_1
     name: 'beginUpdateTags(string, string, TagsObject, ServiceCallback<VirtualWAN>)'
@@ -454,6 +613,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.beginUpdateTagsWithHttpOperationResponse
     name: >-
@@ -493,6 +672,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.VirtualWAN>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.createOrUpdate
     name: 'createOrUpdate(string, string, VirtualWAN, Object)'
@@ -535,6 +715,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.createOrUpdate_2
     name: >-
@@ -578,6 +778,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.createOrUpdate_1
     name: 'createOrUpdate(string, string, VirtualWAN, ServiceCallback<VirtualWAN>)'
@@ -615,6 +835,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.createOrUpdateWithHttpOperationResponse
     name: >-
@@ -660,6 +900,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.VirtualWAN>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.deleteMethod
     name: 'deleteMethod(string, string, Object)'
@@ -691,6 +932,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.deleteMethod_2
     name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -723,6 +983,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.deleteMethod_1
     name: 'deleteMethod(string, string, ServiceCallback<void>)'
@@ -751,6 +1030,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.deleteMethodWithHttpOperationResponse
     name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -782,6 +1080,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.get
     name: 'get(string, string, Object)'
@@ -813,6 +1112,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.get_2
     name: 'get(string, string, Object, ServiceCallback<VirtualWAN>)'
@@ -845,6 +1164,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.get_1
     name: 'get(string, string, ServiceCallback<VirtualWAN>)'
@@ -873,6 +1212,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, Object)'
@@ -904,6 +1263,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.VirtualWAN>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.list
     name: list(Object)
@@ -923,6 +1283,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.list_2
     name: 'list(Object, ServiceCallback<ListVirtualWANsResult>)'
@@ -947,6 +1327,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.list_1
     name: list(ServiceCallback<ListVirtualWANsResult>)
@@ -965,6 +1365,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.listByResourceGroup
     name: 'listByResourceGroup(string, Object)'
@@ -991,6 +1411,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.listByResourceGroup_2
     name: >-
@@ -1021,6 +1461,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.listByResourceGroup_1
     name: 'listByResourceGroup(string, ServiceCallback<ListVirtualWANsResult>)'
@@ -1045,6 +1505,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.listByResourceGroupNext
     name: 'listByResourceGroupNext(string, Object)'
@@ -1070,6 +1550,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.listByResourceGroupNext_2
     name: >-
@@ -1100,6 +1600,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.listByResourceGroupNext_1
     name: 'listByResourceGroupNext(string, ServiceCallback<ListVirtualWANsResult>)'
@@ -1124,6 +1644,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.VirtualWans.listByResourceGroupNextWithHttpOperationResponse
@@ -1153,6 +1693,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ListVirtualWANsResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.listByResourceGroupWithHttpOperationResponse
     name: 'listByResourceGroupWithHttpOperationResponse(string, Object)'
@@ -1180,6 +1721,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ListVirtualWANsResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.listNext
     name: 'listNext(string, Object)'
@@ -1205,6 +1747,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.listNext_2
     name: 'listNext(string, Object, ServiceCallback<ListVirtualWANsResult>)'
@@ -1233,6 +1795,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.listNext_1
     name: 'listNext(string, ServiceCallback<ListVirtualWANsResult>)'
@@ -1257,6 +1839,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.listNextWithHttpOperationResponse
     name: 'listNextWithHttpOperationResponse(string, Object)'
@@ -1285,6 +1887,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ListVirtualWANsResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.listWithHttpOperationResponse
     name: listWithHttpOperationResponse(Object)
@@ -1305,6 +1908,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ListVirtualWANsResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.updateTags
     name: 'updateTags(string, string, TagsObject, Object)'
@@ -1341,6 +1945,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.updateTags_2
     name: >-
@@ -1380,6 +2004,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.updateTags_1
     name: 'updateTags(string, string, TagsObject, ServiceCallback<VirtualWAN>)'
@@ -1412,6 +2056,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.VirtualWans.updateTagsWithHttpOperationResponse
     name: 'updateTagsWithHttpOperationResponse(string, string, TagsObject, Object)'
@@ -1448,6 +2112,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.VirtualWAN>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: azure-arm-network.VirtualWAN

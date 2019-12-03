@@ -194,6 +194,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ConnectivityInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectivityInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectivityInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectivityInformation} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginCheckConnectivity_2
     name: >-
@@ -236,6 +257,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ConnectivityInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectivityInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectivityInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectivityInformation} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginCheckConnectivity_1
     name: >-
@@ -274,6 +316,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ConnectivityInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectivityInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectivityInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectivityInformation} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.beginCheckConnectivityWithHttpOperationResponse
@@ -321,6 +384,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ConnectivityInformation>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, Object)'
@@ -352,6 +416,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -385,6 +468,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
@@ -413,6 +515,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.beginDeleteMethodWithHttpOperationResponse
@@ -445,6 +566,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetAzureReachabilityReport
     name: >-
@@ -488,6 +610,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureReachabilityReport>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureReachabilityReport} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureReachabilityReport} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureReachabilityReport} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetAzureReachabilityReport_2
     name: >-
@@ -531,6 +674,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureReachabilityReport>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureReachabilityReport} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureReachabilityReport} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureReachabilityReport} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetAzureReachabilityReport_1
     name: >-
@@ -570,6 +734,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureReachabilityReport>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureReachabilityReport} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureReachabilityReport} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureReachabilityReport} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.beginGetAzureReachabilityReportWithHttpOperationResponse
@@ -616,6 +801,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.AzureReachabilityReport>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetFlowLogStatus
     name: 'beginGetFlowLogStatus(string, string, FlowLogStatusParameters, Object)'
@@ -657,6 +843,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.FlowLogInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {FlowLogInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {FlowLogInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link FlowLogInformation} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetFlowLogStatus_2
     name: >-
@@ -698,6 +904,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.FlowLogInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {FlowLogInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {FlowLogInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link FlowLogInformation} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetFlowLogStatus_1
     name: >-
@@ -735,6 +961,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.FlowLogInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {FlowLogInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {FlowLogInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link FlowLogInformation} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.beginGetFlowLogStatusWithHttpOperationResponse
@@ -780,6 +1026,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.FlowLogInformation>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetNetworkConfigurationDiagnostic
     name: >-
@@ -820,6 +1067,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkConfigurationDiagnosticResponse} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkConfigurationDiagnosticResponse} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkConfigurationDiagnosticResponse} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetNetworkConfigurationDiagnostic_2
     name: >-
@@ -862,6 +1130,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkConfigurationDiagnosticResponse} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkConfigurationDiagnosticResponse} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkConfigurationDiagnosticResponse} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetNetworkConfigurationDiagnostic_1
     name: >-
@@ -900,6 +1189,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkConfigurationDiagnosticResponse} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkConfigurationDiagnosticResponse} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkConfigurationDiagnosticResponse} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.beginGetNetworkConfigurationDiagnosticWithHttpOperationResponse
@@ -943,6 +1253,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.NetworkConfigurationDiagnosticResponse>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetNextHop
     name: 'beginGetNextHop(string, string, NextHopParameters, Object)'
@@ -980,6 +1291,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NextHopResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NextHopResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NextHopResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NextHopResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetNextHop_2
     name: >-
@@ -1019,6 +1350,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NextHopResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NextHopResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NextHopResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NextHopResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetNextHop_1
     name: >-
@@ -1054,6 +1405,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NextHopResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NextHopResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NextHopResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NextHopResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetNextHopWithHttpOperationResponse
     name: >-
@@ -1094,6 +1465,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.NextHopResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetTroubleshooting
     name: 'beginGetTroubleshooting(string, string, TroubleshootingParameters, Object)'
@@ -1132,6 +1504,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.TroubleshootingResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {TroubleshootingResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {TroubleshootingResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link TroubleshootingResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetTroubleshooting_2
     name: >-
@@ -1171,6 +1563,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.TroubleshootingResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {TroubleshootingResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {TroubleshootingResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link TroubleshootingResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetTroubleshooting_1
     name: >-
@@ -1206,6 +1618,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.TroubleshootingResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {TroubleshootingResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {TroubleshootingResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link TroubleshootingResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetTroubleshootingResult
     name: >-
@@ -1246,6 +1678,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.TroubleshootingResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {TroubleshootingResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {TroubleshootingResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link TroubleshootingResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetTroubleshootingResult_2
     name: >-
@@ -1286,6 +1738,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.TroubleshootingResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {TroubleshootingResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {TroubleshootingResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link TroubleshootingResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetTroubleshootingResult_1
     name: >-
@@ -1321,6 +1793,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.TroubleshootingResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {TroubleshootingResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {TroubleshootingResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link TroubleshootingResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.beginGetTroubleshootingResultWithHttpOperationResponse
@@ -1364,6 +1856,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.TroubleshootingResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.beginGetTroubleshootingWithHttpOperationResponse
@@ -1407,6 +1900,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.TroubleshootingResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetVMSecurityRules
     name: >-
@@ -1449,6 +1943,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.SecurityGroupViewResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SecurityGroupViewResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SecurityGroupViewResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SecurityGroupViewResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetVMSecurityRules_2
     name: >-
@@ -1490,6 +2005,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.SecurityGroupViewResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SecurityGroupViewResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SecurityGroupViewResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SecurityGroupViewResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginGetVMSecurityRules_1
     name: >-
@@ -1527,6 +2063,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.SecurityGroupViewResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SecurityGroupViewResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SecurityGroupViewResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SecurityGroupViewResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.beginGetVMSecurityRulesWithHttpOperationResponse
@@ -1572,6 +2129,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.SecurityGroupViewResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginListAvailableProviders
     name: >-
@@ -1615,6 +2173,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AvailableProvidersList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AvailableProvidersList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AvailableProvidersList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AvailableProvidersList} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginListAvailableProviders_2
     name: >-
@@ -1658,6 +2237,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AvailableProvidersList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AvailableProvidersList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AvailableProvidersList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AvailableProvidersList} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginListAvailableProviders_1
     name: >-
@@ -1696,6 +2296,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AvailableProvidersList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AvailableProvidersList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AvailableProvidersList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AvailableProvidersList} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.beginListAvailableProvidersWithHttpOperationResponse
@@ -1742,6 +2363,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.AvailableProvidersList>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginSetFlowLogConfiguration
     name: 'beginSetFlowLogConfiguration(string, string, FlowLogInformation, Object)'
@@ -1783,6 +2405,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.FlowLogInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {FlowLogInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {FlowLogInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link FlowLogInformation} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginSetFlowLogConfiguration_2
     name: >-
@@ -1824,6 +2466,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.FlowLogInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {FlowLogInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {FlowLogInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link FlowLogInformation} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginSetFlowLogConfiguration_1
     name: >-
@@ -1861,6 +2523,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.FlowLogInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {FlowLogInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {FlowLogInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link FlowLogInformation} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.beginSetFlowLogConfigurationWithHttpOperationResponse
@@ -1906,6 +2588,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.FlowLogInformation>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginVerifyIPFlow
     name: 'beginVerifyIPFlow(string, string, VerificationIPFlowParameters, Object)'
@@ -1946,6 +2629,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VerificationIPFlowResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VerificationIPFlowResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VerificationIPFlowResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VerificationIPFlowResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginVerifyIPFlow_2
     name: >-
@@ -1987,6 +2691,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VerificationIPFlowResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VerificationIPFlowResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VerificationIPFlowResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VerificationIPFlowResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.beginVerifyIPFlow_1
     name: >-
@@ -2024,6 +2749,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VerificationIPFlowResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VerificationIPFlowResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VerificationIPFlowResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VerificationIPFlowResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.beginVerifyIPFlowWithHttpOperationResponse
@@ -2068,6 +2814,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.VerificationIPFlowResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.checkConnectivity
     name: 'checkConnectivity(string, string, ConnectivityParameters, Object)'
@@ -2110,6 +2857,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ConnectivityInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectivityInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectivityInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectivityInformation} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.checkConnectivity_2
     name: >-
@@ -2152,6 +2920,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ConnectivityInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectivityInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectivityInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectivityInformation} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.checkConnectivity_1
     name: >-
@@ -2190,6 +2979,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ConnectivityInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectivityInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectivityInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectivityInformation} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.checkConnectivityWithHttpOperationResponse
@@ -2236,6 +3046,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ConnectivityInformation>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.createOrUpdate
     name: 'createOrUpdate(string, string, NetworkWatcher, Object)'
@@ -2273,6 +3084,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkWatcher>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkWatcher} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkWatcher} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkWatcher} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.createOrUpdate_2
     name: >-
@@ -2312,6 +3143,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkWatcher>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkWatcher} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkWatcher} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkWatcher} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.createOrUpdate_1
     name: >-
@@ -2347,6 +3198,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkWatcher>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkWatcher} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkWatcher} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkWatcher} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.createOrUpdateWithHttpOperationResponse
     name: >-
@@ -2387,6 +3258,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.NetworkWatcher>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.deleteMethod
     name: 'deleteMethod(string, string, Object)'
@@ -2418,6 +3290,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.deleteMethod_2
     name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -2450,6 +3341,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.deleteMethod_1
     name: 'deleteMethod(string, string, ServiceCallback<void>)'
@@ -2478,6 +3388,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.deleteMethodWithHttpOperationResponse
     name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -2509,6 +3438,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.get
     name: 'get(string, string, Object)'
@@ -2540,6 +3470,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkWatcher>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkWatcher} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkWatcher} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkWatcher} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.get_2
     name: 'get(string, string, Object, ServiceCallback<NetworkWatcher>)'
@@ -2572,6 +3522,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkWatcher>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkWatcher} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkWatcher} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkWatcher} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.get_1
     name: 'get(string, string, ServiceCallback<NetworkWatcher>)'
@@ -2600,6 +3570,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkWatcher>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkWatcher} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkWatcher} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkWatcher} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getAzureReachabilityReport
     name: >-
@@ -2643,6 +3633,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureReachabilityReport>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureReachabilityReport} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureReachabilityReport} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureReachabilityReport} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getAzureReachabilityReport_2
     name: >-
@@ -2686,6 +3697,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureReachabilityReport>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureReachabilityReport} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureReachabilityReport} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureReachabilityReport} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getAzureReachabilityReport_1
     name: >-
@@ -2725,6 +3757,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureReachabilityReport>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureReachabilityReport} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureReachabilityReport} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureReachabilityReport} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.getAzureReachabilityReportWithHttpOperationResponse
@@ -2771,6 +3824,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.AzureReachabilityReport>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getFlowLogStatus
     name: 'getFlowLogStatus(string, string, FlowLogStatusParameters, Object)'
@@ -2811,6 +3865,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.FlowLogInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {FlowLogInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {FlowLogInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link FlowLogInformation} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getFlowLogStatus_2
     name: >-
@@ -2852,6 +3926,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.FlowLogInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {FlowLogInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {FlowLogInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link FlowLogInformation} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getFlowLogStatus_1
     name: >-
@@ -2889,6 +3983,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.FlowLogInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {FlowLogInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {FlowLogInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link FlowLogInformation} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.getFlowLogStatusWithHttpOperationResponse
@@ -2933,6 +4047,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.FlowLogInformation>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getNetworkConfigurationDiagnostic
     name: >-
@@ -2973,6 +4088,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkConfigurationDiagnosticResponse} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkConfigurationDiagnosticResponse} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkConfigurationDiagnosticResponse} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getNetworkConfigurationDiagnostic_2
     name: >-
@@ -3015,6 +4151,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkConfigurationDiagnosticResponse} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkConfigurationDiagnosticResponse} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkConfigurationDiagnosticResponse} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getNetworkConfigurationDiagnostic_1
     name: >-
@@ -3053,6 +4210,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkConfigurationDiagnosticResponse>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkConfigurationDiagnosticResponse} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkConfigurationDiagnosticResponse} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkConfigurationDiagnosticResponse} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.getNetworkConfigurationDiagnosticWithHttpOperationResponse
@@ -3096,6 +4274,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.NetworkConfigurationDiagnosticResponse>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getNextHop
     name: 'getNextHop(string, string, NextHopParameters, Object)'
@@ -3133,6 +4312,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NextHopResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NextHopResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NextHopResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NextHopResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getNextHop_2
     name: >-
@@ -3172,6 +4371,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NextHopResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NextHopResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NextHopResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NextHopResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getNextHop_1
     name: >-
@@ -3207,6 +4426,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NextHopResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NextHopResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NextHopResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NextHopResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getNextHopWithHttpOperationResponse
     name: >-
@@ -3247,6 +4486,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.NextHopResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getTopology
     name: 'getTopology(string, string, TopologyParameters, Object)'
@@ -3284,6 +4524,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.Topology>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Topology} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Topology} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Topology} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getTopology_2
     name: >-
@@ -3323,6 +4583,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.Topology>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Topology} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Topology} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Topology} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getTopology_1
     name: 'getTopology(string, string, TopologyParameters, ServiceCallback<Topology>)'
@@ -3356,6 +4636,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.Topology>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Topology} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Topology} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Topology} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getTopologyWithHttpOperationResponse
     name: >-
@@ -3396,6 +4696,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.Topology>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getTroubleshooting
     name: 'getTroubleshooting(string, string, TroubleshootingParameters, Object)'
@@ -3434,6 +4735,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.TroubleshootingResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {TroubleshootingResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {TroubleshootingResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link TroubleshootingResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getTroubleshooting_2
     name: >-
@@ -3473,6 +4794,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.TroubleshootingResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {TroubleshootingResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {TroubleshootingResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link TroubleshootingResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getTroubleshooting_1
     name: >-
@@ -3508,6 +4849,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.TroubleshootingResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {TroubleshootingResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {TroubleshootingResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link TroubleshootingResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getTroubleshootingResult
     name: >-
@@ -3548,6 +4909,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.TroubleshootingResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {TroubleshootingResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {TroubleshootingResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link TroubleshootingResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getTroubleshootingResult_2
     name: >-
@@ -3587,6 +4968,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.TroubleshootingResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {TroubleshootingResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {TroubleshootingResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link TroubleshootingResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getTroubleshootingResult_1
     name: >-
@@ -3622,6 +5023,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.TroubleshootingResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {TroubleshootingResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {TroubleshootingResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link TroubleshootingResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.getTroubleshootingResultWithHttpOperationResponse
@@ -3665,6 +5086,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.TroubleshootingResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.getTroubleshootingWithHttpOperationResponse
@@ -3707,6 +5129,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.TroubleshootingResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getVMSecurityRules
     name: 'getVMSecurityRules(string, string, SecurityGroupViewParameters, Object)'
@@ -3747,6 +5170,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.SecurityGroupViewResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SecurityGroupViewResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SecurityGroupViewResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SecurityGroupViewResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getVMSecurityRules_2
     name: >-
@@ -3788,6 +5232,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.SecurityGroupViewResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SecurityGroupViewResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SecurityGroupViewResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SecurityGroupViewResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getVMSecurityRules_1
     name: >-
@@ -3825,6 +5290,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.SecurityGroupViewResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SecurityGroupViewResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SecurityGroupViewResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SecurityGroupViewResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.getVMSecurityRulesWithHttpOperationResponse
@@ -3869,6 +5355,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.SecurityGroupViewResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, Object)'
@@ -3900,6 +5387,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.NetworkWatcher>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.list
     name: 'list(string, Object)'
@@ -3924,6 +5412,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkWatcherListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkWatcherListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkWatcherListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkWatcherListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.list_2
     name: 'list(string, Object, ServiceCallback<NetworkWatcherListResult>)'
@@ -3952,6 +5461,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkWatcherListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkWatcherListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkWatcherListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkWatcherListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.list_1
     name: 'list(string, ServiceCallback<NetworkWatcherListResult>)'
@@ -3976,6 +5506,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkWatcherListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkWatcherListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkWatcherListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkWatcherListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.listAll
     name: listAll(Object)
@@ -3995,6 +5546,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkWatcherListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkWatcherListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkWatcherListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkWatcherListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.listAll_2
     name: 'listAll(Object, ServiceCallback<NetworkWatcherListResult>)'
@@ -4019,6 +5591,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkWatcherListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkWatcherListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkWatcherListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkWatcherListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.listAll_1
     name: listAll(ServiceCallback<NetworkWatcherListResult>)
@@ -4037,6 +5630,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkWatcherListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkWatcherListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkWatcherListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkWatcherListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse(Object)
@@ -4057,6 +5671,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.NetworkWatcherListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.listAvailableProviders
     name: >-
@@ -4100,6 +5715,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AvailableProvidersList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AvailableProvidersList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AvailableProvidersList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AvailableProvidersList} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.listAvailableProviders_2
     name: >-
@@ -4142,6 +5778,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AvailableProvidersList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AvailableProvidersList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AvailableProvidersList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AvailableProvidersList} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.listAvailableProviders_1
     name: >-
@@ -4180,6 +5837,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AvailableProvidersList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AvailableProvidersList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AvailableProvidersList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AvailableProvidersList} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.listAvailableProvidersWithHttpOperationResponse
@@ -4226,6 +5904,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.AvailableProvidersList>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.listWithHttpOperationResponse
     name: 'listWithHttpOperationResponse(string, Object)'
@@ -4253,6 +5932,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.NetworkWatcherListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.setFlowLogConfiguration
     name: 'setFlowLogConfiguration(string, string, FlowLogInformation, Object)'
@@ -4294,6 +5974,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.FlowLogInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {FlowLogInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {FlowLogInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link FlowLogInformation} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.setFlowLogConfiguration_2
     name: >-
@@ -4335,6 +6035,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.FlowLogInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {FlowLogInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {FlowLogInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link FlowLogInformation} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.setFlowLogConfiguration_1
     name: >-
@@ -4372,6 +6092,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.FlowLogInformation>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {FlowLogInformation} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {FlowLogInformation} [result]   - The deserialized result object if an error did not occur.
+                               See {@link FlowLogInformation} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.NetworkWatchers.setFlowLogConfigurationWithHttpOperationResponse
@@ -4417,6 +6157,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.FlowLogInformation>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.updateTags
     name: 'updateTags(string, string, TagsObject, Object)'
@@ -4454,6 +6195,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkWatcher>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkWatcher} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkWatcher} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkWatcher} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.updateTags_2
     name: >-
@@ -4493,6 +6254,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkWatcher>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkWatcher} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkWatcher} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkWatcher} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.updateTags_1
     name: 'updateTags(string, string, TagsObject, ServiceCallback<NetworkWatcher>)'
@@ -4526,6 +6307,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NetworkWatcher>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkWatcher} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkWatcher} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkWatcher} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.updateTagsWithHttpOperationResponse
     name: 'updateTagsWithHttpOperationResponse(string, string, TagsObject, Object)'
@@ -4563,6 +6364,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.NetworkWatcher>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.verifyIPFlow
     name: 'verifyIPFlow(string, string, VerificationIPFlowParameters, Object)'
@@ -4602,6 +6404,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VerificationIPFlowResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VerificationIPFlowResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VerificationIPFlowResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VerificationIPFlowResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.verifyIPFlow_2
     name: >-
@@ -4643,6 +6466,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VerificationIPFlowResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VerificationIPFlowResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VerificationIPFlowResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VerificationIPFlowResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.verifyIPFlow_1
     name: >-
@@ -4680,6 +6524,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.VerificationIPFlowResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VerificationIPFlowResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VerificationIPFlowResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VerificationIPFlowResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NetworkWatchers.verifyIPFlowWithHttpOperationResponse
     name: >-
@@ -4723,6 +6588,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.VerificationIPFlowResult>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: azure-arm-network.ConnectivityParameters

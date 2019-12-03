@@ -112,6 +112,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Disk>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Disk} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Disk} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginCreateOrUpdate_2
     name: 'beginCreateOrUpdate(string, string, Disk, Object, ServiceCallback<Disk>)'
@@ -148,6 +168,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Disk>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Disk} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Disk} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginCreateOrUpdate_1
     name: 'beginCreateOrUpdate(string, string, Disk, ServiceCallback<Disk>)'
@@ -180,6 +220,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Disk>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Disk} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Disk} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginCreateOrUpdateWithHttpOperationResponse
     name: 'beginCreateOrUpdateWithHttpOperationResponse(string, string, Disk, Object)'
@@ -224,6 +284,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.Disk>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, Object)'
@@ -262,6 +323,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -294,6 +374,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
@@ -322,6 +421,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginDeleteMethodWithHttpOperationResponse
     name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -360,6 +478,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginGrantAccess
     name: 'beginGrantAccess(string, string, GrantAccessData, Object)'
@@ -404,6 +523,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.AccessUri>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AccessUri} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AccessUri} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AccessUri} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginGrantAccess_2
     name: >-
@@ -443,6 +582,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.AccessUri>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AccessUri} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AccessUri} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AccessUri} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginGrantAccess_1
     name: >-
@@ -477,6 +636,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.AccessUri>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AccessUri} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AccessUri} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AccessUri} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginGrantAccessWithHttpOperationResponse
     name: >-
@@ -524,6 +703,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.AccessUri>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginRevokeAccess
     name: 'beginRevokeAccess(string, string, Object)'
@@ -562,6 +742,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginRevokeAccess_2
     name: 'beginRevokeAccess(string, string, Object, ServiceCallback<void>)'
@@ -594,6 +793,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginRevokeAccess_1
     name: 'beginRevokeAccess(string, string, ServiceCallback<void>)'
@@ -622,6 +840,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginRevokeAccessWithHttpOperationResponse
     name: 'beginRevokeAccessWithHttpOperationResponse(string, string, Object)'
@@ -660,6 +897,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginUpdate
     name: 'beginUpdate(string, string, DiskUpdate, Object)'
@@ -704,6 +942,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Disk>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Disk} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Disk} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginUpdate_2
     name: 'beginUpdate(string, string, DiskUpdate, Object, ServiceCallback<Disk>)'
@@ -740,6 +998,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Disk>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Disk} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Disk} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginUpdate_1
     name: 'beginUpdate(string, string, DiskUpdate, ServiceCallback<Disk>)'
@@ -772,6 +1050,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Disk>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Disk} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Disk} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.beginUpdateWithHttpOperationResponse
     name: 'beginUpdateWithHttpOperationResponse(string, string, DiskUpdate, Object)'
@@ -816,6 +1114,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.Disk>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.createOrUpdate
     name: 'createOrUpdate(string, string, Disk, Object)'
@@ -860,6 +1159,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Disk>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Disk} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Disk} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.createOrUpdate_2
     name: 'createOrUpdate(string, string, Disk, Object, ServiceCallback<Disk>)'
@@ -896,6 +1215,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Disk>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Disk} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Disk} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.createOrUpdate_1
     name: 'createOrUpdate(string, string, Disk, ServiceCallback<Disk>)'
@@ -928,6 +1267,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Disk>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Disk} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Disk} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.createOrUpdateWithHttpOperationResponse
     name: 'createOrUpdateWithHttpOperationResponse(string, string, Disk, Object)'
@@ -972,6 +1331,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.Disk>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.deleteMethod
     name: 'deleteMethod(string, string, Object)'
@@ -1010,6 +1370,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.deleteMethod_2
     name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -1042,6 +1421,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.deleteMethod_1
     name: 'deleteMethod(string, string, ServiceCallback<void>)'
@@ -1070,6 +1468,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.deleteMethodWithHttpOperationResponse
     name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -1108,6 +1525,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.get
     name: 'get(string, string, Object)'
@@ -1146,6 +1564,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Disk>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Disk} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Disk} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.get_2
     name: 'get(string, string, Object, ServiceCallback<Disk>)'
@@ -1178,6 +1616,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Disk>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Disk} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Disk} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.get_1
     name: 'get(string, string, ServiceCallback<Disk>)'
@@ -1206,6 +1664,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Disk>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Disk} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Disk} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, Object)'
@@ -1244,6 +1722,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.Disk>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.grantAccess
     name: 'grantAccess(string, string, GrantAccessData, Object)'
@@ -1288,6 +1767,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.AccessUri>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AccessUri} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AccessUri} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AccessUri} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.grantAccess_2
     name: >-
@@ -1327,6 +1826,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.AccessUri>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AccessUri} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AccessUri} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AccessUri} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.grantAccess_1
     name: 'grantAccess(string, string, GrantAccessData, ServiceCallback<AccessUri>)'
@@ -1359,6 +1878,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.AccessUri>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AccessUri} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AccessUri} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AccessUri} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.grantAccessWithHttpOperationResponse
     name: >-
@@ -1405,6 +1944,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.AccessUri>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.list
     name: list(Object)
@@ -1424,6 +1964,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.DiskList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DiskList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DiskList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.list_2
     name: 'list(Object, ServiceCallback<DiskList>)'
@@ -1446,6 +2006,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.DiskList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DiskList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DiskList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.list_1
     name: list(ServiceCallback<DiskList>)
@@ -1464,6 +2044,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.DiskList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DiskList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DiskList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.listByResourceGroup
     name: 'listByResourceGroup(string, Object)'
@@ -1490,6 +2090,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.DiskList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DiskList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DiskList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.listByResourceGroup_2
     name: 'listByResourceGroup(string, Object, ServiceCallback<DiskList>)'
@@ -1518,6 +2138,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.DiskList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DiskList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DiskList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.listByResourceGroup_1
     name: 'listByResourceGroup(string, ServiceCallback<DiskList>)'
@@ -1542,6 +2182,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.DiskList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DiskList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DiskList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.listByResourceGroupNext
     name: 'listByResourceGroupNext(string, Object)'
@@ -1567,6 +2227,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.DiskList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DiskList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DiskList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.listByResourceGroupNext_2
     name: 'listByResourceGroupNext(string, Object, ServiceCallback<DiskList>)'
@@ -1595,6 +2275,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.DiskList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DiskList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DiskList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.listByResourceGroupNext_1
     name: 'listByResourceGroupNext(string, ServiceCallback<DiskList>)'
@@ -1619,6 +2319,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.DiskList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DiskList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DiskList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.listByResourceGroupNextWithHttpOperationResponse
     name: 'listByResourceGroupNextWithHttpOperationResponse(string, Object)'
@@ -1646,6 +2366,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.DiskList>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.listByResourceGroupWithHttpOperationResponse
     name: 'listByResourceGroupWithHttpOperationResponse(string, Object)'
@@ -1672,6 +2393,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.DiskList>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.listNext
     name: 'listNext(string, Object)'
@@ -1697,6 +2419,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.DiskList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DiskList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DiskList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.listNext_2
     name: 'listNext(string, Object, ServiceCallback<DiskList>)'
@@ -1725,6 +2467,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.DiskList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DiskList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DiskList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.listNext_1
     name: 'listNext(string, ServiceCallback<DiskList>)'
@@ -1749,6 +2511,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.DiskList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DiskList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DiskList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DiskList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.listNextWithHttpOperationResponse
     name: 'listNextWithHttpOperationResponse(string, Object)'
@@ -1776,6 +2558,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.DiskList>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.listWithHttpOperationResponse
     name: listWithHttpOperationResponse(Object)
@@ -1795,6 +2578,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.DiskList>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.revokeAccess
     name: 'revokeAccess(string, string, Object)'
@@ -1833,6 +2617,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.revokeAccess_2
     name: 'revokeAccess(string, string, Object, ServiceCallback<void>)'
@@ -1865,6 +2668,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.revokeAccess_1
     name: 'revokeAccess(string, string, ServiceCallback<void>)'
@@ -1893,6 +2715,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.revokeAccessWithHttpOperationResponse
     name: 'revokeAccessWithHttpOperationResponse(string, string, Object)'
@@ -1931,6 +2772,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.update
     name: 'update(string, string, DiskUpdate, Object)'
@@ -1975,6 +2817,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Disk>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Disk} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Disk} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.update_2
     name: 'update(string, string, DiskUpdate, Object, ServiceCallback<Disk>)'
@@ -2011,6 +2873,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Disk>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Disk} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Disk} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.update_1
     name: 'update(string, string, DiskUpdate, ServiceCallback<Disk>)'
@@ -2043,6 +2925,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Disk>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Disk} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Disk} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Disk} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Disks.updateWithHttpOperationResponse
     name: 'updateWithHttpOperationResponse(string, string, DiskUpdate, Object)'
@@ -2087,6 +2989,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.Disk>>
+        description: A promise is returned
     package: azure-arm-compute
 references:
   - uid: azure-arm-compute.Disk

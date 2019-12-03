@@ -83,6 +83,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.beginCreateOrUpdate_2
     name: >-
@@ -122,6 +142,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.beginCreateOrUpdate_1
     name: >-
@@ -157,6 +197,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.AzureFirewalls.beginCreateOrUpdateWithHttpOperationResponse
@@ -198,6 +258,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.AzureFirewall>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, Object)'
@@ -229,6 +290,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -261,6 +341,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
@@ -289,6 +388,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.AzureFirewalls.beginDeleteMethodWithHttpOperationResponse
@@ -321,6 +439,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.createOrUpdate
     name: 'createOrUpdate(string, string, AzureFirewall, Object)'
@@ -358,6 +477,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.createOrUpdate_2
     name: >-
@@ -397,6 +536,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.createOrUpdate_1
     name: >-
@@ -432,6 +591,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.createOrUpdateWithHttpOperationResponse
     name: >-
@@ -472,6 +651,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.AzureFirewall>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.deleteMethod
     name: 'deleteMethod(string, string, Object)'
@@ -503,6 +683,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.deleteMethod_2
     name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -535,6 +734,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.deleteMethod_1
     name: 'deleteMethod(string, string, ServiceCallback<void>)'
@@ -563,6 +781,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.deleteMethodWithHttpOperationResponse
     name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -594,6 +831,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.get
     name: 'get(string, string, Object)'
@@ -625,6 +863,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.get_2
     name: 'get(string, string, Object, ServiceCallback<AzureFirewall>)'
@@ -657,6 +915,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.get_1
     name: 'get(string, string, ServiceCallback<AzureFirewall>)'
@@ -685,6 +963,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, Object)'
@@ -716,6 +1014,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.AzureFirewall>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.list
     name: 'list(string, Object)'
@@ -740,6 +1039,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.list_2
     name: 'list(string, Object, ServiceCallback<AzureFirewallListResult>)'
@@ -768,6 +1088,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.list_1
     name: 'list(string, ServiceCallback<AzureFirewallListResult>)'
@@ -792,6 +1133,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.listAll
     name: listAll(Object)
@@ -811,6 +1173,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.listAll_2
     name: 'listAll(Object, ServiceCallback<AzureFirewallListResult>)'
@@ -835,6 +1218,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.listAll_1
     name: listAll(ServiceCallback<AzureFirewallListResult>)
@@ -853,6 +1257,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.listAllNext
     name: 'listAllNext(string, Object)'
@@ -878,6 +1303,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.listAllNext_2
     name: 'listAllNext(string, Object, ServiceCallback<AzureFirewallListResult>)'
@@ -906,6 +1352,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.listAllNext_1
     name: 'listAllNext(string, ServiceCallback<AzureFirewallListResult>)'
@@ -930,6 +1397,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.listAllNextWithHttpOperationResponse
     name: 'listAllNextWithHttpOperationResponse(string, Object)'
@@ -958,6 +1446,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.AzureFirewallListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse(Object)
@@ -978,6 +1467,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.AzureFirewallListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.listNext
     name: 'listNext(string, Object)'
@@ -1003,6 +1493,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.listNext_2
     name: 'listNext(string, Object, ServiceCallback<AzureFirewallListResult>)'
@@ -1031,6 +1542,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.listNext_1
     name: 'listNext(string, ServiceCallback<AzureFirewallListResult>)'
@@ -1055,6 +1587,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.listNextWithHttpOperationResponse
     name: 'listNextWithHttpOperationResponse(string, Object)'
@@ -1083,6 +1636,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.AzureFirewallListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.AzureFirewalls.listWithHttpOperationResponse
     name: 'listWithHttpOperationResponse(string, Object)'
@@ -1110,6 +1664,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.AzureFirewallListResult>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: azure-arm-network.AzureFirewall

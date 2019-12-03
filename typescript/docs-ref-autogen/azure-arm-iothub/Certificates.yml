@@ -70,6 +70,27 @@ items:
       return:
         type:
           - Promise<azure-arm-iothub.CertificateDescription>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CertificateDescription} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CertificateDescription} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CertificateDescription} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.createOrUpdate_2
     name: >-
@@ -109,6 +130,27 @@ items:
       return:
         type:
           - Promise<azure-arm-iothub.CertificateDescription>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CertificateDescription} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CertificateDescription} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CertificateDescription} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.createOrUpdate_1
     name: >-
@@ -144,6 +186,27 @@ items:
       return:
         type:
           - Promise<azure-arm-iothub.CertificateDescription>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CertificateDescription} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CertificateDescription} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CertificateDescription} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.createOrUpdateWithHttpOperationResponse
     name: 'createOrUpdateWithHttpOperationResponse(string, string, string, Object)'
@@ -182,6 +245,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-iothub.CertificateDescription>>
+        description: A promise is returned
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.deleteMethod
     name: 'deleteMethod(string, string, string, string, Object)'
@@ -224,6 +288,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.deleteMethod_2
     name: >-
@@ -267,6 +350,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.deleteMethod_1
     name: 'deleteMethod(string, string, string, string, ServiceCallback<void>)'
@@ -304,6 +406,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.deleteMethodWithHttpOperationResponse
     name: >-
@@ -349,6 +470,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.generateVerificationCode
     name: 'generateVerificationCode(string, string, string, string, Object)'
@@ -392,6 +514,27 @@ items:
       return:
         type:
           - Promise<azure-arm-iothub.CertificateWithNonceDescription>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CertificateWithNonceDescription} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CertificateWithNonceDescription} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CertificateWithNonceDescription} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.generateVerificationCode_2
     name: >-
@@ -435,6 +578,27 @@ items:
       return:
         type:
           - Promise<azure-arm-iothub.CertificateWithNonceDescription>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CertificateWithNonceDescription} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CertificateWithNonceDescription} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CertificateWithNonceDescription} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.generateVerificationCode_1
     name: >-
@@ -474,6 +638,27 @@ items:
       return:
         type:
           - Promise<azure-arm-iothub.CertificateWithNonceDescription>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CertificateWithNonceDescription} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CertificateWithNonceDescription} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CertificateWithNonceDescription} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: >-
       azure-arm-iothub.Certificates.generateVerificationCodeWithHttpOperationResponse
@@ -522,6 +707,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-iothub.CertificateWithNonceDescription>>
+        description: A promise is returned
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.get
     name: 'get(string, string, string, Object)'
@@ -559,6 +745,27 @@ items:
       return:
         type:
           - Promise<azure-arm-iothub.CertificateDescription>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CertificateDescription} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CertificateDescription} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CertificateDescription} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.get_2
     name: >-
@@ -598,6 +805,27 @@ items:
       return:
         type:
           - Promise<azure-arm-iothub.CertificateDescription>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CertificateDescription} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CertificateDescription} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CertificateDescription} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.get_1
     name: 'get(string, string, string, ServiceCallback<CertificateDescription>)'
@@ -631,6 +859,27 @@ items:
       return:
         type:
           - Promise<azure-arm-iothub.CertificateDescription>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CertificateDescription} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CertificateDescription} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CertificateDescription} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, string, Object)'
@@ -669,6 +918,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-iothub.CertificateDescription>>
+        description: A promise is returned
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.listByIotHub
     name: 'listByIotHub(string, string, Object)'
@@ -701,6 +951,27 @@ items:
       return:
         type:
           - Promise<azure-arm-iothub.CertificateListDescription>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CertificateListDescription} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CertificateListDescription} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CertificateListDescription} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.listByIotHub_2
     name: >-
@@ -735,6 +1006,27 @@ items:
       return:
         type:
           - Promise<azure-arm-iothub.CertificateListDescription>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CertificateListDescription} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CertificateListDescription} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CertificateListDescription} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.listByIotHub_1
     name: 'listByIotHub(string, string, ServiceCallback<CertificateListDescription>)'
@@ -763,6 +1055,27 @@ items:
       return:
         type:
           - Promise<azure-arm-iothub.CertificateListDescription>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CertificateListDescription} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CertificateListDescription} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CertificateListDescription} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.listByIotHubWithHttpOperationResponse
     name: 'listByIotHubWithHttpOperationResponse(string, string, Object)'
@@ -796,6 +1109,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-iothub.CertificateListDescription>>
+        description: A promise is returned
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.verify
     name: 'verify(string, string, string, string, Object)'
@@ -838,6 +1152,27 @@ items:
       return:
         type:
           - Promise<azure-arm-iothub.CertificateDescription>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CertificateDescription} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CertificateDescription} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CertificateDescription} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.verify_2
     name: >-
@@ -881,6 +1216,27 @@ items:
       return:
         type:
           - Promise<azure-arm-iothub.CertificateDescription>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CertificateDescription} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CertificateDescription} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CertificateDescription} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.verify_1
     name: >-
@@ -920,6 +1276,27 @@ items:
       return:
         type:
           - Promise<azure-arm-iothub.CertificateDescription>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CertificateDescription} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CertificateDescription} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CertificateDescription} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-iothub
   - uid: azure-arm-iothub.Certificates.verifyWithHttpOperationResponse
     name: 'verifyWithHttpOperationResponse(string, string, string, string, Object)'
@@ -964,6 +1341,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-iothub.CertificateDescription>>
+        description: A promise is returned
     package: azure-arm-iothub
 references:
   - uid: Promise<azure-arm-iothub.CertificateDescription>

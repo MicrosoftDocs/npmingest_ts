@@ -100,6 +100,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.beginCreateOrUpdate_2
     name: >-
@@ -139,6 +159,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.beginCreateOrUpdate_1
     name: >-
@@ -174,6 +214,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ServiceEndpointPolicies.beginCreateOrUpdateWithHttpOperationResponse
@@ -217,6 +277,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ServiceEndpointPolicy>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, Object)'
@@ -249,6 +310,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -282,6 +362,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
@@ -310,6 +409,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ServiceEndpointPolicies.beginDeleteMethodWithHttpOperationResponse
@@ -343,6 +461,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.beginUpdate
     name: 'beginUpdate(string, string, TagsObject, Object)'
@@ -382,6 +501,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.beginUpdate_2
     name: >-
@@ -421,6 +560,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.beginUpdate_1
     name: >-
@@ -456,6 +615,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ServiceEndpointPolicies.beginUpdateWithHttpOperationResponse
@@ -497,6 +676,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ServiceEndpointPolicy>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.createOrUpdate
     name: 'createOrUpdate(string, string, ServiceEndpointPolicy, Object)'
@@ -536,6 +716,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.createOrUpdate_2
     name: >-
@@ -575,6 +775,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.createOrUpdate_1
     name: >-
@@ -610,6 +830,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ServiceEndpointPolicies.createOrUpdateWithHttpOperationResponse
@@ -653,6 +893,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ServiceEndpointPolicy>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.deleteMethod
     name: 'deleteMethod(string, string, Object)'
@@ -685,6 +926,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.deleteMethod_2
     name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -718,6 +978,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.deleteMethod_1
     name: 'deleteMethod(string, string, ServiceCallback<void>)'
@@ -746,6 +1025,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ServiceEndpointPolicies.deleteMethodWithHttpOperationResponse
@@ -779,6 +1077,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.get
     name: 'get(string, string, Object)'
@@ -813,6 +1112,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.get_2
     name: 'get(string, string, Object, ServiceCallback<ServiceEndpointPolicy>)'
@@ -848,6 +1167,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.get_1
     name: 'get(string, string, ServiceCallback<ServiceEndpointPolicy>)'
@@ -878,6 +1217,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, Object)'
@@ -913,6 +1272,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ServiceEndpointPolicy>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.list
     name: list(Object)
@@ -932,6 +1292,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.list_2
     name: 'list(Object, ServiceCallback<ServiceEndpointPolicyListResult>)'
@@ -956,6 +1337,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.list_1
     name: list(ServiceCallback<ServiceEndpointPolicyListResult>)
@@ -976,6 +1378,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.listByResourceGroup
     name: 'listByResourceGroup(string, Object)'
@@ -1002,6 +1425,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.listByResourceGroup_2
     name: >-
@@ -1032,6 +1476,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.listByResourceGroup_1
     name: >-
@@ -1058,6 +1523,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.listByResourceGroupNext
     name: 'listByResourceGroupNext(string, Object)'
@@ -1083,6 +1569,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.listByResourceGroupNext_2
     name: >-
@@ -1113,6 +1620,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.listByResourceGroupNext_1
     name: >-
@@ -1139,6 +1667,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ServiceEndpointPolicies.listByResourceGroupNextWithHttpOperationResponse
@@ -1168,6 +1717,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ServiceEndpointPolicyListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ServiceEndpointPolicies.listByResourceGroupWithHttpOperationResponse
@@ -1196,6 +1746,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ServiceEndpointPolicyListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.listNext
     name: 'listNext(string, Object)'
@@ -1221,6 +1772,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.listNext_2
     name: 'listNext(string, Object, ServiceCallback<ServiceEndpointPolicyListResult>)'
@@ -1249,6 +1821,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.listNext_1
     name: 'listNext(string, ServiceCallback<ServiceEndpointPolicyListResult>)'
@@ -1273,6 +1866,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicyListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ServiceEndpointPolicies.listNextWithHttpOperationResponse
@@ -1302,6 +1916,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ServiceEndpointPolicyListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.listWithHttpOperationResponse
     name: listWithHttpOperationResponse(Object)
@@ -1322,6 +1937,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ServiceEndpointPolicyListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.update
     name: 'update(string, string, TagsObject, Object)'
@@ -1360,6 +1976,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.update_2
     name: >-
@@ -1399,6 +2035,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.update_1
     name: 'update(string, string, TagsObject, ServiceCallback<ServiceEndpointPolicy>)'
@@ -1432,6 +2088,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ServiceEndpointPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ServiceEndpointPolicies.updateWithHttpOperationResponse
     name: 'updateWithHttpOperationResponse(string, string, TagsObject, Object)'
@@ -1472,6 +2148,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ServiceEndpointPolicy>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: azure-arm-network.ServiceEndpointPolicy

@@ -51,6 +51,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.RunCommandDocument>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RunCommandDocument} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RunCommandDocument} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RunCommandDocument} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineRunCommands.get_2
     name: 'get(string, string, Object, ServiceCallback<RunCommandDocument>)'
@@ -83,6 +103,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.RunCommandDocument>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RunCommandDocument} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RunCommandDocument} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RunCommandDocument} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineRunCommands.get_1
     name: 'get(string, string, ServiceCallback<RunCommandDocument>)'
@@ -111,6 +151,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.RunCommandDocument>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RunCommandDocument} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RunCommandDocument} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RunCommandDocument} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineRunCommands.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, Object)'
@@ -142,6 +202,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.RunCommandDocument>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineRunCommands.list
     name: 'list(string, Object)'
@@ -166,6 +227,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.RunCommandListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RunCommandListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RunCommandListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RunCommandListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineRunCommands.list_2
     name: 'list(string, Object, ServiceCallback<RunCommandListResult>)'
@@ -194,6 +275,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.RunCommandListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RunCommandListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RunCommandListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RunCommandListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineRunCommands.list_1
     name: 'list(string, ServiceCallback<RunCommandListResult>)'
@@ -218,6 +319,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.RunCommandListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RunCommandListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RunCommandListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RunCommandListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineRunCommands.listNext
     name: 'listNext(string, Object)'
@@ -243,6 +364,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.RunCommandListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RunCommandListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RunCommandListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RunCommandListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineRunCommands.listNext_2
     name: 'listNext(string, Object, ServiceCallback<RunCommandListResult>)'
@@ -271,6 +412,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.RunCommandListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RunCommandListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RunCommandListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RunCommandListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineRunCommands.listNext_1
     name: 'listNext(string, ServiceCallback<RunCommandListResult>)'
@@ -295,6 +456,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.RunCommandListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RunCommandListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RunCommandListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RunCommandListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineRunCommands.listNextWithHttpOperationResponse
@@ -324,6 +505,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-compute.RunCommandListResult>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineRunCommands.listWithHttpOperationResponse
     name: 'listWithHttpOperationResponse(string, Object)'
@@ -351,6 +533,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-compute.RunCommandListResult>>
+        description: A promise is returned
     package: azure-arm-compute
 references:
   - uid: Promise<azure-arm-compute.RunCommandDocument>

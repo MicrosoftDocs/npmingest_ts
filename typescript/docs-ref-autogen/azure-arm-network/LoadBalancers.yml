@@ -91,6 +91,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancer>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancer} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancer} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancer} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.beginCreateOrUpdate_2
     name: >-
@@ -130,6 +150,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancer>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancer} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancer} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancer} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.beginCreateOrUpdate_1
     name: >-
@@ -165,6 +205,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancer>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancer} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancer} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancer} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.LoadBalancers.beginCreateOrUpdateWithHttpOperationResponse
@@ -206,6 +266,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.LoadBalancer>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, Object)'
@@ -237,6 +298,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -269,6 +349,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
@@ -297,6 +396,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.beginDeleteMethodWithHttpOperationResponse
     name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -328,6 +446,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.beginUpdateTags
     name: 'beginUpdateTags(string, string, TagsObject, Object)'
@@ -364,6 +483,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancer>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancer} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancer} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancer} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.beginUpdateTags_2
     name: >-
@@ -403,6 +542,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancer>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancer} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancer} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancer} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.beginUpdateTags_1
     name: 'beginUpdateTags(string, string, TagsObject, ServiceCallback<LoadBalancer>)'
@@ -435,6 +594,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancer>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancer} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancer} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancer} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.beginUpdateTagsWithHttpOperationResponse
     name: >-
@@ -474,6 +653,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.LoadBalancer>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.createOrUpdate
     name: 'createOrUpdate(string, string, LoadBalancer, Object)'
@@ -511,6 +691,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancer>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancer} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancer} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancer} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.createOrUpdate_2
     name: >-
@@ -550,6 +750,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancer>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancer} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancer} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancer} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.createOrUpdate_1
     name: >-
@@ -585,6 +805,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancer>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancer} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancer} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancer} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.createOrUpdateWithHttpOperationResponse
     name: >-
@@ -625,6 +865,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.LoadBalancer>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.deleteMethod
     name: 'deleteMethod(string, string, Object)'
@@ -656,6 +897,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.deleteMethod_2
     name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -688,6 +948,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.deleteMethod_1
     name: 'deleteMethod(string, string, ServiceCallback<void>)'
@@ -716,6 +995,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.deleteMethodWithHttpOperationResponse
     name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -747,6 +1045,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.get
     name: 'get(string, string, Object)'
@@ -778,6 +1077,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancer>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancer} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancer} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancer} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.get_2
     name: 'get(string, string, Object, ServiceCallback<LoadBalancer>)'
@@ -810,6 +1129,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancer>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancer} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancer} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancer} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.get_1
     name: 'get(string, string, ServiceCallback<LoadBalancer>)'
@@ -838,6 +1177,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancer>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancer} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancer} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancer} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, Object)'
@@ -869,6 +1228,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.LoadBalancer>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.list
     name: 'list(string, Object)'
@@ -893,6 +1253,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancerListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancerListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancerListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancerListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.list_2
     name: 'list(string, Object, ServiceCallback<LoadBalancerListResult>)'
@@ -921,6 +1302,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancerListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancerListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancerListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancerListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.list_1
     name: 'list(string, ServiceCallback<LoadBalancerListResult>)'
@@ -945,6 +1347,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancerListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancerListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancerListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancerListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.listAll
     name: listAll(Object)
@@ -964,6 +1387,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancerListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancerListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancerListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancerListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.listAll_2
     name: 'listAll(Object, ServiceCallback<LoadBalancerListResult>)'
@@ -988,6 +1432,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancerListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancerListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancerListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancerListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.listAll_1
     name: listAll(ServiceCallback<LoadBalancerListResult>)
@@ -1006,6 +1471,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancerListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancerListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancerListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancerListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.listAllNext
     name: 'listAllNext(string, Object)'
@@ -1031,6 +1517,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancerListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancerListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancerListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancerListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.listAllNext_2
     name: 'listAllNext(string, Object, ServiceCallback<LoadBalancerListResult>)'
@@ -1059,6 +1566,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancerListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancerListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancerListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancerListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.listAllNext_1
     name: 'listAllNext(string, ServiceCallback<LoadBalancerListResult>)'
@@ -1083,6 +1611,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancerListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancerListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancerListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancerListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.listAllNextWithHttpOperationResponse
     name: 'listAllNextWithHttpOperationResponse(string, Object)'
@@ -1111,6 +1660,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.LoadBalancerListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse(Object)
@@ -1131,6 +1681,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.LoadBalancerListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.listNext
     name: 'listNext(string, Object)'
@@ -1156,6 +1707,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancerListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancerListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancerListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancerListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.listNext_2
     name: 'listNext(string, Object, ServiceCallback<LoadBalancerListResult>)'
@@ -1184,6 +1756,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancerListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancerListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancerListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancerListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.listNext_1
     name: 'listNext(string, ServiceCallback<LoadBalancerListResult>)'
@@ -1208,6 +1801,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancerListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancerListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancerListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancerListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.listNextWithHttpOperationResponse
     name: 'listNextWithHttpOperationResponse(string, Object)'
@@ -1236,6 +1850,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.LoadBalancerListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.listWithHttpOperationResponse
     name: 'listWithHttpOperationResponse(string, Object)'
@@ -1263,6 +1878,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.LoadBalancerListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.updateTags
     name: 'updateTags(string, string, TagsObject, Object)'
@@ -1299,6 +1915,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancer>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancer} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancer} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancer} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.updateTags_2
     name: >-
@@ -1338,6 +1974,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancer>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancer} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancer} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancer} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.updateTags_1
     name: 'updateTags(string, string, TagsObject, ServiceCallback<LoadBalancer>)'
@@ -1370,6 +2026,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.LoadBalancer>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LoadBalancer} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LoadBalancer} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LoadBalancer} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.LoadBalancers.updateTagsWithHttpOperationResponse
     name: 'updateTagsWithHttpOperationResponse(string, string, TagsObject, Object)'
@@ -1406,6 +2082,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.LoadBalancer>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: azure-arm-network.LoadBalancer

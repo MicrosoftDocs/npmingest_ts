@@ -101,6 +101,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.beginCreateOrUpdate_2
     name: >-
@@ -141,6 +162,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.beginCreateOrUpdate_1
     name: >-
@@ -177,6 +219,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ApplicationSecurityGroups.beginCreateOrUpdateWithHttpOperationResponse
@@ -220,6 +283,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ApplicationSecurityGroup>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, Object)'
@@ -252,6 +316,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -285,6 +368,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
@@ -313,6 +415,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ApplicationSecurityGroups.beginDeleteMethodWithHttpOperationResponse
@@ -346,6 +467,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.beginUpdateTags
     name: 'beginUpdateTags(string, string, TagsObject, Object)'
@@ -385,6 +507,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.beginUpdateTags_2
     name: >-
@@ -424,6 +567,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.beginUpdateTags_1
     name: >-
@@ -459,6 +623,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ApplicationSecurityGroups.beginUpdateTagsWithHttpOperationResponse
@@ -502,6 +687,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ApplicationSecurityGroup>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.createOrUpdate
     name: 'createOrUpdate(string, string, ApplicationSecurityGroup, Object)'
@@ -541,6 +727,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.createOrUpdate_2
     name: >-
@@ -581,6 +788,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.createOrUpdate_1
     name: >-
@@ -617,6 +845,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ApplicationSecurityGroups.createOrUpdateWithHttpOperationResponse
@@ -660,6 +909,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ApplicationSecurityGroup>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.deleteMethod
     name: 'deleteMethod(string, string, Object)'
@@ -692,6 +942,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.deleteMethod_2
     name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -725,6 +994,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.deleteMethod_1
     name: 'deleteMethod(string, string, ServiceCallback<void>)'
@@ -753,6 +1041,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ApplicationSecurityGroups.deleteMethodWithHttpOperationResponse
@@ -786,6 +1093,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.get
     name: 'get(string, string, Object)'
@@ -818,6 +1126,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.get_2
     name: 'get(string, string, Object, ServiceCallback<ApplicationSecurityGroup>)'
@@ -851,6 +1180,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.get_1
     name: 'get(string, string, ServiceCallback<ApplicationSecurityGroup>)'
@@ -879,6 +1229,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, Object)'
@@ -912,6 +1283,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ApplicationSecurityGroup>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.list
     name: 'list(string, Object)'
@@ -936,6 +1308,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.list_2
     name: 'list(string, Object, ServiceCallback<ApplicationSecurityGroupListResult>)'
@@ -965,6 +1358,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.list_1
     name: 'list(string, ServiceCallback<ApplicationSecurityGroupListResult>)'
@@ -990,6 +1404,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.listAll
     name: listAll(Object)
@@ -1009,6 +1444,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.listAll_2
     name: 'listAll(Object, ServiceCallback<ApplicationSecurityGroupListResult>)'
@@ -1034,6 +1490,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.listAll_1
     name: listAll(ServiceCallback<ApplicationSecurityGroupListResult>)
@@ -1055,6 +1532,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.listAllNext
     name: 'listAllNext(string, Object)'
@@ -1080,6 +1578,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.listAllNext_2
     name: >-
@@ -1111,6 +1630,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.listAllNext_1
     name: 'listAllNext(string, ServiceCallback<ApplicationSecurityGroupListResult>)'
@@ -1136,6 +1676,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ApplicationSecurityGroups.listAllNextWithHttpOperationResponse
@@ -1165,6 +1726,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ApplicationSecurityGroupListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ApplicationSecurityGroups.listAllWithHttpOperationResponse
@@ -1186,6 +1748,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ApplicationSecurityGroupListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.listNext
     name: 'listNext(string, Object)'
@@ -1211,6 +1774,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.listNext_2
     name: >-
@@ -1242,6 +1826,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.listNext_1
     name: 'listNext(string, ServiceCallback<ApplicationSecurityGroupListResult>)'
@@ -1267,6 +1872,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ApplicationSecurityGroups.listNextWithHttpOperationResponse
@@ -1296,6 +1922,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ApplicationSecurityGroupListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.listWithHttpOperationResponse
     name: 'listWithHttpOperationResponse(string, Object)'
@@ -1323,6 +1950,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ApplicationSecurityGroupListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.updateTags
     name: 'updateTags(string, string, TagsObject, Object)'
@@ -1362,6 +1990,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.updateTags_2
     name: >-
@@ -1401,6 +2050,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ApplicationSecurityGroups.updateTags_1
     name: >-
@@ -1436,6 +2106,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ApplicationSecurityGroups.updateTagsWithHttpOperationResponse
@@ -1477,6 +2168,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ApplicationSecurityGroup>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: azure-arm-network.ApplicationSecurityGroup

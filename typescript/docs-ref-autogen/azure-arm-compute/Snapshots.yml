@@ -113,6 +113,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Snapshot>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Snapshot} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Snapshot} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Snapshot} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginCreateOrUpdate_2
     name: >-
@@ -152,6 +172,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Snapshot>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Snapshot} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Snapshot} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Snapshot} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginCreateOrUpdate_1
     name: 'beginCreateOrUpdate(string, string, Snapshot, ServiceCallback<Snapshot>)'
@@ -184,6 +224,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Snapshot>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Snapshot} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Snapshot} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Snapshot} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginCreateOrUpdateWithHttpOperationResponse
     name: >-
@@ -230,6 +290,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.Snapshot>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, Object)'
@@ -268,6 +329,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -300,6 +380,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
@@ -328,6 +427,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginDeleteMethodWithHttpOperationResponse
     name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -366,6 +484,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginGrantAccess
     name: 'beginGrantAccess(string, string, GrantAccessData, Object)'
@@ -410,6 +529,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.AccessUri>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AccessUri} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AccessUri} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AccessUri} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginGrantAccess_2
     name: >-
@@ -449,6 +588,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.AccessUri>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AccessUri} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AccessUri} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AccessUri} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginGrantAccess_1
     name: >-
@@ -484,6 +643,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.AccessUri>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AccessUri} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AccessUri} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AccessUri} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginGrantAccessWithHttpOperationResponse
     name: >-
@@ -531,6 +710,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.AccessUri>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginRevokeAccess
     name: 'beginRevokeAccess(string, string, Object)'
@@ -569,6 +749,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginRevokeAccess_2
     name: 'beginRevokeAccess(string, string, Object, ServiceCallback<void>)'
@@ -601,6 +800,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginRevokeAccess_1
     name: 'beginRevokeAccess(string, string, ServiceCallback<void>)'
@@ -629,6 +847,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginRevokeAccessWithHttpOperationResponse
     name: 'beginRevokeAccessWithHttpOperationResponse(string, string, Object)'
@@ -667,6 +904,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginUpdate
     name: 'beginUpdate(string, string, SnapshotUpdate, Object)'
@@ -711,6 +949,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Snapshot>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Snapshot} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Snapshot} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Snapshot} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginUpdate_2
     name: >-
@@ -750,6 +1008,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Snapshot>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Snapshot} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Snapshot} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Snapshot} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginUpdate_1
     name: 'beginUpdate(string, string, SnapshotUpdate, ServiceCallback<Snapshot>)'
@@ -782,6 +1060,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Snapshot>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Snapshot} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Snapshot} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Snapshot} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.beginUpdateWithHttpOperationResponse
     name: >-
@@ -828,6 +1126,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.Snapshot>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.createOrUpdate
     name: 'createOrUpdate(string, string, Snapshot, Object)'
@@ -872,6 +1171,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Snapshot>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Snapshot} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Snapshot} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Snapshot} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.createOrUpdate_2
     name: >-
@@ -911,6 +1230,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Snapshot>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Snapshot} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Snapshot} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Snapshot} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.createOrUpdate_1
     name: 'createOrUpdate(string, string, Snapshot, ServiceCallback<Snapshot>)'
@@ -943,6 +1282,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Snapshot>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Snapshot} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Snapshot} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Snapshot} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.createOrUpdateWithHttpOperationResponse
     name: 'createOrUpdateWithHttpOperationResponse(string, string, Snapshot, Object)'
@@ -987,6 +1346,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.Snapshot>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.deleteMethod
     name: 'deleteMethod(string, string, Object)'
@@ -1025,6 +1385,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.deleteMethod_2
     name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -1057,6 +1436,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.deleteMethod_1
     name: 'deleteMethod(string, string, ServiceCallback<void>)'
@@ -1085,6 +1483,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.deleteMethodWithHttpOperationResponse
     name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -1123,6 +1540,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.get
     name: 'get(string, string, Object)'
@@ -1161,6 +1579,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Snapshot>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Snapshot} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Snapshot} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Snapshot} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.get_2
     name: 'get(string, string, Object, ServiceCallback<Snapshot>)'
@@ -1193,6 +1631,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Snapshot>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Snapshot} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Snapshot} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Snapshot} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.get_1
     name: 'get(string, string, ServiceCallback<Snapshot>)'
@@ -1221,6 +1679,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Snapshot>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Snapshot} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Snapshot} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Snapshot} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, Object)'
@@ -1259,6 +1737,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.Snapshot>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.grantAccess
     name: 'grantAccess(string, string, GrantAccessData, Object)'
@@ -1303,6 +1782,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.AccessUri>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AccessUri} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AccessUri} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AccessUri} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.grantAccess_2
     name: >-
@@ -1342,6 +1841,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.AccessUri>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AccessUri} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AccessUri} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AccessUri} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.grantAccess_1
     name: 'grantAccess(string, string, GrantAccessData, ServiceCallback<AccessUri>)'
@@ -1374,6 +1893,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.AccessUri>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AccessUri} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AccessUri} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AccessUri} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.grantAccessWithHttpOperationResponse
     name: >-
@@ -1421,6 +1960,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.AccessUri>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.list
     name: list(Object)
@@ -1440,6 +1980,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.SnapshotList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SnapshotList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SnapshotList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SnapshotList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.list_2
     name: 'list(Object, ServiceCallback<SnapshotList>)'
@@ -1462,6 +2022,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.SnapshotList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SnapshotList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SnapshotList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SnapshotList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.list_1
     name: list(ServiceCallback<SnapshotList>)
@@ -1480,6 +2060,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.SnapshotList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SnapshotList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SnapshotList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SnapshotList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.listByResourceGroup
     name: 'listByResourceGroup(string, Object)'
@@ -1506,6 +2106,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.SnapshotList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SnapshotList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SnapshotList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SnapshotList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.listByResourceGroup_2
     name: 'listByResourceGroup(string, Object, ServiceCallback<SnapshotList>)'
@@ -1534,6 +2154,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.SnapshotList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SnapshotList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SnapshotList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SnapshotList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.listByResourceGroup_1
     name: 'listByResourceGroup(string, ServiceCallback<SnapshotList>)'
@@ -1558,6 +2198,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.SnapshotList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SnapshotList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SnapshotList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SnapshotList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.listByResourceGroupNext
     name: 'listByResourceGroupNext(string, Object)'
@@ -1583,6 +2243,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.SnapshotList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SnapshotList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SnapshotList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SnapshotList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.listByResourceGroupNext_2
     name: 'listByResourceGroupNext(string, Object, ServiceCallback<SnapshotList>)'
@@ -1611,6 +2291,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.SnapshotList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SnapshotList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SnapshotList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SnapshotList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.listByResourceGroupNext_1
     name: 'listByResourceGroupNext(string, ServiceCallback<SnapshotList>)'
@@ -1635,6 +2335,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.SnapshotList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SnapshotList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SnapshotList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SnapshotList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.Snapshots.listByResourceGroupNextWithHttpOperationResponse
@@ -1663,6 +2383,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.SnapshotList>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.listByResourceGroupWithHttpOperationResponse
     name: 'listByResourceGroupWithHttpOperationResponse(string, Object)'
@@ -1689,6 +2410,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.SnapshotList>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.listNext
     name: 'listNext(string, Object)'
@@ -1714,6 +2436,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.SnapshotList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SnapshotList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SnapshotList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SnapshotList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.listNext_2
     name: 'listNext(string, Object, ServiceCallback<SnapshotList>)'
@@ -1742,6 +2484,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.SnapshotList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SnapshotList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SnapshotList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SnapshotList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.listNext_1
     name: 'listNext(string, ServiceCallback<SnapshotList>)'
@@ -1766,6 +2528,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.SnapshotList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SnapshotList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SnapshotList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SnapshotList} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.listNextWithHttpOperationResponse
     name: 'listNextWithHttpOperationResponse(string, Object)'
@@ -1793,6 +2575,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.SnapshotList>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.listWithHttpOperationResponse
     name: listWithHttpOperationResponse(Object)
@@ -1812,6 +2595,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.SnapshotList>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.revokeAccess
     name: 'revokeAccess(string, string, Object)'
@@ -1850,6 +2634,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.revokeAccess_2
     name: 'revokeAccess(string, string, Object, ServiceCallback<void>)'
@@ -1882,6 +2685,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.revokeAccess_1
     name: 'revokeAccess(string, string, ServiceCallback<void>)'
@@ -1910,6 +2732,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.revokeAccessWithHttpOperationResponse
     name: 'revokeAccessWithHttpOperationResponse(string, string, Object)'
@@ -1948,6 +2789,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.update
     name: 'update(string, string, SnapshotUpdate, Object)'
@@ -1992,6 +2834,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Snapshot>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Snapshot} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Snapshot} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Snapshot} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.update_2
     name: 'update(string, string, SnapshotUpdate, Object, ServiceCallback<Snapshot>)'
@@ -2029,6 +2891,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Snapshot>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Snapshot} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Snapshot} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Snapshot} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.update_1
     name: 'update(string, string, SnapshotUpdate, ServiceCallback<Snapshot>)'
@@ -2061,6 +2943,26 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.Snapshot>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Snapshot} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Snapshot} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Snapshot} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.Snapshots.updateWithHttpOperationResponse
     name: 'updateWithHttpOperationResponse(string, string, SnapshotUpdate, Object)'
@@ -2105,6 +3007,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-compute.Snapshot>>
+        description: A promise is returned
     package: azure-arm-compute
 references:
   - uid: azure-arm-compute.Snapshot

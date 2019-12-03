@@ -92,6 +92,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtension>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtension} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtension} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtension} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.beginCreateOrUpdate_2
     name: >-
@@ -135,6 +156,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtension>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtension} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtension} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtension} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.beginCreateOrUpdate_1
     name: >-
@@ -174,6 +216,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtension>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtension} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtension} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtension} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineExtensions.beginCreateOrUpdateWithHttpOperationResponse
@@ -222,6 +285,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineExtension>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, string, Object)'
@@ -259,6 +323,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, string, Object, ServiceCallback<void>)'
@@ -296,6 +379,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, string, ServiceCallback<void>)'
@@ -328,6 +430,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineExtensions.beginDeleteMethodWithHttpOperationResponse
@@ -366,6 +487,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.beginUpdate
     name: 'beginUpdate(string, string, string, VirtualMachineExtensionUpdate, Object)'
@@ -410,6 +532,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtension>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtension} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtension} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtension} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.beginUpdate_2
     name: >-
@@ -454,6 +597,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtension>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtension} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtension} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtension} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.beginUpdate_1
     name: >-
@@ -494,6 +658,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtension>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtension} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtension} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtension} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineExtensions.beginUpdateWithHttpOperationResponse
@@ -542,6 +727,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineExtension>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.createOrUpdate
     name: 'createOrUpdate(string, string, string, VirtualMachineExtension, Object)'
@@ -586,6 +772,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtension>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtension} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtension} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtension} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.createOrUpdate_2
     name: >-
@@ -629,6 +836,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtension>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtension} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtension} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtension} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.createOrUpdate_1
     name: >-
@@ -668,6 +896,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtension>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtension} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtension} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtension} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineExtensions.createOrUpdateWithHttpOperationResponse
@@ -716,6 +965,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineExtension>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.deleteMethod
     name: 'deleteMethod(string, string, string, Object)'
@@ -753,6 +1003,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.deleteMethod_2
     name: 'deleteMethod(string, string, string, Object, ServiceCallback<void>)'
@@ -790,6 +1059,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.deleteMethod_1
     name: 'deleteMethod(string, string, string, ServiceCallback<void>)'
@@ -822,6 +1110,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: >-
       azure-arm-compute.VirtualMachineExtensions.deleteMethodWithHttpOperationResponse
@@ -860,6 +1167,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.get
     name: 'get(string, string, string, Object)'
@@ -897,6 +1205,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtension>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtension} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtension} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtension} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.get_2
     name: >-
@@ -936,6 +1265,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtension>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtension} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtension} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtension} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.get_1
     name: 'get(string, string, string, ServiceCallback<VirtualMachineExtension>)'
@@ -968,6 +1318,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtension>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtension} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtension} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtension} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, string, Object)'
@@ -1006,6 +1377,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineExtension>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.list
     name: 'list(string, string, Object)'
@@ -1038,6 +1410,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtensionsListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtensionsListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtensionsListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtensionsListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.list_2
     name: >-
@@ -1073,6 +1466,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtensionsListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtensionsListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtensionsListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtensionsListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.list_1
     name: 'list(string, string, ServiceCallback<VirtualMachineExtensionsListResult>)'
@@ -1102,6 +1516,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtensionsListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtensionsListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtensionsListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtensionsListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.listWithHttpOperationResponse
     name: 'listWithHttpOperationResponse(string, string, Object)'
@@ -1135,6 +1570,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineExtensionsListResult>>
+        description: A promise is returned
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.update
     name: 'update(string, string, string, VirtualMachineExtensionUpdate, Object)'
@@ -1179,6 +1615,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtension>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtension} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtension} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtension} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.update_2
     name: >-
@@ -1223,6 +1680,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtension>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtension} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtension} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtension} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.update_1
     name: >-
@@ -1263,6 +1741,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineExtension>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineExtension} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineExtension} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineExtension} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineExtensions.updateWithHttpOperationResponse
     name: >-
@@ -1310,6 +1809,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineExtension>>
+        description: A promise is returned
     package: azure-arm-compute
 references:
   - uid: azure-arm-compute.VirtualMachineExtension

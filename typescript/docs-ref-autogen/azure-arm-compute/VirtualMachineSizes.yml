@@ -39,6 +39,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineSizeListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineSizeListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineSizeListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineSizeListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineSizes.list_2
     name: 'list(string, Object, ServiceCallback<VirtualMachineSizeListResult>)'
@@ -69,6 +90,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineSizeListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineSizeListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineSizeListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineSizeListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineSizes.list_1
     name: 'list(string, ServiceCallback<VirtualMachineSizeListResult>)'
@@ -95,6 +137,27 @@ items:
       return:
         type:
           - Promise<azure-arm-compute.VirtualMachineSizeListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineSizeListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineSizeListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineSizeListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-compute
   - uid: azure-arm-compute.VirtualMachineSizes.listWithHttpOperationResponse
     name: 'listWithHttpOperationResponse(string, Object)'
@@ -125,6 +188,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-compute.VirtualMachineSizeListResult>>
+        description: A promise is returned
     package: azure-arm-compute
 references:
   - uid: Promise<azure-arm-compute.VirtualMachineSizeListResult>

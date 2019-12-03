@@ -85,6 +85,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ExpressRouteConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.beginCreateOrUpdate_2
     name: >-
@@ -131,6 +152,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ExpressRouteConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.beginCreateOrUpdate_1
     name: >-
@@ -173,6 +215,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ExpressRouteConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ExpressRouteConnections.beginCreateOrUpdateWithHttpOperationResponse
@@ -224,6 +287,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ExpressRouteConnection>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, string, Object)'
@@ -262,6 +326,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, string, Object, ServiceCallback<void>)'
@@ -299,6 +382,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, string, ServiceCallback<void>)'
@@ -332,6 +434,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ExpressRouteConnections.beginDeleteMethodWithHttpOperationResponse
@@ -371,6 +492,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.createOrUpdate
     name: 'createOrUpdate(string, string, string, ExpressRouteConnection, Object)'
@@ -418,6 +540,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ExpressRouteConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.createOrUpdate_2
     name: >-
@@ -464,6 +607,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ExpressRouteConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.createOrUpdate_1
     name: >-
@@ -506,6 +670,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ExpressRouteConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ExpressRouteConnections.createOrUpdateWithHttpOperationResponse
@@ -557,6 +742,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ExpressRouteConnection>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.deleteMethod
     name: 'deleteMethod(string, string, string, Object)'
@@ -595,6 +781,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.deleteMethod_2
     name: 'deleteMethod(string, string, string, Object, ServiceCallback<void>)'
@@ -632,6 +837,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.deleteMethod_1
     name: 'deleteMethod(string, string, string, ServiceCallback<void>)'
@@ -665,6 +889,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: >-
       azure-arm-network.ExpressRouteConnections.deleteMethodWithHttpOperationResponse
@@ -704,6 +947,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.get
     name: 'get(string, string, string, Object)'
@@ -741,6 +985,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ExpressRouteConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.get_2
     name: >-
@@ -780,6 +1045,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ExpressRouteConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.get_1
     name: 'get(string, string, string, ServiceCallback<ExpressRouteConnection>)'
@@ -813,6 +1099,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ExpressRouteConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, string, Object)'
@@ -852,6 +1159,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ExpressRouteConnection>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.list
     name: 'list(string, string, Object)'
@@ -884,6 +1192,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ExpressRouteConnectionList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteConnectionList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteConnectionList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteConnectionList} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.list_2
     name: 'list(string, string, Object, ServiceCallback<ExpressRouteConnectionList>)'
@@ -917,6 +1246,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ExpressRouteConnectionList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteConnectionList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteConnectionList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteConnectionList} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.list_1
     name: 'list(string, string, ServiceCallback<ExpressRouteConnectionList>)'
@@ -945,6 +1295,27 @@ items:
       return:
         type:
           - Promise<azure-arm-network.ExpressRouteConnectionList>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteConnectionList} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteConnectionList} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteConnectionList} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.ExpressRouteConnections.listWithHttpOperationResponse
     name: 'listWithHttpOperationResponse(string, string, Object)'
@@ -978,6 +1349,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.ExpressRouteConnectionList>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: azure-arm-network.ExpressRouteConnection

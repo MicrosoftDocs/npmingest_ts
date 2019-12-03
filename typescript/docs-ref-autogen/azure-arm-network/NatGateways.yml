@@ -86,6 +86,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.beginCreateOrUpdate_2
     name: >-
@@ -125,6 +145,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.beginCreateOrUpdate_1
     name: >-
@@ -159,6 +199,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.beginCreateOrUpdateWithHttpOperationResponse
     name: >-
@@ -199,6 +259,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.NatGateway>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.beginDeleteMethod
     name: 'beginDeleteMethod(string, string, Object)'
@@ -230,6 +291,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.beginDeleteMethod_2
     name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -262,6 +342,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.beginDeleteMethod_1
     name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
@@ -290,6 +389,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.beginDeleteMethodWithHttpOperationResponse
     name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -321,6 +439,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.createOrUpdate
     name: 'createOrUpdate(string, string, NatGateway, Object)'
@@ -358,6 +477,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.createOrUpdate_2
     name: >-
@@ -397,6 +536,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.createOrUpdate_1
     name: 'createOrUpdate(string, string, NatGateway, ServiceCallback<NatGateway>)'
@@ -429,6 +588,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.createOrUpdateWithHttpOperationResponse
     name: >-
@@ -469,6 +648,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.NatGateway>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.deleteMethod
     name: 'deleteMethod(string, string, Object)'
@@ -500,6 +680,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.deleteMethod_2
     name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
@@ -532,6 +731,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.deleteMethod_1
     name: 'deleteMethod(string, string, ServiceCallback<void>)'
@@ -560,6 +778,25 @@ items:
       return:
         type:
           - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.deleteMethodWithHttpOperationResponse
     name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
@@ -591,6 +828,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.get
     name: 'get(string, string, Object)'
@@ -622,6 +860,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.get_2
     name: 'get(string, string, Object, ServiceCallback<NatGateway>)'
@@ -654,6 +912,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.get_1
     name: 'get(string, string, ServiceCallback<NatGateway>)'
@@ -682,6 +960,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.getWithHttpOperationResponse
     name: 'getWithHttpOperationResponse(string, string, Object)'
@@ -713,6 +1011,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.NatGateway>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.list
     name: 'list(string, Object)'
@@ -737,6 +1036,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGatewayListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.list_2
     name: 'list(string, Object, ServiceCallback<NatGatewayListResult>)'
@@ -765,6 +1084,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGatewayListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.list_1
     name: 'list(string, ServiceCallback<NatGatewayListResult>)'
@@ -789,6 +1128,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGatewayListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.listAll
     name: listAll(Object)
@@ -808,6 +1167,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGatewayListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.listAll_2
     name: 'listAll(Object, ServiceCallback<NatGatewayListResult>)'
@@ -832,6 +1211,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGatewayListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.listAll_1
     name: listAll(ServiceCallback<NatGatewayListResult>)
@@ -850,6 +1249,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGatewayListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.listAllNext
     name: 'listAllNext(string, Object)'
@@ -875,6 +1294,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGatewayListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.listAllNext_2
     name: 'listAllNext(string, Object, ServiceCallback<NatGatewayListResult>)'
@@ -903,6 +1342,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGatewayListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.listAllNext_1
     name: 'listAllNext(string, ServiceCallback<NatGatewayListResult>)'
@@ -927,6 +1386,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGatewayListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.listAllNextWithHttpOperationResponse
     name: 'listAllNextWithHttpOperationResponse(string, Object)'
@@ -955,6 +1434,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.NatGatewayListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.listAllWithHttpOperationResponse
     name: listAllWithHttpOperationResponse(Object)
@@ -975,6 +1455,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.NatGatewayListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.listNext
     name: 'listNext(string, Object)'
@@ -1000,6 +1481,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGatewayListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.listNext_2
     name: 'listNext(string, Object, ServiceCallback<NatGatewayListResult>)'
@@ -1028,6 +1529,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGatewayListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.listNext_1
     name: 'listNext(string, ServiceCallback<NatGatewayListResult>)'
@@ -1052,6 +1573,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGatewayListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGatewayListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGatewayListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGatewayListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.listNextWithHttpOperationResponse
     name: 'listNextWithHttpOperationResponse(string, Object)'
@@ -1080,6 +1621,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.NatGatewayListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.listWithHttpOperationResponse
     name: 'listWithHttpOperationResponse(string, Object)'
@@ -1107,6 +1649,7 @@ items:
         type:
           - >-
             Promise<HttpOperationResponse<azure-arm-network.NatGatewayListResult>>
+        description: A promise is returned
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.updateTags
     name: 'updateTags(string, string, TagsObject, Object)'
@@ -1143,6 +1686,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.updateTags_2
     name: >-
@@ -1182,6 +1745,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.updateTags_1
     name: 'updateTags(string, string, TagsObject, ServiceCallback<NatGateway>)'
@@ -1214,6 +1797,26 @@ items:
       return:
         type:
           - Promise<azure-arm-network.NatGateway>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NatGateway} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NatGateway} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NatGateway} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
     package: azure-arm-network
   - uid: azure-arm-network.NatGateways.updateTagsWithHttpOperationResponse
     name: 'updateTagsWithHttpOperationResponse(string, string, TagsObject, Object)'
@@ -1250,6 +1853,7 @@ items:
       return:
         type:
           - Promise<HttpOperationResponse<azure-arm-network.NatGateway>>
+        description: A promise is returned
     package: azure-arm-network
 references:
   - uid: azure-arm-network.NatGateway
