@@ -44,6 +44,8 @@ items:
       - azure-arm-network.AzureFirewallListResult.toString
       - azure-arm-network.AzureFirewallListResult.unshift
       - azure-arm-network.AzureFirewallListResult.values
+      - 'azure-arm-network.AzureFirewallListResult.[Symbol.iterator]'
+      - 'azure-arm-network.AzureFirewallListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1179,12 +1181,54 @@ items:
           - IterableIterator<azure-arm-network.AzureFirewall>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.AzureFirewallListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.AzureFirewall>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.AzureFirewallListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.AzureFirewall>
     name: AzureFirewall>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: AzureFirewall
+        fullName: AzureFirewall
+        uid: azure-arm-network.AzureFirewall
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.AzureFirewall>
+    name: AzureFirewall>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: AzureFirewall
         fullName: AzureFirewall
         uid: azure-arm-network.AzureFirewall
@@ -1222,13 +1266,3 @@ references:
         uid: azure-arm-network.AzureFirewall
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.AzureFirewall>
-    name: AzureFirewall>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: AzureFirewall
-        fullName: AzureFirewall
-        uid: azure-arm-network.AzureFirewall
-      - name: '>'
-        fullName: '>'

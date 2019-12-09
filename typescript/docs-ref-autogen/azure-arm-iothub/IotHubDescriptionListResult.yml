@@ -44,6 +44,8 @@ items:
       - azure-arm-iothub.IotHubDescriptionListResult.toString
       - azure-arm-iothub.IotHubDescriptionListResult.unshift
       - azure-arm-iothub.IotHubDescriptionListResult.values
+      - 'azure-arm-iothub.IotHubDescriptionListResult.[Symbol.iterator]'
+      - 'azure-arm-iothub.IotHubDescriptionListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1190,12 +1192,54 @@ items:
           - IterableIterator<azure-arm-iothub.IotHubDescription>
         description: ''
     package: azure-arm-iothub
+  - uid: 'azure-arm-iothub.IotHubDescriptionListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-iothub.IotHubDescription>
+        description: ''
+    package: azure-arm-iothub
+  - uid: 'azure-arm-iothub.IotHubDescriptionListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-iothub
 references:
   - uid: Array<azure-arm-iothub.IotHubDescription>
     name: IotHubDescription>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: IotHubDescription
+        fullName: IotHubDescription
+        uid: azure-arm-iothub.IotHubDescription
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-iothub.IotHubDescription>
+    name: IotHubDescription>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: IotHubDescription
         fullName: IotHubDescription
         uid: azure-arm-iothub.IotHubDescription
@@ -1233,13 +1277,3 @@ references:
         uid: azure-arm-iothub.IotHubDescription
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-iothub.IotHubDescription>
-    name: IotHubDescription>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: IotHubDescription
-        fullName: IotHubDescription
-        uid: azure-arm-iothub.IotHubDescription
-      - name: '>'
-        fullName: '>'

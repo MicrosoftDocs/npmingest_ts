@@ -64,6 +64,10 @@ items:
       - >-
         azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.unshift
       - azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.values
+      - >-
+        azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.[Symbol.iterator]
+      - >-
+        azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.[Symbol.unscopables]
     langs:
       - typeScript
     type: interface
@@ -1267,12 +1271,57 @@ items:
             IterableIterator<azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
         description: ''
     package: azure-arm-iothub
+  - uid: >-
+      azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.[Symbol.iterator]
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - >-
+            IterableIterator<azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
+        description: ''
+    package: azure-arm-iothub
+  - uid: >-
+      azure-arm-iothub.SharedAccessSignatureAuthorizationRuleListResult.[Symbol.unscopables]
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-iothub
 references:
   - uid: Array<azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
     name: SharedAccessSignatureAuthorizationRule>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: SharedAccessSignatureAuthorizationRule
+        fullName: SharedAccessSignatureAuthorizationRule
+        uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRule
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
+    name: SharedAccessSignatureAuthorizationRule>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: SharedAccessSignatureAuthorizationRule
         fullName: SharedAccessSignatureAuthorizationRule
         uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRule
@@ -1310,13 +1359,3 @@ references:
         uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRule
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-iothub.SharedAccessSignatureAuthorizationRule>
-    name: SharedAccessSignatureAuthorizationRule>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: SharedAccessSignatureAuthorizationRule
-        fullName: SharedAccessSignatureAuthorizationRule
-        uid: azure-arm-iothub.SharedAccessSignatureAuthorizationRule
-      - name: '>'
-        fullName: '>'

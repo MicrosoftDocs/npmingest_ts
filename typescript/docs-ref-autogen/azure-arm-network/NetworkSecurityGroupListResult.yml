@@ -44,6 +44,8 @@ items:
       - azure-arm-network.NetworkSecurityGroupListResult.toString
       - azure-arm-network.NetworkSecurityGroupListResult.unshift
       - azure-arm-network.NetworkSecurityGroupListResult.values
+      - 'azure-arm-network.NetworkSecurityGroupListResult.[Symbol.iterator]'
+      - 'azure-arm-network.NetworkSecurityGroupListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1195,12 +1197,54 @@ items:
           - IterableIterator<azure-arm-network.NetworkSecurityGroup>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.NetworkSecurityGroupListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.NetworkSecurityGroup>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.NetworkSecurityGroupListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.NetworkSecurityGroup>
     name: NetworkSecurityGroup>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: NetworkSecurityGroup
+        fullName: NetworkSecurityGroup
+        uid: azure-arm-network.NetworkSecurityGroup
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.NetworkSecurityGroup>
+    name: NetworkSecurityGroup>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: NetworkSecurityGroup
         fullName: NetworkSecurityGroup
         uid: azure-arm-network.NetworkSecurityGroup
@@ -1238,13 +1282,3 @@ references:
         uid: azure-arm-network.NetworkSecurityGroup
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.NetworkSecurityGroup>
-    name: NetworkSecurityGroup>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: NetworkSecurityGroup
-        fullName: NetworkSecurityGroup
-        uid: azure-arm-network.NetworkSecurityGroup
-      - name: '>'
-        fullName: '>'

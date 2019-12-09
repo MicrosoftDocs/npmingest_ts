@@ -44,6 +44,8 @@ items:
       - azure-arm-network.NetworkInterfaceListResult.toString
       - azure-arm-network.NetworkInterfaceListResult.unshift
       - azure-arm-network.NetworkInterfaceListResult.values
+      - 'azure-arm-network.NetworkInterfaceListResult.[Symbol.iterator]'
+      - 'azure-arm-network.NetworkInterfaceListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1188,12 +1190,54 @@ items:
           - IterableIterator<azure-arm-network.NetworkInterface>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.NetworkInterfaceListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.NetworkInterface>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.NetworkInterfaceListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.NetworkInterface>
     name: NetworkInterface>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: NetworkInterface
+        fullName: NetworkInterface
+        uid: azure-arm-network.NetworkInterface
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.NetworkInterface>
+    name: NetworkInterface>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: NetworkInterface
         fullName: NetworkInterface
         uid: azure-arm-network.NetworkInterface
@@ -1231,13 +1275,3 @@ references:
         uid: azure-arm-network.NetworkInterface
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.NetworkInterface>
-    name: NetworkInterface>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: NetworkInterface
-        fullName: NetworkInterface
-        uid: azure-arm-network.NetworkInterface
-      - name: '>'
-        fullName: '>'

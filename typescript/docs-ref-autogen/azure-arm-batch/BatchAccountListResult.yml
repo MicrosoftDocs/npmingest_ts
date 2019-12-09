@@ -44,6 +44,8 @@ items:
       - azure-arm-batch.BatchAccountListResult.toString
       - azure-arm-batch.BatchAccountListResult.unshift
       - azure-arm-batch.BatchAccountListResult.values
+      - 'azure-arm-batch.BatchAccountListResult.[Symbol.iterator]'
+      - 'azure-arm-batch.BatchAccountListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1175,12 +1177,54 @@ items:
           - IterableIterator<azure-arm-batch.BatchAccount>
         description: ''
     package: azure-arm-batch
+  - uid: 'azure-arm-batch.BatchAccountListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-batch.BatchAccount>
+        description: ''
+    package: azure-arm-batch
+  - uid: 'azure-arm-batch.BatchAccountListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-batch
 references:
   - uid: Array<azure-arm-batch.BatchAccount>
     name: BatchAccount>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: BatchAccount
+        fullName: BatchAccount
+        uid: azure-arm-batch.BatchAccount
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-batch.BatchAccount>
+    name: BatchAccount>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: BatchAccount
         fullName: BatchAccount
         uid: azure-arm-batch.BatchAccount
@@ -1218,13 +1262,3 @@ references:
         uid: azure-arm-batch.BatchAccount
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-batch.BatchAccount>
-    name: BatchAccount>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: BatchAccount
-        fullName: BatchAccount
-        uid: azure-arm-batch.BatchAccount
-      - name: '>'
-        fullName: '>'

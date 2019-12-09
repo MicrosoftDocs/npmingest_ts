@@ -44,6 +44,8 @@ items:
       - azure-arm-network.UsagesListResult.toString
       - azure-arm-network.UsagesListResult.unshift
       - azure-arm-network.UsagesListResult.values
+      - 'azure-arm-network.UsagesListResult.[Symbol.iterator]'
+      - 'azure-arm-network.UsagesListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1136,12 +1138,54 @@ items:
           - IterableIterator<azure-arm-network.Usage>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.UsagesListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.Usage>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.UsagesListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.Usage>
     name: Usage>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: Usage
+        fullName: Usage
+        uid: azure-arm-network.Usage
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.Usage>
+    name: Usage>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: Usage
         fullName: Usage
         uid: azure-arm-network.Usage
@@ -1179,13 +1223,3 @@ references:
         uid: azure-arm-network.Usage
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.Usage>
-    name: Usage>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: Usage
-        fullName: Usage
-        uid: azure-arm-network.Usage
-      - name: '>'
-        fullName: '>'

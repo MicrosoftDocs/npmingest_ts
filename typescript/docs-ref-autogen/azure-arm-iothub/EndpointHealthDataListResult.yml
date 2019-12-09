@@ -44,6 +44,8 @@ items:
       - azure-arm-iothub.EndpointHealthDataListResult.toString
       - azure-arm-iothub.EndpointHealthDataListResult.unshift
       - azure-arm-iothub.EndpointHealthDataListResult.values
+      - 'azure-arm-iothub.EndpointHealthDataListResult.[Symbol.iterator]'
+      - 'azure-arm-iothub.EndpointHealthDataListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1191,12 +1193,54 @@ items:
           - IterableIterator<azure-arm-iothub.EndpointHealthData>
         description: ''
     package: azure-arm-iothub
+  - uid: 'azure-arm-iothub.EndpointHealthDataListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-iothub.EndpointHealthData>
+        description: ''
+    package: azure-arm-iothub
+  - uid: 'azure-arm-iothub.EndpointHealthDataListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-iothub
 references:
   - uid: Array<azure-arm-iothub.EndpointHealthData>
     name: EndpointHealthData>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: EndpointHealthData
+        fullName: EndpointHealthData
+        uid: azure-arm-iothub.EndpointHealthData
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-iothub.EndpointHealthData>
+    name: EndpointHealthData>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: EndpointHealthData
         fullName: EndpointHealthData
         uid: azure-arm-iothub.EndpointHealthData
@@ -1234,13 +1278,3 @@ references:
         uid: azure-arm-iothub.EndpointHealthData
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-iothub.EndpointHealthData>
-    name: EndpointHealthData>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: EndpointHealthData
-        fullName: EndpointHealthData
-        uid: azure-arm-iothub.EndpointHealthData
-      - name: '>'
-        fullName: '>'

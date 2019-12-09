@@ -44,6 +44,8 @@ items:
       - azure-arm-compute.ResourceSkusResult.toString
       - azure-arm-compute.ResourceSkusResult.unshift
       - azure-arm-compute.ResourceSkusResult.values
+      - 'azure-arm-compute.ResourceSkusResult.[Symbol.iterator]'
+      - 'azure-arm-compute.ResourceSkusResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1168,12 +1170,54 @@ items:
           - IterableIterator<azure-arm-compute.ResourceSku>
         description: ''
     package: azure-arm-compute
+  - uid: 'azure-arm-compute.ResourceSkusResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-compute.ResourceSku>
+        description: ''
+    package: azure-arm-compute
+  - uid: 'azure-arm-compute.ResourceSkusResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-compute
 references:
   - uid: Array<azure-arm-compute.ResourceSku>
     name: ResourceSku>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: ResourceSku
+        fullName: ResourceSku
+        uid: azure-arm-compute.ResourceSku
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-compute.ResourceSku>
+    name: ResourceSku>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: ResourceSku
         fullName: ResourceSku
         uid: azure-arm-compute.ResourceSku
@@ -1211,13 +1255,3 @@ references:
         uid: azure-arm-compute.ResourceSku
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-compute.ResourceSku>
-    name: ResourceSku>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: ResourceSku
-        fullName: ResourceSku
-        uid: azure-arm-compute.ResourceSku
-      - name: '>'
-        fullName: '>'

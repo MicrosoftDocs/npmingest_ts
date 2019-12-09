@@ -44,6 +44,8 @@ items:
       - azure-arm-cdn.EndpointListResult.toString
       - azure-arm-cdn.EndpointListResult.unshift
       - azure-arm-cdn.EndpointListResult.values
+      - 'azure-arm-cdn.EndpointListResult.[Symbol.iterator]'
+      - 'azure-arm-cdn.EndpointListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1149,12 +1151,54 @@ items:
           - IterableIterator<azure-arm-cdn.Endpoint>
         description: ''
     package: azure-arm-cdn
+  - uid: 'azure-arm-cdn.EndpointListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-cdn.Endpoint>
+        description: ''
+    package: azure-arm-cdn
+  - uid: 'azure-arm-cdn.EndpointListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-cdn
 references:
   - uid: Array<azure-arm-cdn.Endpoint>
     name: Endpoint>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: Endpoint
+        fullName: Endpoint
+        uid: azure-arm-cdn.Endpoint
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-cdn.Endpoint>
+    name: Endpoint>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: Endpoint
         fullName: Endpoint
         uid: azure-arm-cdn.Endpoint
@@ -1192,13 +1236,3 @@ references:
         uid: azure-arm-cdn.Endpoint
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-cdn.Endpoint>
-    name: Endpoint>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: Endpoint
-        fullName: Endpoint
-        uid: azure-arm-cdn.Endpoint
-      - name: '>'
-        fullName: '>'

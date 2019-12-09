@@ -44,6 +44,10 @@ items:
       - azure-arm-network.WebApplicationFirewallPolicyListResult.toString
       - azure-arm-network.WebApplicationFirewallPolicyListResult.unshift
       - azure-arm-network.WebApplicationFirewallPolicyListResult.values
+      - >-
+        azure-arm-network.WebApplicationFirewallPolicyListResult.[Symbol.iterator]
+      - >-
+        azure-arm-network.WebApplicationFirewallPolicyListResult.[Symbol.unscopables]
     langs:
       - typeScript
     type: interface
@@ -1221,12 +1225,55 @@ items:
           - IterableIterator<azure-arm-network.WebApplicationFirewallPolicy>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.WebApplicationFirewallPolicyListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.WebApplicationFirewallPolicy>
+        description: ''
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.WebApplicationFirewallPolicyListResult.[Symbol.unscopables]
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.WebApplicationFirewallPolicy>
     name: WebApplicationFirewallPolicy>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: WebApplicationFirewallPolicy
+        fullName: WebApplicationFirewallPolicy
+        uid: azure-arm-network.WebApplicationFirewallPolicy
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.WebApplicationFirewallPolicy>
+    name: WebApplicationFirewallPolicy>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: WebApplicationFirewallPolicy
         fullName: WebApplicationFirewallPolicy
         uid: azure-arm-network.WebApplicationFirewallPolicy
@@ -1264,13 +1311,3 @@ references:
         uid: azure-arm-network.WebApplicationFirewallPolicy
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.WebApplicationFirewallPolicy>
-    name: WebApplicationFirewallPolicy>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: WebApplicationFirewallPolicy
-        fullName: WebApplicationFirewallPolicy
-        uid: azure-arm-network.WebApplicationFirewallPolicy
-      - name: '>'
-        fullName: '>'

@@ -44,6 +44,9 @@ items:
       - azure-arm-network.ListP2SVpnServerConfigurationsResult.toString
       - azure-arm-network.ListP2SVpnServerConfigurationsResult.unshift
       - azure-arm-network.ListP2SVpnServerConfigurationsResult.values
+      - 'azure-arm-network.ListP2SVpnServerConfigurationsResult.[Symbol.iterator]'
+      - >-
+        azure-arm-network.ListP2SVpnServerConfigurationsResult.[Symbol.unscopables]
     langs:
       - typeScript
     type: interface
@@ -1210,12 +1213,55 @@ items:
           - IterableIterator<azure-arm-network.P2SVpnServerConfiguration>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.ListP2SVpnServerConfigurationsResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.P2SVpnServerConfiguration>
+        description: ''
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.ListP2SVpnServerConfigurationsResult.[Symbol.unscopables]
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.P2SVpnServerConfiguration>
     name: P2SVpnServerConfiguration>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: P2SVpnServerConfiguration
+        fullName: P2SVpnServerConfiguration
+        uid: azure-arm-network.P2SVpnServerConfiguration
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.P2SVpnServerConfiguration>
+    name: P2SVpnServerConfiguration>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: P2SVpnServerConfiguration
         fullName: P2SVpnServerConfiguration
         uid: azure-arm-network.P2SVpnServerConfiguration
@@ -1253,13 +1299,3 @@ references:
         uid: azure-arm-network.P2SVpnServerConfiguration
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.P2SVpnServerConfiguration>
-    name: P2SVpnServerConfiguration>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: P2SVpnServerConfiguration
-        fullName: P2SVpnServerConfiguration
-        uid: azure-arm-network.P2SVpnServerConfiguration
-      - name: '>'
-        fullName: '>'

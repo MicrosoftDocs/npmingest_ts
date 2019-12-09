@@ -71,6 +71,10 @@ items:
         azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies.unshift
       - >-
         azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies.values
+      - >-
+        azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies.[Symbol.iterator]
+      - >-
+        azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies.[Symbol.unscopables]
     langs:
       - typeScript
     type: interface
@@ -1278,12 +1282,57 @@ items:
             IterableIterator<azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
         description: ''
     package: azure-arm-network
+  - uid: >-
+      azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies.[Symbol.iterator]
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - >-
+            IterableIterator<azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
+        description: ''
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.ApplicationGatewayAvailableSslPredefinedPolicies.[Symbol.unscopables]
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
     name: ApplicationGatewaySslPredefinedPolicy>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: ApplicationGatewaySslPredefinedPolicy
+        fullName: ApplicationGatewaySslPredefinedPolicy
+        uid: azure-arm-network.ApplicationGatewaySslPredefinedPolicy
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
+    name: ApplicationGatewaySslPredefinedPolicy>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: ApplicationGatewaySslPredefinedPolicy
         fullName: ApplicationGatewaySslPredefinedPolicy
         uid: azure-arm-network.ApplicationGatewaySslPredefinedPolicy
@@ -1321,13 +1370,3 @@ references:
         uid: azure-arm-network.ApplicationGatewaySslPredefinedPolicy
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.ApplicationGatewaySslPredefinedPolicy>
-    name: ApplicationGatewaySslPredefinedPolicy>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: ApplicationGatewaySslPredefinedPolicy
-        fullName: ApplicationGatewaySslPredefinedPolicy
-        uid: azure-arm-network.ApplicationGatewaySslPredefinedPolicy
-      - name: '>'
-        fullName: '>'

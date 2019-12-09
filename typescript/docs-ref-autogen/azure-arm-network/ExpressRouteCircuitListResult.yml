@@ -44,6 +44,8 @@ items:
       - azure-arm-network.ExpressRouteCircuitListResult.toString
       - azure-arm-network.ExpressRouteCircuitListResult.unshift
       - azure-arm-network.ExpressRouteCircuitListResult.values
+      - 'azure-arm-network.ExpressRouteCircuitListResult.[Symbol.iterator]'
+      - 'azure-arm-network.ExpressRouteCircuitListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1193,12 +1195,54 @@ items:
           - IterableIterator<azure-arm-network.ExpressRouteCircuit>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.ExpressRouteCircuitListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.ExpressRouteCircuit>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.ExpressRouteCircuitListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.ExpressRouteCircuit>
     name: ExpressRouteCircuit>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: ExpressRouteCircuit
+        fullName: ExpressRouteCircuit
+        uid: azure-arm-network.ExpressRouteCircuit
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.ExpressRouteCircuit>
+    name: ExpressRouteCircuit>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: ExpressRouteCircuit
         fullName: ExpressRouteCircuit
         uid: azure-arm-network.ExpressRouteCircuit
@@ -1236,13 +1280,3 @@ references:
         uid: azure-arm-network.ExpressRouteCircuit
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.ExpressRouteCircuit>
-    name: ExpressRouteCircuit>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: ExpressRouteCircuit
-        fullName: ExpressRouteCircuit
-        uid: azure-arm-network.ExpressRouteCircuit
-      - name: '>'
-        fullName: '>'

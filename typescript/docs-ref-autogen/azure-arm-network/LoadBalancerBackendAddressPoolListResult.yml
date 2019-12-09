@@ -45,6 +45,10 @@ items:
       - azure-arm-network.LoadBalancerBackendAddressPoolListResult.toString
       - azure-arm-network.LoadBalancerBackendAddressPoolListResult.unshift
       - azure-arm-network.LoadBalancerBackendAddressPoolListResult.values
+      - >-
+        azure-arm-network.LoadBalancerBackendAddressPoolListResult.[Symbol.iterator]
+      - >-
+        azure-arm-network.LoadBalancerBackendAddressPoolListResult.[Symbol.unscopables]
     langs:
       - typeScript
     type: interface
@@ -1192,12 +1196,56 @@ items:
           - IterableIterator<azure-arm-network.BackendAddressPool>
         description: ''
     package: azure-arm-network
+  - uid: >-
+      azure-arm-network.LoadBalancerBackendAddressPoolListResult.[Symbol.iterator]
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.BackendAddressPool>
+        description: ''
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.LoadBalancerBackendAddressPoolListResult.[Symbol.unscopables]
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.BackendAddressPool>
     name: BackendAddressPool>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: BackendAddressPool
+        fullName: BackendAddressPool
+        uid: azure-arm-network.BackendAddressPool
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.BackendAddressPool>
+    name: BackendAddressPool>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: BackendAddressPool
         fullName: BackendAddressPool
         uid: azure-arm-network.BackendAddressPool
@@ -1235,13 +1283,3 @@ references:
         uid: azure-arm-network.BackendAddressPool
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.BackendAddressPool>
-    name: BackendAddressPool>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: BackendAddressPool
-        fullName: BackendAddressPool
-        uid: azure-arm-network.BackendAddressPool
-      - name: '>'
-        fullName: '>'

@@ -44,6 +44,8 @@ items:
       - azure-arm-network.ListVpnConnectionsResult.toString
       - azure-arm-network.ListVpnConnectionsResult.unshift
       - azure-arm-network.ListVpnConnectionsResult.values
+      - 'azure-arm-network.ListVpnConnectionsResult.[Symbol.iterator]'
+      - 'azure-arm-network.ListVpnConnectionsResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1183,12 +1185,54 @@ items:
           - IterableIterator<azure-arm-network.VpnConnection>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.ListVpnConnectionsResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.VpnConnection>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.ListVpnConnectionsResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.VpnConnection>
     name: VpnConnection>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: VpnConnection
+        fullName: VpnConnection
+        uid: azure-arm-network.VpnConnection
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.VpnConnection>
+    name: VpnConnection>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: VpnConnection
         fullName: VpnConnection
         uid: azure-arm-network.VpnConnection
@@ -1226,13 +1270,3 @@ references:
         uid: azure-arm-network.VpnConnection
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.VpnConnection>
-    name: VpnConnection>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: VpnConnection
-        fullName: VpnConnection
-        uid: azure-arm-network.VpnConnection
-      - name: '>'
-        fullName: '>'

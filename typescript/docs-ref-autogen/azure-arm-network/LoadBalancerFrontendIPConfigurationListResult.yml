@@ -51,6 +51,10 @@ items:
       - azure-arm-network.LoadBalancerFrontendIPConfigurationListResult.toString
       - azure-arm-network.LoadBalancerFrontendIPConfigurationListResult.unshift
       - azure-arm-network.LoadBalancerFrontendIPConfigurationListResult.values
+      - >-
+        azure-arm-network.LoadBalancerFrontendIPConfigurationListResult.[Symbol.iterator]
+      - >-
+        azure-arm-network.LoadBalancerFrontendIPConfigurationListResult.[Symbol.unscopables]
     langs:
       - typeScript
     type: interface
@@ -1212,12 +1216,56 @@ items:
           - IterableIterator<azure-arm-network.FrontendIPConfiguration>
         description: ''
     package: azure-arm-network
+  - uid: >-
+      azure-arm-network.LoadBalancerFrontendIPConfigurationListResult.[Symbol.iterator]
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.FrontendIPConfiguration>
+        description: ''
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.LoadBalancerFrontendIPConfigurationListResult.[Symbol.unscopables]
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.FrontendIPConfiguration>
     name: FrontendIPConfiguration>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: FrontendIPConfiguration
+        fullName: FrontendIPConfiguration
+        uid: azure-arm-network.FrontendIPConfiguration
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.FrontendIPConfiguration>
+    name: FrontendIPConfiguration>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: FrontendIPConfiguration
         fullName: FrontendIPConfiguration
         uid: azure-arm-network.FrontendIPConfiguration
@@ -1255,13 +1303,3 @@ references:
         uid: azure-arm-network.FrontendIPConfiguration
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.FrontendIPConfiguration>
-    name: FrontendIPConfiguration>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: FrontendIPConfiguration
-        fullName: FrontendIPConfiguration
-        uid: azure-arm-network.FrontendIPConfiguration
-      - name: '>'
-        fullName: '>'

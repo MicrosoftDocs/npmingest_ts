@@ -47,6 +47,10 @@ items:
       - azure-arm-network.VirtualNetworkGatewayListConnectionsResult.toString
       - azure-arm-network.VirtualNetworkGatewayListConnectionsResult.unshift
       - azure-arm-network.VirtualNetworkGatewayListConnectionsResult.values
+      - >-
+        azure-arm-network.VirtualNetworkGatewayListConnectionsResult.[Symbol.iterator]
+      - >-
+        azure-arm-network.VirtualNetworkGatewayListConnectionsResult.[Symbol.unscopables]
     langs:
       - typeScript
     type: interface
@@ -1251,12 +1255,58 @@ items:
             IterableIterator<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
         description: ''
     package: azure-arm-network
+  - uid: >-
+      azure-arm-network.VirtualNetworkGatewayListConnectionsResult.[Symbol.iterator]
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - >-
+            IterableIterator<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
+        description: ''
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.VirtualNetworkGatewayListConnectionsResult.[Symbol.unscopables]
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
     name: VirtualNetworkGatewayConnectionListEntity>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: VirtualNetworkGatewayConnectionListEntity
+        fullName: VirtualNetworkGatewayConnectionListEntity
+        uid: azure-arm-network.VirtualNetworkGatewayConnectionListEntity
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      IterableIterator<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
+    name: VirtualNetworkGatewayConnectionListEntity>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: VirtualNetworkGatewayConnectionListEntity
         fullName: VirtualNetworkGatewayConnectionListEntity
         uid: azure-arm-network.VirtualNetworkGatewayConnectionListEntity
@@ -1294,14 +1344,3 @@ references:
         uid: azure-arm-network.VirtualNetworkGatewayConnectionListEntity
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: >-
-      IterableIterator<azure-arm-network.VirtualNetworkGatewayConnectionListEntity>
-    name: VirtualNetworkGatewayConnectionListEntity>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: VirtualNetworkGatewayConnectionListEntity
-        fullName: VirtualNetworkGatewayConnectionListEntity
-        uid: azure-arm-network.VirtualNetworkGatewayConnectionListEntity
-      - name: '>'
-        fullName: '>'

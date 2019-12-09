@@ -44,6 +44,10 @@ items:
       - azure-arm-network.LoadBalancerLoadBalancingRuleListResult.toString
       - azure-arm-network.LoadBalancerLoadBalancingRuleListResult.unshift
       - azure-arm-network.LoadBalancerLoadBalancingRuleListResult.values
+      - >-
+        azure-arm-network.LoadBalancerLoadBalancingRuleListResult.[Symbol.iterator]
+      - >-
+        azure-arm-network.LoadBalancerLoadBalancingRuleListResult.[Symbol.unscopables]
     langs:
       - typeScript
     type: interface
@@ -1190,12 +1194,56 @@ items:
           - IterableIterator<azure-arm-network.LoadBalancingRule>
         description: ''
     package: azure-arm-network
+  - uid: >-
+      azure-arm-network.LoadBalancerLoadBalancingRuleListResult.[Symbol.iterator]
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.LoadBalancingRule>
+        description: ''
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.LoadBalancerLoadBalancingRuleListResult.[Symbol.unscopables]
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.LoadBalancingRule>
     name: LoadBalancingRule>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: LoadBalancingRule
+        fullName: LoadBalancingRule
+        uid: azure-arm-network.LoadBalancingRule
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.LoadBalancingRule>
+    name: LoadBalancingRule>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: LoadBalancingRule
         fullName: LoadBalancingRule
         uid: azure-arm-network.LoadBalancingRule
@@ -1233,13 +1281,3 @@ references:
         uid: azure-arm-network.LoadBalancingRule
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.LoadBalancingRule>
-    name: LoadBalancingRule>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: LoadBalancingRule
-        fullName: LoadBalancingRule
-        uid: azure-arm-network.LoadBalancingRule
-      - name: '>'
-        fullName: '>'

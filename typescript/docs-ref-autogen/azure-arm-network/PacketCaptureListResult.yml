@@ -43,6 +43,8 @@ items:
       - azure-arm-network.PacketCaptureListResult.toString
       - azure-arm-network.PacketCaptureListResult.unshift
       - azure-arm-network.PacketCaptureListResult.values
+      - 'azure-arm-network.PacketCaptureListResult.[Symbol.iterator]'
+      - 'azure-arm-network.PacketCaptureListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1176,12 +1178,54 @@ items:
           - IterableIterator<azure-arm-network.PacketCaptureResult>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.PacketCaptureListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.PacketCaptureResult>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.PacketCaptureListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.PacketCaptureResult>
     name: PacketCaptureResult>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: PacketCaptureResult
+        fullName: PacketCaptureResult
+        uid: azure-arm-network.PacketCaptureResult
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.PacketCaptureResult>
+    name: PacketCaptureResult>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: PacketCaptureResult
         fullName: PacketCaptureResult
         uid: azure-arm-network.PacketCaptureResult
@@ -1219,13 +1263,3 @@ references:
         uid: azure-arm-network.PacketCaptureResult
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.PacketCaptureResult>
-    name: PacketCaptureResult>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: PacketCaptureResult
-        fullName: PacketCaptureResult
-        uid: azure-arm-network.PacketCaptureResult
-      - name: '>'
-        fullName: '>'

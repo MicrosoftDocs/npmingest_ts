@@ -44,6 +44,8 @@ items:
       - azure-arm-network.VirtualNetworkGatewayListResult.toString
       - azure-arm-network.VirtualNetworkGatewayListResult.unshift
       - azure-arm-network.VirtualNetworkGatewayListResult.values
+      - 'azure-arm-network.VirtualNetworkGatewayListResult.[Symbol.iterator]'
+      - 'azure-arm-network.VirtualNetworkGatewayListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1197,12 +1199,54 @@ items:
           - IterableIterator<azure-arm-network.VirtualNetworkGateway>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.VirtualNetworkGatewayListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.VirtualNetworkGateway>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.VirtualNetworkGatewayListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.VirtualNetworkGateway>
     name: VirtualNetworkGateway>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: VirtualNetworkGateway
+        fullName: VirtualNetworkGateway
+        uid: azure-arm-network.VirtualNetworkGateway
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.VirtualNetworkGateway>
+    name: VirtualNetworkGateway>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: VirtualNetworkGateway
         fullName: VirtualNetworkGateway
         uid: azure-arm-network.VirtualNetworkGateway
@@ -1240,13 +1284,3 @@ references:
         uid: azure-arm-network.VirtualNetworkGateway
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.VirtualNetworkGateway>
-    name: VirtualNetworkGateway>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: VirtualNetworkGateway
-        fullName: VirtualNetworkGateway
-        uid: azure-arm-network.VirtualNetworkGateway
-      - name: '>'
-        fullName: '>'

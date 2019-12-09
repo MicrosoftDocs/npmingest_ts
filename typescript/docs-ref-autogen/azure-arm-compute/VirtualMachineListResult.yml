@@ -44,6 +44,8 @@ items:
       - azure-arm-compute.VirtualMachineListResult.toString
       - azure-arm-compute.VirtualMachineListResult.unshift
       - azure-arm-compute.VirtualMachineListResult.values
+      - 'azure-arm-compute.VirtualMachineListResult.[Symbol.iterator]'
+      - 'azure-arm-compute.VirtualMachineListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1185,12 +1187,54 @@ items:
           - IterableIterator<azure-arm-compute.VirtualMachine>
         description: ''
     package: azure-arm-compute
+  - uid: 'azure-arm-compute.VirtualMachineListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-compute.VirtualMachine>
+        description: ''
+    package: azure-arm-compute
+  - uid: 'azure-arm-compute.VirtualMachineListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-compute
 references:
   - uid: Array<azure-arm-compute.VirtualMachine>
     name: VirtualMachine>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: VirtualMachine
+        fullName: VirtualMachine
+        uid: azure-arm-compute.VirtualMachine
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-compute.VirtualMachine>
+    name: VirtualMachine>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: VirtualMachine
         fullName: VirtualMachine
         uid: azure-arm-compute.VirtualMachine
@@ -1228,13 +1272,3 @@ references:
         uid: azure-arm-compute.VirtualMachine
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-compute.VirtualMachine>
-    name: VirtualMachine>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: VirtualMachine
-        fullName: VirtualMachine
-        uid: azure-arm-compute.VirtualMachine
-      - name: '>'
-        fullName: '>'

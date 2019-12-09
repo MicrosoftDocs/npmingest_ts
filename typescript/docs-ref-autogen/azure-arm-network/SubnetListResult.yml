@@ -44,6 +44,8 @@ items:
       - azure-arm-network.SubnetListResult.toString
       - azure-arm-network.SubnetListResult.unshift
       - azure-arm-network.SubnetListResult.values
+      - 'azure-arm-network.SubnetListResult.[Symbol.iterator]'
+      - 'azure-arm-network.SubnetListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1139,12 +1141,54 @@ items:
           - IterableIterator<azure-arm-network.Subnet>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.SubnetListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.Subnet>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.SubnetListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.Subnet>
     name: Subnet>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: Subnet
+        fullName: Subnet
+        uid: azure-arm-network.Subnet
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.Subnet>
+    name: Subnet>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: Subnet
         fullName: Subnet
         uid: azure-arm-network.Subnet
@@ -1182,13 +1226,3 @@ references:
         uid: azure-arm-network.Subnet
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.Subnet>
-    name: Subnet>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: Subnet
-        fullName: Subnet
-        uid: azure-arm-network.Subnet
-      - name: '>'
-        fullName: '>'

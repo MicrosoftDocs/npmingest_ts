@@ -49,6 +49,10 @@ items:
       - azure-arm-network.PeerExpressRouteCircuitConnectionListResult.toString
       - azure-arm-network.PeerExpressRouteCircuitConnectionListResult.unshift
       - azure-arm-network.PeerExpressRouteCircuitConnectionListResult.values
+      - >-
+        azure-arm-network.PeerExpressRouteCircuitConnectionListResult.[Symbol.iterator]
+      - >-
+        azure-arm-network.PeerExpressRouteCircuitConnectionListResult.[Symbol.unscopables]
     langs:
       - typeScript
     type: interface
@@ -1241,12 +1245,57 @@ items:
             IterableIterator<azure-arm-network.PeerExpressRouteCircuitConnection>
         description: ''
     package: azure-arm-network
+  - uid: >-
+      azure-arm-network.PeerExpressRouteCircuitConnectionListResult.[Symbol.iterator]
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - >-
+            IterableIterator<azure-arm-network.PeerExpressRouteCircuitConnection>
+        description: ''
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.PeerExpressRouteCircuitConnectionListResult.[Symbol.unscopables]
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.PeerExpressRouteCircuitConnection>
     name: PeerExpressRouteCircuitConnection>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: PeerExpressRouteCircuitConnection
+        fullName: PeerExpressRouteCircuitConnection
+        uid: azure-arm-network.PeerExpressRouteCircuitConnection
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.PeerExpressRouteCircuitConnection>
+    name: PeerExpressRouteCircuitConnection>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: PeerExpressRouteCircuitConnection
         fullName: PeerExpressRouteCircuitConnection
         uid: azure-arm-network.PeerExpressRouteCircuitConnection
@@ -1284,13 +1333,3 @@ references:
         uid: azure-arm-network.PeerExpressRouteCircuitConnection
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.PeerExpressRouteCircuitConnection>
-    name: PeerExpressRouteCircuitConnection>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: PeerExpressRouteCircuitConnection
-        fullName: PeerExpressRouteCircuitConnection
-        uid: azure-arm-network.PeerExpressRouteCircuitConnection
-      - name: '>'
-        fullName: '>'

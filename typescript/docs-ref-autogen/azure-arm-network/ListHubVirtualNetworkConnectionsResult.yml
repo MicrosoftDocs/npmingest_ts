@@ -44,6 +44,10 @@ items:
       - azure-arm-network.ListHubVirtualNetworkConnectionsResult.toString
       - azure-arm-network.ListHubVirtualNetworkConnectionsResult.unshift
       - azure-arm-network.ListHubVirtualNetworkConnectionsResult.values
+      - >-
+        azure-arm-network.ListHubVirtualNetworkConnectionsResult.[Symbol.iterator]
+      - >-
+        azure-arm-network.ListHubVirtualNetworkConnectionsResult.[Symbol.unscopables]
     langs:
       - typeScript
     type: interface
@@ -1209,12 +1213,55 @@ items:
           - IterableIterator<azure-arm-network.HubVirtualNetworkConnection>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.ListHubVirtualNetworkConnectionsResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.HubVirtualNetworkConnection>
+        description: ''
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.ListHubVirtualNetworkConnectionsResult.[Symbol.unscopables]
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.HubVirtualNetworkConnection>
     name: HubVirtualNetworkConnection>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: HubVirtualNetworkConnection
+        fullName: HubVirtualNetworkConnection
+        uid: azure-arm-network.HubVirtualNetworkConnection
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.HubVirtualNetworkConnection>
+    name: HubVirtualNetworkConnection>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: HubVirtualNetworkConnection
         fullName: HubVirtualNetworkConnection
         uid: azure-arm-network.HubVirtualNetworkConnection
@@ -1252,13 +1299,3 @@ references:
         uid: azure-arm-network.HubVirtualNetworkConnection
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.HubVirtualNetworkConnection>
-    name: HubVirtualNetworkConnection>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: HubVirtualNetworkConnection
-        fullName: HubVirtualNetworkConnection
-        uid: azure-arm-network.HubVirtualNetworkConnection
-      - name: '>'
-        fullName: '>'

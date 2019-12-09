@@ -44,6 +44,8 @@ items:
       - azure-arm-cdn.ProfileListResult.toString
       - azure-arm-cdn.ProfileListResult.unshift
       - azure-arm-cdn.ProfileListResult.values
+      - 'azure-arm-cdn.ProfileListResult.[Symbol.iterator]'
+      - 'azure-arm-cdn.ProfileListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1143,12 +1145,54 @@ items:
           - IterableIterator<azure-arm-cdn.Profile>
         description: ''
     package: azure-arm-cdn
+  - uid: 'azure-arm-cdn.ProfileListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-cdn.Profile>
+        description: ''
+    package: azure-arm-cdn
+  - uid: 'azure-arm-cdn.ProfileListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-cdn
 references:
   - uid: Array<azure-arm-cdn.Profile>
     name: Profile>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: Profile
+        fullName: Profile
+        uid: azure-arm-cdn.Profile
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-cdn.Profile>
+    name: Profile>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: Profile
         fullName: Profile
         uid: azure-arm-cdn.Profile
@@ -1186,13 +1230,3 @@ references:
         uid: azure-arm-cdn.Profile
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-cdn.Profile>
-    name: Profile>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: Profile
-        fullName: Profile
-        uid: azure-arm-cdn.Profile
-      - name: '>'
-        fullName: '>'

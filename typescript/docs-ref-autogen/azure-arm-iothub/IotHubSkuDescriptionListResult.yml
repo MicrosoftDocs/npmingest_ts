@@ -44,6 +44,8 @@ items:
       - azure-arm-iothub.IotHubSkuDescriptionListResult.toString
       - azure-arm-iothub.IotHubSkuDescriptionListResult.unshift
       - azure-arm-iothub.IotHubSkuDescriptionListResult.values
+      - 'azure-arm-iothub.IotHubSkuDescriptionListResult.[Symbol.iterator]'
+      - 'azure-arm-iothub.IotHubSkuDescriptionListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1195,12 +1197,54 @@ items:
           - IterableIterator<azure-arm-iothub.IotHubSkuDescription>
         description: ''
     package: azure-arm-iothub
+  - uid: 'azure-arm-iothub.IotHubSkuDescriptionListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-iothub.IotHubSkuDescription>
+        description: ''
+    package: azure-arm-iothub
+  - uid: 'azure-arm-iothub.IotHubSkuDescriptionListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-iothub
 references:
   - uid: Array<azure-arm-iothub.IotHubSkuDescription>
     name: IotHubSkuDescription>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: IotHubSkuDescription
+        fullName: IotHubSkuDescription
+        uid: azure-arm-iothub.IotHubSkuDescription
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-iothub.IotHubSkuDescription>
+    name: IotHubSkuDescription>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: IotHubSkuDescription
         fullName: IotHubSkuDescription
         uid: azure-arm-iothub.IotHubSkuDescription
@@ -1238,13 +1282,3 @@ references:
         uid: azure-arm-iothub.IotHubSkuDescription
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-iothub.IotHubSkuDescription>
-    name: IotHubSkuDescription>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: IotHubSkuDescription
-        fullName: IotHubSkuDescription
-        uid: azure-arm-iothub.IotHubSkuDescription
-      - name: '>'
-        fullName: '>'

@@ -44,6 +44,8 @@ items:
       - azure-arm-network.ListVpnSitesResult.toString
       - azure-arm-network.ListVpnSitesResult.unshift
       - azure-arm-network.ListVpnSitesResult.values
+      - 'azure-arm-network.ListVpnSitesResult.[Symbol.iterator]'
+      - 'azure-arm-network.ListVpnSitesResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1143,12 +1145,54 @@ items:
           - IterableIterator<azure-arm-network.VpnSite>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.ListVpnSitesResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.VpnSite>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.ListVpnSitesResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.VpnSite>
     name: VpnSite>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: VpnSite
+        fullName: VpnSite
+        uid: azure-arm-network.VpnSite
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.VpnSite>
+    name: VpnSite>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: VpnSite
         fullName: VpnSite
         uid: azure-arm-network.VpnSite
@@ -1186,13 +1230,3 @@ references:
         uid: azure-arm-network.VpnSite
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.VpnSite>
-    name: VpnSite>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: VpnSite
-        fullName: VpnSite
-        uid: azure-arm-network.VpnSite
-      - name: '>'
-        fullName: '>'

@@ -44,6 +44,8 @@ items:
       - azure-arm-network.BgpServiceCommunityListResult.toString
       - azure-arm-network.BgpServiceCommunityListResult.unshift
       - azure-arm-network.BgpServiceCommunityListResult.values
+      - 'azure-arm-network.BgpServiceCommunityListResult.[Symbol.iterator]'
+      - 'azure-arm-network.BgpServiceCommunityListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1193,12 +1195,54 @@ items:
           - IterableIterator<azure-arm-network.BgpServiceCommunity>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.BgpServiceCommunityListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.BgpServiceCommunity>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.BgpServiceCommunityListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.BgpServiceCommunity>
     name: BgpServiceCommunity>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: BgpServiceCommunity
+        fullName: BgpServiceCommunity
+        uid: azure-arm-network.BgpServiceCommunity
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.BgpServiceCommunity>
+    name: BgpServiceCommunity>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: BgpServiceCommunity
         fullName: BgpServiceCommunity
         uid: azure-arm-network.BgpServiceCommunity
@@ -1236,13 +1280,3 @@ references:
         uid: azure-arm-network.BgpServiceCommunity
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.BgpServiceCommunity>
-    name: BgpServiceCommunity>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: BgpServiceCommunity
-        fullName: BgpServiceCommunity
-        uid: azure-arm-network.BgpServiceCommunity
-      - name: '>'
-        fullName: '>'

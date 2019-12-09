@@ -44,6 +44,8 @@ items:
       - azure-arm-iothub.EventHubConsumerGroupsListResult.toString
       - azure-arm-iothub.EventHubConsumerGroupsListResult.unshift
       - azure-arm-iothub.EventHubConsumerGroupsListResult.values
+      - 'azure-arm-iothub.EventHubConsumerGroupsListResult.[Symbol.iterator]'
+      - 'azure-arm-iothub.EventHubConsumerGroupsListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1205,12 +1207,54 @@ items:
           - IterableIterator<azure-arm-iothub.EventHubConsumerGroupInfo>
         description: ''
     package: azure-arm-iothub
+  - uid: 'azure-arm-iothub.EventHubConsumerGroupsListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-iothub.EventHubConsumerGroupInfo>
+        description: ''
+    package: azure-arm-iothub
+  - uid: 'azure-arm-iothub.EventHubConsumerGroupsListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-iothub
 references:
   - uid: Array<azure-arm-iothub.EventHubConsumerGroupInfo>
     name: EventHubConsumerGroupInfo>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: EventHubConsumerGroupInfo
+        fullName: EventHubConsumerGroupInfo
+        uid: azure-arm-iothub.EventHubConsumerGroupInfo
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-iothub.EventHubConsumerGroupInfo>
+    name: EventHubConsumerGroupInfo>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: EventHubConsumerGroupInfo
         fullName: EventHubConsumerGroupInfo
         uid: azure-arm-iothub.EventHubConsumerGroupInfo
@@ -1248,13 +1292,3 @@ references:
         uid: azure-arm-iothub.EventHubConsumerGroupInfo
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-iothub.EventHubConsumerGroupInfo>
-    name: EventHubConsumerGroupInfo>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: EventHubConsumerGroupInfo
-        fullName: EventHubConsumerGroupInfo
-        uid: azure-arm-iothub.EventHubConsumerGroupInfo
-      - name: '>'
-        fullName: '>'

@@ -44,6 +44,8 @@ items:
       - azure-arm-network.VirtualNetworkPeeringListResult.toString
       - azure-arm-network.VirtualNetworkPeeringListResult.unshift
       - azure-arm-network.VirtualNetworkPeeringListResult.values
+      - 'azure-arm-network.VirtualNetworkPeeringListResult.[Symbol.iterator]'
+      - 'azure-arm-network.VirtualNetworkPeeringListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1201,12 +1203,54 @@ items:
           - IterableIterator<azure-arm-network.VirtualNetworkPeering>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.VirtualNetworkPeeringListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.VirtualNetworkPeering>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.VirtualNetworkPeeringListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.VirtualNetworkPeering>
     name: VirtualNetworkPeering>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: VirtualNetworkPeering
+        fullName: VirtualNetworkPeering
+        uid: azure-arm-network.VirtualNetworkPeering
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.VirtualNetworkPeering>
+    name: VirtualNetworkPeering>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: VirtualNetworkPeering
         fullName: VirtualNetworkPeering
         uid: azure-arm-network.VirtualNetworkPeering
@@ -1244,13 +1288,3 @@ references:
         uid: azure-arm-network.VirtualNetworkPeering
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.VirtualNetworkPeering>
-    name: VirtualNetworkPeering>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: VirtualNetworkPeering
-        fullName: VirtualNetworkPeering
-        uid: azure-arm-network.VirtualNetworkPeering
-      - name: '>'
-        fullName: '>'

@@ -45,6 +45,10 @@ items:
       - azure-arm-compute.VirtualMachineScaleSetListWithLinkResult.toString
       - azure-arm-compute.VirtualMachineScaleSetListWithLinkResult.unshift
       - azure-arm-compute.VirtualMachineScaleSetListWithLinkResult.values
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetListWithLinkResult.[Symbol.iterator]
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetListWithLinkResult.[Symbol.unscopables]
     langs:
       - typeScript
     type: interface
@@ -1204,12 +1208,56 @@ items:
           - IterableIterator<azure-arm-compute.VirtualMachineScaleSet>
         description: ''
     package: azure-arm-compute
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetListWithLinkResult.[Symbol.iterator]
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-compute.VirtualMachineScaleSet>
+        description: ''
+    package: azure-arm-compute
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetListWithLinkResult.[Symbol.unscopables]
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-compute
 references:
   - uid: Array<azure-arm-compute.VirtualMachineScaleSet>
     name: VirtualMachineScaleSet>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: VirtualMachineScaleSet
+        fullName: VirtualMachineScaleSet
+        uid: azure-arm-compute.VirtualMachineScaleSet
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-compute.VirtualMachineScaleSet>
+    name: VirtualMachineScaleSet>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: VirtualMachineScaleSet
         fullName: VirtualMachineScaleSet
         uid: azure-arm-compute.VirtualMachineScaleSet
@@ -1247,13 +1295,3 @@ references:
         uid: azure-arm-compute.VirtualMachineScaleSet
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-compute.VirtualMachineScaleSet>
-    name: VirtualMachineScaleSet>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: VirtualMachineScaleSet
-        fullName: VirtualMachineScaleSet
-        uid: azure-arm-compute.VirtualMachineScaleSet
-      - name: '>'
-        fullName: '>'

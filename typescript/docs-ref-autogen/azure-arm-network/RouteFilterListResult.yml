@@ -44,6 +44,8 @@ items:
       - azure-arm-network.RouteFilterListResult.toString
       - azure-arm-network.RouteFilterListResult.unshift
       - azure-arm-network.RouteFilterListResult.values
+      - 'azure-arm-network.RouteFilterListResult.[Symbol.iterator]'
+      - 'azure-arm-network.RouteFilterListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1164,12 +1166,54 @@ items:
           - IterableIterator<azure-arm-network.RouteFilter>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.RouteFilterListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.RouteFilter>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.RouteFilterListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.RouteFilter>
     name: RouteFilter>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: RouteFilter
+        fullName: RouteFilter
+        uid: azure-arm-network.RouteFilter
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.RouteFilter>
+    name: RouteFilter>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: RouteFilter
         fullName: RouteFilter
         uid: azure-arm-network.RouteFilter
@@ -1207,13 +1251,3 @@ references:
         uid: azure-arm-network.RouteFilter
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.RouteFilter>
-    name: RouteFilter>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: RouteFilter
-        fullName: RouteFilter
-        uid: azure-arm-network.RouteFilter
-      - name: '>'
-        fullName: '>'

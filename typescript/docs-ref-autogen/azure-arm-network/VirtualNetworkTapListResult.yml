@@ -44,6 +44,8 @@ items:
       - azure-arm-network.VirtualNetworkTapListResult.toString
       - azure-arm-network.VirtualNetworkTapListResult.unshift
       - azure-arm-network.VirtualNetworkTapListResult.values
+      - 'azure-arm-network.VirtualNetworkTapListResult.[Symbol.iterator]'
+      - 'azure-arm-network.VirtualNetworkTapListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1190,12 +1192,54 @@ items:
           - IterableIterator<azure-arm-network.VirtualNetworkTap>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.VirtualNetworkTapListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.VirtualNetworkTap>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.VirtualNetworkTapListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.VirtualNetworkTap>
     name: VirtualNetworkTap>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: VirtualNetworkTap
+        fullName: VirtualNetworkTap
+        uid: azure-arm-network.VirtualNetworkTap
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.VirtualNetworkTap>
+    name: VirtualNetworkTap>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: VirtualNetworkTap
         fullName: VirtualNetworkTap
         uid: azure-arm-network.VirtualNetworkTap
@@ -1233,13 +1277,3 @@ references:
         uid: azure-arm-network.VirtualNetworkTap
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.VirtualNetworkTap>
-    name: VirtualNetworkTap>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: VirtualNetworkTap
-        fullName: VirtualNetworkTap
-        uid: azure-arm-network.VirtualNetworkTap
-      - name: '>'
-        fullName: '>'

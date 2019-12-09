@@ -44,6 +44,8 @@ items:
       - azure-arm-network.AuthorizationListResult.toString
       - azure-arm-network.AuthorizationListResult.unshift
       - azure-arm-network.AuthorizationListResult.values
+      - 'azure-arm-network.AuthorizationListResult.[Symbol.iterator]'
+      - 'azure-arm-network.AuthorizationListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1228,12 +1230,54 @@ items:
           - IterableIterator<azure-arm-network.ExpressRouteCircuitAuthorization>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.AuthorizationListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.ExpressRouteCircuitAuthorization>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.AuthorizationListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.ExpressRouteCircuitAuthorization>
     name: ExpressRouteCircuitAuthorization>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: ExpressRouteCircuitAuthorization
+        fullName: ExpressRouteCircuitAuthorization
+        uid: azure-arm-network.ExpressRouteCircuitAuthorization
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.ExpressRouteCircuitAuthorization>
+    name: ExpressRouteCircuitAuthorization>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: ExpressRouteCircuitAuthorization
         fullName: ExpressRouteCircuitAuthorization
         uid: azure-arm-network.ExpressRouteCircuitAuthorization
@@ -1271,13 +1315,3 @@ references:
         uid: azure-arm-network.ExpressRouteCircuitAuthorization
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.ExpressRouteCircuitAuthorization>
-    name: ExpressRouteCircuitAuthorization>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: ExpressRouteCircuitAuthorization
-        fullName: ExpressRouteCircuitAuthorization
-        uid: azure-arm-network.ExpressRouteCircuitAuthorization
-      - name: '>'
-        fullName: '>'

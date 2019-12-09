@@ -44,6 +44,8 @@ items:
       - azure-arm-network.ListP2SVpnGatewaysResult.toString
       - azure-arm-network.ListP2SVpnGatewaysResult.unshift
       - azure-arm-network.ListP2SVpnGatewaysResult.values
+      - 'azure-arm-network.ListP2SVpnGatewaysResult.[Symbol.iterator]'
+      - 'azure-arm-network.ListP2SVpnGatewaysResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1183,12 +1185,54 @@ items:
           - IterableIterator<azure-arm-network.P2SVpnGateway>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.ListP2SVpnGatewaysResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.P2SVpnGateway>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.ListP2SVpnGatewaysResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.P2SVpnGateway>
     name: P2SVpnGateway>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: P2SVpnGateway
+        fullName: P2SVpnGateway
+        uid: azure-arm-network.P2SVpnGateway
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.P2SVpnGateway>
+    name: P2SVpnGateway>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: P2SVpnGateway
         fullName: P2SVpnGateway
         uid: azure-arm-network.P2SVpnGateway
@@ -1226,13 +1270,3 @@ references:
         uid: azure-arm-network.P2SVpnGateway
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.P2SVpnGateway>
-    name: P2SVpnGateway>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: P2SVpnGateway
-        fullName: P2SVpnGateway
-        uid: azure-arm-network.P2SVpnGateway
-      - name: '>'
-        fullName: '>'

@@ -44,6 +44,8 @@ items:
       - azure-arm-network.RouteListResult.toString
       - azure-arm-network.RouteListResult.unshift
       - azure-arm-network.RouteListResult.values
+      - 'azure-arm-network.RouteListResult.[Symbol.iterator]'
+      - 'azure-arm-network.RouteListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1136,12 +1138,54 @@ items:
           - IterableIterator<azure-arm-network.Route>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.RouteListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.Route>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.RouteListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.Route>
     name: Route>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: Route
+        fullName: Route
+        uid: azure-arm-network.Route
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.Route>
+    name: Route>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: Route
         fullName: Route
         uid: azure-arm-network.Route
@@ -1179,13 +1223,3 @@ references:
         uid: azure-arm-network.Route
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.Route>
-    name: Route>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: Route
-        fullName: Route
-        uid: azure-arm-network.Route
-      - name: '>'
-        fullName: '>'

@@ -44,6 +44,8 @@ items:
       - azure-arm-compute.GalleryList.toString
       - azure-arm-compute.GalleryList.unshift
       - azure-arm-compute.GalleryList.values
+      - 'azure-arm-compute.GalleryList.[Symbol.iterator]'
+      - 'azure-arm-compute.GalleryList.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1143,12 +1145,54 @@ items:
           - IterableIterator<azure-arm-compute.Gallery>
         description: ''
     package: azure-arm-compute
+  - uid: 'azure-arm-compute.GalleryList.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-compute.Gallery>
+        description: ''
+    package: azure-arm-compute
+  - uid: 'azure-arm-compute.GalleryList.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-compute
 references:
   - uid: Array<azure-arm-compute.Gallery>
     name: Gallery>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: Gallery
+        fullName: Gallery
+        uid: azure-arm-compute.Gallery
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-compute.Gallery>
+    name: Gallery>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: Gallery
         fullName: Gallery
         uid: azure-arm-compute.Gallery
@@ -1186,13 +1230,3 @@ references:
         uid: azure-arm-compute.Gallery
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-compute.Gallery>
-    name: Gallery>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: Gallery
-        fullName: Gallery
-        uid: azure-arm-compute.Gallery
-      - name: '>'
-        fullName: '>'

@@ -47,6 +47,10 @@ items:
       - azure-arm-compute.VirtualMachineScaleSetListOSUpgradeHistory.toString
       - azure-arm-compute.VirtualMachineScaleSetListOSUpgradeHistory.unshift
       - azure-arm-compute.VirtualMachineScaleSetListOSUpgradeHistory.values
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetListOSUpgradeHistory.[Symbol.iterator]
+      - >-
+        azure-arm-compute.VirtualMachineScaleSetListOSUpgradeHistory.[Symbol.unscopables]
     langs:
       - typeScript
     type: interface
@@ -1244,12 +1248,57 @@ items:
             IterableIterator<azure-arm-compute.UpgradeOperationHistoricalStatusInfo>
         description: ''
     package: azure-arm-compute
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetListOSUpgradeHistory.[Symbol.iterator]
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - >-
+            IterableIterator<azure-arm-compute.UpgradeOperationHistoricalStatusInfo>
+        description: ''
+    package: azure-arm-compute
+  - uid: >-
+      azure-arm-compute.VirtualMachineScaleSetListOSUpgradeHistory.[Symbol.unscopables]
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-compute
 references:
   - uid: Array<azure-arm-compute.UpgradeOperationHistoricalStatusInfo>
     name: UpgradeOperationHistoricalStatusInfo>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: UpgradeOperationHistoricalStatusInfo
+        fullName: UpgradeOperationHistoricalStatusInfo
+        uid: azure-arm-compute.UpgradeOperationHistoricalStatusInfo
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-compute.UpgradeOperationHistoricalStatusInfo>
+    name: UpgradeOperationHistoricalStatusInfo>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: UpgradeOperationHistoricalStatusInfo
         fullName: UpgradeOperationHistoricalStatusInfo
         uid: azure-arm-compute.UpgradeOperationHistoricalStatusInfo
@@ -1287,13 +1336,3 @@ references:
         uid: azure-arm-compute.UpgradeOperationHistoricalStatusInfo
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-compute.UpgradeOperationHistoricalStatusInfo>
-    name: UpgradeOperationHistoricalStatusInfo>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: UpgradeOperationHistoricalStatusInfo
-        fullName: UpgradeOperationHistoricalStatusInfo
-        uid: azure-arm-compute.UpgradeOperationHistoricalStatusInfo
-      - name: '>'
-        fullName: '>'

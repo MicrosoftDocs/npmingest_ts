@@ -44,6 +44,9 @@ items:
       - azure-arm-network.LoadBalancerOutboundRuleListResult.toString
       - azure-arm-network.LoadBalancerOutboundRuleListResult.unshift
       - azure-arm-network.LoadBalancerOutboundRuleListResult.values
+      - 'azure-arm-network.LoadBalancerOutboundRuleListResult.[Symbol.iterator]'
+      - >-
+        azure-arm-network.LoadBalancerOutboundRuleListResult.[Symbol.unscopables]
     langs:
       - typeScript
     type: interface
@@ -1175,12 +1178,54 @@ items:
           - IterableIterator<azure-arm-network.OutboundRule>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.LoadBalancerOutboundRuleListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.OutboundRule>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.LoadBalancerOutboundRuleListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.OutboundRule>
     name: OutboundRule>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: OutboundRule
+        fullName: OutboundRule
+        uid: azure-arm-network.OutboundRule
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.OutboundRule>
+    name: OutboundRule>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: OutboundRule
         fullName: OutboundRule
         uid: azure-arm-network.OutboundRule
@@ -1218,13 +1263,3 @@ references:
         uid: azure-arm-network.OutboundRule
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.OutboundRule>
-    name: OutboundRule>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: OutboundRule
-        fullName: OutboundRule
-        uid: azure-arm-network.OutboundRule
-      - name: '>'
-        fullName: '>'

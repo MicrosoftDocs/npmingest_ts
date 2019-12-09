@@ -43,6 +43,8 @@ items:
       - azure-arm-compute.ComputeOperationListResult.toString
       - azure-arm-compute.ComputeOperationListResult.unshift
       - azure-arm-compute.ComputeOperationListResult.values
+      - 'azure-arm-compute.ComputeOperationListResult.[Symbol.iterator]'
+      - 'azure-arm-compute.ComputeOperationListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1180,12 +1182,54 @@ items:
           - IterableIterator<azure-arm-compute.ComputeOperationValue>
         description: ''
     package: azure-arm-compute
+  - uid: 'azure-arm-compute.ComputeOperationListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-compute.ComputeOperationValue>
+        description: ''
+    package: azure-arm-compute
+  - uid: 'azure-arm-compute.ComputeOperationListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-compute
 references:
   - uid: Array<azure-arm-compute.ComputeOperationValue>
     name: ComputeOperationValue>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: ComputeOperationValue
+        fullName: ComputeOperationValue
+        uid: azure-arm-compute.ComputeOperationValue
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-compute.ComputeOperationValue>
+    name: ComputeOperationValue>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: ComputeOperationValue
         fullName: ComputeOperationValue
         uid: azure-arm-compute.ComputeOperationValue
@@ -1223,13 +1267,3 @@ references:
         uid: azure-arm-compute.ComputeOperationValue
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-compute.ComputeOperationValue>
-    name: ComputeOperationValue>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: ComputeOperationValue
-        fullName: ComputeOperationValue
-        uid: azure-arm-compute.ComputeOperationValue
-      - name: '>'
-        fullName: '>'

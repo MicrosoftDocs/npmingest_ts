@@ -44,6 +44,8 @@ items:
       - azure-arm-network.InterfaceEndpointListResult.toString
       - azure-arm-network.InterfaceEndpointListResult.unshift
       - azure-arm-network.InterfaceEndpointListResult.values
+      - 'azure-arm-network.InterfaceEndpointListResult.[Symbol.iterator]'
+      - 'azure-arm-network.InterfaceEndpointListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1190,12 +1192,54 @@ items:
           - IterableIterator<azure-arm-network.InterfaceEndpoint>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.InterfaceEndpointListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.InterfaceEndpoint>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.InterfaceEndpointListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.InterfaceEndpoint>
     name: InterfaceEndpoint>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: InterfaceEndpoint
+        fullName: InterfaceEndpoint
+        uid: azure-arm-network.InterfaceEndpoint
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.InterfaceEndpoint>
+    name: InterfaceEndpoint>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: InterfaceEndpoint
         fullName: InterfaceEndpoint
         uid: azure-arm-network.InterfaceEndpoint
@@ -1233,13 +1277,3 @@ references:
         uid: azure-arm-network.InterfaceEndpoint
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.InterfaceEndpoint>
-    name: InterfaceEndpoint>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: InterfaceEndpoint
-        fullName: InterfaceEndpoint
-        uid: azure-arm-network.InterfaceEndpoint
-      - name: '>'
-        fullName: '>'

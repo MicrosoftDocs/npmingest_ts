@@ -44,6 +44,10 @@ items:
       - azure-arm-network.ExpressRouteCrossConnectionListResult.toString
       - azure-arm-network.ExpressRouteCrossConnectionListResult.unshift
       - azure-arm-network.ExpressRouteCrossConnectionListResult.values
+      - >-
+        azure-arm-network.ExpressRouteCrossConnectionListResult.[Symbol.iterator]
+      - >-
+        azure-arm-network.ExpressRouteCrossConnectionListResult.[Symbol.unscopables]
     langs:
       - typeScript
     type: interface
@@ -1207,12 +1211,55 @@ items:
           - IterableIterator<azure-arm-network.ExpressRouteCrossConnection>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.ExpressRouteCrossConnectionListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.ExpressRouteCrossConnection>
+        description: ''
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.ExpressRouteCrossConnectionListResult.[Symbol.unscopables]
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.ExpressRouteCrossConnection>
     name: ExpressRouteCrossConnection>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: ExpressRouteCrossConnection
+        fullName: ExpressRouteCrossConnection
+        uid: azure-arm-network.ExpressRouteCrossConnection
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.ExpressRouteCrossConnection>
+    name: ExpressRouteCrossConnection>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: ExpressRouteCrossConnection
         fullName: ExpressRouteCrossConnection
         uid: azure-arm-network.ExpressRouteCrossConnection
@@ -1250,13 +1297,3 @@ references:
         uid: azure-arm-network.ExpressRouteCrossConnection
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.ExpressRouteCrossConnection>
-    name: ExpressRouteCrossConnection>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: ExpressRouteCrossConnection
-        fullName: ExpressRouteCrossConnection
-        uid: azure-arm-network.ExpressRouteCrossConnection
-      - name: '>'
-        fullName: '>'

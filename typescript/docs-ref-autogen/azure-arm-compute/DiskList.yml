@@ -44,6 +44,8 @@ items:
       - azure-arm-compute.DiskList.toString
       - azure-arm-compute.DiskList.unshift
       - azure-arm-compute.DiskList.values
+      - 'azure-arm-compute.DiskList.[Symbol.iterator]'
+      - 'azure-arm-compute.DiskList.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1137,12 +1139,54 @@ items:
           - IterableIterator<azure-arm-compute.Disk>
         description: ''
     package: azure-arm-compute
+  - uid: 'azure-arm-compute.DiskList.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-compute.Disk>
+        description: ''
+    package: azure-arm-compute
+  - uid: 'azure-arm-compute.DiskList.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-compute
 references:
   - uid: Array<azure-arm-compute.Disk>
     name: Disk>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: Disk
+        fullName: Disk
+        uid: azure-arm-compute.Disk
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-compute.Disk>
+    name: Disk>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: Disk
         fullName: Disk
         uid: azure-arm-compute.Disk
@@ -1180,13 +1224,3 @@ references:
         uid: azure-arm-compute.Disk
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-compute.Disk>
-    name: Disk>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: Disk
-        fullName: Disk
-        uid: azure-arm-compute.Disk
-      - name: '>'
-        fullName: '>'

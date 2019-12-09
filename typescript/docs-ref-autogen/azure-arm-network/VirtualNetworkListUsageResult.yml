@@ -44,6 +44,8 @@ items:
       - azure-arm-network.VirtualNetworkListUsageResult.toString
       - azure-arm-network.VirtualNetworkListUsageResult.unshift
       - azure-arm-network.VirtualNetworkListUsageResult.values
+      - 'azure-arm-network.VirtualNetworkListUsageResult.[Symbol.iterator]'
+      - 'azure-arm-network.VirtualNetworkListUsageResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1193,12 +1195,54 @@ items:
           - IterableIterator<azure-arm-network.VirtualNetworkUsage>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.VirtualNetworkListUsageResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.VirtualNetworkUsage>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.VirtualNetworkListUsageResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.VirtualNetworkUsage>
     name: VirtualNetworkUsage>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: VirtualNetworkUsage
+        fullName: VirtualNetworkUsage
+        uid: azure-arm-network.VirtualNetworkUsage
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.VirtualNetworkUsage>
+    name: VirtualNetworkUsage>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: VirtualNetworkUsage
         fullName: VirtualNetworkUsage
         uid: azure-arm-network.VirtualNetworkUsage
@@ -1236,13 +1280,3 @@ references:
         uid: azure-arm-network.VirtualNetworkUsage
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.VirtualNetworkUsage>
-    name: VirtualNetworkUsage>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: VirtualNetworkUsage
-        fullName: VirtualNetworkUsage
-        uid: azure-arm-network.VirtualNetworkUsage
-      - name: '>'
-        fullName: '>'

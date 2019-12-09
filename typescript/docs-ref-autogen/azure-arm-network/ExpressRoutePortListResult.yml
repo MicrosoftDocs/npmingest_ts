@@ -44,6 +44,8 @@ items:
       - azure-arm-network.ExpressRoutePortListResult.toString
       - azure-arm-network.ExpressRoutePortListResult.unshift
       - azure-arm-network.ExpressRoutePortListResult.values
+      - 'azure-arm-network.ExpressRoutePortListResult.[Symbol.iterator]'
+      - 'azure-arm-network.ExpressRoutePortListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1188,12 +1190,54 @@ items:
           - IterableIterator<azure-arm-network.ExpressRoutePort>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.ExpressRoutePortListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.ExpressRoutePort>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.ExpressRoutePortListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.ExpressRoutePort>
     name: ExpressRoutePort>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: ExpressRoutePort
+        fullName: ExpressRoutePort
+        uid: azure-arm-network.ExpressRoutePort
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.ExpressRoutePort>
+    name: ExpressRoutePort>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: ExpressRoutePort
         fullName: ExpressRoutePort
         uid: azure-arm-network.ExpressRoutePort
@@ -1231,13 +1275,3 @@ references:
         uid: azure-arm-network.ExpressRoutePort
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.ExpressRoutePort>
-    name: ExpressRoutePort>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: ExpressRoutePort
-        fullName: ExpressRoutePort
-        uid: azure-arm-network.ExpressRoutePort
-      - name: '>'
-        fullName: '>'

@@ -44,6 +44,8 @@ items:
       - azure-arm-batch.OperationListResult.toString
       - azure-arm-batch.OperationListResult.unshift
       - azure-arm-batch.OperationListResult.values
+      - 'azure-arm-batch.OperationListResult.[Symbol.iterator]'
+      - 'azure-arm-batch.OperationListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1154,12 +1156,54 @@ items:
           - IterableIterator<azure-arm-batch.Operation>
         description: ''
     package: azure-arm-batch
+  - uid: 'azure-arm-batch.OperationListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-batch.Operation>
+        description: ''
+    package: azure-arm-batch
+  - uid: 'azure-arm-batch.OperationListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-batch
 references:
   - uid: Array<azure-arm-batch.Operation>
     name: Operation>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: Operation
+        fullName: Operation
+        uid: azure-arm-batch.Operation
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-batch.Operation>
+    name: Operation>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: Operation
         fullName: Operation
         uid: azure-arm-batch.Operation
@@ -1197,13 +1241,3 @@ references:
         uid: azure-arm-batch.Operation
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-batch.Operation>
-    name: Operation>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: Operation
-        fullName: Operation
-        uid: azure-arm-batch.Operation
-      - name: '>'
-        fullName: '>'

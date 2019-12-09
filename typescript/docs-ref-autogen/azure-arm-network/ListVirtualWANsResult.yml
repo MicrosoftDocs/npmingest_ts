@@ -44,6 +44,8 @@ items:
       - azure-arm-network.ListVirtualWANsResult.toString
       - azure-arm-network.ListVirtualWANsResult.unshift
       - azure-arm-network.ListVirtualWANsResult.values
+      - 'azure-arm-network.ListVirtualWANsResult.[Symbol.iterator]'
+      - 'azure-arm-network.ListVirtualWANsResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1160,12 +1162,54 @@ items:
           - IterableIterator<azure-arm-network.VirtualWAN>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.ListVirtualWANsResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.VirtualWAN>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.ListVirtualWANsResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.VirtualWAN>
     name: VirtualWAN>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: VirtualWAN
+        fullName: VirtualWAN
+        uid: azure-arm-network.VirtualWAN
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.VirtualWAN>
+    name: VirtualWAN>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: VirtualWAN
         fullName: VirtualWAN
         uid: azure-arm-network.VirtualWAN
@@ -1203,13 +1247,3 @@ references:
         uid: azure-arm-network.VirtualWAN
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.VirtualWAN>
-    name: VirtualWAN>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: VirtualWAN
-        fullName: VirtualWAN
-        uid: azure-arm-network.VirtualWAN
-      - name: '>'
-        fullName: '>'

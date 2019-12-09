@@ -44,6 +44,8 @@ items:
       - azure-arm-network.PublicIPAddressListResult.toString
       - azure-arm-network.PublicIPAddressListResult.unshift
       - azure-arm-network.PublicIPAddressListResult.values
+      - 'azure-arm-network.PublicIPAddressListResult.[Symbol.iterator]'
+      - 'azure-arm-network.PublicIPAddressListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1182,12 +1184,54 @@ items:
           - IterableIterator<azure-arm-network.PublicIPAddress>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.PublicIPAddressListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.PublicIPAddress>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.PublicIPAddressListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.PublicIPAddress>
     name: PublicIPAddress>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: PublicIPAddress
+        fullName: PublicIPAddress
+        uid: azure-arm-network.PublicIPAddress
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.PublicIPAddress>
+    name: PublicIPAddress>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: PublicIPAddress
         fullName: PublicIPAddress
         uid: azure-arm-network.PublicIPAddress
@@ -1225,13 +1269,3 @@ references:
         uid: azure-arm-network.PublicIPAddress
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.PublicIPAddress>
-    name: PublicIPAddress>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: PublicIPAddress
-        fullName: PublicIPAddress
-        uid: azure-arm-network.PublicIPAddress
-      - name: '>'
-        fullName: '>'

@@ -44,6 +44,8 @@ items:
       - azure-arm-iothub.JobResponseListResult.toString
       - azure-arm-iothub.JobResponseListResult.unshift
       - azure-arm-iothub.JobResponseListResult.values
+      - 'azure-arm-iothub.JobResponseListResult.[Symbol.iterator]'
+      - 'azure-arm-iothub.JobResponseListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1164,12 +1166,54 @@ items:
           - IterableIterator<azure-arm-iothub.JobResponse>
         description: ''
     package: azure-arm-iothub
+  - uid: 'azure-arm-iothub.JobResponseListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-iothub.JobResponse>
+        description: ''
+    package: azure-arm-iothub
+  - uid: 'azure-arm-iothub.JobResponseListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-iothub
 references:
   - uid: Array<azure-arm-iothub.JobResponse>
     name: JobResponse>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: JobResponse
+        fullName: JobResponse
+        uid: azure-arm-iothub.JobResponse
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-iothub.JobResponse>
+    name: JobResponse>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: JobResponse
         fullName: JobResponse
         uid: azure-arm-iothub.JobResponse
@@ -1207,13 +1251,3 @@ references:
         uid: azure-arm-iothub.JobResponse
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-iothub.JobResponse>
-    name: JobResponse>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: JobResponse
-        fullName: JobResponse
-        uid: azure-arm-iothub.JobResponse
-      - name: '>'
-        fullName: '>'

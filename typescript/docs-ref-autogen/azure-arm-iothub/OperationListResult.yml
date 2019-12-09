@@ -44,6 +44,8 @@ items:
       - azure-arm-iothub.OperationListResult.toString
       - azure-arm-iothub.OperationListResult.unshift
       - azure-arm-iothub.OperationListResult.values
+      - 'azure-arm-iothub.OperationListResult.[Symbol.iterator]'
+      - 'azure-arm-iothub.OperationListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1154,12 +1156,54 @@ items:
           - IterableIterator<azure-arm-iothub.Operation>
         description: ''
     package: azure-arm-iothub
+  - uid: 'azure-arm-iothub.OperationListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-iothub.Operation>
+        description: ''
+    package: azure-arm-iothub
+  - uid: 'azure-arm-iothub.OperationListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-iothub
 references:
   - uid: Array<azure-arm-iothub.Operation>
     name: Operation>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: Operation
+        fullName: Operation
+        uid: azure-arm-iothub.Operation
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-iothub.Operation>
+    name: Operation>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: Operation
         fullName: Operation
         uid: azure-arm-iothub.Operation
@@ -1197,13 +1241,3 @@ references:
         uid: azure-arm-iothub.Operation
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-iothub.Operation>
-    name: Operation>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: Operation
-        fullName: Operation
-        uid: azure-arm-iothub.Operation
-      - name: '>'
-        fullName: '>'

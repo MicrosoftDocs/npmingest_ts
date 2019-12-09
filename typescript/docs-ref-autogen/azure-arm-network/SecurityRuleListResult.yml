@@ -44,6 +44,8 @@ items:
       - azure-arm-network.SecurityRuleListResult.toString
       - azure-arm-network.SecurityRuleListResult.unshift
       - azure-arm-network.SecurityRuleListResult.values
+      - 'azure-arm-network.SecurityRuleListResult.[Symbol.iterator]'
+      - 'azure-arm-network.SecurityRuleListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1179,12 +1181,54 @@ items:
           - IterableIterator<azure-arm-network.SecurityRule>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.SecurityRuleListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.SecurityRule>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.SecurityRuleListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.SecurityRule>
     name: SecurityRule>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: SecurityRule
+        fullName: SecurityRule
+        uid: azure-arm-network.SecurityRule
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.SecurityRule>
+    name: SecurityRule>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: SecurityRule
         fullName: SecurityRule
         uid: azure-arm-network.SecurityRule
@@ -1222,13 +1266,3 @@ references:
         uid: azure-arm-network.SecurityRule
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.SecurityRule>
-    name: SecurityRule>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: SecurityRule
-        fullName: SecurityRule
-        uid: azure-arm-network.SecurityRule
-      - name: '>'
-        fullName: '>'

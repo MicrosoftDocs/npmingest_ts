@@ -44,6 +44,8 @@ items:
       - azure-arm-cdn.OriginListResult.toString
       - azure-arm-cdn.OriginListResult.unshift
       - azure-arm-cdn.OriginListResult.values
+      - 'azure-arm-cdn.OriginListResult.[Symbol.iterator]'
+      - 'azure-arm-cdn.OriginListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1141,12 +1143,54 @@ items:
           - IterableIterator<azure-arm-cdn.Origin>
         description: ''
     package: azure-arm-cdn
+  - uid: 'azure-arm-cdn.OriginListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-cdn.Origin>
+        description: ''
+    package: azure-arm-cdn
+  - uid: 'azure-arm-cdn.OriginListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-cdn
 references:
   - uid: Array<azure-arm-cdn.Origin>
     name: Origin>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: Origin
+        fullName: Origin
+        uid: azure-arm-cdn.Origin
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-cdn.Origin>
+    name: Origin>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: Origin
         fullName: Origin
         uid: azure-arm-cdn.Origin
@@ -1184,13 +1228,3 @@ references:
         uid: azure-arm-cdn.Origin
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-cdn.Origin>
-    name: Origin>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: Origin
-        fullName: Origin
-        uid: azure-arm-cdn.Origin
-      - name: '>'
-        fullName: '>'

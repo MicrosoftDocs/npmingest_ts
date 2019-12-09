@@ -44,6 +44,8 @@ items:
       - azure-arm-batch.ListCertificatesResult.toString
       - azure-arm-batch.ListCertificatesResult.unshift
       - azure-arm-batch.ListCertificatesResult.values
+      - 'azure-arm-batch.ListCertificatesResult.[Symbol.iterator]'
+      - 'azure-arm-batch.ListCertificatesResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1164,12 +1166,54 @@ items:
           - IterableIterator<azure-arm-batch.Certificate>
         description: ''
     package: azure-arm-batch
+  - uid: 'azure-arm-batch.ListCertificatesResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-batch.Certificate>
+        description: ''
+    package: azure-arm-batch
+  - uid: 'azure-arm-batch.ListCertificatesResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-batch
 references:
   - uid: Array<azure-arm-batch.Certificate>
     name: Certificate>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: Certificate
+        fullName: Certificate
+        uid: azure-arm-batch.Certificate
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-batch.Certificate>
+    name: Certificate>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: Certificate
         fullName: Certificate
         uid: azure-arm-batch.Certificate
@@ -1207,13 +1251,3 @@ references:
         uid: azure-arm-batch.Certificate
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-batch.Certificate>
-    name: Certificate>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: Certificate
-        fullName: Certificate
-        uid: azure-arm-batch.Certificate
-      - name: '>'
-        fullName: '>'

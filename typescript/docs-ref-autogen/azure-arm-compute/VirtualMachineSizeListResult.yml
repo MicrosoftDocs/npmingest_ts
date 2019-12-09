@@ -43,6 +43,8 @@ items:
       - azure-arm-compute.VirtualMachineSizeListResult.toString
       - azure-arm-compute.VirtualMachineSizeListResult.unshift
       - azure-arm-compute.VirtualMachineSizeListResult.values
+      - 'azure-arm-compute.VirtualMachineSizeListResult.[Symbol.iterator]'
+      - 'azure-arm-compute.VirtualMachineSizeListResult.[Symbol.unscopables]'
     langs:
       - typeScript
     type: interface
@@ -1174,12 +1176,54 @@ items:
           - IterableIterator<azure-arm-compute.VirtualMachineSize>
         description: ''
     package: azure-arm-compute
+  - uid: 'azure-arm-compute.VirtualMachineSizeListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-compute.VirtualMachineSize>
+        description: ''
+    package: azure-arm-compute
+  - uid: 'azure-arm-compute.VirtualMachineSizeListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-compute
 references:
   - uid: Array<azure-arm-compute.VirtualMachineSize>
     name: VirtualMachineSize>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: VirtualMachineSize
+        fullName: VirtualMachineSize
+        uid: azure-arm-compute.VirtualMachineSize
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-compute.VirtualMachineSize>
+    name: VirtualMachineSize>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: VirtualMachineSize
         fullName: VirtualMachineSize
         uid: azure-arm-compute.VirtualMachineSize
@@ -1217,13 +1261,3 @@ references:
         uid: azure-arm-compute.VirtualMachineSize
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-compute.VirtualMachineSize>
-    name: VirtualMachineSize>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: VirtualMachineSize
-        fullName: VirtualMachineSize
-        uid: azure-arm-compute.VirtualMachineSize
-      - name: '>'
-        fullName: '>'

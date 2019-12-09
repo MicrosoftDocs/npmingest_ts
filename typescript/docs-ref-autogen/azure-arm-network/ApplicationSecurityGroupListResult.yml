@@ -44,6 +44,9 @@ items:
       - azure-arm-network.ApplicationSecurityGroupListResult.toString
       - azure-arm-network.ApplicationSecurityGroupListResult.unshift
       - azure-arm-network.ApplicationSecurityGroupListResult.values
+      - 'azure-arm-network.ApplicationSecurityGroupListResult.[Symbol.iterator]'
+      - >-
+        azure-arm-network.ApplicationSecurityGroupListResult.[Symbol.unscopables]
     langs:
       - typeScript
     type: interface
@@ -1203,12 +1206,54 @@ items:
           - IterableIterator<azure-arm-network.ApplicationSecurityGroup>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.ApplicationSecurityGroupListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.ApplicationSecurityGroup>
+        description: ''
+    package: azure-arm-network
+  - uid: 'azure-arm-network.ApplicationSecurityGroupListResult.[Symbol.unscopables]'
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.ApplicationSecurityGroup>
     name: ApplicationSecurityGroup>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: ApplicationSecurityGroup
+        fullName: ApplicationSecurityGroup
+        uid: azure-arm-network.ApplicationSecurityGroup
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.ApplicationSecurityGroup>
+    name: ApplicationSecurityGroup>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: ApplicationSecurityGroup
         fullName: ApplicationSecurityGroup
         uid: azure-arm-network.ApplicationSecurityGroup
@@ -1246,13 +1291,3 @@ references:
         uid: azure-arm-network.ApplicationSecurityGroup
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.ApplicationSecurityGroup>
-    name: ApplicationSecurityGroup>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: ApplicationSecurityGroup
-        fullName: ApplicationSecurityGroup
-        uid: azure-arm-network.ApplicationSecurityGroup
-      - name: '>'
-        fullName: '>'

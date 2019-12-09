@@ -44,6 +44,10 @@ items:
       - azure-arm-network.ExpressRouteServiceProviderListResult.toString
       - azure-arm-network.ExpressRouteServiceProviderListResult.unshift
       - azure-arm-network.ExpressRouteServiceProviderListResult.values
+      - >-
+        azure-arm-network.ExpressRouteServiceProviderListResult.[Symbol.iterator]
+      - >-
+        azure-arm-network.ExpressRouteServiceProviderListResult.[Symbol.unscopables]
     langs:
       - typeScript
     type: interface
@@ -1207,12 +1211,55 @@ items:
           - IterableIterator<azure-arm-network.ExpressRouteServiceProvider>
         description: ''
     package: azure-arm-network
+  - uid: 'azure-arm-network.ExpressRouteServiceProviderListResult.[Symbol.iterator]'
+    name: '[Symbol.iterator]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Iterator
+    syntax:
+      content: 'function [Symbol.iterator]()'
+      parameters: []
+      return:
+        type:
+          - IterableIterator<azure-arm-network.ExpressRouteServiceProvider>
+        description: ''
+    package: azure-arm-network
+  - uid: >-
+      azure-arm-network.ExpressRouteServiceProviderListResult.[Symbol.unscopables]
+    name: '[Symbol.unscopables]()'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Returns an object whose properties have the value 'true'
+      when they will be absent when used in a 'with' statement.
+    syntax:
+      content: 'function [Symbol.unscopables]()'
+      parameters: []
+      return:
+        type:
+          - Object
+        description: ''
+    package: azure-arm-network
 references:
   - uid: Array<azure-arm-network.ExpressRouteServiceProvider>
     name: ExpressRouteServiceProvider>
     spec.typeScript:
       - name: Array<
         fullName: Array<
+      - name: ExpressRouteServiceProvider
+        fullName: ExpressRouteServiceProvider
+        uid: azure-arm-network.ExpressRouteServiceProvider
+      - name: '>'
+        fullName: '>'
+  - uid: IterableIterator<azure-arm-network.ExpressRouteServiceProvider>
+    name: ExpressRouteServiceProvider>
+    spec.typeScript:
+      - name: IterableIterator<
+        fullName: IterableIterator<
       - name: ExpressRouteServiceProvider
         fullName: ExpressRouteServiceProvider
         uid: azure-arm-network.ExpressRouteServiceProvider
@@ -1250,13 +1297,3 @@ references:
         uid: azure-arm-network.ExpressRouteServiceProvider
       - name: ' | undefined'
         fullName: ' | undefined'
-  - uid: IterableIterator<azure-arm-network.ExpressRouteServiceProvider>
-    name: ExpressRouteServiceProvider>
-    spec.typeScript:
-      - name: IterableIterator<
-        fullName: IterableIterator<
-      - name: ExpressRouteServiceProvider
-        fullName: ExpressRouteServiceProvider
-        uid: azure-arm-network.ExpressRouteServiceProvider
-      - name: '>'
-        fullName: '>'
