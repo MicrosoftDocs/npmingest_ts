@@ -1,0 +1,134 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ExpressRouteConnection
+    name: ExpressRouteConnection
+    fullName: ExpressRouteConnection
+    children:
+      - azure-arm-network - v13.0.0.ExpressRouteConnection.authorizationKey
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteConnection.expressRouteCircuitPeering
+      - azure-arm-network - v13.0.0.ExpressRouteConnection.id
+      - azure-arm-network - v13.0.0.ExpressRouteConnection.name
+      - azure-arm-network - v13.0.0.ExpressRouteConnection.provisioningState
+      - azure-arm-network - v13.0.0.ExpressRouteConnection.routingWeight
+    langs:
+      - typeScript
+    type: interface
+    summary: ExpressRouteConnection resource.
+    extends:
+      name: azure-arm-network - v13.0.0.SubResource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteConnection.authorizationKey
+    name: authorizationKey
+    fullName: authorizationKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Authorization key to establish the connection.
+    optional: true
+    syntax:
+      content: 'authorizationKey?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteConnection.expressRouteCircuitPeering
+    name: expressRouteCircuitPeering
+    fullName: expressRouteCircuitPeering
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The ExpressRoute circuit peering.
+    syntax:
+      content: 'expressRouteCircuitPeering: ExpressRouteCircuitPeeringId'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.ExpressRouteCircuitPeeringId
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteConnection.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteConnection.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The name of the resource.
+    syntax:
+      content: 'name: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteConnection.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the resource. Possible values include:
+      'Succeeded', 'Updating',
+
+      'Deleting', 'Failed'
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteConnection.routingWeight
+    name: routingWeight
+    fullName: routingWeight
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The routing weight associated to the connection.
+    optional: true
+    syntax:
+      content: 'routingWeight?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitPeeringId
+    name: ExpressRouteCircuitPeeringId
+    spec.typeScript:
+      - name: ExpressRouteCircuitPeeringId
+        fullName: ExpressRouteCircuitPeeringId
+        uid: azure-arm-network - v13.0.0.ExpressRouteCircuitPeeringId

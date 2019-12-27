@@ -1,0 +1,391 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet
+    name: VirtualMachineScaleSet
+    fullName: VirtualMachineScaleSet
+    children:
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSet.doNotRunExtensionsOnOverprovisionedVMs
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSet.id
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSet.identity
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSet.location
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSet.name
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSet.overprovision
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSet.plan
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSet.platformFaultDomainCount
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSet.provisioningState
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSet.singlePlacementGroup
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSet.sku
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSet.tags
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSet.type
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSet.uniqueId
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSet.upgradePolicy
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSet.virtualMachineProfile
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSet.zoneBalance
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSet.zones
+    langs:
+      - typeScript
+    type: interface
+    summary: Describes a Virtual Machine Scale Set.
+    extends:
+      name: azure-arm-compute - v10.0.0.Resource
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSet.doNotRunExtensionsOnOverprovisionedVMs
+    name: doNotRunExtensionsOnOverprovisionedVMs
+    fullName: doNotRunExtensionsOnOverprovisionedVMs
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      When Overprovision is enabled, extensions are launched only on the
+      requested number of VMs
+
+      which are finally kept. This property will hence ensure that the
+      extensions do not run on the
+
+      extra overprovisioned VMs.
+    optional: true
+    syntax:
+      content: 'doNotRunExtensionsOnOverprovisionedVMs?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet.identity
+    name: identity
+    fullName: identity
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The identity of the virtual machine scale set, if configured.'
+    optional: true
+    syntax:
+      content: 'identity?: VirtualMachineScaleSetIdentity'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.VirtualMachineScaleSetIdentity
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location
+    syntax:
+      content: 'location: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet.overprovision
+    name: overprovision
+    fullName: overprovision
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies whether the Virtual Machine Scale Set should be overprovisioned.
+    optional: true
+    syntax:
+      content: 'overprovision?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet.plan
+    name: plan
+    fullName: plan
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies information about the marketplace image used to create the
+      virtual machine. This
+
+      element is only used for marketplace images. Before you can use a
+      marketplace image from an
+
+      API, you must enable the image for programmatic use.  In the Azure portal,
+      find the
+
+      marketplace image that you want to use and then click **Want to deploy
+      programmatically, Get
+
+      Started ->**. Enter any required information and then click **Save**.
+    optional: true
+    syntax:
+      content: 'plan?: Plan'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.Plan
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSet.platformFaultDomainCount
+    name: platformFaultDomainCount
+    fullName: platformFaultDomainCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Fault Domain count for each placement group.
+    optional: true
+    syntax:
+      content: 'platformFaultDomainCount?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The provisioning state, which only appears in the response.'
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet.singlePlacementGroup
+    name: singlePlacementGroup
+    fullName: singlePlacementGroup
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      When true this limits the scale set to a single placement group, of max
+      size 100 virtual
+
+      machines.
+    optional: true
+    syntax:
+      content: 'singlePlacementGroup?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet.sku
+    name: sku
+    fullName: sku
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The virtual machine scale set sku.
+    optional: true
+    syntax:
+      content: 'sku?: Sku'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.Sku
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet.uniqueId
+    name: uniqueId
+    fullName: uniqueId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies the ID which uniquely identifies a Virtual Machine Scale Set.
+    optional: true
+    syntax:
+      content: 'uniqueId?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet.upgradePolicy
+    name: upgradePolicy
+    fullName: upgradePolicy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The upgrade policy.
+    optional: true
+    syntax:
+      content: 'upgradePolicy?: UpgradePolicy'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.UpgradePolicy
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet.virtualMachineProfile
+    name: virtualMachineProfile
+    fullName: virtualMachineProfile
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The virtual machine profile.
+    optional: true
+    syntax:
+      content: 'virtualMachineProfile?: VirtualMachineScaleSetVMProfile'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.VirtualMachineScaleSetVMProfile
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet.zoneBalance
+    name: zoneBalance
+    fullName: zoneBalance
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Whether to force strictly even Virtual Machine distribution cross x-zones
+      in case there is
+
+      zone outage.
+    optional: true
+    syntax:
+      content: 'zoneBalance?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSet.zones
+    name: zones
+    fullName: zones
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The virtual machine scale set zones.
+    optional: true
+    syntax:
+      content: 'zones?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-compute - v10.0.0.Resource
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetIdentity
+    name: VirtualMachineScaleSetIdentity
+    spec.typeScript:
+      - name: VirtualMachineScaleSetIdentity
+        fullName: VirtualMachineScaleSetIdentity
+        uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetIdentity
+  - uid: azure-arm-compute - v10.0.0.Plan
+    name: Plan
+    spec.typeScript:
+      - name: Plan
+        fullName: Plan
+        uid: azure-arm-compute - v10.0.0.Plan
+  - uid: azure-arm-compute - v10.0.0.Sku
+    name: Sku
+    spec.typeScript:
+      - name: Sku
+        fullName: Sku
+        uid: azure-arm-compute - v10.0.0.Sku
+  - uid: azure-arm-compute - v10.0.0.UpgradePolicy
+    name: UpgradePolicy
+    spec.typeScript:
+      - name: UpgradePolicy
+        fullName: UpgradePolicy
+        uid: azure-arm-compute - v10.0.0.UpgradePolicy
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetVMProfile
+    name: VirtualMachineScaleSetVMProfile
+    spec.typeScript:
+      - name: VirtualMachineScaleSetVMProfile
+        fullName: VirtualMachineScaleSetVMProfile
+        uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetVMProfile

@@ -1,0 +1,102 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.EvaluatedNetworkSecurityGroup
+    name: EvaluatedNetworkSecurityGroup
+    fullName: EvaluatedNetworkSecurityGroup
+    children:
+      - azure-arm-network - v13.0.0.EvaluatedNetworkSecurityGroup.appliedTo
+      - azure-arm-network - v13.0.0.EvaluatedNetworkSecurityGroup.matchedRule
+      - >-
+        azure-arm-network -
+        v13.0.0.EvaluatedNetworkSecurityGroup.networkSecurityGroupId
+      - >-
+        azure-arm-network -
+        v13.0.0.EvaluatedNetworkSecurityGroup.rulesEvaluationResult
+    langs:
+      - typeScript
+    type: interface
+    summary: Results of network security group evaluation.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.EvaluatedNetworkSecurityGroup.appliedTo
+    name: appliedTo
+    fullName: appliedTo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID of nic or subnet to which network security group is applied.
+    optional: true
+    syntax:
+      content: 'appliedTo?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.EvaluatedNetworkSecurityGroup.matchedRule
+    name: matchedRule
+    fullName: matchedRule
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Matched network security rule.
+    optional: true
+    syntax:
+      content: 'matchedRule?: MatchedRule'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.MatchedRule
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.EvaluatedNetworkSecurityGroup.networkSecurityGroupId
+    name: networkSecurityGroupId
+    fullName: networkSecurityGroupId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Network security group ID.
+    optional: true
+    syntax:
+      content: 'networkSecurityGroupId?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.EvaluatedNetworkSecurityGroup.rulesEvaluationResult
+    name: rulesEvaluationResult
+    fullName: rulesEvaluationResult
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: List of network security rules evaluation results.
+    optional: true
+    syntax:
+      content: 'rulesEvaluationResult?: NetworkSecurityRulesEvaluationResult[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.NetworkSecurityRulesEvaluationResult[]'
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.MatchedRule
+    name: MatchedRule
+    spec.typeScript:
+      - name: MatchedRule
+        fullName: MatchedRule
+        uid: azure-arm-network - v13.0.0.MatchedRule
+  - uid: 'azure-arm-network - v13.0.0.NetworkSecurityRulesEvaluationResult[]'
+    name: 'NetworkSecurityRulesEvaluationResult[]'
+    spec.typeScript:
+      - name: NetworkSecurityRulesEvaluationResult
+        fullName: NetworkSecurityRulesEvaluationResult
+        uid: azure-arm-network - v13.0.0.NetworkSecurityRulesEvaluationResult
+      - name: '[]'
+        fullName: '[]'

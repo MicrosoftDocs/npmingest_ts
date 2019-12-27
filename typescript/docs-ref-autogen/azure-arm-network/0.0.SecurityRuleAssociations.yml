@@ -1,0 +1,118 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.SecurityRuleAssociations
+    name: SecurityRuleAssociations
+    fullName: SecurityRuleAssociations
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.SecurityRuleAssociations.defaultSecurityRules
+      - >-
+        azure-arm-network -
+        v13.0.0.SecurityRuleAssociations.effectiveSecurityRules
+      - >-
+        azure-arm-network -
+        v13.0.0.SecurityRuleAssociations.networkInterfaceAssociation
+      - azure-arm-network - v13.0.0.SecurityRuleAssociations.subnetAssociation
+    langs:
+      - typeScript
+    type: interface
+    summary: All security rules associated with the network interface.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.SecurityRuleAssociations.defaultSecurityRules
+    name: defaultSecurityRules
+    fullName: defaultSecurityRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Collection of default security rules of the network security group.
+    optional: true
+    syntax:
+      content: 'defaultSecurityRules?: SecurityRule[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.SecurityRule[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.SecurityRuleAssociations.effectiveSecurityRules
+    name: effectiveSecurityRules
+    fullName: effectiveSecurityRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Collection of effective security rules.
+    optional: true
+    syntax:
+      content: 'effectiveSecurityRules?: EffectiveNetworkSecurityRule[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.EffectiveNetworkSecurityRule[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.SecurityRuleAssociations.networkInterfaceAssociation
+    name: networkInterfaceAssociation
+    fullName: networkInterfaceAssociation
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Network interface and it's custom security rules.
+    optional: true
+    syntax:
+      content: 'networkInterfaceAssociation?: NetworkInterfaceAssociation'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.NetworkInterfaceAssociation
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.SecurityRuleAssociations.subnetAssociation
+    name: subnetAssociation
+    fullName: subnetAssociation
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Subnet and it's custom security rules.
+    optional: true
+    syntax:
+      content: 'subnetAssociation?: SubnetAssociation'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubnetAssociation
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: 'azure-arm-network - v13.0.0.SecurityRule[]'
+    name: 'SecurityRule[]'
+    spec.typeScript:
+      - name: SecurityRule
+        fullName: SecurityRule
+        uid: azure-arm-network - v13.0.0.SecurityRule
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.EffectiveNetworkSecurityRule[]'
+    name: 'EffectiveNetworkSecurityRule[]'
+    spec.typeScript:
+      - name: EffectiveNetworkSecurityRule
+        fullName: EffectiveNetworkSecurityRule
+        uid: azure-arm-network - v13.0.0.EffectiveNetworkSecurityRule
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.NetworkInterfaceAssociation
+    name: NetworkInterfaceAssociation
+    spec.typeScript:
+      - name: NetworkInterfaceAssociation
+        fullName: NetworkInterfaceAssociation
+        uid: azure-arm-network - v13.0.0.NetworkInterfaceAssociation
+  - uid: azure-arm-network - v13.0.0.SubnetAssociation
+    name: SubnetAssociation
+    spec.typeScript:
+      - name: SubnetAssociation
+        fullName: SubnetAssociation
+        uid: azure-arm-network - v13.0.0.SubnetAssociation

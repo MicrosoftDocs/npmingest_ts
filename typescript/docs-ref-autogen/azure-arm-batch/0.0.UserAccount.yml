@@ -1,0 +1,123 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch - v5.0.0.UserAccount
+    name: UserAccount
+    fullName: UserAccount
+    children:
+      - azure-arm-batch - v5.0.0.UserAccount.elevationLevel
+      - azure-arm-batch - v5.0.0.UserAccount.linuxUserConfiguration
+      - azure-arm-batch - v5.0.0.UserAccount.name
+      - azure-arm-batch - v5.0.0.UserAccount.password
+      - azure-arm-batch - v5.0.0.UserAccount.windowsUserConfiguration
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.UserAccount.elevationLevel
+    name: elevationLevel
+    fullName: elevationLevel
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      nonAdmin - The auto user is a standard user without elevated access. admin
+      - The
+
+      auto user is a user with elevated access and operates with full
+      Administrator permissions. The
+
+      default value is nonAdmin. Possible values include: 'NonAdmin', 'Admin'
+    optional: true
+    syntax:
+      content: 'elevationLevel?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.UserAccount.linuxUserConfiguration
+    name: linuxUserConfiguration
+    fullName: linuxUserConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      This property is ignored if specified on a Windows pool. If not specified,
+      the
+
+      user is created with the default options.
+    optional: true
+    syntax:
+      content: 'linuxUserConfiguration?: LinuxUserConfiguration'
+      return:
+        type:
+          - azure-arm-batch - v5.0.0.LinuxUserConfiguration
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.UserAccount.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'name: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.UserAccount.password
+    name: password
+    fullName: password
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'password: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.UserAccount.windowsUserConfiguration
+    name: windowsUserConfiguration
+    fullName: windowsUserConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      This property can only be specified if the user is on a Windows pool. If
+      not
+
+      specified and on a Windows pool, the user is created with the default
+      options.
+    optional: true
+    syntax:
+      content: 'windowsUserConfiguration?: WindowsUserConfiguration'
+      return:
+        type:
+          - azure-arm-batch - v5.0.0.WindowsUserConfiguration
+        description: ''
+    package: azure-arm-batch - v5
+references:
+  - uid: azure-arm-batch - v5.0.0.LinuxUserConfiguration
+    name: LinuxUserConfiguration
+    spec.typeScript:
+      - name: LinuxUserConfiguration
+        fullName: LinuxUserConfiguration
+        uid: azure-arm-batch - v5.0.0.LinuxUserConfiguration
+  - uid: azure-arm-batch - v5.0.0.WindowsUserConfiguration
+    name: WindowsUserConfiguration
+    spec.typeScript:
+      - name: WindowsUserConfiguration
+        fullName: WindowsUserConfiguration
+        uid: azure-arm-batch - v5.0.0.WindowsUserConfiguration

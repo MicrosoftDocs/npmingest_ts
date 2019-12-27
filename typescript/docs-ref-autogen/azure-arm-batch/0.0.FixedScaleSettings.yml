@@ -1,0 +1,93 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch - v5.0.0.FixedScaleSettings
+    name: FixedScaleSettings
+    fullName: FixedScaleSettings
+    children:
+      - azure-arm-batch - v5.0.0.FixedScaleSettings.nodeDeallocationOption
+      - azure-arm-batch - v5.0.0.FixedScaleSettings.resizeTimeout
+      - azure-arm-batch - v5.0.0.FixedScaleSettings.targetDedicatedNodes
+      - azure-arm-batch - v5.0.0.FixedScaleSettings.targetLowPriorityNodes
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.FixedScaleSettings.nodeDeallocationOption
+    name: nodeDeallocationOption
+    fullName: nodeDeallocationOption
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      If omitted, the default value is Requeue. Possible values include:
+      'Requeue',
+
+      'Terminate', 'TaskCompletion', 'RetainedData'
+    optional: true
+    syntax:
+      content: 'nodeDeallocationOption?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.FixedScaleSettings.resizeTimeout
+    name: resizeTimeout
+    fullName: resizeTimeout
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The default value is 15 minutes. Timeout values use ISO 8601 format. For
+      example,
+
+      use PT10M for 10 minutes. The minimum value is 5 minutes. If you specify a
+      value less than 5
+
+      minutes, the Batch service rejects the request with an error; if you are
+      calling the REST API
+
+      directly, the HTTP status code is 400 (Bad Request).
+    optional: true
+    syntax:
+      content: 'resizeTimeout?: Duration'
+      return:
+        type:
+          - Duration
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.FixedScaleSettings.targetDedicatedNodes
+    name: targetDedicatedNodes
+    fullName: targetDedicatedNodes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'At least one of targetDedicatedNodes, targetLowPriority nodes must be set.'
+    optional: true
+    syntax:
+      content: 'targetDedicatedNodes?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.FixedScaleSettings.targetLowPriorityNodes
+    name: targetLowPriorityNodes
+    fullName: targetLowPriorityNodes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'At least one of targetDedicatedNodes, targetLowPriority nodes must be set.'
+    optional: true
+    syntax:
+      content: 'targetLowPriorityNodes?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-batch - v5

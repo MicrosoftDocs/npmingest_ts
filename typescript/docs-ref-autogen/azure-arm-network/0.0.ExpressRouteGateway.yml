@@ -1,0 +1,221 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ExpressRouteGateway
+    name: ExpressRouteGateway
+    fullName: ExpressRouteGateway
+    children:
+      - azure-arm-network - v13.0.0.ExpressRouteGateway.autoScaleConfiguration
+      - azure-arm-network - v13.0.0.ExpressRouteGateway.etag
+      - azure-arm-network - v13.0.0.ExpressRouteGateway.expressRouteConnections
+      - azure-arm-network - v13.0.0.ExpressRouteGateway.id
+      - azure-arm-network - v13.0.0.ExpressRouteGateway.location
+      - azure-arm-network - v13.0.0.ExpressRouteGateway.name
+      - azure-arm-network - v13.0.0.ExpressRouteGateway.provisioningState
+      - azure-arm-network - v13.0.0.ExpressRouteGateway.tags
+      - azure-arm-network - v13.0.0.ExpressRouteGateway.type
+      - azure-arm-network - v13.0.0.ExpressRouteGateway.virtualHub
+    langs:
+      - typeScript
+    type: interface
+    summary: ExpressRoute gateway resource.
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteGateway.autoScaleConfiguration
+    name: autoScaleConfiguration
+    fullName: autoScaleConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Configuration for auto scaling.
+    optional: true
+    syntax:
+      content: >-
+        autoScaleConfiguration?:
+        ExpressRouteGatewayPropertiesAutoScaleConfiguration
+      return:
+        type:
+          - >-
+            azure-arm-network -
+            v13.0.0.ExpressRouteGatewayPropertiesAutoScaleConfiguration
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteGateway.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A unique read-only string that changes whenever the resource is updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteGateway.expressRouteConnections
+    name: expressRouteConnections
+    fullName: expressRouteConnections
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: List of ExpressRoute connections to the ExpressRoute gateway.
+    optional: true
+    syntax:
+      content: 'expressRouteConnections?: ExpressRouteConnection[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ExpressRouteConnection[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteGateway.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteGateway.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteGateway.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteGateway.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the resource. Possible values include:
+      'Succeeded', 'Updating',
+
+      'Deleting', 'Failed'
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteGateway.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteGateway.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteGateway.virtualHub
+    name: virtualHub
+    fullName: virtualHub
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The Virtual Hub where the ExpressRoute gateway is or will be deployed.
+    syntax:
+      content: 'virtualHub: VirtualHubId'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.VirtualHubId
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteGatewayPropertiesAutoScaleConfiguration
+    name: ExpressRouteGatewayPropertiesAutoScaleConfiguration
+    spec.typeScript:
+      - name: ExpressRouteGatewayPropertiesAutoScaleConfiguration
+        fullName: ExpressRouteGatewayPropertiesAutoScaleConfiguration
+        uid: >-
+          azure-arm-network -
+          v13.0.0.ExpressRouteGatewayPropertiesAutoScaleConfiguration
+  - uid: 'azure-arm-network - v13.0.0.ExpressRouteConnection[]'
+    name: 'ExpressRouteConnection[]'
+    spec.typeScript:
+      - name: ExpressRouteConnection
+        fullName: ExpressRouteConnection
+        uid: azure-arm-network - v13.0.0.ExpressRouteConnection
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.VirtualHubId
+    name: VirtualHubId
+    spec.typeScript:
+      - name: VirtualHubId
+        fullName: VirtualHubId
+        uid: azure-arm-network - v13.0.0.VirtualHubId

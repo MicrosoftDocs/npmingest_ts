@@ -1,0 +1,130 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.PatchRouteFilterRule
+    name: PatchRouteFilterRule
+    fullName: PatchRouteFilterRule
+    children:
+      - azure-arm-network - v13.0.0.PatchRouteFilterRule.access
+      - azure-arm-network - v13.0.0.PatchRouteFilterRule.communities
+      - azure-arm-network - v13.0.0.PatchRouteFilterRule.etag
+      - azure-arm-network - v13.0.0.PatchRouteFilterRule.id
+      - azure-arm-network - v13.0.0.PatchRouteFilterRule.name
+      - azure-arm-network - v13.0.0.PatchRouteFilterRule.provisioningState
+    langs:
+      - typeScript
+    type: interface
+    summary: Route Filter Rule Resource
+    extends:
+      name: azure-arm-network - v13.0.0.SubResource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PatchRouteFilterRule.access
+    name: access
+    fullName: access
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The access type of the rule. Possible values include: ''Allow'', ''Deny'''
+    syntax:
+      content: 'access: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PatchRouteFilterRule.communities
+    name: communities
+    fullName: communities
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The collection for bgp community values to filter on. e.g.
+      ['12076:5010','12076:5020']
+    syntax:
+      content: 'communities: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PatchRouteFilterRule.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A unique read-only string that changes whenever the resource is updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PatchRouteFilterRule.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PatchRouteFilterRule.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The name of the resource that is unique within a resource group. This name
+      can be used to
+
+      access the resource.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PatchRouteFilterRule.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the resource. Possible values are: 'Updating',
+      'Deleting',
+
+      'Succeeded' and 'Failed'.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource

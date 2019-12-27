@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-cdn - v4.2.0.DeliveryRuleCacheExpirationAction
+    name: DeliveryRuleCacheExpirationAction
+    fullName: DeliveryRuleCacheExpirationAction
+    children:
+      - azure-arm-cdn - v4.2.0.DeliveryRuleCacheExpirationAction.name
+      - azure-arm-cdn - v4.2.0.DeliveryRuleCacheExpirationAction.parameters
+    langs:
+      - typeScript
+    type: interface
+    summary: Defines the cache expiration action for the delivery rule.
+    extends:
+      name: azure-arm-cdn - v4.2.0.DeliveryRuleAction
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.DeliveryRuleCacheExpirationAction.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Polymorphic Discriminator
+    syntax:
+      content: 'name: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.DeliveryRuleCacheExpirationAction.parameters
+    name: parameters
+    fullName: parameters
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Defines the parameters for the action.
+    syntax:
+      content: 'parameters: CacheExpirationActionParameters'
+      return:
+        type:
+          - azure-arm-cdn - v4.2.0.CacheExpirationActionParameters
+        description: ''
+    package: azure-arm-cdn - v4
+references:
+  - uid: azure-arm-cdn - v4.2.0.DeliveryRuleAction
+    name: DeliveryRuleAction
+    spec.typeScript:
+      - name: DeliveryRuleAction
+        fullName: DeliveryRuleAction
+        uid: azure-arm-cdn - v4.2.0.DeliveryRuleAction
+  - uid: azure-arm-cdn - v4.2.0.CacheExpirationActionParameters
+    name: CacheExpirationActionParameters
+    spec.typeScript:
+      - name: CacheExpirationActionParameters
+        fullName: CacheExpirationActionParameters
+        uid: azure-arm-cdn - v4.2.0.CacheExpirationActionParameters

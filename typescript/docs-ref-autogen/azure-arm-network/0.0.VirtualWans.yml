@@ -1,0 +1,2235 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.VirtualWans
+    name: VirtualWans
+    fullName: VirtualWans
+    children:
+      - azure-arm-network - v13.0.0.VirtualWans.beginCreateOrUpdate
+      - azure-arm-network - v13.0.0.VirtualWans.beginCreateOrUpdate_2
+      - azure-arm-network - v13.0.0.VirtualWans.beginCreateOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.VirtualWans.beginCreateOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.VirtualWans.beginDeleteMethod
+      - azure-arm-network - v13.0.0.VirtualWans.beginDeleteMethod_2
+      - azure-arm-network - v13.0.0.VirtualWans.beginDeleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.VirtualWans.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.VirtualWans.beginUpdateTags
+      - azure-arm-network - v13.0.0.VirtualWans.beginUpdateTags_2
+      - azure-arm-network - v13.0.0.VirtualWans.beginUpdateTags_1
+      - >-
+        azure-arm-network -
+        v13.0.0.VirtualWans.beginUpdateTagsWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.VirtualWans.createOrUpdate
+      - azure-arm-network - v13.0.0.VirtualWans.createOrUpdate_2
+      - azure-arm-network - v13.0.0.VirtualWans.createOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.VirtualWans.createOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.VirtualWans.deleteMethod
+      - azure-arm-network - v13.0.0.VirtualWans.deleteMethod_2
+      - azure-arm-network - v13.0.0.VirtualWans.deleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.VirtualWans.deleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.VirtualWans.get
+      - azure-arm-network - v13.0.0.VirtualWans.get_2
+      - azure-arm-network - v13.0.0.VirtualWans.get_1
+      - azure-arm-network - v13.0.0.VirtualWans.getWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.VirtualWans.list
+      - azure-arm-network - v13.0.0.VirtualWans.list_2
+      - azure-arm-network - v13.0.0.VirtualWans.list_1
+      - azure-arm-network - v13.0.0.VirtualWans.listByResourceGroup
+      - azure-arm-network - v13.0.0.VirtualWans.listByResourceGroup_2
+      - azure-arm-network - v13.0.0.VirtualWans.listByResourceGroup_1
+      - azure-arm-network - v13.0.0.VirtualWans.listByResourceGroupNext
+      - azure-arm-network - v13.0.0.VirtualWans.listByResourceGroupNext_2
+      - azure-arm-network - v13.0.0.VirtualWans.listByResourceGroupNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.VirtualWans.listByResourceGroupNextWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.VirtualWans.listByResourceGroupWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.VirtualWans.listNext
+      - azure-arm-network - v13.0.0.VirtualWans.listNext_2
+      - azure-arm-network - v13.0.0.VirtualWans.listNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.VirtualWans.listNextWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.VirtualWans.listWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.VirtualWans.updateTags
+      - azure-arm-network - v13.0.0.VirtualWans.updateTags_2
+      - azure-arm-network - v13.0.0.VirtualWans.updateTags_1
+      - >-
+        azure-arm-network -
+        v13.0.0.VirtualWans.updateTagsWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.beginCreateOrUpdate
+    name: 'beginCreateOrUpdate(string, string, VirtualWAN, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a VirtualWAN resource if it doesn't exist else updates the
+      existing
+
+      VirtualWAN.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, virtualWANName:
+        string, wANParameters: VirtualWAN, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VirtualWan.
+        - id: virtualWANName
+          type:
+            - string
+          description: |
+            The name of the VirtualWAN being created or
+            updated.
+        - id: wANParameters
+          type:
+            - azure-arm-network - v13.0.0.VirtualWAN
+          description: |
+            Parameters supplied to create or update
+            VirtualWAN.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.beginCreateOrUpdate_2
+    name: >-
+      beginCreateOrUpdate(string, string, VirtualWAN, Object,
+      ServiceCallback<VirtualWAN>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a VirtualWAN resource if it doesn't exist else updates the
+      existing
+
+      VirtualWAN.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, virtualWANName:
+        string, wANParameters: VirtualWAN, options: Object, callback:
+        ServiceCallback<VirtualWAN>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualWANName
+          type:
+            - string
+          description: ''
+        - id: wANParameters
+          type:
+            - azure-arm-network - v13.0.0.VirtualWAN
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.VirtualWAN>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.beginCreateOrUpdate_1
+    name: >-
+      beginCreateOrUpdate(string, string, VirtualWAN,
+      ServiceCallback<VirtualWAN>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a VirtualWAN resource if it doesn't exist else updates the
+      existing
+
+      VirtualWAN.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, virtualWANName:
+        string, wANParameters: VirtualWAN, callback:
+        ServiceCallback<VirtualWAN>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualWANName
+          type:
+            - string
+          description: ''
+        - id: wANParameters
+          type:
+            - azure-arm-network - v13.0.0.VirtualWAN
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.VirtualWAN>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.VirtualWans.beginCreateOrUpdateWithHttpOperationResponse
+    name: >-
+      beginCreateOrUpdateWithHttpOperationResponse(string, string, VirtualWAN,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a VirtualWAN resource if it doesn't exist else updates the
+      existing
+
+      VirtualWAN.
+    syntax:
+      content: >-
+        function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, virtualWANName: string, wANParameters: VirtualWAN, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VirtualWan.
+        - id: virtualWANName
+          type:
+            - string
+          description: |
+            The name of the VirtualWAN being created or
+            updated.
+        - id: wANParameters
+          type:
+            - azure-arm-network - v13.0.0.VirtualWAN
+          description: |
+            Parameters supplied to create or update
+            VirtualWAN.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.VirtualWAN>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.beginDeleteMethod
+    name: 'beginDeleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a VirtualWAN.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, virtualWANName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VirtualWan.
+        - id: virtualWANName
+          type:
+            - string
+          description: |
+            The name of the VirtualWAN being deleted.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.beginDeleteMethod_2
+    name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a VirtualWAN.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, virtualWANName:
+        string, options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualWANName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.beginDeleteMethod_1
+    name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a VirtualWAN.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, virtualWANName:
+        string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualWANName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.VirtualWans.beginDeleteMethodWithHttpOperationResponse
+    name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a VirtualWAN.
+    syntax:
+      content: >-
+        function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, virtualWANName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VirtualWan.
+        - id: virtualWANName
+          type:
+            - string
+          description: |
+            The name of the VirtualWAN being deleted.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.beginUpdateTags
+    name: 'beginUpdateTags(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a VirtualWAN tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, virtualWANName:
+        string, wANParameters: TagsObject, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VirtualWan.
+        - id: virtualWANName
+          type:
+            - string
+          description: |
+            The name of the VirtualWAN being updated.
+        - id: wANParameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to Update VirtualWAN tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.beginUpdateTags_2
+    name: >-
+      beginUpdateTags(string, string, TagsObject, Object,
+      ServiceCallback<VirtualWAN>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a VirtualWAN tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, virtualWANName:
+        string, wANParameters: TagsObject, options: Object, callback:
+        ServiceCallback<VirtualWAN>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualWANName
+          type:
+            - string
+          description: ''
+        - id: wANParameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.VirtualWAN>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.beginUpdateTags_1
+    name: 'beginUpdateTags(string, string, TagsObject, ServiceCallback<VirtualWAN>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a VirtualWAN tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, virtualWANName:
+        string, wANParameters: TagsObject, callback:
+        ServiceCallback<VirtualWAN>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualWANName
+          type:
+            - string
+          description: ''
+        - id: wANParameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.VirtualWAN>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.VirtualWans.beginUpdateTagsWithHttpOperationResponse
+    name: >-
+      beginUpdateTagsWithHttpOperationResponse(string, string, TagsObject,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a VirtualWAN tags.
+    syntax:
+      content: >-
+        function beginUpdateTagsWithHttpOperationResponse(resourceGroupName:
+        string, virtualWANName: string, wANParameters: TagsObject, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VirtualWan.
+        - id: virtualWANName
+          type:
+            - string
+          description: |
+            The name of the VirtualWAN being updated.
+        - id: wANParameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to Update VirtualWAN tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.VirtualWAN>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.createOrUpdate
+    name: 'createOrUpdate(string, string, VirtualWAN, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a VirtualWAN resource if it doesn't exist else updates the
+      existing
+
+      VirtualWAN.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, virtualWANName:
+        string, wANParameters: VirtualWAN, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VirtualWan.
+        - id: virtualWANName
+          type:
+            - string
+          description: |
+            The name of the VirtualWAN being created or
+            updated.
+        - id: wANParameters
+          type:
+            - azure-arm-network - v13.0.0.VirtualWAN
+          description: |
+            Parameters supplied to create or update
+            VirtualWAN.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.createOrUpdate_2
+    name: >-
+      createOrUpdate(string, string, VirtualWAN, Object,
+      ServiceCallback<VirtualWAN>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a VirtualWAN resource if it doesn't exist else updates the
+      existing
+
+      VirtualWAN.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, virtualWANName:
+        string, wANParameters: VirtualWAN, options: Object, callback:
+        ServiceCallback<VirtualWAN>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualWANName
+          type:
+            - string
+          description: ''
+        - id: wANParameters
+          type:
+            - azure-arm-network - v13.0.0.VirtualWAN
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.VirtualWAN>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.createOrUpdate_1
+    name: 'createOrUpdate(string, string, VirtualWAN, ServiceCallback<VirtualWAN>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a VirtualWAN resource if it doesn't exist else updates the
+      existing
+
+      VirtualWAN.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, virtualWANName:
+        string, wANParameters: VirtualWAN, callback:
+        ServiceCallback<VirtualWAN>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualWANName
+          type:
+            - string
+          description: ''
+        - id: wANParameters
+          type:
+            - azure-arm-network - v13.0.0.VirtualWAN
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.VirtualWAN>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.VirtualWans.createOrUpdateWithHttpOperationResponse
+    name: >-
+      createOrUpdateWithHttpOperationResponse(string, string, VirtualWAN,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a VirtualWAN resource if it doesn't exist else updates the
+      existing
+
+      VirtualWAN.
+    syntax:
+      content: >-
+        function createOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, virtualWANName: string, wANParameters: VirtualWAN, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VirtualWan.
+        - id: virtualWANName
+          type:
+            - string
+          description: |
+            The name of the VirtualWAN being created or
+            updated.
+        - id: wANParameters
+          type:
+            - azure-arm-network - v13.0.0.VirtualWAN
+          description: |
+            Parameters supplied to create or update
+            VirtualWAN.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.VirtualWAN>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.deleteMethod
+    name: 'deleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a VirtualWAN.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, virtualWANName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VirtualWan.
+        - id: virtualWANName
+          type:
+            - string
+          description: |
+            The name of the VirtualWAN being deleted.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.deleteMethod_2
+    name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a VirtualWAN.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, virtualWANName: string,
+        options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualWANName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.deleteMethod_1
+    name: 'deleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a VirtualWAN.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, virtualWANName: string,
+        callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualWANName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.VirtualWans.deleteMethodWithHttpOperationResponse
+    name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a VirtualWAN.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, virtualWANName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VirtualWan.
+        - id: virtualWANName
+          type:
+            - string
+          description: |
+            The name of the VirtualWAN being deleted.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.get
+    name: 'get(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves the details of a VirtualWAN.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, virtualWANName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VirtualWan.
+        - id: virtualWANName
+          type:
+            - string
+          description: |
+            The name of the VirtualWAN being retrieved.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.get_2
+    name: 'get(string, string, Object, ServiceCallback<VirtualWAN>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves the details of a VirtualWAN.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, virtualWANName: string, options:
+        Object, callback: ServiceCallback<VirtualWAN>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualWANName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.VirtualWAN>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.get_1
+    name: 'get(string, string, ServiceCallback<VirtualWAN>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves the details of a VirtualWAN.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, virtualWANName: string,
+        callback: ServiceCallback<VirtualWAN>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualWANName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.VirtualWAN>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves the details of a VirtualWAN.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        virtualWANName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VirtualWan.
+        - id: virtualWANName
+          type:
+            - string
+          description: |
+            The name of the VirtualWAN being retrieved.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.VirtualWAN>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.list
+    name: list(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all the VirtualWANs in a subscription.
+    syntax:
+      content: 'function list(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.list_2
+    name: 'list(Object, ServiceCallback<ListVirtualWANsResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all the VirtualWANs in a subscription.
+    syntax:
+      content: >-
+        function list(options: Object, callback:
+        ServiceCallback<ListVirtualWANsResult>)
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.list_1
+    name: list(ServiceCallback<ListVirtualWANsResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all the VirtualWANs in a subscription.
+    syntax:
+      content: 'function list(callback: ServiceCallback<ListVirtualWANsResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.listByResourceGroup
+    name: 'listByResourceGroup(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all the VirtualWANs in a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VirtualWan.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.listByResourceGroup_2
+    name: >-
+      listByResourceGroup(string, Object,
+      ServiceCallback<ListVirtualWANsResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all the VirtualWANs in a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options: Object,
+        callback: ServiceCallback<ListVirtualWANsResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.listByResourceGroup_1
+    name: 'listByResourceGroup(string, ServiceCallback<ListVirtualWANsResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all the VirtualWANs in a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, callback:
+        ServiceCallback<ListVirtualWANsResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.listByResourceGroupNext
+    name: 'listByResourceGroupNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all the VirtualWANs in a resource group.
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.listByResourceGroupNext_2
+    name: >-
+      listByResourceGroupNext(string, Object,
+      ServiceCallback<ListVirtualWANsResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all the VirtualWANs in a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, options: Object,
+        callback: ServiceCallback<ListVirtualWANsResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.listByResourceGroupNext_1
+    name: 'listByResourceGroupNext(string, ServiceCallback<ListVirtualWANsResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all the VirtualWANs in a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, callback:
+        ServiceCallback<ListVirtualWANsResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.VirtualWans.listByResourceGroupNextWithHttpOperationResponse
+    name: 'listByResourceGroupNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all the VirtualWANs in a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroupNextWithHttpOperationResponse(nextPageLink:
+        string, options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ListVirtualWANsResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.VirtualWans.listByResourceGroupWithHttpOperationResponse
+    name: 'listByResourceGroupWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all the VirtualWANs in a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroupWithHttpOperationResponse(resourceGroupName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VirtualWan.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ListVirtualWANsResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.listNext
+    name: 'listNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all the VirtualWANs in a subscription.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.listNext_2
+    name: 'listNext(string, Object, ServiceCallback<ListVirtualWANsResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all the VirtualWANs in a subscription.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<ListVirtualWANsResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.listNext_1
+    name: 'listNext(string, ServiceCallback<ListVirtualWANsResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all the VirtualWANs in a subscription.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<ListVirtualWANsResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVirtualWANsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVirtualWANsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVirtualWANsResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.listNextWithHttpOperationResponse
+    name: 'listNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all the VirtualWANs in a subscription.
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ListVirtualWANsResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.listWithHttpOperationResponse
+    name: listWithHttpOperationResponse(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all the VirtualWANs in a subscription.
+    syntax:
+      content: 'function listWithHttpOperationResponse(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ListVirtualWANsResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.updateTags
+    name: 'updateTags(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a VirtualWAN tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, virtualWANName: string,
+        wANParameters: TagsObject, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VirtualWan.
+        - id: virtualWANName
+          type:
+            - string
+          description: |
+            The name of the VirtualWAN being updated.
+        - id: wANParameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to Update VirtualWAN tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.updateTags_2
+    name: >-
+      updateTags(string, string, TagsObject, Object,
+      ServiceCallback<VirtualWAN>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a VirtualWAN tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, virtualWANName: string,
+        wANParameters: TagsObject, options: Object, callback:
+        ServiceCallback<VirtualWAN>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualWANName
+          type:
+            - string
+          description: ''
+        - id: wANParameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.VirtualWAN>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualWans.updateTags_1
+    name: 'updateTags(string, string, TagsObject, ServiceCallback<VirtualWAN>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a VirtualWAN tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, virtualWANName: string,
+        wANParameters: TagsObject, callback: ServiceCallback<VirtualWAN>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: virtualWANName
+          type:
+            - string
+          description: ''
+        - id: wANParameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.VirtualWAN>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VirtualWAN>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualWAN} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualWAN} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualWAN} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.VirtualWans.updateTagsWithHttpOperationResponse
+    name: 'updateTagsWithHttpOperationResponse(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a VirtualWAN tags.
+    syntax:
+      content: >-
+        function updateTagsWithHttpOperationResponse(resourceGroupName: string,
+        virtualWANName: string, wANParameters: TagsObject, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VirtualWan.
+        - id: virtualWANName
+          type:
+            - string
+          description: |
+            The name of the VirtualWAN being updated.
+        - id: wANParameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to Update VirtualWAN tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.VirtualWAN>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.VirtualWAN
+    name: VirtualWAN
+    spec.typeScript:
+      - name: VirtualWAN
+        fullName: VirtualWAN
+        uid: azure-arm-network - v13.0.0.VirtualWAN
+  - uid: Promise<azure-arm-network - v13.0.0.VirtualWAN>
+    name: VirtualWAN>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualWAN
+        fullName: VirtualWAN
+        uid: azure-arm-network - v13.0.0.VirtualWAN
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.VirtualWAN>
+    name: VirtualWAN>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualWAN
+        fullName: VirtualWAN
+        uid: azure-arm-network - v13.0.0.VirtualWAN
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network - v13.0.0.VirtualWAN>>
+    name: VirtualWAN>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VirtualWAN
+        fullName: VirtualWAN
+        uid: azure-arm-network - v13.0.0.VirtualWAN
+      - name: '>>'
+        fullName: '>>'
+  - uid: azure-arm-network - v13.0.0.TagsObject
+    name: TagsObject
+    spec.typeScript:
+      - name: TagsObject
+        fullName: TagsObject
+        uid: azure-arm-network - v13.0.0.TagsObject
+  - uid: Promise<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+    name: ListVirtualWANsResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ListVirtualWANsResult
+        fullName: ListVirtualWANsResult
+        uid: azure-arm-network - v13.0.0.ListVirtualWANsResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.ListVirtualWANsResult>
+    name: ListVirtualWANsResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ListVirtualWANsResult
+        fullName: ListVirtualWANsResult
+        uid: azure-arm-network - v13.0.0.ListVirtualWANsResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.ListVirtualWANsResult>>
+    name: ListVirtualWANsResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ListVirtualWANsResult
+        fullName: ListVirtualWANsResult
+        uid: azure-arm-network - v13.0.0.ListVirtualWANsResult
+      - name: '>>'
+        fullName: '>>'

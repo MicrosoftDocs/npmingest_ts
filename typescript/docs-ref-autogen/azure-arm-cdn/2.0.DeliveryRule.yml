@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-cdn - v4.2.0.DeliveryRule
+    name: DeliveryRule
+    fullName: DeliveryRule
+    children:
+      - azure-arm-cdn - v4.2.0.DeliveryRule.actions
+      - azure-arm-cdn - v4.2.0.DeliveryRule.conditions
+      - azure-arm-cdn - v4.2.0.DeliveryRule.order
+    langs:
+      - typeScript
+    type: interface
+    summary: A rule that specifies a set of actions and conditions
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.DeliveryRule.actions
+    name: actions
+    fullName: actions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      A list of actions that are executed when all the conditions of a rule are
+      satisfied.
+    syntax:
+      content: 'actions: DeliveryRuleAction[]'
+      return:
+        type:
+          - 'azure-arm-cdn - v4.2.0.DeliveryRuleAction[]'
+        description: ''
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.DeliveryRule.conditions
+    name: conditions
+    fullName: conditions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A list of conditions that must be matched for the actions to be executed
+    optional: true
+    syntax:
+      content: 'conditions?: DeliveryRuleCondition[]'
+      return:
+        type:
+          - 'azure-arm-cdn - v4.2.0.DeliveryRuleCondition[]'
+        description: ''
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.DeliveryRule.order
+    name: order
+    fullName: order
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The order in which the rules are applied for the endpoint. Possible values
+      {0,1,2,3,………}. A
+
+      rule with a lesser order will be applied before a rule with a greater
+      order. Rule with order 0
+
+      is a special rule. It does not require any condition and actions listed in
+      it will always be
+
+      applied.
+    syntax:
+      content: 'order: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-cdn - v4
+references:
+  - uid: 'azure-arm-cdn - v4.2.0.DeliveryRuleAction[]'
+    name: 'DeliveryRuleAction[]'
+    spec.typeScript:
+      - name: DeliveryRuleAction
+        fullName: DeliveryRuleAction
+        uid: azure-arm-cdn - v4.2.0.DeliveryRuleAction
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-cdn - v4.2.0.DeliveryRuleCondition[]'
+    name: 'DeliveryRuleCondition[]'
+    spec.typeScript:
+      - name: DeliveryRuleCondition
+        fullName: DeliveryRuleCondition
+        uid: azure-arm-cdn - v4.2.0.DeliveryRuleCondition
+      - name: '[]'
+        fullName: '[]'

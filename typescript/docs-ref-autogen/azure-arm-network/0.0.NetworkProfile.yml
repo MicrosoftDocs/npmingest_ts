@@ -1,0 +1,212 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.NetworkProfile
+    name: NetworkProfile
+    fullName: NetworkProfile
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.NetworkProfile.containerNetworkInterfaceConfigurations
+      - azure-arm-network - v13.0.0.NetworkProfile.containerNetworkInterfaces
+      - azure-arm-network - v13.0.0.NetworkProfile.etag
+      - azure-arm-network - v13.0.0.NetworkProfile.id
+      - azure-arm-network - v13.0.0.NetworkProfile.location
+      - azure-arm-network - v13.0.0.NetworkProfile.name
+      - azure-arm-network - v13.0.0.NetworkProfile.provisioningState
+      - azure-arm-network - v13.0.0.NetworkProfile.resourceGuid
+      - azure-arm-network - v13.0.0.NetworkProfile.tags
+      - azure-arm-network - v13.0.0.NetworkProfile.type
+    langs:
+      - typeScript
+    type: interface
+    summary: Network profile resource.
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.NetworkProfile.containerNetworkInterfaceConfigurations
+    name: containerNetworkInterfaceConfigurations
+    fullName: containerNetworkInterfaceConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: List of chid container network interface configurations.
+    optional: true
+    syntax:
+      content: >-
+        containerNetworkInterfaceConfigurations?:
+        ContainerNetworkInterfaceConfiguration[]
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ContainerNetworkInterfaceConfiguration[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfile.containerNetworkInterfaces
+    name: containerNetworkInterfaces
+    fullName: containerNetworkInterfaces
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: List of child container network interfaces.
+    optional: true
+    syntax:
+      content: 'containerNetworkInterfaces?: ContainerNetworkInterface[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ContainerNetworkInterface[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfile.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A unique read-only string that changes whenever the resource is updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfile.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfile.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfile.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfile.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The provisioning state of the resource.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfile.resourceGuid
+    name: resourceGuid
+    fullName: resourceGuid
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The resource GUID property of the network interface resource.
+    optional: true
+    syntax:
+      content: 'resourceGuid?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfile.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfile.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: 'azure-arm-network - v13.0.0.ContainerNetworkInterfaceConfiguration[]'
+    name: 'ContainerNetworkInterfaceConfiguration[]'
+    spec.typeScript:
+      - name: ContainerNetworkInterfaceConfiguration
+        fullName: ContainerNetworkInterfaceConfiguration
+        uid: azure-arm-network - v13.0.0.ContainerNetworkInterfaceConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.ContainerNetworkInterface[]'
+    name: 'ContainerNetworkInterface[]'
+    spec.typeScript:
+      - name: ContainerNetworkInterface
+        fullName: ContainerNetworkInterface
+        uid: azure-arm-network - v13.0.0.ContainerNetworkInterface
+      - name: '[]'
+        fullName: '[]'

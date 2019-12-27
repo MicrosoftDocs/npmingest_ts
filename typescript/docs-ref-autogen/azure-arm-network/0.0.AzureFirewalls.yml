@@ -1,0 +1,1787 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls
+    name: AzureFirewalls
+    fullName: AzureFirewalls
+    children:
+      - azure-arm-network - v13.0.0.AzureFirewalls.beginCreateOrUpdate
+      - azure-arm-network - v13.0.0.AzureFirewalls.beginCreateOrUpdate_2
+      - azure-arm-network - v13.0.0.AzureFirewalls.beginCreateOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.AzureFirewalls.beginCreateOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.AzureFirewalls.beginDeleteMethod
+      - azure-arm-network - v13.0.0.AzureFirewalls.beginDeleteMethod_2
+      - azure-arm-network - v13.0.0.AzureFirewalls.beginDeleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.AzureFirewalls.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.AzureFirewalls.createOrUpdate
+      - azure-arm-network - v13.0.0.AzureFirewalls.createOrUpdate_2
+      - azure-arm-network - v13.0.0.AzureFirewalls.createOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.AzureFirewalls.createOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.AzureFirewalls.deleteMethod
+      - azure-arm-network - v13.0.0.AzureFirewalls.deleteMethod_2
+      - azure-arm-network - v13.0.0.AzureFirewalls.deleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.AzureFirewalls.deleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.AzureFirewalls.get
+      - azure-arm-network - v13.0.0.AzureFirewalls.get_2
+      - azure-arm-network - v13.0.0.AzureFirewalls.get_1
+      - azure-arm-network - v13.0.0.AzureFirewalls.getWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.AzureFirewalls.list
+      - azure-arm-network - v13.0.0.AzureFirewalls.list_2
+      - azure-arm-network - v13.0.0.AzureFirewalls.list_1
+      - azure-arm-network - v13.0.0.AzureFirewalls.listAll
+      - azure-arm-network - v13.0.0.AzureFirewalls.listAll_2
+      - azure-arm-network - v13.0.0.AzureFirewalls.listAll_1
+      - azure-arm-network - v13.0.0.AzureFirewalls.listAllNext
+      - azure-arm-network - v13.0.0.AzureFirewalls.listAllNext_2
+      - azure-arm-network - v13.0.0.AzureFirewalls.listAllNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.AzureFirewalls.listAllNextWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.AzureFirewalls.listAllWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.AzureFirewalls.listNext
+      - azure-arm-network - v13.0.0.AzureFirewalls.listNext_2
+      - azure-arm-network - v13.0.0.AzureFirewalls.listNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.AzureFirewalls.listNextWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.AzureFirewalls.listWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.beginCreateOrUpdate
+    name: 'beginCreateOrUpdate(string, string, AzureFirewall, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates the specified Azure Firewall.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        azureFirewallName: string, parameters: AzureFirewall, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: azureFirewallName
+          type:
+            - string
+          description: |
+            The name of the Azure Firewall.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.AzureFirewall
+          description: |
+            Parameters supplied to the create or update Azure
+            Firewall operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.beginCreateOrUpdate_2
+    name: >-
+      beginCreateOrUpdate(string, string, AzureFirewall, Object,
+      ServiceCallback<AzureFirewall>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates the specified Azure Firewall.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        azureFirewallName: string, parameters: AzureFirewall, options: Object,
+        callback: ServiceCallback<AzureFirewall>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: azureFirewallName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.AzureFirewall
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.AzureFirewall>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.beginCreateOrUpdate_1
+    name: >-
+      beginCreateOrUpdate(string, string, AzureFirewall,
+      ServiceCallback<AzureFirewall>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates the specified Azure Firewall.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        azureFirewallName: string, parameters: AzureFirewall, callback:
+        ServiceCallback<AzureFirewall>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: azureFirewallName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.AzureFirewall
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.AzureFirewall>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.AzureFirewalls.beginCreateOrUpdateWithHttpOperationResponse
+    name: >-
+      beginCreateOrUpdateWithHttpOperationResponse(string, string,
+      AzureFirewall, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates the specified Azure Firewall.
+    syntax:
+      content: >-
+        function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, azureFirewallName: string, parameters: AzureFirewall, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: azureFirewallName
+          type:
+            - string
+          description: |
+            The name of the Azure Firewall.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.AzureFirewall
+          description: |
+            Parameters supplied to the create or update Azure
+            Firewall operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.AzureFirewall>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.beginDeleteMethod
+    name: 'beginDeleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified Azure Firewall.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, azureFirewallName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: azureFirewallName
+          type:
+            - string
+          description: |
+            The name of the Azure Firewall.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.beginDeleteMethod_2
+    name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified Azure Firewall.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, azureFirewallName:
+        string, options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: azureFirewallName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.beginDeleteMethod_1
+    name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified Azure Firewall.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, azureFirewallName:
+        string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: azureFirewallName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.AzureFirewalls.beginDeleteMethodWithHttpOperationResponse
+    name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified Azure Firewall.
+    syntax:
+      content: >-
+        function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, azureFirewallName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: azureFirewallName
+          type:
+            - string
+          description: |
+            The name of the Azure Firewall.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.createOrUpdate
+    name: 'createOrUpdate(string, string, AzureFirewall, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates the specified Azure Firewall.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, azureFirewallName:
+        string, parameters: AzureFirewall, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: azureFirewallName
+          type:
+            - string
+          description: |
+            The name of the Azure Firewall.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.AzureFirewall
+          description: |
+            Parameters supplied to the create or update Azure
+            Firewall operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.createOrUpdate_2
+    name: >-
+      createOrUpdate(string, string, AzureFirewall, Object,
+      ServiceCallback<AzureFirewall>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates the specified Azure Firewall.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, azureFirewallName:
+        string, parameters: AzureFirewall, options: Object, callback:
+        ServiceCallback<AzureFirewall>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: azureFirewallName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.AzureFirewall
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.AzureFirewall>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.createOrUpdate_1
+    name: >-
+      createOrUpdate(string, string, AzureFirewall,
+      ServiceCallback<AzureFirewall>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates the specified Azure Firewall.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, azureFirewallName:
+        string, parameters: AzureFirewall, callback:
+        ServiceCallback<AzureFirewall>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: azureFirewallName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.AzureFirewall
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.AzureFirewall>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.AzureFirewalls.createOrUpdateWithHttpOperationResponse
+    name: >-
+      createOrUpdateWithHttpOperationResponse(string, string, AzureFirewall,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates the specified Azure Firewall.
+    syntax:
+      content: >-
+        function createOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, azureFirewallName: string, parameters: AzureFirewall, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: azureFirewallName
+          type:
+            - string
+          description: |
+            The name of the Azure Firewall.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.AzureFirewall
+          description: |
+            Parameters supplied to the create or update Azure
+            Firewall operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.AzureFirewall>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.deleteMethod
+    name: 'deleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified Azure Firewall.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, azureFirewallName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: azureFirewallName
+          type:
+            - string
+          description: |
+            The name of the Azure Firewall.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.deleteMethod_2
+    name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified Azure Firewall.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, azureFirewallName:
+        string, options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: azureFirewallName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.deleteMethod_1
+    name: 'deleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified Azure Firewall.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, azureFirewallName:
+        string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: azureFirewallName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.AzureFirewalls.deleteMethodWithHttpOperationResponse
+    name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified Azure Firewall.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, azureFirewallName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: azureFirewallName
+          type:
+            - string
+          description: |
+            The name of the Azure Firewall.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.get
+    name: 'get(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified Azure Firewall.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, azureFirewallName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: azureFirewallName
+          type:
+            - string
+          description: |
+            The name of the Azure Firewall.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.get_2
+    name: 'get(string, string, Object, ServiceCallback<AzureFirewall>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified Azure Firewall.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, azureFirewallName: string,
+        options: Object, callback: ServiceCallback<AzureFirewall>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: azureFirewallName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.AzureFirewall>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.get_1
+    name: 'get(string, string, ServiceCallback<AzureFirewall>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified Azure Firewall.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, azureFirewallName: string,
+        callback: ServiceCallback<AzureFirewall>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: azureFirewallName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.AzureFirewall>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewall>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewall} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewall} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewall} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified Azure Firewall.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        azureFirewallName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: azureFirewallName
+          type:
+            - string
+          description: |
+            The name of the Azure Firewall.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.AzureFirewall>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.list
+    name: 'list(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all Azure Firewalls in a resource group.
+    syntax:
+      content: 'function list(resourceGroupName: string, options?: Object)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.list_2
+    name: 'list(string, Object, ServiceCallback<AzureFirewallListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all Azure Firewalls in a resource group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, options: Object, callback:
+        ServiceCallback<AzureFirewallListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.AzureFirewallListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.list_1
+    name: 'list(string, ServiceCallback<AzureFirewallListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all Azure Firewalls in a resource group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, callback:
+        ServiceCallback<AzureFirewallListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.AzureFirewallListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.listAll
+    name: listAll(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the Azure Firewalls in a subscription.
+    syntax:
+      content: 'function listAll(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.listAll_2
+    name: 'listAll(Object, ServiceCallback<AzureFirewallListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the Azure Firewalls in a subscription.
+    syntax:
+      content: >-
+        function listAll(options: Object, callback:
+        ServiceCallback<AzureFirewallListResult>)
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.AzureFirewallListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.listAll_1
+    name: listAll(ServiceCallback<AzureFirewallListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the Azure Firewalls in a subscription.
+    syntax:
+      content: 'function listAll(callback: ServiceCallback<AzureFirewallListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.AzureFirewallListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.listAllNext
+    name: 'listAllNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the Azure Firewalls in a subscription.
+    syntax:
+      content: 'function listAllNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.listAllNext_2
+    name: 'listAllNext(string, Object, ServiceCallback<AzureFirewallListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the Azure Firewalls in a subscription.
+    syntax:
+      content: >-
+        function listAllNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<AzureFirewallListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.AzureFirewallListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.listAllNext_1
+    name: 'listAllNext(string, ServiceCallback<AzureFirewallListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the Azure Firewalls in a subscription.
+    syntax:
+      content: >-
+        function listAllNext(nextPageLink: string, callback:
+        ServiceCallback<AzureFirewallListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.AzureFirewallListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.AzureFirewalls.listAllNextWithHttpOperationResponse
+    name: 'listAllNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the Azure Firewalls in a subscription.
+    syntax:
+      content: >-
+        function listAllNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.AzureFirewallListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.AzureFirewalls.listAllWithHttpOperationResponse
+    name: listAllWithHttpOperationResponse(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the Azure Firewalls in a subscription.
+    syntax:
+      content: 'function listAllWithHttpOperationResponse(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.AzureFirewallListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.listNext
+    name: 'listNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all Azure Firewalls in a resource group.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.listNext_2
+    name: 'listNext(string, Object, ServiceCallback<AzureFirewallListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all Azure Firewalls in a resource group.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<AzureFirewallListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.AzureFirewallListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.listNext_1
+    name: 'listNext(string, ServiceCallback<AzureFirewallListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all Azure Firewalls in a resource group.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<AzureFirewallListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.AzureFirewallListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.AzureFirewallListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {AzureFirewallListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {AzureFirewallListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link AzureFirewallListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.AzureFirewalls.listNextWithHttpOperationResponse
+    name: 'listNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all Azure Firewalls in a resource group.
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.AzureFirewallListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewalls.listWithHttpOperationResponse
+    name: 'listWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all Azure Firewalls in a resource group.
+    syntax:
+      content: >-
+        function listWithHttpOperationResponse(resourceGroupName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.AzureFirewallListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.AzureFirewall
+    name: AzureFirewall
+    spec.typeScript:
+      - name: AzureFirewall
+        fullName: AzureFirewall
+        uid: azure-arm-network - v13.0.0.AzureFirewall
+  - uid: Promise<azure-arm-network - v13.0.0.AzureFirewall>
+    name: AzureFirewall>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: AzureFirewall
+        fullName: AzureFirewall
+        uid: azure-arm-network - v13.0.0.AzureFirewall
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.AzureFirewall>
+    name: AzureFirewall>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: AzureFirewall
+        fullName: AzureFirewall
+        uid: azure-arm-network - v13.0.0.AzureFirewall
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network - v13.0.0.AzureFirewall>>
+    name: AzureFirewall>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: AzureFirewall
+        fullName: AzureFirewall
+        uid: azure-arm-network - v13.0.0.AzureFirewall
+      - name: '>>'
+        fullName: '>>'
+  - uid: Promise<azure-arm-network - v13.0.0.AzureFirewallListResult>
+    name: AzureFirewallListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: AzureFirewallListResult
+        fullName: AzureFirewallListResult
+        uid: azure-arm-network - v13.0.0.AzureFirewallListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.AzureFirewallListResult>
+    name: AzureFirewallListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: AzureFirewallListResult
+        fullName: AzureFirewallListResult
+        uid: azure-arm-network - v13.0.0.AzureFirewallListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.AzureFirewallListResult>>
+    name: AzureFirewallListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: AzureFirewallListResult
+        fullName: AzureFirewallListResult
+        uid: azure-arm-network - v13.0.0.AzureFirewallListResult
+      - name: '>>'
+        fullName: '>>'

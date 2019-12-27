@@ -1,0 +1,117 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.CreationData
+    name: CreationData
+    fullName: CreationData
+    children:
+      - azure-arm-compute - v10.0.0.CreationData.createOption
+      - azure-arm-compute - v10.0.0.CreationData.imageReference
+      - azure-arm-compute - v10.0.0.CreationData.sourceResourceId
+      - azure-arm-compute - v10.0.0.CreationData.sourceUri
+      - azure-arm-compute - v10.0.0.CreationData.storageAccountId
+    langs:
+      - typeScript
+    type: interface
+    summary: Data used when creating a disk.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.CreationData.createOption
+    name: createOption
+    fullName: createOption
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      This enumerates the possible sources of a disk's creation. Possible values
+      include: 'Empty',
+
+      'Attach', 'FromImage', 'Import', 'Copy', 'Restore', 'Upload'
+    syntax:
+      content: 'createOption: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.CreationData.imageReference
+    name: imageReference
+    fullName: imageReference
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Disk source information.
+    optional: true
+    syntax:
+      content: 'imageReference?: ImageDiskReference'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.ImageDiskReference
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.CreationData.sourceResourceId
+    name: sourceResourceId
+    fullName: sourceResourceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      If createOption is Copy, this is the ARM id of the source snapshot or
+      disk.
+    optional: true
+    syntax:
+      content: 'sourceResourceId?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.CreationData.sourceUri
+    name: sourceUri
+    fullName: sourceUri
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      If createOption is Import, this is the URI of a blob to be imported into a
+      managed disk.
+    optional: true
+    syntax:
+      content: 'sourceUri?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.CreationData.storageAccountId
+    name: storageAccountId
+    fullName: storageAccountId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      If createOption is Import, the Azure Resource Manager identifier of the
+      storage account
+
+      containing the blob to import as a disk. Required only if the blob is in a
+      different
+
+      subscription
+    optional: true
+    syntax:
+      content: 'storageAccountId?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.ImageDiskReference
+    name: ImageDiskReference
+    spec.typeScript:
+      - name: ImageDiskReference
+        fullName: ImageDiskReference
+        uid: azure-arm-compute - v10.0.0.ImageDiskReference

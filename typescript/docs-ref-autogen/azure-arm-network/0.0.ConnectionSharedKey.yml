@@ -1,0 +1,53 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ConnectionSharedKey
+    name: ConnectionSharedKey
+    fullName: ConnectionSharedKey
+    children:
+      - azure-arm-network - v13.0.0.ConnectionSharedKey.id
+      - azure-arm-network - v13.0.0.ConnectionSharedKey.value
+    langs:
+      - typeScript
+    type: interface
+    summary: Response for GetConnectionSharedKey API service call
+    extends:
+      name: azure-arm-network - v13.0.0.SubResource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionSharedKey.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionSharedKey.value
+    name: value
+    fullName: value
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The virtual network connection shared key value.
+    syntax:
+      content: 'value: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource

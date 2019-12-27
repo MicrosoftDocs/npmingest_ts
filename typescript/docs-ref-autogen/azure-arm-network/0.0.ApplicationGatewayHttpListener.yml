@@ -1,0 +1,254 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayHttpListener
+    name: ApplicationGatewayHttpListener
+    fullName: ApplicationGatewayHttpListener
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayHttpListener.customErrorConfigurations
+      - azure-arm-network - v13.0.0.ApplicationGatewayHttpListener.etag
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayHttpListener.frontendIPConfiguration
+      - azure-arm-network - v13.0.0.ApplicationGatewayHttpListener.frontendPort
+      - azure-arm-network - v13.0.0.ApplicationGatewayHttpListener.hostName
+      - azure-arm-network - v13.0.0.ApplicationGatewayHttpListener.id
+      - azure-arm-network - v13.0.0.ApplicationGatewayHttpListener.name
+      - azure-arm-network - v13.0.0.ApplicationGatewayHttpListener.protocol
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayHttpListener.provisioningState
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayHttpListener.requireServerNameIndication
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayHttpListener.sslCertificate
+      - azure-arm-network - v13.0.0.ApplicationGatewayHttpListener.type
+    langs:
+      - typeScript
+    type: interface
+    summary: Http listener of an application gateway.
+    extends:
+      name: azure-arm-network - v13.0.0.SubResource
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayHttpListener.customErrorConfigurations
+    name: customErrorConfigurations
+    fullName: customErrorConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Custom error configurations of the HTTP listener.
+    optional: true
+    syntax:
+      content: 'customErrorConfigurations?: ApplicationGatewayCustomError[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ApplicationGatewayCustomError[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayHttpListener.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A unique read-only string that changes whenever the resource is updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayHttpListener.frontendIPConfiguration
+    name: frontendIPConfiguration
+    fullName: frontendIPConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Frontend IP configuration resource of an application gateway.
+    optional: true
+    syntax:
+      content: 'frontendIPConfiguration?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayHttpListener.frontendPort
+    name: frontendPort
+    fullName: frontendPort
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Frontend port resource of an application gateway.
+    optional: true
+    syntax:
+      content: 'frontendPort?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayHttpListener.hostName
+    name: hostName
+    fullName: hostName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Host name of HTTP listener.
+    optional: true
+    syntax:
+      content: 'hostName?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayHttpListener.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayHttpListener.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Name of the HTTP listener that is unique within an Application Gateway.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayHttpListener.protocol
+    name: protocol
+    fullName: protocol
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'Protocol of the HTTP listener. Possible values include: ''Http'', ''Https'''
+    optional: true
+    syntax:
+      content: 'protocol?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayHttpListener.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Provisioning state of the HTTP listener resource. Possible values are:
+      'Updating', 'Deleting',
+
+      and 'Failed'.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayHttpListener.requireServerNameIndication
+    name: requireServerNameIndication
+    fullName: requireServerNameIndication
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Applicable only if protocol is https. Enables SNI for multi-hosting.
+    optional: true
+    syntax:
+      content: 'requireServerNameIndication?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayHttpListener.sslCertificate
+    name: sslCertificate
+    fullName: sslCertificate
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: SSL certificate resource of an application gateway.
+    optional: true
+    syntax:
+      content: 'sslCertificate?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayHttpListener.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Type of the resource.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayCustomError[]'
+    name: 'ApplicationGatewayCustomError[]'
+    spec.typeScript:
+      - name: ApplicationGatewayCustomError
+        fullName: ApplicationGatewayCustomError
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayCustomError
+      - name: '[]'
+        fullName: '[]'

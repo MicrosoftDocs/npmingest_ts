@@ -1,0 +1,233 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.VpnGateway
+    name: VpnGateway
+    fullName: VpnGateway
+    children:
+      - azure-arm-network - v13.0.0.VpnGateway.bgpSettings
+      - azure-arm-network - v13.0.0.VpnGateway.connections
+      - azure-arm-network - v13.0.0.VpnGateway.etag
+      - azure-arm-network - v13.0.0.VpnGateway.id
+      - azure-arm-network - v13.0.0.VpnGateway.location
+      - azure-arm-network - v13.0.0.VpnGateway.name
+      - azure-arm-network - v13.0.0.VpnGateway.provisioningState
+      - azure-arm-network - v13.0.0.VpnGateway.tags
+      - azure-arm-network - v13.0.0.VpnGateway.type
+      - azure-arm-network - v13.0.0.VpnGateway.virtualHub
+      - azure-arm-network - v13.0.0.VpnGateway.vpnGatewayScaleUnit
+    langs:
+      - typeScript
+    type: interface
+    summary: VpnGateway Resource.
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnGateway.bgpSettings
+    name: bgpSettings
+    fullName: bgpSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Local network gateway's BGP speaker settings.
+    optional: true
+    syntax:
+      content: 'bgpSettings?: BgpSettings'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.BgpSettings
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnGateway.connections
+    name: connections
+    fullName: connections
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: List of all vpn connections to the gateway.
+    optional: true
+    syntax:
+      content: 'connections?: VpnConnection[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.VpnConnection[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnGateway.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Gets a unique read-only string that changes whenever the resource is
+      updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnGateway.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnGateway.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnGateway.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnGateway.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the resource. Possible values include:
+      'Succeeded', 'Updating',
+
+      'Deleting', 'Failed'
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnGateway.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnGateway.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnGateway.virtualHub
+    name: virtualHub
+    fullName: virtualHub
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The VirtualHub to which the gateway belongs
+    optional: true
+    syntax:
+      content: 'virtualHub?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnGateway.vpnGatewayScaleUnit
+    name: vpnGatewayScaleUnit
+    fullName: vpnGatewayScaleUnit
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The scale unit for this vpn gateway.
+    optional: true
+    syntax:
+      content: 'vpnGatewayScaleUnit?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: azure-arm-network - v13.0.0.BgpSettings
+    name: BgpSettings
+    spec.typeScript:
+      - name: BgpSettings
+        fullName: BgpSettings
+        uid: azure-arm-network - v13.0.0.BgpSettings
+  - uid: 'azure-arm-network - v13.0.0.VpnConnection[]'
+    name: 'VpnConnection[]'
+    spec.typeScript:
+      - name: VpnConnection
+        fullName: VpnConnection
+        uid: azure-arm-network - v13.0.0.VpnConnection
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource

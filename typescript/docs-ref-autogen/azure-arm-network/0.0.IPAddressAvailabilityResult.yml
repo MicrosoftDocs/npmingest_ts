@@ -1,0 +1,51 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.IPAddressAvailabilityResult
+    name: IPAddressAvailabilityResult
+    fullName: IPAddressAvailabilityResult
+    children:
+      - azure-arm-network - v13.0.0.IPAddressAvailabilityResult.available
+      - >-
+        azure-arm-network -
+        v13.0.0.IPAddressAvailabilityResult.availableIPAddresses
+    langs:
+      - typeScript
+    type: interface
+    summary: Response for CheckIPAddressAvailability API service call
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.IPAddressAvailabilityResult.available
+    name: available
+    fullName: available
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Private IP address availability.
+    optional: true
+    syntax:
+      content: 'available?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.IPAddressAvailabilityResult.availableIPAddresses
+    name: availableIPAddresses
+    fullName: availableIPAddresses
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Contains other available private IP addresses if the asked for address is
+      taken.
+    optional: true
+    syntax:
+      content: 'availableIPAddresses?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-network - v13

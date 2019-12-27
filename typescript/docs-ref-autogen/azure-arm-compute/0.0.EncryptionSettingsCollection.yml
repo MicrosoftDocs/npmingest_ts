@@ -1,0 +1,67 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.EncryptionSettingsCollection
+    name: EncryptionSettingsCollection
+    fullName: EncryptionSettingsCollection
+    children:
+      - azure-arm-compute - v10.0.0.EncryptionSettingsCollection.enabled
+      - >-
+        azure-arm-compute -
+        v10.0.0.EncryptionSettingsCollection.encryptionSettings
+    langs:
+      - typeScript
+    type: interface
+    summary: Encryption settings for disk or snapshot
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.EncryptionSettingsCollection.enabled
+    name: enabled
+    fullName: enabled
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Set this flag to true and provide DiskEncryptionKey and optional
+      KeyEncryptionKey to enable
+
+      encryption. Set this flag to false and remove DiskEncryptionKey and
+      KeyEncryptionKey to
+
+      disable encryption. If EncryptionSettings is null in the request object,
+      the existing settings
+
+      remain unchanged.
+    syntax:
+      content: 'enabled: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.EncryptionSettingsCollection.encryptionSettings
+    name: encryptionSettings
+    fullName: encryptionSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'A collection of encryption settings, one for each disk volume.'
+    optional: true
+    syntax:
+      content: 'encryptionSettings?: EncryptionSettingsElement[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.EncryptionSettingsElement[]'
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: 'azure-arm-compute - v10.0.0.EncryptionSettingsElement[]'
+    name: 'EncryptionSettingsElement[]'
+    spec.typeScript:
+      - name: EncryptionSettingsElement
+        fullName: EncryptionSettingsElement
+        uid: azure-arm-compute - v10.0.0.EncryptionSettingsElement
+      - name: '[]'
+        fullName: '[]'

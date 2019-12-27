@@ -1,0 +1,122 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ConnectivityHop
+    name: ConnectivityHop
+    fullName: ConnectivityHop
+    children:
+      - azure-arm-network - v13.0.0.ConnectivityHop.address
+      - azure-arm-network - v13.0.0.ConnectivityHop.id
+      - azure-arm-network - v13.0.0.ConnectivityHop.issues
+      - azure-arm-network - v13.0.0.ConnectivityHop.nextHopIds
+      - azure-arm-network - v13.0.0.ConnectivityHop.resourceId
+      - azure-arm-network - v13.0.0.ConnectivityHop.type
+    langs:
+      - typeScript
+    type: interface
+    summary: Information about a hop between the source and the destination.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityHop.address
+    name: address
+    fullName: address
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The IP address of the hop.
+    optional: true
+    syntax:
+      content: 'address?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityHop.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The ID of the hop.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityHop.issues
+    name: issues
+    fullName: issues
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: List of issues.
+    optional: true
+    syntax:
+      content: 'issues?: ConnectivityIssue[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ConnectivityIssue[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityHop.nextHopIds
+    name: nextHopIds
+    fullName: nextHopIds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: List of next hop identifiers.
+    optional: true
+    syntax:
+      content: 'nextHopIds?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityHop.resourceId
+    name: resourceId
+    fullName: resourceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The ID of the resource corresponding to this hop.
+    optional: true
+    syntax:
+      content: 'resourceId?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityHop.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The type of the hop.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: 'azure-arm-network - v13.0.0.ConnectivityIssue[]'
+    name: 'ConnectivityIssue[]'
+    spec.typeScript:
+      - name: ConnectivityIssue
+        fullName: ConnectivityIssue
+        uid: azure-arm-network - v13.0.0.ConnectivityIssue
+      - name: '[]'
+        fullName: '[]'

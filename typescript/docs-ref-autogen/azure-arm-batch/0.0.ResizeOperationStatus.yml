@@ -1,0 +1,141 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch - v5.0.0.ResizeOperationStatus
+    name: ResizeOperationStatus
+    fullName: ResizeOperationStatus
+    children:
+      - azure-arm-batch - v5.0.0.ResizeOperationStatus.errors
+      - azure-arm-batch - v5.0.0.ResizeOperationStatus.nodeDeallocationOption
+      - azure-arm-batch - v5.0.0.ResizeOperationStatus.resizeTimeout
+      - azure-arm-batch - v5.0.0.ResizeOperationStatus.startTime
+      - azure-arm-batch - v5.0.0.ResizeOperationStatus.targetDedicatedNodes
+      - azure-arm-batch - v5.0.0.ResizeOperationStatus.targetLowPriorityNodes
+    langs:
+      - typeScript
+    type: interface
+    summary: >-
+      Describes either the current operation (if the pool AllocationState is
+      Resizing) or
+
+      the previously completed operation (if the AllocationState is Steady).
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ResizeOperationStatus.errors
+    name: errors
+    fullName: errors
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      This property is set only if an error occurred during the last pool
+      resize, and
+
+      only when the pool allocationState is Steady.
+    optional: true
+    syntax:
+      content: 'errors?: ResizeError[]'
+      return:
+        type:
+          - 'azure-arm-batch - v5.0.0.ResizeError[]'
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ResizeOperationStatus.nodeDeallocationOption
+    name: nodeDeallocationOption
+    fullName: nodeDeallocationOption
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The default value is requeue. Possible values include: 'Requeue',
+      'Terminate',
+
+      'TaskCompletion', 'RetainedData'
+    optional: true
+    syntax:
+      content: 'nodeDeallocationOption?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ResizeOperationStatus.resizeTimeout
+    name: resizeTimeout
+    fullName: resizeTimeout
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The default value is 15 minutes. The minimum value is 5 minutes. If you
+      specify a
+
+      value less than 5 minutes, the Batch service returns an error; if you are
+      calling the REST API
+
+      directly, the HTTP status code is 400 (Bad Request).
+    optional: true
+    syntax:
+      content: 'resizeTimeout?: Duration'
+      return:
+        type:
+          - Duration
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ResizeOperationStatus.startTime
+    name: startTime
+    fullName: startTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'startTime?: Date'
+      return:
+        type:
+          - Date
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ResizeOperationStatus.targetDedicatedNodes
+    name: targetDedicatedNodes
+    fullName: targetDedicatedNodes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'targetDedicatedNodes?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ResizeOperationStatus.targetLowPriorityNodes
+    name: targetLowPriorityNodes
+    fullName: targetLowPriorityNodes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'targetLowPriorityNodes?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-batch - v5
+references:
+  - uid: 'azure-arm-batch - v5.0.0.ResizeError[]'
+    name: 'ResizeError[]'
+    spec.typeScript:
+      - name: ResizeError
+        fullName: ResizeError
+        uid: azure-arm-batch - v5.0.0.ResizeError
+      - name: '[]'
+        fullName: '[]'

@@ -1,0 +1,3146 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-cdn - v4.2.0.Profiles
+    name: Profiles
+    fullName: Profiles
+    children:
+      - azure-arm-cdn - v4.2.0.Profiles.beginCreate
+      - azure-arm-cdn - v4.2.0.Profiles.beginCreate_2
+      - azure-arm-cdn - v4.2.0.Profiles.beginCreate_1
+      - azure-arm-cdn - v4.2.0.Profiles.beginCreateWithHttpOperationResponse
+      - azure-arm-cdn - v4.2.0.Profiles.beginDeleteMethod
+      - azure-arm-cdn - v4.2.0.Profiles.beginDeleteMethod_2
+      - azure-arm-cdn - v4.2.0.Profiles.beginDeleteMethod_1
+      - >-
+        azure-arm-cdn -
+        v4.2.0.Profiles.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-cdn - v4.2.0.Profiles.beginUpdate
+      - azure-arm-cdn - v4.2.0.Profiles.beginUpdate_2
+      - azure-arm-cdn - v4.2.0.Profiles.beginUpdate_1
+      - azure-arm-cdn - v4.2.0.Profiles.beginUpdateWithHttpOperationResponse
+      - azure-arm-cdn - v4.2.0.Profiles.create
+      - azure-arm-cdn - v4.2.0.Profiles.create_2
+      - azure-arm-cdn - v4.2.0.Profiles.create_1
+      - azure-arm-cdn - v4.2.0.Profiles.createWithHttpOperationResponse
+      - azure-arm-cdn - v4.2.0.Profiles.deleteMethod
+      - azure-arm-cdn - v4.2.0.Profiles.deleteMethod_2
+      - azure-arm-cdn - v4.2.0.Profiles.deleteMethod_1
+      - azure-arm-cdn - v4.2.0.Profiles.deleteMethodWithHttpOperationResponse
+      - azure-arm-cdn - v4.2.0.Profiles.generateSsoUri
+      - azure-arm-cdn - v4.2.0.Profiles.generateSsoUri_2
+      - azure-arm-cdn - v4.2.0.Profiles.generateSsoUri_1
+      - azure-arm-cdn - v4.2.0.Profiles.generateSsoUriWithHttpOperationResponse
+      - azure-arm-cdn - v4.2.0.Profiles.get
+      - azure-arm-cdn - v4.2.0.Profiles.get_2
+      - azure-arm-cdn - v4.2.0.Profiles.get_1
+      - azure-arm-cdn - v4.2.0.Profiles.getWithHttpOperationResponse
+      - azure-arm-cdn - v4.2.0.Profiles.list
+      - azure-arm-cdn - v4.2.0.Profiles.list_2
+      - azure-arm-cdn - v4.2.0.Profiles.list_1
+      - azure-arm-cdn - v4.2.0.Profiles.listByResourceGroup
+      - azure-arm-cdn - v4.2.0.Profiles.listByResourceGroup_2
+      - azure-arm-cdn - v4.2.0.Profiles.listByResourceGroup_1
+      - azure-arm-cdn - v4.2.0.Profiles.listByResourceGroupNext
+      - azure-arm-cdn - v4.2.0.Profiles.listByResourceGroupNext_2
+      - azure-arm-cdn - v4.2.0.Profiles.listByResourceGroupNext_1
+      - >-
+        azure-arm-cdn -
+        v4.2.0.Profiles.listByResourceGroupNextWithHttpOperationResponse
+      - >-
+        azure-arm-cdn -
+        v4.2.0.Profiles.listByResourceGroupWithHttpOperationResponse
+      - azure-arm-cdn - v4.2.0.Profiles.listNext
+      - azure-arm-cdn - v4.2.0.Profiles.listNext_2
+      - azure-arm-cdn - v4.2.0.Profiles.listNext_1
+      - azure-arm-cdn - v4.2.0.Profiles.listNextWithHttpOperationResponse
+      - azure-arm-cdn - v4.2.0.Profiles.listResourceUsage
+      - azure-arm-cdn - v4.2.0.Profiles.listResourceUsage_2
+      - azure-arm-cdn - v4.2.0.Profiles.listResourceUsage_1
+      - azure-arm-cdn - v4.2.0.Profiles.listResourceUsageNext
+      - azure-arm-cdn - v4.2.0.Profiles.listResourceUsageNext_2
+      - azure-arm-cdn - v4.2.0.Profiles.listResourceUsageNext_1
+      - >-
+        azure-arm-cdn -
+        v4.2.0.Profiles.listResourceUsageNextWithHttpOperationResponse
+      - >-
+        azure-arm-cdn -
+        v4.2.0.Profiles.listResourceUsageWithHttpOperationResponse
+      - azure-arm-cdn - v4.2.0.Profiles.listSupportedOptimizationTypes
+      - azure-arm-cdn - v4.2.0.Profiles.listSupportedOptimizationTypes_2
+      - azure-arm-cdn - v4.2.0.Profiles.listSupportedOptimizationTypes_1
+      - >-
+        azure-arm-cdn -
+        v4.2.0.Profiles.listSupportedOptimizationTypesWithHttpOperationResponse
+      - azure-arm-cdn - v4.2.0.Profiles.listWithHttpOperationResponse
+      - azure-arm-cdn - v4.2.0.Profiles.update
+      - azure-arm-cdn - v4.2.0.Profiles.update_2
+      - azure-arm-cdn - v4.2.0.Profiles.update_1
+      - azure-arm-cdn - v4.2.0.Profiles.updateWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.beginCreate
+    name: 'beginCreate(string, string, Profile, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates a new CDN profile with a profile name under the specified
+      subscription and resource group.
+    syntax:
+      content: >-
+        function beginCreate(resourceGroupName: string, profileName: string,
+        profile: Profile, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: profile
+          type:
+            - azure-arm-cdn - v4.2.0.Profile
+          description: |
+            Profile properties needed to create a new profile.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.Profile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Profile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Profile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.beginCreate_2
+    name: 'beginCreate(string, string, Profile, Object, ServiceCallback<Profile>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates a new CDN profile with a profile name under the specified
+      subscription and resource group.
+    syntax:
+      content: >-
+        function beginCreate(resourceGroupName: string, profileName: string,
+        profile: Profile, options: Object, callback: ServiceCallback<Profile>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: profile
+          type:
+            - azure-arm-cdn - v4.2.0.Profile
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.Profile>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.Profile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Profile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Profile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.beginCreate_1
+    name: 'beginCreate(string, string, Profile, ServiceCallback<Profile>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates a new CDN profile with a profile name under the specified
+      subscription and resource group.
+    syntax:
+      content: >-
+        function beginCreate(resourceGroupName: string, profileName: string,
+        profile: Profile, callback: ServiceCallback<Profile>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: profile
+          type:
+            - azure-arm-cdn - v4.2.0.Profile
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.Profile>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.Profile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Profile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Profile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.beginCreateWithHttpOperationResponse
+    name: 'beginCreateWithHttpOperationResponse(string, string, Profile, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates a new CDN profile with a profile name under the specified
+      subscription and resource group.
+    syntax:
+      content: >-
+        function beginCreateWithHttpOperationResponse(resourceGroupName: string,
+        profileName: string, profile: Profile, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: profile
+          type:
+            - azure-arm-cdn - v4.2.0.Profile
+          description: |
+            Profile properties needed to create a new profile.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<azure-arm-cdn - v4.2.0.Profile>>
+        description: A promise is returned
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.beginDeleteMethod
+    name: 'beginDeleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Deletes an existing CDN profile with the specified parameters. Deleting a
+      profile will result in the deletion of all of the sub-resources including
+      endpoints, origins and custom domains.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, profileName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.beginDeleteMethod_2
+    name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Deletes an existing CDN profile with the specified parameters. Deleting a
+      profile will result in the deletion of all of the sub-resources including
+      endpoints, origins and custom domains.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, profileName:
+        string, options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.beginDeleteMethod_1
+    name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Deletes an existing CDN profile with the specified parameters. Deleting a
+      profile will result in the deletion of all of the sub-resources including
+      endpoints, origins and custom domains.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, profileName:
+        string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.beginDeleteMethodWithHttpOperationResponse
+    name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Deletes an existing CDN profile with the specified parameters. Deleting a
+      profile will result in the deletion of all of the sub-resources including
+      endpoints, origins and custom domains.
+    syntax:
+      content: >-
+        function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, profileName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.beginUpdate
+    name: 'beginUpdate(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Updates an existing CDN profile with the specified profile name under the
+      specified subscription and resource group.
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, profileName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.Profile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Profile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Profile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.beginUpdate_2
+    name: 'beginUpdate(string, string, Object, ServiceCallback<Profile>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Updates an existing CDN profile with the specified profile name under the
+      specified subscription and resource group.
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, profileName: string,
+        options: Object, callback: ServiceCallback<Profile>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.Profile>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.Profile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Profile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Profile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.beginUpdate_1
+    name: 'beginUpdate(string, string, ServiceCallback<Profile>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Updates an existing CDN profile with the specified profile name under the
+      specified subscription and resource group.
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, profileName: string,
+        callback: ServiceCallback<Profile>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.Profile>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.Profile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Profile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Profile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.beginUpdateWithHttpOperationResponse
+    name: 'beginUpdateWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Updates an existing CDN profile with the specified profile name under the
+      specified subscription and resource group.
+    syntax:
+      content: >-
+        function beginUpdateWithHttpOperationResponse(resourceGroupName: string,
+        profileName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<azure-arm-cdn - v4.2.0.Profile>>
+        description: A promise is returned
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.create
+    name: 'create(string, string, Profile, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates a new CDN profile with a profile name under the specified
+      subscription and resource group.
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, profileName: string, profile:
+        Profile, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: profile
+          type:
+            - azure-arm-cdn - v4.2.0.Profile
+          description: |
+            Profile properties needed to create a new profile.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.Profile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Profile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Profile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.create_2
+    name: 'create(string, string, Profile, Object, ServiceCallback<Profile>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates a new CDN profile with a profile name under the specified
+      subscription and resource group.
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, profileName: string, profile:
+        Profile, options: Object, callback: ServiceCallback<Profile>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: profile
+          type:
+            - azure-arm-cdn - v4.2.0.Profile
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.Profile>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.Profile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Profile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Profile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.create_1
+    name: 'create(string, string, Profile, ServiceCallback<Profile>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates a new CDN profile with a profile name under the specified
+      subscription and resource group.
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, profileName: string, profile:
+        Profile, callback: ServiceCallback<Profile>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: profile
+          type:
+            - azure-arm-cdn - v4.2.0.Profile
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.Profile>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.Profile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Profile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Profile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.createWithHttpOperationResponse
+    name: 'createWithHttpOperationResponse(string, string, Profile, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates a new CDN profile with a profile name under the specified
+      subscription and resource group.
+    syntax:
+      content: >-
+        function createWithHttpOperationResponse(resourceGroupName: string,
+        profileName: string, profile: Profile, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: profile
+          type:
+            - azure-arm-cdn - v4.2.0.Profile
+          description: |
+            Profile properties needed to create a new profile.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<azure-arm-cdn - v4.2.0.Profile>>
+        description: A promise is returned
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.deleteMethod
+    name: 'deleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Deletes an existing CDN profile with the specified parameters. Deleting a
+      profile will result in the deletion of all of the sub-resources including
+      endpoints, origins and custom domains.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, profileName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.deleteMethod_2
+    name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Deletes an existing CDN profile with the specified parameters. Deleting a
+      profile will result in the deletion of all of the sub-resources including
+      endpoints, origins and custom domains.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, profileName: string,
+        options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.deleteMethod_1
+    name: 'deleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Deletes an existing CDN profile with the specified parameters. Deleting a
+      profile will result in the deletion of all of the sub-resources including
+      endpoints, origins and custom domains.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, profileName: string,
+        callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.deleteMethodWithHttpOperationResponse
+    name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Deletes an existing CDN profile with the specified parameters. Deleting a
+      profile will result in the deletion of all of the sub-resources including
+      endpoints, origins and custom domains.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, profileName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.generateSsoUri
+    name: 'generateSsoUri(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Generates a dynamic SSO URI used to sign in to the CDN supplemental
+      portal.
+
+      Supplemental portal is used to configure advanced feature capabilities
+      that
+
+      are not yet available in the Azure portal, such as core reports in a
+
+      standard profile; rules engine, advanced HTTP reports, and real-time stats
+
+      and alerts in a premium profile. The SSO URI changes approximately every
+      10
+
+      minutes.
+    syntax:
+      content: >-
+        function generateSsoUri(resourceGroupName: string, profileName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.SsoUri>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SsoUri} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SsoUri} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SsoUri} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.generateSsoUri_2
+    name: 'generateSsoUri(string, string, Object, ServiceCallback<SsoUri>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Generates a dynamic SSO URI used to sign in to the CDN supplemental
+      portal.
+
+      Supplemental portal is used to configure advanced feature capabilities
+      that
+
+      are not yet available in the Azure portal, such as core reports in a
+
+      standard profile; rules engine, advanced HTTP reports, and real-time stats
+
+      and alerts in a premium profile. The SSO URI changes approximately every
+      10
+
+      minutes.
+    syntax:
+      content: >-
+        function generateSsoUri(resourceGroupName: string, profileName: string,
+        options: Object, callback: ServiceCallback<SsoUri>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.SsoUri>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.SsoUri>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SsoUri} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SsoUri} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SsoUri} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.generateSsoUri_1
+    name: 'generateSsoUri(string, string, ServiceCallback<SsoUri>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Generates a dynamic SSO URI used to sign in to the CDN supplemental
+      portal.
+
+      Supplemental portal is used to configure advanced feature capabilities
+      that
+
+      are not yet available in the Azure portal, such as core reports in a
+
+      standard profile; rules engine, advanced HTTP reports, and real-time stats
+
+      and alerts in a premium profile. The SSO URI changes approximately every
+      10
+
+      minutes.
+    syntax:
+      content: >-
+        function generateSsoUri(resourceGroupName: string, profileName: string,
+        callback: ServiceCallback<SsoUri>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.SsoUri>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.SsoUri>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SsoUri} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SsoUri} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SsoUri} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.generateSsoUriWithHttpOperationResponse
+    name: 'generateSsoUriWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Generates a dynamic SSO URI used to sign in to the CDN supplemental
+      portal.
+
+      Supplemental portal is used to configure advanced feature capabilities
+      that
+
+      are not yet available in the Azure portal, such as core reports in a
+
+      standard profile; rules engine, advanced HTTP reports, and real-time stats
+
+      and alerts in a premium profile. The SSO URI changes approximately every
+      10
+
+      minutes.
+    syntax:
+      content: >-
+        function generateSsoUriWithHttpOperationResponse(resourceGroupName:
+        string, profileName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<azure-arm-cdn - v4.2.0.SsoUri>>
+        description: A promise is returned
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.get
+    name: 'get(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets a CDN profile with the specified profile name under the specified
+      subscription and resource group.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, profileName: string, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.Profile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Profile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Profile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.get_2
+    name: 'get(string, string, Object, ServiceCallback<Profile>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets a CDN profile with the specified profile name under the specified
+      subscription and resource group.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, profileName: string, options:
+        Object, callback: ServiceCallback<Profile>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.Profile>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.Profile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Profile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Profile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.get_1
+    name: 'get(string, string, ServiceCallback<Profile>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets a CDN profile with the specified profile name under the specified
+      subscription and resource group.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, profileName: string, callback:
+        ServiceCallback<Profile>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.Profile>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.Profile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Profile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Profile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets a CDN profile with the specified profile name under the specified
+      subscription and resource group.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        profileName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<azure-arm-cdn - v4.2.0.Profile>>
+        description: A promise is returned
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.list
+    name: list(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the CDN profiles within an Azure subscription.
+    syntax:
+      content: 'function list(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ProfileListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.list_2
+    name: 'list(Object, ServiceCallback<ProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the CDN profiles within an Azure subscription.
+    syntax:
+      content: >-
+        function list(options: Object, callback:
+        ServiceCallback<ProfileListResult>)
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.ProfileListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ProfileListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.list_1
+    name: list(ServiceCallback<ProfileListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the CDN profiles within an Azure subscription.
+    syntax:
+      content: 'function list(callback: ServiceCallback<ProfileListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.ProfileListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ProfileListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listByResourceGroup
+    name: 'listByResourceGroup(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the CDN profiles within a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ProfileListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listByResourceGroup_2
+    name: 'listByResourceGroup(string, Object, ServiceCallback<ProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the CDN profiles within a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options: Object,
+        callback: ServiceCallback<ProfileListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.ProfileListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ProfileListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listByResourceGroup_1
+    name: 'listByResourceGroup(string, ServiceCallback<ProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the CDN profiles within a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, callback:
+        ServiceCallback<ProfileListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.ProfileListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ProfileListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listByResourceGroupNext
+    name: 'listByResourceGroupNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the CDN profiles within a resource group.
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ProfileListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listByResourceGroupNext_2
+    name: >-
+      listByResourceGroupNext(string, Object,
+      ServiceCallback<ProfileListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the CDN profiles within a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, options: Object,
+        callback: ServiceCallback<ProfileListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.ProfileListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ProfileListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listByResourceGroupNext_1
+    name: 'listByResourceGroupNext(string, ServiceCallback<ProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the CDN profiles within a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, callback:
+        ServiceCallback<ProfileListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.ProfileListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ProfileListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: >-
+      azure-arm-cdn -
+      v4.2.0.Profiles.listByResourceGroupNextWithHttpOperationResponse
+    name: 'listByResourceGroupNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the CDN profiles within a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroupNextWithHttpOperationResponse(nextPageLink:
+        string, options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn -
+            v4.2.0.ProfileListResult>>
+        description: A promise is returned
+    package: azure-arm-cdn - v4
+  - uid: >-
+      azure-arm-cdn -
+      v4.2.0.Profiles.listByResourceGroupWithHttpOperationResponse
+    name: 'listByResourceGroupWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the CDN profiles within a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroupWithHttpOperationResponse(resourceGroupName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn -
+            v4.2.0.ProfileListResult>>
+        description: A promise is returned
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listNext
+    name: 'listNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the CDN profiles within an Azure subscription.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ProfileListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listNext_2
+    name: 'listNext(string, Object, ServiceCallback<ProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the CDN profiles within an Azure subscription.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<ProfileListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.ProfileListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ProfileListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listNext_1
+    name: 'listNext(string, ServiceCallback<ProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the CDN profiles within an Azure subscription.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<ProfileListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.ProfileListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ProfileListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listNextWithHttpOperationResponse
+    name: 'listNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the CDN profiles within an Azure subscription.
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn -
+            v4.2.0.ProfileListResult>>
+        description: A promise is returned
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listResourceUsage
+    name: 'listResourceUsage(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Checks the quota and actual usage of endpoints under the given CDN
+      profile.
+    syntax:
+      content: >-
+        function listResourceUsage(resourceGroupName: string, profileName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ResourceUsageListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceUsageListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceUsageListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceUsageListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listResourceUsage_2
+    name: >-
+      listResourceUsage(string, string, Object,
+      ServiceCallback<ResourceUsageListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Checks the quota and actual usage of endpoints under the given CDN
+      profile.
+    syntax:
+      content: >-
+        function listResourceUsage(resourceGroupName: string, profileName:
+        string, options: Object, callback:
+        ServiceCallback<ResourceUsageListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.ResourceUsageListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ResourceUsageListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceUsageListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceUsageListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceUsageListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listResourceUsage_1
+    name: >-
+      listResourceUsage(string, string,
+      ServiceCallback<ResourceUsageListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Checks the quota and actual usage of endpoints under the given CDN
+      profile.
+    syntax:
+      content: >-
+        function listResourceUsage(resourceGroupName: string, profileName:
+        string, callback: ServiceCallback<ResourceUsageListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.ResourceUsageListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ResourceUsageListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceUsageListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceUsageListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceUsageListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listResourceUsageNext
+    name: 'listResourceUsageNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Checks the quota and actual usage of endpoints under the given CDN
+      profile.
+    syntax:
+      content: 'function listResourceUsageNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ResourceUsageListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceUsageListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceUsageListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceUsageListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listResourceUsageNext_2
+    name: >-
+      listResourceUsageNext(string, Object,
+      ServiceCallback<ResourceUsageListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Checks the quota and actual usage of endpoints under the given CDN
+      profile.
+    syntax:
+      content: >-
+        function listResourceUsageNext(nextPageLink: string, options: Object,
+        callback: ServiceCallback<ResourceUsageListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.ResourceUsageListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ResourceUsageListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceUsageListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceUsageListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceUsageListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listResourceUsageNext_1
+    name: 'listResourceUsageNext(string, ServiceCallback<ResourceUsageListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Checks the quota and actual usage of endpoints under the given CDN
+      profile.
+    syntax:
+      content: >-
+        function listResourceUsageNext(nextPageLink: string, callback:
+        ServiceCallback<ResourceUsageListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.ResourceUsageListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.ResourceUsageListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceUsageListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceUsageListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceUsageListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: >-
+      azure-arm-cdn -
+      v4.2.0.Profiles.listResourceUsageNextWithHttpOperationResponse
+    name: 'listResourceUsageNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Checks the quota and actual usage of endpoints under the given CDN
+      profile.
+    syntax:
+      content: >-
+        function listResourceUsageNextWithHttpOperationResponse(nextPageLink:
+        string, options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn -
+            v4.2.0.ResourceUsageListResult>>
+        description: A promise is returned
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listResourceUsageWithHttpOperationResponse
+    name: 'listResourceUsageWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Checks the quota and actual usage of endpoints under the given CDN
+      profile.
+    syntax:
+      content: >-
+        function listResourceUsageWithHttpOperationResponse(resourceGroupName:
+        string, profileName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn -
+            v4.2.0.ResourceUsageListResult>>
+        description: A promise is returned
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listSupportedOptimizationTypes
+    name: 'listSupportedOptimizationTypes(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets the supported optimization types for the current profile. A user can
+      create an endpoint with an optimization type from the listed values.
+    syntax:
+      content: >-
+        function listSupportedOptimizationTypes(resourceGroupName: string,
+        profileName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.SupportedOptimizationTypesListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SupportedOptimizationTypesListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SupportedOptimizationTypesListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SupportedOptimizationTypesListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listSupportedOptimizationTypes_2
+    name: >-
+      listSupportedOptimizationTypes(string, string, Object,
+      ServiceCallback<SupportedOptimizationTypesListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets the supported optimization types for the current profile. A user can
+      create an endpoint with an optimization type from the listed values.
+    syntax:
+      content: >-
+        function listSupportedOptimizationTypes(resourceGroupName: string,
+        profileName: string, options: Object, callback:
+        ServiceCallback<SupportedOptimizationTypesListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-cdn -
+              v4.2.0.SupportedOptimizationTypesListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.SupportedOptimizationTypesListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SupportedOptimizationTypesListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SupportedOptimizationTypesListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SupportedOptimizationTypesListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listSupportedOptimizationTypes_1
+    name: >-
+      listSupportedOptimizationTypes(string, string,
+      ServiceCallback<SupportedOptimizationTypesListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets the supported optimization types for the current profile. A user can
+      create an endpoint with an optimization type from the listed values.
+    syntax:
+      content: >-
+        function listSupportedOptimizationTypes(resourceGroupName: string,
+        profileName: string, callback:
+        ServiceCallback<SupportedOptimizationTypesListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-cdn -
+              v4.2.0.SupportedOptimizationTypesListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.SupportedOptimizationTypesListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {SupportedOptimizationTypesListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {SupportedOptimizationTypesListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link SupportedOptimizationTypesListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: >-
+      azure-arm-cdn -
+      v4.2.0.Profiles.listSupportedOptimizationTypesWithHttpOperationResponse
+    name: >-
+      listSupportedOptimizationTypesWithHttpOperationResponse(string, string,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets the supported optimization types for the current profile. A user can
+      create an endpoint with an optimization type from the listed values.
+    syntax:
+      content: >-
+        function
+        listSupportedOptimizationTypesWithHttpOperationResponse(resourceGroupName:
+        string, profileName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn -
+            v4.2.0.SupportedOptimizationTypesListResult>>
+        description: A promise is returned
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.listWithHttpOperationResponse
+    name: listWithHttpOperationResponse(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the CDN profiles within an Azure subscription.
+    syntax:
+      content: 'function listWithHttpOperationResponse(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-cdn -
+            v4.2.0.ProfileListResult>>
+        description: A promise is returned
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.update
+    name: 'update(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Updates an existing CDN profile with the specified profile name under the
+      specified subscription and resource group.
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, profileName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.Profile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Profile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Profile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.update_2
+    name: 'update(string, string, Object, ServiceCallback<Profile>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Updates an existing CDN profile with the specified profile name under the
+      specified subscription and resource group.
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, profileName: string, options:
+        Object, callback: ServiceCallback<Profile>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.Profile>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.Profile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Profile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Profile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.update_1
+    name: 'update(string, string, ServiceCallback<Profile>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Updates an existing CDN profile with the specified profile name under the
+      specified subscription and resource group.
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, profileName: string,
+        callback: ServiceCallback<Profile>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: profileName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-cdn - v4.2.0.Profile>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-cdn - v4.2.0.Profile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Profile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Profile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Profile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.Profiles.updateWithHttpOperationResponse
+    name: 'updateWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Updates an existing CDN profile with the specified profile name under the
+      specified subscription and resource group.
+    syntax:
+      content: >-
+        function updateWithHttpOperationResponse(resourceGroupName: string,
+        profileName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            Name of the Resource group within the
+            Azure subscription.
+        - id: profileName
+          type:
+            - string
+          description: |
+            Name of the CDN profile which is unique within
+            the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<azure-arm-cdn - v4.2.0.Profile>>
+        description: A promise is returned
+    package: azure-arm-cdn - v4
+references:
+  - uid: azure-arm-cdn - v4.2.0.Profile
+    name: Profile
+    spec.typeScript:
+      - name: Profile
+        fullName: Profile
+        uid: azure-arm-cdn - v4.2.0.Profile
+  - uid: Promise<azure-arm-cdn - v4.2.0.Profile>
+    name: Profile>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Profile
+        fullName: Profile
+        uid: azure-arm-cdn - v4.2.0.Profile
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-cdn - v4.2.0.Profile>
+    name: Profile>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Profile
+        fullName: Profile
+        uid: azure-arm-cdn - v4.2.0.Profile
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn - v4.2.0.Profile>>
+    name: Profile>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: Profile
+        fullName: Profile
+        uid: azure-arm-cdn - v4.2.0.Profile
+      - name: '>>'
+        fullName: '>>'
+  - uid: Promise<azure-arm-cdn - v4.2.0.SsoUri>
+    name: SsoUri>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: SsoUri
+        fullName: SsoUri
+        uid: azure-arm-cdn - v4.2.0.SsoUri
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-cdn - v4.2.0.SsoUri>
+    name: SsoUri>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: SsoUri
+        fullName: SsoUri
+        uid: azure-arm-cdn - v4.2.0.SsoUri
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn - v4.2.0.SsoUri>>
+    name: SsoUri>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: SsoUri
+        fullName: SsoUri
+        uid: azure-arm-cdn - v4.2.0.SsoUri
+      - name: '>>'
+        fullName: '>>'
+  - uid: Promise<azure-arm-cdn - v4.2.0.ProfileListResult>
+    name: ProfileListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ProfileListResult
+        fullName: ProfileListResult
+        uid: azure-arm-cdn - v4.2.0.ProfileListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-cdn - v4.2.0.ProfileListResult>
+    name: ProfileListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ProfileListResult
+        fullName: ProfileListResult
+        uid: azure-arm-cdn - v4.2.0.ProfileListResult
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-cdn - v4.2.0.ProfileListResult>>
+    name: ProfileListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ProfileListResult
+        fullName: ProfileListResult
+        uid: azure-arm-cdn - v4.2.0.ProfileListResult
+      - name: '>>'
+        fullName: '>>'
+  - uid: Promise<azure-arm-cdn - v4.2.0.ResourceUsageListResult>
+    name: ResourceUsageListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ResourceUsageListResult
+        fullName: ResourceUsageListResult
+        uid: azure-arm-cdn - v4.2.0.ResourceUsageListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-cdn - v4.2.0.ResourceUsageListResult>
+    name: ResourceUsageListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ResourceUsageListResult
+        fullName: ResourceUsageListResult
+        uid: azure-arm-cdn - v4.2.0.ResourceUsageListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-cdn -
+      v4.2.0.ResourceUsageListResult>>
+    name: ResourceUsageListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ResourceUsageListResult
+        fullName: ResourceUsageListResult
+        uid: azure-arm-cdn - v4.2.0.ResourceUsageListResult
+      - name: '>>'
+        fullName: '>>'
+  - uid: Promise<azure-arm-cdn - v4.2.0.SupportedOptimizationTypesListResult>
+    name: SupportedOptimizationTypesListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: SupportedOptimizationTypesListResult
+        fullName: SupportedOptimizationTypesListResult
+        uid: azure-arm-cdn - v4.2.0.SupportedOptimizationTypesListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-cdn -
+      v4.2.0.SupportedOptimizationTypesListResult>
+    name: SupportedOptimizationTypesListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: SupportedOptimizationTypesListResult
+        fullName: SupportedOptimizationTypesListResult
+        uid: azure-arm-cdn - v4.2.0.SupportedOptimizationTypesListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-cdn -
+      v4.2.0.SupportedOptimizationTypesListResult>>
+    name: SupportedOptimizationTypesListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: SupportedOptimizationTypesListResult
+        fullName: SupportedOptimizationTypesListResult
+        uid: azure-arm-cdn - v4.2.0.SupportedOptimizationTypesListResult
+      - name: '>>'
+        fullName: '>>'

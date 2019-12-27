@@ -1,0 +1,2186 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.RouteTables
+    name: RouteTables
+    fullName: RouteTables
+    children:
+      - azure-arm-network - v13.0.0.RouteTables.beginCreateOrUpdate
+      - azure-arm-network - v13.0.0.RouteTables.beginCreateOrUpdate_2
+      - azure-arm-network - v13.0.0.RouteTables.beginCreateOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.RouteTables.beginCreateOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.RouteTables.beginDeleteMethod
+      - azure-arm-network - v13.0.0.RouteTables.beginDeleteMethod_2
+      - azure-arm-network - v13.0.0.RouteTables.beginDeleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.RouteTables.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.RouteTables.beginUpdateTags
+      - azure-arm-network - v13.0.0.RouteTables.beginUpdateTags_2
+      - azure-arm-network - v13.0.0.RouteTables.beginUpdateTags_1
+      - >-
+        azure-arm-network -
+        v13.0.0.RouteTables.beginUpdateTagsWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.RouteTables.createOrUpdate
+      - azure-arm-network - v13.0.0.RouteTables.createOrUpdate_2
+      - azure-arm-network - v13.0.0.RouteTables.createOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.RouteTables.createOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.RouteTables.deleteMethod
+      - azure-arm-network - v13.0.0.RouteTables.deleteMethod_2
+      - azure-arm-network - v13.0.0.RouteTables.deleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.RouteTables.deleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.RouteTables.get
+      - azure-arm-network - v13.0.0.RouteTables.get_2
+      - azure-arm-network - v13.0.0.RouteTables.get_1
+      - azure-arm-network - v13.0.0.RouteTables.getWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.RouteTables.list
+      - azure-arm-network - v13.0.0.RouteTables.list_2
+      - azure-arm-network - v13.0.0.RouteTables.list_1
+      - azure-arm-network - v13.0.0.RouteTables.listAll
+      - azure-arm-network - v13.0.0.RouteTables.listAll_2
+      - azure-arm-network - v13.0.0.RouteTables.listAll_1
+      - azure-arm-network - v13.0.0.RouteTables.listAllNext
+      - azure-arm-network - v13.0.0.RouteTables.listAllNext_2
+      - azure-arm-network - v13.0.0.RouteTables.listAllNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.RouteTables.listAllNextWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.RouteTables.listAllWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.RouteTables.listNext
+      - azure-arm-network - v13.0.0.RouteTables.listNext_2
+      - azure-arm-network - v13.0.0.RouteTables.listNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.RouteTables.listNextWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.RouteTables.listWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.RouteTables.updateTags
+      - azure-arm-network - v13.0.0.RouteTables.updateTags_2
+      - azure-arm-network - v13.0.0.RouteTables.updateTags_1
+      - >-
+        azure-arm-network -
+        v13.0.0.RouteTables.updateTagsWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.beginCreateOrUpdate
+    name: 'beginCreateOrUpdate(string, string, RouteTable, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or updates a route table in a specified resource group.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, routeTableName:
+        string, parameters: RouteTable, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: routeTableName
+          type:
+            - string
+          description: |
+            The name of the route table.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.RouteTable
+          description: |
+            Parameters supplied to the create or update route
+            table operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.beginCreateOrUpdate_2
+    name: >-
+      beginCreateOrUpdate(string, string, RouteTable, Object,
+      ServiceCallback<RouteTable>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or updates a route table in a specified resource group.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, routeTableName:
+        string, parameters: RouteTable, options: Object, callback:
+        ServiceCallback<RouteTable>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: routeTableName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.RouteTable
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTable>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.beginCreateOrUpdate_1
+    name: >-
+      beginCreateOrUpdate(string, string, RouteTable,
+      ServiceCallback<RouteTable>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or updates a route table in a specified resource group.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, routeTableName:
+        string, parameters: RouteTable, callback: ServiceCallback<RouteTable>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: routeTableName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.RouteTable
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTable>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.RouteTables.beginCreateOrUpdateWithHttpOperationResponse
+    name: >-
+      beginCreateOrUpdateWithHttpOperationResponse(string, string, RouteTable,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or updates a route table in a specified resource group.
+    syntax:
+      content: >-
+        function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, routeTableName: string, parameters: RouteTable, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: routeTableName
+          type:
+            - string
+          description: |
+            The name of the route table.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.RouteTable
+          description: |
+            Parameters supplied to the create or update route
+            table operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.RouteTable>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.beginDeleteMethod
+    name: 'beginDeleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified route table.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, routeTableName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: routeTableName
+          type:
+            - string
+          description: |
+            The name of the route table.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.beginDeleteMethod_2
+    name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified route table.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, routeTableName:
+        string, options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: routeTableName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.beginDeleteMethod_1
+    name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified route table.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, routeTableName:
+        string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: routeTableName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.RouteTables.beginDeleteMethodWithHttpOperationResponse
+    name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified route table.
+    syntax:
+      content: >-
+        function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, routeTableName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: routeTableName
+          type:
+            - string
+          description: |
+            The name of the route table.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.beginUpdateTags
+    name: 'beginUpdateTags(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a route table tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, routeTableName:
+        string, parameters: TagsObject, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: routeTableName
+          type:
+            - string
+          description: |
+            The name of the route table.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to update route table tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.beginUpdateTags_2
+    name: >-
+      beginUpdateTags(string, string, TagsObject, Object,
+      ServiceCallback<RouteTable>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a route table tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, routeTableName:
+        string, parameters: TagsObject, options: Object, callback:
+        ServiceCallback<RouteTable>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: routeTableName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTable>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.beginUpdateTags_1
+    name: 'beginUpdateTags(string, string, TagsObject, ServiceCallback<RouteTable>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a route table tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, routeTableName:
+        string, parameters: TagsObject, callback: ServiceCallback<RouteTable>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: routeTableName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTable>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.RouteTables.beginUpdateTagsWithHttpOperationResponse
+    name: >-
+      beginUpdateTagsWithHttpOperationResponse(string, string, TagsObject,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a route table tags.
+    syntax:
+      content: >-
+        function beginUpdateTagsWithHttpOperationResponse(resourceGroupName:
+        string, routeTableName: string, parameters: TagsObject, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: routeTableName
+          type:
+            - string
+          description: |
+            The name of the route table.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to update route table tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.RouteTable>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.createOrUpdate
+    name: 'createOrUpdate(string, string, RouteTable, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or updates a route table in a specified resource group.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, routeTableName:
+        string, parameters: RouteTable, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: routeTableName
+          type:
+            - string
+          description: |
+            The name of the route table.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.RouteTable
+          description: |
+            Parameters supplied to the create or update route
+            table operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.createOrUpdate_2
+    name: >-
+      createOrUpdate(string, string, RouteTable, Object,
+      ServiceCallback<RouteTable>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or updates a route table in a specified resource group.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, routeTableName:
+        string, parameters: RouteTable, options: Object, callback:
+        ServiceCallback<RouteTable>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: routeTableName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.RouteTable
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTable>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.createOrUpdate_1
+    name: 'createOrUpdate(string, string, RouteTable, ServiceCallback<RouteTable>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or updates a route table in a specified resource group.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, routeTableName:
+        string, parameters: RouteTable, callback: ServiceCallback<RouteTable>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: routeTableName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.RouteTable
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTable>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.RouteTables.createOrUpdateWithHttpOperationResponse
+    name: >-
+      createOrUpdateWithHttpOperationResponse(string, string, RouteTable,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or updates a route table in a specified resource group.
+    syntax:
+      content: >-
+        function createOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, routeTableName: string, parameters: RouteTable, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: routeTableName
+          type:
+            - string
+          description: |
+            The name of the route table.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.RouteTable
+          description: |
+            Parameters supplied to the create or update route
+            table operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.RouteTable>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.deleteMethod
+    name: 'deleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified route table.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, routeTableName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: routeTableName
+          type:
+            - string
+          description: |
+            The name of the route table.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.deleteMethod_2
+    name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified route table.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, routeTableName: string,
+        options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: routeTableName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.deleteMethod_1
+    name: 'deleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified route table.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, routeTableName: string,
+        callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: routeTableName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.RouteTables.deleteMethodWithHttpOperationResponse
+    name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified route table.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, routeTableName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: routeTableName
+          type:
+            - string
+          description: |
+            The name of the route table.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.get
+    name: 'get(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified route table.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, routeTableName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: routeTableName
+          type:
+            - string
+          description: |
+            The name of the route table.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.get_2
+    name: 'get(string, string, Object, ServiceCallback<RouteTable>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified route table.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, routeTableName: string, options:
+        Object, callback: ServiceCallback<RouteTable>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: routeTableName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTable>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.get_1
+    name: 'get(string, string, ServiceCallback<RouteTable>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified route table.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, routeTableName: string,
+        callback: ServiceCallback<RouteTable>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: routeTableName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTable>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified route table.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        routeTableName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: routeTableName
+          type:
+            - string
+          description: |
+            The name of the route table.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.RouteTable>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.list
+    name: 'list(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all route tables in a resource group.
+    syntax:
+      content: 'function list(resourceGroupName: string, options?: Object)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.list_2
+    name: 'list(string, Object, ServiceCallback<RouteTableListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all route tables in a resource group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, options: Object, callback:
+        ServiceCallback<RouteTableListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTableListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.list_1
+    name: 'list(string, ServiceCallback<RouteTableListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all route tables in a resource group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, callback:
+        ServiceCallback<RouteTableListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTableListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.listAll
+    name: listAll(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all route tables in a subscription.
+    syntax:
+      content: 'function listAll(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.listAll_2
+    name: 'listAll(Object, ServiceCallback<RouteTableListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all route tables in a subscription.
+    syntax:
+      content: >-
+        function listAll(options: Object, callback:
+        ServiceCallback<RouteTableListResult>)
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTableListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.listAll_1
+    name: listAll(ServiceCallback<RouteTableListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all route tables in a subscription.
+    syntax:
+      content: 'function listAll(callback: ServiceCallback<RouteTableListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTableListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.listAllNext
+    name: 'listAllNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all route tables in a subscription.
+    syntax:
+      content: 'function listAllNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.listAllNext_2
+    name: 'listAllNext(string, Object, ServiceCallback<RouteTableListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all route tables in a subscription.
+    syntax:
+      content: >-
+        function listAllNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<RouteTableListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTableListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.listAllNext_1
+    name: 'listAllNext(string, ServiceCallback<RouteTableListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all route tables in a subscription.
+    syntax:
+      content: >-
+        function listAllNext(nextPageLink: string, callback:
+        ServiceCallback<RouteTableListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTableListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.RouteTables.listAllNextWithHttpOperationResponse
+    name: 'listAllNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all route tables in a subscription.
+    syntax:
+      content: >-
+        function listAllNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.RouteTableListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.listAllWithHttpOperationResponse
+    name: listAllWithHttpOperationResponse(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all route tables in a subscription.
+    syntax:
+      content: 'function listAllWithHttpOperationResponse(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.RouteTableListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.listNext
+    name: 'listNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all route tables in a resource group.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.listNext_2
+    name: 'listNext(string, Object, ServiceCallback<RouteTableListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all route tables in a resource group.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<RouteTableListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTableListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.listNext_1
+    name: 'listNext(string, ServiceCallback<RouteTableListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all route tables in a resource group.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<RouteTableListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTableListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTableListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTableListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTableListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTableListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.listNextWithHttpOperationResponse
+    name: 'listNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all route tables in a resource group.
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.RouteTableListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.listWithHttpOperationResponse
+    name: 'listWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all route tables in a resource group.
+    syntax:
+      content: >-
+        function listWithHttpOperationResponse(resourceGroupName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.RouteTableListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.updateTags
+    name: 'updateTags(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a route table tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, routeTableName: string,
+        parameters: TagsObject, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: routeTableName
+          type:
+            - string
+          description: |
+            The name of the route table.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to update route table tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.updateTags_2
+    name: >-
+      updateTags(string, string, TagsObject, Object,
+      ServiceCallback<RouteTable>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a route table tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, routeTableName: string,
+        parameters: TagsObject, options: Object, callback:
+        ServiceCallback<RouteTable>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: routeTableName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTable>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteTables.updateTags_1
+    name: 'updateTags(string, string, TagsObject, ServiceCallback<RouteTable>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a route table tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, routeTableName: string,
+        parameters: TagsObject, callback: ServiceCallback<RouteTable>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: routeTableName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.RouteTable>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.RouteTable>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {RouteTable} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {RouteTable} [result]   - The deserialized result object if an error did not occur.
+                               See {@link RouteTable} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.RouteTables.updateTagsWithHttpOperationResponse
+    name: 'updateTagsWithHttpOperationResponse(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates a route table tags.
+    syntax:
+      content: >-
+        function updateTagsWithHttpOperationResponse(resourceGroupName: string,
+        routeTableName: string, parameters: TagsObject, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: routeTableName
+          type:
+            - string
+          description: |
+            The name of the route table.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to update route table tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.RouteTable>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.RouteTable
+    name: RouteTable
+    spec.typeScript:
+      - name: RouteTable
+        fullName: RouteTable
+        uid: azure-arm-network - v13.0.0.RouteTable
+  - uid: Promise<azure-arm-network - v13.0.0.RouteTable>
+    name: RouteTable>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: RouteTable
+        fullName: RouteTable
+        uid: azure-arm-network - v13.0.0.RouteTable
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.RouteTable>
+    name: RouteTable>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: RouteTable
+        fullName: RouteTable
+        uid: azure-arm-network - v13.0.0.RouteTable
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network - v13.0.0.RouteTable>>
+    name: RouteTable>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: RouteTable
+        fullName: RouteTable
+        uid: azure-arm-network - v13.0.0.RouteTable
+      - name: '>>'
+        fullName: '>>'
+  - uid: azure-arm-network - v13.0.0.TagsObject
+    name: TagsObject
+    spec.typeScript:
+      - name: TagsObject
+        fullName: TagsObject
+        uid: azure-arm-network - v13.0.0.TagsObject
+  - uid: Promise<azure-arm-network - v13.0.0.RouteTableListResult>
+    name: RouteTableListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: RouteTableListResult
+        fullName: RouteTableListResult
+        uid: azure-arm-network - v13.0.0.RouteTableListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.RouteTableListResult>
+    name: RouteTableListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: RouteTableListResult
+        fullName: RouteTableListResult
+        uid: azure-arm-network - v13.0.0.RouteTableListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.RouteTableListResult>>
+    name: RouteTableListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: RouteTableListResult
+        fullName: RouteTableListResult
+        uid: azure-arm-network - v13.0.0.RouteTableListResult
+      - name: '>>'
+        fullName: '>>'

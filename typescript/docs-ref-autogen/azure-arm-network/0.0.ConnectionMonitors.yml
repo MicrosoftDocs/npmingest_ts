@@ -1,0 +1,2762 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors
+    name: ConnectionMonitors
+    fullName: ConnectionMonitors
+    children:
+      - azure-arm-network - v13.0.0.ConnectionMonitors.beginCreateOrUpdate
+      - azure-arm-network - v13.0.0.ConnectionMonitors.beginCreateOrUpdate_2
+      - azure-arm-network - v13.0.0.ConnectionMonitors.beginCreateOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ConnectionMonitors.beginCreateOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ConnectionMonitors.beginDeleteMethod
+      - azure-arm-network - v13.0.0.ConnectionMonitors.beginDeleteMethod_2
+      - azure-arm-network - v13.0.0.ConnectionMonitors.beginDeleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ConnectionMonitors.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ConnectionMonitors.beginQuery
+      - azure-arm-network - v13.0.0.ConnectionMonitors.beginQuery_2
+      - azure-arm-network - v13.0.0.ConnectionMonitors.beginQuery_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ConnectionMonitors.beginQueryWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ConnectionMonitors.beginStart
+      - azure-arm-network - v13.0.0.ConnectionMonitors.beginStart_2
+      - azure-arm-network - v13.0.0.ConnectionMonitors.beginStart_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ConnectionMonitors.beginStartWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ConnectionMonitors.beginStop
+      - azure-arm-network - v13.0.0.ConnectionMonitors.beginStop_2
+      - azure-arm-network - v13.0.0.ConnectionMonitors.beginStop_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ConnectionMonitors.beginStopWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ConnectionMonitors.createOrUpdate
+      - azure-arm-network - v13.0.0.ConnectionMonitors.createOrUpdate_2
+      - azure-arm-network - v13.0.0.ConnectionMonitors.createOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ConnectionMonitors.createOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ConnectionMonitors.deleteMethod
+      - azure-arm-network - v13.0.0.ConnectionMonitors.deleteMethod_2
+      - azure-arm-network - v13.0.0.ConnectionMonitors.deleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ConnectionMonitors.deleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ConnectionMonitors.get
+      - azure-arm-network - v13.0.0.ConnectionMonitors.get_2
+      - azure-arm-network - v13.0.0.ConnectionMonitors.get_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ConnectionMonitors.getWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ConnectionMonitors.list
+      - azure-arm-network - v13.0.0.ConnectionMonitors.list_2
+      - azure-arm-network - v13.0.0.ConnectionMonitors.list_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ConnectionMonitors.listWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ConnectionMonitors.query
+      - azure-arm-network - v13.0.0.ConnectionMonitors.query_2
+      - azure-arm-network - v13.0.0.ConnectionMonitors.query_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ConnectionMonitors.queryWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ConnectionMonitors.start
+      - azure-arm-network - v13.0.0.ConnectionMonitors.start_2
+      - azure-arm-network - v13.0.0.ConnectionMonitors.start_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ConnectionMonitors.startWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ConnectionMonitors.stop
+      - azure-arm-network - v13.0.0.ConnectionMonitors.stop_2
+      - azure-arm-network - v13.0.0.ConnectionMonitors.stop_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ConnectionMonitors.stopWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.beginCreateOrUpdate
+    name: 'beginCreateOrUpdate(string, string, string, ConnectionMonitor, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or update a connection monitor.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        networkWatcherName: string, connectionMonitorName: string, parameters:
+        ConnectionMonitor, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.ConnectionMonitor
+          description: |
+            Parameters that define the operation to create a
+            connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.beginCreateOrUpdate_2
+    name: >-
+      beginCreateOrUpdate(string, string, string, ConnectionMonitor, Object,
+      ServiceCallback<ConnectionMonitorResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or update a connection monitor.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        networkWatcherName: string, connectionMonitorName: string, parameters:
+        ConnectionMonitor, options: Object, callback:
+        ServiceCallback<ConnectionMonitorResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.ConnectionMonitor
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ConnectionMonitorResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.beginCreateOrUpdate_1
+    name: >-
+      beginCreateOrUpdate(string, string, string, ConnectionMonitor,
+      ServiceCallback<ConnectionMonitorResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or update a connection monitor.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        networkWatcherName: string, connectionMonitorName: string, parameters:
+        ConnectionMonitor, callback: ServiceCallback<ConnectionMonitorResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.ConnectionMonitor
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ConnectionMonitorResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ConnectionMonitors.beginCreateOrUpdateWithHttpOperationResponse
+    name: >-
+      beginCreateOrUpdateWithHttpOperationResponse(string, string, string,
+      ConnectionMonitor, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or update a connection monitor.
+    syntax:
+      content: >-
+        function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, networkWatcherName: string, connectionMonitorName: string,
+        parameters: ConnectionMonitor, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.ConnectionMonitor
+          description: |
+            Parameters that define the operation to create a
+            connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ConnectionMonitorResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.beginDeleteMethod
+    name: 'beginDeleteMethod(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified connection monitor.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        networkWatcherName: string, connectionMonitorName: string, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.beginDeleteMethod_2
+    name: 'beginDeleteMethod(string, string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified connection monitor.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        networkWatcherName: string, connectionMonitorName: string, options:
+        Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.beginDeleteMethod_1
+    name: 'beginDeleteMethod(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified connection monitor.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        networkWatcherName: string, connectionMonitorName: string, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ConnectionMonitors.beginDeleteMethodWithHttpOperationResponse
+    name: 'beginDeleteMethodWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified connection monitor.
+    syntax:
+      content: >-
+        function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, networkWatcherName: string, connectionMonitorName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.beginQuery
+    name: 'beginQuery(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Query a snapshot of the most recent connection states.
+    syntax:
+      content: >-
+        function beginQuery(resourceGroupName: string, networkWatcherName:
+        string, connectionMonitorName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name given to the connection
+            monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorQueryResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorQueryResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorQueryResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorQueryResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.beginQuery_2
+    name: >-
+      beginQuery(string, string, string, Object,
+      ServiceCallback<ConnectionMonitorQueryResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Query a snapshot of the most recent connection states.
+    syntax:
+      content: >-
+        function beginQuery(resourceGroupName: string, networkWatcherName:
+        string, connectionMonitorName: string, options: Object, callback:
+        ServiceCallback<ConnectionMonitorQueryResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ConnectionMonitorQueryResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorQueryResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorQueryResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorQueryResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorQueryResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.beginQuery_1
+    name: >-
+      beginQuery(string, string, string,
+      ServiceCallback<ConnectionMonitorQueryResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Query a snapshot of the most recent connection states.
+    syntax:
+      content: >-
+        function beginQuery(resourceGroupName: string, networkWatcherName:
+        string, connectionMonitorName: string, callback:
+        ServiceCallback<ConnectionMonitorQueryResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ConnectionMonitorQueryResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorQueryResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorQueryResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorQueryResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorQueryResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ConnectionMonitors.beginQueryWithHttpOperationResponse
+    name: 'beginQueryWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Query a snapshot of the most recent connection states.
+    syntax:
+      content: >-
+        function beginQueryWithHttpOperationResponse(resourceGroupName: string,
+        networkWatcherName: string, connectionMonitorName: string, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name given to the connection
+            monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ConnectionMonitorQueryResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.beginStart
+    name: 'beginStart(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Starts the specified connection monitor.
+    syntax:
+      content: >-
+        function beginStart(resourceGroupName: string, networkWatcherName:
+        string, connectionMonitorName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.beginStart_2
+    name: 'beginStart(string, string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Starts the specified connection monitor.
+    syntax:
+      content: >-
+        function beginStart(resourceGroupName: string, networkWatcherName:
+        string, connectionMonitorName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.beginStart_1
+    name: 'beginStart(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Starts the specified connection monitor.
+    syntax:
+      content: >-
+        function beginStart(resourceGroupName: string, networkWatcherName:
+        string, connectionMonitorName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ConnectionMonitors.beginStartWithHttpOperationResponse
+    name: 'beginStartWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Starts the specified connection monitor.
+    syntax:
+      content: >-
+        function beginStartWithHttpOperationResponse(resourceGroupName: string,
+        networkWatcherName: string, connectionMonitorName: string, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.beginStop
+    name: 'beginStop(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Stops the specified connection monitor.
+    syntax:
+      content: >-
+        function beginStop(resourceGroupName: string, networkWatcherName:
+        string, connectionMonitorName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.beginStop_2
+    name: 'beginStop(string, string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Stops the specified connection monitor.
+    syntax:
+      content: >-
+        function beginStop(resourceGroupName: string, networkWatcherName:
+        string, connectionMonitorName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.beginStop_1
+    name: 'beginStop(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Stops the specified connection monitor.
+    syntax:
+      content: >-
+        function beginStop(resourceGroupName: string, networkWatcherName:
+        string, connectionMonitorName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ConnectionMonitors.beginStopWithHttpOperationResponse
+    name: 'beginStopWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Stops the specified connection monitor.
+    syntax:
+      content: >-
+        function beginStopWithHttpOperationResponse(resourceGroupName: string,
+        networkWatcherName: string, connectionMonitorName: string, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.createOrUpdate
+    name: 'createOrUpdate(string, string, string, ConnectionMonitor, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or update a connection monitor.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, networkWatcherName:
+        string, connectionMonitorName: string, parameters: ConnectionMonitor,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.ConnectionMonitor
+          description: |
+            Parameters that define the operation to create a
+            connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.createOrUpdate_2
+    name: >-
+      createOrUpdate(string, string, string, ConnectionMonitor, Object,
+      ServiceCallback<ConnectionMonitorResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or update a connection monitor.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, networkWatcherName:
+        string, connectionMonitorName: string, parameters: ConnectionMonitor,
+        options: Object, callback: ServiceCallback<ConnectionMonitorResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.ConnectionMonitor
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ConnectionMonitorResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.createOrUpdate_1
+    name: >-
+      createOrUpdate(string, string, string, ConnectionMonitor,
+      ServiceCallback<ConnectionMonitorResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or update a connection monitor.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, networkWatcherName:
+        string, connectionMonitorName: string, parameters: ConnectionMonitor,
+        callback: ServiceCallback<ConnectionMonitorResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.ConnectionMonitor
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ConnectionMonitorResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ConnectionMonitors.createOrUpdateWithHttpOperationResponse
+    name: >-
+      createOrUpdateWithHttpOperationResponse(string, string, string,
+      ConnectionMonitor, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Create or update a connection monitor.
+    syntax:
+      content: >-
+        function createOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, networkWatcherName: string, connectionMonitorName: string,
+        parameters: ConnectionMonitor, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.ConnectionMonitor
+          description: |
+            Parameters that define the operation to create a
+            connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ConnectionMonitorResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.deleteMethod
+    name: 'deleteMethod(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified connection monitor.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, networkWatcherName:
+        string, connectionMonitorName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.deleteMethod_2
+    name: 'deleteMethod(string, string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified connection monitor.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, networkWatcherName:
+        string, connectionMonitorName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.deleteMethod_1
+    name: 'deleteMethod(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified connection monitor.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, networkWatcherName:
+        string, connectionMonitorName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ConnectionMonitors.deleteMethodWithHttpOperationResponse
+    name: 'deleteMethodWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified connection monitor.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, networkWatcherName: string, connectionMonitorName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.get
+    name: 'get(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets a connection monitor by name.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, networkWatcherName: string,
+        connectionMonitorName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.get_2
+    name: >-
+      get(string, string, string, Object,
+      ServiceCallback<ConnectionMonitorResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets a connection monitor by name.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, networkWatcherName: string,
+        connectionMonitorName: string, options: Object, callback:
+        ServiceCallback<ConnectionMonitorResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ConnectionMonitorResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.get_1
+    name: 'get(string, string, string, ServiceCallback<ConnectionMonitorResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets a connection monitor by name.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, networkWatcherName: string,
+        connectionMonitorName: string, callback:
+        ServiceCallback<ConnectionMonitorResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ConnectionMonitorResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ConnectionMonitors.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets a connection monitor by name.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        networkWatcherName: string, connectionMonitorName: string, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ConnectionMonitorResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.list
+    name: 'list(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all connection monitors for the specified Network Watcher.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, networkWatcherName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.list_2
+    name: 'list(string, string, Object, ServiceCallback<ConnectionMonitorListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all connection monitors for the specified Network Watcher.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, networkWatcherName: string,
+        options: Object, callback: ServiceCallback<ConnectionMonitorListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ConnectionMonitorListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.list_1
+    name: 'list(string, string, ServiceCallback<ConnectionMonitorListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all connection monitors for the specified Network Watcher.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, networkWatcherName: string,
+        callback: ServiceCallback<ConnectionMonitorListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ConnectionMonitorListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ConnectionMonitors.listWithHttpOperationResponse
+    name: 'listWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all connection monitors for the specified Network Watcher.
+    syntax:
+      content: >-
+        function listWithHttpOperationResponse(resourceGroupName: string,
+        networkWatcherName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ConnectionMonitorListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.query
+    name: 'query(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Query a snapshot of the most recent connection states.
+    syntax:
+      content: >-
+        function query(resourceGroupName: string, networkWatcherName: string,
+        connectionMonitorName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name given to the connection
+            monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorQueryResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorQueryResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorQueryResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorQueryResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.query_2
+    name: >-
+      query(string, string, string, Object,
+      ServiceCallback<ConnectionMonitorQueryResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Query a snapshot of the most recent connection states.
+    syntax:
+      content: >-
+        function query(resourceGroupName: string, networkWatcherName: string,
+        connectionMonitorName: string, options: Object, callback:
+        ServiceCallback<ConnectionMonitorQueryResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ConnectionMonitorQueryResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorQueryResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorQueryResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorQueryResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorQueryResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.query_1
+    name: >-
+      query(string, string, string,
+      ServiceCallback<ConnectionMonitorQueryResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Query a snapshot of the most recent connection states.
+    syntax:
+      content: >-
+        function query(resourceGroupName: string, networkWatcherName: string,
+        connectionMonitorName: string, callback:
+        ServiceCallback<ConnectionMonitorQueryResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ConnectionMonitorQueryResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ConnectionMonitorQueryResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ConnectionMonitorQueryResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ConnectionMonitorQueryResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ConnectionMonitorQueryResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ConnectionMonitors.queryWithHttpOperationResponse
+    name: 'queryWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Query a snapshot of the most recent connection states.
+    syntax:
+      content: >-
+        function queryWithHttpOperationResponse(resourceGroupName: string,
+        networkWatcherName: string, connectionMonitorName: string, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name given to the connection
+            monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ConnectionMonitorQueryResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.start
+    name: 'start(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Starts the specified connection monitor.
+    syntax:
+      content: >-
+        function start(resourceGroupName: string, networkWatcherName: string,
+        connectionMonitorName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.start_2
+    name: 'start(string, string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Starts the specified connection monitor.
+    syntax:
+      content: >-
+        function start(resourceGroupName: string, networkWatcherName: string,
+        connectionMonitorName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.start_1
+    name: 'start(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Starts the specified connection monitor.
+    syntax:
+      content: >-
+        function start(resourceGroupName: string, networkWatcherName: string,
+        connectionMonitorName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ConnectionMonitors.startWithHttpOperationResponse
+    name: 'startWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Starts the specified connection monitor.
+    syntax:
+      content: >-
+        function startWithHttpOperationResponse(resourceGroupName: string,
+        networkWatcherName: string, connectionMonitorName: string, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.stop
+    name: 'stop(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Stops the specified connection monitor.
+    syntax:
+      content: >-
+        function stop(resourceGroupName: string, networkWatcherName: string,
+        connectionMonitorName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.stop_2
+    name: 'stop(string, string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Stops the specified connection monitor.
+    syntax:
+      content: >-
+        function stop(resourceGroupName: string, networkWatcherName: string,
+        connectionMonitorName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitors.stop_1
+    name: 'stop(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Stops the specified connection monitor.
+    syntax:
+      content: >-
+        function stop(resourceGroupName: string, networkWatcherName: string,
+        connectionMonitorName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkWatcherName
+          type:
+            - string
+          description: ''
+        - id: connectionMonitorName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ConnectionMonitors.stopWithHttpOperationResponse
+    name: 'stopWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Stops the specified connection monitor.
+    syntax:
+      content: >-
+        function stopWithHttpOperationResponse(resourceGroupName: string,
+        networkWatcherName: string, connectionMonitorName: string, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group containing
+            Network Watcher.
+        - id: networkWatcherName
+          type:
+            - string
+          description: |
+            The name of the Network Watcher resource.
+        - id: connectionMonitorName
+          type:
+            - string
+          description: |
+            The name of the connection monitor.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitor
+    name: ConnectionMonitor
+    spec.typeScript:
+      - name: ConnectionMonitor
+        fullName: ConnectionMonitor
+        uid: azure-arm-network - v13.0.0.ConnectionMonitor
+  - uid: Promise<azure-arm-network - v13.0.0.ConnectionMonitorResult>
+    name: ConnectionMonitorResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ConnectionMonitorResult
+        fullName: ConnectionMonitorResult
+        uid: azure-arm-network - v13.0.0.ConnectionMonitorResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.ConnectionMonitorResult>
+    name: ConnectionMonitorResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ConnectionMonitorResult
+        fullName: ConnectionMonitorResult
+        uid: azure-arm-network - v13.0.0.ConnectionMonitorResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.ConnectionMonitorResult>>
+    name: ConnectionMonitorResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ConnectionMonitorResult
+        fullName: ConnectionMonitorResult
+        uid: azure-arm-network - v13.0.0.ConnectionMonitorResult
+      - name: '>>'
+        fullName: '>>'
+  - uid: Promise<azure-arm-network - v13.0.0.ConnectionMonitorQueryResult>
+    name: ConnectionMonitorQueryResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ConnectionMonitorQueryResult
+        fullName: ConnectionMonitorQueryResult
+        uid: azure-arm-network - v13.0.0.ConnectionMonitorQueryResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.ConnectionMonitorQueryResult>
+    name: ConnectionMonitorQueryResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ConnectionMonitorQueryResult
+        fullName: ConnectionMonitorQueryResult
+        uid: azure-arm-network - v13.0.0.ConnectionMonitorQueryResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.ConnectionMonitorQueryResult>>
+    name: ConnectionMonitorQueryResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ConnectionMonitorQueryResult
+        fullName: ConnectionMonitorQueryResult
+        uid: azure-arm-network - v13.0.0.ConnectionMonitorQueryResult
+      - name: '>>'
+        fullName: '>>'
+  - uid: Promise<azure-arm-network - v13.0.0.ConnectionMonitorListResult>
+    name: ConnectionMonitorListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ConnectionMonitorListResult
+        fullName: ConnectionMonitorListResult
+        uid: azure-arm-network - v13.0.0.ConnectionMonitorListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.ConnectionMonitorListResult>
+    name: ConnectionMonitorListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ConnectionMonitorListResult
+        fullName: ConnectionMonitorListResult
+        uid: azure-arm-network - v13.0.0.ConnectionMonitorListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.ConnectionMonitorListResult>>
+    name: ConnectionMonitorListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ConnectionMonitorListResult
+        fullName: ConnectionMonitorListResult
+        uid: azure-arm-network - v13.0.0.ConnectionMonitorListResult
+      - name: '>>'
+        fullName: '>>'

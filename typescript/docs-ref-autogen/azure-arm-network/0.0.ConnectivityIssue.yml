@@ -1,0 +1,90 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ConnectivityIssue
+    name: ConnectivityIssue
+    fullName: ConnectivityIssue
+    children:
+      - azure-arm-network - v13.0.0.ConnectivityIssue.context
+      - azure-arm-network - v13.0.0.ConnectivityIssue.origin
+      - azure-arm-network - v13.0.0.ConnectivityIssue.severity
+      - azure-arm-network - v13.0.0.ConnectivityIssue.type
+    langs:
+      - typeScript
+    type: interface
+    summary: >-
+      Information about an issue encountered in the process of checking for
+      connectivity.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityIssue.context
+    name: context
+    fullName: context
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Provides additional context on the issue.
+    optional: true
+    syntax:
+      content: 'context?: [key: string]: string[]'
+      return:
+        type:
+          - '[key: string]: string[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityIssue.origin
+    name: origin
+    fullName: origin
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The origin of the issue. Possible values include: 'Local', 'Inbound',
+      'Outbound'
+    optional: true
+    syntax:
+      content: 'origin?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityIssue.severity
+    name: severity
+    fullName: severity
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The severity of the issue. Possible values include: ''Error'', ''Warning'''
+    optional: true
+    syntax:
+      content: 'severity?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityIssue.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The type of issue. Possible values include: 'Unknown', 'AgentStopped',
+      'GuestFirewall',
+
+      'DnsResolution', 'SocketBind', 'NetworkSecurityRule', 'UserDefinedRoute',
+      'PortThrottled',
+
+      'Platform'
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13

@@ -1,0 +1,99 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetInstanceView
+    name: VirtualMachineScaleSetInstanceView
+    fullName: VirtualMachineScaleSetInstanceView
+    children:
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetInstanceView.extensions
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSetInstanceView.statuses
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetInstanceView.virtualMachine
+    langs:
+      - typeScript
+    type: interface
+    summary: The instance view of a virtual machine scale set.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetInstanceView.extensions
+    name: extensions
+    fullName: extensions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The extensions information.
+    optional: true
+    syntax:
+      content: 'extensions?: VirtualMachineScaleSetVMExtensionsSummary[]'
+      return:
+        type:
+          - >-
+            azure-arm-compute -
+            v10.0.0.VirtualMachineScaleSetVMExtensionsSummary[]
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetInstanceView.statuses
+    name: statuses
+    fullName: statuses
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The resource status information.
+    optional: true
+    syntax:
+      content: 'statuses?: InstanceViewStatus[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.InstanceViewStatus[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetInstanceView.virtualMachine
+    name: virtualMachine
+    fullName: virtualMachine
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The instance view status summary for the virtual machine scale set.
+    optional: true
+    syntax:
+      content: 'virtualMachine?: VirtualMachineScaleSetInstanceViewStatusesSummary'
+      return:
+        type:
+          - >-
+            azure-arm-compute -
+            v10.0.0.VirtualMachineScaleSetInstanceViewStatusesSummary
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: 'azure-arm-compute - v10.0.0.VirtualMachineScaleSetVMExtensionsSummary[]'
+    name: 'VirtualMachineScaleSetVMExtensionsSummary[]'
+    spec.typeScript:
+      - name: VirtualMachineScaleSetVMExtensionsSummary
+        fullName: VirtualMachineScaleSetVMExtensionsSummary
+        uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetVMExtensionsSummary
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-compute - v10.0.0.InstanceViewStatus[]'
+    name: 'InstanceViewStatus[]'
+    spec.typeScript:
+      - name: InstanceViewStatus
+        fullName: InstanceViewStatus
+        uid: azure-arm-compute - v10.0.0.InstanceViewStatus
+      - name: '[]'
+        fullName: '[]'
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetInstanceViewStatusesSummary
+    name: VirtualMachineScaleSetInstanceViewStatusesSummary
+    spec.typeScript:
+      - name: VirtualMachineScaleSetInstanceViewStatusesSummary
+        fullName: VirtualMachineScaleSetInstanceViewStatusesSummary
+        uid: >-
+          azure-arm-compute -
+          v10.0.0.VirtualMachineScaleSetInstanceViewStatusesSummary

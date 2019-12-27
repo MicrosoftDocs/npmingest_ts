@@ -1,0 +1,244 @@
+### YamlMime:UniversalReference
+items:
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration
+    name: ApplicationGatewayWebApplicationFirewallConfiguration
+    fullName: ApplicationGatewayWebApplicationFirewallConfiguration
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.disabledRuleGroups
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.enabled
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.exclusions
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.fileUploadLimitInMb
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.firewallMode
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.maxRequestBodySize
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.maxRequestBodySizeInKb
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.requestBodyCheck
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.ruleSetType
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.ruleSetVersion
+    langs:
+      - typeScript
+    type: interface
+    summary: Application gateway web application firewall configuration.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.disabledRuleGroups
+    name: disabledRuleGroups
+    fullName: disabledRuleGroups
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The disabled rule groups.
+    optional: true
+    syntax:
+      content: 'disabledRuleGroups?: ApplicationGatewayFirewallDisabledRuleGroup[]'
+      return:
+        type:
+          - >-
+            azure-arm-network -
+            v13.0.0.ApplicationGatewayFirewallDisabledRuleGroup[]
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.enabled
+    name: enabled
+    fullName: enabled
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Whether the web application firewall is enabled or not.
+    syntax:
+      content: 'enabled: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.exclusions
+    name: exclusions
+    fullName: exclusions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The exclusion list.
+    optional: true
+    syntax:
+      content: 'exclusions?: ApplicationGatewayFirewallExclusion[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ApplicationGatewayFirewallExclusion[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.fileUploadLimitInMb
+    name: fileUploadLimitInMb
+    fullName: fileUploadLimitInMb
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Maximum file upload size in Mb for WAF.
+    optional: true
+    syntax:
+      content: 'fileUploadLimitInMb?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.firewallMode
+    name: firewallMode
+    fullName: firewallMode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Web application firewall mode. Possible values include: 'Detection',
+      'Prevention'
+    syntax:
+      content: 'firewallMode: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.maxRequestBodySize
+    name: maxRequestBodySize
+    fullName: maxRequestBodySize
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Maximum request body size for WAF.
+    optional: true
+    syntax:
+      content: 'maxRequestBodySize?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.maxRequestBodySizeInKb
+    name: maxRequestBodySizeInKb
+    fullName: maxRequestBodySizeInKb
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Maximum request body size in Kb for WAF.
+    optional: true
+    syntax:
+      content: 'maxRequestBodySizeInKb?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.requestBodyCheck
+    name: requestBodyCheck
+    fullName: requestBodyCheck
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Whether allow WAF to check request Body.
+    optional: true
+    syntax:
+      content: 'requestBodyCheck?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.ruleSetType
+    name: ruleSetType
+    fullName: ruleSetType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The type of the web application firewall rule set. Possible values are:
+      'OWASP'.
+    syntax:
+      content: 'ruleSetType: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration.ruleSetVersion
+    name: ruleSetVersion
+    fullName: ruleSetVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The version of the rule set type.
+    syntax:
+      content: 'ruleSetVersion: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayFirewallDisabledRuleGroup[]'
+    name: 'ApplicationGatewayFirewallDisabledRuleGroup[]'
+    spec.typeScript:
+      - name: ApplicationGatewayFirewallDisabledRuleGroup
+        fullName: ApplicationGatewayFirewallDisabledRuleGroup
+        uid: >-
+          azure-arm-network -
+          v13.0.0.ApplicationGatewayFirewallDisabledRuleGroup
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayFirewallExclusion[]'
+    name: 'ApplicationGatewayFirewallExclusion[]'
+    spec.typeScript:
+      - name: ApplicationGatewayFirewallExclusion
+        fullName: ApplicationGatewayFirewallExclusion
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayFirewallExclusion
+      - name: '[]'
+        fullName: '[]'

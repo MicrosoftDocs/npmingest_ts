@@ -1,0 +1,967 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.LogAnalytics
+    name: LogAnalytics
+    fullName: LogAnalytics
+    children:
+      - >-
+        azure-arm-compute -
+        v10.0.0.LogAnalytics.beginExportRequestRateByInterval
+      - >-
+        azure-arm-compute -
+        v10.0.0.LogAnalytics.beginExportRequestRateByInterval_2
+      - >-
+        azure-arm-compute -
+        v10.0.0.LogAnalytics.beginExportRequestRateByInterval_1
+      - >-
+        azure-arm-compute -
+        v10.0.0.LogAnalytics.beginExportRequestRateByIntervalWithHttpOperationResponse
+      - azure-arm-compute - v10.0.0.LogAnalytics.beginExportThrottledRequests
+      - azure-arm-compute - v10.0.0.LogAnalytics.beginExportThrottledRequests_2
+      - azure-arm-compute - v10.0.0.LogAnalytics.beginExportThrottledRequests_1
+      - >-
+        azure-arm-compute -
+        v10.0.0.LogAnalytics.beginExportThrottledRequestsWithHttpOperationResponse
+      - azure-arm-compute - v10.0.0.LogAnalytics.exportRequestRateByInterval
+      - azure-arm-compute - v10.0.0.LogAnalytics.exportRequestRateByInterval_2
+      - azure-arm-compute - v10.0.0.LogAnalytics.exportRequestRateByInterval_1
+      - >-
+        azure-arm-compute -
+        v10.0.0.LogAnalytics.exportRequestRateByIntervalWithHttpOperationResponse
+      - azure-arm-compute - v10.0.0.LogAnalytics.exportThrottledRequests
+      - azure-arm-compute - v10.0.0.LogAnalytics.exportThrottledRequests_2
+      - azure-arm-compute - v10.0.0.LogAnalytics.exportThrottledRequests_1
+      - >-
+        azure-arm-compute -
+        v10.0.0.LogAnalytics.exportThrottledRequestsWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.LogAnalytics.beginExportRequestRateByInterval
+    name: >-
+      beginExportRequestRateByInterval(RequestRateByIntervalInput, string,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Export logs that show Api requests made by this subscription in the given
+      time window to show throttling activities.
+    syntax:
+      content: >-
+        function beginExportRequestRateByInterval(parameters:
+        RequestRateByIntervalInput, location: string, options?: Object)
+      parameters:
+        - id: parameters
+          type:
+            - azure-arm-compute - v10.0.0.RequestRateByIntervalInput
+          description: |
+            Parameters supplied to the LogAnalytics
+            getRequestRateByInterval Api.
+        - id: location
+          type:
+            - string
+          description: |
+            The location upon which virtual-machine-sizes is
+            queried.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.LogAnalyticsOperationResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LogAnalyticsOperationResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LogAnalyticsOperationResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LogAnalyticsOperationResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.LogAnalytics.beginExportRequestRateByInterval_2
+    name: >-
+      beginExportRequestRateByInterval(RequestRateByIntervalInput, string,
+      Object, ServiceCallback<LogAnalyticsOperationResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Export logs that show Api requests made by this subscription in the given
+      time window to show throttling activities.
+    syntax:
+      content: >-
+        function beginExportRequestRateByInterval(parameters:
+        RequestRateByIntervalInput, location: string, options: Object, callback:
+        ServiceCallback<LogAnalyticsOperationResult>)
+      parameters:
+        - id: parameters
+          type:
+            - azure-arm-compute - v10.0.0.RequestRateByIntervalInput
+          description: ''
+        - id: location
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-compute -
+              v10.0.0.LogAnalyticsOperationResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.LogAnalyticsOperationResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LogAnalyticsOperationResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LogAnalyticsOperationResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LogAnalyticsOperationResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.LogAnalytics.beginExportRequestRateByInterval_1
+    name: >-
+      beginExportRequestRateByInterval(RequestRateByIntervalInput, string,
+      ServiceCallback<LogAnalyticsOperationResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Export logs that show Api requests made by this subscription in the given
+      time window to show throttling activities.
+    syntax:
+      content: >-
+        function beginExportRequestRateByInterval(parameters:
+        RequestRateByIntervalInput, location: string, callback:
+        ServiceCallback<LogAnalyticsOperationResult>)
+      parameters:
+        - id: parameters
+          type:
+            - azure-arm-compute - v10.0.0.RequestRateByIntervalInput
+          description: ''
+        - id: location
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-compute -
+              v10.0.0.LogAnalyticsOperationResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.LogAnalyticsOperationResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LogAnalyticsOperationResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LogAnalyticsOperationResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LogAnalyticsOperationResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.LogAnalytics.beginExportRequestRateByIntervalWithHttpOperationResponse
+    name: >-
+      beginExportRequestRateByIntervalWithHttpOperationResponse(RequestRateByIntervalInput,
+      string, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Export logs that show Api requests made by this subscription in the given
+      time window to show throttling activities.
+    syntax:
+      content: >-
+        function
+        beginExportRequestRateByIntervalWithHttpOperationResponse(parameters:
+        RequestRateByIntervalInput, location: string, options?: Object)
+      parameters:
+        - id: parameters
+          type:
+            - azure-arm-compute - v10.0.0.RequestRateByIntervalInput
+          description: |
+            Parameters supplied to the LogAnalytics
+            getRequestRateByInterval Api.
+        - id: location
+          type:
+            - string
+          description: |
+            The location upon which virtual-machine-sizes is
+            queried.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute -
+            v10.0.0.LogAnalyticsOperationResult>>
+        description: A promise is returned
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.LogAnalytics.beginExportThrottledRequests
+    name: 'beginExportThrottledRequests(ThrottledRequestsInput, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Export logs that show total throttled Api requests for this subscription
+      in
+
+      the given time window.
+    syntax:
+      content: >-
+        function beginExportThrottledRequests(parameters:
+        ThrottledRequestsInput, location: string, options?: Object)
+      parameters:
+        - id: parameters
+          type:
+            - azure-arm-compute - v10.0.0.ThrottledRequestsInput
+          description: |
+            Parameters supplied to the LogAnalytics
+            getThrottledRequests Api.
+        - id: location
+          type:
+            - string
+          description: |
+            The location upon which virtual-machine-sizes is
+            queried.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.LogAnalyticsOperationResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LogAnalyticsOperationResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LogAnalyticsOperationResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LogAnalyticsOperationResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.LogAnalytics.beginExportThrottledRequests_2
+    name: >-
+      beginExportThrottledRequests(ThrottledRequestsInput, string, Object,
+      ServiceCallback<LogAnalyticsOperationResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Export logs that show total throttled Api requests for this subscription
+      in
+
+      the given time window.
+    syntax:
+      content: >-
+        function beginExportThrottledRequests(parameters:
+        ThrottledRequestsInput, location: string, options: Object, callback:
+        ServiceCallback<LogAnalyticsOperationResult>)
+      parameters:
+        - id: parameters
+          type:
+            - azure-arm-compute - v10.0.0.ThrottledRequestsInput
+          description: ''
+        - id: location
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-compute -
+              v10.0.0.LogAnalyticsOperationResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.LogAnalyticsOperationResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LogAnalyticsOperationResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LogAnalyticsOperationResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LogAnalyticsOperationResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.LogAnalytics.beginExportThrottledRequests_1
+    name: >-
+      beginExportThrottledRequests(ThrottledRequestsInput, string,
+      ServiceCallback<LogAnalyticsOperationResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Export logs that show total throttled Api requests for this subscription
+      in
+
+      the given time window.
+    syntax:
+      content: >-
+        function beginExportThrottledRequests(parameters:
+        ThrottledRequestsInput, location: string, callback:
+        ServiceCallback<LogAnalyticsOperationResult>)
+      parameters:
+        - id: parameters
+          type:
+            - azure-arm-compute - v10.0.0.ThrottledRequestsInput
+          description: ''
+        - id: location
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-compute -
+              v10.0.0.LogAnalyticsOperationResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.LogAnalyticsOperationResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LogAnalyticsOperationResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LogAnalyticsOperationResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LogAnalyticsOperationResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.LogAnalytics.beginExportThrottledRequestsWithHttpOperationResponse
+    name: >-
+      beginExportThrottledRequestsWithHttpOperationResponse(ThrottledRequestsInput,
+      string, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Export logs that show total throttled Api requests for this subscription
+      in
+
+      the given time window.
+    syntax:
+      content: >-
+        function
+        beginExportThrottledRequestsWithHttpOperationResponse(parameters:
+        ThrottledRequestsInput, location: string, options?: Object)
+      parameters:
+        - id: parameters
+          type:
+            - azure-arm-compute - v10.0.0.ThrottledRequestsInput
+          description: |
+            Parameters supplied to the LogAnalytics
+            getThrottledRequests Api.
+        - id: location
+          type:
+            - string
+          description: |
+            The location upon which virtual-machine-sizes is
+            queried.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute -
+            v10.0.0.LogAnalyticsOperationResult>>
+        description: A promise is returned
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.LogAnalytics.exportRequestRateByInterval
+    name: 'exportRequestRateByInterval(RequestRateByIntervalInput, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Export logs that show Api requests made by this subscription in the given
+      time window to show throttling activities.
+    syntax:
+      content: >-
+        function exportRequestRateByInterval(parameters:
+        RequestRateByIntervalInput, location: string, options?: Object)
+      parameters:
+        - id: parameters
+          type:
+            - azure-arm-compute - v10.0.0.RequestRateByIntervalInput
+          description: |
+            Parameters supplied to the LogAnalytics
+            getRequestRateByInterval Api.
+        - id: location
+          type:
+            - string
+          description: |
+            The location upon which virtual-machine-sizes is
+            queried.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.LogAnalyticsOperationResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LogAnalyticsOperationResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LogAnalyticsOperationResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LogAnalyticsOperationResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.LogAnalytics.exportRequestRateByInterval_2
+    name: >-
+      exportRequestRateByInterval(RequestRateByIntervalInput, string, Object,
+      ServiceCallback<LogAnalyticsOperationResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Export logs that show Api requests made by this subscription in the given
+      time window to show throttling activities.
+    syntax:
+      content: >-
+        function exportRequestRateByInterval(parameters:
+        RequestRateByIntervalInput, location: string, options: Object, callback:
+        ServiceCallback<LogAnalyticsOperationResult>)
+      parameters:
+        - id: parameters
+          type:
+            - azure-arm-compute - v10.0.0.RequestRateByIntervalInput
+          description: ''
+        - id: location
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-compute -
+              v10.0.0.LogAnalyticsOperationResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.LogAnalyticsOperationResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LogAnalyticsOperationResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LogAnalyticsOperationResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LogAnalyticsOperationResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.LogAnalytics.exportRequestRateByInterval_1
+    name: >-
+      exportRequestRateByInterval(RequestRateByIntervalInput, string,
+      ServiceCallback<LogAnalyticsOperationResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Export logs that show Api requests made by this subscription in the given
+      time window to show throttling activities.
+    syntax:
+      content: >-
+        function exportRequestRateByInterval(parameters:
+        RequestRateByIntervalInput, location: string, callback:
+        ServiceCallback<LogAnalyticsOperationResult>)
+      parameters:
+        - id: parameters
+          type:
+            - azure-arm-compute - v10.0.0.RequestRateByIntervalInput
+          description: ''
+        - id: location
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-compute -
+              v10.0.0.LogAnalyticsOperationResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.LogAnalyticsOperationResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LogAnalyticsOperationResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LogAnalyticsOperationResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LogAnalyticsOperationResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.LogAnalytics.exportRequestRateByIntervalWithHttpOperationResponse
+    name: >-
+      exportRequestRateByIntervalWithHttpOperationResponse(RequestRateByIntervalInput,
+      string, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Export logs that show Api requests made by this subscription in the given
+      time window to show throttling activities.
+    syntax:
+      content: >-
+        function
+        exportRequestRateByIntervalWithHttpOperationResponse(parameters:
+        RequestRateByIntervalInput, location: string, options?: Object)
+      parameters:
+        - id: parameters
+          type:
+            - azure-arm-compute - v10.0.0.RequestRateByIntervalInput
+          description: |
+            Parameters supplied to the LogAnalytics
+            getRequestRateByInterval Api.
+        - id: location
+          type:
+            - string
+          description: |
+            The location upon which virtual-machine-sizes is
+            queried.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute -
+            v10.0.0.LogAnalyticsOperationResult>>
+        description: A promise is returned
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.LogAnalytics.exportThrottledRequests
+    name: 'exportThrottledRequests(ThrottledRequestsInput, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Export logs that show total throttled Api requests for this subscription
+      in
+
+      the given time window.
+    syntax:
+      content: >-
+        function exportThrottledRequests(parameters: ThrottledRequestsInput,
+        location: string, options?: Object)
+      parameters:
+        - id: parameters
+          type:
+            - azure-arm-compute - v10.0.0.ThrottledRequestsInput
+          description: |
+            Parameters supplied to the LogAnalytics
+            getThrottledRequests Api.
+        - id: location
+          type:
+            - string
+          description: |
+            The location upon which virtual-machine-sizes is
+            queried.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.LogAnalyticsOperationResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LogAnalyticsOperationResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LogAnalyticsOperationResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LogAnalyticsOperationResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.LogAnalytics.exportThrottledRequests_2
+    name: >-
+      exportThrottledRequests(ThrottledRequestsInput, string, Object,
+      ServiceCallback<LogAnalyticsOperationResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Export logs that show total throttled Api requests for this subscription
+      in
+
+      the given time window.
+    syntax:
+      content: >-
+        function exportThrottledRequests(parameters: ThrottledRequestsInput,
+        location: string, options: Object, callback:
+        ServiceCallback<LogAnalyticsOperationResult>)
+      parameters:
+        - id: parameters
+          type:
+            - azure-arm-compute - v10.0.0.ThrottledRequestsInput
+          description: ''
+        - id: location
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-compute -
+              v10.0.0.LogAnalyticsOperationResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.LogAnalyticsOperationResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LogAnalyticsOperationResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LogAnalyticsOperationResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LogAnalyticsOperationResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.LogAnalytics.exportThrottledRequests_1
+    name: >-
+      exportThrottledRequests(ThrottledRequestsInput, string,
+      ServiceCallback<LogAnalyticsOperationResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Export logs that show total throttled Api requests for this subscription
+      in
+
+      the given time window.
+    syntax:
+      content: >-
+        function exportThrottledRequests(parameters: ThrottledRequestsInput,
+        location: string, callback:
+        ServiceCallback<LogAnalyticsOperationResult>)
+      parameters:
+        - id: parameters
+          type:
+            - azure-arm-compute - v10.0.0.ThrottledRequestsInput
+          description: ''
+        - id: location
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-compute -
+              v10.0.0.LogAnalyticsOperationResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.LogAnalyticsOperationResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {LogAnalyticsOperationResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {LogAnalyticsOperationResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link LogAnalyticsOperationResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.LogAnalytics.exportThrottledRequestsWithHttpOperationResponse
+    name: >-
+      exportThrottledRequestsWithHttpOperationResponse(ThrottledRequestsInput,
+      string, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Export logs that show total throttled Api requests for this subscription
+      in
+
+      the given time window.
+    syntax:
+      content: >-
+        function exportThrottledRequestsWithHttpOperationResponse(parameters:
+        ThrottledRequestsInput, location: string, options?: Object)
+      parameters:
+        - id: parameters
+          type:
+            - azure-arm-compute - v10.0.0.ThrottledRequestsInput
+          description: |
+            Parameters supplied to the LogAnalytics
+            getThrottledRequests Api.
+        - id: location
+          type:
+            - string
+          description: |
+            The location upon which virtual-machine-sizes is
+            queried.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute -
+            v10.0.0.LogAnalyticsOperationResult>>
+        description: A promise is returned
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.RequestRateByIntervalInput
+    name: RequestRateByIntervalInput
+    spec.typeScript:
+      - name: RequestRateByIntervalInput
+        fullName: RequestRateByIntervalInput
+        uid: azure-arm-compute - v10.0.0.RequestRateByIntervalInput
+  - uid: Promise<azure-arm-compute - v10.0.0.LogAnalyticsOperationResult>
+    name: LogAnalyticsOperationResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: LogAnalyticsOperationResult
+        fullName: LogAnalyticsOperationResult
+        uid: azure-arm-compute - v10.0.0.LogAnalyticsOperationResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute - v10.0.0.LogAnalyticsOperationResult>
+    name: LogAnalyticsOperationResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: LogAnalyticsOperationResult
+        fullName: LogAnalyticsOperationResult
+        uid: azure-arm-compute - v10.0.0.LogAnalyticsOperationResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-compute -
+      v10.0.0.LogAnalyticsOperationResult>>
+    name: LogAnalyticsOperationResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: LogAnalyticsOperationResult
+        fullName: LogAnalyticsOperationResult
+        uid: azure-arm-compute - v10.0.0.LogAnalyticsOperationResult
+      - name: '>>'
+        fullName: '>>'
+  - uid: azure-arm-compute - v10.0.0.ThrottledRequestsInput
+    name: ThrottledRequestsInput
+    spec.typeScript:
+      - name: ThrottledRequestsInput
+        fullName: ThrottledRequestsInput
+        uid: azure-arm-compute - v10.0.0.ThrottledRequestsInput

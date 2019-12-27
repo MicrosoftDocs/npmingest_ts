@@ -1,0 +1,267 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration
+    name: VirtualMachineScaleSetUpdateIPConfiguration
+    fullName: VirtualMachineScaleSetUpdateIPConfiguration
+    children:
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.applicationGatewayBackendAddressPools
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.applicationSecurityGroups
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.id
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.loadBalancerBackendAddressPools
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.loadBalancerInboundNatPools
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.name
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.primary
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.privateIPAddressVersion
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.publicIPAddressConfiguration
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.subnet
+    langs:
+      - typeScript
+    type: interface
+    summary: Describes a virtual machine scale set network profile's IP configuration.
+    extends:
+      name: azure-arm-compute - v10.0.0.SubResource
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.applicationGatewayBackendAddressPools
+    name: applicationGatewayBackendAddressPools
+    fullName: applicationGatewayBackendAddressPools
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The application gateway backend address pools.
+    optional: true
+    syntax:
+      content: 'applicationGatewayBackendAddressPools?: SubResource[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.SubResource[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.applicationSecurityGroups
+    name: applicationSecurityGroups
+    fullName: applicationSecurityGroups
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies an array of references to application security group.
+    optional: true
+    syntax:
+      content: 'applicationSecurityGroups?: SubResource[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.SubResource[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.loadBalancerBackendAddressPools
+    name: loadBalancerBackendAddressPools
+    fullName: loadBalancerBackendAddressPools
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The load balancer backend address pools.
+    optional: true
+    syntax:
+      content: 'loadBalancerBackendAddressPools?: SubResource[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.SubResource[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.loadBalancerInboundNatPools
+    name: loadBalancerInboundNatPools
+    fullName: loadBalancerInboundNatPools
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The load balancer inbound nat pools.
+    optional: true
+    syntax:
+      content: 'loadBalancerInboundNatPools?: SubResource[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.SubResource[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The IP configuration name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.primary
+    name: primary
+    fullName: primary
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the primary IP Configuration in case the network interface has
+      more than one IP
+
+      Configuration.
+    optional: true
+    syntax:
+      content: 'primary?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.privateIPAddressVersion
+    name: privateIPAddressVersion
+    fullName: privateIPAddressVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Available from Api-Version 2017-03-30 onwards, it represents whether the
+      specific
+
+      ipconfiguration is IPv4 or IPv6. Default is taken as IPv4.  Possible
+      values are: 'IPv4' and
+
+      'IPv6'. Possible values include: 'IPv4', 'IPv6'
+    optional: true
+    syntax:
+      content: 'privateIPAddressVersion?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.publicIPAddressConfiguration
+    name: publicIPAddressConfiguration
+    fullName: publicIPAddressConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The publicIPAddressConfiguration.
+    optional: true
+    syntax:
+      content: >-
+        publicIPAddressConfiguration?:
+        VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
+      return:
+        type:
+          - >-
+            azure-arm-compute -
+            v10.0.0.VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetUpdateIPConfiguration.subnet
+    name: subnet
+    fullName: subnet
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The subnet.
+    optional: true
+    syntax:
+      content: 'subnet?: ApiEntityReference'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.ApiEntityReference
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute - v10.0.0.SubResource
+  - uid: 'azure-arm-compute - v10.0.0.SubResource[]'
+    name: 'SubResource[]'
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute - v10.0.0.SubResource
+      - name: '[]'
+        fullName: '[]'
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
+    name: VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
+    spec.typeScript:
+      - name: VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
+        fullName: VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
+        uid: >-
+          azure-arm-compute -
+          v10.0.0.VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
+  - uid: azure-arm-compute - v10.0.0.ApiEntityReference
+    name: ApiEntityReference
+    spec.typeScript:
+      - name: ApiEntityReference
+        fullName: ApiEntityReference
+        uid: azure-arm-compute - v10.0.0.ApiEntityReference

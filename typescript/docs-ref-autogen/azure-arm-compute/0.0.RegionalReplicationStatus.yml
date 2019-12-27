@@ -1,0 +1,83 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.RegionalReplicationStatus
+    name: RegionalReplicationStatus
+    fullName: RegionalReplicationStatus
+    children:
+      - azure-arm-compute - v10.0.0.RegionalReplicationStatus.details
+      - azure-arm-compute - v10.0.0.RegionalReplicationStatus.progress
+      - azure-arm-compute - v10.0.0.RegionalReplicationStatus.region
+      - azure-arm-compute - v10.0.0.RegionalReplicationStatus.state
+    langs:
+      - typeScript
+    type: interface
+    summary: This is the regional replication status.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.RegionalReplicationStatus.details
+    name: details
+    fullName: details
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The details of the replication status.
+    optional: true
+    syntax:
+      content: 'details?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.RegionalReplicationStatus.progress
+    name: progress
+    fullName: progress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: It indicates progress of the replication job.
+    optional: true
+    syntax:
+      content: 'progress?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.RegionalReplicationStatus.region
+    name: region
+    fullName: region
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The region to which the gallery Image Version is being replicated to.
+    optional: true
+    syntax:
+      content: 'region?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.RegionalReplicationStatus.state
+    name: state
+    fullName: state
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      This is the regional replication state. Possible values include:
+      'Unknown', 'Replicating',
+
+      'Completed', 'Failed'
+    optional: true
+    syntax:
+      content: 'state?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10

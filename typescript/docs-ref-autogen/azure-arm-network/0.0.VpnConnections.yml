@@ -1,0 +1,1605 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.VpnConnections
+    name: VpnConnections
+    fullName: VpnConnections
+    children:
+      - azure-arm-network - v13.0.0.VpnConnections.beginCreateOrUpdate
+      - azure-arm-network - v13.0.0.VpnConnections.beginCreateOrUpdate_2
+      - azure-arm-network - v13.0.0.VpnConnections.beginCreateOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.VpnConnections.beginCreateOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.VpnConnections.beginDeleteMethod
+      - azure-arm-network - v13.0.0.VpnConnections.beginDeleteMethod_2
+      - azure-arm-network - v13.0.0.VpnConnections.beginDeleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.VpnConnections.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.VpnConnections.createOrUpdate
+      - azure-arm-network - v13.0.0.VpnConnections.createOrUpdate_2
+      - azure-arm-network - v13.0.0.VpnConnections.createOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.VpnConnections.createOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.VpnConnections.deleteMethod
+      - azure-arm-network - v13.0.0.VpnConnections.deleteMethod_2
+      - azure-arm-network - v13.0.0.VpnConnections.deleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.VpnConnections.deleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.VpnConnections.get
+      - azure-arm-network - v13.0.0.VpnConnections.get_2
+      - azure-arm-network - v13.0.0.VpnConnections.get_1
+      - azure-arm-network - v13.0.0.VpnConnections.getWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.VpnConnections.listByVpnGateway
+      - azure-arm-network - v13.0.0.VpnConnections.listByVpnGateway_2
+      - azure-arm-network - v13.0.0.VpnConnections.listByVpnGateway_1
+      - azure-arm-network - v13.0.0.VpnConnections.listByVpnGatewayNext
+      - azure-arm-network - v13.0.0.VpnConnections.listByVpnGatewayNext_2
+      - azure-arm-network - v13.0.0.VpnConnections.listByVpnGatewayNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.VpnConnections.listByVpnGatewayNextWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.VpnConnections.listByVpnGatewayWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.beginCreateOrUpdate
+    name: 'beginCreateOrUpdate(string, string, string, VpnConnection, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a vpn connection to a scalable vpn gateway if it doesn't exist
+      else
+
+      updates the existing connection.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, gatewayName:
+        string, connectionName: string, vpnConnectionParameters: VpnConnection,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VpnGateway.
+        - id: gatewayName
+          type:
+            - string
+          description: |
+            The name of the gateway.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the connection.
+        - id: vpnConnectionParameters
+          type:
+            - azure-arm-network - v13.0.0.VpnConnection
+          description: |
+            Parameters supplied to create or
+            Update a VPN Connection.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VpnConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnConnection} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.beginCreateOrUpdate_2
+    name: >-
+      beginCreateOrUpdate(string, string, string, VpnConnection, Object,
+      ServiceCallback<VpnConnection>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a vpn connection to a scalable vpn gateway if it doesn't exist
+      else
+
+      updates the existing connection.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, gatewayName:
+        string, connectionName: string, vpnConnectionParameters: VpnConnection,
+        options: Object, callback: ServiceCallback<VpnConnection>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: gatewayName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: vpnConnectionParameters
+          type:
+            - azure-arm-network - v13.0.0.VpnConnection
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.VpnConnection>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VpnConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnConnection} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.beginCreateOrUpdate_1
+    name: >-
+      beginCreateOrUpdate(string, string, string, VpnConnection,
+      ServiceCallback<VpnConnection>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a vpn connection to a scalable vpn gateway if it doesn't exist
+      else
+
+      updates the existing connection.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, gatewayName:
+        string, connectionName: string, vpnConnectionParameters: VpnConnection,
+        callback: ServiceCallback<VpnConnection>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: gatewayName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: vpnConnectionParameters
+          type:
+            - azure-arm-network - v13.0.0.VpnConnection
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.VpnConnection>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VpnConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnConnection} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.VpnConnections.beginCreateOrUpdateWithHttpOperationResponse
+    name: >-
+      beginCreateOrUpdateWithHttpOperationResponse(string, string, string,
+      VpnConnection, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a vpn connection to a scalable vpn gateway if it doesn't exist
+      else
+
+      updates the existing connection.
+    syntax:
+      content: >-
+        function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, gatewayName: string, connectionName: string,
+        vpnConnectionParameters: VpnConnection, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VpnGateway.
+        - id: gatewayName
+          type:
+            - string
+          description: |
+            The name of the gateway.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the connection.
+        - id: vpnConnectionParameters
+          type:
+            - azure-arm-network - v13.0.0.VpnConnection
+          description: |
+            Parameters supplied to create or
+            Update a VPN Connection.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.VpnConnection>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.beginDeleteMethod
+    name: 'beginDeleteMethod(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a vpn connection.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, gatewayName:
+        string, connectionName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VpnGateway.
+        - id: gatewayName
+          type:
+            - string
+          description: |
+            The name of the gateway.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the connection.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.beginDeleteMethod_2
+    name: 'beginDeleteMethod(string, string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a vpn connection.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, gatewayName:
+        string, connectionName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: gatewayName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.beginDeleteMethod_1
+    name: 'beginDeleteMethod(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a vpn connection.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, gatewayName:
+        string, connectionName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: gatewayName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.VpnConnections.beginDeleteMethodWithHttpOperationResponse
+    name: 'beginDeleteMethodWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a vpn connection.
+    syntax:
+      content: >-
+        function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, gatewayName: string, connectionName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VpnGateway.
+        - id: gatewayName
+          type:
+            - string
+          description: |
+            The name of the gateway.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the connection.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.createOrUpdate
+    name: 'createOrUpdate(string, string, string, VpnConnection, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a vpn connection to a scalable vpn gateway if it doesn't exist
+      else
+
+      updates the existing connection.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, gatewayName: string,
+        connectionName: string, vpnConnectionParameters: VpnConnection,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VpnGateway.
+        - id: gatewayName
+          type:
+            - string
+          description: |
+            The name of the gateway.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the connection.
+        - id: vpnConnectionParameters
+          type:
+            - azure-arm-network - v13.0.0.VpnConnection
+          description: |
+            Parameters supplied to create or
+            Update a VPN Connection.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VpnConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnConnection} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.createOrUpdate_2
+    name: >-
+      createOrUpdate(string, string, string, VpnConnection, Object,
+      ServiceCallback<VpnConnection>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a vpn connection to a scalable vpn gateway if it doesn't exist
+      else
+
+      updates the existing connection.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, gatewayName: string,
+        connectionName: string, vpnConnectionParameters: VpnConnection, options:
+        Object, callback: ServiceCallback<VpnConnection>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: gatewayName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: vpnConnectionParameters
+          type:
+            - azure-arm-network - v13.0.0.VpnConnection
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.VpnConnection>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VpnConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnConnection} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.createOrUpdate_1
+    name: >-
+      createOrUpdate(string, string, string, VpnConnection,
+      ServiceCallback<VpnConnection>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a vpn connection to a scalable vpn gateway if it doesn't exist
+      else
+
+      updates the existing connection.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, gatewayName: string,
+        connectionName: string, vpnConnectionParameters: VpnConnection,
+        callback: ServiceCallback<VpnConnection>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: gatewayName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: vpnConnectionParameters
+          type:
+            - azure-arm-network - v13.0.0.VpnConnection
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.VpnConnection>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VpnConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnConnection} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.VpnConnections.createOrUpdateWithHttpOperationResponse
+    name: >-
+      createOrUpdateWithHttpOperationResponse(string, string, string,
+      VpnConnection, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a vpn connection to a scalable vpn gateway if it doesn't exist
+      else
+
+      updates the existing connection.
+    syntax:
+      content: >-
+        function createOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, gatewayName: string, connectionName: string,
+        vpnConnectionParameters: VpnConnection, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VpnGateway.
+        - id: gatewayName
+          type:
+            - string
+          description: |
+            The name of the gateway.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the connection.
+        - id: vpnConnectionParameters
+          type:
+            - azure-arm-network - v13.0.0.VpnConnection
+          description: |
+            Parameters supplied to create or
+            Update a VPN Connection.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.VpnConnection>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.deleteMethod
+    name: 'deleteMethod(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a vpn connection.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, gatewayName: string,
+        connectionName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VpnGateway.
+        - id: gatewayName
+          type:
+            - string
+          description: |
+            The name of the gateway.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the connection.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.deleteMethod_2
+    name: 'deleteMethod(string, string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a vpn connection.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, gatewayName: string,
+        connectionName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: gatewayName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.deleteMethod_1
+    name: 'deleteMethod(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a vpn connection.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, gatewayName: string,
+        connectionName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: gatewayName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.VpnConnections.deleteMethodWithHttpOperationResponse
+    name: 'deleteMethodWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes a vpn connection.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, gatewayName: string, connectionName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VpnGateway.
+        - id: gatewayName
+          type:
+            - string
+          description: |
+            The name of the gateway.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the connection.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.get
+    name: 'get(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves the details of a vpn connection.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, gatewayName: string,
+        connectionName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VpnGateway.
+        - id: gatewayName
+          type:
+            - string
+          description: |
+            The name of the gateway.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the vpn connection.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VpnConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnConnection} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.get_2
+    name: 'get(string, string, string, Object, ServiceCallback<VpnConnection>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves the details of a vpn connection.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, gatewayName: string,
+        connectionName: string, options: Object, callback:
+        ServiceCallback<VpnConnection>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: gatewayName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.VpnConnection>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VpnConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnConnection} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.get_1
+    name: 'get(string, string, string, ServiceCallback<VpnConnection>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves the details of a vpn connection.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, gatewayName: string,
+        connectionName: string, callback: ServiceCallback<VpnConnection>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: gatewayName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.VpnConnection>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.VpnConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VpnConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VpnConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VpnConnection} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves the details of a vpn connection.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        gatewayName: string, connectionName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VpnGateway.
+        - id: gatewayName
+          type:
+            - string
+          description: |
+            The name of the gateway.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the vpn connection.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.VpnConnection>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.listByVpnGateway
+    name: 'listByVpnGateway(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves all vpn connections for a particular virtual wan vpn gateway.
+    syntax:
+      content: >-
+        function listByVpnGateway(resourceGroupName: string, gatewayName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VpnGateway.
+        - id: gatewayName
+          type:
+            - string
+          description: |
+            The name of the gateway.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVpnConnectionsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnConnectionsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnConnectionsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnConnectionsResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.listByVpnGateway_2
+    name: >-
+      listByVpnGateway(string, string, Object,
+      ServiceCallback<ListVpnConnectionsResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves all vpn connections for a particular virtual wan vpn gateway.
+    syntax:
+      content: >-
+        function listByVpnGateway(resourceGroupName: string, gatewayName:
+        string, options: Object, callback:
+        ServiceCallback<ListVpnConnectionsResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: gatewayName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ListVpnConnectionsResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVpnConnectionsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnConnectionsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnConnectionsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnConnectionsResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.listByVpnGateway_1
+    name: >-
+      listByVpnGateway(string, string,
+      ServiceCallback<ListVpnConnectionsResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves all vpn connections for a particular virtual wan vpn gateway.
+    syntax:
+      content: >-
+        function listByVpnGateway(resourceGroupName: string, gatewayName:
+        string, callback: ServiceCallback<ListVpnConnectionsResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: gatewayName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ListVpnConnectionsResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVpnConnectionsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnConnectionsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnConnectionsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnConnectionsResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.listByVpnGatewayNext
+    name: 'listByVpnGatewayNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves all vpn connections for a particular virtual wan vpn gateway.
+    syntax:
+      content: 'function listByVpnGatewayNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVpnConnectionsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnConnectionsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnConnectionsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnConnectionsResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.listByVpnGatewayNext_2
+    name: >-
+      listByVpnGatewayNext(string, Object,
+      ServiceCallback<ListVpnConnectionsResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves all vpn connections for a particular virtual wan vpn gateway.
+    syntax:
+      content: >-
+        function listByVpnGatewayNext(nextPageLink: string, options: Object,
+        callback: ServiceCallback<ListVpnConnectionsResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ListVpnConnectionsResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVpnConnectionsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnConnectionsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnConnectionsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnConnectionsResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnConnections.listByVpnGatewayNext_1
+    name: 'listByVpnGatewayNext(string, ServiceCallback<ListVpnConnectionsResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves all vpn connections for a particular virtual wan vpn gateway.
+    syntax:
+      content: >-
+        function listByVpnGatewayNext(nextPageLink: string, callback:
+        ServiceCallback<ListVpnConnectionsResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ListVpnConnectionsResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ListVpnConnectionsResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListVpnConnectionsResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListVpnConnectionsResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListVpnConnectionsResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.VpnConnections.listByVpnGatewayNextWithHttpOperationResponse
+    name: 'listByVpnGatewayNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves all vpn connections for a particular virtual wan vpn gateway.
+    syntax:
+      content: >-
+        function listByVpnGatewayNextWithHttpOperationResponse(nextPageLink:
+        string, options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ListVpnConnectionsResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.VpnConnections.listByVpnGatewayWithHttpOperationResponse
+    name: 'listByVpnGatewayWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Retrieves all vpn connections for a particular virtual wan vpn gateway.
+    syntax:
+      content: >-
+        function listByVpnGatewayWithHttpOperationResponse(resourceGroupName:
+        string, gatewayName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The resource group name of the VpnGateway.
+        - id: gatewayName
+          type:
+            - string
+          description: |
+            The name of the gateway.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ListVpnConnectionsResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.VpnConnection
+    name: VpnConnection
+    spec.typeScript:
+      - name: VpnConnection
+        fullName: VpnConnection
+        uid: azure-arm-network - v13.0.0.VpnConnection
+  - uid: Promise<azure-arm-network - v13.0.0.VpnConnection>
+    name: VpnConnection>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VpnConnection
+        fullName: VpnConnection
+        uid: azure-arm-network - v13.0.0.VpnConnection
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.VpnConnection>
+    name: VpnConnection>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VpnConnection
+        fullName: VpnConnection
+        uid: azure-arm-network - v13.0.0.VpnConnection
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network - v13.0.0.VpnConnection>>
+    name: VpnConnection>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VpnConnection
+        fullName: VpnConnection
+        uid: azure-arm-network - v13.0.0.VpnConnection
+      - name: '>>'
+        fullName: '>>'
+  - uid: Promise<azure-arm-network - v13.0.0.ListVpnConnectionsResult>
+    name: ListVpnConnectionsResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ListVpnConnectionsResult
+        fullName: ListVpnConnectionsResult
+        uid: azure-arm-network - v13.0.0.ListVpnConnectionsResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.ListVpnConnectionsResult>
+    name: ListVpnConnectionsResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ListVpnConnectionsResult
+        fullName: ListVpnConnectionsResult
+        uid: azure-arm-network - v13.0.0.ListVpnConnectionsResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.ListVpnConnectionsResult>>
+    name: ListVpnConnectionsResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ListVpnConnectionsResult
+        fullName: ListVpnConnectionsResult
+        uid: azure-arm-network - v13.0.0.ListVpnConnectionsResult
+      - name: '>>'
+        fullName: '>>'

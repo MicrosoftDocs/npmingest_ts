@@ -1,0 +1,1460 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations
+    name: ApplicationPackageOperations
+    fullName: ApplicationPackageOperations
+    children:
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.activate
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.activate_2
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.activate_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.ApplicationPackageOperations.activateWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.create
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.create_2
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.create_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.ApplicationPackageOperations.createWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.deleteMethod
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.deleteMethod_2
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.deleteMethod_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.ApplicationPackageOperations.deleteMethodWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.get
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.get_2
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.get_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.ApplicationPackageOperations.getWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.list
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.list_2
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.list_1
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.listNext
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.listNext_2
+      - azure-arm-batch - v5.0.0.ApplicationPackageOperations.listNext_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.ApplicationPackageOperations.listNextWithHttpOperationResponse
+      - >-
+        azure-arm-batch -
+        v5.0.0.ApplicationPackageOperations.listWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.activate
+    name: 'activate(string, string, string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Activates the specified application package.
+    syntax:
+      content: >-
+        function activate(resourceGroupName: string, accountName: string,
+        applicationName: string, versionName: string, format: string, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: applicationName
+          type:
+            - string
+          description: |
+            The name of the application. This must be
+            unique within the account.
+        - id: versionName
+          type:
+            - string
+          description: |
+            The version of the application.
+        - id: format
+          type:
+            - string
+          description: |
+            The format of the application package binary file.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ApplicationPackage>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationPackage} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationPackage} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationPackage} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.activate_2
+    name: >-
+      activate(string, string, string, string, string, Object,
+      ServiceCallback<ApplicationPackage>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Activates the specified application package.
+    syntax:
+      content: >-
+        function activate(resourceGroupName: string, accountName: string,
+        applicationName: string, versionName: string, format: string, options:
+        Object, callback: ServiceCallback<ApplicationPackage>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: applicationName
+          type:
+            - string
+          description: ''
+        - id: versionName
+          type:
+            - string
+          description: ''
+        - id: format
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.ApplicationPackage>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ApplicationPackage>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationPackage} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationPackage} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationPackage} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.activate_1
+    name: >-
+      activate(string, string, string, string, string,
+      ServiceCallback<ApplicationPackage>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Activates the specified application package.
+    syntax:
+      content: >-
+        function activate(resourceGroupName: string, accountName: string,
+        applicationName: string, versionName: string, format: string, callback:
+        ServiceCallback<ApplicationPackage>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: applicationName
+          type:
+            - string
+          description: ''
+        - id: versionName
+          type:
+            - string
+          description: ''
+        - id: format
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.ApplicationPackage>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ApplicationPackage>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationPackage} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationPackage} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationPackage} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.ApplicationPackageOperations.activateWithHttpOperationResponse
+    name: >-
+      activateWithHttpOperationResponse(string, string, string, string, string,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Activates the specified application package.
+    syntax:
+      content: >-
+        function activateWithHttpOperationResponse(resourceGroupName: string,
+        accountName: string, applicationName: string, versionName: string,
+        format: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: applicationName
+          type:
+            - string
+          description: |
+            The name of the application. This must be
+            unique within the account.
+        - id: versionName
+          type:
+            - string
+          description: |
+            The version of the application.
+        - id: format
+          type:
+            - string
+          description: |
+            The format of the application package binary file.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.ApplicationPackage>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.create
+    name: 'create(string, string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates an application package record.
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, accountName: string,
+        applicationName: string, versionName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: applicationName
+          type:
+            - string
+          description: |
+            The name of the application. This must be
+            unique within the account.
+        - id: versionName
+          type:
+            - string
+          description: |
+            The version of the application.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ApplicationPackage>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationPackage} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationPackage} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationPackage} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.create_2
+    name: >-
+      create(string, string, string, string, Object,
+      ServiceCallback<ApplicationPackage>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates an application package record.
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, accountName: string,
+        applicationName: string, versionName: string, options: Object, callback:
+        ServiceCallback<ApplicationPackage>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: applicationName
+          type:
+            - string
+          description: ''
+        - id: versionName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.ApplicationPackage>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ApplicationPackage>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationPackage} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationPackage} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationPackage} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.create_1
+    name: >-
+      create(string, string, string, string,
+      ServiceCallback<ApplicationPackage>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates an application package record.
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, accountName: string,
+        applicationName: string, versionName: string, callback:
+        ServiceCallback<ApplicationPackage>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: applicationName
+          type:
+            - string
+          description: ''
+        - id: versionName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.ApplicationPackage>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ApplicationPackage>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationPackage} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationPackage} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationPackage} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.ApplicationPackageOperations.createWithHttpOperationResponse
+    name: 'createWithHttpOperationResponse(string, string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates an application package record.
+    syntax:
+      content: >-
+        function createWithHttpOperationResponse(resourceGroupName: string,
+        accountName: string, applicationName: string, versionName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: applicationName
+          type:
+            - string
+          description: |
+            The name of the application. This must be
+            unique within the account.
+        - id: versionName
+          type:
+            - string
+          description: |
+            The version of the application.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.ApplicationPackage>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.deleteMethod
+    name: 'deleteMethod(string, string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes an application package record and its associated binary file.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, accountName: string,
+        applicationName: string, versionName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: applicationName
+          type:
+            - string
+          description: |
+            The name of the application. This must be
+            unique within the account.
+        - id: versionName
+          type:
+            - string
+          description: |
+            The version of the application.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.deleteMethod_2
+    name: >-
+      deleteMethod(string, string, string, string, Object,
+      ServiceCallback<void>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes an application package record and its associated binary file.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, accountName: string,
+        applicationName: string, versionName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: applicationName
+          type:
+            - string
+          description: ''
+        - id: versionName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.deleteMethod_1
+    name: 'deleteMethod(string, string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes an application package record and its associated binary file.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, accountName: string,
+        applicationName: string, versionName: string, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: applicationName
+          type:
+            - string
+          description: ''
+        - id: versionName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.ApplicationPackageOperations.deleteMethodWithHttpOperationResponse
+    name: >-
+      deleteMethodWithHttpOperationResponse(string, string, string, string,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes an application package record and its associated binary file.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, accountName: string, applicationName: string, versionName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: applicationName
+          type:
+            - string
+          description: |
+            The name of the application. This must be
+            unique within the account.
+        - id: versionName
+          type:
+            - string
+          description: |
+            The version of the application.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.get
+    name: 'get(string, string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified application package.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string,
+        applicationName: string, versionName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: applicationName
+          type:
+            - string
+          description: |
+            The name of the application. This must be
+            unique within the account.
+        - id: versionName
+          type:
+            - string
+          description: |
+            The version of the application.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ApplicationPackage>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationPackage} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationPackage} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationPackage} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.get_2
+    name: >-
+      get(string, string, string, string, Object,
+      ServiceCallback<ApplicationPackage>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified application package.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string,
+        applicationName: string, versionName: string, options: Object, callback:
+        ServiceCallback<ApplicationPackage>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: applicationName
+          type:
+            - string
+          description: ''
+        - id: versionName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.ApplicationPackage>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ApplicationPackage>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationPackage} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationPackage} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationPackage} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.get_1
+    name: 'get(string, string, string, string, ServiceCallback<ApplicationPackage>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified application package.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string,
+        applicationName: string, versionName: string, callback:
+        ServiceCallback<ApplicationPackage>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: applicationName
+          type:
+            - string
+          description: ''
+        - id: versionName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.ApplicationPackage>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ApplicationPackage>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationPackage} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationPackage} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationPackage} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.ApplicationPackageOperations.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified application package.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        accountName: string, applicationName: string, versionName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: applicationName
+          type:
+            - string
+          description: |
+            The name of the application. This must be
+            unique within the account.
+        - id: versionName
+          type:
+            - string
+          description: |
+            The version of the application.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.ApplicationPackage>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.list
+    name: 'list(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the application packages in the specified application.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, accountName: string,
+        applicationName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: applicationName
+          type:
+            - string
+          description: |
+            The name of the application. This must be
+            unique within the account.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ListApplicationPackagesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListApplicationPackagesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListApplicationPackagesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListApplicationPackagesResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.list_2
+    name: >-
+      list(string, string, string, Object,
+      ServiceCallback<ListApplicationPackagesResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the application packages in the specified application.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, accountName: string,
+        applicationName: string, options: Object, callback:
+        ServiceCallback<ListApplicationPackagesResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: applicationName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-batch -
+              v5.0.0.ListApplicationPackagesResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ListApplicationPackagesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListApplicationPackagesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListApplicationPackagesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListApplicationPackagesResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.list_1
+    name: >-
+      list(string, string, string,
+      ServiceCallback<ListApplicationPackagesResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the application packages in the specified application.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, accountName: string,
+        applicationName: string, callback:
+        ServiceCallback<ListApplicationPackagesResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: applicationName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-batch -
+              v5.0.0.ListApplicationPackagesResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ListApplicationPackagesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListApplicationPackagesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListApplicationPackagesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListApplicationPackagesResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.listNext
+    name: 'listNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the application packages in the specified application.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ListApplicationPackagesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListApplicationPackagesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListApplicationPackagesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListApplicationPackagesResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.listNext_2
+    name: 'listNext(string, Object, ServiceCallback<ListApplicationPackagesResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the application packages in the specified application.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<ListApplicationPackagesResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-batch -
+              v5.0.0.ListApplicationPackagesResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ListApplicationPackagesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListApplicationPackagesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListApplicationPackagesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListApplicationPackagesResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations.listNext_1
+    name: 'listNext(string, ServiceCallback<ListApplicationPackagesResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the application packages in the specified application.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<ListApplicationPackagesResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-batch -
+              v5.0.0.ListApplicationPackagesResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ListApplicationPackagesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListApplicationPackagesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListApplicationPackagesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListApplicationPackagesResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.ApplicationPackageOperations.listNextWithHttpOperationResponse
+    name: 'listNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the application packages in the specified application.
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.ListApplicationPackagesResult>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.ApplicationPackageOperations.listWithHttpOperationResponse
+    name: 'listWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the application packages in the specified application.
+    syntax:
+      content: >-
+        function listWithHttpOperationResponse(resourceGroupName: string,
+        accountName: string, applicationName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: applicationName
+          type:
+            - string
+          description: |
+            The name of the application. This must be
+            unique within the account.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.ListApplicationPackagesResult>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+references:
+  - uid: Promise<azure-arm-batch - v5.0.0.ApplicationPackage>
+    name: ApplicationPackage>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ApplicationPackage
+        fullName: ApplicationPackage
+        uid: azure-arm-batch - v5.0.0.ApplicationPackage
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch - v5.0.0.ApplicationPackage>
+    name: ApplicationPackage>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ApplicationPackage
+        fullName: ApplicationPackage
+        uid: azure-arm-batch - v5.0.0.ApplicationPackage
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-batch -
+      v5.0.0.ApplicationPackage>>
+    name: ApplicationPackage>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ApplicationPackage
+        fullName: ApplicationPackage
+        uid: azure-arm-batch - v5.0.0.ApplicationPackage
+      - name: '>>'
+        fullName: '>>'
+  - uid: Promise<azure-arm-batch - v5.0.0.ListApplicationPackagesResult>
+    name: ListApplicationPackagesResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ListApplicationPackagesResult
+        fullName: ListApplicationPackagesResult
+        uid: azure-arm-batch - v5.0.0.ListApplicationPackagesResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch - v5.0.0.ListApplicationPackagesResult>
+    name: ListApplicationPackagesResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ListApplicationPackagesResult
+        fullName: ListApplicationPackagesResult
+        uid: azure-arm-batch - v5.0.0.ListApplicationPackagesResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-batch -
+      v5.0.0.ListApplicationPackagesResult>>
+    name: ListApplicationPackagesResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ListApplicationPackagesResult
+        fullName: ListApplicationPackagesResult
+        uid: azure-arm-batch - v5.0.0.ListApplicationPackagesResult
+      - name: '>>'
+        fullName: '>>'

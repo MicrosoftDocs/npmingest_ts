@@ -1,0 +1,241 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.WebApplicationFirewallPolicy
+    name: WebApplicationFirewallPolicy
+    fullName: WebApplicationFirewallPolicy
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.WebApplicationFirewallPolicy.applicationGateways
+      - azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.customRules
+      - azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.etag
+      - azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.id
+      - azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.location
+      - azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.name
+      - azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.policySettings
+      - >-
+        azure-arm-network -
+        v13.0.0.WebApplicationFirewallPolicy.provisioningState
+      - azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.resourceState
+      - azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.tags
+      - azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.type
+    langs:
+      - typeScript
+    type: interface
+    summary: Defines web application firewall policy.
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.WebApplicationFirewallPolicy.applicationGateways
+    name: applicationGateways
+    fullName: applicationGateways
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A collection of references to application gateways.
+    optional: true
+    syntax:
+      content: 'applicationGateways?: ApplicationGateway[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ApplicationGateway[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.customRules
+    name: customRules
+    fullName: customRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Describes custom rules inside the policy
+    optional: true
+    syntax:
+      content: 'customRules?: WebApplicationFirewallCustomRule[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.WebApplicationFirewallCustomRule[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Gets a unique read-only string that changes whenever the resource is
+      updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.policySettings
+    name: policySettings
+    fullName: policySettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Describes  policySettings for policy
+    optional: true
+    syntax:
+      content: 'policySettings?: PolicySettings'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.PolicySettings
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Provisioning state of the WebApplicationFirewallPolicy.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.resourceState
+    name: resourceState
+    fullName: resourceState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Resource status of the policy. Possible values include: 'Creating',
+      'Enabling',
+
+      'Enabled', 'Disabling', 'Disabled', 'Deleting'
+    optional: true
+    syntax:
+      content: 'resourceState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.WebApplicationFirewallPolicy.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGateway[]'
+    name: 'ApplicationGateway[]'
+    spec.typeScript:
+      - name: ApplicationGateway
+        fullName: ApplicationGateway
+        uid: azure-arm-network - v13.0.0.ApplicationGateway
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.WebApplicationFirewallCustomRule[]'
+    name: 'WebApplicationFirewallCustomRule[]'
+    spec.typeScript:
+      - name: WebApplicationFirewallCustomRule
+        fullName: WebApplicationFirewallCustomRule
+        uid: azure-arm-network - v13.0.0.WebApplicationFirewallCustomRule
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.PolicySettings
+    name: PolicySettings
+    spec.typeScript:
+      - name: PolicySettings
+        fullName: PolicySettings
+        uid: azure-arm-network - v13.0.0.PolicySettings

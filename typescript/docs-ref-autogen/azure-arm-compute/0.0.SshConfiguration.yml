@@ -1,0 +1,37 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.SshConfiguration
+    name: SshConfiguration
+    fullName: SshConfiguration
+    children:
+      - azure-arm-compute - v10.0.0.SshConfiguration.publicKeys
+    langs:
+      - typeScript
+    type: interface
+    summary: SSH configuration for Linux based VMs running on Azure
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.SshConfiguration.publicKeys
+    name: publicKeys
+    fullName: publicKeys
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The list of SSH public keys used to authenticate with linux based VMs.
+    optional: true
+    syntax:
+      content: 'publicKeys?: SshPublicKey[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.SshPublicKey[]'
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: 'azure-arm-compute - v10.0.0.SshPublicKey[]'
+    name: 'SshPublicKey[]'
+    spec.typeScript:
+      - name: SshPublicKey
+        fullName: SshPublicKey
+        uid: azure-arm-compute - v10.0.0.SshPublicKey
+      - name: '[]'
+        fullName: '[]'

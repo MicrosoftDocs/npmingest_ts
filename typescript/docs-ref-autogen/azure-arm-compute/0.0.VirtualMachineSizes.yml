@@ -1,0 +1,234 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineSizes
+    name: VirtualMachineSizes
+    fullName: VirtualMachineSizes
+    children:
+      - azure-arm-compute - v10.0.0.VirtualMachineSizes.list
+      - azure-arm-compute - v10.0.0.VirtualMachineSizes.list_2
+      - azure-arm-compute - v10.0.0.VirtualMachineSizes.list_1
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineSizes.listWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineSizes.list
+    name: 'list(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      This API is deprecated. Use [Resources
+      Skus](https://docs.microsoft.com/en-us/rest/api/compute/resourceskus/list)
+    syntax:
+      content: 'function list(location: string, options?: Object)'
+      parameters:
+        - id: location
+          type:
+            - string
+          description: |
+            The location upon which virtual-machine-sizes is
+            queried.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.VirtualMachineSizeListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineSizeListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineSizeListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineSizeListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineSizes.list_2
+    name: 'list(string, Object, ServiceCallback<VirtualMachineSizeListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      This API is deprecated. Use [Resources
+      Skus](https://docs.microsoft.com/en-us/rest/api/compute/resourceskus/list)
+    syntax:
+      content: >-
+        function list(location: string, options: Object, callback:
+        ServiceCallback<VirtualMachineSizeListResult>)
+      parameters:
+        - id: location
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-compute -
+              v10.0.0.VirtualMachineSizeListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.VirtualMachineSizeListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineSizeListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineSizeListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineSizeListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineSizes.list_1
+    name: 'list(string, ServiceCallback<VirtualMachineSizeListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      This API is deprecated. Use [Resources
+      Skus](https://docs.microsoft.com/en-us/rest/api/compute/resourceskus/list)
+    syntax:
+      content: >-
+        function list(location: string, callback:
+        ServiceCallback<VirtualMachineSizeListResult>)
+      parameters:
+        - id: location
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-compute -
+              v10.0.0.VirtualMachineSizeListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.VirtualMachineSizeListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {VirtualMachineSizeListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {VirtualMachineSizeListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link VirtualMachineSizeListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineSizes.listWithHttpOperationResponse
+    name: 'listWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      This API is deprecated. Use [Resources
+      Skus](https://docs.microsoft.com/en-us/rest/api/compute/resourceskus/list)
+    syntax:
+      content: >-
+        function listWithHttpOperationResponse(location: string, options?:
+        Object)
+      parameters:
+        - id: location
+          type:
+            - string
+          description: |
+            The location upon which virtual-machine-sizes is
+            queried.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute -
+            v10.0.0.VirtualMachineSizeListResult>>
+        description: A promise is returned
+    package: azure-arm-compute - v10
+references:
+  - uid: Promise<azure-arm-compute - v10.0.0.VirtualMachineSizeListResult>
+    name: VirtualMachineSizeListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: VirtualMachineSizeListResult
+        fullName: VirtualMachineSizeListResult
+        uid: azure-arm-compute - v10.0.0.VirtualMachineSizeListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute - v10.0.0.VirtualMachineSizeListResult>
+    name: VirtualMachineSizeListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: VirtualMachineSizeListResult
+        fullName: VirtualMachineSizeListResult
+        uid: azure-arm-compute - v10.0.0.VirtualMachineSizeListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-compute -
+      v10.0.0.VirtualMachineSizeListResult>>
+    name: VirtualMachineSizeListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: VirtualMachineSizeListResult
+        fullName: VirtualMachineSizeListResult
+        uid: azure-arm-compute - v10.0.0.VirtualMachineSizeListResult
+      - name: '>>'
+        fullName: '>>'

@@ -1,0 +1,154 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.AvailabilitySetUpdate
+    name: AvailabilitySetUpdate
+    fullName: AvailabilitySetUpdate
+    children:
+      - >-
+        azure-arm-compute -
+        v10.0.0.AvailabilitySetUpdate.platformFaultDomainCount
+      - >-
+        azure-arm-compute -
+        v10.0.0.AvailabilitySetUpdate.platformUpdateDomainCount
+      - azure-arm-compute - v10.0.0.AvailabilitySetUpdate.sku
+      - azure-arm-compute - v10.0.0.AvailabilitySetUpdate.statuses
+      - azure-arm-compute - v10.0.0.AvailabilitySetUpdate.tags
+      - azure-arm-compute - v10.0.0.AvailabilitySetUpdate.virtualMachines
+    langs:
+      - typeScript
+    type: interface
+    summary: >-
+      Specifies information about the availability set that the virtual machine
+      should be assigned to.
+
+      Only tags may be updated.
+    extends:
+      name: azure-arm-compute - v10.0.0.UpdateResource
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.AvailabilitySetUpdate.platformFaultDomainCount
+    name: platformFaultDomainCount
+    fullName: platformFaultDomainCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Fault Domain count.
+    optional: true
+    syntax:
+      content: 'platformFaultDomainCount?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.AvailabilitySetUpdate.platformUpdateDomainCount
+    name: platformUpdateDomainCount
+    fullName: platformUpdateDomainCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Update Domain count.
+    optional: true
+    syntax:
+      content: 'platformUpdateDomainCount?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.AvailabilitySetUpdate.sku
+    name: sku
+    fullName: sku
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Sku of the availability set
+    optional: true
+    syntax:
+      content: 'sku?: Sku'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.Sku
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.AvailabilitySetUpdate.statuses
+    name: statuses
+    fullName: statuses
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The resource status information.
+    optional: true
+    syntax:
+      content: 'statuses?: InstanceViewStatus[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.InstanceViewStatus[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.AvailabilitySetUpdate.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.AvailabilitySetUpdate.virtualMachines
+    name: virtualMachines
+    fullName: virtualMachines
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A list of references to all virtual machines in the availability set.
+    optional: true
+    syntax:
+      content: 'virtualMachines?: SubResource[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.SubResource[]'
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.UpdateResource
+    name: UpdateResource
+    spec.typeScript:
+      - name: UpdateResource
+        fullName: UpdateResource
+        uid: azure-arm-compute - v10.0.0.UpdateResource
+  - uid: azure-arm-compute - v10.0.0.Sku
+    name: Sku
+    spec.typeScript:
+      - name: Sku
+        fullName: Sku
+        uid: azure-arm-compute - v10.0.0.Sku
+  - uid: 'azure-arm-compute - v10.0.0.InstanceViewStatus[]'
+    name: 'InstanceViewStatus[]'
+    spec.typeScript:
+      - name: InstanceViewStatus
+        fullName: InstanceViewStatus
+        uid: azure-arm-compute - v10.0.0.InstanceViewStatus
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-compute - v10.0.0.SubResource[]'
+    name: 'SubResource[]'
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute - v10.0.0.SubResource
+      - name: '[]'
+        fullName: '[]'

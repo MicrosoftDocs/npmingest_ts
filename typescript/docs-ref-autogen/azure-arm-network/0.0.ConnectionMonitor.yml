@@ -1,0 +1,128 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitor
+    name: ConnectionMonitor
+    fullName: ConnectionMonitor
+    children:
+      - azure-arm-network - v13.0.0.ConnectionMonitor.autoStart
+      - azure-arm-network - v13.0.0.ConnectionMonitor.destination
+      - azure-arm-network - v13.0.0.ConnectionMonitor.location
+      - >-
+        azure-arm-network -
+        v13.0.0.ConnectionMonitor.monitoringIntervalInSeconds
+      - azure-arm-network - v13.0.0.ConnectionMonitor.source
+      - azure-arm-network - v13.0.0.ConnectionMonitor.tags
+    langs:
+      - typeScript
+    type: interface
+    summary: Parameters that define the operation to create a connection monitor.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitor.autoStart
+    name: autoStart
+    fullName: autoStart
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Determines if the connection monitor will start automatically once
+      created.
+    optional: true
+    syntax:
+      content: 'autoStart?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitor.destination
+    name: destination
+    fullName: destination
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Describes the destination of connection monitor.
+    syntax:
+      content: 'destination: ConnectionMonitorDestination'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.ConnectionMonitorDestination
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitor.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Connection monitor location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitor.monitoringIntervalInSeconds
+    name: monitoringIntervalInSeconds
+    fullName: monitoringIntervalInSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Monitoring interval in seconds.
+    optional: true
+    syntax:
+      content: 'monitoringIntervalInSeconds?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitor.source
+    name: source
+    fullName: source
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Describes the source of connection monitor.
+    syntax:
+      content: 'source: ConnectionMonitorSource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.ConnectionMonitorSource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitor.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Connection monitor tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitorDestination
+    name: ConnectionMonitorDestination
+    spec.typeScript:
+      - name: ConnectionMonitorDestination
+        fullName: ConnectionMonitorDestination
+        uid: azure-arm-network - v13.0.0.ConnectionMonitorDestination
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitorSource
+    name: ConnectionMonitorSource
+    spec.typeScript:
+      - name: ConnectionMonitorSource
+        fullName: ConnectionMonitorSource
+        uid: azure-arm-network - v13.0.0.ConnectionMonitorSource

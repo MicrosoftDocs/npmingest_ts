@@ -1,0 +1,618 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient
+    name: BatchManagementClient
+    fullName: BatchManagementClient
+    children:
+      - azure-arm-batch - v5.0.0.BatchManagementClient.acceptLanguage
+      - azure-arm-batch - v5.0.0.BatchManagementClient.addUserAgentInfo
+      - azure-arm-batch - v5.0.0.BatchManagementClient.apiVersion
+      - azure-arm-batch - v5.0.0.BatchManagementClient.applicationOperations
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchManagementClient.applicationPackageOperations
+      - azure-arm-batch - v5.0.0.BatchManagementClient.batchAccountOperations
+      - azure-arm-batch - v5.0.0.BatchManagementClient.constructor
+      - azure-arm-batch - v5.0.0.BatchManagementClient.certificateOperations
+      - azure-arm-batch - v5.0.0.BatchManagementClient.credentials
+      - azure-arm-batch - v5.0.0.BatchManagementClient.generateClientRequestId
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchManagementClient.getLongRunningOperationResult_2
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchManagementClient.getLongRunningOperationResult
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchManagementClient.getLongRunningOperationResult_1
+      - azure-arm-batch - v5.0.0.BatchManagementClient.getPackageJsonInfo
+      - azure-arm-batch - v5.0.0.BatchManagementClient.location
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchManagementClient.longRunningOperationRetryTimeout
+      - azure-arm-batch - v5.0.0.BatchManagementClient.operations
+      - azure-arm-batch - v5.0.0.BatchManagementClient.poolOperations
+      - azure-arm-batch - v5.0.0.BatchManagementClient.sendLongRunningRequest_1
+      - azure-arm-batch - v5.0.0.BatchManagementClient.sendLongRunningRequest
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchManagementClient.sendLongRunningRequestWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.BatchManagementClient.sendRequest_1
+      - azure-arm-batch - v5.0.0.BatchManagementClient.sendRequest
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchManagementClient.sendRequestWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.BatchManagementClient.subscriptionId
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    extends:
+      name: AzureServiceClient
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.acceptLanguage
+    name: acceptLanguage
+    fullName: acceptLanguage
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'acceptLanguage: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.addUserAgentInfo
+    name: addUserAgentInfo(any)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Adds custom information to user agent header
+    syntax:
+      content: 'function addUserAgentInfo(additionalUserAgentInfo: any)'
+      parameters:
+        - id: additionalUserAgentInfo
+          type:
+            - any
+          description: |
+            information to be added to user agent header, as string.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.apiVersion
+    name: apiVersion
+    fullName: apiVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'apiVersion: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.applicationOperations
+    name: applicationOperations
+    fullName: applicationOperations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'applicationOperations: ApplicationOperations'
+      return:
+        type:
+          - azure-arm-batch - v5.0.0.ApplicationOperations
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchManagementClient.applicationPackageOperations
+    name: applicationPackageOperations
+    fullName: applicationPackageOperations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'applicationPackageOperations: ApplicationPackageOperations'
+      return:
+        type:
+          - azure-arm-batch - v5.0.0.ApplicationPackageOperations
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.batchAccountOperations
+    name: batchAccountOperations
+    fullName: batchAccountOperations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'batchAccountOperations: BatchAccountOperations'
+      return:
+        type:
+          - azure-arm-batch - v5.0.0.BatchAccountOperations
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.constructor
+    name: >-
+      BatchManagementClient(ServiceClientCredentials, string, string,
+      AzureServiceClientOptions)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: Initializes a new instance of the BatchManagementClient class.
+    syntax:
+      content: >-
+        new BatchManagementClient(credentials: ServiceClientCredentials,
+        subscriptionId: string, baseUri?: string, options?:
+        AzureServiceClientOptions)
+      parameters:
+        - id: credentials
+          type:
+            - ServiceClientCredentials
+          description: |
+            Credentials needed for the client to connect to Azure.
+        - id: subscriptionId
+          type:
+            - string
+          description: >
+            The Azure subscription ID. This is a GUID-formatted string (e.g.
+            00000000-0000-0000-0000-000000000000)
+        - id: baseUri
+          type:
+            - string
+          description: ''
+          optional: true
+        - id: options
+          type:
+            - AzureServiceClientOptions
+          description: ''
+          optional: true
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.certificateOperations
+    name: certificateOperations
+    fullName: certificateOperations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'certificateOperations: CertificateOperations'
+      return:
+        type:
+          - azure-arm-batch - v5.0.0.CertificateOperations
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.credentials
+    name: credentials
+    fullName: credentials
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'credentials: ServiceClientCredentials'
+      return:
+        type:
+          - ServiceClientCredentials
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.generateClientRequestId
+    name: generateClientRequestId
+    fullName: generateClientRequestId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'generateClientRequestId: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchManagementClient.getLongRunningOperationResult_2
+    name: >-
+      getLongRunningOperationResult(HttpOperationResponse<TResult>,
+      RequestOptions)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function getLongRunningOperationResult<TResult>(resultOfInitialRequest:
+        HttpOperationResponse<TResult>, options?: RequestOptions)
+      parameters:
+        - id: resultOfInitialRequest
+          type:
+            - HttpOperationResponse<TResult>
+          description: ''
+        - id: options
+          type:
+            - RequestOptions
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<TResult>
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchManagementClient.getLongRunningOperationResult
+    name: >-
+      getLongRunningOperationResult(HttpOperationResponse<TResult>,
+      RequestOptions, ServiceCallback<TResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function getLongRunningOperationResult<TResult>(resultOfInitialRequest:
+        HttpOperationResponse<TResult>, options: RequestOptions, callback:
+        ServiceCallback<TResult>)
+      parameters:
+        - id: resultOfInitialRequest
+          type:
+            - HttpOperationResponse<TResult>
+          description: ''
+        - id: options
+          type:
+            - RequestOptions
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<TResult>
+          description: ''
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchManagementClient.getLongRunningOperationResult_1
+    name: >-
+      getLongRunningOperationResult(HttpOperationResponse<TResult>,
+      ServiceCallback<TResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function getLongRunningOperationResult<TResult>(resultOfInitialRequest:
+        HttpOperationResponse<TResult>, callback: ServiceCallback<TResult>)
+      parameters:
+        - id: resultOfInitialRequest
+          type:
+            - HttpOperationResponse<TResult>
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<TResult>
+          description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.getPackageJsonInfo
+    name: getPackageJsonInfo(string)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Attempts to find package.json for the given azure nodejs package.
+
+      If found, returns the name and version of the package by reading the
+      package.json
+
+      If package.json is not found, returns a default value.
+    syntax:
+      content: 'function getPackageJsonInfo(managementClientDir: string)'
+      parameters:
+        - id: managementClientDir
+          type:
+            - string
+          description: pass the directory of the specific azure management client.
+      return:
+        type:
+          - Object
+        description: packageJsonInfo - "name" and "version" of the desired package.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'location: Location'
+      return:
+        type:
+          - azure-arm-batch - v5.0.0.Location
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchManagementClient.longRunningOperationRetryTimeout
+    name: longRunningOperationRetryTimeout
+    fullName: longRunningOperationRetryTimeout
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'longRunningOperationRetryTimeout: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.operations
+    name: operations
+    fullName: operations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'operations: Operations'
+      return:
+        type:
+          - azure-arm-batch - v5.0.0.Operations
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.poolOperations
+    name: poolOperations
+    fullName: poolOperations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'poolOperations: PoolOperations'
+      return:
+        type:
+          - azure-arm-batch - v5.0.0.PoolOperations
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.sendLongRunningRequest_1
+    name: >-
+      sendLongRunningRequest(LongRunningUrlBasedRequestPrepareOptions |
+      LongRunningPathTemplateBasedRequestPrepareOptions)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function sendLongRunningRequest<TResult>(options:
+        LongRunningUrlBasedRequestPrepareOptions |
+        LongRunningPathTemplateBasedRequestPrepareOptions)
+      parameters:
+        - id: options
+          type:
+            - >-
+              LongRunningUrlBasedRequestPrepareOptions |
+              LongRunningPathTemplateBasedRequestPrepareOptions
+          description: ''
+      return:
+        type:
+          - Promise<TResult>
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.sendLongRunningRequest
+    name: >-
+      sendLongRunningRequest(LongRunningUrlBasedRequestPrepareOptions |
+      LongRunningPathTemplateBasedRequestPrepareOptions,
+      ServiceCallback<TResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function sendLongRunningRequest<TResult>(options:
+        LongRunningUrlBasedRequestPrepareOptions |
+        LongRunningPathTemplateBasedRequestPrepareOptions, callback:
+        ServiceCallback<TResult>)
+      parameters:
+        - id: options
+          type:
+            - >-
+              LongRunningUrlBasedRequestPrepareOptions |
+              LongRunningPathTemplateBasedRequestPrepareOptions
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<TResult>
+          description: ''
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchManagementClient.sendLongRunningRequestWithHttpOperationResponse
+    name: >-
+      sendLongRunningRequestWithHttpOperationResponse(LongRunningUrlBasedRequestPrepareOptions
+      | LongRunningPathTemplateBasedRequestPrepareOptions)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function
+        sendLongRunningRequestWithHttpOperationResponse<TResult>(options:
+        LongRunningUrlBasedRequestPrepareOptions |
+        LongRunningPathTemplateBasedRequestPrepareOptions)
+      parameters:
+        - id: options
+          type:
+            - >-
+              LongRunningUrlBasedRequestPrepareOptions |
+              LongRunningPathTemplateBasedRequestPrepareOptions
+          description: ''
+      return:
+        type:
+          - Promise<HttpOperationResponse<TResult>>
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.sendRequest_1
+    name: >-
+      sendRequest(PathTemplateBasedRequestPrepareOptions |
+      UrlBasedRequestPrepareOptions)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function sendRequest<TResult>(options:
+        PathTemplateBasedRequestPrepareOptions | UrlBasedRequestPrepareOptions)
+      parameters:
+        - id: options
+          type:
+            - >-
+              PathTemplateBasedRequestPrepareOptions |
+              UrlBasedRequestPrepareOptions
+          description: ''
+      return:
+        type:
+          - Promise<TResult>
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.sendRequest
+    name: >-
+      sendRequest(PathTemplateBasedRequestPrepareOptions |
+      UrlBasedRequestPrepareOptions, ServiceCallback<TResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function sendRequest<TResult>(options:
+        PathTemplateBasedRequestPrepareOptions | UrlBasedRequestPrepareOptions,
+        callback: ServiceCallback<TResult>)
+      parameters:
+        - id: options
+          type:
+            - >-
+              PathTemplateBasedRequestPrepareOptions |
+              UrlBasedRequestPrepareOptions
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<TResult>
+          description: ''
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchManagementClient.sendRequestWithHttpOperationResponse
+    name: >-
+      sendRequestWithHttpOperationResponse(PathTemplateBasedRequestPrepareOptions
+      | UrlBasedRequestPrepareOptions)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function sendRequestWithHttpOperationResponse<TResult>(options:
+        PathTemplateBasedRequestPrepareOptions | UrlBasedRequestPrepareOptions)
+      parameters:
+        - id: options
+          type:
+            - >-
+              PathTemplateBasedRequestPrepareOptions |
+              UrlBasedRequestPrepareOptions
+          description: ''
+      return:
+        type:
+          - Promise<HttpOperationResponse<TResult>>
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchManagementClient.subscriptionId
+    name: subscriptionId
+    fullName: subscriptionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+references:
+  - uid: azure-arm-batch - v5.0.0.ApplicationOperations
+    name: ApplicationOperations
+    spec.typeScript:
+      - name: ApplicationOperations
+        fullName: ApplicationOperations
+        uid: azure-arm-batch - v5.0.0.ApplicationOperations
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations
+    name: ApplicationPackageOperations
+    spec.typeScript:
+      - name: ApplicationPackageOperations
+        fullName: ApplicationPackageOperations
+        uid: azure-arm-batch - v5.0.0.ApplicationPackageOperations
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations
+    name: BatchAccountOperations
+    spec.typeScript:
+      - name: BatchAccountOperations
+        fullName: BatchAccountOperations
+        uid: azure-arm-batch - v5.0.0.BatchAccountOperations
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations
+    name: CertificateOperations
+    spec.typeScript:
+      - name: CertificateOperations
+        fullName: CertificateOperations
+        uid: azure-arm-batch - v5.0.0.CertificateOperations
+  - uid: azure-arm-batch - v5.0.0.Location
+    name: Location
+    spec.typeScript:
+      - name: Location
+        fullName: Location
+        uid: azure-arm-batch - v5.0.0.Location
+  - uid: azure-arm-batch - v5.0.0.Operations
+    name: Operations
+    spec.typeScript:
+      - name: Operations
+        fullName: Operations
+        uid: azure-arm-batch - v5.0.0.Operations
+  - uid: azure-arm-batch - v5.0.0.PoolOperations
+    name: PoolOperations
+    spec.typeScript:
+      - name: PoolOperations
+        fullName: PoolOperations
+        uid: azure-arm-batch - v5.0.0.PoolOperations

@@ -1,0 +1,81 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.DiskInstanceView
+    name: DiskInstanceView
+    fullName: DiskInstanceView
+    children:
+      - azure-arm-compute - v10.0.0.DiskInstanceView.encryptionSettings
+      - azure-arm-compute - v10.0.0.DiskInstanceView.name
+      - azure-arm-compute - v10.0.0.DiskInstanceView.statuses
+    langs:
+      - typeScript
+    type: interface
+    summary: The instance view of the disk.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.DiskInstanceView.encryptionSettings
+    name: encryptionSettings
+    fullName: encryptionSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the encryption settings for the OS Disk. <br><br> Minimum
+      api-version: 2015-06-15
+    optional: true
+    syntax:
+      content: 'encryptionSettings?: DiskEncryptionSettings[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.DiskEncryptionSettings[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.DiskInstanceView.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The disk name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.DiskInstanceView.statuses
+    name: statuses
+    fullName: statuses
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The resource status information.
+    optional: true
+    syntax:
+      content: 'statuses?: InstanceViewStatus[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.InstanceViewStatus[]'
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: 'azure-arm-compute - v10.0.0.DiskEncryptionSettings[]'
+    name: 'DiskEncryptionSettings[]'
+    spec.typeScript:
+      - name: DiskEncryptionSettings
+        fullName: DiskEncryptionSettings
+        uid: azure-arm-compute - v10.0.0.DiskEncryptionSettings
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-compute - v10.0.0.InstanceViewStatus[]'
+    name: 'InstanceViewStatus[]'
+    spec.typeScript:
+      - name: InstanceViewStatus
+        fullName: InstanceViewStatus
+        uid: azure-arm-compute - v10.0.0.InstanceViewStatus
+      - name: '[]'
+        fullName: '[]'

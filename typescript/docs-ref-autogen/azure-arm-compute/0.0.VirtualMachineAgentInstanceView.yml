@@ -1,0 +1,87 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineAgentInstanceView
+    name: VirtualMachineAgentInstanceView
+    fullName: VirtualMachineAgentInstanceView
+    children:
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineAgentInstanceView.extensionHandlers
+      - azure-arm-compute - v10.0.0.VirtualMachineAgentInstanceView.statuses
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineAgentInstanceView.vmAgentVersion
+    langs:
+      - typeScript
+    type: interface
+    summary: The instance view of the VM Agent running on the virtual machine.
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineAgentInstanceView.extensionHandlers
+    name: extensionHandlers
+    fullName: extensionHandlers
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The virtual machine extension handler instance view.
+    optional: true
+    syntax:
+      content: 'extensionHandlers?: VirtualMachineExtensionHandlerInstanceView[]'
+      return:
+        type:
+          - >-
+            azure-arm-compute -
+            v10.0.0.VirtualMachineExtensionHandlerInstanceView[]
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineAgentInstanceView.statuses
+    name: statuses
+    fullName: statuses
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The resource status information.
+    optional: true
+    syntax:
+      content: 'statuses?: InstanceViewStatus[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.InstanceViewStatus[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineAgentInstanceView.vmAgentVersion
+    name: vmAgentVersion
+    fullName: vmAgentVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The VM Agent full version.
+    optional: true
+    syntax:
+      content: 'vmAgentVersion?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: 'azure-arm-compute - v10.0.0.VirtualMachineExtensionHandlerInstanceView[]'
+    name: 'VirtualMachineExtensionHandlerInstanceView[]'
+    spec.typeScript:
+      - name: VirtualMachineExtensionHandlerInstanceView
+        fullName: VirtualMachineExtensionHandlerInstanceView
+        uid: azure-arm-compute - v10.0.0.VirtualMachineExtensionHandlerInstanceView
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-compute - v10.0.0.InstanceViewStatus[]'
+    name: 'InstanceViewStatus[]'
+    spec.typeScript:
+      - name: InstanceViewStatus
+        fullName: InstanceViewStatus
+        uid: azure-arm-compute - v10.0.0.InstanceViewStatus
+      - name: '[]'
+        fullName: '[]'

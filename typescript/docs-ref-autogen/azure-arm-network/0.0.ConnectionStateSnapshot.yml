@@ -1,0 +1,196 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ConnectionStateSnapshot
+    name: ConnectionStateSnapshot
+    fullName: ConnectionStateSnapshot
+    children:
+      - azure-arm-network - v13.0.0.ConnectionStateSnapshot.avgLatencyInMs
+      - azure-arm-network - v13.0.0.ConnectionStateSnapshot.connectionState
+      - azure-arm-network - v13.0.0.ConnectionStateSnapshot.endTime
+      - azure-arm-network - v13.0.0.ConnectionStateSnapshot.evaluationState
+      - azure-arm-network - v13.0.0.ConnectionStateSnapshot.hops
+      - azure-arm-network - v13.0.0.ConnectionStateSnapshot.maxLatencyInMs
+      - azure-arm-network - v13.0.0.ConnectionStateSnapshot.minLatencyInMs
+      - azure-arm-network - v13.0.0.ConnectionStateSnapshot.probesFailed
+      - azure-arm-network - v13.0.0.ConnectionStateSnapshot.probesSent
+      - azure-arm-network - v13.0.0.ConnectionStateSnapshot.startTime
+    langs:
+      - typeScript
+    type: interface
+    summary: Connection state snapshot.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionStateSnapshot.avgLatencyInMs
+    name: avgLatencyInMs
+    fullName: avgLatencyInMs
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Average latency in ms.
+    optional: true
+    syntax:
+      content: 'avgLatencyInMs?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionStateSnapshot.connectionState
+    name: connectionState
+    fullName: connectionState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The connection state. Possible values include: 'Reachable', 'Unreachable',
+      'Unknown'
+    optional: true
+    syntax:
+      content: 'connectionState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionStateSnapshot.endTime
+    name: endTime
+    fullName: endTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The end time of the connection snapshot.
+    optional: true
+    syntax:
+      content: 'endTime?: Date'
+      return:
+        type:
+          - Date
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionStateSnapshot.evaluationState
+    name: evaluationState
+    fullName: evaluationState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Connectivity analysis evaluation state. Possible values include:
+      'NotStarted', 'InProgress',
+
+      'Completed'
+    optional: true
+    syntax:
+      content: 'evaluationState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionStateSnapshot.hops
+    name: hops
+    fullName: hops
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: List of hops between the source and the destination.
+    optional: true
+    syntax:
+      content: 'hops?: ConnectivityHop[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ConnectivityHop[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionStateSnapshot.maxLatencyInMs
+    name: maxLatencyInMs
+    fullName: maxLatencyInMs
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Maximum latency in ms.
+    optional: true
+    syntax:
+      content: 'maxLatencyInMs?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionStateSnapshot.minLatencyInMs
+    name: minLatencyInMs
+    fullName: minLatencyInMs
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Minimum latency in ms.
+    optional: true
+    syntax:
+      content: 'minLatencyInMs?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionStateSnapshot.probesFailed
+    name: probesFailed
+    fullName: probesFailed
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The number of failed probes.
+    optional: true
+    syntax:
+      content: 'probesFailed?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionStateSnapshot.probesSent
+    name: probesSent
+    fullName: probesSent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The number of sent probes.
+    optional: true
+    syntax:
+      content: 'probesSent?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionStateSnapshot.startTime
+    name: startTime
+    fullName: startTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The start time of the connection snapshot.
+    optional: true
+    syntax:
+      content: 'startTime?: Date'
+      return:
+        type:
+          - Date
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: 'azure-arm-network - v13.0.0.ConnectivityHop[]'
+    name: 'ConnectivityHop[]'
+    spec.typeScript:
+      - name: ConnectivityHop
+        fullName: ConnectivityHop
+        uid: azure-arm-network - v13.0.0.ConnectivityHop
+      - name: '[]'
+        fullName: '[]'

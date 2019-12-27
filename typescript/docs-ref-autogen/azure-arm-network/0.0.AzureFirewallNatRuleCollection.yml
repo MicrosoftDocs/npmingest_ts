@@ -1,0 +1,167 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.AzureFirewallNatRuleCollection
+    name: AzureFirewallNatRuleCollection
+    fullName: AzureFirewallNatRuleCollection
+    children:
+      - azure-arm-network - v13.0.0.AzureFirewallNatRuleCollection.action
+      - azure-arm-network - v13.0.0.AzureFirewallNatRuleCollection.etag
+      - azure-arm-network - v13.0.0.AzureFirewallNatRuleCollection.id
+      - azure-arm-network - v13.0.0.AzureFirewallNatRuleCollection.name
+      - azure-arm-network - v13.0.0.AzureFirewallNatRuleCollection.priority
+      - >-
+        azure-arm-network -
+        v13.0.0.AzureFirewallNatRuleCollection.provisioningState
+      - azure-arm-network - v13.0.0.AzureFirewallNatRuleCollection.rules
+    langs:
+      - typeScript
+    type: interface
+    summary: NAT rule collection resource
+    extends:
+      name: azure-arm-network - v13.0.0.SubResource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallNatRuleCollection.action
+    name: action
+    fullName: action
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The action type of a NAT rule collection
+    optional: true
+    syntax:
+      content: 'action?: AzureFirewallNatRCAction'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.AzureFirewallNatRCAction
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallNatRuleCollection.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Gets a unique read-only string that changes whenever the resource is
+      updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallNatRuleCollection.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallNatRuleCollection.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Gets name of the resource that is unique within a resource group. This
+      name can be used to
+
+      access the resource.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallNatRuleCollection.priority
+    name: priority
+    fullName: priority
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Priority of the NAT rule collection resource.
+    optional: true
+    syntax:
+      content: 'priority?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.AzureFirewallNatRuleCollection.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the resource. Possible values include:
+      'Succeeded', 'Updating',
+
+      'Deleting', 'Failed'
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallNatRuleCollection.rules
+    name: rules
+    fullName: rules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Collection of rules used by a NAT rule collection.
+    optional: true
+    syntax:
+      content: 'rules?: AzureFirewallNatRule[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.AzureFirewallNatRule[]'
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource
+  - uid: azure-arm-network - v13.0.0.AzureFirewallNatRCAction
+    name: AzureFirewallNatRCAction
+    spec.typeScript:
+      - name: AzureFirewallNatRCAction
+        fullName: AzureFirewallNatRCAction
+        uid: azure-arm-network - v13.0.0.AzureFirewallNatRCAction
+  - uid: 'azure-arm-network - v13.0.0.AzureFirewallNatRule[]'
+    name: 'AzureFirewallNatRule[]'
+    spec.typeScript:
+      - name: AzureFirewallNatRule
+        fullName: AzureFirewallNatRule
+        uid: azure-arm-network - v13.0.0.AzureFirewallNatRule
+      - name: '[]'
+        fullName: '[]'

@@ -1,0 +1,71 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-cdn - v4.2.0.IpAddressGroup
+    name: IpAddressGroup
+    fullName: IpAddressGroup
+    children:
+      - azure-arm-cdn - v4.2.0.IpAddressGroup.deliveryRegion
+      - azure-arm-cdn - v4.2.0.IpAddressGroup.ipv4Addresses
+      - azure-arm-cdn - v4.2.0.IpAddressGroup.ipv6Addresses
+    langs:
+      - typeScript
+    type: interface
+    summary: CDN Ip address group
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.IpAddressGroup.deliveryRegion
+    name: deliveryRegion
+    fullName: deliveryRegion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The delivery region of the ip address group
+    optional: true
+    syntax:
+      content: 'deliveryRegion?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.IpAddressGroup.ipv4Addresses
+    name: ipv4Addresses
+    fullName: ipv4Addresses
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The list of ip v4 addresses.
+    optional: true
+    syntax:
+      content: 'ipv4Addresses?: CidrIpAddress[]'
+      return:
+        type:
+          - 'azure-arm-cdn - v4.2.0.CidrIpAddress[]'
+        description: ''
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.IpAddressGroup.ipv6Addresses
+    name: ipv6Addresses
+    fullName: ipv6Addresses
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The list of ip v6 addresses.
+    optional: true
+    syntax:
+      content: 'ipv6Addresses?: CidrIpAddress[]'
+      return:
+        type:
+          - 'azure-arm-cdn - v4.2.0.CidrIpAddress[]'
+        description: ''
+    package: azure-arm-cdn - v4
+references:
+  - uid: 'azure-arm-cdn - v4.2.0.CidrIpAddress[]'
+    name: 'CidrIpAddress[]'
+    spec.typeScript:
+      - name: CidrIpAddress
+        fullName: CidrIpAddress
+        uid: azure-arm-cdn - v4.2.0.CidrIpAddress
+      - name: '[]'
+        fullName: '[]'

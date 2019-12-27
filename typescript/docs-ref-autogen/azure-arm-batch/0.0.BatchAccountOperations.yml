@@ -1,0 +1,2811 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations
+    name: BatchAccountOperations
+    fullName: BatchAccountOperations
+    children:
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.beginCreate
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.beginCreate_2
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.beginCreate_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.beginCreateWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.beginDeleteMethod
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.beginDeleteMethod_2
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.beginDeleteMethod_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.create
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.create_2
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.create_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.createWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.deleteMethod
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.deleteMethod_2
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.deleteMethod_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.deleteMethodWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.get
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.get_2
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.get_1
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.getKeys
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.getKeys_2
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.getKeys_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.getKeysWithHttpOperationResponse
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.getWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.list
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.list_2
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.list_1
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.listByResourceGroup
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.listByResourceGroup_2
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.listByResourceGroup_1
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.listByResourceGroupNext
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.listByResourceGroupNext_2
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.listByResourceGroupNext_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.listByResourceGroupNextWithHttpOperationResponse
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.listByResourceGroupWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.listNext
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.listNext_2
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.listNext_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.listNextWithHttpOperationResponse
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.listWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.regenerateKey
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.regenerateKey_2
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.regenerateKey_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.regenerateKeyWithHttpOperationResponse
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.synchronizeAutoStorageKeys
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.synchronizeAutoStorageKeys_2
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.synchronizeAutoStorageKeys_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.synchronizeAutoStorageKeysWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.update
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.update_2
+      - azure-arm-batch - v5.0.0.BatchAccountOperations.update_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.BatchAccountOperations.updateWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.beginCreate
+    name: 'beginCreate(string, string, BatchAccountCreateParameters, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a new Batch account with the specified parameters. Existing
+      accounts
+
+      cannot be updated with this API and should instead be updated with the
+
+      Update Batch Account API.
+    syntax:
+      content: >-
+        function beginCreate(resourceGroupName: string, accountName: string,
+        parameters: BatchAccountCreateParameters, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: >
+            A name for the Batch account which must be
+
+            unique within the region. Batch account names must be between 3 and
+            24
+
+            characters in length and must use only numbers and lowercase
+            letters. This
+
+            name is used as part of the DNS name that is used to access the
+            Batch
+
+            service in the region in which the account is created. For example:
+
+            http://accountname.region.batch.azure.com/.
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.BatchAccountCreateParameters
+          description: |
+            Additional parameters for account creation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccount>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccount} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccount} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccount} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.beginCreate_2
+    name: >-
+      beginCreate(string, string, BatchAccountCreateParameters, Object,
+      ServiceCallback<BatchAccount>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a new Batch account with the specified parameters. Existing
+      accounts
+
+      cannot be updated with this API and should instead be updated with the
+
+      Update Batch Account API.
+    syntax:
+      content: >-
+        function beginCreate(resourceGroupName: string, accountName: string,
+        parameters: BatchAccountCreateParameters, options: Object, callback:
+        ServiceCallback<BatchAccount>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.BatchAccountCreateParameters
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccount>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccount>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccount} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccount} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccount} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.beginCreate_1
+    name: >-
+      beginCreate(string, string, BatchAccountCreateParameters,
+      ServiceCallback<BatchAccount>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a new Batch account with the specified parameters. Existing
+      accounts
+
+      cannot be updated with this API and should instead be updated with the
+
+      Update Batch Account API.
+    syntax:
+      content: >-
+        function beginCreate(resourceGroupName: string, accountName: string,
+        parameters: BatchAccountCreateParameters, callback:
+        ServiceCallback<BatchAccount>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.BatchAccountCreateParameters
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccount>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccount>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccount} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccount} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccount} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchAccountOperations.beginCreateWithHttpOperationResponse
+    name: >-
+      beginCreateWithHttpOperationResponse(string, string,
+      BatchAccountCreateParameters, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a new Batch account with the specified parameters. Existing
+      accounts
+
+      cannot be updated with this API and should instead be updated with the
+
+      Update Batch Account API.
+    syntax:
+      content: >-
+        function beginCreateWithHttpOperationResponse(resourceGroupName: string,
+        accountName: string, parameters: BatchAccountCreateParameters, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: >
+            A name for the Batch account which must be
+
+            unique within the region. Batch account names must be between 3 and
+            24
+
+            characters in length and must use only numbers and lowercase
+            letters. This
+
+            name is used as part of the DNS name that is used to access the
+            Batch
+
+            service in the region in which the account is created. For example:
+
+            http://accountname.region.batch.azure.com/.
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.BatchAccountCreateParameters
+          description: |
+            Additional parameters for account creation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.BatchAccount>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.beginDeleteMethod
+    name: 'beginDeleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified Batch account.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, accountName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.beginDeleteMethod_2
+    name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified Batch account.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, accountName:
+        string, options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.beginDeleteMethod_1
+    name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified Batch account.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, accountName:
+        string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchAccountOperations.beginDeleteMethodWithHttpOperationResponse
+    name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified Batch account.
+    syntax:
+      content: >-
+        function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, accountName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.create
+    name: 'create(string, string, BatchAccountCreateParameters, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a new Batch account with the specified parameters. Existing
+      accounts
+
+      cannot be updated with this API and should instead be updated with the
+
+      Update Batch Account API.
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, accountName: string,
+        parameters: BatchAccountCreateParameters, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: >
+            A name for the Batch account which must be
+
+            unique within the region. Batch account names must be between 3 and
+            24
+
+            characters in length and must use only numbers and lowercase
+            letters. This
+
+            name is used as part of the DNS name that is used to access the
+            Batch
+
+            service in the region in which the account is created. For example:
+
+            http://accountname.region.batch.azure.com/.
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.BatchAccountCreateParameters
+          description: |
+            Additional parameters for account creation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccount>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccount} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccount} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccount} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.create_2
+    name: >-
+      create(string, string, BatchAccountCreateParameters, Object,
+      ServiceCallback<BatchAccount>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a new Batch account with the specified parameters. Existing
+      accounts
+
+      cannot be updated with this API and should instead be updated with the
+
+      Update Batch Account API.
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, accountName: string,
+        parameters: BatchAccountCreateParameters, options: Object, callback:
+        ServiceCallback<BatchAccount>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.BatchAccountCreateParameters
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccount>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccount>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccount} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccount} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccount} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.create_1
+    name: >-
+      create(string, string, BatchAccountCreateParameters,
+      ServiceCallback<BatchAccount>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a new Batch account with the specified parameters. Existing
+      accounts
+
+      cannot be updated with this API and should instead be updated with the
+
+      Update Batch Account API.
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, accountName: string,
+        parameters: BatchAccountCreateParameters, callback:
+        ServiceCallback<BatchAccount>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.BatchAccountCreateParameters
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccount>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccount>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccount} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccount} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccount} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchAccountOperations.createWithHttpOperationResponse
+    name: >-
+      createWithHttpOperationResponse(string, string,
+      BatchAccountCreateParameters, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Creates a new Batch account with the specified parameters. Existing
+      accounts
+
+      cannot be updated with this API and should instead be updated with the
+
+      Update Batch Account API.
+    syntax:
+      content: >-
+        function createWithHttpOperationResponse(resourceGroupName: string,
+        accountName: string, parameters: BatchAccountCreateParameters, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: >
+            A name for the Batch account which must be
+
+            unique within the region. Batch account names must be between 3 and
+            24
+
+            characters in length and must use only numbers and lowercase
+            letters. This
+
+            name is used as part of the DNS name that is used to access the
+            Batch
+
+            service in the region in which the account is created. For example:
+
+            http://accountname.region.batch.azure.com/.
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.BatchAccountCreateParameters
+          description: |
+            Additional parameters for account creation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.BatchAccount>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.deleteMethod
+    name: 'deleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified Batch account.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, accountName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.deleteMethod_2
+    name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified Batch account.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, accountName: string,
+        options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.deleteMethod_1
+    name: 'deleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified Batch account.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, accountName: string,
+        callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchAccountOperations.deleteMethodWithHttpOperationResponse
+    name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified Batch account.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, accountName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.get
+    name: 'get(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified Batch account.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccount>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccount} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccount} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccount} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.get_2
+    name: 'get(string, string, Object, ServiceCallback<BatchAccount>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified Batch account.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string, options:
+        Object, callback: ServiceCallback<BatchAccount>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccount>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccount>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccount} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccount} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccount} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.get_1
+    name: 'get(string, string, ServiceCallback<BatchAccount>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified Batch account.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string, callback:
+        ServiceCallback<BatchAccount>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccount>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccount>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccount} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccount} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccount} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.getKeys
+    name: 'getKeys(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function getKeys(resourceGroupName: string, accountName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountKeys>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountKeys} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountKeys} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountKeys} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.getKeys_2
+    name: 'getKeys(string, string, Object, ServiceCallback<BatchAccountKeys>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function getKeys(resourceGroupName: string, accountName: string,
+        options: Object, callback: ServiceCallback<BatchAccountKeys>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccountKeys>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountKeys>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountKeys} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountKeys} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountKeys} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.getKeys_1
+    name: 'getKeys(string, string, ServiceCallback<BatchAccountKeys>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function getKeys(resourceGroupName: string, accountName: string,
+        callback: ServiceCallback<BatchAccountKeys>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccountKeys>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountKeys>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountKeys} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountKeys} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountKeys} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchAccountOperations.getKeysWithHttpOperationResponse
+    name: 'getKeysWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function getKeysWithHttpOperationResponse(resourceGroupName: string,
+        accountName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.BatchAccountKeys>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchAccountOperations.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified Batch account.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        accountName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.BatchAccount>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.list
+    name: list(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets information about the Batch accounts associated with the
+      subscription.
+    syntax:
+      content: 'function list(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.list_2
+    name: 'list(Object, ServiceCallback<BatchAccountListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets information about the Batch accounts associated with the
+      subscription.
+    syntax:
+      content: >-
+        function list(options: Object, callback:
+        ServiceCallback<BatchAccountListResult>)
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccountListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.list_1
+    name: list(ServiceCallback<BatchAccountListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets information about the Batch accounts associated with the
+      subscription.
+    syntax:
+      content: 'function list(callback: ServiceCallback<BatchAccountListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccountListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.listByResourceGroup
+    name: 'listByResourceGroup(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets information about the Batch accounts associated with the specified
+      resource group.
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.listByResourceGroup_2
+    name: >-
+      listByResourceGroup(string, Object,
+      ServiceCallback<BatchAccountListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets information about the Batch accounts associated with the specified
+      resource group.
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options: Object,
+        callback: ServiceCallback<BatchAccountListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccountListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.listByResourceGroup_1
+    name: 'listByResourceGroup(string, ServiceCallback<BatchAccountListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets information about the Batch accounts associated with the specified
+      resource group.
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, callback:
+        ServiceCallback<BatchAccountListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccountListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.listByResourceGroupNext
+    name: 'listByResourceGroupNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets information about the Batch accounts associated with the specified
+      resource group.
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.listByResourceGroupNext_2
+    name: >-
+      listByResourceGroupNext(string, Object,
+      ServiceCallback<BatchAccountListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets information about the Batch accounts associated with the specified
+      resource group.
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, options: Object,
+        callback: ServiceCallback<BatchAccountListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccountListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.listByResourceGroupNext_1
+    name: 'listByResourceGroupNext(string, ServiceCallback<BatchAccountListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets information about the Batch accounts associated with the specified
+      resource group.
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, callback:
+        ServiceCallback<BatchAccountListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccountListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchAccountOperations.listByResourceGroupNextWithHttpOperationResponse
+    name: 'listByResourceGroupNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets information about the Batch accounts associated with the specified
+      resource group.
+    syntax:
+      content: >-
+        function listByResourceGroupNextWithHttpOperationResponse(nextPageLink:
+        string, options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.BatchAccountListResult>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchAccountOperations.listByResourceGroupWithHttpOperationResponse
+    name: 'listByResourceGroupWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets information about the Batch accounts associated with the specified
+      resource group.
+    syntax:
+      content: >-
+        function listByResourceGroupWithHttpOperationResponse(resourceGroupName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.BatchAccountListResult>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.listNext
+    name: 'listNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets information about the Batch accounts associated with the
+      subscription.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.listNext_2
+    name: 'listNext(string, Object, ServiceCallback<BatchAccountListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets information about the Batch accounts associated with the
+      subscription.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<BatchAccountListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccountListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.listNext_1
+    name: 'listNext(string, ServiceCallback<BatchAccountListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets information about the Batch accounts associated with the
+      subscription.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<BatchAccountListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccountListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchAccountOperations.listNextWithHttpOperationResponse
+    name: 'listNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets information about the Batch accounts associated with the
+      subscription.
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.BatchAccountListResult>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchAccountOperations.listWithHttpOperationResponse
+    name: listWithHttpOperationResponse(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets information about the Batch accounts associated with the
+      subscription.
+    syntax:
+      content: 'function listWithHttpOperationResponse(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.BatchAccountListResult>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.regenerateKey
+    name: 'regenerateKey(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Regenerates the specified account key for the Batch account.
+    syntax:
+      content: >-
+        function regenerateKey(resourceGroupName: string, accountName: string,
+        keyName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: keyName
+          type:
+            - string
+          description: |
+            The type of account key to regenerate. Possible
+            values include: 'Primary', 'Secondary'
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountKeys>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountKeys} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountKeys} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountKeys} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.regenerateKey_2
+    name: >-
+      regenerateKey(string, string, string, Object,
+      ServiceCallback<BatchAccountKeys>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Regenerates the specified account key for the Batch account.
+    syntax:
+      content: >-
+        function regenerateKey(resourceGroupName: string, accountName: string,
+        keyName: string, options: Object, callback:
+        ServiceCallback<BatchAccountKeys>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: keyName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccountKeys>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountKeys>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountKeys} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountKeys} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountKeys} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.regenerateKey_1
+    name: 'regenerateKey(string, string, string, ServiceCallback<BatchAccountKeys>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Regenerates the specified account key for the Batch account.
+    syntax:
+      content: >-
+        function regenerateKey(resourceGroupName: string, accountName: string,
+        keyName: string, callback: ServiceCallback<BatchAccountKeys>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: keyName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccountKeys>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccountKeys>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccountKeys} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccountKeys} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccountKeys} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchAccountOperations.regenerateKeyWithHttpOperationResponse
+    name: 'regenerateKeyWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Regenerates the specified account key for the Batch account.
+    syntax:
+      content: >-
+        function regenerateKeyWithHttpOperationResponse(resourceGroupName:
+        string, accountName: string, keyName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: keyName
+          type:
+            - string
+          description: |
+            The type of account key to regenerate. Possible
+            values include: 'Primary', 'Secondary'
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.BatchAccountKeys>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.synchronizeAutoStorageKeys
+    name: 'synchronizeAutoStorageKeys(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Synchronizes access keys for the auto-storage account configured for the
+      specified Batch account.
+    syntax:
+      content: >-
+        function synchronizeAutoStorageKeys(resourceGroupName: string,
+        accountName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchAccountOperations.synchronizeAutoStorageKeys_2
+    name: 'synchronizeAutoStorageKeys(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Synchronizes access keys for the auto-storage account configured for the
+      specified Batch account.
+    syntax:
+      content: >-
+        function synchronizeAutoStorageKeys(resourceGroupName: string,
+        accountName: string, options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchAccountOperations.synchronizeAutoStorageKeys_1
+    name: 'synchronizeAutoStorageKeys(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Synchronizes access keys for the auto-storage account configured for the
+      specified Batch account.
+    syntax:
+      content: >-
+        function synchronizeAutoStorageKeys(resourceGroupName: string,
+        accountName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchAccountOperations.synchronizeAutoStorageKeysWithHttpOperationResponse
+    name: >-
+      synchronizeAutoStorageKeysWithHttpOperationResponse(string, string,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Synchronizes access keys for the auto-storage account configured for the
+      specified Batch account.
+    syntax:
+      content: >-
+        function
+        synchronizeAutoStorageKeysWithHttpOperationResponse(resourceGroupName:
+        string, accountName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.update
+    name: 'update(string, string, BatchAccountUpdateParameters, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates the properties of an existing Batch account.
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, accountName: string,
+        parameters: BatchAccountUpdateParameters, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.BatchAccountUpdateParameters
+          description: |
+            Additional parameters for account update.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccount>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccount} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccount} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccount} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.update_2
+    name: >-
+      update(string, string, BatchAccountUpdateParameters, Object,
+      ServiceCallback<BatchAccount>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates the properties of an existing Batch account.
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, accountName: string,
+        parameters: BatchAccountUpdateParameters, options: Object, callback:
+        ServiceCallback<BatchAccount>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.BatchAccountUpdateParameters
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccount>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccount>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccount} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccount} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccount} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountOperations.update_1
+    name: >-
+      update(string, string, BatchAccountUpdateParameters,
+      ServiceCallback<BatchAccount>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates the properties of an existing Batch account.
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, accountName: string,
+        parameters: BatchAccountUpdateParameters, callback:
+        ServiceCallback<BatchAccount>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.BatchAccountUpdateParameters
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchAccount>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchAccount>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchAccount} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchAccount} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchAccount} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.BatchAccountOperations.updateWithHttpOperationResponse
+    name: >-
+      updateWithHttpOperationResponse(string, string,
+      BatchAccountUpdateParameters, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates the properties of an existing Batch account.
+    syntax:
+      content: >-
+        function updateWithHttpOperationResponse(resourceGroupName: string,
+        accountName: string, parameters: BatchAccountUpdateParameters, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.BatchAccountUpdateParameters
+          description: |
+            Additional parameters for account update.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.BatchAccount>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+references:
+  - uid: azure-arm-batch - v5.0.0.BatchAccountCreateParameters
+    name: BatchAccountCreateParameters
+    spec.typeScript:
+      - name: BatchAccountCreateParameters
+        fullName: BatchAccountCreateParameters
+        uid: azure-arm-batch - v5.0.0.BatchAccountCreateParameters
+  - uid: Promise<azure-arm-batch - v5.0.0.BatchAccount>
+    name: BatchAccount>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: BatchAccount
+        fullName: BatchAccount
+        uid: azure-arm-batch - v5.0.0.BatchAccount
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch - v5.0.0.BatchAccount>
+    name: BatchAccount>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: BatchAccount
+        fullName: BatchAccount
+        uid: azure-arm-batch - v5.0.0.BatchAccount
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-batch - v5.0.0.BatchAccount>>
+    name: BatchAccount>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: BatchAccount
+        fullName: BatchAccount
+        uid: azure-arm-batch - v5.0.0.BatchAccount
+      - name: '>>'
+        fullName: '>>'
+  - uid: Promise<azure-arm-batch - v5.0.0.BatchAccountKeys>
+    name: BatchAccountKeys>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: BatchAccountKeys
+        fullName: BatchAccountKeys
+        uid: azure-arm-batch - v5.0.0.BatchAccountKeys
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch - v5.0.0.BatchAccountKeys>
+    name: BatchAccountKeys>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: BatchAccountKeys
+        fullName: BatchAccountKeys
+        uid: azure-arm-batch - v5.0.0.BatchAccountKeys
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-batch - v5.0.0.BatchAccountKeys>>
+    name: BatchAccountKeys>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: BatchAccountKeys
+        fullName: BatchAccountKeys
+        uid: azure-arm-batch - v5.0.0.BatchAccountKeys
+      - name: '>>'
+        fullName: '>>'
+  - uid: Promise<azure-arm-batch - v5.0.0.BatchAccountListResult>
+    name: BatchAccountListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: BatchAccountListResult
+        fullName: BatchAccountListResult
+        uid: azure-arm-batch - v5.0.0.BatchAccountListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch - v5.0.0.BatchAccountListResult>
+    name: BatchAccountListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: BatchAccountListResult
+        fullName: BatchAccountListResult
+        uid: azure-arm-batch - v5.0.0.BatchAccountListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-batch -
+      v5.0.0.BatchAccountListResult>>
+    name: BatchAccountListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: BatchAccountListResult
+        fullName: BatchAccountListResult
+        uid: azure-arm-batch - v5.0.0.BatchAccountListResult
+      - name: '>>'
+        fullName: '>>'
+  - uid: azure-arm-batch - v5.0.0.BatchAccountUpdateParameters
+    name: BatchAccountUpdateParameters
+    spec.typeScript:
+      - name: BatchAccountUpdateParameters
+        fullName: BatchAccountUpdateParameters
+        uid: azure-arm-batch - v5.0.0.BatchAccountUpdateParameters

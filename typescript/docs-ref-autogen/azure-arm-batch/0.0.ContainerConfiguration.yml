@@ -1,0 +1,63 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch - v5.0.0.ContainerConfiguration
+    name: ContainerConfiguration
+    fullName: ContainerConfiguration
+    children:
+      - azure-arm-batch - v5.0.0.ContainerConfiguration.containerImageNames
+      - azure-arm-batch - v5.0.0.ContainerConfiguration.containerRegistries
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ContainerConfiguration.containerImageNames
+    name: containerImageNames
+    fullName: containerImageNames
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      This is the full image reference, as would be specified to "docker pull".
+      An
+
+      image will be sourced from the default Docker registry unless the image is
+      fully qualified
+
+      with an alternative registry.
+    optional: true
+    syntax:
+      content: 'containerImageNames?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ContainerConfiguration.containerRegistries
+    name: containerRegistries
+    fullName: containerRegistries
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      If any images must be downloaded from a private registry which requires
+      credentials, then those credentials must be provided here.
+    optional: true
+    syntax:
+      content: 'containerRegistries?: ContainerRegistry[]'
+      return:
+        type:
+          - 'azure-arm-batch - v5.0.0.ContainerRegistry[]'
+        description: ''
+    package: azure-arm-batch - v5
+references:
+  - uid: 'azure-arm-batch - v5.0.0.ContainerRegistry[]'
+    name: 'ContainerRegistry[]'
+    spec.typeScript:
+      - name: ContainerRegistry
+        fullName: ContainerRegistry
+        uid: azure-arm-batch - v5.0.0.ContainerRegistry
+      - name: '[]'
+        fullName: '[]'

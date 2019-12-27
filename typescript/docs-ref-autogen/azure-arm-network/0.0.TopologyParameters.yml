@@ -1,0 +1,69 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.TopologyParameters
+    name: TopologyParameters
+    fullName: TopologyParameters
+    children:
+      - azure-arm-network - v13.0.0.TopologyParameters.targetResourceGroupName
+      - azure-arm-network - v13.0.0.TopologyParameters.targetSubnet
+      - azure-arm-network - v13.0.0.TopologyParameters.targetVirtualNetwork
+    langs:
+      - typeScript
+    type: interface
+    summary: Parameters that define the representation of topology.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.TopologyParameters.targetResourceGroupName
+    name: targetResourceGroupName
+    fullName: targetResourceGroupName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The name of the target resource group to perform topology on.
+    optional: true
+    syntax:
+      content: 'targetResourceGroupName?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.TopologyParameters.targetSubnet
+    name: targetSubnet
+    fullName: targetSubnet
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The reference of the Subnet resource.
+    optional: true
+    syntax:
+      content: 'targetSubnet?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.TopologyParameters.targetVirtualNetwork
+    name: targetVirtualNetwork
+    fullName: targetVirtualNetwork
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The reference of the Virtual Network resource.
+    optional: true
+    syntax:
+      content: 'targetVirtualNetwork?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource

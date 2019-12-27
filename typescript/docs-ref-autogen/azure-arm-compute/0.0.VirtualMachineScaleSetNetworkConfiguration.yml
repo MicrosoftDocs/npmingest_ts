@@ -1,0 +1,210 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetNetworkConfiguration
+    name: VirtualMachineScaleSetNetworkConfiguration
+    fullName: VirtualMachineScaleSetNetworkConfiguration
+    children:
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetNetworkConfiguration.dnsSettings
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetNetworkConfiguration.enableAcceleratedNetworking
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetNetworkConfiguration.enableIPForwarding
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetNetworkConfiguration.id
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetNetworkConfiguration.ipConfigurations
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetNetworkConfiguration.name
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetNetworkConfiguration.networkSecurityGroup
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetNetworkConfiguration.primary
+    langs:
+      - typeScript
+    type: interface
+    summary: >-
+      Describes a virtual machine scale set network profile's network
+      configurations.
+    extends:
+      name: azure-arm-compute - v10.0.0.SubResource
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetNetworkConfiguration.dnsSettings
+    name: dnsSettings
+    fullName: dnsSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The dns settings to be applied on the network interfaces.
+    optional: true
+    syntax:
+      content: 'dnsSettings?: VirtualMachineScaleSetNetworkConfigurationDnsSettings'
+      return:
+        type:
+          - >-
+            azure-arm-compute -
+            v10.0.0.VirtualMachineScaleSetNetworkConfigurationDnsSettings
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetNetworkConfiguration.enableAcceleratedNetworking
+    name: enableAcceleratedNetworking
+    fullName: enableAcceleratedNetworking
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies whether the network interface is accelerated networking-enabled.
+    optional: true
+    syntax:
+      content: 'enableAcceleratedNetworking?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetNetworkConfiguration.enableIPForwarding
+    name: enableIPForwarding
+    fullName: enableIPForwarding
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Whether IP forwarding enabled on this NIC.
+    optional: true
+    syntax:
+      content: 'enableIPForwarding?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetNetworkConfiguration.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetNetworkConfiguration.ipConfigurations
+    name: ipConfigurations
+    fullName: ipConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies the IP configurations of the network interface.
+    syntax:
+      content: 'ipConfigurations: VirtualMachineScaleSetIPConfiguration[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.VirtualMachineScaleSetIPConfiguration[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetNetworkConfiguration.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The network configuration name.
+    syntax:
+      content: 'name: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetNetworkConfiguration.networkSecurityGroup
+    name: networkSecurityGroup
+    fullName: networkSecurityGroup
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The network security group.
+    optional: true
+    syntax:
+      content: 'networkSecurityGroup?: SubResource'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.SubResource
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetNetworkConfiguration.primary
+    name: primary
+    fullName: primary
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the primary network interface in case the virtual machine has
+      more than 1 network
+
+      interface.
+    optional: true
+    syntax:
+      content: 'primary?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute - v10.0.0.SubResource
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetNetworkConfigurationDnsSettings
+    name: VirtualMachineScaleSetNetworkConfigurationDnsSettings
+    spec.typeScript:
+      - name: VirtualMachineScaleSetNetworkConfigurationDnsSettings
+        fullName: VirtualMachineScaleSetNetworkConfigurationDnsSettings
+        uid: >-
+          azure-arm-compute -
+          v10.0.0.VirtualMachineScaleSetNetworkConfigurationDnsSettings
+  - uid: 'azure-arm-compute - v10.0.0.VirtualMachineScaleSetIPConfiguration[]'
+    name: 'VirtualMachineScaleSetIPConfiguration[]'
+    spec.typeScript:
+      - name: VirtualMachineScaleSetIPConfiguration
+        fullName: VirtualMachineScaleSetIPConfiguration
+        uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetIPConfiguration
+      - name: '[]'
+        fullName: '[]'

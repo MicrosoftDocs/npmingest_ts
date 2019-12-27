@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.ContainerServiceLinuxProfile
+    name: ContainerServiceLinuxProfile
+    fullName: ContainerServiceLinuxProfile
+    children:
+      - azure-arm-compute - v10.0.0.ContainerServiceLinuxProfile.adminUsername
+      - azure-arm-compute - v10.0.0.ContainerServiceLinuxProfile.ssh
+    langs:
+      - typeScript
+    type: interface
+    summary: Profile for Linux VMs in the container service cluster.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ContainerServiceLinuxProfile.adminUsername
+    name: adminUsername
+    fullName: adminUsername
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The administrator username to use for Linux VMs.
+    syntax:
+      content: 'adminUsername: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ContainerServiceLinuxProfile.ssh
+    name: ssh
+    fullName: ssh
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The ssh key configuration for Linux VMs.
+    syntax:
+      content: 'ssh: ContainerServiceSshConfiguration'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.ContainerServiceSshConfiguration
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.ContainerServiceSshConfiguration
+    name: ContainerServiceSshConfiguration
+    spec.typeScript:
+      - name: ContainerServiceSshConfiguration
+        fullName: ContainerServiceSshConfiguration
+        uid: azure-arm-compute - v10.0.0.ContainerServiceSshConfiguration

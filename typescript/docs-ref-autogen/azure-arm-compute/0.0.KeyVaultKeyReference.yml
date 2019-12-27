@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.KeyVaultKeyReference
+    name: KeyVaultKeyReference
+    fullName: KeyVaultKeyReference
+    children:
+      - azure-arm-compute - v10.0.0.KeyVaultKeyReference.keyUrl
+      - azure-arm-compute - v10.0.0.KeyVaultKeyReference.sourceVault
+    langs:
+      - typeScript
+    type: interface
+    summary: Describes a reference to Key Vault Key
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.KeyVaultKeyReference.keyUrl
+    name: keyUrl
+    fullName: keyUrl
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The URL referencing a key encryption key in Key Vault.
+    syntax:
+      content: 'keyUrl: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.KeyVaultKeyReference.sourceVault
+    name: sourceVault
+    fullName: sourceVault
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The relative URL of the Key Vault containing the key.
+    syntax:
+      content: 'sourceVault: SubResource'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.SubResource
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute - v10.0.0.SubResource

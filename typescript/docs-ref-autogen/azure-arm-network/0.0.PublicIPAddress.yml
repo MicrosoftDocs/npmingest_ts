@@ -1,0 +1,389 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress
+    name: PublicIPAddress
+    fullName: PublicIPAddress
+    children:
+      - azure-arm-network - v13.0.0.PublicIPAddress.ddosSettings
+      - azure-arm-network - v13.0.0.PublicIPAddress.dnsSettings
+      - azure-arm-network - v13.0.0.PublicIPAddress.etag
+      - azure-arm-network - v13.0.0.PublicIPAddress.id
+      - azure-arm-network - v13.0.0.PublicIPAddress.idleTimeoutInMinutes
+      - azure-arm-network - v13.0.0.PublicIPAddress.ipAddress
+      - azure-arm-network - v13.0.0.PublicIPAddress.ipConfiguration
+      - azure-arm-network - v13.0.0.PublicIPAddress.ipTags
+      - azure-arm-network - v13.0.0.PublicIPAddress.location
+      - azure-arm-network - v13.0.0.PublicIPAddress.name
+      - azure-arm-network - v13.0.0.PublicIPAddress.provisioningState
+      - azure-arm-network - v13.0.0.PublicIPAddress.publicIPAddressVersion
+      - azure-arm-network - v13.0.0.PublicIPAddress.publicIPAllocationMethod
+      - azure-arm-network - v13.0.0.PublicIPAddress.publicIPPrefix
+      - azure-arm-network - v13.0.0.PublicIPAddress.resourceGuid
+      - azure-arm-network - v13.0.0.PublicIPAddress.sku
+      - azure-arm-network - v13.0.0.PublicIPAddress.tags
+      - azure-arm-network - v13.0.0.PublicIPAddress.type
+      - azure-arm-network - v13.0.0.PublicIPAddress.zones
+    langs:
+      - typeScript
+    type: interface
+    summary: Public IP address resource.
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.ddosSettings
+    name: ddosSettings
+    fullName: ddosSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The DDoS protection custom policy associated with the public IP address.
+    optional: true
+    syntax:
+      content: 'ddosSettings?: DdosSettings'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.DdosSettings
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.dnsSettings
+    name: dnsSettings
+    fullName: dnsSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The FQDN of the DNS record associated with the public IP address.
+    optional: true
+    syntax:
+      content: 'dnsSettings?: PublicIPAddressDnsSettings'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.PublicIPAddressDnsSettings
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A unique read-only string that changes whenever the resource is updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.idleTimeoutInMinutes
+    name: idleTimeoutInMinutes
+    fullName: idleTimeoutInMinutes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The idle timeout of the public IP address.
+    optional: true
+    syntax:
+      content: 'idleTimeoutInMinutes?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.ipAddress
+    name: ipAddress
+    fullName: ipAddress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The IP address associated with the public IP address resource.
+    optional: true
+    syntax:
+      content: 'ipAddress?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.ipConfiguration
+    name: ipConfiguration
+    fullName: ipConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The IP configuration associated with the public IP address.
+    optional: true
+    syntax:
+      content: 'ipConfiguration?: IPConfiguration'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.IPConfiguration
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.ipTags
+    name: ipTags
+    fullName: ipTags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The list of tags associated with the public IP address.
+    optional: true
+    syntax:
+      content: 'ipTags?: IpTag[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.IpTag[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the PublicIP resource. Possible values are:
+      'Updating', 'Deleting',
+
+      and 'Failed'.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.publicIPAddressVersion
+    name: publicIPAddressVersion
+    fullName: publicIPAddressVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The public IP address version. Possible values include: ''IPv4'', ''IPv6'''
+    optional: true
+    syntax:
+      content: 'publicIPAddressVersion?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.publicIPAllocationMethod
+    name: publicIPAllocationMethod
+    fullName: publicIPAllocationMethod
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The public IP address allocation method. Possible values include:
+      'Static', 'Dynamic'
+    optional: true
+    syntax:
+      content: 'publicIPAllocationMethod?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.publicIPPrefix
+    name: publicIPPrefix
+    fullName: publicIPPrefix
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The Public IP Prefix this Public IP Address should be allocated from.
+    optional: true
+    syntax:
+      content: 'publicIPPrefix?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.resourceGuid
+    name: resourceGuid
+    fullName: resourceGuid
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The resource GUID property of the public IP resource.
+    optional: true
+    syntax:
+      content: 'resourceGuid?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.sku
+    name: sku
+    fullName: sku
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The public IP address SKU.
+    optional: true
+    syntax:
+      content: 'sku?: PublicIPAddressSku'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.PublicIPAddressSku
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PublicIPAddress.zones
+    name: zones
+    fullName: zones
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      A list of availability zones denoting the IP allocated for the resource
+      needs to come from.
+    optional: true
+    syntax:
+      content: 'zones?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: azure-arm-network - v13.0.0.DdosSettings
+    name: DdosSettings
+    spec.typeScript:
+      - name: DdosSettings
+        fullName: DdosSettings
+        uid: azure-arm-network - v13.0.0.DdosSettings
+  - uid: azure-arm-network - v13.0.0.PublicIPAddressDnsSettings
+    name: PublicIPAddressDnsSettings
+    spec.typeScript:
+      - name: PublicIPAddressDnsSettings
+        fullName: PublicIPAddressDnsSettings
+        uid: azure-arm-network - v13.0.0.PublicIPAddressDnsSettings
+  - uid: azure-arm-network - v13.0.0.IPConfiguration
+    name: IPConfiguration
+    spec.typeScript:
+      - name: IPConfiguration
+        fullName: IPConfiguration
+        uid: azure-arm-network - v13.0.0.IPConfiguration
+  - uid: 'azure-arm-network - v13.0.0.IpTag[]'
+    name: 'IpTag[]'
+    spec.typeScript:
+      - name: IpTag
+        fullName: IpTag
+        uid: azure-arm-network - v13.0.0.IpTag
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource
+  - uid: azure-arm-network - v13.0.0.PublicIPAddressSku
+    name: PublicIPAddressSku
+    spec.typeScript:
+      - name: PublicIPAddressSku
+        fullName: PublicIPAddressSku
+        uid: azure-arm-network - v13.0.0.PublicIPAddressSku

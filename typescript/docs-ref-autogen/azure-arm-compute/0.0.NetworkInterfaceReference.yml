@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.NetworkInterfaceReference
+    name: NetworkInterfaceReference
+    fullName: NetworkInterfaceReference
+    children:
+      - azure-arm-compute - v10.0.0.NetworkInterfaceReference.id
+      - azure-arm-compute - v10.0.0.NetworkInterfaceReference.primary
+    langs:
+      - typeScript
+    type: interface
+    summary: Describes a network interface reference.
+    extends:
+      name: azure-arm-compute - v10.0.0.SubResource
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.NetworkInterfaceReference.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.NetworkInterfaceReference.primary
+    name: primary
+    fullName: primary
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the primary network interface in case the virtual machine has
+      more than 1 network
+
+      interface.
+    optional: true
+    syntax:
+      content: 'primary?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute - v10.0.0.SubResource

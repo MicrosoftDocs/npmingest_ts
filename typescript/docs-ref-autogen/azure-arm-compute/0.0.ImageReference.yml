@@ -1,0 +1,132 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.ImageReference
+    name: ImageReference
+    fullName: ImageReference
+    children:
+      - azure-arm-compute - v10.0.0.ImageReference.id
+      - azure-arm-compute - v10.0.0.ImageReference.offer
+      - azure-arm-compute - v10.0.0.ImageReference.publisher
+      - azure-arm-compute - v10.0.0.ImageReference.sku
+      - azure-arm-compute - v10.0.0.ImageReference.version
+    langs:
+      - typeScript
+    type: interface
+    summary: >-
+      Specifies information about the image to use. You can specify information
+      about platform images,
+
+      marketplace images, or virtual machine images. This element is required
+      when you want to use a
+
+      platform image, marketplace image, or virtual machine image, but is not
+      used in other creation
+
+      operations.
+    extends:
+      name: azure-arm-compute - v10.0.0.SubResource
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ImageReference.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ImageReference.offer
+    name: offer
+    fullName: offer
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the offer of the platform image or marketplace image used to
+      create the virtual
+
+      machine.
+    optional: true
+    syntax:
+      content: 'offer?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ImageReference.publisher
+    name: publisher
+    fullName: publisher
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The image publisher.
+    optional: true
+    syntax:
+      content: 'publisher?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ImageReference.sku
+    name: sku
+    fullName: sku
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The image SKU.
+    optional: true
+    syntax:
+      content: 'sku?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ImageReference.version
+    name: version
+    fullName: version
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the version of the platform image or marketplace image used to
+      create the virtual
+
+      machine. The allowed formats are Major.Minor.Build or 'latest'. Major,
+      Minor, and Build are
+
+      decimal numbers. Specify 'latest' to use the latest version of an image
+      available at deploy
+
+      time. Even if you use 'latest', the VM image will not automatically update
+      after deploy time
+
+      even if a new version becomes available.
+    optional: true
+    syntax:
+      content: 'version?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute - v10.0.0.SubResource

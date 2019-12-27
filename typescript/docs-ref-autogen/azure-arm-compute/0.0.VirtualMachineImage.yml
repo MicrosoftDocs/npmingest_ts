@@ -1,0 +1,190 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineImage
+    name: VirtualMachineImage
+    fullName: VirtualMachineImage
+    children:
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineImage.automaticOSUpgradeProperties
+      - azure-arm-compute - v10.0.0.VirtualMachineImage.dataDiskImages
+      - azure-arm-compute - v10.0.0.VirtualMachineImage.id
+      - azure-arm-compute - v10.0.0.VirtualMachineImage.location
+      - azure-arm-compute - v10.0.0.VirtualMachineImage.name
+      - azure-arm-compute - v10.0.0.VirtualMachineImage.osDiskImage
+      - azure-arm-compute - v10.0.0.VirtualMachineImage.plan
+      - azure-arm-compute - v10.0.0.VirtualMachineImage.tags
+    langs:
+      - typeScript
+    type: interface
+    summary: Describes a Virtual Machine Image.
+    extends:
+      name: azure-arm-compute - v10.0.0.VirtualMachineImageResource
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineImage.automaticOSUpgradeProperties
+    name: automaticOSUpgradeProperties
+    fullName: automaticOSUpgradeProperties
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'automaticOSUpgradeProperties?: AutomaticOSUpgradeProperties'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.AutomaticOSUpgradeProperties
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineImage.dataDiskImages
+    name: dataDiskImages
+    fullName: dataDiskImages
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'dataDiskImages?: DataDiskImage[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.DataDiskImage[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineImage.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineImage.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The supported Azure location of the resource.
+    syntax:
+      content: 'location: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineImage.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The name of the resource.
+    syntax:
+      content: 'name: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineImage.osDiskImage
+    name: osDiskImage
+    fullName: osDiskImage
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'osDiskImage?: OSDiskImage'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.OSDiskImage
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineImage.plan
+    name: plan
+    fullName: plan
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'plan?: PurchasePlan'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.PurchasePlan
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineImage.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the tags that are assigned to the virtual machine. For more
+      information about using
+
+      tags, see [Using tags to organize your Azure
+
+      resources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags.md).
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineImageResource
+    name: VirtualMachineImageResource
+    spec.typeScript:
+      - name: VirtualMachineImageResource
+        fullName: VirtualMachineImageResource
+        uid: azure-arm-compute - v10.0.0.VirtualMachineImageResource
+  - uid: azure-arm-compute - v10.0.0.AutomaticOSUpgradeProperties
+    name: AutomaticOSUpgradeProperties
+    spec.typeScript:
+      - name: AutomaticOSUpgradeProperties
+        fullName: AutomaticOSUpgradeProperties
+        uid: azure-arm-compute - v10.0.0.AutomaticOSUpgradeProperties
+  - uid: 'azure-arm-compute - v10.0.0.DataDiskImage[]'
+    name: 'DataDiskImage[]'
+    spec.typeScript:
+      - name: DataDiskImage
+        fullName: DataDiskImage
+        uid: azure-arm-compute - v10.0.0.DataDiskImage
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute - v10.0.0.OSDiskImage
+    name: OSDiskImage
+    spec.typeScript:
+      - name: OSDiskImage
+        fullName: OSDiskImage
+        uid: azure-arm-compute - v10.0.0.OSDiskImage
+  - uid: azure-arm-compute - v10.0.0.PurchasePlan
+    name: PurchasePlan
+    spec.typeScript:
+      - name: PurchasePlan
+        fullName: PurchasePlan
+        uid: azure-arm-compute - v10.0.0.PurchasePlan

@@ -1,0 +1,179 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.VpnClientConfiguration
+    name: VpnClientConfiguration
+    fullName: VpnClientConfiguration
+    children:
+      - azure-arm-network - v13.0.0.VpnClientConfiguration.radiusServerAddress
+      - azure-arm-network - v13.0.0.VpnClientConfiguration.radiusServerSecret
+      - azure-arm-network - v13.0.0.VpnClientConfiguration.vpnClientAddressPool
+      - >-
+        azure-arm-network -
+        v13.0.0.VpnClientConfiguration.vpnClientIpsecPolicies
+      - azure-arm-network - v13.0.0.VpnClientConfiguration.vpnClientProtocols
+      - >-
+        azure-arm-network -
+        v13.0.0.VpnClientConfiguration.vpnClientRevokedCertificates
+      - >-
+        azure-arm-network -
+        v13.0.0.VpnClientConfiguration.vpnClientRootCertificates
+    langs:
+      - typeScript
+    type: interface
+    summary: VpnClientConfiguration for P2S client.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnClientConfiguration.radiusServerAddress
+    name: radiusServerAddress
+    fullName: radiusServerAddress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The radius server address property of the VirtualNetworkGateway resource
+      for vpn client
+
+      connection.
+    optional: true
+    syntax:
+      content: 'radiusServerAddress?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnClientConfiguration.radiusServerSecret
+    name: radiusServerSecret
+    fullName: radiusServerSecret
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The radius secret property of the VirtualNetworkGateway resource for vpn
+      client connection.
+    optional: true
+    syntax:
+      content: 'radiusServerSecret?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnClientConfiguration.vpnClientAddressPool
+    name: vpnClientAddressPool
+    fullName: vpnClientAddressPool
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The reference of the address space resource which represents Address space
+      for P2S VpnClient.
+    optional: true
+    syntax:
+      content: 'vpnClientAddressPool?: AddressSpace'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.AddressSpace
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnClientConfiguration.vpnClientIpsecPolicies
+    name: vpnClientIpsecPolicies
+    fullName: vpnClientIpsecPolicies
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: VpnClientIpsecPolicies for virtual network gateway P2S client.
+    optional: true
+    syntax:
+      content: 'vpnClientIpsecPolicies?: IpsecPolicy[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.IpsecPolicy[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnClientConfiguration.vpnClientProtocols
+    name: vpnClientProtocols
+    fullName: vpnClientProtocols
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: VpnClientProtocols for Virtual network gateway.
+    optional: true
+    syntax:
+      content: 'vpnClientProtocols?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.VpnClientConfiguration.vpnClientRevokedCertificates
+    name: vpnClientRevokedCertificates
+    fullName: vpnClientRevokedCertificates
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: VpnClientRevokedCertificate for Virtual network gateway.
+    optional: true
+    syntax:
+      content: 'vpnClientRevokedCertificates?: VpnClientRevokedCertificate[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.VpnClientRevokedCertificate[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.VpnClientConfiguration.vpnClientRootCertificates
+    name: vpnClientRootCertificates
+    fullName: vpnClientRootCertificates
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: VpnClientRootCertificate for virtual network gateway.
+    optional: true
+    syntax:
+      content: 'vpnClientRootCertificates?: VpnClientRootCertificate[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.VpnClientRootCertificate[]'
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.AddressSpace
+    name: AddressSpace
+    spec.typeScript:
+      - name: AddressSpace
+        fullName: AddressSpace
+        uid: azure-arm-network - v13.0.0.AddressSpace
+  - uid: 'azure-arm-network - v13.0.0.IpsecPolicy[]'
+    name: 'IpsecPolicy[]'
+    spec.typeScript:
+      - name: IpsecPolicy
+        fullName: IpsecPolicy
+        uid: azure-arm-network - v13.0.0.IpsecPolicy
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.VpnClientRevokedCertificate[]'
+    name: 'VpnClientRevokedCertificate[]'
+    spec.typeScript:
+      - name: VpnClientRevokedCertificate
+        fullName: VpnClientRevokedCertificate
+        uid: azure-arm-network - v13.0.0.VpnClientRevokedCertificate
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.VpnClientRootCertificate[]'
+    name: 'VpnClientRootCertificate[]'
+    spec.typeScript:
+      - name: VpnClientRootCertificate
+        fullName: VpnClientRootCertificate
+        uid: azure-arm-network - v13.0.0.VpnClientRootCertificate
+      - name: '[]'
+        fullName: '[]'

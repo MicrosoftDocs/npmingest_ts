@@ -1,0 +1,290 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetVMInstanceView
+    name: VirtualMachineScaleSetVMInstanceView
+    fullName: VirtualMachineScaleSetVMInstanceView
+    children:
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetVMInstanceView.bootDiagnostics
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSetVMInstanceView.disks
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetVMInstanceView.extensions
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetVMInstanceView.maintenanceRedeployStatus
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetVMInstanceView.placementGroupId
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetVMInstanceView.platformFaultDomain
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetVMInstanceView.platformUpdateDomain
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetVMInstanceView.rdpThumbPrint
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetVMInstanceView.statuses
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSetVMInstanceView.vmAgent
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetVMInstanceView.vmHealth
+    langs:
+      - typeScript
+    type: interface
+    summary: The instance view of a virtual machine scale set VM.
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetVMInstanceView.bootDiagnostics
+    name: bootDiagnostics
+    fullName: bootDiagnostics
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Boot Diagnostics is a debugging feature which allows you to view Console
+      Output and Screenshot
+
+      to diagnose VM status. <br><br> You can easily view the output of your
+      console log. <br><br>
+
+      Azure also enables you to see a screenshot of the VM from the hypervisor.
+    optional: true
+    syntax:
+      content: 'bootDiagnostics?: BootDiagnosticsInstanceView'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.BootDiagnosticsInstanceView
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetVMInstanceView.disks
+    name: disks
+    fullName: disks
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The disks information.
+    optional: true
+    syntax:
+      content: 'disks?: DiskInstanceView[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.DiskInstanceView[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetVMInstanceView.extensions
+    name: extensions
+    fullName: extensions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The extensions information.
+    optional: true
+    syntax:
+      content: 'extensions?: VirtualMachineExtensionInstanceView[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.VirtualMachineExtensionInstanceView[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetVMInstanceView.maintenanceRedeployStatus
+    name: maintenanceRedeployStatus
+    fullName: maintenanceRedeployStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The Maintenance Operation status on the virtual machine.
+    optional: true
+    syntax:
+      content: 'maintenanceRedeployStatus?: MaintenanceRedeployStatus'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.MaintenanceRedeployStatus
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetVMInstanceView.placementGroupId
+    name: placementGroupId
+    fullName: placementGroupId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The placement group in which the VM is running. If the VM is deallocated
+      it will not have a
+
+      placementGroupId.
+    optional: true
+    syntax:
+      content: 'placementGroupId?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetVMInstanceView.platformFaultDomain
+    name: platformFaultDomain
+    fullName: platformFaultDomain
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The Fault Domain count.
+    optional: true
+    syntax:
+      content: 'platformFaultDomain?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetVMInstanceView.platformUpdateDomain
+    name: platformUpdateDomain
+    fullName: platformUpdateDomain
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The Update Domain count.
+    optional: true
+    syntax:
+      content: 'platformUpdateDomain?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetVMInstanceView.rdpThumbPrint
+    name: rdpThumbPrint
+    fullName: rdpThumbPrint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The Remote desktop certificate thumbprint.
+    optional: true
+    syntax:
+      content: 'rdpThumbPrint?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetVMInstanceView.statuses
+    name: statuses
+    fullName: statuses
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The resource status information.
+    optional: true
+    syntax:
+      content: 'statuses?: InstanceViewStatus[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.InstanceViewStatus[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetVMInstanceView.vmAgent
+    name: vmAgent
+    fullName: vmAgent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The VM Agent running on the virtual machine.
+    optional: true
+    syntax:
+      content: 'vmAgent?: VirtualMachineAgentInstanceView'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.VirtualMachineAgentInstanceView
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetVMInstanceView.vmHealth
+    name: vmHealth
+    fullName: vmHealth
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The health status for the VM.
+    optional: true
+    syntax:
+      content: 'vmHealth?: VirtualMachineHealthStatus'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.VirtualMachineHealthStatus
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.BootDiagnosticsInstanceView
+    name: BootDiagnosticsInstanceView
+    spec.typeScript:
+      - name: BootDiagnosticsInstanceView
+        fullName: BootDiagnosticsInstanceView
+        uid: azure-arm-compute - v10.0.0.BootDiagnosticsInstanceView
+  - uid: 'azure-arm-compute - v10.0.0.DiskInstanceView[]'
+    name: 'DiskInstanceView[]'
+    spec.typeScript:
+      - name: DiskInstanceView
+        fullName: DiskInstanceView
+        uid: azure-arm-compute - v10.0.0.DiskInstanceView
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-compute - v10.0.0.VirtualMachineExtensionInstanceView[]'
+    name: 'VirtualMachineExtensionInstanceView[]'
+    spec.typeScript:
+      - name: VirtualMachineExtensionInstanceView
+        fullName: VirtualMachineExtensionInstanceView
+        uid: azure-arm-compute - v10.0.0.VirtualMachineExtensionInstanceView
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute - v10.0.0.MaintenanceRedeployStatus
+    name: MaintenanceRedeployStatus
+    spec.typeScript:
+      - name: MaintenanceRedeployStatus
+        fullName: MaintenanceRedeployStatus
+        uid: azure-arm-compute - v10.0.0.MaintenanceRedeployStatus
+  - uid: 'azure-arm-compute - v10.0.0.InstanceViewStatus[]'
+    name: 'InstanceViewStatus[]'
+    spec.typeScript:
+      - name: InstanceViewStatus
+        fullName: InstanceViewStatus
+        uid: azure-arm-compute - v10.0.0.InstanceViewStatus
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineAgentInstanceView
+    name: VirtualMachineAgentInstanceView
+    spec.typeScript:
+      - name: VirtualMachineAgentInstanceView
+        fullName: VirtualMachineAgentInstanceView
+        uid: azure-arm-compute - v10.0.0.VirtualMachineAgentInstanceView
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineHealthStatus
+    name: VirtualMachineHealthStatus
+    spec.typeScript:
+      - name: VirtualMachineHealthStatus
+        fullName: VirtualMachineHealthStatus
+        uid: azure-arm-compute - v10.0.0.VirtualMachineHealthStatus

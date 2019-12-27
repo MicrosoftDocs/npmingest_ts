@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetSku
+    name: VirtualMachineScaleSetSku
+    fullName: VirtualMachineScaleSetSku
+    children:
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSetSku.capacity
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSetSku.resourceType
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSetSku.sku
+    langs:
+      - typeScript
+    type: interface
+    summary: Describes an available virtual machine scale set sku.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetSku.capacity
+    name: capacity
+    fullName: capacity
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies the number of virtual machines in the scale set.
+    optional: true
+    syntax:
+      content: 'capacity?: VirtualMachineScaleSetSkuCapacity'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.VirtualMachineScaleSetSkuCapacity
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetSku.resourceType
+    name: resourceType
+    fullName: resourceType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The type of resource the sku applies to.
+    optional: true
+    syntax:
+      content: 'resourceType?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetSku.sku
+    name: sku
+    fullName: sku
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The Sku.
+    optional: true
+    syntax:
+      content: 'sku?: Sku'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.Sku
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetSkuCapacity
+    name: VirtualMachineScaleSetSkuCapacity
+    spec.typeScript:
+      - name: VirtualMachineScaleSetSkuCapacity
+        fullName: VirtualMachineScaleSetSkuCapacity
+        uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetSkuCapacity
+  - uid: azure-arm-compute - v10.0.0.Sku
+    name: Sku
+    spec.typeScript:
+      - name: Sku
+        fullName: Sku
+        uid: azure-arm-compute - v10.0.0.Sku

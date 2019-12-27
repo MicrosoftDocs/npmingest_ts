@@ -1,0 +1,157 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.AzureFirewallIPConfiguration
+    name: AzureFirewallIPConfiguration
+    fullName: AzureFirewallIPConfiguration
+    children:
+      - azure-arm-network - v13.0.0.AzureFirewallIPConfiguration.etag
+      - azure-arm-network - v13.0.0.AzureFirewallIPConfiguration.id
+      - azure-arm-network - v13.0.0.AzureFirewallIPConfiguration.name
+      - >-
+        azure-arm-network -
+        v13.0.0.AzureFirewallIPConfiguration.privateIPAddress
+      - >-
+        azure-arm-network -
+        v13.0.0.AzureFirewallIPConfiguration.provisioningState
+      - azure-arm-network - v13.0.0.AzureFirewallIPConfiguration.publicIPAddress
+      - azure-arm-network - v13.0.0.AzureFirewallIPConfiguration.subnet
+    langs:
+      - typeScript
+    type: interface
+    summary: IP configuration of an Azure Firewall.
+    extends:
+      name: azure-arm-network - v13.0.0.SubResource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallIPConfiguration.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A unique read-only string that changes whenever the resource is updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallIPConfiguration.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallIPConfiguration.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Name of the resource that is unique within a resource group. This name can
+      be used to access
+
+      the resource.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallIPConfiguration.privateIPAddress
+    name: privateIPAddress
+    fullName: privateIPAddress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The Firewall Internal Load Balancer IP to be used as the next hop in User
+      Defined Routes.
+    optional: true
+    syntax:
+      content: 'privateIPAddress?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallIPConfiguration.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the resource. Possible values include:
+      'Succeeded', 'Updating',
+
+      'Deleting', 'Failed'
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallIPConfiguration.publicIPAddress
+    name: publicIPAddress
+    fullName: publicIPAddress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Reference of the PublicIP resource. This field is a mandatory input if
+      subnet is not null.
+    optional: true
+    syntax:
+      content: 'publicIPAddress?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallIPConfiguration.subnet
+    name: subnet
+    fullName: subnet
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Reference of the subnet resource. This resource must be named
+      'AzureFirewallSubnet'.
+    optional: true
+    syntax:
+      content: 'subnet?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource

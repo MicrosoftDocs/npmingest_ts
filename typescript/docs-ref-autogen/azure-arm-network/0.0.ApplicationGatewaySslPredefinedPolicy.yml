@@ -1,0 +1,102 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewaySslPredefinedPolicy
+    name: ApplicationGatewaySslPredefinedPolicy
+    fullName: ApplicationGatewaySslPredefinedPolicy
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewaySslPredefinedPolicy.cipherSuites
+      - azure-arm-network - v13.0.0.ApplicationGatewaySslPredefinedPolicy.id
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewaySslPredefinedPolicy.minProtocolVersion
+      - azure-arm-network - v13.0.0.ApplicationGatewaySslPredefinedPolicy.name
+    langs:
+      - typeScript
+    type: interface
+    summary: An Ssl predefined policy
+    extends:
+      name: azure-arm-network - v13.0.0.SubResource
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewaySslPredefinedPolicy.cipherSuites
+    name: cipherSuites
+    fullName: cipherSuites
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Ssl cipher suites to be enabled in the specified order for application
+      gateway.
+    optional: true
+    syntax:
+      content: 'cipherSuites?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewaySslPredefinedPolicy.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewaySslPredefinedPolicy.minProtocolVersion
+    name: minProtocolVersion
+    fullName: minProtocolVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Minimum version of Ssl protocol to be supported on application gateway.
+      Possible values
+
+      include: 'TLSv1_0', 'TLSv1_1', 'TLSv1_2'
+    optional: true
+    syntax:
+      content: 'minProtocolVersion?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewaySslPredefinedPolicy.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Name of the Ssl predefined policy.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource

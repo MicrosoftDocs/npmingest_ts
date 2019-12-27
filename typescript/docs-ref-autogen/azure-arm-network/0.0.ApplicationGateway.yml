@@ -1,0 +1,839 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway
+    name: ApplicationGateway
+    fullName: ApplicationGateway
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGateway.authenticationCertificates
+      - azure-arm-network - v13.0.0.ApplicationGateway.autoscaleConfiguration
+      - azure-arm-network - v13.0.0.ApplicationGateway.backendAddressPools
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGateway.backendHttpSettingsCollection
+      - azure-arm-network - v13.0.0.ApplicationGateway.customErrorConfigurations
+      - azure-arm-network - v13.0.0.ApplicationGateway.enableFips
+      - azure-arm-network - v13.0.0.ApplicationGateway.enableHttp2
+      - azure-arm-network - v13.0.0.ApplicationGateway.etag
+      - azure-arm-network - v13.0.0.ApplicationGateway.firewallPolicy
+      - azure-arm-network - v13.0.0.ApplicationGateway.frontendIPConfigurations
+      - azure-arm-network - v13.0.0.ApplicationGateway.frontendPorts
+      - azure-arm-network - v13.0.0.ApplicationGateway.gatewayIPConfigurations
+      - azure-arm-network - v13.0.0.ApplicationGateway.httpListeners
+      - azure-arm-network - v13.0.0.ApplicationGateway.id
+      - azure-arm-network - v13.0.0.ApplicationGateway.identity
+      - azure-arm-network - v13.0.0.ApplicationGateway.location
+      - azure-arm-network - v13.0.0.ApplicationGateway.name
+      - azure-arm-network - v13.0.0.ApplicationGateway.operationalState
+      - azure-arm-network - v13.0.0.ApplicationGateway.probes
+      - azure-arm-network - v13.0.0.ApplicationGateway.provisioningState
+      - azure-arm-network - v13.0.0.ApplicationGateway.redirectConfigurations
+      - azure-arm-network - v13.0.0.ApplicationGateway.requestRoutingRules
+      - azure-arm-network - v13.0.0.ApplicationGateway.resourceGuid
+      - azure-arm-network - v13.0.0.ApplicationGateway.rewriteRuleSets
+      - azure-arm-network - v13.0.0.ApplicationGateway.sku
+      - azure-arm-network - v13.0.0.ApplicationGateway.sslCertificates
+      - azure-arm-network - v13.0.0.ApplicationGateway.sslPolicy
+      - azure-arm-network - v13.0.0.ApplicationGateway.tags
+      - azure-arm-network - v13.0.0.ApplicationGateway.trustedRootCertificates
+      - azure-arm-network - v13.0.0.ApplicationGateway.type
+      - azure-arm-network - v13.0.0.ApplicationGateway.urlPathMaps
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGateway.webApplicationFirewallConfiguration
+      - azure-arm-network - v13.0.0.ApplicationGateway.zones
+    langs:
+      - typeScript
+    type: interface
+    summary: Application gateway resource
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.authenticationCertificates
+    name: authenticationCertificates
+    fullName: authenticationCertificates
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Authentication certificates of the application gateway resource. For
+      default limits, see
+
+      [Application Gateway
+
+      limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits).
+    optional: true
+    syntax:
+      content: >-
+        authenticationCertificates?:
+        ApplicationGatewayAuthenticationCertificate[]
+      return:
+        type:
+          - >-
+            azure-arm-network -
+            v13.0.0.ApplicationGatewayAuthenticationCertificate[]
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.autoscaleConfiguration
+    name: autoscaleConfiguration
+    fullName: autoscaleConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Autoscale Configuration.
+    optional: true
+    syntax:
+      content: 'autoscaleConfiguration?: ApplicationGatewayAutoscaleConfiguration'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.ApplicationGatewayAutoscaleConfiguration
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.backendAddressPools
+    name: backendAddressPools
+    fullName: backendAddressPools
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Backend address pool of the application gateway resource. For default
+      limits, see [Application
+
+      Gateway
+
+      limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits).
+    optional: true
+    syntax:
+      content: 'backendAddressPools?: ApplicationGatewayBackendAddressPool[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ApplicationGatewayBackendAddressPool[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGateway.backendHttpSettingsCollection
+    name: backendHttpSettingsCollection
+    fullName: backendHttpSettingsCollection
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Backend http settings of the application gateway resource. For default
+      limits, see
+
+      [Application Gateway
+
+      limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits).
+    optional: true
+    syntax:
+      content: 'backendHttpSettingsCollection?: ApplicationGatewayBackendHttpSettings[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ApplicationGatewayBackendHttpSettings[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.customErrorConfigurations
+    name: customErrorConfigurations
+    fullName: customErrorConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Custom error configurations of the application gateway resource.
+    optional: true
+    syntax:
+      content: 'customErrorConfigurations?: ApplicationGatewayCustomError[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ApplicationGatewayCustomError[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.enableFips
+    name: enableFips
+    fullName: enableFips
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Whether FIPS is enabled on the application gateway resource.
+    optional: true
+    syntax:
+      content: 'enableFips?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.enableHttp2
+    name: enableHttp2
+    fullName: enableHttp2
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Whether HTTP2 is enabled on the application gateway resource.
+    optional: true
+    syntax:
+      content: 'enableHttp2?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A unique read-only string that changes whenever the resource is updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.firewallPolicy
+    name: firewallPolicy
+    fullName: firewallPolicy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Reference of the FirewallPolicy resource.
+    optional: true
+    syntax:
+      content: 'firewallPolicy?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.frontendIPConfigurations
+    name: frontendIPConfigurations
+    fullName: frontendIPConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Frontend IP addresses of the application gateway resource. For default
+      limits, see
+
+      [Application Gateway
+
+      limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits).
+    optional: true
+    syntax:
+      content: 'frontendIPConfigurations?: ApplicationGatewayFrontendIPConfiguration[]'
+      return:
+        type:
+          - >-
+            azure-arm-network -
+            v13.0.0.ApplicationGatewayFrontendIPConfiguration[]
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.frontendPorts
+    name: frontendPorts
+    fullName: frontendPorts
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Frontend ports of the application gateway resource. For default limits,
+      see [Application
+
+      Gateway
+
+      limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits).
+    optional: true
+    syntax:
+      content: 'frontendPorts?: ApplicationGatewayFrontendPort[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ApplicationGatewayFrontendPort[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.gatewayIPConfigurations
+    name: gatewayIPConfigurations
+    fullName: gatewayIPConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Subnets of the application gateway resource. For default limits, see
+      [Application Gateway
+
+      limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits).
+    optional: true
+    syntax:
+      content: 'gatewayIPConfigurations?: ApplicationGatewayIPConfiguration[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ApplicationGatewayIPConfiguration[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.httpListeners
+    name: httpListeners
+    fullName: httpListeners
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Http listeners of the application gateway resource. For default limits,
+      see [Application
+
+      Gateway
+
+      limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits).
+    optional: true
+    syntax:
+      content: 'httpListeners?: ApplicationGatewayHttpListener[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ApplicationGatewayHttpListener[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.identity
+    name: identity
+    fullName: identity
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The identity of the application gateway, if configured.'
+    optional: true
+    syntax:
+      content: 'identity?: ManagedServiceIdentity'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.ManagedServiceIdentity
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.operationalState
+    name: operationalState
+    fullName: operationalState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Operational state of the application gateway resource. Possible values
+      include: 'Stopped',
+
+      'Starting', 'Running', 'Stopping'
+    optional: true
+    syntax:
+      content: 'operationalState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.probes
+    name: probes
+    fullName: probes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Probes of the application gateway resource.
+    optional: true
+    syntax:
+      content: 'probes?: ApplicationGatewayProbe[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ApplicationGatewayProbe[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Provisioning state of the application gateway resource. Possible values
+      are: 'Updating',
+
+      'Deleting', and 'Failed'.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.redirectConfigurations
+    name: redirectConfigurations
+    fullName: redirectConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Redirect configurations of the application gateway resource. For default
+      limits, see
+
+      [Application Gateway
+
+      limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits).
+    optional: true
+    syntax:
+      content: 'redirectConfigurations?: ApplicationGatewayRedirectConfiguration[]'
+      return:
+        type:
+          - >-
+            azure-arm-network -
+            v13.0.0.ApplicationGatewayRedirectConfiguration[]
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.requestRoutingRules
+    name: requestRoutingRules
+    fullName: requestRoutingRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Request routing rules of the application gateway resource.
+    optional: true
+    syntax:
+      content: 'requestRoutingRules?: ApplicationGatewayRequestRoutingRule[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ApplicationGatewayRequestRoutingRule[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.resourceGuid
+    name: resourceGuid
+    fullName: resourceGuid
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource GUID property of the application gateway resource.
+    optional: true
+    syntax:
+      content: 'resourceGuid?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.rewriteRuleSets
+    name: rewriteRuleSets
+    fullName: rewriteRuleSets
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Rewrite rules for the application gateway resource.
+    optional: true
+    syntax:
+      content: 'rewriteRuleSets?: ApplicationGatewayRewriteRuleSet[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ApplicationGatewayRewriteRuleSet[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.sku
+    name: sku
+    fullName: sku
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: SKU of the application gateway resource.
+    optional: true
+    syntax:
+      content: 'sku?: ApplicationGatewaySku'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.ApplicationGatewaySku
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.sslCertificates
+    name: sslCertificates
+    fullName: sslCertificates
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      SSL certificates of the application gateway resource. For default limits,
+      see [Application
+
+      Gateway
+
+      limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits).
+    optional: true
+    syntax:
+      content: 'sslCertificates?: ApplicationGatewaySslCertificate[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ApplicationGatewaySslCertificate[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.sslPolicy
+    name: sslPolicy
+    fullName: sslPolicy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: SSL policy of the application gateway resource.
+    optional: true
+    syntax:
+      content: 'sslPolicy?: ApplicationGatewaySslPolicy'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.ApplicationGatewaySslPolicy
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.trustedRootCertificates
+    name: trustedRootCertificates
+    fullName: trustedRootCertificates
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Trusted Root certificates of the application gateway resource. For default
+      limits, see
+
+      [Application Gateway
+
+      limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits).
+    optional: true
+    syntax:
+      content: 'trustedRootCertificates?: ApplicationGatewayTrustedRootCertificate[]'
+      return:
+        type:
+          - >-
+            azure-arm-network -
+            v13.0.0.ApplicationGatewayTrustedRootCertificate[]
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.urlPathMaps
+    name: urlPathMaps
+    fullName: urlPathMaps
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      URL path map of the application gateway resource. For default limits, see
+      [Application Gateway
+
+      limits](https://docs.microsoft.com/azure/azure-subscription-service-limits#application-gateway-limits).
+    optional: true
+    syntax:
+      content: 'urlPathMaps?: ApplicationGatewayUrlPathMap[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ApplicationGatewayUrlPathMap[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGateway.webApplicationFirewallConfiguration
+    name: webApplicationFirewallConfiguration
+    fullName: webApplicationFirewallConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Web application firewall configuration.
+    optional: true
+    syntax:
+      content: >-
+        webApplicationFirewallConfiguration?:
+        ApplicationGatewayWebApplicationFirewallConfiguration
+      return:
+        type:
+          - >-
+            azure-arm-network -
+            v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGateway.zones
+    name: zones
+    fullName: zones
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      A list of availability zones denoting where the resource needs to come
+      from.
+    optional: true
+    syntax:
+      content: 'zones?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayAuthenticationCertificate[]'
+    name: 'ApplicationGatewayAuthenticationCertificate[]'
+    spec.typeScript:
+      - name: ApplicationGatewayAuthenticationCertificate
+        fullName: ApplicationGatewayAuthenticationCertificate
+        uid: >-
+          azure-arm-network -
+          v13.0.0.ApplicationGatewayAuthenticationCertificate
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayAutoscaleConfiguration
+    name: ApplicationGatewayAutoscaleConfiguration
+    spec.typeScript:
+      - name: ApplicationGatewayAutoscaleConfiguration
+        fullName: ApplicationGatewayAutoscaleConfiguration
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayAutoscaleConfiguration
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayBackendAddressPool[]'
+    name: 'ApplicationGatewayBackendAddressPool[]'
+    spec.typeScript:
+      - name: ApplicationGatewayBackendAddressPool
+        fullName: ApplicationGatewayBackendAddressPool
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayBackendAddressPool
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayBackendHttpSettings[]'
+    name: 'ApplicationGatewayBackendHttpSettings[]'
+    spec.typeScript:
+      - name: ApplicationGatewayBackendHttpSettings
+        fullName: ApplicationGatewayBackendHttpSettings
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayBackendHttpSettings
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayCustomError[]'
+    name: 'ApplicationGatewayCustomError[]'
+    spec.typeScript:
+      - name: ApplicationGatewayCustomError
+        fullName: ApplicationGatewayCustomError
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayCustomError
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayFrontendIPConfiguration[]'
+    name: 'ApplicationGatewayFrontendIPConfiguration[]'
+    spec.typeScript:
+      - name: ApplicationGatewayFrontendIPConfiguration
+        fullName: ApplicationGatewayFrontendIPConfiguration
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayFrontendIPConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayFrontendPort[]'
+    name: 'ApplicationGatewayFrontendPort[]'
+    spec.typeScript:
+      - name: ApplicationGatewayFrontendPort
+        fullName: ApplicationGatewayFrontendPort
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayFrontendPort
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayIPConfiguration[]'
+    name: 'ApplicationGatewayIPConfiguration[]'
+    spec.typeScript:
+      - name: ApplicationGatewayIPConfiguration
+        fullName: ApplicationGatewayIPConfiguration
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayIPConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayHttpListener[]'
+    name: 'ApplicationGatewayHttpListener[]'
+    spec.typeScript:
+      - name: ApplicationGatewayHttpListener
+        fullName: ApplicationGatewayHttpListener
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayHttpListener
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.ManagedServiceIdentity
+    name: ManagedServiceIdentity
+    spec.typeScript:
+      - name: ManagedServiceIdentity
+        fullName: ManagedServiceIdentity
+        uid: azure-arm-network - v13.0.0.ManagedServiceIdentity
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayProbe[]'
+    name: 'ApplicationGatewayProbe[]'
+    spec.typeScript:
+      - name: ApplicationGatewayProbe
+        fullName: ApplicationGatewayProbe
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayProbe
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayRedirectConfiguration[]'
+    name: 'ApplicationGatewayRedirectConfiguration[]'
+    spec.typeScript:
+      - name: ApplicationGatewayRedirectConfiguration
+        fullName: ApplicationGatewayRedirectConfiguration
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayRedirectConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayRequestRoutingRule[]'
+    name: 'ApplicationGatewayRequestRoutingRule[]'
+    spec.typeScript:
+      - name: ApplicationGatewayRequestRoutingRule
+        fullName: ApplicationGatewayRequestRoutingRule
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayRequestRoutingRule
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayRewriteRuleSet[]'
+    name: 'ApplicationGatewayRewriteRuleSet[]'
+    spec.typeScript:
+      - name: ApplicationGatewayRewriteRuleSet
+        fullName: ApplicationGatewayRewriteRuleSet
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayRewriteRuleSet
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewaySku
+    name: ApplicationGatewaySku
+    spec.typeScript:
+      - name: ApplicationGatewaySku
+        fullName: ApplicationGatewaySku
+        uid: azure-arm-network - v13.0.0.ApplicationGatewaySku
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewaySslCertificate[]'
+    name: 'ApplicationGatewaySslCertificate[]'
+    spec.typeScript:
+      - name: ApplicationGatewaySslCertificate
+        fullName: ApplicationGatewaySslCertificate
+        uid: azure-arm-network - v13.0.0.ApplicationGatewaySslCertificate
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewaySslPolicy
+    name: ApplicationGatewaySslPolicy
+    spec.typeScript:
+      - name: ApplicationGatewaySslPolicy
+        fullName: ApplicationGatewaySslPolicy
+        uid: azure-arm-network - v13.0.0.ApplicationGatewaySslPolicy
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayTrustedRootCertificate[]'
+    name: 'ApplicationGatewayTrustedRootCertificate[]'
+    spec.typeScript:
+      - name: ApplicationGatewayTrustedRootCertificate
+        fullName: ApplicationGatewayTrustedRootCertificate
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayTrustedRootCertificate
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayUrlPathMap[]'
+    name: 'ApplicationGatewayUrlPathMap[]'
+    spec.typeScript:
+      - name: ApplicationGatewayUrlPathMap
+        fullName: ApplicationGatewayUrlPathMap
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayUrlPathMap
+      - name: '[]'
+        fullName: '[]'
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration
+    name: ApplicationGatewayWebApplicationFirewallConfiguration
+    spec.typeScript:
+      - name: ApplicationGatewayWebApplicationFirewallConfiguration
+        fullName: ApplicationGatewayWebApplicationFirewallConfiguration
+        uid: >-
+          azure-arm-network -
+          v13.0.0.ApplicationGatewayWebApplicationFirewallConfiguration

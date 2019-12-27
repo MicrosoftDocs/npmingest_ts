@@ -1,0 +1,248 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetExtension
+    name: VirtualMachineScaleSetExtension
+    fullName: VirtualMachineScaleSetExtension
+    children:
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetExtension.autoUpgradeMinorVersion
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetExtension.forceUpdateTag
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSetExtension.id
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSetExtension.name
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetExtension.protectedSettings
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetExtension.provisionAfterExtensions
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetExtension.provisioningState
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSetExtension.publisher
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSetExtension.settings
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSetExtension.type
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetExtension.typeHandlerVersion
+    langs:
+      - typeScript
+    type: interface
+    summary: Describes a Virtual Machine Scale Set Extension.
+    extends:
+      name: azure-arm-compute - v10.0.0.SubResourceReadOnly
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetExtension.autoUpgradeMinorVersion
+    name: autoUpgradeMinorVersion
+    fullName: autoUpgradeMinorVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Indicates whether the extension should use a newer minor version if one is
+      available at
+
+      deployment time. Once deployed, however, the extension will not upgrade
+      minor versions unless
+
+      redeployed, even with this property set to true.
+    optional: true
+    syntax:
+      content: 'autoUpgradeMinorVersion?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetExtension.forceUpdateTag
+    name: forceUpdateTag
+    fullName: forceUpdateTag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      If a value is provided and is different from the previous value, the
+      extension handler will be
+
+      forced to update even if the extension configuration has not changed.
+    optional: true
+    syntax:
+      content: 'forceUpdateTag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetExtension.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetExtension.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The name of the extension.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetExtension.protectedSettings
+    name: protectedSettings
+    fullName: protectedSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The extension can contain either protectedSettings or
+      protectedSettingsFromKeyVault or no
+
+      protected settings at all.
+    optional: true
+    syntax:
+      content: 'protectedSettings?: any'
+      return:
+        type:
+          - any
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetExtension.provisionAfterExtensions
+    name: provisionAfterExtensions
+    fullName: provisionAfterExtensions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Collection of extension names after which this extension needs to be
+      provisioned.
+    optional: true
+    syntax:
+      content: 'provisionAfterExtensions?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetExtension.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The provisioning state, which only appears in the response.'
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetExtension.publisher
+    name: publisher
+    fullName: publisher
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The name of the extension handler publisher.
+    optional: true
+    syntax:
+      content: 'publisher?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetExtension.settings
+    name: settings
+    fullName: settings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Json formatted public settings for the extension.
+    optional: true
+    syntax:
+      content: 'settings?: any'
+      return:
+        type:
+          - any
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetExtension.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the type of the extension; an example is
+      "CustomScriptExtension".
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetExtension.typeHandlerVersion
+    name: typeHandlerVersion
+    fullName: typeHandlerVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies the version of the script handler.
+    optional: true
+    syntax:
+      content: 'typeHandlerVersion?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.SubResourceReadOnly
+    name: SubResourceReadOnly
+    spec.typeScript:
+      - name: SubResourceReadOnly
+        fullName: SubResourceReadOnly
+        uid: azure-arm-compute - v10.0.0.SubResourceReadOnly

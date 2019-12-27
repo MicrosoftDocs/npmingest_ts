@@ -1,0 +1,54 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.KeyVaultAndKeyReference
+    name: KeyVaultAndKeyReference
+    fullName: KeyVaultAndKeyReference
+    children:
+      - azure-arm-compute - v10.0.0.KeyVaultAndKeyReference.keyUrl
+      - azure-arm-compute - v10.0.0.KeyVaultAndKeyReference.sourceVault
+    langs:
+      - typeScript
+    type: interface
+    summary: >-
+      Key Vault Key Url and vault id of KeK, KeK is optional and when provided
+      is used to unwrap the
+
+      encryptionKey
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.KeyVaultAndKeyReference.keyUrl
+    name: keyUrl
+    fullName: keyUrl
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Url pointing to a key or secret in KeyVault
+    syntax:
+      content: 'keyUrl: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.KeyVaultAndKeyReference.sourceVault
+    name: sourceVault
+    fullName: sourceVault
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource id of the KeyVault containing the key or secret
+    syntax:
+      content: 'sourceVault: SourceVault'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.SourceVault
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.SourceVault
+    name: SourceVault
+    spec.typeScript:
+      - name: SourceVault
+        fullName: SourceVault
+        uid: azure-arm-compute - v10.0.0.SourceVault

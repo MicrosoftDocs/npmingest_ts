@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.GalleryOSDiskImage
+    name: GalleryOSDiskImage
+    fullName: GalleryOSDiskImage
+    children:
+      - azure-arm-compute - v10.0.0.GalleryOSDiskImage.hostCaching
+      - azure-arm-compute - v10.0.0.GalleryOSDiskImage.sizeInGB
+    langs:
+      - typeScript
+    type: interface
+    summary: This is the OS disk image.
+    extends:
+      name: azure-arm-compute - v10.0.0.GalleryDiskImage
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.GalleryOSDiskImage.hostCaching
+    name: hostCaching
+    fullName: hostCaching
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The host caching of the disk. Valid values are 'None', 'ReadOnly', and
+      'ReadWrite'. Possible
+
+      values include: 'None', 'ReadOnly', 'ReadWrite'
+    optional: true
+    syntax:
+      content: 'hostCaching?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.GalleryOSDiskImage.sizeInGB
+    name: sizeInGB
+    fullName: sizeInGB
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: This property indicates the size of the VHD to be created.
+    optional: true
+    syntax:
+      content: 'sizeInGB?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.GalleryDiskImage
+    name: GalleryDiskImage
+    spec.typeScript:
+      - name: GalleryDiskImage
+        fullName: GalleryDiskImage
+        uid: azure-arm-compute - v10.0.0.GalleryDiskImage

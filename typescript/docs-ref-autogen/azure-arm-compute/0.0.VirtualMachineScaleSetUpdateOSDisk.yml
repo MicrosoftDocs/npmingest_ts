@@ -1,0 +1,162 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetUpdateOSDisk
+    name: VirtualMachineScaleSetUpdateOSDisk
+    fullName: VirtualMachineScaleSetUpdateOSDisk
+    children:
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSetUpdateOSDisk.caching
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdateOSDisk.diskSizeGB
+      - azure-arm-compute - v10.0.0.VirtualMachineScaleSetUpdateOSDisk.image
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdateOSDisk.managedDisk
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdateOSDisk.vhdContainers
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdateOSDisk.writeAcceleratorEnabled
+    langs:
+      - typeScript
+    type: interface
+    summary: >-
+      Describes virtual machine scale set operating system disk Update Object.
+      This should be used for
+
+      Updating VMSS OS Disk.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetUpdateOSDisk.caching
+    name: caching
+    fullName: caching
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The caching type. Possible values include: ''None'', ''ReadOnly'', ''ReadWrite'''
+    optional: true
+    syntax:
+      content: 'caching?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetUpdateOSDisk.diskSizeGB
+    name: diskSizeGB
+    fullName: diskSizeGB
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the size of the operating system disk in gigabytes. This element
+      can be used to
+
+      overwrite the size of the disk in a virtual machine image. <br><br> This
+      value cannot be
+
+      larger than 1023 GB
+    optional: true
+    syntax:
+      content: 'diskSizeGB?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetUpdateOSDisk.image
+    name: image
+    fullName: image
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The Source User Image VirtualHardDisk. This VirtualHardDisk will be copied
+      before using it to
+
+      attach to the Virtual Machine. If SourceImage is provided, the destination
+      VirtualHardDisk
+
+      should not exist.
+    optional: true
+    syntax:
+      content: 'image?: VirtualHardDisk'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.VirtualHardDisk
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetUpdateOSDisk.managedDisk
+    name: managedDisk
+    fullName: managedDisk
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The managed disk parameters.
+    optional: true
+    syntax:
+      content: 'managedDisk?: VirtualMachineScaleSetManagedDiskParameters'
+      return:
+        type:
+          - >-
+            azure-arm-compute -
+            v10.0.0.VirtualMachineScaleSetManagedDiskParameters
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetUpdateOSDisk.vhdContainers
+    name: vhdContainers
+    fullName: vhdContainers
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The list of virtual hard disk container uris.
+    optional: true
+    syntax:
+      content: 'vhdContainers?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetUpdateOSDisk.writeAcceleratorEnabled
+    name: writeAcceleratorEnabled
+    fullName: writeAcceleratorEnabled
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies whether writeAccelerator should be enabled or disabled on the
+      disk.
+    optional: true
+    syntax:
+      content: 'writeAcceleratorEnabled?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.VirtualHardDisk
+    name: VirtualHardDisk
+    spec.typeScript:
+      - name: VirtualHardDisk
+        fullName: VirtualHardDisk
+        uid: azure-arm-compute - v10.0.0.VirtualHardDisk
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineScaleSetManagedDiskParameters
+    name: VirtualMachineScaleSetManagedDiskParameters
+    spec.typeScript:
+      - name: VirtualMachineScaleSetManagedDiskParameters
+        fullName: VirtualMachineScaleSetManagedDiskParameters
+        uid: >-
+          azure-arm-compute -
+          v10.0.0.VirtualMachineScaleSetManagedDiskParameters

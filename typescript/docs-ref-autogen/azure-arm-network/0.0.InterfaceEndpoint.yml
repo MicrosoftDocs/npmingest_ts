@@ -1,0 +1,256 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoint
+    name: InterfaceEndpoint
+    fullName: InterfaceEndpoint
+    children:
+      - azure-arm-network - v13.0.0.InterfaceEndpoint.endpointService
+      - azure-arm-network - v13.0.0.InterfaceEndpoint.etag
+      - azure-arm-network - v13.0.0.InterfaceEndpoint.fqdn
+      - azure-arm-network - v13.0.0.InterfaceEndpoint.id
+      - azure-arm-network - v13.0.0.InterfaceEndpoint.location
+      - azure-arm-network - v13.0.0.InterfaceEndpoint.name
+      - azure-arm-network - v13.0.0.InterfaceEndpoint.networkInterfaces
+      - azure-arm-network - v13.0.0.InterfaceEndpoint.owner
+      - azure-arm-network - v13.0.0.InterfaceEndpoint.provisioningState
+      - azure-arm-network - v13.0.0.InterfaceEndpoint.subnet
+      - azure-arm-network - v13.0.0.InterfaceEndpoint.tags
+      - azure-arm-network - v13.0.0.InterfaceEndpoint.type
+    langs:
+      - typeScript
+    type: interface
+    summary: Interface endpoint resource.
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoint.endpointService
+    name: endpointService
+    fullName: endpointService
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A reference to the service being brought into the virtual network.
+    optional: true
+    syntax:
+      content: 'endpointService?: EndpointService'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.EndpointService
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoint.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Gets a unique read-only string that changes whenever the resource is
+      updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoint.fqdn
+    name: fqdn
+    fullName: fqdn
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      A first-party service's FQDN that is mapped to the private IP allocated
+      via this interface
+
+      endpoint.
+    optional: true
+    syntax:
+      content: 'fqdn?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoint.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoint.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoint.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoint.networkInterfaces
+    name: networkInterfaces
+    fullName: networkInterfaces
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Gets an array of references to the network interfaces created for this
+      interface endpoint.
+    optional: true
+    syntax:
+      content: 'networkInterfaces?: NetworkInterface[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.NetworkInterface[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoint.owner
+    name: owner
+    fullName: owner
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A read-only property that identifies who created this interface endpoint.
+    optional: true
+    syntax:
+      content: 'owner?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoint.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the interface endpoint. Possible values are:
+      'Updating', 'Deleting',
+
+      and 'Failed'.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoint.subnet
+    name: subnet
+    fullName: subnet
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The ID of the subnet from which the private IP will be allocated.
+    optional: true
+    syntax:
+      content: 'subnet?: Subnet'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.Subnet
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoint.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoint.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: azure-arm-network - v13.0.0.EndpointService
+    name: EndpointService
+    spec.typeScript:
+      - name: EndpointService
+        fullName: EndpointService
+        uid: azure-arm-network - v13.0.0.EndpointService
+  - uid: 'azure-arm-network - v13.0.0.NetworkInterface[]'
+    name: 'NetworkInterface[]'
+    spec.typeScript:
+      - name: NetworkInterface
+        fullName: NetworkInterface
+        uid: azure-arm-network - v13.0.0.NetworkInterface
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.Subnet
+    name: Subnet
+    spec.typeScript:
+      - name: Subnet
+        fullName: Subnet
+        uid: azure-arm-network - v13.0.0.Subnet

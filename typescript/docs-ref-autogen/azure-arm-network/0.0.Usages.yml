@@ -1,0 +1,384 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.Usages
+    name: Usages
+    fullName: Usages
+    children:
+      - azure-arm-network - v13.0.0.Usages.list
+      - azure-arm-network - v13.0.0.Usages.list_2
+      - azure-arm-network - v13.0.0.Usages.list_1
+      - azure-arm-network - v13.0.0.Usages.listNext
+      - azure-arm-network - v13.0.0.Usages.listNext_2
+      - azure-arm-network - v13.0.0.Usages.listNext_1
+      - azure-arm-network - v13.0.0.Usages.listNextWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.Usages.listWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.Usages.list
+    name: 'list(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: List network usages for a subscription.
+    syntax:
+      content: 'function list(location: string, options?: Object)'
+      parameters:
+        - id: location
+          type:
+            - string
+          description: |
+            The location where resource usage is queried.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.UsagesListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {UsagesListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {UsagesListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link UsagesListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.Usages.list_2
+    name: 'list(string, Object, ServiceCallback<UsagesListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: List network usages for a subscription.
+    syntax:
+      content: >-
+        function list(location: string, options: Object, callback:
+        ServiceCallback<UsagesListResult>)
+      parameters:
+        - id: location
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.UsagesListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.UsagesListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {UsagesListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {UsagesListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link UsagesListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.Usages.list_1
+    name: 'list(string, ServiceCallback<UsagesListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: List network usages for a subscription.
+    syntax:
+      content: >-
+        function list(location: string, callback:
+        ServiceCallback<UsagesListResult>)
+      parameters:
+        - id: location
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.UsagesListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.UsagesListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {UsagesListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {UsagesListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link UsagesListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.Usages.listNext
+    name: 'listNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: List network usages for a subscription.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.UsagesListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {UsagesListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {UsagesListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link UsagesListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.Usages.listNext_2
+    name: 'listNext(string, Object, ServiceCallback<UsagesListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: List network usages for a subscription.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<UsagesListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.UsagesListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.UsagesListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {UsagesListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {UsagesListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link UsagesListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.Usages.listNext_1
+    name: 'listNext(string, ServiceCallback<UsagesListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: List network usages for a subscription.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<UsagesListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.UsagesListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.UsagesListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {UsagesListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {UsagesListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link UsagesListResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.Usages.listNextWithHttpOperationResponse
+    name: 'listNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: List network usages for a subscription.
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.UsagesListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.Usages.listWithHttpOperationResponse
+    name: 'listWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: List network usages for a subscription.
+    syntax:
+      content: >-
+        function listWithHttpOperationResponse(location: string, options?:
+        Object)
+      parameters:
+        - id: location
+          type:
+            - string
+          description: |
+            The location where resource usage is queried.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.UsagesListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+references:
+  - uid: Promise<azure-arm-network - v13.0.0.UsagesListResult>
+    name: UsagesListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: UsagesListResult
+        fullName: UsagesListResult
+        uid: azure-arm-network - v13.0.0.UsagesListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.UsagesListResult>
+    name: UsagesListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: UsagesListResult
+        fullName: UsagesListResult
+        uid: azure-arm-network - v13.0.0.UsagesListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.UsagesListResult>>
+    name: UsagesListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: UsagesListResult
+        fullName: UsagesListResult
+        uid: azure-arm-network - v13.0.0.UsagesListResult
+      - name: '>>'
+        fullName: '>>'

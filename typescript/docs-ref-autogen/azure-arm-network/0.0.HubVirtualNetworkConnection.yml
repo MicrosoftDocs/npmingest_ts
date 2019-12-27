@@ -1,0 +1,184 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.HubVirtualNetworkConnection
+    name: HubVirtualNetworkConnection
+    fullName: HubVirtualNetworkConnection
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.HubVirtualNetworkConnection.allowHubToRemoteVnetTransit
+      - >-
+        azure-arm-network -
+        v13.0.0.HubVirtualNetworkConnection.allowRemoteVnetToUseHubVnetGateways
+      - >-
+        azure-arm-network -
+        v13.0.0.HubVirtualNetworkConnection.enableInternetSecurity
+      - azure-arm-network - v13.0.0.HubVirtualNetworkConnection.etag
+      - azure-arm-network - v13.0.0.HubVirtualNetworkConnection.id
+      - azure-arm-network - v13.0.0.HubVirtualNetworkConnection.name
+      - >-
+        azure-arm-network -
+        v13.0.0.HubVirtualNetworkConnection.provisioningState
+      - >-
+        azure-arm-network -
+        v13.0.0.HubVirtualNetworkConnection.remoteVirtualNetwork
+    langs:
+      - typeScript
+    type: interface
+    summary: HubVirtualNetworkConnection Resource.
+    extends:
+      name: azure-arm-network - v13.0.0.SubResource
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.HubVirtualNetworkConnection.allowHubToRemoteVnetTransit
+    name: allowHubToRemoteVnetTransit
+    fullName: allowHubToRemoteVnetTransit
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: VirtualHub to RemoteVnet transit to enabled or not.
+    optional: true
+    syntax:
+      content: 'allowHubToRemoteVnetTransit?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.HubVirtualNetworkConnection.allowRemoteVnetToUseHubVnetGateways
+    name: allowRemoteVnetToUseHubVnetGateways
+    fullName: allowRemoteVnetToUseHubVnetGateways
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Allow RemoteVnet to use Virtual Hub's gateways.
+    optional: true
+    syntax:
+      content: 'allowRemoteVnetToUseHubVnetGateways?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.HubVirtualNetworkConnection.enableInternetSecurity
+    name: enableInternetSecurity
+    fullName: enableInternetSecurity
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Enable internet security
+    optional: true
+    syntax:
+      content: 'enableInternetSecurity?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.HubVirtualNetworkConnection.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Gets a unique read-only string that changes whenever the resource is
+      updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.HubVirtualNetworkConnection.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.HubVirtualNetworkConnection.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The name of the resource that is unique within a resource group. This name
+      can be used to
+
+      access the resource.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.HubVirtualNetworkConnection.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the resource. Possible values include:
+      'Succeeded', 'Updating',
+
+      'Deleting', 'Failed'
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.HubVirtualNetworkConnection.remoteVirtualNetwork
+    name: remoteVirtualNetwork
+    fullName: remoteVirtualNetwork
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Reference to the remote virtual network.
+    optional: true
+    syntax:
+      content: 'remoteVirtualNetwork?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource

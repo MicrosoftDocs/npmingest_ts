@@ -1,0 +1,1865 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnections
+    name: ExpressRouteCircuitConnections
+    fullName: ExpressRouteCircuitConnections
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.beginCreateOrUpdate
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.beginCreateOrUpdate_2
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.beginCreateOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.beginCreateOrUpdateWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.beginDeleteMethod
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.beginDeleteMethod_2
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.beginDeleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.beginDeleteMethodWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.createOrUpdate
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.createOrUpdate_2
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.createOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.createOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.deleteMethod
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.deleteMethod_2
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.deleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.deleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.get
+      - azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.get_2
+      - azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.get_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.getWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.list
+      - azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.list_2
+      - azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.list_1
+      - azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.listNext
+      - azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.listNext_2
+      - azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.listNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.listNextWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnections.listWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnections.beginCreateOrUpdate
+    name: >-
+      beginCreateOrUpdate(string, string, string, string,
+      ExpressRouteCircuitConnection, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a Express Route Circuit Connection in the specified
+      express route circuits.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, circuitName:
+        string, peeringName: string, connectionName: string,
+        expressRouteCircuitConnectionParameters: ExpressRouteCircuitConnection,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: circuitName
+          type:
+            - string
+          description: |
+            The name of the express route circuit.
+        - id: peeringName
+          type:
+            - string
+          description: |
+            The name of the peering.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the express route circuit
+            connection.
+        - id: expressRouteCircuitConnectionParameters
+          type:
+            - azure-arm-network - v13.0.0.ExpressRouteCircuitConnection
+          description: |
+            Parameters supplied
+            to the create or update express route circuit connection operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ExpressRouteCircuitConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteCircuitConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteCircuitConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteCircuitConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnections.beginCreateOrUpdate_2
+    name: >-
+      beginCreateOrUpdate(string, string, string, string,
+      ExpressRouteCircuitConnection, Object,
+      ServiceCallback<ExpressRouteCircuitConnection>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a Express Route Circuit Connection in the specified
+      express route circuits.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, circuitName:
+        string, peeringName: string, connectionName: string,
+        expressRouteCircuitConnectionParameters: ExpressRouteCircuitConnection,
+        options: Object, callback:
+        ServiceCallback<ExpressRouteCircuitConnection>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: peeringName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: expressRouteCircuitConnectionParameters
+          type:
+            - azure-arm-network - v13.0.0.ExpressRouteCircuitConnection
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ExpressRouteCircuitConnection>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ExpressRouteCircuitConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteCircuitConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteCircuitConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteCircuitConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnections.beginCreateOrUpdate_1
+    name: >-
+      beginCreateOrUpdate(string, string, string, string,
+      ExpressRouteCircuitConnection,
+      ServiceCallback<ExpressRouteCircuitConnection>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a Express Route Circuit Connection in the specified
+      express route circuits.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string, circuitName:
+        string, peeringName: string, connectionName: string,
+        expressRouteCircuitConnectionParameters: ExpressRouteCircuitConnection,
+        callback: ServiceCallback<ExpressRouteCircuitConnection>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: peeringName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: expressRouteCircuitConnectionParameters
+          type:
+            - azure-arm-network - v13.0.0.ExpressRouteCircuitConnection
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ExpressRouteCircuitConnection>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ExpressRouteCircuitConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteCircuitConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteCircuitConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteCircuitConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnections.beginCreateOrUpdateWithHttpOperationResponse
+    name: >-
+      beginCreateOrUpdateWithHttpOperationResponse(string, string, string,
+      string, ExpressRouteCircuitConnection, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a Express Route Circuit Connection in the specified
+      express route circuits.
+    syntax:
+      content: >-
+        function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, circuitName: string, peeringName: string, connectionName:
+        string, expressRouteCircuitConnectionParameters:
+        ExpressRouteCircuitConnection, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: circuitName
+          type:
+            - string
+          description: |
+            The name of the express route circuit.
+        - id: peeringName
+          type:
+            - string
+          description: |
+            The name of the peering.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the express route circuit
+            connection.
+        - id: expressRouteCircuitConnectionParameters
+          type:
+            - azure-arm-network - v13.0.0.ExpressRouteCircuitConnection
+          description: |
+            Parameters supplied
+            to the create or update express route circuit connection operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ExpressRouteCircuitConnection>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnections.beginDeleteMethod
+    name: 'beginDeleteMethod(string, string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Deletes the specified Express Route Circuit Connection from the specified
+      express route circuit.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, circuitName:
+        string, peeringName: string, connectionName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: circuitName
+          type:
+            - string
+          description: |
+            The name of the express route circuit.
+        - id: peeringName
+          type:
+            - string
+          description: |
+            The name of the peering.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the express route circuit
+            connection.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnections.beginDeleteMethod_2
+    name: >-
+      beginDeleteMethod(string, string, string, string, Object,
+      ServiceCallback<void>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Deletes the specified Express Route Circuit Connection from the specified
+      express route circuit.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, circuitName:
+        string, peeringName: string, connectionName: string, options: Object,
+        callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: peeringName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnections.beginDeleteMethod_1
+    name: 'beginDeleteMethod(string, string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Deletes the specified Express Route Circuit Connection from the specified
+      express route circuit.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, circuitName:
+        string, peeringName: string, connectionName: string, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: peeringName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnections.beginDeleteMethodWithHttpOperationResponse
+    name: >-
+      beginDeleteMethodWithHttpOperationResponse(string, string, string, string,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Deletes the specified Express Route Circuit Connection from the specified
+      express route circuit.
+    syntax:
+      content: >-
+        function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, circuitName: string, peeringName: string, connectionName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: circuitName
+          type:
+            - string
+          description: |
+            The name of the express route circuit.
+        - id: peeringName
+          type:
+            - string
+          description: |
+            The name of the peering.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the express route circuit
+            connection.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.createOrUpdate
+    name: >-
+      createOrUpdate(string, string, string, string,
+      ExpressRouteCircuitConnection, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a Express Route Circuit Connection in the specified
+      express route circuits.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, circuitName: string,
+        peeringName: string, connectionName: string,
+        expressRouteCircuitConnectionParameters: ExpressRouteCircuitConnection,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: circuitName
+          type:
+            - string
+          description: |
+            The name of the express route circuit.
+        - id: peeringName
+          type:
+            - string
+          description: |
+            The name of the peering.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the express route circuit
+            connection.
+        - id: expressRouteCircuitConnectionParameters
+          type:
+            - azure-arm-network - v13.0.0.ExpressRouteCircuitConnection
+          description: |
+            Parameters supplied
+            to the create or update express route circuit connection operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ExpressRouteCircuitConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteCircuitConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteCircuitConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteCircuitConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnections.createOrUpdate_2
+    name: >-
+      createOrUpdate(string, string, string, string,
+      ExpressRouteCircuitConnection, Object,
+      ServiceCallback<ExpressRouteCircuitConnection>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a Express Route Circuit Connection in the specified
+      express route circuits.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, circuitName: string,
+        peeringName: string, connectionName: string,
+        expressRouteCircuitConnectionParameters: ExpressRouteCircuitConnection,
+        options: Object, callback:
+        ServiceCallback<ExpressRouteCircuitConnection>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: peeringName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: expressRouteCircuitConnectionParameters
+          type:
+            - azure-arm-network - v13.0.0.ExpressRouteCircuitConnection
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ExpressRouteCircuitConnection>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ExpressRouteCircuitConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteCircuitConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteCircuitConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteCircuitConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnections.createOrUpdate_1
+    name: >-
+      createOrUpdate(string, string, string, string,
+      ExpressRouteCircuitConnection,
+      ServiceCallback<ExpressRouteCircuitConnection>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a Express Route Circuit Connection in the specified
+      express route circuits.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, circuitName: string,
+        peeringName: string, connectionName: string,
+        expressRouteCircuitConnectionParameters: ExpressRouteCircuitConnection,
+        callback: ServiceCallback<ExpressRouteCircuitConnection>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: peeringName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: expressRouteCircuitConnectionParameters
+          type:
+            - azure-arm-network - v13.0.0.ExpressRouteCircuitConnection
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ExpressRouteCircuitConnection>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ExpressRouteCircuitConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteCircuitConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteCircuitConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteCircuitConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnections.createOrUpdateWithHttpOperationResponse
+    name: >-
+      createOrUpdateWithHttpOperationResponse(string, string, string, string,
+      ExpressRouteCircuitConnection, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a Express Route Circuit Connection in the specified
+      express route circuits.
+    syntax:
+      content: >-
+        function createOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, circuitName: string, peeringName: string, connectionName:
+        string, expressRouteCircuitConnectionParameters:
+        ExpressRouteCircuitConnection, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: circuitName
+          type:
+            - string
+          description: |
+            The name of the express route circuit.
+        - id: peeringName
+          type:
+            - string
+          description: |
+            The name of the peering.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the express route circuit
+            connection.
+        - id: expressRouteCircuitConnectionParameters
+          type:
+            - azure-arm-network - v13.0.0.ExpressRouteCircuitConnection
+          description: |
+            Parameters supplied
+            to the create or update express route circuit connection operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ExpressRouteCircuitConnection>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.deleteMethod
+    name: 'deleteMethod(string, string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Deletes the specified Express Route Circuit Connection from the specified
+      express route circuit.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, circuitName: string,
+        peeringName: string, connectionName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: circuitName
+          type:
+            - string
+          description: |
+            The name of the express route circuit.
+        - id: peeringName
+          type:
+            - string
+          description: |
+            The name of the peering.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the express route circuit
+            connection.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.deleteMethod_2
+    name: >-
+      deleteMethod(string, string, string, string, Object,
+      ServiceCallback<void>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Deletes the specified Express Route Circuit Connection from the specified
+      express route circuit.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, circuitName: string,
+        peeringName: string, connectionName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: peeringName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.deleteMethod_1
+    name: 'deleteMethod(string, string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Deletes the specified Express Route Circuit Connection from the specified
+      express route circuit.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, circuitName: string,
+        peeringName: string, connectionName: string, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: peeringName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnections.deleteMethodWithHttpOperationResponse
+    name: >-
+      deleteMethodWithHttpOperationResponse(string, string, string, string,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Deletes the specified Express Route Circuit Connection from the specified
+      express route circuit.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, circuitName: string, peeringName: string, connectionName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: circuitName
+          type:
+            - string
+          description: |
+            The name of the express route circuit.
+        - id: peeringName
+          type:
+            - string
+          description: |
+            The name of the peering.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the express route circuit
+            connection.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.get
+    name: 'get(string, string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets the specified Express Route Circuit Connection from the specified
+      express route circuit.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, circuitName: string,
+        peeringName: string, connectionName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: circuitName
+          type:
+            - string
+          description: |
+            The name of the express route circuit.
+        - id: peeringName
+          type:
+            - string
+          description: |
+            The name of the peering.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the express route circuit
+            connection.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ExpressRouteCircuitConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteCircuitConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteCircuitConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteCircuitConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.get_2
+    name: >-
+      get(string, string, string, string, Object,
+      ServiceCallback<ExpressRouteCircuitConnection>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets the specified Express Route Circuit Connection from the specified
+      express route circuit.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, circuitName: string,
+        peeringName: string, connectionName: string, options: Object, callback:
+        ServiceCallback<ExpressRouteCircuitConnection>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: peeringName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ExpressRouteCircuitConnection>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ExpressRouteCircuitConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteCircuitConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteCircuitConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteCircuitConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.get_1
+    name: >-
+      get(string, string, string, string,
+      ServiceCallback<ExpressRouteCircuitConnection>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets the specified Express Route Circuit Connection from the specified
+      express route circuit.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, circuitName: string,
+        peeringName: string, connectionName: string, callback:
+        ServiceCallback<ExpressRouteCircuitConnection>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: peeringName
+          type:
+            - string
+          description: ''
+        - id: connectionName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ExpressRouteCircuitConnection>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ExpressRouteCircuitConnection>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteCircuitConnection} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteCircuitConnection} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteCircuitConnection} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnections.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets the specified Express Route Circuit Connection from the specified
+      express route circuit.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        circuitName: string, peeringName: string, connectionName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: circuitName
+          type:
+            - string
+          description: |
+            The name of the express route circuit.
+        - id: peeringName
+          type:
+            - string
+          description: |
+            The name of the peering.
+        - id: connectionName
+          type:
+            - string
+          description: |
+            The name of the express route circuit
+            connection.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ExpressRouteCircuitConnection>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.list
+    name: 'list(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets all global reach connections associated with a private peering in an
+      express route circuit.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, circuitName: string,
+        peeringName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: circuitName
+          type:
+            - string
+          description: |
+            The name of the circuit.
+        - id: peeringName
+          type:
+            - string
+          description: |
+            The name of the peering.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ExpressRouteCircuitConnectionListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteCircuitConnectionListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteCircuitConnectionListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteCircuitConnectionListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.list_2
+    name: >-
+      list(string, string, string, Object,
+      ServiceCallback<ExpressRouteCircuitConnectionListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets all global reach connections associated with a private peering in an
+      express route circuit.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, circuitName: string,
+        peeringName: string, options: Object, callback:
+        ServiceCallback<ExpressRouteCircuitConnectionListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: peeringName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ExpressRouteCircuitConnectionListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ExpressRouteCircuitConnectionListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteCircuitConnectionListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteCircuitConnectionListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteCircuitConnectionListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.list_1
+    name: >-
+      list(string, string, string,
+      ServiceCallback<ExpressRouteCircuitConnectionListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets all global reach connections associated with a private peering in an
+      express route circuit.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, circuitName: string,
+        peeringName: string, callback:
+        ServiceCallback<ExpressRouteCircuitConnectionListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: circuitName
+          type:
+            - string
+          description: ''
+        - id: peeringName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ExpressRouteCircuitConnectionListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ExpressRouteCircuitConnectionListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteCircuitConnectionListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteCircuitConnectionListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteCircuitConnectionListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.listNext
+    name: 'listNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets all global reach connections associated with a private peering in an
+      express route circuit.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ExpressRouteCircuitConnectionListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteCircuitConnectionListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteCircuitConnectionListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteCircuitConnectionListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.listNext_2
+    name: >-
+      listNext(string, Object,
+      ServiceCallback<ExpressRouteCircuitConnectionListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets all global reach connections associated with a private peering in an
+      express route circuit.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<ExpressRouteCircuitConnectionListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ExpressRouteCircuitConnectionListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ExpressRouteCircuitConnectionListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteCircuitConnectionListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteCircuitConnectionListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteCircuitConnectionListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnections.listNext_1
+    name: 'listNext(string, ServiceCallback<ExpressRouteCircuitConnectionListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets all global reach connections associated with a private peering in an
+      express route circuit.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<ExpressRouteCircuitConnectionListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ExpressRouteCircuitConnectionListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ExpressRouteCircuitConnectionListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ExpressRouteCircuitConnectionListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ExpressRouteCircuitConnectionListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ExpressRouteCircuitConnectionListResult} for
+                               more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnections.listNextWithHttpOperationResponse
+    name: 'listNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets all global reach connections associated with a private peering in an
+      express route circuit.
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ExpressRouteCircuitConnectionListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnections.listWithHttpOperationResponse
+    name: 'listWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets all global reach connections associated with a private peering in an
+      express route circuit.
+    syntax:
+      content: >-
+        function listWithHttpOperationResponse(resourceGroupName: string,
+        circuitName: string, peeringName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: circuitName
+          type:
+            - string
+          description: |
+            The name of the circuit.
+        - id: peeringName
+          type:
+            - string
+          description: |
+            The name of the peering.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ExpressRouteCircuitConnectionListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnection
+    name: ExpressRouteCircuitConnection
+    spec.typeScript:
+      - name: ExpressRouteCircuitConnection
+        fullName: ExpressRouteCircuitConnection
+        uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnection
+  - uid: Promise<azure-arm-network - v13.0.0.ExpressRouteCircuitConnection>
+    name: ExpressRouteCircuitConnection>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteCircuitConnection
+        fullName: ExpressRouteCircuitConnection
+        uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnection
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.ExpressRouteCircuitConnection>
+    name: ExpressRouteCircuitConnection>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteCircuitConnection
+        fullName: ExpressRouteCircuitConnection
+        uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnection
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnection>>
+    name: ExpressRouteCircuitConnection>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ExpressRouteCircuitConnection
+        fullName: ExpressRouteCircuitConnection
+        uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnection
+      - name: '>>'
+        fullName: '>>'
+  - uid: >-
+      Promise<azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnectionListResult>
+    name: ExpressRouteCircuitConnectionListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ExpressRouteCircuitConnectionListResult
+        fullName: ExpressRouteCircuitConnectionListResult
+        uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnectionListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnectionListResult>
+    name: ExpressRouteCircuitConnectionListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ExpressRouteCircuitConnectionListResult
+        fullName: ExpressRouteCircuitConnectionListResult
+        uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnectionListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnectionListResult>>
+    name: ExpressRouteCircuitConnectionListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ExpressRouteCircuitConnectionListResult
+        fullName: ExpressRouteCircuitConnectionListResult
+        uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnectionListResult
+      - name: '>>'
+        fullName: '>>'

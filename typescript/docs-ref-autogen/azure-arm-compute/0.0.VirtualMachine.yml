@@ -1,0 +1,490 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine
+    name: VirtualMachine
+    fullName: VirtualMachine
+    children:
+      - azure-arm-compute - v10.0.0.VirtualMachine.additionalCapabilities
+      - azure-arm-compute - v10.0.0.VirtualMachine.availabilitySet
+      - azure-arm-compute - v10.0.0.VirtualMachine.diagnosticsProfile
+      - azure-arm-compute - v10.0.0.VirtualMachine.hardwareProfile
+      - azure-arm-compute - v10.0.0.VirtualMachine.id
+      - azure-arm-compute - v10.0.0.VirtualMachine.identity
+      - azure-arm-compute - v10.0.0.VirtualMachine.instanceView
+      - azure-arm-compute - v10.0.0.VirtualMachine.licenseType
+      - azure-arm-compute - v10.0.0.VirtualMachine.location
+      - azure-arm-compute - v10.0.0.VirtualMachine.name
+      - azure-arm-compute - v10.0.0.VirtualMachine.networkProfile
+      - azure-arm-compute - v10.0.0.VirtualMachine.osProfile
+      - azure-arm-compute - v10.0.0.VirtualMachine.plan
+      - azure-arm-compute - v10.0.0.VirtualMachine.provisioningState
+      - azure-arm-compute - v10.0.0.VirtualMachine.resources
+      - azure-arm-compute - v10.0.0.VirtualMachine.storageProfile
+      - azure-arm-compute - v10.0.0.VirtualMachine.tags
+      - azure-arm-compute - v10.0.0.VirtualMachine.type
+      - azure-arm-compute - v10.0.0.VirtualMachine.vmId
+      - azure-arm-compute - v10.0.0.VirtualMachine.zones
+    langs:
+      - typeScript
+    type: interface
+    summary: Describes a Virtual Machine.
+    extends:
+      name: azure-arm-compute - v10.0.0.Resource
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.additionalCapabilities
+    name: additionalCapabilities
+    fullName: additionalCapabilities
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies additional capabilities enabled or disabled on the virtual
+      machine.
+    optional: true
+    syntax:
+      content: 'additionalCapabilities?: AdditionalCapabilities'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.AdditionalCapabilities
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.availabilitySet
+    name: availabilitySet
+    fullName: availabilitySet
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies information about the availability set that the virtual machine
+      should be assigned
+
+      to. Virtual machines specified in the same availability set are allocated
+      to different nodes
+
+      to maximize availability. For more information about availability sets,
+      see [Manage the
+
+      availability of virtual
+
+      machines](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-manage-availability?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json).
+
+      <br><br> For more information on Azure planned maintenance, see [Planned
+      maintenance for
+
+      virtual machines in
+
+      Azure](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-planned-maintenance?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json)
+
+      <br><br> Currently, a VM can only be added to availability set at creation
+      time. An existing
+
+      VM cannot be added to an availability set.
+    optional: true
+    syntax:
+      content: 'availabilitySet?: SubResource'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.SubResource
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.diagnosticsProfile
+    name: diagnosticsProfile
+    fullName: diagnosticsProfile
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the boot diagnostic settings state. <br><br>Minimum api-version:
+      2015-06-15.
+    optional: true
+    syntax:
+      content: 'diagnosticsProfile?: DiagnosticsProfile'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.DiagnosticsProfile
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.hardwareProfile
+    name: hardwareProfile
+    fullName: hardwareProfile
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies the hardware settings for the virtual machine.
+    optional: true
+    syntax:
+      content: 'hardwareProfile?: HardwareProfile'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.HardwareProfile
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.identity
+    name: identity
+    fullName: identity
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The identity of the virtual machine, if configured.'
+    optional: true
+    syntax:
+      content: 'identity?: VirtualMachineIdentity'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.VirtualMachineIdentity
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.instanceView
+    name: instanceView
+    fullName: instanceView
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The virtual machine instance view.
+    optional: true
+    syntax:
+      content: 'instanceView?: VirtualMachineInstanceView'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.VirtualMachineInstanceView
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.licenseType
+    name: licenseType
+    fullName: licenseType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies that the image or disk that is being used was licensed
+      on-premises. This element is
+
+      only used for images that contain the Windows Server operating system.
+      <br><br> Possible
+
+      values are: <br><br> Windows_Client <br><br> Windows_Server <br><br> If
+      this element is
+
+      included in a request for an update, the value must match the initial
+      value. This value cannot
+
+      be updated. <br><br> For more information, see [Azure Hybrid Use Benefit
+      for Windows
+
+      Server](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json)
+
+      <br><br> Minimum api-version: 2015-06-15
+    optional: true
+    syntax:
+      content: 'licenseType?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location
+    syntax:
+      content: 'location: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.networkProfile
+    name: networkProfile
+    fullName: networkProfile
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies the network interfaces of the virtual machine.
+    optional: true
+    syntax:
+      content: 'networkProfile?: NetworkProfile'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.NetworkProfile
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.osProfile
+    name: osProfile
+    fullName: osProfile
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies the operating system settings for the virtual machine.
+    optional: true
+    syntax:
+      content: 'osProfile?: OSProfile'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.OSProfile
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.plan
+    name: plan
+    fullName: plan
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies information about the marketplace image used to create the
+      virtual machine. This
+
+      element is only used for marketplace images. Before you can use a
+      marketplace image from an
+
+      API, you must enable the image for programmatic use.  In the Azure portal,
+      find the
+
+      marketplace image that you want to use and then click **Want to deploy
+      programmatically, Get
+
+      Started ->**. Enter any required information and then click **Save**.
+    optional: true
+    syntax:
+      content: 'plan?: Plan'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.Plan
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The provisioning state, which only appears in the response.'
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.resources
+    name: resources
+    fullName: resources
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The virtual machine child extension resources.
+    optional: true
+    syntax:
+      content: 'resources?: VirtualMachineExtension[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.VirtualMachineExtension[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.storageProfile
+    name: storageProfile
+    fullName: storageProfile
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies the storage settings for the virtual machine disks.
+    optional: true
+    syntax:
+      content: 'storageProfile?: StorageProfile'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.StorageProfile
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.vmId
+    name: vmId
+    fullName: vmId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the VM unique ID which is a 128-bits identifier that is encoded
+      and stored in all
+
+      Azure IaaS VMs SMBIOS and can be read using platform BIOS commands.
+    optional: true
+    syntax:
+      content: 'vmId?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachine.zones
+    name: zones
+    fullName: zones
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The virtual machine zones.
+    optional: true
+    syntax:
+      content: 'zones?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-compute - v10.0.0.Resource
+  - uid: azure-arm-compute - v10.0.0.AdditionalCapabilities
+    name: AdditionalCapabilities
+    spec.typeScript:
+      - name: AdditionalCapabilities
+        fullName: AdditionalCapabilities
+        uid: azure-arm-compute - v10.0.0.AdditionalCapabilities
+  - uid: azure-arm-compute - v10.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute - v10.0.0.SubResource
+  - uid: azure-arm-compute - v10.0.0.DiagnosticsProfile
+    name: DiagnosticsProfile
+    spec.typeScript:
+      - name: DiagnosticsProfile
+        fullName: DiagnosticsProfile
+        uid: azure-arm-compute - v10.0.0.DiagnosticsProfile
+  - uid: azure-arm-compute - v10.0.0.HardwareProfile
+    name: HardwareProfile
+    spec.typeScript:
+      - name: HardwareProfile
+        fullName: HardwareProfile
+        uid: azure-arm-compute - v10.0.0.HardwareProfile
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineIdentity
+    name: VirtualMachineIdentity
+    spec.typeScript:
+      - name: VirtualMachineIdentity
+        fullName: VirtualMachineIdentity
+        uid: azure-arm-compute - v10.0.0.VirtualMachineIdentity
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineInstanceView
+    name: VirtualMachineInstanceView
+    spec.typeScript:
+      - name: VirtualMachineInstanceView
+        fullName: VirtualMachineInstanceView
+        uid: azure-arm-compute - v10.0.0.VirtualMachineInstanceView
+  - uid: azure-arm-compute - v10.0.0.NetworkProfile
+    name: NetworkProfile
+    spec.typeScript:
+      - name: NetworkProfile
+        fullName: NetworkProfile
+        uid: azure-arm-compute - v10.0.0.NetworkProfile
+  - uid: azure-arm-compute - v10.0.0.OSProfile
+    name: OSProfile
+    spec.typeScript:
+      - name: OSProfile
+        fullName: OSProfile
+        uid: azure-arm-compute - v10.0.0.OSProfile
+  - uid: azure-arm-compute - v10.0.0.Plan
+    name: Plan
+    spec.typeScript:
+      - name: Plan
+        fullName: Plan
+        uid: azure-arm-compute - v10.0.0.Plan
+  - uid: 'azure-arm-compute - v10.0.0.VirtualMachineExtension[]'
+    name: 'VirtualMachineExtension[]'
+    spec.typeScript:
+      - name: VirtualMachineExtension
+        fullName: VirtualMachineExtension
+        uid: azure-arm-compute - v10.0.0.VirtualMachineExtension
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute - v10.0.0.StorageProfile
+    name: StorageProfile
+    spec.typeScript:
+      - name: StorageProfile
+        fullName: StorageProfile
+        uid: azure-arm-compute - v10.0.0.StorageProfile

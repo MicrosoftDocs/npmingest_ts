@@ -1,0 +1,126 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.PacketCapture
+    name: PacketCapture
+    fullName: PacketCapture
+    children:
+      - azure-arm-network - v13.0.0.PacketCapture.bytesToCapturePerPacket
+      - azure-arm-network - v13.0.0.PacketCapture.filters
+      - azure-arm-network - v13.0.0.PacketCapture.storageLocation
+      - azure-arm-network - v13.0.0.PacketCapture.target
+      - azure-arm-network - v13.0.0.PacketCapture.timeLimitInSeconds
+      - azure-arm-network - v13.0.0.PacketCapture.totalBytesPerSession
+    langs:
+      - typeScript
+    type: interface
+    summary: Parameters that define the create packet capture operation.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PacketCapture.bytesToCapturePerPacket
+    name: bytesToCapturePerPacket
+    fullName: bytesToCapturePerPacket
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'Number of bytes captured per packet, the remaining bytes are truncated.'
+    optional: true
+    syntax:
+      content: 'bytesToCapturePerPacket?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PacketCapture.filters
+    name: filters
+    fullName: filters
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A list of packet capture filters.
+    optional: true
+    syntax:
+      content: 'filters?: PacketCaptureFilter[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.PacketCaptureFilter[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PacketCapture.storageLocation
+    name: storageLocation
+    fullName: storageLocation
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Describes the storage location for a packet capture session.
+    syntax:
+      content: 'storageLocation: PacketCaptureStorageLocation'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.PacketCaptureStorageLocation
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PacketCapture.target
+    name: target
+    fullName: target
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The ID of the targeted resource, only VM is currently supported.'
+    syntax:
+      content: 'target: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PacketCapture.timeLimitInSeconds
+    name: timeLimitInSeconds
+    fullName: timeLimitInSeconds
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Maximum duration of the capture session in seconds.
+    optional: true
+    syntax:
+      content: 'timeLimitInSeconds?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.PacketCapture.totalBytesPerSession
+    name: totalBytesPerSession
+    fullName: totalBytesPerSession
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Maximum size of the capture output.
+    optional: true
+    syntax:
+      content: 'totalBytesPerSession?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: 'azure-arm-network - v13.0.0.PacketCaptureFilter[]'
+    name: 'PacketCaptureFilter[]'
+    spec.typeScript:
+      - name: PacketCaptureFilter
+        fullName: PacketCaptureFilter
+        uid: azure-arm-network - v13.0.0.PacketCaptureFilter
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.PacketCaptureStorageLocation
+    name: PacketCaptureStorageLocation
+    spec.typeScript:
+      - name: PacketCaptureStorageLocation
+        fullName: PacketCaptureStorageLocation
+        uid: azure-arm-network - v13.0.0.PacketCaptureStorageLocation

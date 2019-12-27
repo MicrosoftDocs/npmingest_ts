@@ -1,0 +1,147 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch - v5.0.0.Application
+    name: Application
+    fullName: Application
+    children:
+      - azure-arm-batch - v5.0.0.Application.allowUpdates
+      - azure-arm-batch - v5.0.0.Application.defaultVersion
+      - azure-arm-batch - v5.0.0.Application.displayName
+      - azure-arm-batch - v5.0.0.Application.etag
+      - azure-arm-batch - v5.0.0.Application.id
+      - azure-arm-batch - v5.0.0.Application.name
+      - azure-arm-batch - v5.0.0.Application.type
+    langs:
+      - typeScript
+    type: interface
+    summary: Contains information about an application in a Batch account.
+    extends:
+      name: azure-arm-batch - v5.0.0.ProxyResource
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Application.allowUpdates
+    name: allowUpdates
+    fullName: allowUpdates
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      A value indicating whether packages within the application may be
+      overwritten using the same
+
+      version string.
+    optional: true
+    syntax:
+      content: 'allowUpdates?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Application.defaultVersion
+    name: defaultVersion
+    fullName: defaultVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The package to use if a client requests the application but does not
+      specify a version. This
+
+      property can only be set to the name of an existing package.
+    optional: true
+    syntax:
+      content: 'defaultVersion?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Application.displayName
+    name: displayName
+    fullName: displayName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The display name for the application.
+    optional: true
+    syntax:
+      content: 'displayName?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Application.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The ETag of the resource, used for concurrency statements.'
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Application.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The ID of the resource.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Application.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The name of the resource.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Application.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The type of the resource.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+references:
+  - uid: azure-arm-batch - v5.0.0.ProxyResource
+    name: ProxyResource
+    spec.typeScript:
+      - name: ProxyResource
+        fullName: ProxyResource
+        uid: azure-arm-batch - v5.0.0.ProxyResource

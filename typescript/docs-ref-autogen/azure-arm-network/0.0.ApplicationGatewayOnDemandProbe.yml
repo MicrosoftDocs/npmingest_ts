@@ -1,0 +1,182 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayOnDemandProbe
+    name: ApplicationGatewayOnDemandProbe
+    fullName: ApplicationGatewayOnDemandProbe
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayOnDemandProbe.backendHttpSettingName
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayOnDemandProbe.backendPoolName
+      - azure-arm-network - v13.0.0.ApplicationGatewayOnDemandProbe.host
+      - azure-arm-network - v13.0.0.ApplicationGatewayOnDemandProbe.match
+      - azure-arm-network - v13.0.0.ApplicationGatewayOnDemandProbe.path
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayOnDemandProbe.pickHostNameFromBackendHttpSettings
+      - azure-arm-network - v13.0.0.ApplicationGatewayOnDemandProbe.protocol
+      - azure-arm-network - v13.0.0.ApplicationGatewayOnDemandProbe.timeout
+    langs:
+      - typeScript
+    type: interface
+    summary: Details of on demand test probe request
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayOnDemandProbe.backendHttpSettingName
+    name: backendHttpSettingName
+    fullName: backendHttpSettingName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Name of backend http setting of application gateway to be used for test
+      probe
+    optional: true
+    syntax:
+      content: 'backendHttpSettingName?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayOnDemandProbe.backendPoolName
+    name: backendPoolName
+    fullName: backendPoolName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Name of backend pool of application gateway to which probe request will be
+      sent.
+    optional: true
+    syntax:
+      content: 'backendPoolName?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayOnDemandProbe.host
+    name: host
+    fullName: host
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Host name to send the probe to.
+    optional: true
+    syntax:
+      content: 'host?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayOnDemandProbe.match
+    name: match
+    fullName: match
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Criterion for classifying a healthy probe response.
+    optional: true
+    syntax:
+      content: 'match?: ApplicationGatewayProbeHealthResponseMatch'
+      return:
+        type:
+          - >-
+            azure-arm-network -
+            v13.0.0.ApplicationGatewayProbeHealthResponseMatch
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayOnDemandProbe.path
+    name: path
+    fullName: path
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      Relative path of probe. Valid path starts from '/'. Probe is sent to
+      <Protocol>://<host>:<port><path>
+    optional: true
+    syntax:
+      content: 'path?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayOnDemandProbe.pickHostNameFromBackendHttpSettings
+    name: pickHostNameFromBackendHttpSettings
+    fullName: pickHostNameFromBackendHttpSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Whether the host header should be picked from the backend http settings.
+      Default value is
+
+      false.
+    optional: true
+    syntax:
+      content: 'pickHostNameFromBackendHttpSettings?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayOnDemandProbe.protocol
+    name: protocol
+    fullName: protocol
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The protocol used for the probe. Possible values include: ''Http'', ''Https'''
+    optional: true
+    syntax:
+      content: 'protocol?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayOnDemandProbe.timeout
+    name: timeout
+    fullName: timeout
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The probe timeout in seconds. Probe marked as failed if valid response is
+      not received with
+
+      this timeout period. Acceptable values are from 1 second to 86400 seconds.
+    optional: true
+    syntax:
+      content: 'timeout?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayProbeHealthResponseMatch
+    name: ApplicationGatewayProbeHealthResponseMatch
+    spec.typeScript:
+      - name: ApplicationGatewayProbeHealthResponseMatch
+        fullName: ApplicationGatewayProbeHealthResponseMatch
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayProbeHealthResponseMatch

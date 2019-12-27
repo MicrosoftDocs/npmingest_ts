@@ -1,0 +1,2351 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups
+    name: ApplicationSecurityGroups
+    fullName: ApplicationSecurityGroups
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationSecurityGroups.beginCreateOrUpdate
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationSecurityGroups.beginCreateOrUpdate_2
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationSecurityGroups.beginCreateOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationSecurityGroups.beginCreateOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.beginDeleteMethod
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationSecurityGroups.beginDeleteMethod_2
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationSecurityGroups.beginDeleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationSecurityGroups.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.beginUpdateTags
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.beginUpdateTags_2
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.beginUpdateTags_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationSecurityGroups.beginUpdateTagsWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.createOrUpdate
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.createOrUpdate_2
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.createOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationSecurityGroups.createOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.deleteMethod
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.deleteMethod_2
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.deleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationSecurityGroups.deleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.get
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.get_2
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.get_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationSecurityGroups.getWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.list
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.list_2
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.list_1
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.listAll
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.listAll_2
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.listAll_1
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.listAllNext
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.listAllNext_2
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.listAllNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationSecurityGroups.listAllNextWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationSecurityGroups.listAllWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.listNext
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.listNext_2
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.listNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationSecurityGroups.listNextWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationSecurityGroups.listWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.updateTags
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.updateTags_2
+      - azure-arm-network - v13.0.0.ApplicationSecurityGroups.updateTags_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationSecurityGroups.updateTagsWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.beginCreateOrUpdate
+    name: 'beginCreateOrUpdate(string, string, ApplicationSecurityGroup, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an application security group.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        applicationSecurityGroupName: string, parameters:
+        ApplicationSecurityGroup, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the application
+            security group.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.ApplicationSecurityGroup
+          description: |
+            Parameters supplied to the create or update
+            ApplicationSecurityGroup operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationSecurityGroups.beginCreateOrUpdate_2
+    name: >-
+      beginCreateOrUpdate(string, string, ApplicationSecurityGroup, Object,
+      ServiceCallback<ApplicationSecurityGroup>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an application security group.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        applicationSecurityGroupName: string, parameters:
+        ApplicationSecurityGroup, options: Object, callback:
+        ServiceCallback<ApplicationSecurityGroup>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.ApplicationSecurityGroup
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroup>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationSecurityGroups.beginCreateOrUpdate_1
+    name: >-
+      beginCreateOrUpdate(string, string, ApplicationSecurityGroup,
+      ServiceCallback<ApplicationSecurityGroup>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an application security group.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        applicationSecurityGroupName: string, parameters:
+        ApplicationSecurityGroup, callback:
+        ServiceCallback<ApplicationSecurityGroup>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.ApplicationSecurityGroup
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroup>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationSecurityGroups.beginCreateOrUpdateWithHttpOperationResponse
+    name: >-
+      beginCreateOrUpdateWithHttpOperationResponse(string, string,
+      ApplicationSecurityGroup, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an application security group.
+    syntax:
+      content: >-
+        function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, applicationSecurityGroupName: string, parameters:
+        ApplicationSecurityGroup, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the application
+            security group.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.ApplicationSecurityGroup
+          description: |
+            Parameters supplied to the create or update
+            ApplicationSecurityGroup operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroup>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.beginDeleteMethod
+    name: 'beginDeleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified application security group.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        applicationSecurityGroupName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the application
+            security group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.beginDeleteMethod_2
+    name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified application security group.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        applicationSecurityGroupName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.beginDeleteMethod_1
+    name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified application security group.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        applicationSecurityGroupName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationSecurityGroups.beginDeleteMethodWithHttpOperationResponse
+    name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified application security group.
+    syntax:
+      content: >-
+        function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, applicationSecurityGroupName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the application
+            security group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.beginUpdateTags
+    name: 'beginUpdateTags(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates an application security group's tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        applicationSecurityGroupName: string, parameters: TagsObject, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the application
+            security group.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to update application
+            security group tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.beginUpdateTags_2
+    name: >-
+      beginUpdateTags(string, string, TagsObject, Object,
+      ServiceCallback<ApplicationSecurityGroup>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates an application security group's tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        applicationSecurityGroupName: string, parameters: TagsObject, options:
+        Object, callback: ServiceCallback<ApplicationSecurityGroup>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroup>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.beginUpdateTags_1
+    name: >-
+      beginUpdateTags(string, string, TagsObject,
+      ServiceCallback<ApplicationSecurityGroup>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates an application security group's tags.
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        applicationSecurityGroupName: string, parameters: TagsObject, callback:
+        ServiceCallback<ApplicationSecurityGroup>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroup>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationSecurityGroups.beginUpdateTagsWithHttpOperationResponse
+    name: >-
+      beginUpdateTagsWithHttpOperationResponse(string, string, TagsObject,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates an application security group's tags.
+    syntax:
+      content: >-
+        function beginUpdateTagsWithHttpOperationResponse(resourceGroupName:
+        string, applicationSecurityGroupName: string, parameters: TagsObject,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the application
+            security group.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to update application
+            security group tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroup>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.createOrUpdate
+    name: 'createOrUpdate(string, string, ApplicationSecurityGroup, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an application security group.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        applicationSecurityGroupName: string, parameters:
+        ApplicationSecurityGroup, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the application
+            security group.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.ApplicationSecurityGroup
+          description: |
+            Parameters supplied to the create or update
+            ApplicationSecurityGroup operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.createOrUpdate_2
+    name: >-
+      createOrUpdate(string, string, ApplicationSecurityGroup, Object,
+      ServiceCallback<ApplicationSecurityGroup>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an application security group.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        applicationSecurityGroupName: string, parameters:
+        ApplicationSecurityGroup, options: Object, callback:
+        ServiceCallback<ApplicationSecurityGroup>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.ApplicationSecurityGroup
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroup>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.createOrUpdate_1
+    name: >-
+      createOrUpdate(string, string, ApplicationSecurityGroup,
+      ServiceCallback<ApplicationSecurityGroup>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an application security group.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        applicationSecurityGroupName: string, parameters:
+        ApplicationSecurityGroup, callback:
+        ServiceCallback<ApplicationSecurityGroup>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.ApplicationSecurityGroup
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroup>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationSecurityGroups.createOrUpdateWithHttpOperationResponse
+    name: >-
+      createOrUpdateWithHttpOperationResponse(string, string,
+      ApplicationSecurityGroup, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an application security group.
+    syntax:
+      content: >-
+        function createOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, applicationSecurityGroupName: string, parameters:
+        ApplicationSecurityGroup, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the application
+            security group.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.ApplicationSecurityGroup
+          description: |
+            Parameters supplied to the create or update
+            ApplicationSecurityGroup operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroup>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.deleteMethod
+    name: 'deleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified application security group.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string,
+        applicationSecurityGroupName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the application
+            security group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.deleteMethod_2
+    name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified application security group.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string,
+        applicationSecurityGroupName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.deleteMethod_1
+    name: 'deleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified application security group.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string,
+        applicationSecurityGroupName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationSecurityGroups.deleteMethodWithHttpOperationResponse
+    name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified application security group.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, applicationSecurityGroupName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the application
+            security group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.get
+    name: 'get(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified application security group.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, applicationSecurityGroupName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the application
+            security group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.get_2
+    name: 'get(string, string, Object, ServiceCallback<ApplicationSecurityGroup>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified application security group.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, applicationSecurityGroupName:
+        string, options: Object, callback:
+        ServiceCallback<ApplicationSecurityGroup>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroup>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.get_1
+    name: 'get(string, string, ServiceCallback<ApplicationSecurityGroup>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified application security group.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, applicationSecurityGroupName:
+        string, callback: ServiceCallback<ApplicationSecurityGroup>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroup>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationSecurityGroups.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified application security group.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        applicationSecurityGroupName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the application
+            security group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroup>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.list
+    name: 'list(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the application security groups in a resource group.
+    syntax:
+      content: 'function list(resourceGroupName: string, options?: Object)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.list_2
+    name: 'list(string, Object, ServiceCallback<ApplicationSecurityGroupListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the application security groups in a resource group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, options: Object, callback:
+        ServiceCallback<ApplicationSecurityGroupListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroupListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.list_1
+    name: 'list(string, ServiceCallback<ApplicationSecurityGroupListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the application security groups in a resource group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, callback:
+        ServiceCallback<ApplicationSecurityGroupListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroupListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.listAll
+    name: listAll(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all application security groups in a subscription.
+    syntax:
+      content: 'function listAll(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.listAll_2
+    name: 'listAll(Object, ServiceCallback<ApplicationSecurityGroupListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all application security groups in a subscription.
+    syntax:
+      content: >-
+        function listAll(options: Object, callback:
+        ServiceCallback<ApplicationSecurityGroupListResult>)
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroupListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.listAll_1
+    name: listAll(ServiceCallback<ApplicationSecurityGroupListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all application security groups in a subscription.
+    syntax:
+      content: >-
+        function listAll(callback:
+        ServiceCallback<ApplicationSecurityGroupListResult>)
+      parameters:
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroupListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.listAllNext
+    name: 'listAllNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all application security groups in a subscription.
+    syntax:
+      content: 'function listAllNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.listAllNext_2
+    name: >-
+      listAllNext(string, Object,
+      ServiceCallback<ApplicationSecurityGroupListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all application security groups in a subscription.
+    syntax:
+      content: >-
+        function listAllNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<ApplicationSecurityGroupListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroupListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.listAllNext_1
+    name: 'listAllNext(string, ServiceCallback<ApplicationSecurityGroupListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all application security groups in a subscription.
+    syntax:
+      content: >-
+        function listAllNext(nextPageLink: string, callback:
+        ServiceCallback<ApplicationSecurityGroupListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroupListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationSecurityGroups.listAllNextWithHttpOperationResponse
+    name: 'listAllNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all application security groups in a subscription.
+    syntax:
+      content: >-
+        function listAllNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroupListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationSecurityGroups.listAllWithHttpOperationResponse
+    name: listAllWithHttpOperationResponse(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all application security groups in a subscription.
+    syntax:
+      content: 'function listAllWithHttpOperationResponse(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroupListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.listNext
+    name: 'listNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the application security groups in a resource group.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.listNext_2
+    name: >-
+      listNext(string, Object,
+      ServiceCallback<ApplicationSecurityGroupListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the application security groups in a resource group.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<ApplicationSecurityGroupListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroupListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.listNext_1
+    name: 'listNext(string, ServiceCallback<ApplicationSecurityGroupListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the application security groups in a resource group.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<ApplicationSecurityGroupListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroupListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroupListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroupListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroupListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroupListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationSecurityGroups.listNextWithHttpOperationResponse
+    name: 'listNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the application security groups in a resource group.
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroupListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationSecurityGroups.listWithHttpOperationResponse
+    name: 'listWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the application security groups in a resource group.
+    syntax:
+      content: >-
+        function listWithHttpOperationResponse(resourceGroupName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroupListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.updateTags
+    name: 'updateTags(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates an application security group's tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string,
+        applicationSecurityGroupName: string, parameters: TagsObject, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the application
+            security group.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to update application
+            security group tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.updateTags_2
+    name: >-
+      updateTags(string, string, TagsObject, Object,
+      ServiceCallback<ApplicationSecurityGroup>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates an application security group's tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string,
+        applicationSecurityGroupName: string, parameters: TagsObject, options:
+        Object, callback: ServiceCallback<ApplicationSecurityGroup>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroup>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroups.updateTags_1
+    name: >-
+      updateTags(string, string, TagsObject,
+      ServiceCallback<ApplicationSecurityGroup>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates an application security group's tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string,
+        applicationSecurityGroupName: string, parameters: TagsObject, callback:
+        ServiceCallback<ApplicationSecurityGroup>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ApplicationSecurityGroup>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ApplicationSecurityGroup} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ApplicationSecurityGroup} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ApplicationSecurityGroup} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationSecurityGroups.updateTagsWithHttpOperationResponse
+    name: 'updateTagsWithHttpOperationResponse(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates an application security group's tags.
+    syntax:
+      content: >-
+        function updateTagsWithHttpOperationResponse(resourceGroupName: string,
+        applicationSecurityGroupName: string, parameters: TagsObject, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: applicationSecurityGroupName
+          type:
+            - string
+          description: |
+            The name of the application
+            security group.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to update application
+            security group tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ApplicationSecurityGroup>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.ApplicationSecurityGroup
+    name: ApplicationSecurityGroup
+    spec.typeScript:
+      - name: ApplicationSecurityGroup
+        fullName: ApplicationSecurityGroup
+        uid: azure-arm-network - v13.0.0.ApplicationSecurityGroup
+  - uid: Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+    name: ApplicationSecurityGroup>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ApplicationSecurityGroup
+        fullName: ApplicationSecurityGroup
+        uid: azure-arm-network - v13.0.0.ApplicationSecurityGroup
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.ApplicationSecurityGroup>
+    name: ApplicationSecurityGroup>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ApplicationSecurityGroup
+        fullName: ApplicationSecurityGroup
+        uid: azure-arm-network - v13.0.0.ApplicationSecurityGroup
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.ApplicationSecurityGroup>>
+    name: ApplicationSecurityGroup>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ApplicationSecurityGroup
+        fullName: ApplicationSecurityGroup
+        uid: azure-arm-network - v13.0.0.ApplicationSecurityGroup
+      - name: '>>'
+        fullName: '>>'
+  - uid: azure-arm-network - v13.0.0.TagsObject
+    name: TagsObject
+    spec.typeScript:
+      - name: TagsObject
+        fullName: TagsObject
+        uid: azure-arm-network - v13.0.0.TagsObject
+  - uid: Promise<azure-arm-network - v13.0.0.ApplicationSecurityGroupListResult>
+    name: ApplicationSecurityGroupListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ApplicationSecurityGroupListResult
+        fullName: ApplicationSecurityGroupListResult
+        uid: azure-arm-network - v13.0.0.ApplicationSecurityGroupListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network -
+      v13.0.0.ApplicationSecurityGroupListResult>
+    name: ApplicationSecurityGroupListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ApplicationSecurityGroupListResult
+        fullName: ApplicationSecurityGroupListResult
+        uid: azure-arm-network - v13.0.0.ApplicationSecurityGroupListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.ApplicationSecurityGroupListResult>>
+    name: ApplicationSecurityGroupListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ApplicationSecurityGroupListResult
+        fullName: ApplicationSecurityGroupListResult
+        uid: azure-arm-network - v13.0.0.ApplicationSecurityGroupListResult
+      - name: '>>'
+        fullName: '>>'

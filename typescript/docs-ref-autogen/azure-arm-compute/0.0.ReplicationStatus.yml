@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.ReplicationStatus
+    name: ReplicationStatus
+    fullName: ReplicationStatus
+    children:
+      - azure-arm-compute - v10.0.0.ReplicationStatus.aggregatedState
+      - azure-arm-compute - v10.0.0.ReplicationStatus.summary
+    langs:
+      - typeScript
+    type: interface
+    summary: This is the replication status of the gallery Image Version.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ReplicationStatus.aggregatedState
+    name: aggregatedState
+    fullName: aggregatedState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      This is the aggregated replication status based on all the regional
+      replication status flags.
+
+      Possible values include: 'Unknown', 'InProgress', 'Completed', 'Failed'
+    optional: true
+    syntax:
+      content: 'aggregatedState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ReplicationStatus.summary
+    name: summary
+    fullName: summary
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: This is a summary of replication status for each region.
+    optional: true
+    syntax:
+      content: 'summary?: RegionalReplicationStatus[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.RegionalReplicationStatus[]'
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: 'azure-arm-compute - v10.0.0.RegionalReplicationStatus[]'
+    name: 'RegionalReplicationStatus[]'
+    spec.typeScript:
+      - name: RegionalReplicationStatus
+        fullName: RegionalReplicationStatus
+        uid: azure-arm-compute - v10.0.0.RegionalReplicationStatus
+      - name: '[]'
+        fullName: '[]'

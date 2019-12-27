@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.DiskEncryptionSettings
+    name: DiskEncryptionSettings
+    fullName: DiskEncryptionSettings
+    children:
+      - azure-arm-compute - v10.0.0.DiskEncryptionSettings.diskEncryptionKey
+      - azure-arm-compute - v10.0.0.DiskEncryptionSettings.enabled
+      - azure-arm-compute - v10.0.0.DiskEncryptionSettings.keyEncryptionKey
+    langs:
+      - typeScript
+    type: interface
+    summary: Describes a Encryption Settings for a Disk
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.DiskEncryptionSettings.diskEncryptionKey
+    name: diskEncryptionKey
+    fullName: diskEncryptionKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the location of the disk encryption key, which is a Key Vault
+      Secret.
+    optional: true
+    syntax:
+      content: 'diskEncryptionKey?: KeyVaultSecretReference'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.KeyVaultSecretReference
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.DiskEncryptionSettings.enabled
+    name: enabled
+    fullName: enabled
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies whether disk encryption should be enabled on the virtual
+      machine.
+    optional: true
+    syntax:
+      content: 'enabled?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.DiskEncryptionSettings.keyEncryptionKey
+    name: keyEncryptionKey
+    fullName: keyEncryptionKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies the location of the key encryption key in Key Vault.
+    optional: true
+    syntax:
+      content: 'keyEncryptionKey?: KeyVaultKeyReference'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.KeyVaultKeyReference
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.KeyVaultSecretReference
+    name: KeyVaultSecretReference
+    spec.typeScript:
+      - name: KeyVaultSecretReference
+        fullName: KeyVaultSecretReference
+        uid: azure-arm-compute - v10.0.0.KeyVaultSecretReference
+  - uid: azure-arm-compute - v10.0.0.KeyVaultKeyReference
+    name: KeyVaultKeyReference
+    spec.typeScript:
+      - name: KeyVaultKeyReference
+        fullName: KeyVaultKeyReference
+        uid: azure-arm-compute - v10.0.0.KeyVaultKeyReference

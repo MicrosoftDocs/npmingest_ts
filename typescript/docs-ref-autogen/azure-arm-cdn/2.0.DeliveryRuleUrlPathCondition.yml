@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-cdn - v4.2.0.DeliveryRuleUrlPathCondition
+    name: DeliveryRuleUrlPathCondition
+    fullName: DeliveryRuleUrlPathCondition
+    children:
+      - azure-arm-cdn - v4.2.0.DeliveryRuleUrlPathCondition.name
+      - azure-arm-cdn - v4.2.0.DeliveryRuleUrlPathCondition.parameters
+    langs:
+      - typeScript
+    type: interface
+    summary: Defines the URL path condition for the delivery rule.
+    extends:
+      name: azure-arm-cdn - v4.2.0.DeliveryRuleCondition
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.DeliveryRuleUrlPathCondition.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Polymorphic Discriminator
+    syntax:
+      content: 'name: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.DeliveryRuleUrlPathCondition.parameters
+    name: parameters
+    fullName: parameters
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Defines the parameters for the condition.
+    syntax:
+      content: 'parameters: UrlPathConditionParameters'
+      return:
+        type:
+          - azure-arm-cdn - v4.2.0.UrlPathConditionParameters
+        description: ''
+    package: azure-arm-cdn - v4
+references:
+  - uid: azure-arm-cdn - v4.2.0.DeliveryRuleCondition
+    name: DeliveryRuleCondition
+    spec.typeScript:
+      - name: DeliveryRuleCondition
+        fullName: DeliveryRuleCondition
+        uid: azure-arm-cdn - v4.2.0.DeliveryRuleCondition
+  - uid: azure-arm-cdn - v4.2.0.UrlPathConditionParameters
+    name: UrlPathConditionParameters
+    spec.typeScript:
+      - name: UrlPathConditionParameters
+        fullName: UrlPathConditionParameters
+        uid: azure-arm-cdn - v4.2.0.UrlPathConditionParameters

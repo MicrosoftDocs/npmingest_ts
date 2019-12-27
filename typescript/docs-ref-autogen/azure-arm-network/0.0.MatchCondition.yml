@@ -1,0 +1,109 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.MatchCondition
+    name: MatchCondition
+    fullName: MatchCondition
+    children:
+      - azure-arm-network - v13.0.0.MatchCondition.matchValues
+      - azure-arm-network - v13.0.0.MatchCondition.matchVariables
+      - azure-arm-network - v13.0.0.MatchCondition.negationConditon
+      - azure-arm-network - v13.0.0.MatchCondition.operator
+      - azure-arm-network - v13.0.0.MatchCondition.transforms
+    langs:
+      - typeScript
+    type: interface
+    summary: Define match conditions
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.MatchCondition.matchValues
+    name: matchValues
+    fullName: matchValues
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Match value
+    syntax:
+      content: 'matchValues: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.MatchCondition.matchVariables
+    name: matchVariables
+    fullName: matchVariables
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: List of match variables
+    syntax:
+      content: 'matchVariables: MatchVariable[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.MatchVariable[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.MatchCondition.negationConditon
+    name: negationConditon
+    fullName: negationConditon
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Describes if this is negate condition or not
+    optional: true
+    syntax:
+      content: 'negationConditon?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.MatchCondition.operator
+    name: operator
+    fullName: operator
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Describes operator to be matched. Possible values include: 'IPMatch',
+      'Equal', 'Contains',
+
+      'LessThan', 'GreaterThan', 'LessThanOrEqual', 'GreaterThanOrEqual',
+      'BeginsWith', 'EndsWith',
+
+      'Regex'
+    syntax:
+      content: 'operator: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.MatchCondition.transforms
+    name: transforms
+    fullName: transforms
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: List of transforms
+    optional: true
+    syntax:
+      content: 'transforms?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: 'azure-arm-network - v13.0.0.MatchVariable[]'
+    name: 'MatchVariable[]'
+    spec.typeScript:
+      - name: MatchVariable
+        fullName: MatchVariable
+        uid: azure-arm-network - v13.0.0.MatchVariable
+      - name: '[]'
+        fullName: '[]'

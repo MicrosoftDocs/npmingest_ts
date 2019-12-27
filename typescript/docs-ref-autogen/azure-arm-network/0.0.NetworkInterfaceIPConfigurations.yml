@@ -1,0 +1,710 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations
+    name: NetworkInterfaceIPConfigurations
+    fullName: NetworkInterfaceIPConfigurations
+    children:
+      - azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.get
+      - azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.get_2
+      - azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.get_1
+      - >-
+        azure-arm-network -
+        v13.0.0.NetworkInterfaceIPConfigurations.getWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.list
+      - azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.list_2
+      - azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.list_1
+      - azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.listNext
+      - azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.listNext_2
+      - azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.listNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.NetworkInterfaceIPConfigurations.listNextWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.NetworkInterfaceIPConfigurations.listWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.get
+    name: 'get(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified network interface ip configuration.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, networkInterfaceName: string,
+        ipConfigurationName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkInterfaceName
+          type:
+            - string
+          description: |
+            The name of the network interface.
+        - id: ipConfigurationName
+          type:
+            - string
+          description: |
+            The name of the ip configuration name.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkInterfaceIPConfiguration>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkInterfaceIPConfiguration} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkInterfaceIPConfiguration} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkInterfaceIPConfiguration} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.get_2
+    name: >-
+      get(string, string, string, Object,
+      ServiceCallback<NetworkInterfaceIPConfiguration>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified network interface ip configuration.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, networkInterfaceName: string,
+        ipConfigurationName: string, options: Object, callback:
+        ServiceCallback<NetworkInterfaceIPConfiguration>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkInterfaceName
+          type:
+            - string
+          description: ''
+        - id: ipConfigurationName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.NetworkInterfaceIPConfiguration>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkInterfaceIPConfiguration>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkInterfaceIPConfiguration} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkInterfaceIPConfiguration} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkInterfaceIPConfiguration} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.get_1
+    name: >-
+      get(string, string, string,
+      ServiceCallback<NetworkInterfaceIPConfiguration>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified network interface ip configuration.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, networkInterfaceName: string,
+        ipConfigurationName: string, callback:
+        ServiceCallback<NetworkInterfaceIPConfiguration>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkInterfaceName
+          type:
+            - string
+          description: ''
+        - id: ipConfigurationName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.NetworkInterfaceIPConfiguration>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkInterfaceIPConfiguration>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkInterfaceIPConfiguration} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkInterfaceIPConfiguration} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkInterfaceIPConfiguration} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.NetworkInterfaceIPConfigurations.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified network interface ip configuration.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        networkInterfaceName: string, ipConfigurationName: string, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkInterfaceName
+          type:
+            - string
+          description: |
+            The name of the network interface.
+        - id: ipConfigurationName
+          type:
+            - string
+          description: |
+            The name of the ip configuration name.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.NetworkInterfaceIPConfiguration>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.list
+    name: 'list(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get all ip configurations in a network interface
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, networkInterfaceName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkInterfaceName
+          type:
+            - string
+          description: |
+            The name of the network interface.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.NetworkInterfaceIPConfigurationListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkInterfaceIPConfigurationListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkInterfaceIPConfigurationListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkInterfaceIPConfigurationListResult}
+                               for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.list_2
+    name: >-
+      list(string, string, Object,
+      ServiceCallback<NetworkInterfaceIPConfigurationListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get all ip configurations in a network interface
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, networkInterfaceName: string,
+        options: Object, callback:
+        ServiceCallback<NetworkInterfaceIPConfigurationListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkInterfaceName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.NetworkInterfaceIPConfigurationListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.NetworkInterfaceIPConfigurationListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkInterfaceIPConfigurationListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkInterfaceIPConfigurationListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkInterfaceIPConfigurationListResult}
+                               for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.list_1
+    name: >-
+      list(string, string,
+      ServiceCallback<NetworkInterfaceIPConfigurationListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get all ip configurations in a network interface
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, networkInterfaceName: string,
+        callback: ServiceCallback<NetworkInterfaceIPConfigurationListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkInterfaceName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.NetworkInterfaceIPConfigurationListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.NetworkInterfaceIPConfigurationListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkInterfaceIPConfigurationListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkInterfaceIPConfigurationListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkInterfaceIPConfigurationListResult}
+                               for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.listNext
+    name: 'listNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get all ip configurations in a network interface
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.NetworkInterfaceIPConfigurationListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkInterfaceIPConfigurationListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkInterfaceIPConfigurationListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkInterfaceIPConfigurationListResult}
+                               for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.listNext_2
+    name: >-
+      listNext(string, Object,
+      ServiceCallback<NetworkInterfaceIPConfigurationListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get all ip configurations in a network interface
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<NetworkInterfaceIPConfigurationListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.NetworkInterfaceIPConfigurationListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.NetworkInterfaceIPConfigurationListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkInterfaceIPConfigurationListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkInterfaceIPConfigurationListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkInterfaceIPConfigurationListResult}
+                               for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurations.listNext_1
+    name: >-
+      listNext(string,
+      ServiceCallback<NetworkInterfaceIPConfigurationListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get all ip configurations in a network interface
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<NetworkInterfaceIPConfigurationListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.NetworkInterfaceIPConfigurationListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.NetworkInterfaceIPConfigurationListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkInterfaceIPConfigurationListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkInterfaceIPConfigurationListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkInterfaceIPConfigurationListResult}
+                               for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.NetworkInterfaceIPConfigurations.listNextWithHttpOperationResponse
+    name: 'listNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get all ip configurations in a network interface
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.NetworkInterfaceIPConfigurationListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.NetworkInterfaceIPConfigurations.listWithHttpOperationResponse
+    name: 'listWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Get all ip configurations in a network interface
+    syntax:
+      content: >-
+        function listWithHttpOperationResponse(resourceGroupName: string,
+        networkInterfaceName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkInterfaceName
+          type:
+            - string
+          description: |
+            The name of the network interface.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.NetworkInterfaceIPConfigurationListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+references:
+  - uid: Promise<azure-arm-network - v13.0.0.NetworkInterfaceIPConfiguration>
+    name: NetworkInterfaceIPConfiguration>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: NetworkInterfaceIPConfiguration
+        fullName: NetworkInterfaceIPConfiguration
+        uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfiguration
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network -
+      v13.0.0.NetworkInterfaceIPConfiguration>
+    name: NetworkInterfaceIPConfiguration>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: NetworkInterfaceIPConfiguration
+        fullName: NetworkInterfaceIPConfiguration
+        uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfiguration
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.NetworkInterfaceIPConfiguration>>
+    name: NetworkInterfaceIPConfiguration>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: NetworkInterfaceIPConfiguration
+        fullName: NetworkInterfaceIPConfiguration
+        uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfiguration
+      - name: '>>'
+        fullName: '>>'
+  - uid: >-
+      Promise<azure-arm-network -
+      v13.0.0.NetworkInterfaceIPConfigurationListResult>
+    name: NetworkInterfaceIPConfigurationListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: NetworkInterfaceIPConfigurationListResult
+        fullName: NetworkInterfaceIPConfigurationListResult
+        uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurationListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network -
+      v13.0.0.NetworkInterfaceIPConfigurationListResult>
+    name: NetworkInterfaceIPConfigurationListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: NetworkInterfaceIPConfigurationListResult
+        fullName: NetworkInterfaceIPConfigurationListResult
+        uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurationListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.NetworkInterfaceIPConfigurationListResult>>
+    name: NetworkInterfaceIPConfigurationListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: NetworkInterfaceIPConfigurationListResult
+        fullName: NetworkInterfaceIPConfigurationListResult
+        uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfigurationListResult
+      - name: '>>'
+        fullName: '>>'

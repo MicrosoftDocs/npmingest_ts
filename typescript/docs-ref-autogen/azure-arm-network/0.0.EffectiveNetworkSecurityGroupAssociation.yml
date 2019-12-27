@@ -1,0 +1,60 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.EffectiveNetworkSecurityGroupAssociation
+    name: EffectiveNetworkSecurityGroupAssociation
+    fullName: EffectiveNetworkSecurityGroupAssociation
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.EffectiveNetworkSecurityGroupAssociation.networkInterface
+      - >-
+        azure-arm-network -
+        v13.0.0.EffectiveNetworkSecurityGroupAssociation.subnet
+    langs:
+      - typeScript
+    type: interface
+    summary: The effective network security group association.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.EffectiveNetworkSecurityGroupAssociation.networkInterface
+    name: networkInterface
+    fullName: networkInterface
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The ID of the network interface if assigned.
+    optional: true
+    syntax:
+      content: 'networkInterface?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.EffectiveNetworkSecurityGroupAssociation.subnet
+    name: subnet
+    fullName: subnet
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The ID of the subnet if assigned.
+    optional: true
+    syntax:
+      content: 'subnet?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource

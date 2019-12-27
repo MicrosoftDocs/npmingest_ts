@@ -1,0 +1,198 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo
+    name: RollingUpgradeStatusInfo
+    fullName: RollingUpgradeStatusInfo
+    children:
+      - azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.error
+      - azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.id
+      - azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.location
+      - azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.name
+      - azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.policy
+      - azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.progress
+      - azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.runningStatus
+      - azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.tags
+      - azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.type
+    langs:
+      - typeScript
+    type: interface
+    summary: The status of the latest virtual machine scale set rolling upgrade.
+    extends:
+      name: azure-arm-compute - v10.0.0.Resource
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.error
+    name: error
+    fullName: error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'Error details for this upgrade, if there are any.'
+    optional: true
+    syntax:
+      content: 'error?: ApiError'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.ApiError
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location
+    syntax:
+      content: 'location: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.policy
+    name: policy
+    fullName: policy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The rolling upgrade policies applied for this upgrade.
+    optional: true
+    syntax:
+      content: 'policy?: RollingUpgradePolicy'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.RollingUpgradePolicy
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.progress
+    name: progress
+    fullName: progress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Information about the number of virtual machine instances in each upgrade
+      state.
+    optional: true
+    syntax:
+      content: 'progress?: RollingUpgradeProgressInfo'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.RollingUpgradeProgressInfo
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.runningStatus
+    name: runningStatus
+    fullName: runningStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Information about the current running state of the overall upgrade.
+    optional: true
+    syntax:
+      content: 'runningStatus?: RollingUpgradeRunningStatus'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.RollingUpgradeRunningStatus
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.RollingUpgradeStatusInfo.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-compute - v10.0.0.Resource
+  - uid: azure-arm-compute - v10.0.0.ApiError
+    name: ApiError
+    spec.typeScript:
+      - name: ApiError
+        fullName: ApiError
+        uid: azure-arm-compute - v10.0.0.ApiError
+  - uid: azure-arm-compute - v10.0.0.RollingUpgradePolicy
+    name: RollingUpgradePolicy
+    spec.typeScript:
+      - name: RollingUpgradePolicy
+        fullName: RollingUpgradePolicy
+        uid: azure-arm-compute - v10.0.0.RollingUpgradePolicy
+  - uid: azure-arm-compute - v10.0.0.RollingUpgradeProgressInfo
+    name: RollingUpgradeProgressInfo
+    spec.typeScript:
+      - name: RollingUpgradeProgressInfo
+        fullName: RollingUpgradeProgressInfo
+        uid: azure-arm-compute - v10.0.0.RollingUpgradeProgressInfo
+  - uid: azure-arm-compute - v10.0.0.RollingUpgradeRunningStatus
+    name: RollingUpgradeRunningStatus
+    spec.typeScript:
+      - name: RollingUpgradeRunningStatus
+        fullName: RollingUpgradeRunningStatus
+        uid: azure-arm-compute - v10.0.0.RollingUpgradeRunningStatus

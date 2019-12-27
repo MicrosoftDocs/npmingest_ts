@@ -1,0 +1,66 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-cdn - v4.2.0.OriginUpdateParameters
+    name: OriginUpdateParameters
+    fullName: OriginUpdateParameters
+    children:
+      - azure-arm-cdn - v4.2.0.OriginUpdateParameters.hostName
+      - azure-arm-cdn - v4.2.0.OriginUpdateParameters.httpPort
+      - azure-arm-cdn - v4.2.0.OriginUpdateParameters.httpsPort
+    langs:
+      - typeScript
+    type: interface
+    summary: Origin properties needed for origin creation or update.
+    extends:
+      name: BaseResource
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.OriginUpdateParameters.hostName
+    name: hostName
+    fullName: hostName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The address of the origin. Domain names, IPv4 addresses, and IPv6
+      addresses are supported.
+    optional: true
+    syntax:
+      content: 'hostName?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.OriginUpdateParameters.httpPort
+    name: httpPort
+    fullName: httpPort
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The value of the HTTP port. Must be between 1 and 65535.
+    optional: true
+    syntax:
+      content: 'httpPort?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.OriginUpdateParameters.httpsPort
+    name: httpsPort
+    fullName: httpsPort
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The value of the HTTPS port. Must be between 1 and 65535.
+    optional: true
+    syntax:
+      content: 'httpsPort?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-cdn - v4

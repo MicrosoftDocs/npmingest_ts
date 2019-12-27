@@ -1,0 +1,71 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.NextHopResult
+    name: NextHopResult
+    fullName: NextHopResult
+    children:
+      - azure-arm-network - v13.0.0.NextHopResult.nextHopIpAddress
+      - azure-arm-network - v13.0.0.NextHopResult.nextHopType
+      - azure-arm-network - v13.0.0.NextHopResult.routeTableId
+    langs:
+      - typeScript
+    type: interface
+    summary: The information about next hop from the specified VM.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NextHopResult.nextHopIpAddress
+    name: nextHopIpAddress
+    fullName: nextHopIpAddress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Next hop IP Address
+    optional: true
+    syntax:
+      content: 'nextHopIpAddress?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NextHopResult.nextHopType
+    name: nextHopType
+    fullName: nextHopType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      Next hop type. Possible values include: 'Internet', 'VirtualAppliance',
+      'VirtualNetworkGateway', 'VnetLocal', 'HyperNetGateway', 'None'
+    optional: true
+    syntax:
+      content: 'nextHopType?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NextHopResult.routeTableId
+    name: routeTableId
+    fullName: routeTableId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The resource identifier for the route table associated with the route
+      being returned. If the
+
+      route being returned does not correspond to any user created routes then
+      this field will be
+
+      the string 'System Route'.
+    optional: true
+    syntax:
+      content: 'routeTableId?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13

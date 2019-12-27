@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.VerificationIPFlowResult
+    name: VerificationIPFlowResult
+    fullName: VerificationIPFlowResult
+    children:
+      - azure-arm-network - v13.0.0.VerificationIPFlowResult.access
+      - azure-arm-network - v13.0.0.VerificationIPFlowResult.ruleName
+    langs:
+      - typeScript
+    type: interface
+    summary: Results of IP flow verification on the target resource.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VerificationIPFlowResult.access
+    name: access
+    fullName: access
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Indicates whether the traffic is allowed or denied. Possible values
+      include: 'Allow', 'Deny'
+    optional: true
+    syntax:
+      content: 'access?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VerificationIPFlowResult.ruleName
+    name: ruleName
+    fullName: ruleName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Name of the rule. If input is not matched against any security rule, it is
+      not displayed.
+    optional: true
+    syntax:
+      content: 'ruleName?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13

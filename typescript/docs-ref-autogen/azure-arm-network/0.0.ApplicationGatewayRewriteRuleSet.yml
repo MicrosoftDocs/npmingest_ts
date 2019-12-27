@@ -1,0 +1,123 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayRewriteRuleSet
+    name: ApplicationGatewayRewriteRuleSet
+    fullName: ApplicationGatewayRewriteRuleSet
+    children:
+      - azure-arm-network - v13.0.0.ApplicationGatewayRewriteRuleSet.etag
+      - azure-arm-network - v13.0.0.ApplicationGatewayRewriteRuleSet.id
+      - azure-arm-network - v13.0.0.ApplicationGatewayRewriteRuleSet.name
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayRewriteRuleSet.provisioningState
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayRewriteRuleSet.rewriteRules
+    langs:
+      - typeScript
+    type: interface
+    summary: Rewrite rule set of an application gateway.
+    extends:
+      name: azure-arm-network - v13.0.0.SubResource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayRewriteRuleSet.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A unique read-only string that changes whenever the resource is updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayRewriteRuleSet.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayRewriteRuleSet.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Name of the rewrite rule set that is unique within an Application Gateway.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayRewriteRuleSet.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Provisioning state of the rewrite rule set resource. Possible values are:
+      'Updating',
+
+      'Deleting', and 'Failed'.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayRewriteRuleSet.rewriteRules
+    name: rewriteRules
+    fullName: rewriteRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Rewrite rules in the rewrite rule set.
+    optional: true
+    syntax:
+      content: 'rewriteRules?: ApplicationGatewayRewriteRule[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ApplicationGatewayRewriteRule[]'
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayRewriteRule[]'
+    name: 'ApplicationGatewayRewriteRule[]'
+    spec.typeScript:
+      - name: ApplicationGatewayRewriteRule
+        fullName: ApplicationGatewayRewriteRule
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayRewriteRule
+      - name: '[]'
+        fullName: '[]'

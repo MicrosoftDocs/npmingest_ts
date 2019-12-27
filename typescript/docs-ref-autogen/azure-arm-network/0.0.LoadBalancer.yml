@@ -1,0 +1,392 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.LoadBalancer
+    name: LoadBalancer
+    fullName: LoadBalancer
+    children:
+      - azure-arm-network - v13.0.0.LoadBalancer.backendAddressPools
+      - azure-arm-network - v13.0.0.LoadBalancer.etag
+      - azure-arm-network - v13.0.0.LoadBalancer.frontendIPConfigurations
+      - azure-arm-network - v13.0.0.LoadBalancer.id
+      - azure-arm-network - v13.0.0.LoadBalancer.inboundNatPools
+      - azure-arm-network - v13.0.0.LoadBalancer.inboundNatRules
+      - azure-arm-network - v13.0.0.LoadBalancer.loadBalancingRules
+      - azure-arm-network - v13.0.0.LoadBalancer.location
+      - azure-arm-network - v13.0.0.LoadBalancer.name
+      - azure-arm-network - v13.0.0.LoadBalancer.outboundRules
+      - azure-arm-network - v13.0.0.LoadBalancer.probes
+      - azure-arm-network - v13.0.0.LoadBalancer.provisioningState
+      - azure-arm-network - v13.0.0.LoadBalancer.resourceGuid
+      - azure-arm-network - v13.0.0.LoadBalancer.sku
+      - azure-arm-network - v13.0.0.LoadBalancer.tags
+      - azure-arm-network - v13.0.0.LoadBalancer.type
+    langs:
+      - typeScript
+    type: interface
+    summary: LoadBalancer resource
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.LoadBalancer.backendAddressPools
+    name: backendAddressPools
+    fullName: backendAddressPools
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Collection of backend address pools used by a load balancer
+    optional: true
+    syntax:
+      content: 'backendAddressPools?: BackendAddressPool[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.BackendAddressPool[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.LoadBalancer.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A unique read-only string that changes whenever the resource is updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.LoadBalancer.frontendIPConfigurations
+    name: frontendIPConfigurations
+    fullName: frontendIPConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Object representing the frontend IPs to be used for the load balancer
+    optional: true
+    syntax:
+      content: 'frontendIPConfigurations?: FrontendIPConfiguration[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.FrontendIPConfiguration[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.LoadBalancer.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.LoadBalancer.inboundNatPools
+    name: inboundNatPools
+    fullName: inboundNatPools
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Defines an external port range for inbound NAT to a single backend port on
+      NICs associated
+
+      with a load balancer. Inbound NAT rules are created automatically for each
+      NIC associated with
+
+      the Load Balancer using an external port from this range. Defining an
+      Inbound NAT pool on your
+
+      Load Balancer is mutually exclusive with defining inbound Nat rules.
+      Inbound NAT pools are
+
+      referenced from virtual machine scale sets. NICs that are associated with
+      individual virtual
+
+      machines cannot reference an inbound NAT pool. They have to reference
+      individual inbound NAT
+
+      rules.
+    optional: true
+    syntax:
+      content: 'inboundNatPools?: InboundNatPool[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.InboundNatPool[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.LoadBalancer.inboundNatRules
+    name: inboundNatRules
+    fullName: inboundNatRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Collection of inbound NAT Rules used by a load balancer. Defining inbound
+      NAT rules on your
+
+      load balancer is mutually exclusive with defining an inbound NAT pool.
+      Inbound NAT pools are
+
+      referenced from virtual machine scale sets. NICs that are associated with
+      individual virtual
+
+      machines cannot reference an Inbound NAT pool. They have to reference
+      individual inbound NAT
+
+      rules.
+    optional: true
+    syntax:
+      content: 'inboundNatRules?: InboundNatRule[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.InboundNatRule[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.LoadBalancer.loadBalancingRules
+    name: loadBalancingRules
+    fullName: loadBalancingRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Object collection representing the load balancing rules Gets the
+      provisioning
+    optional: true
+    syntax:
+      content: 'loadBalancingRules?: LoadBalancingRule[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.LoadBalancingRule[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.LoadBalancer.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.LoadBalancer.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.LoadBalancer.outboundRules
+    name: outboundRules
+    fullName: outboundRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The outbound rules.
+    optional: true
+    syntax:
+      content: 'outboundRules?: OutboundRule[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.OutboundRule[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.LoadBalancer.probes
+    name: probes
+    fullName: probes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Collection of probe objects used in the load balancer
+    optional: true
+    syntax:
+      content: 'probes?: Probe[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.Probe[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.LoadBalancer.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Gets the provisioning state of the PublicIP resource. Possible values are:
+      'Updating',
+
+      'Deleting', and 'Failed'.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.LoadBalancer.resourceGuid
+    name: resourceGuid
+    fullName: resourceGuid
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The resource GUID property of the load balancer resource.
+    optional: true
+    syntax:
+      content: 'resourceGuid?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.LoadBalancer.sku
+    name: sku
+    fullName: sku
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The load balancer SKU.
+    optional: true
+    syntax:
+      content: 'sku?: LoadBalancerSku'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.LoadBalancerSku
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.LoadBalancer.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.LoadBalancer.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: 'azure-arm-network - v13.0.0.BackendAddressPool[]'
+    name: 'BackendAddressPool[]'
+    spec.typeScript:
+      - name: BackendAddressPool
+        fullName: BackendAddressPool
+        uid: azure-arm-network - v13.0.0.BackendAddressPool
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.FrontendIPConfiguration[]'
+    name: 'FrontendIPConfiguration[]'
+    spec.typeScript:
+      - name: FrontendIPConfiguration
+        fullName: FrontendIPConfiguration
+        uid: azure-arm-network - v13.0.0.FrontendIPConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.InboundNatPool[]'
+    name: 'InboundNatPool[]'
+    spec.typeScript:
+      - name: InboundNatPool
+        fullName: InboundNatPool
+        uid: azure-arm-network - v13.0.0.InboundNatPool
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.InboundNatRule[]'
+    name: 'InboundNatRule[]'
+    spec.typeScript:
+      - name: InboundNatRule
+        fullName: InboundNatRule
+        uid: azure-arm-network - v13.0.0.InboundNatRule
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.LoadBalancingRule[]'
+    name: 'LoadBalancingRule[]'
+    spec.typeScript:
+      - name: LoadBalancingRule
+        fullName: LoadBalancingRule
+        uid: azure-arm-network - v13.0.0.LoadBalancingRule
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.OutboundRule[]'
+    name: 'OutboundRule[]'
+    spec.typeScript:
+      - name: OutboundRule
+        fullName: OutboundRule
+        uid: azure-arm-network - v13.0.0.OutboundRule
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.Probe[]'
+    name: 'Probe[]'
+    spec.typeScript:
+      - name: Probe
+        fullName: Probe
+        uid: azure-arm-network - v13.0.0.Probe
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.LoadBalancerSku
+    name: LoadBalancerSku
+    spec.typeScript:
+      - name: LoadBalancerSku
+        fullName: LoadBalancerSku
+        uid: azure-arm-network - v13.0.0.LoadBalancerSku

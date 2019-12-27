@@ -1,0 +1,179 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackage
+    name: ApplicationPackage
+    fullName: ApplicationPackage
+    children:
+      - azure-arm-batch - v5.0.0.ApplicationPackage.etag
+      - azure-arm-batch - v5.0.0.ApplicationPackage.format
+      - azure-arm-batch - v5.0.0.ApplicationPackage.id
+      - azure-arm-batch - v5.0.0.ApplicationPackage.lastActivationTime
+      - azure-arm-batch - v5.0.0.ApplicationPackage.name
+      - azure-arm-batch - v5.0.0.ApplicationPackage.state
+      - azure-arm-batch - v5.0.0.ApplicationPackage.storageUrl
+      - azure-arm-batch - v5.0.0.ApplicationPackage.storageUrlExpiry
+      - azure-arm-batch - v5.0.0.ApplicationPackage.type
+    langs:
+      - typeScript
+    type: interface
+    summary: >-
+      An application package which represents a particular version of an
+      application.
+    extends:
+      name: azure-arm-batch - v5.0.0.ProxyResource
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackage.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The ETag of the resource, used for concurrency statements.'
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackage.format
+    name: format
+    fullName: format
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The format of the application package, if the package is active.'
+    optional: true
+    syntax:
+      content: 'format?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackage.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The ID of the resource.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackage.lastActivationTime
+    name: lastActivationTime
+    fullName: lastActivationTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The time at which the package was last activated, if the package is
+      active.
+    optional: true
+    syntax:
+      content: 'lastActivationTime?: Date'
+      return:
+        type:
+          - Date
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackage.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The name of the resource.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackage.state
+    name: state
+    fullName: state
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The current state of the application package. Possible values include:
+      'Pending', 'Active'
+    optional: true
+    syntax:
+      content: 'state?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackage.storageUrl
+    name: storageUrl
+    fullName: storageUrl
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The URL for the application package in Azure Storage.
+    optional: true
+    syntax:
+      content: 'storageUrl?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackage.storageUrlExpiry
+    name: storageUrlExpiry
+    fullName: storageUrlExpiry
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The UTC time at which the Azure Storage URL will expire.
+    optional: true
+    syntax:
+      content: 'storageUrlExpiry?: Date'
+      return:
+        type:
+          - Date
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ApplicationPackage.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The type of the resource.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+references:
+  - uid: azure-arm-batch - v5.0.0.ProxyResource
+    name: ProxyResource
+    spec.typeScript:
+      - name: ProxyResource
+        fullName: ProxyResource
+        uid: azure-arm-batch - v5.0.0.ProxyResource

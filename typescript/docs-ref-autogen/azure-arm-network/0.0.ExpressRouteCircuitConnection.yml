@@ -1,0 +1,211 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnection
+    name: ExpressRouteCircuitConnection
+    fullName: ExpressRouteCircuitConnection
+    children:
+      - azure-arm-network - v13.0.0.ExpressRouteCircuitConnection.addressPrefix
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnection.authorizationKey
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnection.circuitConnectionStatus
+      - azure-arm-network - v13.0.0.ExpressRouteCircuitConnection.etag
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnection.expressRouteCircuitPeering
+      - azure-arm-network - v13.0.0.ExpressRouteCircuitConnection.id
+      - azure-arm-network - v13.0.0.ExpressRouteCircuitConnection.name
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnection.peerExpressRouteCircuitPeering
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitConnection.provisioningState
+    langs:
+      - typeScript
+    type: interface
+    summary: >-
+      Express Route Circuit Connection in an ExpressRouteCircuitPeering
+      resource.
+    extends:
+      name: azure-arm-network - v13.0.0.SubResource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnection.addressPrefix
+    name: addressPrefix
+    fullName: addressPrefix
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: /29 IP address space to carve out Customer addresses for tunnels.
+    optional: true
+    syntax:
+      content: 'addressPrefix?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnection.authorizationKey
+    name: authorizationKey
+    fullName: authorizationKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The authorization key.
+    optional: true
+    syntax:
+      content: 'authorizationKey?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnection.circuitConnectionStatus
+    name: circuitConnectionStatus
+    fullName: circuitConnectionStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Express Route Circuit connection state. Possible values include:
+      'Connected', 'Connecting',
+
+      'Disconnected'
+    optional: true
+    syntax:
+      content: 'circuitConnectionStatus?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnection.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A unique read-only string that changes whenever the resource is updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnection.expressRouteCircuitPeering
+    name: expressRouteCircuitPeering
+    fullName: expressRouteCircuitPeering
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Reference to Express Route Circuit Private Peering Resource of the circuit
+      initiating
+
+      connection.
+    optional: true
+    syntax:
+      content: 'expressRouteCircuitPeering?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnection.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitConnection.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Gets name of the resource that is unique within a resource group. This
+      name can be used to
+
+      access the resource.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnection.peerExpressRouteCircuitPeering
+    name: peerExpressRouteCircuitPeering
+    fullName: peerExpressRouteCircuitPeering
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Reference to Express Route Circuit Private Peering Resource of the peered
+      circuit.
+    optional: true
+    syntax:
+      content: 'peerExpressRouteCircuitPeering?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitConnection.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Provisioning state of the circuit connection resource. Possible values
+      are: 'Succeeded',
+
+      'Updating', 'Deleting', and 'Failed'.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource

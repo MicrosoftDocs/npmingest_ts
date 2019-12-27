@@ -1,0 +1,187 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ExpressRoutePortsLocation
+    name: ExpressRoutePortsLocation
+    fullName: ExpressRoutePortsLocation
+    children:
+      - azure-arm-network - v13.0.0.ExpressRoutePortsLocation.address
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRoutePortsLocation.availableBandwidths
+      - azure-arm-network - v13.0.0.ExpressRoutePortsLocation.contact
+      - azure-arm-network - v13.0.0.ExpressRoutePortsLocation.id
+      - azure-arm-network - v13.0.0.ExpressRoutePortsLocation.location
+      - azure-arm-network - v13.0.0.ExpressRoutePortsLocation.name
+      - azure-arm-network - v13.0.0.ExpressRoutePortsLocation.provisioningState
+      - azure-arm-network - v13.0.0.ExpressRoutePortsLocation.tags
+      - azure-arm-network - v13.0.0.ExpressRoutePortsLocation.type
+    langs:
+      - typeScript
+    type: interface
+    summary: Definition of the ExpressRoutePorts peering location resource.
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRoutePortsLocation.address
+    name: address
+    fullName: address
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Address of peering location.
+    optional: true
+    syntax:
+      content: 'address?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRoutePortsLocation.availableBandwidths
+    name: availableBandwidths
+    fullName: availableBandwidths
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The inventory of available ExpressRoutePort bandwidths.
+    optional: true
+    syntax:
+      content: 'availableBandwidths?: ExpressRoutePortsLocationBandwidths[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ExpressRoutePortsLocationBandwidths[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRoutePortsLocation.contact
+    name: contact
+    fullName: contact
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Contact details of peering locations.
+    optional: true
+    syntax:
+      content: 'contact?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRoutePortsLocation.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRoutePortsLocation.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRoutePortsLocation.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRoutePortsLocation.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the ExpressRoutePortLocation resource. Possible
+      values are:
+
+      'Succeeded', 'Updating', 'Deleting', and 'Failed'.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRoutePortsLocation.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRoutePortsLocation.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: 'azure-arm-network - v13.0.0.ExpressRoutePortsLocationBandwidths[]'
+    name: 'ExpressRoutePortsLocationBandwidths[]'
+    spec.typeScript:
+      - name: ExpressRoutePortsLocationBandwidths
+        fullName: ExpressRoutePortsLocationBandwidths
+        uid: azure-arm-network - v13.0.0.ExpressRoutePortsLocationBandwidths
+      - name: '[]'
+        fullName: '[]'

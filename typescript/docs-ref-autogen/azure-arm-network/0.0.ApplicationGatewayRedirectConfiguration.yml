@@ -1,0 +1,268 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayRedirectConfiguration
+    name: ApplicationGatewayRedirectConfiguration
+    fullName: ApplicationGatewayRedirectConfiguration
+    children:
+      - azure-arm-network - v13.0.0.ApplicationGatewayRedirectConfiguration.etag
+      - azure-arm-network - v13.0.0.ApplicationGatewayRedirectConfiguration.id
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayRedirectConfiguration.includePath
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayRedirectConfiguration.includeQueryString
+      - azure-arm-network - v13.0.0.ApplicationGatewayRedirectConfiguration.name
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayRedirectConfiguration.pathRules
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayRedirectConfiguration.redirectType
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayRedirectConfiguration.requestRoutingRules
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayRedirectConfiguration.targetListener
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayRedirectConfiguration.targetUrl
+      - azure-arm-network - v13.0.0.ApplicationGatewayRedirectConfiguration.type
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayRedirectConfiguration.urlPathMaps
+    langs:
+      - typeScript
+    type: interface
+    summary: Redirect configuration of an application gateway.
+    extends:
+      name: azure-arm-network - v13.0.0.SubResource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayRedirectConfiguration.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A unique read-only string that changes whenever the resource is updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayRedirectConfiguration.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayRedirectConfiguration.includePath
+    name: includePath
+    fullName: includePath
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Include path in the redirected url.
+    optional: true
+    syntax:
+      content: 'includePath?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayRedirectConfiguration.includeQueryString
+    name: includeQueryString
+    fullName: includeQueryString
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Include query string in the redirected url.
+    optional: true
+    syntax:
+      content: 'includeQueryString?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayRedirectConfiguration.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Name of the redirect configuration that is unique within an Application
+      Gateway.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayRedirectConfiguration.pathRules
+    name: pathRules
+    fullName: pathRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Path rules specifying redirect configuration.
+    optional: true
+    syntax:
+      content: 'pathRules?: SubResource[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.SubResource[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayRedirectConfiguration.redirectType
+    name: redirectType
+    fullName: redirectType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      HTTP redirection type. Possible values include: 'Permanent', 'Found',
+      'SeeOther', 'Temporary'
+    optional: true
+    syntax:
+      content: 'redirectType?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayRedirectConfiguration.requestRoutingRules
+    name: requestRoutingRules
+    fullName: requestRoutingRules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Request routing specifying redirect configuration.
+    optional: true
+    syntax:
+      content: 'requestRoutingRules?: SubResource[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.SubResource[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayRedirectConfiguration.targetListener
+    name: targetListener
+    fullName: targetListener
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Reference to a listener to redirect the request to.
+    optional: true
+    syntax:
+      content: 'targetListener?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayRedirectConfiguration.targetUrl
+    name: targetUrl
+    fullName: targetUrl
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Url to redirect the request to.
+    optional: true
+    syntax:
+      content: 'targetUrl?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayRedirectConfiguration.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Type of the resource.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayRedirectConfiguration.urlPathMaps
+    name: urlPathMaps
+    fullName: urlPathMaps
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Url path maps specifying default redirect configuration.
+    optional: true
+    syntax:
+      content: 'urlPathMaps?: SubResource[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.SubResource[]'
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource
+  - uid: 'azure-arm-network - v13.0.0.SubResource[]'
+    name: 'SubResource[]'
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource
+      - name: '[]'
+        fullName: '[]'

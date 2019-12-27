@@ -1,0 +1,65 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.ContainerServiceMasterProfile
+    name: ContainerServiceMasterProfile
+    fullName: ContainerServiceMasterProfile
+    children:
+      - azure-arm-compute - v10.0.0.ContainerServiceMasterProfile.count
+      - azure-arm-compute - v10.0.0.ContainerServiceMasterProfile.dnsPrefix
+      - azure-arm-compute - v10.0.0.ContainerServiceMasterProfile.fqdn
+    langs:
+      - typeScript
+    type: interface
+    summary: Profile for the container service master.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ContainerServiceMasterProfile.count
+    name: count
+    fullName: count
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Number of masters (VMs) in the container service cluster. Allowed values
+      are 1, 3, and 5. The
+
+      default value is 1.
+    optional: true
+    syntax:
+      content: 'count?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ContainerServiceMasterProfile.dnsPrefix
+    name: dnsPrefix
+    fullName: dnsPrefix
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: DNS prefix to be used to create the FQDN for master.
+    syntax:
+      content: 'dnsPrefix: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ContainerServiceMasterProfile.fqdn
+    name: fqdn
+    fullName: fqdn
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: FQDN for the master.
+    optional: true
+    syntax:
+      content: 'fqdn?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10

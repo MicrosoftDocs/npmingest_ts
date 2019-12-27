@@ -1,0 +1,92 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.ResourceSkuRestrictions
+    name: ResourceSkuRestrictions
+    fullName: ResourceSkuRestrictions
+    children:
+      - azure-arm-compute - v10.0.0.ResourceSkuRestrictions.reasonCode
+      - azure-arm-compute - v10.0.0.ResourceSkuRestrictions.restrictionInfo
+      - azure-arm-compute - v10.0.0.ResourceSkuRestrictions.type
+      - azure-arm-compute - v10.0.0.ResourceSkuRestrictions.values
+    langs:
+      - typeScript
+    type: interface
+    summary: Describes scaling information of a SKU.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSkuRestrictions.reasonCode
+    name: reasonCode
+    fullName: reasonCode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The reason for restriction. Possible values include: 'QuotaId',
+      'NotAvailableForSubscription'
+    optional: true
+    syntax:
+      content: 'reasonCode?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSkuRestrictions.restrictionInfo
+    name: restrictionInfo
+    fullName: restrictionInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The information about the restriction where the SKU cannot be used.
+    optional: true
+    syntax:
+      content: 'restrictionInfo?: ResourceSkuRestrictionInfo'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.ResourceSkuRestrictionInfo
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSkuRestrictions.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The type of restrictions. Possible values include: ''Location'', ''Zone'''
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSkuRestrictions.values
+    name: values
+    fullName: values
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The value of restrictions. If the restriction type is set to location.
+      This would be different
+
+      locations where the SKU is restricted.
+    optional: true
+    syntax:
+      content: 'values?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.ResourceSkuRestrictionInfo
+    name: ResourceSkuRestrictionInfo
+    spec.typeScript:
+      - name: ResourceSkuRestrictionInfo
+        fullName: ResourceSkuRestrictionInfo
+        uid: azure-arm-compute - v10.0.0.ResourceSkuRestrictionInfo

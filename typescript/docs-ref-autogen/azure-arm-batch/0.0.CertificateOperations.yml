@@ -1,0 +1,2106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations
+    name: CertificateOperations
+    fullName: CertificateOperations
+    children:
+      - azure-arm-batch - v5.0.0.CertificateOperations.beginCreate
+      - azure-arm-batch - v5.0.0.CertificateOperations.beginCreate_2
+      - azure-arm-batch - v5.0.0.CertificateOperations.beginCreate_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.CertificateOperations.beginCreateWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.CertificateOperations.beginDeleteMethod
+      - azure-arm-batch - v5.0.0.CertificateOperations.beginDeleteMethod_2
+      - azure-arm-batch - v5.0.0.CertificateOperations.beginDeleteMethod_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.CertificateOperations.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.CertificateOperations.cancelDeletion
+      - azure-arm-batch - v5.0.0.CertificateOperations.cancelDeletion_2
+      - azure-arm-batch - v5.0.0.CertificateOperations.cancelDeletion_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.CertificateOperations.cancelDeletionWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.CertificateOperations.create
+      - azure-arm-batch - v5.0.0.CertificateOperations.create_2
+      - azure-arm-batch - v5.0.0.CertificateOperations.create_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.CertificateOperations.createWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.CertificateOperations.deleteMethod
+      - azure-arm-batch - v5.0.0.CertificateOperations.deleteMethod_2
+      - azure-arm-batch - v5.0.0.CertificateOperations.deleteMethod_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.CertificateOperations.deleteMethodWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.CertificateOperations.get
+      - azure-arm-batch - v5.0.0.CertificateOperations.get_2
+      - azure-arm-batch - v5.0.0.CertificateOperations.get_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.CertificateOperations.getWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.CertificateOperations.listByBatchAccount
+      - azure-arm-batch - v5.0.0.CertificateOperations.listByBatchAccount_2
+      - azure-arm-batch - v5.0.0.CertificateOperations.listByBatchAccount_1
+      - azure-arm-batch - v5.0.0.CertificateOperations.listByBatchAccountNext
+      - azure-arm-batch - v5.0.0.CertificateOperations.listByBatchAccountNext_2
+      - azure-arm-batch - v5.0.0.CertificateOperations.listByBatchAccountNext_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.CertificateOperations.listByBatchAccountNextWithHttpOperationResponse
+      - >-
+        azure-arm-batch -
+        v5.0.0.CertificateOperations.listByBatchAccountWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.CertificateOperations.update
+      - azure-arm-batch - v5.0.0.CertificateOperations.update_2
+      - azure-arm-batch - v5.0.0.CertificateOperations.update_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.CertificateOperations.updateWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.beginCreate
+    name: >-
+      beginCreate(string, string, string, CertificateCreateOrUpdateParameters,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates a new certificate inside the specified account.
+    syntax:
+      content: >-
+        function beginCreate(resourceGroupName: string, accountName: string,
+        certificateName: string, parameters:
+        CertificateCreateOrUpdateParameters, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: certificateName
+          type:
+            - string
+          description: >
+            The identifier for the certificate. This
+
+            must be made up of algorithm and thumbprint separated by a dash, and
+            must
+
+            match the certificate data in the request. For example SHA1-a3d1c5.
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters
+          description: |
+            Additional parameters for certificate creation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.Certificate>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Certificate} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Certificate} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Certificate} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.beginCreate_2
+    name: >-
+      beginCreate(string, string, string, CertificateCreateOrUpdateParameters,
+      Object, ServiceCallback<Certificate>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates a new certificate inside the specified account.
+    syntax:
+      content: >-
+        function beginCreate(resourceGroupName: string, accountName: string,
+        certificateName: string, parameters:
+        CertificateCreateOrUpdateParameters, options: Object, callback:
+        ServiceCallback<Certificate>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: certificateName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.Certificate>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.Certificate>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Certificate} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Certificate} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Certificate} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.beginCreate_1
+    name: >-
+      beginCreate(string, string, string, CertificateCreateOrUpdateParameters,
+      ServiceCallback<Certificate>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates a new certificate inside the specified account.
+    syntax:
+      content: >-
+        function beginCreate(resourceGroupName: string, accountName: string,
+        certificateName: string, parameters:
+        CertificateCreateOrUpdateParameters, callback:
+        ServiceCallback<Certificate>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: certificateName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.Certificate>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.Certificate>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Certificate} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Certificate} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Certificate} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.CertificateOperations.beginCreateWithHttpOperationResponse
+    name: >-
+      beginCreateWithHttpOperationResponse(string, string, string,
+      CertificateCreateOrUpdateParameters, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates a new certificate inside the specified account.
+    syntax:
+      content: >-
+        function beginCreateWithHttpOperationResponse(resourceGroupName: string,
+        accountName: string, certificateName: string, parameters:
+        CertificateCreateOrUpdateParameters, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: certificateName
+          type:
+            - string
+          description: >
+            The identifier for the certificate. This
+
+            must be made up of algorithm and thumbprint separated by a dash, and
+            must
+
+            match the certificate data in the request. For example SHA1-a3d1c5.
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters
+          description: |
+            Additional parameters for certificate creation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<azure-arm-batch - v5.0.0.Certificate>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.beginDeleteMethod
+    name: 'beginDeleteMethod(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified certificate.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, accountName:
+        string, certificateName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: certificateName
+          type:
+            - string
+          description: >
+            The identifier for the certificate. This
+
+            must be made up of algorithm and thumbprint separated by a dash, and
+            must
+
+            match the certificate data in the request. For example SHA1-a3d1c5.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.beginDeleteMethod_2
+    name: 'beginDeleteMethod(string, string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified certificate.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, accountName:
+        string, certificateName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: certificateName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.beginDeleteMethod_1
+    name: 'beginDeleteMethod(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified certificate.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string, accountName:
+        string, certificateName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: certificateName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.CertificateOperations.beginDeleteMethodWithHttpOperationResponse
+    name: 'beginDeleteMethodWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified certificate.
+    syntax:
+      content: >-
+        function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, accountName: string, certificateName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: certificateName
+          type:
+            - string
+          description: >
+            The identifier for the certificate. This
+
+            must be made up of algorithm and thumbprint separated by a dash, and
+            must
+
+            match the certificate data in the request. For example SHA1-a3d1c5.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.cancelDeletion
+    name: 'cancelDeletion(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function cancelDeletion(resourceGroupName: string, accountName: string,
+        certificateName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: certificateName
+          type:
+            - string
+          description: >
+            The identifier for the certificate. This
+
+            must be made up of algorithm and thumbprint separated by a dash, and
+            must
+
+            match the certificate data in the request. For example SHA1-a3d1c5.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.Certificate>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Certificate} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Certificate} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Certificate} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.cancelDeletion_2
+    name: >-
+      cancelDeletion(string, string, string, Object,
+      ServiceCallback<Certificate>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function cancelDeletion(resourceGroupName: string, accountName: string,
+        certificateName: string, options: Object, callback:
+        ServiceCallback<Certificate>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: certificateName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.Certificate>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.Certificate>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Certificate} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Certificate} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Certificate} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.cancelDeletion_1
+    name: 'cancelDeletion(string, string, string, ServiceCallback<Certificate>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function cancelDeletion(resourceGroupName: string, accountName: string,
+        certificateName: string, callback: ServiceCallback<Certificate>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: certificateName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.Certificate>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.Certificate>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Certificate} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Certificate} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Certificate} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.CertificateOperations.cancelDeletionWithHttpOperationResponse
+    name: 'cancelDeletionWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function cancelDeletionWithHttpOperationResponse(resourceGroupName:
+        string, accountName: string, certificateName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: certificateName
+          type:
+            - string
+          description: >
+            The identifier for the certificate. This
+
+            must be made up of algorithm and thumbprint separated by a dash, and
+            must
+
+            match the certificate data in the request. For example SHA1-a3d1c5.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<azure-arm-batch - v5.0.0.Certificate>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.create
+    name: >-
+      create(string, string, string, CertificateCreateOrUpdateParameters,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates a new certificate inside the specified account.
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, accountName: string,
+        certificateName: string, parameters:
+        CertificateCreateOrUpdateParameters, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: certificateName
+          type:
+            - string
+          description: >
+            The identifier for the certificate. This
+
+            must be made up of algorithm and thumbprint separated by a dash, and
+            must
+
+            match the certificate data in the request. For example SHA1-a3d1c5.
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters
+          description: |
+            Additional parameters for certificate creation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.Certificate>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Certificate} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Certificate} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Certificate} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.create_2
+    name: >-
+      create(string, string, string, CertificateCreateOrUpdateParameters,
+      Object, ServiceCallback<Certificate>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates a new certificate inside the specified account.
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, accountName: string,
+        certificateName: string, parameters:
+        CertificateCreateOrUpdateParameters, options: Object, callback:
+        ServiceCallback<Certificate>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: certificateName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.Certificate>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.Certificate>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Certificate} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Certificate} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Certificate} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.create_1
+    name: >-
+      create(string, string, string, CertificateCreateOrUpdateParameters,
+      ServiceCallback<Certificate>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates a new certificate inside the specified account.
+    syntax:
+      content: >-
+        function create(resourceGroupName: string, accountName: string,
+        certificateName: string, parameters:
+        CertificateCreateOrUpdateParameters, callback:
+        ServiceCallback<Certificate>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: certificateName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.Certificate>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.Certificate>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Certificate} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Certificate} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Certificate} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.CertificateOperations.createWithHttpOperationResponse
+    name: >-
+      createWithHttpOperationResponse(string, string, string,
+      CertificateCreateOrUpdateParameters, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates a new certificate inside the specified account.
+    syntax:
+      content: >-
+        function createWithHttpOperationResponse(resourceGroupName: string,
+        accountName: string, certificateName: string, parameters:
+        CertificateCreateOrUpdateParameters, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: certificateName
+          type:
+            - string
+          description: >
+            The identifier for the certificate. This
+
+            must be made up of algorithm and thumbprint separated by a dash, and
+            must
+
+            match the certificate data in the request. For example SHA1-a3d1c5.
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters
+          description: |
+            Additional parameters for certificate creation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<azure-arm-batch - v5.0.0.Certificate>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.deleteMethod
+    name: 'deleteMethod(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified certificate.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, accountName: string,
+        certificateName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: certificateName
+          type:
+            - string
+          description: >
+            The identifier for the certificate. This
+
+            must be made up of algorithm and thumbprint separated by a dash, and
+            must
+
+            match the certificate data in the request. For example SHA1-a3d1c5.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.deleteMethod_2
+    name: 'deleteMethod(string, string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified certificate.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, accountName: string,
+        certificateName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: certificateName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.deleteMethod_1
+    name: 'deleteMethod(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified certificate.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, accountName: string,
+        certificateName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: certificateName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.CertificateOperations.deleteMethodWithHttpOperationResponse
+    name: 'deleteMethodWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified certificate.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, accountName: string, certificateName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: certificateName
+          type:
+            - string
+          description: >
+            The identifier for the certificate. This
+
+            must be made up of algorithm and thumbprint separated by a dash, and
+            must
+
+            match the certificate data in the request. For example SHA1-a3d1c5.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.get
+    name: 'get(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified certificate.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string,
+        certificateName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: certificateName
+          type:
+            - string
+          description: >
+            The identifier for the certificate. This
+
+            must be made up of algorithm and thumbprint separated by a dash, and
+            must
+
+            match the certificate data in the request. For example SHA1-a3d1c5.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.Certificate>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Certificate} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Certificate} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Certificate} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.get_2
+    name: 'get(string, string, string, Object, ServiceCallback<Certificate>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified certificate.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string,
+        certificateName: string, options: Object, callback:
+        ServiceCallback<Certificate>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: certificateName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.Certificate>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.Certificate>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Certificate} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Certificate} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Certificate} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.get_1
+    name: 'get(string, string, string, ServiceCallback<Certificate>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified certificate.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, accountName: string,
+        certificateName: string, callback: ServiceCallback<Certificate>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: certificateName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.Certificate>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.Certificate>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Certificate} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Certificate} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Certificate} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.CertificateOperations.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified certificate.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        accountName: string, certificateName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: certificateName
+          type:
+            - string
+          description: >
+            The identifier for the certificate. This
+
+            must be made up of algorithm and thumbprint separated by a dash, and
+            must
+
+            match the certificate data in the request. For example SHA1-a3d1c5.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<azure-arm-batch - v5.0.0.Certificate>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.listByBatchAccount
+    name: 'listByBatchAccount(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the certificates in the specified account.
+    syntax:
+      content: >-
+        function listByBatchAccount(resourceGroupName: string, accountName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ListCertificatesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListCertificatesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListCertificatesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListCertificatesResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.listByBatchAccount_2
+    name: >-
+      listByBatchAccount(string, string, Object,
+      ServiceCallback<ListCertificatesResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the certificates in the specified account.
+    syntax:
+      content: >-
+        function listByBatchAccount(resourceGroupName: string, accountName:
+        string, options: Object, callback:
+        ServiceCallback<ListCertificatesResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.ListCertificatesResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ListCertificatesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListCertificatesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListCertificatesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListCertificatesResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.listByBatchAccount_1
+    name: >-
+      listByBatchAccount(string, string,
+      ServiceCallback<ListCertificatesResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the certificates in the specified account.
+    syntax:
+      content: >-
+        function listByBatchAccount(resourceGroupName: string, accountName:
+        string, callback: ServiceCallback<ListCertificatesResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.ListCertificatesResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ListCertificatesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListCertificatesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListCertificatesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListCertificatesResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.listByBatchAccountNext
+    name: 'listByBatchAccountNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the certificates in the specified account.
+    syntax:
+      content: 'function listByBatchAccountNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ListCertificatesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListCertificatesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListCertificatesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListCertificatesResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.listByBatchAccountNext_2
+    name: >-
+      listByBatchAccountNext(string, Object,
+      ServiceCallback<ListCertificatesResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the certificates in the specified account.
+    syntax:
+      content: >-
+        function listByBatchAccountNext(nextPageLink: string, options: Object,
+        callback: ServiceCallback<ListCertificatesResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.ListCertificatesResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ListCertificatesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListCertificatesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListCertificatesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListCertificatesResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.listByBatchAccountNext_1
+    name: 'listByBatchAccountNext(string, ServiceCallback<ListCertificatesResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the certificates in the specified account.
+    syntax:
+      content: >-
+        function listByBatchAccountNext(nextPageLink: string, callback:
+        ServiceCallback<ListCertificatesResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.ListCertificatesResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.ListCertificatesResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ListCertificatesResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ListCertificatesResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ListCertificatesResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.CertificateOperations.listByBatchAccountNextWithHttpOperationResponse
+    name: 'listByBatchAccountNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the certificates in the specified account.
+    syntax:
+      content: >-
+        function listByBatchAccountNextWithHttpOperationResponse(nextPageLink:
+        string, options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.ListCertificatesResult>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.CertificateOperations.listByBatchAccountWithHttpOperationResponse
+    name: 'listByBatchAccountWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Lists all of the certificates in the specified account.
+    syntax:
+      content: >-
+        function listByBatchAccountWithHttpOperationResponse(resourceGroupName:
+        string, accountName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.ListCertificatesResult>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.update
+    name: >-
+      update(string, string, string, CertificateCreateOrUpdateParameters,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates the properties of an existing certificate.
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, accountName: string,
+        certificateName: string, parameters:
+        CertificateCreateOrUpdateParameters, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: certificateName
+          type:
+            - string
+          description: >
+            The identifier for the certificate. This
+
+            must be made up of algorithm and thumbprint separated by a dash, and
+            must
+
+            match the certificate data in the request. For example SHA1-a3d1c5.
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters
+          description: |
+            Certificate entity to update.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.Certificate>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Certificate} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Certificate} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Certificate} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.update_2
+    name: >-
+      update(string, string, string, CertificateCreateOrUpdateParameters,
+      Object, ServiceCallback<Certificate>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates the properties of an existing certificate.
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, accountName: string,
+        certificateName: string, parameters:
+        CertificateCreateOrUpdateParameters, options: Object, callback:
+        ServiceCallback<Certificate>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: certificateName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.Certificate>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.Certificate>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Certificate} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Certificate} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Certificate} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateOperations.update_1
+    name: >-
+      update(string, string, string, CertificateCreateOrUpdateParameters,
+      ServiceCallback<Certificate>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates the properties of an existing certificate.
+    syntax:
+      content: >-
+        function update(resourceGroupName: string, accountName: string,
+        certificateName: string, parameters:
+        CertificateCreateOrUpdateParameters, callback:
+        ServiceCallback<Certificate>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: accountName
+          type:
+            - string
+          description: ''
+        - id: certificateName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.Certificate>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.Certificate>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {Certificate} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {Certificate} [result]   - The deserialized result object if an error did not occur.
+                               See {@link Certificate} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.CertificateOperations.updateWithHttpOperationResponse
+    name: >-
+      updateWithHttpOperationResponse(string, string, string,
+      CertificateCreateOrUpdateParameters, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates the properties of an existing certificate.
+    syntax:
+      content: >-
+        function updateWithHttpOperationResponse(resourceGroupName: string,
+        accountName: string, certificateName: string, parameters:
+        CertificateCreateOrUpdateParameters, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group that
+            contains the Batch account.
+        - id: accountName
+          type:
+            - string
+          description: |
+            The name of the Batch account.
+        - id: certificateName
+          type:
+            - string
+          description: >
+            The identifier for the certificate. This
+
+            must be made up of algorithm and thumbprint separated by a dash, and
+            must
+
+            match the certificate data in the request. For example SHA1-a3d1c5.
+        - id: parameters
+          type:
+            - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters
+          description: |
+            Certificate entity to update.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<azure-arm-batch - v5.0.0.Certificate>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+references:
+  - uid: azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters
+    name: CertificateCreateOrUpdateParameters
+    spec.typeScript:
+      - name: CertificateCreateOrUpdateParameters
+        fullName: CertificateCreateOrUpdateParameters
+        uid: azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters
+  - uid: Promise<azure-arm-batch - v5.0.0.Certificate>
+    name: Certificate>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: Certificate
+        fullName: Certificate
+        uid: azure-arm-batch - v5.0.0.Certificate
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch - v5.0.0.Certificate>
+    name: Certificate>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: Certificate
+        fullName: Certificate
+        uid: azure-arm-batch - v5.0.0.Certificate
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-batch - v5.0.0.Certificate>>
+    name: Certificate>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: Certificate
+        fullName: Certificate
+        uid: azure-arm-batch - v5.0.0.Certificate
+      - name: '>>'
+        fullName: '>>'
+  - uid: Promise<azure-arm-batch - v5.0.0.ListCertificatesResult>
+    name: ListCertificatesResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ListCertificatesResult
+        fullName: ListCertificatesResult
+        uid: azure-arm-batch - v5.0.0.ListCertificatesResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch - v5.0.0.ListCertificatesResult>
+    name: ListCertificatesResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ListCertificatesResult
+        fullName: ListCertificatesResult
+        uid: azure-arm-batch - v5.0.0.ListCertificatesResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-batch -
+      v5.0.0.ListCertificatesResult>>
+    name: ListCertificatesResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ListCertificatesResult
+        fullName: ListCertificatesResult
+        uid: azure-arm-batch - v5.0.0.ListCertificatesResult
+      - name: '>>'
+        fullName: '>>'

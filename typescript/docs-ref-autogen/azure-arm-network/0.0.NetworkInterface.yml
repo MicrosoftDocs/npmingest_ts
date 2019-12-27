@@ -1,0 +1,389 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.NetworkInterface
+    name: NetworkInterface
+    fullName: NetworkInterface
+    children:
+      - azure-arm-network - v13.0.0.NetworkInterface.dnsSettings
+      - azure-arm-network - v13.0.0.NetworkInterface.enableAcceleratedNetworking
+      - azure-arm-network - v13.0.0.NetworkInterface.enableIPForwarding
+      - azure-arm-network - v13.0.0.NetworkInterface.etag
+      - azure-arm-network - v13.0.0.NetworkInterface.hostedWorkloads
+      - azure-arm-network - v13.0.0.NetworkInterface.id
+      - azure-arm-network - v13.0.0.NetworkInterface.interfaceEndpoint
+      - azure-arm-network - v13.0.0.NetworkInterface.ipConfigurations
+      - azure-arm-network - v13.0.0.NetworkInterface.location
+      - azure-arm-network - v13.0.0.NetworkInterface.macAddress
+      - azure-arm-network - v13.0.0.NetworkInterface.name
+      - azure-arm-network - v13.0.0.NetworkInterface.networkSecurityGroup
+      - azure-arm-network - v13.0.0.NetworkInterface.primary
+      - azure-arm-network - v13.0.0.NetworkInterface.provisioningState
+      - azure-arm-network - v13.0.0.NetworkInterface.resourceGuid
+      - azure-arm-network - v13.0.0.NetworkInterface.tags
+      - azure-arm-network - v13.0.0.NetworkInterface.tapConfigurations
+      - azure-arm-network - v13.0.0.NetworkInterface.type
+      - azure-arm-network - v13.0.0.NetworkInterface.virtualMachine
+    langs:
+      - typeScript
+    type: interface
+    summary: A network interface in a resource group.
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.dnsSettings
+    name: dnsSettings
+    fullName: dnsSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The DNS settings in network interface.
+    optional: true
+    syntax:
+      content: 'dnsSettings?: NetworkInterfaceDnsSettings'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.NetworkInterfaceDnsSettings
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.enableAcceleratedNetworking
+    name: enableAcceleratedNetworking
+    fullName: enableAcceleratedNetworking
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: If the network interface is accelerated networking enabled.
+    optional: true
+    syntax:
+      content: 'enableAcceleratedNetworking?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.enableIPForwarding
+    name: enableIPForwarding
+    fullName: enableIPForwarding
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Indicates whether IP forwarding is enabled on this network interface.
+    optional: true
+    syntax:
+      content: 'enableIPForwarding?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A unique read-only string that changes whenever the resource is updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.hostedWorkloads
+    name: hostedWorkloads
+    fullName: hostedWorkloads
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A list of references to linked BareMetal resources
+    optional: true
+    syntax:
+      content: 'hostedWorkloads?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.interfaceEndpoint
+    name: interfaceEndpoint
+    fullName: interfaceEndpoint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      A reference to the interface endpoint to which the network interface is
+      linked.
+    optional: true
+    syntax:
+      content: 'interfaceEndpoint?: InterfaceEndpoint'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.InterfaceEndpoint
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.ipConfigurations
+    name: ipConfigurations
+    fullName: ipConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A list of IPConfigurations of the network interface.
+    optional: true
+    syntax:
+      content: 'ipConfigurations?: NetworkInterfaceIPConfiguration[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.NetworkInterfaceIPConfiguration[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.macAddress
+    name: macAddress
+    fullName: macAddress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The MAC address of the network interface.
+    optional: true
+    syntax:
+      content: 'macAddress?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.networkSecurityGroup
+    name: networkSecurityGroup
+    fullName: networkSecurityGroup
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The reference of the NetworkSecurityGroup resource.
+    optional: true
+    syntax:
+      content: 'networkSecurityGroup?: NetworkSecurityGroup'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.NetworkSecurityGroup
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.primary
+    name: primary
+    fullName: primary
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Gets whether this is a primary network interface on a virtual machine.
+    optional: true
+    syntax:
+      content: 'primary?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the public IP resource. Possible values are:
+      'Updating', 'Deleting',
+
+      and 'Failed'.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.resourceGuid
+    name: resourceGuid
+    fullName: resourceGuid
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The resource GUID property of the network interface resource.
+    optional: true
+    syntax:
+      content: 'resourceGuid?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.tapConfigurations
+    name: tapConfigurations
+    fullName: tapConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A list of TapConfigurations of the network interface.
+    optional: true
+    syntax:
+      content: 'tapConfigurations?: NetworkInterfaceTapConfiguration[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.NetworkInterfaceTapConfiguration[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkInterface.virtualMachine
+    name: virtualMachine
+    fullName: virtualMachine
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The reference of a virtual machine.
+    optional: true
+    syntax:
+      content: 'virtualMachine?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: azure-arm-network - v13.0.0.NetworkInterfaceDnsSettings
+    name: NetworkInterfaceDnsSettings
+    spec.typeScript:
+      - name: NetworkInterfaceDnsSettings
+        fullName: NetworkInterfaceDnsSettings
+        uid: azure-arm-network - v13.0.0.NetworkInterfaceDnsSettings
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoint
+    name: InterfaceEndpoint
+    spec.typeScript:
+      - name: InterfaceEndpoint
+        fullName: InterfaceEndpoint
+        uid: azure-arm-network - v13.0.0.InterfaceEndpoint
+  - uid: 'azure-arm-network - v13.0.0.NetworkInterfaceIPConfiguration[]'
+    name: 'NetworkInterfaceIPConfiguration[]'
+    spec.typeScript:
+      - name: NetworkInterfaceIPConfiguration
+        fullName: NetworkInterfaceIPConfiguration
+        uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.NetworkSecurityGroup
+    name: NetworkSecurityGroup
+    spec.typeScript:
+      - name: NetworkSecurityGroup
+        fullName: NetworkSecurityGroup
+        uid: azure-arm-network - v13.0.0.NetworkSecurityGroup
+  - uid: 'azure-arm-network - v13.0.0.NetworkInterfaceTapConfiguration[]'
+    name: 'NetworkInterfaceTapConfiguration[]'
+    spec.typeScript:
+      - name: NetworkInterfaceTapConfiguration
+        fullName: NetworkInterfaceTapConfiguration
+        uid: azure-arm-network - v13.0.0.NetworkInterfaceTapConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource

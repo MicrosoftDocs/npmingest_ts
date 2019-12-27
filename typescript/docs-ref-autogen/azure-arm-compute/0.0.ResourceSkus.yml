@@ -1,0 +1,364 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.ResourceSkus
+    name: ResourceSkus
+    fullName: ResourceSkus
+    children:
+      - azure-arm-compute - v10.0.0.ResourceSkus.list
+      - azure-arm-compute - v10.0.0.ResourceSkus.list_2
+      - azure-arm-compute - v10.0.0.ResourceSkus.list_1
+      - azure-arm-compute - v10.0.0.ResourceSkus.listNext
+      - azure-arm-compute - v10.0.0.ResourceSkus.listNext_2
+      - azure-arm-compute - v10.0.0.ResourceSkus.listNext_1
+      - >-
+        azure-arm-compute -
+        v10.0.0.ResourceSkus.listNextWithHttpOperationResponse
+      - azure-arm-compute - v10.0.0.ResourceSkus.listWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSkus.list
+    name: list(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the list of Microsoft.Compute SKUs available for your Subscription.
+    syntax:
+      content: 'function list(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.ResourceSkusResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceSkusResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceSkusResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceSkusResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSkus.list_2
+    name: 'list(Object, ServiceCallback<ResourceSkusResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the list of Microsoft.Compute SKUs available for your Subscription.
+    syntax:
+      content: >-
+        function list(options: Object, callback:
+        ServiceCallback<ResourceSkusResult>)
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-compute - v10.0.0.ResourceSkusResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.ResourceSkusResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceSkusResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceSkusResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceSkusResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSkus.list_1
+    name: list(ServiceCallback<ResourceSkusResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the list of Microsoft.Compute SKUs available for your Subscription.
+    syntax:
+      content: 'function list(callback: ServiceCallback<ResourceSkusResult>)'
+      parameters:
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-compute - v10.0.0.ResourceSkusResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.ResourceSkusResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceSkusResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceSkusResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceSkusResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSkus.listNext
+    name: 'listNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the list of Microsoft.Compute SKUs available for your Subscription.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.ResourceSkusResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceSkusResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceSkusResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceSkusResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSkus.listNext_2
+    name: 'listNext(string, Object, ServiceCallback<ResourceSkusResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the list of Microsoft.Compute SKUs available for your Subscription.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<ResourceSkusResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-compute - v10.0.0.ResourceSkusResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.ResourceSkusResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceSkusResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceSkusResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceSkusResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSkus.listNext_1
+    name: 'listNext(string, ServiceCallback<ResourceSkusResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the list of Microsoft.Compute SKUs available for your Subscription.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<ResourceSkusResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-compute - v10.0.0.ResourceSkusResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-compute - v10.0.0.ResourceSkusResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ResourceSkusResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ResourceSkusResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ResourceSkusResult} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSkus.listNextWithHttpOperationResponse
+    name: 'listNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the list of Microsoft.Compute SKUs available for your Subscription.
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute -
+            v10.0.0.ResourceSkusResult>>
+        description: A promise is returned
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSkus.listWithHttpOperationResponse
+    name: listWithHttpOperationResponse(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the list of Microsoft.Compute SKUs available for your Subscription.
+    syntax:
+      content: 'function listWithHttpOperationResponse(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-compute -
+            v10.0.0.ResourceSkusResult>>
+        description: A promise is returned
+    package: azure-arm-compute - v10
+references:
+  - uid: Promise<azure-arm-compute - v10.0.0.ResourceSkusResult>
+    name: ResourceSkusResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ResourceSkusResult
+        fullName: ResourceSkusResult
+        uid: azure-arm-compute - v10.0.0.ResourceSkusResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-compute - v10.0.0.ResourceSkusResult>
+    name: ResourceSkusResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ResourceSkusResult
+        fullName: ResourceSkusResult
+        uid: azure-arm-compute - v10.0.0.ResourceSkusResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-compute -
+      v10.0.0.ResourceSkusResult>>
+    name: ResourceSkusResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ResourceSkusResult
+        fullName: ResourceSkusResult
+        uid: azure-arm-compute - v10.0.0.ResourceSkusResult
+      - name: '>>'
+        fullName: '>>'

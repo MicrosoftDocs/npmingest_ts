@@ -1,0 +1,173 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayBackendAddressPool
+    name: ApplicationGatewayBackendAddressPool
+    fullName: ApplicationGatewayBackendAddressPool
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayBackendAddressPool.backendAddresses
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayBackendAddressPool.backendIPConfigurations
+      - azure-arm-network - v13.0.0.ApplicationGatewayBackendAddressPool.etag
+      - azure-arm-network - v13.0.0.ApplicationGatewayBackendAddressPool.id
+      - azure-arm-network - v13.0.0.ApplicationGatewayBackendAddressPool.name
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayBackendAddressPool.provisioningState
+      - azure-arm-network - v13.0.0.ApplicationGatewayBackendAddressPool.type
+    langs:
+      - typeScript
+    type: interface
+    summary: Backend Address Pool of an application gateway.
+    extends:
+      name: azure-arm-network - v13.0.0.SubResource
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayBackendAddressPool.backendAddresses
+    name: backendAddresses
+    fullName: backendAddresses
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Backend addresses
+    optional: true
+    syntax:
+      content: 'backendAddresses?: ApplicationGatewayBackendAddress[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ApplicationGatewayBackendAddress[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayBackendAddressPool.backendIPConfigurations
+    name: backendIPConfigurations
+    fullName: backendIPConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Collection of references to IPs defined in network interfaces.
+    optional: true
+    syntax:
+      content: 'backendIPConfigurations?: NetworkInterfaceIPConfiguration[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.NetworkInterfaceIPConfiguration[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayBackendAddressPool.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A unique read-only string that changes whenever the resource is updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayBackendAddressPool.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayBackendAddressPool.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Name of the backend address pool that is unique within an Application
+      Gateway.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayBackendAddressPool.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Provisioning state of the backend address pool resource. Possible values
+      are: 'Updating',
+
+      'Deleting', and 'Failed'.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayBackendAddressPool.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Type of the resource.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource
+  - uid: 'azure-arm-network - v13.0.0.ApplicationGatewayBackendAddress[]'
+    name: 'ApplicationGatewayBackendAddress[]'
+    spec.typeScript:
+      - name: ApplicationGatewayBackendAddress
+        fullName: ApplicationGatewayBackendAddress
+        uid: azure-arm-network - v13.0.0.ApplicationGatewayBackendAddress
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.NetworkInterfaceIPConfiguration[]'
+    name: 'NetworkInterfaceIPConfiguration[]'
+    spec.typeScript:
+      - name: NetworkInterfaceIPConfiguration
+        fullName: NetworkInterfaceIPConfiguration
+        uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfiguration
+      - name: '[]'
+        fullName: '[]'

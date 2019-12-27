@@ -1,0 +1,2261 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans
+    name: DdosProtectionPlans
+    fullName: DdosProtectionPlans
+    children:
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.beginCreateOrUpdate
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.beginCreateOrUpdate_2
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.beginCreateOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosProtectionPlans.beginCreateOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.beginDeleteMethod
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.beginDeleteMethod_2
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.beginDeleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosProtectionPlans.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.beginUpdateTags
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.beginUpdateTags_2
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.beginUpdateTags_1
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosProtectionPlans.beginUpdateTagsWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.createOrUpdate
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.createOrUpdate_2
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.createOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosProtectionPlans.createOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.deleteMethod
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.deleteMethod_2
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.deleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosProtectionPlans.deleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.get
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.get_2
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.get_1
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosProtectionPlans.getWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.list
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.list_2
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.list_1
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.listByResourceGroup
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.listByResourceGroup_2
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.listByResourceGroup_1
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.listByResourceGroupNext
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosProtectionPlans.listByResourceGroupNext_2
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosProtectionPlans.listByResourceGroupNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosProtectionPlans.listByResourceGroupNextWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosProtectionPlans.listByResourceGroupWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.listNext
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.listNext_2
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.listNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosProtectionPlans.listNextWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosProtectionPlans.listWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.updateTags
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.updateTags_2
+      - azure-arm-network - v13.0.0.DdosProtectionPlans.updateTags_1
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosProtectionPlans.updateTagsWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.beginCreateOrUpdate
+    name: 'beginCreateOrUpdate(string, string, DdosProtectionPlan, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a DDoS protection plan.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        ddosProtectionPlanName: string, parameters: DdosProtectionPlan,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: |
+            The name of the DDoS protection plan.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.DdosProtectionPlan
+          description: |
+            Parameters supplied to the create or update
+            operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlan>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlan} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlan} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlan} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.beginCreateOrUpdate_2
+    name: >-
+      beginCreateOrUpdate(string, string, DdosProtectionPlan, Object,
+      ServiceCallback<DdosProtectionPlan>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a DDoS protection plan.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        ddosProtectionPlanName: string, parameters: DdosProtectionPlan, options:
+        Object, callback: ServiceCallback<DdosProtectionPlan>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.DdosProtectionPlan
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosProtectionPlan>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlan>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlan} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlan} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlan} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.beginCreateOrUpdate_1
+    name: >-
+      beginCreateOrUpdate(string, string, DdosProtectionPlan,
+      ServiceCallback<DdosProtectionPlan>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a DDoS protection plan.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        ddosProtectionPlanName: string, parameters: DdosProtectionPlan,
+        callback: ServiceCallback<DdosProtectionPlan>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.DdosProtectionPlan
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosProtectionPlan>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlan>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlan} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlan} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlan} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosProtectionPlans.beginCreateOrUpdateWithHttpOperationResponse
+    name: >-
+      beginCreateOrUpdateWithHttpOperationResponse(string, string,
+      DdosProtectionPlan, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a DDoS protection plan.
+    syntax:
+      content: >-
+        function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, ddosProtectionPlanName: string, parameters: DdosProtectionPlan,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: |
+            The name of the DDoS protection plan.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.DdosProtectionPlan
+          description: |
+            Parameters supplied to the create or update
+            operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.DdosProtectionPlan>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.beginDeleteMethod
+    name: 'beginDeleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified DDoS protection plan.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        ddosProtectionPlanName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: |
+            The name of the DDoS protection plan.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.beginDeleteMethod_2
+    name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified DDoS protection plan.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        ddosProtectionPlanName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.beginDeleteMethod_1
+    name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified DDoS protection plan.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        ddosProtectionPlanName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosProtectionPlans.beginDeleteMethodWithHttpOperationResponse
+    name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified DDoS protection plan.
+    syntax:
+      content: >-
+        function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, ddosProtectionPlanName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: |
+            The name of the DDoS protection plan.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.beginUpdateTags
+    name: 'beginUpdateTags(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a DDoS protection plan tags
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        ddosProtectionPlanName: string, parameters: TagsObject, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: |
+            The name of the DDoS protection plan.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to the update DDoS protection
+            plan resource tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlan>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlan} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlan} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlan} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.beginUpdateTags_2
+    name: >-
+      beginUpdateTags(string, string, TagsObject, Object,
+      ServiceCallback<DdosProtectionPlan>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a DDoS protection plan tags
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        ddosProtectionPlanName: string, parameters: TagsObject, options: Object,
+        callback: ServiceCallback<DdosProtectionPlan>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosProtectionPlan>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlan>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlan} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlan} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlan} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.beginUpdateTags_1
+    name: >-
+      beginUpdateTags(string, string, TagsObject,
+      ServiceCallback<DdosProtectionPlan>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a DDoS protection plan tags
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        ddosProtectionPlanName: string, parameters: TagsObject, callback:
+        ServiceCallback<DdosProtectionPlan>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosProtectionPlan>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlan>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlan} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlan} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlan} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosProtectionPlans.beginUpdateTagsWithHttpOperationResponse
+    name: >-
+      beginUpdateTagsWithHttpOperationResponse(string, string, TagsObject,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a DDoS protection plan tags
+    syntax:
+      content: >-
+        function beginUpdateTagsWithHttpOperationResponse(resourceGroupName:
+        string, ddosProtectionPlanName: string, parameters: TagsObject,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: |
+            The name of the DDoS protection plan.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to the update DDoS protection
+            plan resource tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.DdosProtectionPlan>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.createOrUpdate
+    name: 'createOrUpdate(string, string, DdosProtectionPlan, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a DDoS protection plan.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        ddosProtectionPlanName: string, parameters: DdosProtectionPlan,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: |
+            The name of the DDoS protection plan.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.DdosProtectionPlan
+          description: |
+            Parameters supplied to the create or update
+            operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlan>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlan} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlan} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlan} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.createOrUpdate_2
+    name: >-
+      createOrUpdate(string, string, DdosProtectionPlan, Object,
+      ServiceCallback<DdosProtectionPlan>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a DDoS protection plan.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        ddosProtectionPlanName: string, parameters: DdosProtectionPlan, options:
+        Object, callback: ServiceCallback<DdosProtectionPlan>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.DdosProtectionPlan
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosProtectionPlan>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlan>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlan} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlan} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlan} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.createOrUpdate_1
+    name: >-
+      createOrUpdate(string, string, DdosProtectionPlan,
+      ServiceCallback<DdosProtectionPlan>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a DDoS protection plan.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        ddosProtectionPlanName: string, parameters: DdosProtectionPlan,
+        callback: ServiceCallback<DdosProtectionPlan>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.DdosProtectionPlan
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosProtectionPlan>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlan>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlan} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlan} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlan} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosProtectionPlans.createOrUpdateWithHttpOperationResponse
+    name: >-
+      createOrUpdateWithHttpOperationResponse(string, string,
+      DdosProtectionPlan, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a DDoS protection plan.
+    syntax:
+      content: >-
+        function createOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, ddosProtectionPlanName: string, parameters: DdosProtectionPlan,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: |
+            The name of the DDoS protection plan.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.DdosProtectionPlan
+          description: |
+            Parameters supplied to the create or update
+            operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.DdosProtectionPlan>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.deleteMethod
+    name: 'deleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified DDoS protection plan.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, ddosProtectionPlanName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: |
+            The name of the DDoS protection plan.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.deleteMethod_2
+    name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified DDoS protection plan.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, ddosProtectionPlanName:
+        string, options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.deleteMethod_1
+    name: 'deleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified DDoS protection plan.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, ddosProtectionPlanName:
+        string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosProtectionPlans.deleteMethodWithHttpOperationResponse
+    name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified DDoS protection plan.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, ddosProtectionPlanName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: |
+            The name of the DDoS protection plan.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.get
+    name: 'get(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified DDoS protection plan.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, ddosProtectionPlanName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: |
+            The name of the DDoS protection plan.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlan>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlan} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlan} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlan} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.get_2
+    name: 'get(string, string, Object, ServiceCallback<DdosProtectionPlan>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified DDoS protection plan.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, ddosProtectionPlanName: string,
+        options: Object, callback: ServiceCallback<DdosProtectionPlan>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosProtectionPlan>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlan>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlan} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlan} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlan} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.get_1
+    name: 'get(string, string, ServiceCallback<DdosProtectionPlan>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified DDoS protection plan.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, ddosProtectionPlanName: string,
+        callback: ServiceCallback<DdosProtectionPlan>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosProtectionPlan>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlan>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlan} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlan} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlan} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosProtectionPlans.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified DDoS protection plan.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        ddosProtectionPlanName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: |
+            The name of the DDoS protection plan.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.DdosProtectionPlan>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.list
+    name: list(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all DDoS protection plans in a subscription.
+    syntax:
+      content: 'function list(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlanListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlanListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlanListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlanListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.list_2
+    name: 'list(Object, ServiceCallback<DdosProtectionPlanListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all DDoS protection plans in a subscription.
+    syntax:
+      content: >-
+        function list(options: Object, callback:
+        ServiceCallback<DdosProtectionPlanListResult>)
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.DdosProtectionPlanListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlanListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlanListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlanListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlanListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.list_1
+    name: list(ServiceCallback<DdosProtectionPlanListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all DDoS protection plans in a subscription.
+    syntax:
+      content: 'function list(callback: ServiceCallback<DdosProtectionPlanListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.DdosProtectionPlanListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlanListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlanListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlanListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlanListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.listByResourceGroup
+    name: 'listByResourceGroup(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the DDoS protection plans in a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlanListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlanListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlanListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlanListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.listByResourceGroup_2
+    name: >-
+      listByResourceGroup(string, Object,
+      ServiceCallback<DdosProtectionPlanListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the DDoS protection plans in a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, options: Object,
+        callback: ServiceCallback<DdosProtectionPlanListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.DdosProtectionPlanListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlanListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlanListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlanListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlanListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.listByResourceGroup_1
+    name: 'listByResourceGroup(string, ServiceCallback<DdosProtectionPlanListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the DDoS protection plans in a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string, callback:
+        ServiceCallback<DdosProtectionPlanListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.DdosProtectionPlanListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlanListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlanListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlanListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlanListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.listByResourceGroupNext
+    name: 'listByResourceGroupNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the DDoS protection plans in a resource group.
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlanListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlanListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlanListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlanListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.listByResourceGroupNext_2
+    name: >-
+      listByResourceGroupNext(string, Object,
+      ServiceCallback<DdosProtectionPlanListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the DDoS protection plans in a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, options: Object,
+        callback: ServiceCallback<DdosProtectionPlanListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.DdosProtectionPlanListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlanListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlanListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlanListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlanListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.listByResourceGroupNext_1
+    name: >-
+      listByResourceGroupNext(string,
+      ServiceCallback<DdosProtectionPlanListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the DDoS protection plans in a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, callback:
+        ServiceCallback<DdosProtectionPlanListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.DdosProtectionPlanListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlanListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlanListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlanListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlanListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosProtectionPlans.listByResourceGroupNextWithHttpOperationResponse
+    name: 'listByResourceGroupNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the DDoS protection plans in a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroupNextWithHttpOperationResponse(nextPageLink:
+        string, options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.DdosProtectionPlanListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosProtectionPlans.listByResourceGroupWithHttpOperationResponse
+    name: 'listByResourceGroupWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the DDoS protection plans in a resource group.
+    syntax:
+      content: >-
+        function listByResourceGroupWithHttpOperationResponse(resourceGroupName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.DdosProtectionPlanListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.listNext
+    name: 'listNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all DDoS protection plans in a subscription.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlanListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlanListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlanListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlanListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.listNext_2
+    name: 'listNext(string, Object, ServiceCallback<DdosProtectionPlanListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all DDoS protection plans in a subscription.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<DdosProtectionPlanListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.DdosProtectionPlanListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlanListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlanListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlanListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlanListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.listNext_1
+    name: 'listNext(string, ServiceCallback<DdosProtectionPlanListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all DDoS protection plans in a subscription.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<DdosProtectionPlanListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.DdosProtectionPlanListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlanListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlanListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlanListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlanListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosProtectionPlans.listNextWithHttpOperationResponse
+    name: 'listNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all DDoS protection plans in a subscription.
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.DdosProtectionPlanListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosProtectionPlans.listWithHttpOperationResponse
+    name: listWithHttpOperationResponse(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all DDoS protection plans in a subscription.
+    syntax:
+      content: 'function listWithHttpOperationResponse(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.DdosProtectionPlanListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.updateTags
+    name: 'updateTags(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a DDoS protection plan tags
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, ddosProtectionPlanName:
+        string, parameters: TagsObject, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: |
+            The name of the DDoS protection plan.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to the update DDoS protection
+            plan resource tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlan>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlan} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlan} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlan} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.updateTags_2
+    name: >-
+      updateTags(string, string, TagsObject, Object,
+      ServiceCallback<DdosProtectionPlan>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a DDoS protection plan tags
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, ddosProtectionPlanName:
+        string, parameters: TagsObject, options: Object, callback:
+        ServiceCallback<DdosProtectionPlan>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosProtectionPlan>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlan>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlan} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlan} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlan} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlans.updateTags_1
+    name: >-
+      updateTags(string, string, TagsObject,
+      ServiceCallback<DdosProtectionPlan>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a DDoS protection plan tags
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, ddosProtectionPlanName:
+        string, parameters: TagsObject, callback:
+        ServiceCallback<DdosProtectionPlan>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosProtectionPlan>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosProtectionPlan>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosProtectionPlan} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosProtectionPlan} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosProtectionPlan} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosProtectionPlans.updateTagsWithHttpOperationResponse
+    name: 'updateTagsWithHttpOperationResponse(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a DDoS protection plan tags
+    syntax:
+      content: >-
+        function updateTagsWithHttpOperationResponse(resourceGroupName: string,
+        ddosProtectionPlanName: string, parameters: TagsObject, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosProtectionPlanName
+          type:
+            - string
+          description: |
+            The name of the DDoS protection plan.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to the update DDoS protection
+            plan resource tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.DdosProtectionPlan>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlan
+    name: DdosProtectionPlan
+    spec.typeScript:
+      - name: DdosProtectionPlan
+        fullName: DdosProtectionPlan
+        uid: azure-arm-network - v13.0.0.DdosProtectionPlan
+  - uid: Promise<azure-arm-network - v13.0.0.DdosProtectionPlan>
+    name: DdosProtectionPlan>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: DdosProtectionPlan
+        fullName: DdosProtectionPlan
+        uid: azure-arm-network - v13.0.0.DdosProtectionPlan
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.DdosProtectionPlan>
+    name: DdosProtectionPlan>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: DdosProtectionPlan
+        fullName: DdosProtectionPlan
+        uid: azure-arm-network - v13.0.0.DdosProtectionPlan
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.DdosProtectionPlan>>
+    name: DdosProtectionPlan>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: DdosProtectionPlan
+        fullName: DdosProtectionPlan
+        uid: azure-arm-network - v13.0.0.DdosProtectionPlan
+      - name: '>>'
+        fullName: '>>'
+  - uid: azure-arm-network - v13.0.0.TagsObject
+    name: TagsObject
+    spec.typeScript:
+      - name: TagsObject
+        fullName: TagsObject
+        uid: azure-arm-network - v13.0.0.TagsObject
+  - uid: Promise<azure-arm-network - v13.0.0.DdosProtectionPlanListResult>
+    name: DdosProtectionPlanListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: DdosProtectionPlanListResult
+        fullName: DdosProtectionPlanListResult
+        uid: azure-arm-network - v13.0.0.DdosProtectionPlanListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.DdosProtectionPlanListResult>
+    name: DdosProtectionPlanListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: DdosProtectionPlanListResult
+        fullName: DdosProtectionPlanListResult
+        uid: azure-arm-network - v13.0.0.DdosProtectionPlanListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.DdosProtectionPlanListResult>>
+    name: DdosProtectionPlanListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: DdosProtectionPlanListResult
+        fullName: DdosProtectionPlanListResult
+        uid: azure-arm-network - v13.0.0.DdosProtectionPlanListResult
+      - name: '>>'
+        fullName: '>>'

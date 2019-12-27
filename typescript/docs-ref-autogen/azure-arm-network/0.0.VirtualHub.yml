@@ -1,0 +1,284 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.VirtualHub
+    name: VirtualHub
+    fullName: VirtualHub
+    children:
+      - azure-arm-network - v13.0.0.VirtualHub.addressPrefix
+      - azure-arm-network - v13.0.0.VirtualHub.etag
+      - azure-arm-network - v13.0.0.VirtualHub.expressRouteGateway
+      - azure-arm-network - v13.0.0.VirtualHub.id
+      - azure-arm-network - v13.0.0.VirtualHub.location
+      - azure-arm-network - v13.0.0.VirtualHub.name
+      - azure-arm-network - v13.0.0.VirtualHub.p2SVpnGateway
+      - azure-arm-network - v13.0.0.VirtualHub.provisioningState
+      - azure-arm-network - v13.0.0.VirtualHub.routeTable
+      - azure-arm-network - v13.0.0.VirtualHub.tags
+      - azure-arm-network - v13.0.0.VirtualHub.type
+      - azure-arm-network - v13.0.0.VirtualHub.virtualNetworkConnections
+      - azure-arm-network - v13.0.0.VirtualHub.virtualWan
+      - azure-arm-network - v13.0.0.VirtualHub.vpnGateway
+    langs:
+      - typeScript
+    type: interface
+    summary: VirtualHub Resource.
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualHub.addressPrefix
+    name: addressPrefix
+    fullName: addressPrefix
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Address-prefix for this VirtualHub.
+    optional: true
+    syntax:
+      content: 'addressPrefix?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualHub.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Gets a unique read-only string that changes whenever the resource is
+      updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualHub.expressRouteGateway
+    name: expressRouteGateway
+    fullName: expressRouteGateway
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The expressRouteGateway associated with this VirtualHub
+    optional: true
+    syntax:
+      content: 'expressRouteGateway?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualHub.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualHub.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualHub.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualHub.p2SVpnGateway
+    name: p2SVpnGateway
+    fullName: p2SVpnGateway
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The P2SVpnGateway associated with this VirtualHub
+    optional: true
+    syntax:
+      content: 'p2SVpnGateway?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualHub.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the resource. Possible values include:
+      'Succeeded', 'Updating',
+
+      'Deleting', 'Failed'
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualHub.routeTable
+    name: routeTable
+    fullName: routeTable
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The routeTable associated with this virtual hub.
+    optional: true
+    syntax:
+      content: 'routeTable?: VirtualHubRouteTable'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.VirtualHubRouteTable
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualHub.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualHub.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualHub.virtualNetworkConnections
+    name: virtualNetworkConnections
+    fullName: virtualNetworkConnections
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: List of all vnet connections with this VirtualHub.
+    optional: true
+    syntax:
+      content: 'virtualNetworkConnections?: HubVirtualNetworkConnection[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.HubVirtualNetworkConnection[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualHub.virtualWan
+    name: virtualWan
+    fullName: virtualWan
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The VirtualWAN to which the VirtualHub belongs
+    optional: true
+    syntax:
+      content: 'virtualWan?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualHub.vpnGateway
+    name: vpnGateway
+    fullName: vpnGateway
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The VpnGateway associated with this VirtualHub
+    optional: true
+    syntax:
+      content: 'vpnGateway?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource
+  - uid: azure-arm-network - v13.0.0.VirtualHubRouteTable
+    name: VirtualHubRouteTable
+    spec.typeScript:
+      - name: VirtualHubRouteTable
+        fullName: VirtualHubRouteTable
+        uid: azure-arm-network - v13.0.0.VirtualHubRouteTable
+  - uid: 'azure-arm-network - v13.0.0.HubVirtualNetworkConnection[]'
+    name: 'HubVirtualNetworkConnection[]'
+    spec.typeScript:
+      - name: HubVirtualNetworkConnection
+        fullName: HubVirtualNetworkConnection
+        uid: azure-arm-network - v13.0.0.HubVirtualNetworkConnection
+      - name: '[]'
+        fullName: '[]'

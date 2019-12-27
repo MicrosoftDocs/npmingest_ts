@@ -1,0 +1,264 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.AzureFirewall
+    name: AzureFirewall
+    fullName: AzureFirewall
+    children:
+      - azure-arm-network - v13.0.0.AzureFirewall.applicationRuleCollections
+      - azure-arm-network - v13.0.0.AzureFirewall.etag
+      - azure-arm-network - v13.0.0.AzureFirewall.id
+      - azure-arm-network - v13.0.0.AzureFirewall.ipConfigurations
+      - azure-arm-network - v13.0.0.AzureFirewall.location
+      - azure-arm-network - v13.0.0.AzureFirewall.name
+      - azure-arm-network - v13.0.0.AzureFirewall.natRuleCollections
+      - azure-arm-network - v13.0.0.AzureFirewall.networkRuleCollections
+      - azure-arm-network - v13.0.0.AzureFirewall.provisioningState
+      - azure-arm-network - v13.0.0.AzureFirewall.tags
+      - azure-arm-network - v13.0.0.AzureFirewall.threatIntelMode
+      - azure-arm-network - v13.0.0.AzureFirewall.type
+    langs:
+      - typeScript
+    type: interface
+    summary: Azure Firewall resource
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewall.applicationRuleCollections
+    name: applicationRuleCollections
+    fullName: applicationRuleCollections
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Collection of application rule collections used by Azure Firewall.
+    optional: true
+    syntax:
+      content: 'applicationRuleCollections?: AzureFirewallApplicationRuleCollection[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.AzureFirewallApplicationRuleCollection[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewall.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Gets a unique read-only string that changes whenever the resource is
+      updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewall.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewall.ipConfigurations
+    name: ipConfigurations
+    fullName: ipConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: IP configuration of the Azure Firewall resource.
+    optional: true
+    syntax:
+      content: 'ipConfigurations?: AzureFirewallIPConfiguration[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.AzureFirewallIPConfiguration[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewall.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewall.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewall.natRuleCollections
+    name: natRuleCollections
+    fullName: natRuleCollections
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Collection of NAT rule collections used by Azure Firewall.
+    optional: true
+    syntax:
+      content: 'natRuleCollections?: AzureFirewallNatRuleCollection[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.AzureFirewallNatRuleCollection[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewall.networkRuleCollections
+    name: networkRuleCollections
+    fullName: networkRuleCollections
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Collection of network rule collections used by Azure Firewall.
+    optional: true
+    syntax:
+      content: 'networkRuleCollections?: AzureFirewallNetworkRuleCollection[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.AzureFirewallNetworkRuleCollection[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewall.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the resource. Possible values include:
+      'Succeeded', 'Updating',
+
+      'Deleting', 'Failed'
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewall.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewall.threatIntelMode
+    name: threatIntelMode
+    fullName: threatIntelMode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The operation mode for Threat Intelligence. Possible values include:
+      'Alert', 'Deny', 'Off'
+    optional: true
+    syntax:
+      content: 'threatIntelMode?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewall.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: 'azure-arm-network - v13.0.0.AzureFirewallApplicationRuleCollection[]'
+    name: 'AzureFirewallApplicationRuleCollection[]'
+    spec.typeScript:
+      - name: AzureFirewallApplicationRuleCollection
+        fullName: AzureFirewallApplicationRuleCollection
+        uid: azure-arm-network - v13.0.0.AzureFirewallApplicationRuleCollection
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.AzureFirewallIPConfiguration[]'
+    name: 'AzureFirewallIPConfiguration[]'
+    spec.typeScript:
+      - name: AzureFirewallIPConfiguration
+        fullName: AzureFirewallIPConfiguration
+        uid: azure-arm-network - v13.0.0.AzureFirewallIPConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.AzureFirewallNatRuleCollection[]'
+    name: 'AzureFirewallNatRuleCollection[]'
+    spec.typeScript:
+      - name: AzureFirewallNatRuleCollection
+        fullName: AzureFirewallNatRuleCollection
+        uid: azure-arm-network - v13.0.0.AzureFirewallNatRuleCollection
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.AzureFirewallNetworkRuleCollection[]'
+    name: 'AzureFirewallNetworkRuleCollection[]'
+    spec.typeScript:
+      - name: AzureFirewallNetworkRuleCollection
+        fullName: AzureFirewallNetworkRuleCollection
+        uid: azure-arm-network - v13.0.0.AzureFirewallNetworkRuleCollection
+      - name: '[]'
+        fullName: '[]'

@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.RollbackStatusInfo
+    name: RollbackStatusInfo
+    fullName: RollbackStatusInfo
+    children:
+      - >-
+        azure-arm-compute -
+        v10.0.0.RollbackStatusInfo.failedRolledbackInstanceCount
+      - azure-arm-compute - v10.0.0.RollbackStatusInfo.rollbackError
+      - >-
+        azure-arm-compute -
+        v10.0.0.RollbackStatusInfo.successfullyRolledbackInstanceCount
+    langs:
+      - typeScript
+    type: interface
+    summary: >-
+      Information about rollback on failed VM instances after a OS Upgrade
+      operation.
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.RollbackStatusInfo.failedRolledbackInstanceCount
+    name: failedRolledbackInstanceCount
+    fullName: failedRolledbackInstanceCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The number of instances which failed to rollback.
+    optional: true
+    syntax:
+      content: 'failedRolledbackInstanceCount?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.RollbackStatusInfo.rollbackError
+    name: rollbackError
+    fullName: rollbackError
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Error details if OS rollback failed.
+    optional: true
+    syntax:
+      content: 'rollbackError?: ApiError'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.ApiError
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.RollbackStatusInfo.successfullyRolledbackInstanceCount
+    name: successfullyRolledbackInstanceCount
+    fullName: successfullyRolledbackInstanceCount
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The number of instances which have been successfully rolled back.
+    optional: true
+    syntax:
+      content: 'successfullyRolledbackInstanceCount?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.ApiError
+    name: ApiError
+    spec.typeScript:
+      - name: ApiError
+        fullName: ApiError
+        uid: azure-arm-compute - v10.0.0.ApiError

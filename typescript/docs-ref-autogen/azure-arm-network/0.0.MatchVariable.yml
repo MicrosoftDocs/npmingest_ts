@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.MatchVariable
+    name: MatchVariable
+    fullName: MatchVariable
+    children:
+      - azure-arm-network - v13.0.0.MatchVariable.selector
+      - azure-arm-network - v13.0.0.MatchVariable.variableName
+    langs:
+      - typeScript
+    type: interface
+    summary: Define match variables
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.MatchVariable.selector
+    name: selector
+    fullName: selector
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Describes field of the matchVariable collection
+    optional: true
+    syntax:
+      content: 'selector?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.MatchVariable.variableName
+    name: variableName
+    fullName: variableName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Match Variable. Possible values include: 'RemoteAddr', 'RequestMethod',
+      'QueryString',
+
+      'PostArgs', 'RequestUri', 'RequestHeaders', 'RequestBody',
+      'RequestCookies'
+    syntax:
+      content: 'variableName: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13

@@ -1,0 +1,136 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitPeeringConfig
+    name: ExpressRouteCircuitPeeringConfig
+    fullName: ExpressRouteCircuitPeeringConfig
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitPeeringConfig.advertisedCommunities
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitPeeringConfig.advertisedPublicPrefixes
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitPeeringConfig.advertisedPublicPrefixesState
+      - azure-arm-network - v13.0.0.ExpressRouteCircuitPeeringConfig.customerASN
+      - azure-arm-network - v13.0.0.ExpressRouteCircuitPeeringConfig.legacyMode
+      - >-
+        azure-arm-network -
+        v13.0.0.ExpressRouteCircuitPeeringConfig.routingRegistryName
+    langs:
+      - typeScript
+    type: interface
+    summary: Specifies the peering configuration.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitPeeringConfig.advertisedCommunities
+    name: advertisedCommunities
+    fullName: advertisedCommunities
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The communities of bgp peering. Specified for microsoft peering
+    optional: true
+    syntax:
+      content: 'advertisedCommunities?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitPeeringConfig.advertisedPublicPrefixes
+    name: advertisedPublicPrefixes
+    fullName: advertisedPublicPrefixes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The reference of AdvertisedPublicPrefixes.
+    optional: true
+    syntax:
+      content: 'advertisedPublicPrefixes?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitPeeringConfig.advertisedPublicPrefixesState
+    name: advertisedPublicPrefixesState
+    fullName: advertisedPublicPrefixesState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      AdvertisedPublicPrefixState of the Peering resource. Possible values are
+      'NotConfigured',
+
+      'Configuring', 'Configured', and 'ValidationNeeded'. Possible values
+      include: 'NotConfigured',
+
+      'Configuring', 'Configured', 'ValidationNeeded'
+    optional: true
+    syntax:
+      content: 'advertisedPublicPrefixesState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitPeeringConfig.customerASN
+    name: customerASN
+    fullName: customerASN
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The CustomerASN of the peering.
+    optional: true
+    syntax:
+      content: 'customerASN?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ExpressRouteCircuitPeeringConfig.legacyMode
+    name: legacyMode
+    fullName: legacyMode
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The legacy mode of the peering.
+    optional: true
+    syntax:
+      content: 'legacyMode?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ExpressRouteCircuitPeeringConfig.routingRegistryName
+    name: routingRegistryName
+    fullName: routingRegistryName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The RoutingRegistryName of the configuration.
+    optional: true
+    syntax:
+      content: 'routingRegistryName?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13

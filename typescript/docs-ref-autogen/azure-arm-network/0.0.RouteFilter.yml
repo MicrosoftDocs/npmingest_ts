@@ -1,0 +1,195 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.RouteFilter
+    name: RouteFilter
+    fullName: RouteFilter
+    children:
+      - azure-arm-network - v13.0.0.RouteFilter.etag
+      - azure-arm-network - v13.0.0.RouteFilter.id
+      - azure-arm-network - v13.0.0.RouteFilter.location
+      - azure-arm-network - v13.0.0.RouteFilter.name
+      - azure-arm-network - v13.0.0.RouteFilter.peerings
+      - azure-arm-network - v13.0.0.RouteFilter.provisioningState
+      - azure-arm-network - v13.0.0.RouteFilter.rules
+      - azure-arm-network - v13.0.0.RouteFilter.tags
+      - azure-arm-network - v13.0.0.RouteFilter.type
+    langs:
+      - typeScript
+    type: interface
+    summary: Route Filter Resource.
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteFilter.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Gets a unique read-only string that changes whenever the resource is
+      updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteFilter.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteFilter.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteFilter.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteFilter.peerings
+    name: peerings
+    fullName: peerings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A collection of references to express route circuit peerings.
+    optional: true
+    syntax:
+      content: 'peerings?: ExpressRouteCircuitPeering[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ExpressRouteCircuitPeering[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteFilter.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the resource. Possible values are: 'Updating',
+      'Deleting',
+
+      'Succeeded' and 'Failed'.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteFilter.rules
+    name: rules
+    fullName: rules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Collection of RouteFilterRules contained within a route filter.
+    optional: true
+    syntax:
+      content: 'rules?: RouteFilterRule[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.RouteFilterRule[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteFilter.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.RouteFilter.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: 'azure-arm-network - v13.0.0.ExpressRouteCircuitPeering[]'
+    name: 'ExpressRouteCircuitPeering[]'
+    spec.typeScript:
+      - name: ExpressRouteCircuitPeering
+        fullName: ExpressRouteCircuitPeering
+        uid: azure-arm-network - v13.0.0.ExpressRouteCircuitPeering
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-network - v13.0.0.RouteFilterRule[]'
+    name: 'RouteFilterRule[]'
+    spec.typeScript:
+      - name: RouteFilterRule
+        fullName: RouteFilterRule
+        uid: azure-arm-network - v13.0.0.RouteFilterRule
+      - name: '[]'
+        fullName: '[]'

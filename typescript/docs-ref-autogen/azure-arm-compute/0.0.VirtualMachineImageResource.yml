@@ -1,0 +1,92 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineImageResource
+    name: VirtualMachineImageResource
+    fullName: VirtualMachineImageResource
+    children:
+      - azure-arm-compute - v10.0.0.VirtualMachineImageResource.id
+      - azure-arm-compute - v10.0.0.VirtualMachineImageResource.location
+      - azure-arm-compute - v10.0.0.VirtualMachineImageResource.name
+      - azure-arm-compute - v10.0.0.VirtualMachineImageResource.tags
+    langs:
+      - typeScript
+    type: interface
+    summary: Virtual machine image resource information.
+    extends:
+      name: azure-arm-compute - v10.0.0.SubResource
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineImageResource.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineImageResource.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The supported Azure location of the resource.
+    syntax:
+      content: 'location: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineImageResource.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The name of the resource.
+    syntax:
+      content: 'name: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineImageResource.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the tags that are assigned to the virtual machine. For more
+      information about using
+
+      tags, see [Using tags to organize your Azure
+
+      resources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags.md).
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-compute - v10.0.0.SubResource

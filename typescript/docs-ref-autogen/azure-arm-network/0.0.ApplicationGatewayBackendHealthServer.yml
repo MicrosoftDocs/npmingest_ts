@@ -1,0 +1,100 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayBackendHealthServer
+    name: ApplicationGatewayBackendHealthServer
+    fullName: ApplicationGatewayBackendHealthServer
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayBackendHealthServer.address
+      - azure-arm-network - v13.0.0.ApplicationGatewayBackendHealthServer.health
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayBackendHealthServer.healthProbeLog
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayBackendHealthServer.ipConfiguration
+    langs:
+      - typeScript
+    type: interface
+    summary: Application gateway backendhealth http settings.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayBackendHealthServer.address
+    name: address
+    fullName: address
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: IP address or FQDN of backend server.
+    optional: true
+    syntax:
+      content: 'address?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayBackendHealthServer.health
+    name: health
+    fullName: health
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Health of backend server. Possible values include: 'Unknown', 'Up',
+      'Down', 'Partial',
+
+      'Draining'
+    optional: true
+    syntax:
+      content: 'health?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayBackendHealthServer.healthProbeLog
+    name: healthProbeLog
+    fullName: healthProbeLog
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Health Probe Log.
+    optional: true
+    syntax:
+      content: 'healthProbeLog?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayBackendHealthServer.ipConfiguration
+    name: ipConfiguration
+    fullName: ipConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Reference of IP configuration of backend server.
+    optional: true
+    syntax:
+      content: 'ipConfiguration?: NetworkInterfaceIPConfiguration'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.NetworkInterfaceIPConfiguration
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfiguration
+    name: NetworkInterfaceIPConfiguration
+    spec.typeScript:
+      - name: NetworkInterfaceIPConfiguration
+        fullName: NetworkInterfaceIPConfiguration
+        uid: azure-arm-network - v13.0.0.NetworkInterfaceIPConfiguration

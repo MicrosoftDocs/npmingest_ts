@@ -1,0 +1,1793 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinitions
+    name: ServiceEndpointPolicyDefinitions
+    fullName: ServiceEndpointPolicyDefinitions
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.beginCreateOrUpdate
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.beginCreateOrUpdate_2
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.beginCreateOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.beginCreateOrUpdateWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.beginDeleteMethod
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.beginDeleteMethod_2
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.beginDeleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.beginDeleteMethodWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.createOrUpdate
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.createOrUpdate_2
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.createOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.createOrUpdateWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.deleteMethod
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.deleteMethod_2
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.deleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.deleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinitions.get
+      - azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinitions.get_2
+      - azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinitions.get_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.getWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.listByResourceGroup
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.listByResourceGroup_2
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.listByResourceGroup_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.listByResourceGroupNext
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.listByResourceGroupNext_2
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.listByResourceGroupNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.listByResourceGroupNextWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.ServiceEndpointPolicyDefinitions.listByResourceGroupWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.beginCreateOrUpdate
+    name: >-
+      beginCreateOrUpdate(string, string, string,
+      ServiceEndpointPolicyDefinition, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a service endpoint policy definition in the specified
+      service endpoint policy.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        serviceEndpointPolicyName: string, serviceEndpointPolicyDefinitionName:
+        string, serviceEndpointPolicyDefinitions:
+        ServiceEndpointPolicyDefinition, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: |
+            The name of the service endpoint
+            policy.
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: |
+            The name of the service
+            endpoint policy definition name.
+        - id: serviceEndpointPolicyDefinitions
+          type:
+            - azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition
+          description: |
+            Parameters supplied to the
+            create or update service endpoint policy operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyDefinition} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyDefinition} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyDefinition} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.beginCreateOrUpdate_2
+    name: >-
+      beginCreateOrUpdate(string, string, string,
+      ServiceEndpointPolicyDefinition, Object,
+      ServiceCallback<ServiceEndpointPolicyDefinition>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a service endpoint policy definition in the specified
+      service endpoint policy.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        serviceEndpointPolicyName: string, serviceEndpointPolicyDefinitionName:
+        string, serviceEndpointPolicyDefinitions:
+        ServiceEndpointPolicyDefinition, options: Object, callback:
+        ServiceCallback<ServiceEndpointPolicyDefinition>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyDefinitions
+          type:
+            - azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ServiceEndpointPolicyDefinition>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyDefinition} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyDefinition} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyDefinition} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.beginCreateOrUpdate_1
+    name: >-
+      beginCreateOrUpdate(string, string, string,
+      ServiceEndpointPolicyDefinition,
+      ServiceCallback<ServiceEndpointPolicyDefinition>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a service endpoint policy definition in the specified
+      service endpoint policy.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        serviceEndpointPolicyName: string, serviceEndpointPolicyDefinitionName:
+        string, serviceEndpointPolicyDefinitions:
+        ServiceEndpointPolicyDefinition, callback:
+        ServiceCallback<ServiceEndpointPolicyDefinition>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyDefinitions
+          type:
+            - azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ServiceEndpointPolicyDefinition>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyDefinition} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyDefinition} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyDefinition} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.beginCreateOrUpdateWithHttpOperationResponse
+    name: >-
+      beginCreateOrUpdateWithHttpOperationResponse(string, string, string,
+      ServiceEndpointPolicyDefinition, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a service endpoint policy definition in the specified
+      service endpoint policy.
+    syntax:
+      content: >-
+        function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, serviceEndpointPolicyName: string,
+        serviceEndpointPolicyDefinitionName: string,
+        serviceEndpointPolicyDefinitions: ServiceEndpointPolicyDefinition,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: |
+            The name of the service endpoint
+            policy.
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: |
+            The name of the service
+            endpoint policy definition name.
+        - id: serviceEndpointPolicyDefinitions
+          type:
+            - azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition
+          description: |
+            Parameters supplied to the
+            create or update service endpoint policy operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ServiceEndpointPolicyDefinition>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.beginDeleteMethod
+    name: 'beginDeleteMethod(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified ServiceEndpoint policy definitions.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        serviceEndpointPolicyName: string, serviceEndpointPolicyDefinitionName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: |
+            The name of the Service Endpoint
+            Policy.
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: |
+            The name of the service
+            endpoint policy definition.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.beginDeleteMethod_2
+    name: 'beginDeleteMethod(string, string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified ServiceEndpoint policy definitions.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        serviceEndpointPolicyName: string, serviceEndpointPolicyDefinitionName:
+        string, options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.beginDeleteMethod_1
+    name: 'beginDeleteMethod(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified ServiceEndpoint policy definitions.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        serviceEndpointPolicyName: string, serviceEndpointPolicyDefinitionName:
+        string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.beginDeleteMethodWithHttpOperationResponse
+    name: 'beginDeleteMethodWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified ServiceEndpoint policy definitions.
+    syntax:
+      content: >-
+        function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, serviceEndpointPolicyName: string,
+        serviceEndpointPolicyDefinitionName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: |
+            The name of the Service Endpoint
+            Policy.
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: |
+            The name of the service
+            endpoint policy definition.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.createOrUpdate
+    name: >-
+      createOrUpdate(string, string, string, ServiceEndpointPolicyDefinition,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a service endpoint policy definition in the specified
+      service endpoint policy.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        serviceEndpointPolicyName: string, serviceEndpointPolicyDefinitionName:
+        string, serviceEndpointPolicyDefinitions:
+        ServiceEndpointPolicyDefinition, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: |
+            The name of the service endpoint
+            policy.
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: |
+            The name of the service
+            endpoint policy definition name.
+        - id: serviceEndpointPolicyDefinitions
+          type:
+            - azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition
+          description: |
+            Parameters supplied to the
+            create or update service endpoint policy operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyDefinition} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyDefinition} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyDefinition} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.createOrUpdate_2
+    name: >-
+      createOrUpdate(string, string, string, ServiceEndpointPolicyDefinition,
+      Object, ServiceCallback<ServiceEndpointPolicyDefinition>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a service endpoint policy definition in the specified
+      service endpoint policy.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        serviceEndpointPolicyName: string, serviceEndpointPolicyDefinitionName:
+        string, serviceEndpointPolicyDefinitions:
+        ServiceEndpointPolicyDefinition, options: Object, callback:
+        ServiceCallback<ServiceEndpointPolicyDefinition>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyDefinitions
+          type:
+            - azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ServiceEndpointPolicyDefinition>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyDefinition} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyDefinition} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyDefinition} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.createOrUpdate_1
+    name: >-
+      createOrUpdate(string, string, string, ServiceEndpointPolicyDefinition,
+      ServiceCallback<ServiceEndpointPolicyDefinition>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a service endpoint policy definition in the specified
+      service endpoint policy.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        serviceEndpointPolicyName: string, serviceEndpointPolicyDefinitionName:
+        string, serviceEndpointPolicyDefinitions:
+        ServiceEndpointPolicyDefinition, callback:
+        ServiceCallback<ServiceEndpointPolicyDefinition>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyDefinitions
+          type:
+            - azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ServiceEndpointPolicyDefinition>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyDefinition} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyDefinition} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyDefinition} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.createOrUpdateWithHttpOperationResponse
+    name: >-
+      createOrUpdateWithHttpOperationResponse(string, string, string,
+      ServiceEndpointPolicyDefinition, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Creates or updates a service endpoint policy definition in the specified
+      service endpoint policy.
+    syntax:
+      content: >-
+        function createOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, serviceEndpointPolicyName: string,
+        serviceEndpointPolicyDefinitionName: string,
+        serviceEndpointPolicyDefinitions: ServiceEndpointPolicyDefinition,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: |
+            The name of the service endpoint
+            policy.
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: |
+            The name of the service
+            endpoint policy definition name.
+        - id: serviceEndpointPolicyDefinitions
+          type:
+            - azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition
+          description: |
+            Parameters supplied to the
+            create or update service endpoint policy operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ServiceEndpointPolicyDefinition>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinitions.deleteMethod
+    name: 'deleteMethod(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified ServiceEndpoint policy definitions.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string,
+        serviceEndpointPolicyName: string, serviceEndpointPolicyDefinitionName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: |
+            The name of the Service Endpoint
+            Policy.
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: |
+            The name of the service
+            endpoint policy definition.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.deleteMethod_2
+    name: 'deleteMethod(string, string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified ServiceEndpoint policy definitions.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string,
+        serviceEndpointPolicyName: string, serviceEndpointPolicyDefinitionName:
+        string, options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.deleteMethod_1
+    name: 'deleteMethod(string, string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified ServiceEndpoint policy definitions.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string,
+        serviceEndpointPolicyName: string, serviceEndpointPolicyDefinitionName:
+        string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.deleteMethodWithHttpOperationResponse
+    name: 'deleteMethodWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified ServiceEndpoint policy definitions.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, serviceEndpointPolicyName: string,
+        serviceEndpointPolicyDefinitionName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: |
+            The name of the Service Endpoint
+            Policy.
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: |
+            The name of the service
+            endpoint policy definition.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinitions.get
+    name: 'get(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Get the specified service endpoint policy definitions from service
+      endpoint
+
+      policy.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, serviceEndpointPolicyName:
+        string, serviceEndpointPolicyDefinitionName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: |
+            The name of the service endpoint
+            policy name.
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: |
+            The name of the service
+            endpoint policy definition name.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyDefinition} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyDefinition} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyDefinition} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinitions.get_2
+    name: >-
+      get(string, string, string, Object,
+      ServiceCallback<ServiceEndpointPolicyDefinition>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Get the specified service endpoint policy definitions from service
+      endpoint
+
+      policy.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, serviceEndpointPolicyName:
+        string, serviceEndpointPolicyDefinitionName: string, options: Object,
+        callback: ServiceCallback<ServiceEndpointPolicyDefinition>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ServiceEndpointPolicyDefinition>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyDefinition} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyDefinition} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyDefinition} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinitions.get_1
+    name: >-
+      get(string, string, string,
+      ServiceCallback<ServiceEndpointPolicyDefinition>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Get the specified service endpoint policy definitions from service
+      endpoint
+
+      policy.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, serviceEndpointPolicyName:
+        string, serviceEndpointPolicyDefinitionName: string, callback:
+        ServiceCallback<ServiceEndpointPolicyDefinition>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ServiceEndpointPolicyDefinition>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyDefinition} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyDefinition} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyDefinition} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Get the specified service endpoint policy definitions from service
+      endpoint
+
+      policy.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        serviceEndpointPolicyName: string, serviceEndpointPolicyDefinitionName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: |
+            The name of the service endpoint
+            policy name.
+        - id: serviceEndpointPolicyDefinitionName
+          type:
+            - string
+          description: |
+            The name of the service
+            endpoint policy definition name.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ServiceEndpointPolicyDefinition>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.listByResourceGroup
+    name: 'listByResourceGroup(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets all service endpoint policy definitions in a service end point
+      policy.
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string,
+        serviceEndpointPolicyName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: |
+            The name of the service endpoint
+            policy name.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ServiceEndpointPolicyDefinitionListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyDefinitionListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyDefinitionListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyDefinitionListResult}
+                               for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.listByResourceGroup_2
+    name: >-
+      listByResourceGroup(string, string, Object,
+      ServiceCallback<ServiceEndpointPolicyDefinitionListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets all service endpoint policy definitions in a service end point
+      policy.
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string,
+        serviceEndpointPolicyName: string, options: Object, callback:
+        ServiceCallback<ServiceEndpointPolicyDefinitionListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ServiceEndpointPolicyDefinitionListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ServiceEndpointPolicyDefinitionListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyDefinitionListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyDefinitionListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyDefinitionListResult}
+                               for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.listByResourceGroup_1
+    name: >-
+      listByResourceGroup(string, string,
+      ServiceCallback<ServiceEndpointPolicyDefinitionListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets all service endpoint policy definitions in a service end point
+      policy.
+    syntax:
+      content: >-
+        function listByResourceGroup(resourceGroupName: string,
+        serviceEndpointPolicyName: string, callback:
+        ServiceCallback<ServiceEndpointPolicyDefinitionListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ServiceEndpointPolicyDefinitionListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ServiceEndpointPolicyDefinitionListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyDefinitionListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyDefinitionListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyDefinitionListResult}
+                               for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.listByResourceGroupNext
+    name: 'listByResourceGroupNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets all service endpoint policy definitions in a service end point
+      policy.
+    syntax:
+      content: 'function listByResourceGroupNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ServiceEndpointPolicyDefinitionListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyDefinitionListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyDefinitionListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyDefinitionListResult}
+                               for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.listByResourceGroupNext_2
+    name: >-
+      listByResourceGroupNext(string, Object,
+      ServiceCallback<ServiceEndpointPolicyDefinitionListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets all service endpoint policy definitions in a service end point
+      policy.
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, options: Object,
+        callback: ServiceCallback<ServiceEndpointPolicyDefinitionListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ServiceEndpointPolicyDefinitionListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ServiceEndpointPolicyDefinitionListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyDefinitionListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyDefinitionListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyDefinitionListResult}
+                               for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.listByResourceGroupNext_1
+    name: >-
+      listByResourceGroupNext(string,
+      ServiceCallback<ServiceEndpointPolicyDefinitionListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets all service endpoint policy definitions in a service end point
+      policy.
+    syntax:
+      content: >-
+        function listByResourceGroupNext(nextPageLink: string, callback:
+        ServiceCallback<ServiceEndpointPolicyDefinitionListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.ServiceEndpointPolicyDefinitionListResult>
+          description: ''
+      return:
+        type:
+          - >-
+            Promise<azure-arm-network -
+            v13.0.0.ServiceEndpointPolicyDefinitionListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {ServiceEndpointPolicyDefinitionListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {ServiceEndpointPolicyDefinitionListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link ServiceEndpointPolicyDefinitionListResult}
+                               for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.listByResourceGroupNextWithHttpOperationResponse
+    name: 'listByResourceGroupNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets all service endpoint policy definitions in a service end point
+      policy.
+    syntax:
+      content: >-
+        function listByResourceGroupNextWithHttpOperationResponse(nextPageLink:
+        string, options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ServiceEndpointPolicyDefinitionListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitions.listByResourceGroupWithHttpOperationResponse
+    name: 'listByResourceGroupWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Gets all service endpoint policy definitions in a service end point
+      policy.
+    syntax:
+      content: >-
+        function listByResourceGroupWithHttpOperationResponse(resourceGroupName:
+        string, serviceEndpointPolicyName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: serviceEndpointPolicyName
+          type:
+            - string
+          description: |
+            The name of the service endpoint
+            policy name.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.ServiceEndpointPolicyDefinitionListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition
+    name: ServiceEndpointPolicyDefinition
+    spec.typeScript:
+      - name: ServiceEndpointPolicyDefinition
+        fullName: ServiceEndpointPolicyDefinition
+        uid: azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition
+  - uid: Promise<azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition>
+    name: ServiceEndpointPolicyDefinition>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ServiceEndpointPolicyDefinition
+        fullName: ServiceEndpointPolicyDefinition
+        uid: azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinition>
+    name: ServiceEndpointPolicyDefinition>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ServiceEndpointPolicyDefinition
+        fullName: ServiceEndpointPolicyDefinition
+        uid: azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinition>>
+    name: ServiceEndpointPolicyDefinition>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ServiceEndpointPolicyDefinition
+        fullName: ServiceEndpointPolicyDefinition
+        uid: azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinition
+      - name: '>>'
+        fullName: '>>'
+  - uid: >-
+      Promise<azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitionListResult>
+    name: ServiceEndpointPolicyDefinitionListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: ServiceEndpointPolicyDefinitionListResult
+        fullName: ServiceEndpointPolicyDefinitionListResult
+        uid: azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinitionListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      ServiceCallback<azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitionListResult>
+    name: ServiceEndpointPolicyDefinitionListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: ServiceEndpointPolicyDefinitionListResult
+        fullName: ServiceEndpointPolicyDefinitionListResult
+        uid: azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinitionListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.ServiceEndpointPolicyDefinitionListResult>>
+    name: ServiceEndpointPolicyDefinitionListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: ServiceEndpointPolicyDefinitionListResult
+        fullName: ServiceEndpointPolicyDefinitionListResult
+        uid: azure-arm-network - v13.0.0.ServiceEndpointPolicyDefinitionListResult
+      - name: '>>'
+        fullName: '>>'

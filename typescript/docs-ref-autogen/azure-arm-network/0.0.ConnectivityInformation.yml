@@ -1,0 +1,143 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ConnectivityInformation
+    name: ConnectivityInformation
+    fullName: ConnectivityInformation
+    children:
+      - azure-arm-network - v13.0.0.ConnectivityInformation.avgLatencyInMs
+      - azure-arm-network - v13.0.0.ConnectivityInformation.connectionStatus
+      - azure-arm-network - v13.0.0.ConnectivityInformation.hops
+      - azure-arm-network - v13.0.0.ConnectivityInformation.maxLatencyInMs
+      - azure-arm-network - v13.0.0.ConnectivityInformation.minLatencyInMs
+      - azure-arm-network - v13.0.0.ConnectivityInformation.probesFailed
+      - azure-arm-network - v13.0.0.ConnectivityInformation.probesSent
+    langs:
+      - typeScript
+    type: interface
+    summary: Information on the connectivity status.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityInformation.avgLatencyInMs
+    name: avgLatencyInMs
+    fullName: avgLatencyInMs
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Average latency in milliseconds.
+    optional: true
+    syntax:
+      content: 'avgLatencyInMs?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityInformation.connectionStatus
+    name: connectionStatus
+    fullName: connectionStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The connection status. Possible values include: 'Unknown', 'Connected',
+      'Disconnected',
+
+      'Degraded'
+    optional: true
+    syntax:
+      content: 'connectionStatus?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityInformation.hops
+    name: hops
+    fullName: hops
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: List of hops between the source and the destination.
+    optional: true
+    syntax:
+      content: 'hops?: ConnectivityHop[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ConnectivityHop[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityInformation.maxLatencyInMs
+    name: maxLatencyInMs
+    fullName: maxLatencyInMs
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Maximum latency in milliseconds.
+    optional: true
+    syntax:
+      content: 'maxLatencyInMs?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityInformation.minLatencyInMs
+    name: minLatencyInMs
+    fullName: minLatencyInMs
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Minimum latency in milliseconds.
+    optional: true
+    syntax:
+      content: 'minLatencyInMs?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityInformation.probesFailed
+    name: probesFailed
+    fullName: probesFailed
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Number of failed probes.
+    optional: true
+    syntax:
+      content: 'probesFailed?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityInformation.probesSent
+    name: probesSent
+    fullName: probesSent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Total number of probes sent.
+    optional: true
+    syntax:
+      content: 'probesSent?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: 'azure-arm-network - v13.0.0.ConnectivityHop[]'
+    name: 'ConnectivityHop[]'
+    spec.typeScript:
+      - name: ConnectivityHop
+        fullName: ConnectivityHop
+        uid: azure-arm-network - v13.0.0.ConnectivityHop
+      - name: '[]'
+        fullName: '[]'

@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch - v5.0.0.AutoStorageProperties
+    name: AutoStorageProperties
+    fullName: AutoStorageProperties
+    children:
+      - azure-arm-batch - v5.0.0.AutoStorageProperties.lastKeySync
+      - azure-arm-batch - v5.0.0.AutoStorageProperties.storageAccountId
+    langs:
+      - typeScript
+    type: interface
+    summary: >-
+      Contains information about the auto-storage account associated with a
+      Batch account.
+    extends:
+      name: azure-arm-batch - v5.0.0.AutoStorageBaseProperties
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.AutoStorageProperties.lastKeySync
+    name: lastKeySync
+    fullName: lastKeySync
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The UTC time at which storage keys were last synchronized with the Batch
+      account.
+    syntax:
+      content: 'lastKeySync: Date'
+      return:
+        type:
+          - Date
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.AutoStorageProperties.storageAccountId
+    name: storageAccountId
+    fullName: storageAccountId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The resource ID of the storage account to be used for auto-storage
+      account.
+    syntax:
+      content: 'storageAccountId: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+references:
+  - uid: azure-arm-batch - v5.0.0.AutoStorageBaseProperties
+    name: AutoStorageBaseProperties
+    spec.typeScript:
+      - name: AutoStorageBaseProperties
+        fullName: AutoStorageBaseProperties
+        uid: azure-arm-batch - v5.0.0.AutoStorageBaseProperties

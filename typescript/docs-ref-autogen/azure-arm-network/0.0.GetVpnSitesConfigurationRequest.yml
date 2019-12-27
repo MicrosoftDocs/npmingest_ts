@@ -1,0 +1,50 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.GetVpnSitesConfigurationRequest
+    name: GetVpnSitesConfigurationRequest
+    fullName: GetVpnSitesConfigurationRequest
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.GetVpnSitesConfigurationRequest.outputBlobSasUrl
+      - azure-arm-network - v13.0.0.GetVpnSitesConfigurationRequest.vpnSites
+    langs:
+      - typeScript
+    type: interface
+    summary: List of Vpn-Sites
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.GetVpnSitesConfigurationRequest.outputBlobSasUrl
+    name: outputBlobSasUrl
+    fullName: outputBlobSasUrl
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The sas-url to download the configurations for vpn-sites
+    syntax:
+      content: 'outputBlobSasUrl: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.GetVpnSitesConfigurationRequest.vpnSites
+    name: vpnSites
+    fullName: vpnSites
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      List of resource-ids of the vpn-sites for which config is to be
+      downloaded.
+    optional: true
+    syntax:
+      content: 'vpnSites?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-network - v13

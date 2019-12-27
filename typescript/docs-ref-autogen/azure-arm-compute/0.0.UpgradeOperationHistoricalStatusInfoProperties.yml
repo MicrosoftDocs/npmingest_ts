@@ -1,0 +1,170 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.UpgradeOperationHistoricalStatusInfoProperties
+    name: UpgradeOperationHistoricalStatusInfoProperties
+    fullName: UpgradeOperationHistoricalStatusInfoProperties
+    children:
+      - >-
+        azure-arm-compute -
+        v10.0.0.UpgradeOperationHistoricalStatusInfoProperties.error
+      - >-
+        azure-arm-compute -
+        v10.0.0.UpgradeOperationHistoricalStatusInfoProperties.progress
+      - >-
+        azure-arm-compute -
+        v10.0.0.UpgradeOperationHistoricalStatusInfoProperties.rollbackInfo
+      - >-
+        azure-arm-compute -
+        v10.0.0.UpgradeOperationHistoricalStatusInfoProperties.runningStatus
+      - >-
+        azure-arm-compute -
+        v10.0.0.UpgradeOperationHistoricalStatusInfoProperties.startedBy
+      - >-
+        azure-arm-compute -
+        v10.0.0.UpgradeOperationHistoricalStatusInfoProperties.targetImageReference
+    langs:
+      - typeScript
+    type: interface
+    summary: Describes each OS upgrade on the Virtual Machine Scale Set.
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.UpgradeOperationHistoricalStatusInfoProperties.error
+    name: error
+    fullName: error
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Error Details for this upgrade if there are any.
+    optional: true
+    syntax:
+      content: 'error?: ApiError'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.ApiError
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.UpgradeOperationHistoricalStatusInfoProperties.progress
+    name: progress
+    fullName: progress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Counts of the VMs in each state.
+    optional: true
+    syntax:
+      content: 'progress?: RollingUpgradeProgressInfo'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.RollingUpgradeProgressInfo
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.UpgradeOperationHistoricalStatusInfoProperties.rollbackInfo
+    name: rollbackInfo
+    fullName: rollbackInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Information about OS rollback if performed
+    optional: true
+    syntax:
+      content: 'rollbackInfo?: RollbackStatusInfo'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.RollbackStatusInfo
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.UpgradeOperationHistoricalStatusInfoProperties.runningStatus
+    name: runningStatus
+    fullName: runningStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Information about the overall status of the upgrade operation.
+    optional: true
+    syntax:
+      content: 'runningStatus?: UpgradeOperationHistoryStatus'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.UpgradeOperationHistoryStatus
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.UpgradeOperationHistoricalStatusInfoProperties.startedBy
+    name: startedBy
+    fullName: startedBy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Invoker of the Upgrade Operation. Possible values include: 'Unknown',
+      'User', 'Platform'
+    optional: true
+    syntax:
+      content: 'startedBy?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.UpgradeOperationHistoricalStatusInfoProperties.targetImageReference
+    name: targetImageReference
+    fullName: targetImageReference
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Image Reference details
+    optional: true
+    syntax:
+      content: 'targetImageReference?: ImageReference'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.ImageReference
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.ApiError
+    name: ApiError
+    spec.typeScript:
+      - name: ApiError
+        fullName: ApiError
+        uid: azure-arm-compute - v10.0.0.ApiError
+  - uid: azure-arm-compute - v10.0.0.RollingUpgradeProgressInfo
+    name: RollingUpgradeProgressInfo
+    spec.typeScript:
+      - name: RollingUpgradeProgressInfo
+        fullName: RollingUpgradeProgressInfo
+        uid: azure-arm-compute - v10.0.0.RollingUpgradeProgressInfo
+  - uid: azure-arm-compute - v10.0.0.RollbackStatusInfo
+    name: RollbackStatusInfo
+    spec.typeScript:
+      - name: RollbackStatusInfo
+        fullName: RollbackStatusInfo
+        uid: azure-arm-compute - v10.0.0.RollbackStatusInfo
+  - uid: azure-arm-compute - v10.0.0.UpgradeOperationHistoryStatus
+    name: UpgradeOperationHistoryStatus
+    spec.typeScript:
+      - name: UpgradeOperationHistoryStatus
+        fullName: UpgradeOperationHistoryStatus
+        uid: azure-arm-compute - v10.0.0.UpgradeOperationHistoryStatus
+  - uid: azure-arm-compute - v10.0.0.ImageReference
+    name: ImageReference
+    spec.typeScript:
+      - name: ImageReference
+        fullName: ImageReference
+        uid: azure-arm-compute - v10.0.0.ImageReference

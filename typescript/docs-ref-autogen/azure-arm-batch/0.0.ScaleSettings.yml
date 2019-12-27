@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch - v5.0.0.ScaleSettings
+    name: ScaleSettings
+    fullName: ScaleSettings
+    children:
+      - azure-arm-batch - v5.0.0.ScaleSettings.autoScale
+      - azure-arm-batch - v5.0.0.ScaleSettings.fixedScale
+    langs:
+      - typeScript
+    type: interface
+    summary: >-
+      Defines the desired size of the pool. This can either be 'fixedScale'
+      where the
+
+      requested targetDedicatedNodes is specified, or 'autoScale' which defines
+      a formula which is
+
+      periodically reevaluated. If this property is not specified, the pool will
+      have a fixed scale
+
+      with 0 targetDedicatedNodes.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ScaleSettings.autoScale
+    name: autoScale
+    fullName: autoScale
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      This property and fixedScale are mutually exclusive and one of the
+      properties
+
+      must be specified.
+    optional: true
+    syntax:
+      content: 'autoScale?: AutoScaleSettings'
+      return:
+        type:
+          - azure-arm-batch - v5.0.0.AutoScaleSettings
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.ScaleSettings.fixedScale
+    name: fixedScale
+    fullName: fixedScale
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      This property and autoScale are mutually exclusive and one of the
+      properties must
+
+      be specified.
+    optional: true
+    syntax:
+      content: 'fixedScale?: FixedScaleSettings'
+      return:
+        type:
+          - azure-arm-batch - v5.0.0.FixedScaleSettings
+        description: ''
+    package: azure-arm-batch - v5
+references:
+  - uid: azure-arm-batch - v5.0.0.AutoScaleSettings
+    name: AutoScaleSettings
+    spec.typeScript:
+      - name: AutoScaleSettings
+        fullName: AutoScaleSettings
+        uid: azure-arm-batch - v5.0.0.AutoScaleSettings
+  - uid: azure-arm-batch - v5.0.0.FixedScaleSettings
+    name: FixedScaleSettings
+    spec.typeScript:
+      - name: FixedScaleSettings
+        fullName: FixedScaleSettings
+        uid: azure-arm-batch - v5.0.0.FixedScaleSettings

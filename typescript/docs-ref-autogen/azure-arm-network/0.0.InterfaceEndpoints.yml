@@ -1,0 +1,1806 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints
+    name: InterfaceEndpoints
+    fullName: InterfaceEndpoints
+    children:
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.beginCreateOrUpdate
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.beginCreateOrUpdate_2
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.beginCreateOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.InterfaceEndpoints.beginCreateOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.beginDeleteMethod
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.beginDeleteMethod_2
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.beginDeleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.InterfaceEndpoints.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.createOrUpdate
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.createOrUpdate_2
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.createOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.InterfaceEndpoints.createOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.deleteMethod
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.deleteMethod_2
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.deleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.InterfaceEndpoints.deleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.get
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.get_2
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.get_1
+      - >-
+        azure-arm-network -
+        v13.0.0.InterfaceEndpoints.getWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.list
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.list_2
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.list_1
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.listBySubscription
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.listBySubscription_2
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.listBySubscription_1
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.listBySubscriptionNext
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.listBySubscriptionNext_2
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.listBySubscriptionNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.InterfaceEndpoints.listBySubscriptionNextWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.InterfaceEndpoints.listBySubscriptionWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.listNext
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.listNext_2
+      - azure-arm-network - v13.0.0.InterfaceEndpoints.listNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.InterfaceEndpoints.listNextWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.InterfaceEndpoints.listWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.beginCreateOrUpdate
+    name: 'beginCreateOrUpdate(string, string, InterfaceEndpoint, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an interface endpoint in the specified resource group.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        interfaceEndpointName: string, parameters: InterfaceEndpoint, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: |
+            The name of the interface endpoint.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.InterfaceEndpoint
+          description: |
+            Parameters supplied to the create or update
+            interface endpoint operation
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.beginCreateOrUpdate_2
+    name: >-
+      beginCreateOrUpdate(string, string, InterfaceEndpoint, Object,
+      ServiceCallback<InterfaceEndpoint>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an interface endpoint in the specified resource group.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        interfaceEndpointName: string, parameters: InterfaceEndpoint, options:
+        Object, callback: ServiceCallback<InterfaceEndpoint>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.InterfaceEndpoint
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.InterfaceEndpoint>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.beginCreateOrUpdate_1
+    name: >-
+      beginCreateOrUpdate(string, string, InterfaceEndpoint,
+      ServiceCallback<InterfaceEndpoint>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an interface endpoint in the specified resource group.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        interfaceEndpointName: string, parameters: InterfaceEndpoint, callback:
+        ServiceCallback<InterfaceEndpoint>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.InterfaceEndpoint
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.InterfaceEndpoint>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.InterfaceEndpoints.beginCreateOrUpdateWithHttpOperationResponse
+    name: >-
+      beginCreateOrUpdateWithHttpOperationResponse(string, string,
+      InterfaceEndpoint, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an interface endpoint in the specified resource group.
+    syntax:
+      content: >-
+        function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, interfaceEndpointName: string, parameters: InterfaceEndpoint,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: |
+            The name of the interface endpoint.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.InterfaceEndpoint
+          description: |
+            Parameters supplied to the create or update
+            interface endpoint operation
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.InterfaceEndpoint>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.beginDeleteMethod
+    name: 'beginDeleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified interface endpoint.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        interfaceEndpointName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: |
+            The name of the interface endpoint.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.beginDeleteMethod_2
+    name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified interface endpoint.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        interfaceEndpointName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.beginDeleteMethod_1
+    name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified interface endpoint.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        interfaceEndpointName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.InterfaceEndpoints.beginDeleteMethodWithHttpOperationResponse
+    name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified interface endpoint.
+    syntax:
+      content: >-
+        function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, interfaceEndpointName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: |
+            The name of the interface endpoint.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.createOrUpdate
+    name: 'createOrUpdate(string, string, InterfaceEndpoint, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an interface endpoint in the specified resource group.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        interfaceEndpointName: string, parameters: InterfaceEndpoint, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: |
+            The name of the interface endpoint.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.InterfaceEndpoint
+          description: |
+            Parameters supplied to the create or update
+            interface endpoint operation
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.createOrUpdate_2
+    name: >-
+      createOrUpdate(string, string, InterfaceEndpoint, Object,
+      ServiceCallback<InterfaceEndpoint>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an interface endpoint in the specified resource group.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        interfaceEndpointName: string, parameters: InterfaceEndpoint, options:
+        Object, callback: ServiceCallback<InterfaceEndpoint>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.InterfaceEndpoint
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.InterfaceEndpoint>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.createOrUpdate_1
+    name: >-
+      createOrUpdate(string, string, InterfaceEndpoint,
+      ServiceCallback<InterfaceEndpoint>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an interface endpoint in the specified resource group.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string,
+        interfaceEndpointName: string, parameters: InterfaceEndpoint, callback:
+        ServiceCallback<InterfaceEndpoint>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.InterfaceEndpoint
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.InterfaceEndpoint>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.InterfaceEndpoints.createOrUpdateWithHttpOperationResponse
+    name: >-
+      createOrUpdateWithHttpOperationResponse(string, string, InterfaceEndpoint,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates an interface endpoint in the specified resource group.
+    syntax:
+      content: >-
+        function createOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, interfaceEndpointName: string, parameters: InterfaceEndpoint,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: |
+            The name of the interface endpoint.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.InterfaceEndpoint
+          description: |
+            Parameters supplied to the create or update
+            interface endpoint operation
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.InterfaceEndpoint>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.deleteMethod
+    name: 'deleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified interface endpoint.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, interfaceEndpointName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: |
+            The name of the interface endpoint.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.deleteMethod_2
+    name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified interface endpoint.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, interfaceEndpointName:
+        string, options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.deleteMethod_1
+    name: 'deleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified interface endpoint.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, interfaceEndpointName:
+        string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.InterfaceEndpoints.deleteMethodWithHttpOperationResponse
+    name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified interface endpoint.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, interfaceEndpointName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: |
+            The name of the interface endpoint.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.get
+    name: 'get(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified interface endpoint by resource group.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, interfaceEndpointName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: |
+            The name of the interface endpoint.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.get_2
+    name: 'get(string, string, Object, ServiceCallback<InterfaceEndpoint>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified interface endpoint by resource group.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, interfaceEndpointName: string,
+        options: Object, callback: ServiceCallback<InterfaceEndpoint>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.InterfaceEndpoint>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.get_1
+    name: 'get(string, string, ServiceCallback<InterfaceEndpoint>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified interface endpoint by resource group.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, interfaceEndpointName: string,
+        callback: ServiceCallback<InterfaceEndpoint>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.InterfaceEndpoint>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpoint>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpoint} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpoint} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpoint} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.InterfaceEndpoints.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified interface endpoint by resource group.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        interfaceEndpointName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: interfaceEndpointName
+          type:
+            - string
+          description: |
+            The name of the interface endpoint.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.InterfaceEndpoint>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.list
+    name: 'list(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all interface endpoints in a resource group.
+    syntax:
+      content: 'function list(resourceGroupName: string, options?: Object)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.list_2
+    name: 'list(string, Object, ServiceCallback<InterfaceEndpointListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all interface endpoints in a resource group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, options: Object, callback:
+        ServiceCallback<InterfaceEndpointListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.InterfaceEndpointListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.list_1
+    name: 'list(string, ServiceCallback<InterfaceEndpointListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all interface endpoints in a resource group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, callback:
+        ServiceCallback<InterfaceEndpointListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.InterfaceEndpointListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.listBySubscription
+    name: listBySubscription(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all interface endpoints in a subscription.
+    syntax:
+      content: 'function listBySubscription(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.listBySubscription_2
+    name: 'listBySubscription(Object, ServiceCallback<InterfaceEndpointListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all interface endpoints in a subscription.
+    syntax:
+      content: >-
+        function listBySubscription(options: Object, callback:
+        ServiceCallback<InterfaceEndpointListResult>)
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.InterfaceEndpointListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.listBySubscription_1
+    name: listBySubscription(ServiceCallback<InterfaceEndpointListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all interface endpoints in a subscription.
+    syntax:
+      content: >-
+        function listBySubscription(callback:
+        ServiceCallback<InterfaceEndpointListResult>)
+      parameters:
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.InterfaceEndpointListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.listBySubscriptionNext
+    name: 'listBySubscriptionNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all interface endpoints in a subscription.
+    syntax:
+      content: 'function listBySubscriptionNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.listBySubscriptionNext_2
+    name: >-
+      listBySubscriptionNext(string, Object,
+      ServiceCallback<InterfaceEndpointListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all interface endpoints in a subscription.
+    syntax:
+      content: >-
+        function listBySubscriptionNext(nextPageLink: string, options: Object,
+        callback: ServiceCallback<InterfaceEndpointListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.InterfaceEndpointListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.listBySubscriptionNext_1
+    name: >-
+      listBySubscriptionNext(string,
+      ServiceCallback<InterfaceEndpointListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all interface endpoints in a subscription.
+    syntax:
+      content: >-
+        function listBySubscriptionNext(nextPageLink: string, callback:
+        ServiceCallback<InterfaceEndpointListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.InterfaceEndpointListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.InterfaceEndpoints.listBySubscriptionNextWithHttpOperationResponse
+    name: 'listBySubscriptionNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all interface endpoints in a subscription.
+    syntax:
+      content: >-
+        function listBySubscriptionNextWithHttpOperationResponse(nextPageLink:
+        string, options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.InterfaceEndpointListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.InterfaceEndpoints.listBySubscriptionWithHttpOperationResponse
+    name: listBySubscriptionWithHttpOperationResponse(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all interface endpoints in a subscription.
+    syntax:
+      content: 'function listBySubscriptionWithHttpOperationResponse(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.InterfaceEndpointListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.listNext
+    name: 'listNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all interface endpoints in a resource group.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.listNext_2
+    name: 'listNext(string, Object, ServiceCallback<InterfaceEndpointListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all interface endpoints in a resource group.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<InterfaceEndpointListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.InterfaceEndpointListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoints.listNext_1
+    name: 'listNext(string, ServiceCallback<InterfaceEndpointListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all interface endpoints in a resource group.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<InterfaceEndpointListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.InterfaceEndpointListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.InterfaceEndpointListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {InterfaceEndpointListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {InterfaceEndpointListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link InterfaceEndpointListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.InterfaceEndpoints.listNextWithHttpOperationResponse
+    name: 'listNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all interface endpoints in a resource group.
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.InterfaceEndpointListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.InterfaceEndpoints.listWithHttpOperationResponse
+    name: 'listWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all interface endpoints in a resource group.
+    syntax:
+      content: >-
+        function listWithHttpOperationResponse(resourceGroupName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.InterfaceEndpointListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.InterfaceEndpoint
+    name: InterfaceEndpoint
+    spec.typeScript:
+      - name: InterfaceEndpoint
+        fullName: InterfaceEndpoint
+        uid: azure-arm-network - v13.0.0.InterfaceEndpoint
+  - uid: Promise<azure-arm-network - v13.0.0.InterfaceEndpoint>
+    name: InterfaceEndpoint>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: InterfaceEndpoint
+        fullName: InterfaceEndpoint
+        uid: azure-arm-network - v13.0.0.InterfaceEndpoint
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.InterfaceEndpoint>
+    name: InterfaceEndpoint>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: InterfaceEndpoint
+        fullName: InterfaceEndpoint
+        uid: azure-arm-network - v13.0.0.InterfaceEndpoint
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.InterfaceEndpoint>>
+    name: InterfaceEndpoint>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: InterfaceEndpoint
+        fullName: InterfaceEndpoint
+        uid: azure-arm-network - v13.0.0.InterfaceEndpoint
+      - name: '>>'
+        fullName: '>>'
+  - uid: Promise<azure-arm-network - v13.0.0.InterfaceEndpointListResult>
+    name: InterfaceEndpointListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: InterfaceEndpointListResult
+        fullName: InterfaceEndpointListResult
+        uid: azure-arm-network - v13.0.0.InterfaceEndpointListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.InterfaceEndpointListResult>
+    name: InterfaceEndpointListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: InterfaceEndpointListResult
+        fullName: InterfaceEndpointListResult
+        uid: azure-arm-network - v13.0.0.InterfaceEndpointListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.InterfaceEndpointListResult>>
+    name: InterfaceEndpointListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: InterfaceEndpointListResult
+        fullName: InterfaceEndpointListResult
+        uid: azure-arm-network - v13.0.0.InterfaceEndpointListResult
+      - name: '>>'
+        fullName: '>>'

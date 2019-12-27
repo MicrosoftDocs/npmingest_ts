@@ -1,0 +1,108 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ProtocolCustomSettingsFormat
+    name: ProtocolCustomSettingsFormat
+    fullName: ProtocolCustomSettingsFormat
+    children:
+      - azure-arm-network - v13.0.0.ProtocolCustomSettingsFormat.protocol
+      - >-
+        azure-arm-network -
+        v13.0.0.ProtocolCustomSettingsFormat.sourceRateOverride
+      - >-
+        azure-arm-network -
+        v13.0.0.ProtocolCustomSettingsFormat.triggerRateOverride
+      - >-
+        azure-arm-network -
+        v13.0.0.ProtocolCustomSettingsFormat.triggerSensitivityOverride
+    langs:
+      - typeScript
+    type: interface
+    summary: DDoS custom policy properties.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ProtocolCustomSettingsFormat.protocol
+    name: protocol
+    fullName: protocol
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The protocol for which the DDoS protection policy is being customized.
+      Possible values
+
+      include: 'Tcp', 'Udp', 'Syn'
+    optional: true
+    syntax:
+      content: 'protocol?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ProtocolCustomSettingsFormat.sourceRateOverride
+    name: sourceRateOverride
+    fullName: sourceRateOverride
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The customized DDoS protection source rate.
+    optional: true
+    syntax:
+      content: 'sourceRateOverride?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ProtocolCustomSettingsFormat.triggerRateOverride
+    name: triggerRateOverride
+    fullName: triggerRateOverride
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The customized DDoS protection trigger rate.
+    optional: true
+    syntax:
+      content: 'triggerRateOverride?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ProtocolCustomSettingsFormat.triggerSensitivityOverride
+    name: triggerSensitivityOverride
+    fullName: triggerSensitivityOverride
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The customized DDoS protection trigger rate sensitivity degrees. High:
+      Trigger rate set with
+
+      most sensitivity w.r.t. normal traffic. Default: Trigger rate set with
+      moderate sensitivity
+
+      w.r.t. normal traffic. Low: Trigger rate set with less sensitivity w.r.t.
+      normal traffic.
+
+      Relaxed: Trigger rate set with least sensitivity w.r.t. normal traffic.
+      Possible values
+
+      include: 'Relaxed', 'Low', 'Default', 'High'
+    optional: true
+    syntax:
+      content: 'triggerSensitivityOverride?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13

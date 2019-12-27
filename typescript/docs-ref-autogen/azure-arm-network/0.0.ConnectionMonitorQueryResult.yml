@@ -1,0 +1,56 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitorQueryResult
+    name: ConnectionMonitorQueryResult
+    fullName: ConnectionMonitorQueryResult
+    children:
+      - azure-arm-network - v13.0.0.ConnectionMonitorQueryResult.sourceStatus
+      - azure-arm-network - v13.0.0.ConnectionMonitorQueryResult.states
+    langs:
+      - typeScript
+    type: interface
+    summary: List of connection states snapshots.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitorQueryResult.sourceStatus
+    name: sourceStatus
+    fullName: sourceStatus
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Status of connection monitor source. Possible values include: 'Unknown',
+      'Active', 'Inactive'
+    optional: true
+    syntax:
+      content: 'sourceStatus?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectionMonitorQueryResult.states
+    name: states
+    fullName: states
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Information about connection states.
+    optional: true
+    syntax:
+      content: 'states?: ConnectionStateSnapshot[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.ConnectionStateSnapshot[]'
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: 'azure-arm-network - v13.0.0.ConnectionStateSnapshot[]'
+    name: 'ConnectionStateSnapshot[]'
+    spec.typeScript:
+      - name: ConnectionStateSnapshot
+        fullName: ConnectionStateSnapshot
+        uid: azure-arm-network - v13.0.0.ConnectionStateSnapshot
+      - name: '[]'
+        fullName: '[]'

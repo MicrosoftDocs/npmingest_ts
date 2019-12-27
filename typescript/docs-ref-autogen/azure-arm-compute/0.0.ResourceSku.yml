@@ -1,0 +1,281 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.ResourceSku
+    name: ResourceSku
+    fullName: ResourceSku
+    children:
+      - azure-arm-compute - v10.0.0.ResourceSku.apiVersions
+      - azure-arm-compute - v10.0.0.ResourceSku.capabilities
+      - azure-arm-compute - v10.0.0.ResourceSku.capacity
+      - azure-arm-compute - v10.0.0.ResourceSku.costs
+      - azure-arm-compute - v10.0.0.ResourceSku.family
+      - azure-arm-compute - v10.0.0.ResourceSku.kind
+      - azure-arm-compute - v10.0.0.ResourceSku.locationInfo
+      - azure-arm-compute - v10.0.0.ResourceSku.locations
+      - azure-arm-compute - v10.0.0.ResourceSku.name
+      - azure-arm-compute - v10.0.0.ResourceSku.resourceType
+      - azure-arm-compute - v10.0.0.ResourceSku.restrictions
+      - azure-arm-compute - v10.0.0.ResourceSku.size
+      - azure-arm-compute - v10.0.0.ResourceSku.tier
+    langs:
+      - typeScript
+    type: interface
+    summary: Describes an available Compute SKU.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSku.apiVersions
+    name: apiVersions
+    fullName: apiVersions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The api versions that support this SKU.
+    optional: true
+    syntax:
+      content: 'apiVersions?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSku.capabilities
+    name: capabilities
+    fullName: capabilities
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A name value pair to describe the capability.
+    optional: true
+    syntax:
+      content: 'capabilities?: ResourceSkuCapabilities[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.ResourceSkuCapabilities[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSku.capacity
+    name: capacity
+    fullName: capacity
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies the number of virtual machines in the scale set.
+    optional: true
+    syntax:
+      content: 'capacity?: ResourceSkuCapacity'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.ResourceSkuCapacity
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSku.costs
+    name: costs
+    fullName: costs
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Metadata for retrieving price info.
+    optional: true
+    syntax:
+      content: 'costs?: ResourceSkuCosts[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.ResourceSkuCosts[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSku.family
+    name: family
+    fullName: family
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The Family of this particular SKU.
+    optional: true
+    syntax:
+      content: 'family?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSku.kind
+    name: kind
+    fullName: kind
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The Kind of resources that are supported in this SKU.
+    optional: true
+    syntax:
+      content: 'kind?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSku.locationInfo
+    name: locationInfo
+    fullName: locationInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      A list of locations and availability zones in those locations where the
+      SKU is available.
+    optional: true
+    syntax:
+      content: 'locationInfo?: ResourceSkuLocationInfo[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.ResourceSkuLocationInfo[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSku.locations
+    name: locations
+    fullName: locations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The set of locations that the SKU is available.
+    optional: true
+    syntax:
+      content: 'locations?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSku.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The name of SKU.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSku.resourceType
+    name: resourceType
+    fullName: resourceType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The type of resource the SKU applies to.
+    optional: true
+    syntax:
+      content: 'resourceType?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSku.restrictions
+    name: restrictions
+    fullName: restrictions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The restrictions because of which SKU cannot be used. This is empty if
+      there are no
+
+      restrictions.
+    optional: true
+    syntax:
+      content: 'restrictions?: ResourceSkuRestrictions[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.ResourceSkuRestrictions[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSku.size
+    name: size
+    fullName: size
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The Size of the SKU.
+    optional: true
+    syntax:
+      content: 'size?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.ResourceSku.tier
+    name: tier
+    fullName: tier
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the tier of virtual machines in a scale set.<br /><br />
+      Possible Values:<br /><br
+
+      /> **Standard**<br /><br /> **Basic**
+    optional: true
+    syntax:
+      content: 'tier?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: 'azure-arm-compute - v10.0.0.ResourceSkuCapabilities[]'
+    name: 'ResourceSkuCapabilities[]'
+    spec.typeScript:
+      - name: ResourceSkuCapabilities
+        fullName: ResourceSkuCapabilities
+        uid: azure-arm-compute - v10.0.0.ResourceSkuCapabilities
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute - v10.0.0.ResourceSkuCapacity
+    name: ResourceSkuCapacity
+    spec.typeScript:
+      - name: ResourceSkuCapacity
+        fullName: ResourceSkuCapacity
+        uid: azure-arm-compute - v10.0.0.ResourceSkuCapacity
+  - uid: 'azure-arm-compute - v10.0.0.ResourceSkuCosts[]'
+    name: 'ResourceSkuCosts[]'
+    spec.typeScript:
+      - name: ResourceSkuCosts
+        fullName: ResourceSkuCosts
+        uid: azure-arm-compute - v10.0.0.ResourceSkuCosts
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-compute - v10.0.0.ResourceSkuLocationInfo[]'
+    name: 'ResourceSkuLocationInfo[]'
+    spec.typeScript:
+      - name: ResourceSkuLocationInfo
+        fullName: ResourceSkuLocationInfo
+        uid: azure-arm-compute - v10.0.0.ResourceSkuLocationInfo
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'azure-arm-compute - v10.0.0.ResourceSkuRestrictions[]'
+    name: 'ResourceSkuRestrictions[]'
+    spec.typeScript:
+      - name: ResourceSkuRestrictions
+        fullName: ResourceSkuRestrictions
+        uid: azure-arm-compute - v10.0.0.ResourceSkuRestrictions
+      - name: '[]'
+        fullName: '[]'

@@ -1,0 +1,1602 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles
+    name: NetworkProfiles
+    fullName: NetworkProfiles
+    children:
+      - azure-arm-network - v13.0.0.NetworkProfiles.createOrUpdate
+      - azure-arm-network - v13.0.0.NetworkProfiles.createOrUpdate_2
+      - azure-arm-network - v13.0.0.NetworkProfiles.createOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.NetworkProfiles.createOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.NetworkProfiles.deleteMethod
+      - azure-arm-network - v13.0.0.NetworkProfiles.deleteMethod_2
+      - azure-arm-network - v13.0.0.NetworkProfiles.deleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.NetworkProfiles.deleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.NetworkProfiles.get
+      - azure-arm-network - v13.0.0.NetworkProfiles.get_2
+      - azure-arm-network - v13.0.0.NetworkProfiles.get_1
+      - azure-arm-network - v13.0.0.NetworkProfiles.getWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.NetworkProfiles.list
+      - azure-arm-network - v13.0.0.NetworkProfiles.list_2
+      - azure-arm-network - v13.0.0.NetworkProfiles.list_1
+      - azure-arm-network - v13.0.0.NetworkProfiles.listAll
+      - azure-arm-network - v13.0.0.NetworkProfiles.listAll_2
+      - azure-arm-network - v13.0.0.NetworkProfiles.listAll_1
+      - azure-arm-network - v13.0.0.NetworkProfiles.listAllNext
+      - azure-arm-network - v13.0.0.NetworkProfiles.listAllNext_2
+      - azure-arm-network - v13.0.0.NetworkProfiles.listAllNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.NetworkProfiles.listAllNextWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.NetworkProfiles.listAllWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.NetworkProfiles.listNext
+      - azure-arm-network - v13.0.0.NetworkProfiles.listNext_2
+      - azure-arm-network - v13.0.0.NetworkProfiles.listNext_1
+      - >-
+        azure-arm-network -
+        v13.0.0.NetworkProfiles.listNextWithHttpOperationResponse
+      - >-
+        azure-arm-network -
+        v13.0.0.NetworkProfiles.listWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.NetworkProfiles.updateTags
+      - azure-arm-network - v13.0.0.NetworkProfiles.updateTags_2
+      - azure-arm-network - v13.0.0.NetworkProfiles.updateTags_1
+      - >-
+        azure-arm-network -
+        v13.0.0.NetworkProfiles.updateTagsWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.createOrUpdate
+    name: 'createOrUpdate(string, string, NetworkProfile, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a network profile.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, networkProfileName:
+        string, parameters: NetworkProfile, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkProfileName
+          type:
+            - string
+          description: |
+            The name of the network profile.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.NetworkProfile
+          description: |
+            Parameters supplied to the create or update
+            network profile operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.createOrUpdate_2
+    name: >-
+      createOrUpdate(string, string, NetworkProfile, Object,
+      ServiceCallback<NetworkProfile>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a network profile.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, networkProfileName:
+        string, parameters: NetworkProfile, options: Object, callback:
+        ServiceCallback<NetworkProfile>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkProfileName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.NetworkProfile
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.NetworkProfile>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.createOrUpdate_1
+    name: >-
+      createOrUpdate(string, string, NetworkProfile,
+      ServiceCallback<NetworkProfile>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a network profile.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, networkProfileName:
+        string, parameters: NetworkProfile, callback:
+        ServiceCallback<NetworkProfile>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkProfileName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.NetworkProfile
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.NetworkProfile>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.NetworkProfiles.createOrUpdateWithHttpOperationResponse
+    name: >-
+      createOrUpdateWithHttpOperationResponse(string, string, NetworkProfile,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a network profile.
+    syntax:
+      content: >-
+        function createOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, networkProfileName: string, parameters: NetworkProfile,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkProfileName
+          type:
+            - string
+          description: |
+            The name of the network profile.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.NetworkProfile
+          description: |
+            Parameters supplied to the create or update
+            network profile operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.NetworkProfile>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.deleteMethod
+    name: 'deleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified network profile.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, networkProfileName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkProfileName
+          type:
+            - string
+          description: |
+            The name of the NetworkProfile.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.deleteMethod_2
+    name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified network profile.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, networkProfileName:
+        string, options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkProfileName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.deleteMethod_1
+    name: 'deleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified network profile.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, networkProfileName:
+        string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkProfileName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.NetworkProfiles.deleteMethodWithHttpOperationResponse
+    name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified network profile.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, networkProfileName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkProfileName
+          type:
+            - string
+          description: |
+            The name of the NetworkProfile.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.get
+    name: 'get(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified network profile in a specified resource group.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, networkProfileName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkProfileName
+          type:
+            - string
+          description: |
+            The name of the public IP prefix.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.get_2
+    name: 'get(string, string, Object, ServiceCallback<NetworkProfile>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified network profile in a specified resource group.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, networkProfileName: string,
+        options: Object, callback: ServiceCallback<NetworkProfile>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkProfileName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.NetworkProfile>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.get_1
+    name: 'get(string, string, ServiceCallback<NetworkProfile>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified network profile in a specified resource group.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, networkProfileName: string,
+        callback: ServiceCallback<NetworkProfile>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkProfileName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.NetworkProfile>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets the specified network profile in a specified resource group.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        networkProfileName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkProfileName
+          type:
+            - string
+          description: |
+            The name of the public IP prefix.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.NetworkProfile>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.list
+    name: 'list(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all network profiles in a resource group.
+    syntax:
+      content: 'function list(resourceGroupName: string, options?: Object)'
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfileListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.list_2
+    name: 'list(string, Object, ServiceCallback<NetworkProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all network profiles in a resource group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, options: Object, callback:
+        ServiceCallback<NetworkProfileListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.NetworkProfileListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfileListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.list_1
+    name: 'list(string, ServiceCallback<NetworkProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all network profiles in a resource group.
+    syntax:
+      content: >-
+        function list(resourceGroupName: string, callback:
+        ServiceCallback<NetworkProfileListResult>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.NetworkProfileListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfileListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.listAll
+    name: listAll(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the network profiles in a subscription.
+    syntax:
+      content: 'function listAll(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfileListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.listAll_2
+    name: 'listAll(Object, ServiceCallback<NetworkProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the network profiles in a subscription.
+    syntax:
+      content: >-
+        function listAll(options: Object, callback:
+        ServiceCallback<NetworkProfileListResult>)
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.NetworkProfileListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfileListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.listAll_1
+    name: listAll(ServiceCallback<NetworkProfileListResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the network profiles in a subscription.
+    syntax:
+      content: 'function listAll(callback: ServiceCallback<NetworkProfileListResult>)'
+      parameters:
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.NetworkProfileListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfileListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.listAllNext
+    name: 'listAllNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the network profiles in a subscription.
+    syntax:
+      content: 'function listAllNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfileListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.listAllNext_2
+    name: 'listAllNext(string, Object, ServiceCallback<NetworkProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the network profiles in a subscription.
+    syntax:
+      content: >-
+        function listAllNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<NetworkProfileListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.NetworkProfileListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfileListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.listAllNext_1
+    name: 'listAllNext(string, ServiceCallback<NetworkProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the network profiles in a subscription.
+    syntax:
+      content: >-
+        function listAllNext(nextPageLink: string, callback:
+        ServiceCallback<NetworkProfileListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.NetworkProfileListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfileListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.NetworkProfiles.listAllNextWithHttpOperationResponse
+    name: 'listAllNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the network profiles in a subscription.
+    syntax:
+      content: >-
+        function listAllNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.NetworkProfileListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.NetworkProfiles.listAllWithHttpOperationResponse
+    name: listAllWithHttpOperationResponse(Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all the network profiles in a subscription.
+    syntax:
+      content: 'function listAllWithHttpOperationResponse(options?: Object)'
+      parameters:
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.NetworkProfileListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.listNext
+    name: 'listNext(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all network profiles in a resource group.
+    syntax:
+      content: 'function listNext(nextPageLink: string, options?: Object)'
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfileListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.listNext_2
+    name: 'listNext(string, Object, ServiceCallback<NetworkProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all network profiles in a resource group.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, options: Object, callback:
+        ServiceCallback<NetworkProfileListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.NetworkProfileListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfileListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.listNext_1
+    name: 'listNext(string, ServiceCallback<NetworkProfileListResult>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all network profiles in a resource group.
+    syntax:
+      content: >-
+        function listNext(nextPageLink: string, callback:
+        ServiceCallback<NetworkProfileListResult>)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-network -
+              v13.0.0.NetworkProfileListResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfileListResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfileListResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfileListResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfileListResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.NetworkProfiles.listNextWithHttpOperationResponse
+    name: 'listNextWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all network profiles in a resource group.
+    syntax:
+      content: >-
+        function listNextWithHttpOperationResponse(nextPageLink: string,
+        options?: Object)
+      parameters:
+        - id: nextPageLink
+          type:
+            - string
+          description: |
+            The NextLink from the previous successful call
+            to List operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.NetworkProfileListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.listWithHttpOperationResponse
+    name: 'listWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets all network profiles in a resource group.
+    syntax:
+      content: >-
+        function listWithHttpOperationResponse(resourceGroupName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.NetworkProfileListResult>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.updateTags
+    name: 'updateTags(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates network profile tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, networkProfileName:
+        string, parameters: TagsObject, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkProfileName
+          type:
+            - string
+          description: |
+            The name of the network profile.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to update network profile
+            tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.updateTags_2
+    name: >-
+      updateTags(string, string, TagsObject, Object,
+      ServiceCallback<NetworkProfile>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates network profile tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, networkProfileName:
+        string, parameters: TagsObject, options: Object, callback:
+        ServiceCallback<NetworkProfile>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkProfileName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.NetworkProfile>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NetworkProfiles.updateTags_1
+    name: 'updateTags(string, string, TagsObject, ServiceCallback<NetworkProfile>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates network profile tags.
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, networkProfileName:
+        string, parameters: TagsObject, callback:
+        ServiceCallback<NetworkProfile>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: networkProfileName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.NetworkProfile>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.NetworkProfile>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {NetworkProfile} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {NetworkProfile} [result]   - The deserialized result object if an error did not occur.
+                               See {@link NetworkProfile} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.NetworkProfiles.updateTagsWithHttpOperationResponse
+    name: 'updateTagsWithHttpOperationResponse(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Updates network profile tags.
+    syntax:
+      content: >-
+        function updateTagsWithHttpOperationResponse(resourceGroupName: string,
+        networkProfileName: string, parameters: TagsObject, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: networkProfileName
+          type:
+            - string
+          description: |
+            The name of the network profile.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to update network profile
+            tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.NetworkProfile>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.NetworkProfile
+    name: NetworkProfile
+    spec.typeScript:
+      - name: NetworkProfile
+        fullName: NetworkProfile
+        uid: azure-arm-network - v13.0.0.NetworkProfile
+  - uid: Promise<azure-arm-network - v13.0.0.NetworkProfile>
+    name: NetworkProfile>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: NetworkProfile
+        fullName: NetworkProfile
+        uid: azure-arm-network - v13.0.0.NetworkProfile
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.NetworkProfile>
+    name: NetworkProfile>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: NetworkProfile
+        fullName: NetworkProfile
+        uid: azure-arm-network - v13.0.0.NetworkProfile
+      - name: '>'
+        fullName: '>'
+  - uid: Promise<HttpOperationResponse<azure-arm-network - v13.0.0.NetworkProfile>>
+    name: NetworkProfile>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: NetworkProfile
+        fullName: NetworkProfile
+        uid: azure-arm-network - v13.0.0.NetworkProfile
+      - name: '>>'
+        fullName: '>>'
+  - uid: Promise<azure-arm-network - v13.0.0.NetworkProfileListResult>
+    name: NetworkProfileListResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: NetworkProfileListResult
+        fullName: NetworkProfileListResult
+        uid: azure-arm-network - v13.0.0.NetworkProfileListResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.NetworkProfileListResult>
+    name: NetworkProfileListResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: NetworkProfileListResult
+        fullName: NetworkProfileListResult
+        uid: azure-arm-network - v13.0.0.NetworkProfileListResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.NetworkProfileListResult>>
+    name: NetworkProfileListResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: NetworkProfileListResult
+        fullName: NetworkProfileListResult
+        uid: azure-arm-network - v13.0.0.NetworkProfileListResult
+      - name: '>>'
+        fullName: '>>'
+  - uid: azure-arm-network - v13.0.0.TagsObject
+    name: TagsObject
+    spec.typeScript:
+      - name: TagsObject
+        fullName: TagsObject
+        uid: azure-arm-network - v13.0.0.TagsObject

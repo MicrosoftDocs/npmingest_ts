@@ -1,0 +1,376 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.Disk
+    name: Disk
+    fullName: Disk
+    children:
+      - azure-arm-compute - v10.0.0.Disk.creationData
+      - azure-arm-compute - v10.0.0.Disk.diskIOPSReadWrite
+      - azure-arm-compute - v10.0.0.Disk.diskMBpsReadWrite
+      - azure-arm-compute - v10.0.0.Disk.diskSizeGB
+      - azure-arm-compute - v10.0.0.Disk.diskState
+      - azure-arm-compute - v10.0.0.Disk.encryptionSettingsCollection
+      - azure-arm-compute - v10.0.0.Disk.hyperVGeneration
+      - azure-arm-compute - v10.0.0.Disk.id
+      - azure-arm-compute - v10.0.0.Disk.location
+      - azure-arm-compute - v10.0.0.Disk.managedBy
+      - azure-arm-compute - v10.0.0.Disk.name
+      - azure-arm-compute - v10.0.0.Disk.osType
+      - azure-arm-compute - v10.0.0.Disk.provisioningState
+      - azure-arm-compute - v10.0.0.Disk.sku
+      - azure-arm-compute - v10.0.0.Disk.tags
+      - azure-arm-compute - v10.0.0.Disk.timeCreated
+      - azure-arm-compute - v10.0.0.Disk.type
+      - azure-arm-compute - v10.0.0.Disk.zones
+    langs:
+      - typeScript
+    type: interface
+    summary: Disk resource.
+    extends:
+      name: azure-arm-compute - v10.0.0.Resource
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.creationData
+    name: creationData
+    fullName: creationData
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Disk source information. CreationData information cannot be changed after
+      the disk has been
+
+      created.
+    syntax:
+      content: 'creationData: CreationData'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.CreationData
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.diskIOPSReadWrite
+    name: diskIOPSReadWrite
+    fullName: diskIOPSReadWrite
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The number of IOPS allowed for this disk; only settable for UltraSSD
+      disks. One operation can
+
+      transfer between 4k and 256k bytes.
+    optional: true
+    syntax:
+      content: 'diskIOPSReadWrite?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.diskMBpsReadWrite
+    name: diskMBpsReadWrite
+    fullName: diskMBpsReadWrite
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The bandwidth allowed for this disk; only settable for UltraSSD disks.
+      MBps means millions of
+
+      bytes per second - MB here uses the ISO notation, of powers of 10.
+    optional: true
+    syntax:
+      content: 'diskMBpsReadWrite?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.diskSizeGB
+    name: diskSizeGB
+    fullName: diskSizeGB
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      If creationData.createOption is Empty, this field is mandatory and it
+      indicates the size of
+
+      the VHD to create. If this field is present for updates or creation with
+      other options, it
+
+      indicates a resize. Resizes are only allowed if the disk is not attached
+      to a running VM, and
+
+      can only increase the disk's size.
+    optional: true
+    syntax:
+      content: 'diskSizeGB?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.diskState
+    name: diskState
+    fullName: diskState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The state of the disk. Possible values include: 'Unattached', 'Attached',
+      'Reserved',
+
+      'ActiveSAS', 'ReadyToUpload', 'ActiveUpload'
+    optional: true
+    syntax:
+      content: 'diskState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.encryptionSettingsCollection
+    name: encryptionSettingsCollection
+    fullName: encryptionSettingsCollection
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Encryption settings collection used for Azure Disk Encryption, can contain
+      multiple encryption
+
+      settings per disk or snapshot.
+    optional: true
+    syntax:
+      content: 'encryptionSettingsCollection?: EncryptionSettingsCollection'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.EncryptionSettingsCollection
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.hyperVGeneration
+    name: hyperVGeneration
+    fullName: hyperVGeneration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The hypervisor generation of the Virtual Machine. Applicable to OS disks
+      only. Possible values
+
+      include: 'V1', 'V2'
+    optional: true
+    syntax:
+      content: 'hyperVGeneration?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource Id
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location
+    syntax:
+      content: 'location: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.managedBy
+    name: managedBy
+    fullName: managedBy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A relative URI containing the ID of the VM that has the disk attached.
+    optional: true
+    syntax:
+      content: 'managedBy?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.osType
+    name: osType
+    fullName: osType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The Operating System type. Possible values include: ''Windows'', ''Linux'''
+    optional: true
+    syntax:
+      content: 'osType?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The disk provisioning state.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.sku
+    name: sku
+    fullName: sku
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'sku?: DiskSku'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.DiskSku
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.timeCreated
+    name: timeCreated
+    fullName: timeCreated
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The time when the disk was created.
+    optional: true
+    syntax:
+      content: 'timeCreated?: Date'
+      return:
+        type:
+          - Date
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.Disk.zones
+    name: zones
+    fullName: zones
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The Logical zone list for Disk.
+    optional: true
+    syntax:
+      content: 'zones?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-compute - v10.0.0.Resource
+  - uid: azure-arm-compute - v10.0.0.CreationData
+    name: CreationData
+    spec.typeScript:
+      - name: CreationData
+        fullName: CreationData
+        uid: azure-arm-compute - v10.0.0.CreationData
+  - uid: azure-arm-compute - v10.0.0.EncryptionSettingsCollection
+    name: EncryptionSettingsCollection
+    spec.typeScript:
+      - name: EncryptionSettingsCollection
+        fullName: EncryptionSettingsCollection
+        uid: azure-arm-compute - v10.0.0.EncryptionSettingsCollection
+  - uid: azure-arm-compute - v10.0.0.DiskSku
+    name: DiskSku
+    spec.typeScript:
+      - name: DiskSku
+        fullName: DiskSku
+        uid: azure-arm-compute - v10.0.0.DiskSku

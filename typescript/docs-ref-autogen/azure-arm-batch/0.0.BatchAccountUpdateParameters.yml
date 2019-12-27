@@ -1,0 +1,52 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch - v5.0.0.BatchAccountUpdateParameters
+    name: BatchAccountUpdateParameters
+    fullName: BatchAccountUpdateParameters
+    children:
+      - azure-arm-batch - v5.0.0.BatchAccountUpdateParameters.autoStorage
+      - azure-arm-batch - v5.0.0.BatchAccountUpdateParameters.tags
+    langs:
+      - typeScript
+    type: interface
+    summary: Parameters for updating an Azure Batch account.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountUpdateParameters.autoStorage
+    name: autoStorage
+    fullName: autoStorage
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The properties related to the auto-storage account.
+    optional: true
+    syntax:
+      content: 'autoStorage?: AutoStorageBaseProperties'
+      return:
+        type:
+          - azure-arm-batch - v5.0.0.AutoStorageBaseProperties
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.BatchAccountUpdateParameters.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The user-specified tags associated with the account.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-batch - v5
+references:
+  - uid: azure-arm-batch - v5.0.0.AutoStorageBaseProperties
+    name: AutoStorageBaseProperties
+    spec.typeScript:
+      - name: AutoStorageBaseProperties
+        fullName: AutoStorageBaseProperties
+        uid: azure-arm-batch - v5.0.0.AutoStorageBaseProperties

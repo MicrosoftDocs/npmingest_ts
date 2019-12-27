@@ -1,0 +1,190 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlan
+    name: DdosProtectionPlan
+    fullName: DdosProtectionPlan
+    children:
+      - azure-arm-network - v13.0.0.DdosProtectionPlan.etag
+      - azure-arm-network - v13.0.0.DdosProtectionPlan.id
+      - azure-arm-network - v13.0.0.DdosProtectionPlan.location
+      - azure-arm-network - v13.0.0.DdosProtectionPlan.name
+      - azure-arm-network - v13.0.0.DdosProtectionPlan.provisioningState
+      - azure-arm-network - v13.0.0.DdosProtectionPlan.resourceGuid
+      - azure-arm-network - v13.0.0.DdosProtectionPlan.tags
+      - azure-arm-network - v13.0.0.DdosProtectionPlan.type
+      - azure-arm-network - v13.0.0.DdosProtectionPlan.virtualNetworks
+    langs:
+      - typeScript
+    type: interface
+    summary: A DDoS protection plan in a resource group.
+    extends:
+      name: BaseResource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlan.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A unique read-only string that changes whenever the resource is updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlan.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlan.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlan.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlan.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the DDoS protection plan resource. Possible
+      values are: 'Succeeded',
+
+      'Updating', 'Deleting', and 'Failed'.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlan.resourceGuid
+    name: resourceGuid
+    fullName: resourceGuid
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The resource GUID property of the DDoS protection plan resource. It
+      uniquely identifies the
+
+      resource, even if the user changes its name or migrate the resource across
+      subscriptions or
+
+      resource groups.
+    optional: true
+    syntax:
+      content: 'resourceGuid?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlan.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlan.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosProtectionPlan.virtualNetworks
+    name: virtualNetworks
+    fullName: virtualNetworks
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The list of virtual networks associated with the DDoS protection plan
+      resource. This list is
+
+      read-only.
+    optional: true
+    syntax:
+      content: 'virtualNetworks?: SubResource[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.SubResource[]'
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: 'azure-arm-network - v13.0.0.SubResource[]'
+    name: 'SubResource[]'
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource
+      - name: '[]'
+        fullName: '[]'

@@ -1,0 +1,173 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.AzureFirewallApplicationRuleCollection
+    name: AzureFirewallApplicationRuleCollection
+    fullName: AzureFirewallApplicationRuleCollection
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.AzureFirewallApplicationRuleCollection.action
+      - azure-arm-network - v13.0.0.AzureFirewallApplicationRuleCollection.etag
+      - azure-arm-network - v13.0.0.AzureFirewallApplicationRuleCollection.id
+      - azure-arm-network - v13.0.0.AzureFirewallApplicationRuleCollection.name
+      - >-
+        azure-arm-network -
+        v13.0.0.AzureFirewallApplicationRuleCollection.priority
+      - >-
+        azure-arm-network -
+        v13.0.0.AzureFirewallApplicationRuleCollection.provisioningState
+      - azure-arm-network - v13.0.0.AzureFirewallApplicationRuleCollection.rules
+    langs:
+      - typeScript
+    type: interface
+    summary: Application rule collection resource
+    extends:
+      name: azure-arm-network - v13.0.0.SubResource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallApplicationRuleCollection.action
+    name: action
+    fullName: action
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The action type of a rule collection
+    optional: true
+    syntax:
+      content: 'action?: AzureFirewallRCAction'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.AzureFirewallRCAction
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallApplicationRuleCollection.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Gets a unique read-only string that changes whenever the resource is
+      updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallApplicationRuleCollection.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallApplicationRuleCollection.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Gets name of the resource that is unique within a resource group. This
+      name can be used to
+
+      access the resource.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.AzureFirewallApplicationRuleCollection.priority
+    name: priority
+    fullName: priority
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Priority of the application rule collection resource.
+    optional: true
+    syntax:
+      content: 'priority?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.AzureFirewallApplicationRuleCollection.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the resource. Possible values include:
+      'Succeeded', 'Updating',
+
+      'Deleting', 'Failed'
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureFirewallApplicationRuleCollection.rules
+    name: rules
+    fullName: rules
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Collection of rules used by a application rule collection.
+    optional: true
+    syntax:
+      content: 'rules?: AzureFirewallApplicationRule[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.AzureFirewallApplicationRule[]'
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource
+  - uid: azure-arm-network - v13.0.0.AzureFirewallRCAction
+    name: AzureFirewallRCAction
+    spec.typeScript:
+      - name: AzureFirewallRCAction
+        fullName: AzureFirewallRCAction
+        uid: azure-arm-network - v13.0.0.AzureFirewallRCAction
+  - uid: 'azure-arm-network - v13.0.0.AzureFirewallApplicationRule[]'
+    name: 'AzureFirewallApplicationRule[]'
+    spec.typeScript:
+      - name: AzureFirewallApplicationRule
+        fullName: AzureFirewallApplicationRule
+        uid: azure-arm-network - v13.0.0.AzureFirewallApplicationRule
+      - name: '[]'
+        fullName: '[]'

@@ -1,0 +1,200 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayPathRule
+    name: ApplicationGatewayPathRule
+    fullName: ApplicationGatewayPathRule
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayPathRule.backendAddressPool
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayPathRule.backendHttpSettings
+      - azure-arm-network - v13.0.0.ApplicationGatewayPathRule.etag
+      - azure-arm-network - v13.0.0.ApplicationGatewayPathRule.id
+      - azure-arm-network - v13.0.0.ApplicationGatewayPathRule.name
+      - azure-arm-network - v13.0.0.ApplicationGatewayPathRule.paths
+      - azure-arm-network - v13.0.0.ApplicationGatewayPathRule.provisioningState
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayPathRule.redirectConfiguration
+      - azure-arm-network - v13.0.0.ApplicationGatewayPathRule.rewriteRuleSet
+      - azure-arm-network - v13.0.0.ApplicationGatewayPathRule.type
+    langs:
+      - typeScript
+    type: interface
+    summary: Path rule of URL path map of an application gateway.
+    extends:
+      name: azure-arm-network - v13.0.0.SubResource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayPathRule.backendAddressPool
+    name: backendAddressPool
+    fullName: backendAddressPool
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Backend address pool resource of URL path map path rule.
+    optional: true
+    syntax:
+      content: 'backendAddressPool?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayPathRule.backendHttpSettings
+    name: backendHttpSettings
+    fullName: backendHttpSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Backend http settings resource of URL path map path rule.
+    optional: true
+    syntax:
+      content: 'backendHttpSettings?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayPathRule.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A unique read-only string that changes whenever the resource is updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayPathRule.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayPathRule.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Name of the path rule that is unique within an Application Gateway.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayPathRule.paths
+    name: paths
+    fullName: paths
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Path rules of URL path map.
+    optional: true
+    syntax:
+      content: 'paths?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayPathRule.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Path rule of URL path map resource. Possible values are: 'Updating',
+      'Deleting', and 'Failed'.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayPathRule.redirectConfiguration
+    name: redirectConfiguration
+    fullName: redirectConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Redirect configuration resource of URL path map path rule.
+    optional: true
+    syntax:
+      content: 'redirectConfiguration?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayPathRule.rewriteRuleSet
+    name: rewriteRuleSet
+    fullName: rewriteRuleSet
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Rewrite rule set resource of URL path map path rule.
+    optional: true
+    syntax:
+      content: 'rewriteRuleSet?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayPathRule.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Type of the resource.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource

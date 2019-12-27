@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-cdn - v4.2.0.DeliveryRuleUrlFileExtensionCondition
+    name: DeliveryRuleUrlFileExtensionCondition
+    fullName: DeliveryRuleUrlFileExtensionCondition
+    children:
+      - azure-arm-cdn - v4.2.0.DeliveryRuleUrlFileExtensionCondition.name
+      - azure-arm-cdn - v4.2.0.DeliveryRuleUrlFileExtensionCondition.parameters
+    langs:
+      - typeScript
+    type: interface
+    summary: Defines the URL file extension condition for the delivery rule.
+    extends:
+      name: azure-arm-cdn - v4.2.0.DeliveryRuleCondition
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.DeliveryRuleUrlFileExtensionCondition.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Polymorphic Discriminator
+    syntax:
+      content: 'name: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-cdn - v4
+  - uid: azure-arm-cdn - v4.2.0.DeliveryRuleUrlFileExtensionCondition.parameters
+    name: parameters
+    fullName: parameters
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Defines the parameters for the condition.
+    syntax:
+      content: 'parameters: UrlFileExtensionConditionParameters'
+      return:
+        type:
+          - azure-arm-cdn - v4.2.0.UrlFileExtensionConditionParameters
+        description: ''
+    package: azure-arm-cdn - v4
+references:
+  - uid: azure-arm-cdn - v4.2.0.DeliveryRuleCondition
+    name: DeliveryRuleCondition
+    spec.typeScript:
+      - name: DeliveryRuleCondition
+        fullName: DeliveryRuleCondition
+        uid: azure-arm-cdn - v4.2.0.DeliveryRuleCondition
+  - uid: azure-arm-cdn - v4.2.0.UrlFileExtensionConditionParameters
+    name: UrlFileExtensionConditionParameters
+    spec.typeScript:
+      - name: UrlFileExtensionConditionParameters
+        fullName: UrlFileExtensionConditionParameters
+        uid: azure-arm-cdn - v4.2.0.UrlFileExtensionConditionParameters

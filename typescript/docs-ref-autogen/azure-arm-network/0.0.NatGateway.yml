@@ -1,0 +1,259 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.NatGateway
+    name: NatGateway
+    fullName: NatGateway
+    children:
+      - azure-arm-network - v13.0.0.NatGateway.etag
+      - azure-arm-network - v13.0.0.NatGateway.id
+      - azure-arm-network - v13.0.0.NatGateway.idleTimeoutInMinutes
+      - azure-arm-network - v13.0.0.NatGateway.location
+      - azure-arm-network - v13.0.0.NatGateway.name
+      - azure-arm-network - v13.0.0.NatGateway.provisioningState
+      - azure-arm-network - v13.0.0.NatGateway.publicIpAddresses
+      - azure-arm-network - v13.0.0.NatGateway.publicIpPrefixes
+      - azure-arm-network - v13.0.0.NatGateway.resourceGuid
+      - azure-arm-network - v13.0.0.NatGateway.sku
+      - azure-arm-network - v13.0.0.NatGateway.subnets
+      - azure-arm-network - v13.0.0.NatGateway.tags
+      - azure-arm-network - v13.0.0.NatGateway.type
+    langs:
+      - typeScript
+    type: interface
+    summary: Nat Gateway resource.
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NatGateway.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: A unique read-only string that changes whenever the resource is updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NatGateway.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NatGateway.idleTimeoutInMinutes
+    name: idleTimeoutInMinutes
+    fullName: idleTimeoutInMinutes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The idle timeout of the nat gateway.
+    optional: true
+    syntax:
+      content: 'idleTimeoutInMinutes?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NatGateway.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NatGateway.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NatGateway.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the NatGateway resource. Possible values are:
+      'Updating',
+
+      'Deleting', and 'Failed'.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NatGateway.publicIpAddresses
+    name: publicIpAddresses
+    fullName: publicIpAddresses
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: An array of public ip addresses associated with the nat gateway resource.
+    optional: true
+    syntax:
+      content: 'publicIpAddresses?: SubResource[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.SubResource[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NatGateway.publicIpPrefixes
+    name: publicIpPrefixes
+    fullName: publicIpPrefixes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: An array of public ip prefixes associated with the nat gateway resource.
+    optional: true
+    syntax:
+      content: 'publicIpPrefixes?: SubResource[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.SubResource[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NatGateway.resourceGuid
+    name: resourceGuid
+    fullName: resourceGuid
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The resource GUID property of the nat gateway resource.
+    optional: true
+    syntax:
+      content: 'resourceGuid?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NatGateway.sku
+    name: sku
+    fullName: sku
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The nat gateway SKU.
+    optional: true
+    syntax:
+      content: 'sku?: NatGatewaySku'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.NatGatewaySku
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NatGateway.subnets
+    name: subnets
+    fullName: subnets
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: An array of references to the subnets using this nat gateway resource.
+    optional: true
+    syntax:
+      content: 'subnets?: SubResource[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.SubResource[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NatGateway.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.NatGateway.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: 'azure-arm-network - v13.0.0.SubResource[]'
+    name: 'SubResource[]'
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.NatGatewaySku
+    name: NatGatewaySku
+    spec.typeScript:
+      - name: NatGatewaySku
+        fullName: NatGatewaySku
+        uid: azure-arm-network - v13.0.0.NatGatewaySku

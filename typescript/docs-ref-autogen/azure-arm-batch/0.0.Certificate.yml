@@ -1,0 +1,263 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch - v5.0.0.Certificate
+    name: Certificate
+    fullName: Certificate
+    children:
+      - azure-arm-batch - v5.0.0.Certificate.deleteCertificateError
+      - azure-arm-batch - v5.0.0.Certificate.etag
+      - azure-arm-batch - v5.0.0.Certificate.format
+      - azure-arm-batch - v5.0.0.Certificate.id
+      - azure-arm-batch - v5.0.0.Certificate.name
+      - azure-arm-batch - v5.0.0.Certificate.previousProvisioningState
+      - >-
+        azure-arm-batch -
+        v5.0.0.Certificate.previousProvisioningStateTransitionTime
+      - azure-arm-batch - v5.0.0.Certificate.provisioningState
+      - azure-arm-batch - v5.0.0.Certificate.provisioningStateTransitionTime
+      - azure-arm-batch - v5.0.0.Certificate.publicData
+      - azure-arm-batch - v5.0.0.Certificate.thumbprint
+      - azure-arm-batch - v5.0.0.Certificate.thumbprintAlgorithm
+      - azure-arm-batch - v5.0.0.Certificate.type
+    langs:
+      - typeScript
+    type: interface
+    summary: Contains information about a certificate.
+    extends:
+      name: azure-arm-batch - v5.0.0.ProxyResource
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Certificate.deleteCertificateError
+    name: deleteCertificateError
+    fullName: deleteCertificateError
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: This is only returned when the certificate provisioningState is 'Failed'.
+    optional: true
+    syntax:
+      content: 'deleteCertificateError?: DeleteCertificateError'
+      return:
+        type:
+          - azure-arm-batch - v5.0.0.DeleteCertificateError
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Certificate.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The ETag of the resource, used for concurrency statements.'
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Certificate.format
+    name: format
+    fullName: format
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The format of the certificate - either Pfx or Cer. If omitted, the default
+      is Pfx. Possible
+
+      values include: 'Pfx', 'Cer'
+    optional: true
+    syntax:
+      content: 'format?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Certificate.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The ID of the resource.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Certificate.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The name of the resource.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Certificate.previousProvisioningState
+    name: previousProvisioningState
+    fullName: previousProvisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The previous provisioned state of the resource. Possible values include:
+      'Succeeded',
+
+      'Deleting', 'Failed'
+    optional: true
+    syntax:
+      content: 'previousProvisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.Certificate.previousProvisioningStateTransitionTime
+    name: previousProvisioningStateTransitionTime
+    fullName: previousProvisioningStateTransitionTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'previousProvisioningStateTransitionTime?: Date'
+      return:
+        type:
+          - Date
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Certificate.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'Possible values include: ''Succeeded'', ''Deleting'', ''Failed'''
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Certificate.provisioningStateTransitionTime
+    name: provisioningStateTransitionTime
+    fullName: provisioningStateTransitionTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'provisioningStateTransitionTime?: Date'
+      return:
+        type:
+          - Date
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Certificate.publicData
+    name: publicData
+    fullName: publicData
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The public key of the certificate.
+    optional: true
+    syntax:
+      content: 'publicData?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Certificate.thumbprint
+    name: thumbprint
+    fullName: thumbprint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: This must match the thumbprint from the name.
+    optional: true
+    syntax:
+      content: 'thumbprint?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Certificate.thumbprintAlgorithm
+    name: thumbprintAlgorithm
+    fullName: thumbprintAlgorithm
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      This must match the first portion of the certificate name. Currently
+      required to
+
+      be 'SHA1'.
+    optional: true
+    syntax:
+      content: 'thumbprintAlgorithm?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Certificate.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The type of the resource.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+references:
+  - uid: azure-arm-batch - v5.0.0.ProxyResource
+    name: ProxyResource
+    spec.typeScript:
+      - name: ProxyResource
+        fullName: ProxyResource
+        uid: azure-arm-batch - v5.0.0.ProxyResource
+  - uid: azure-arm-batch - v5.0.0.DeleteCertificateError
+    name: DeleteCertificateError
+    spec.typeScript:
+      - name: DeleteCertificateError
+        fullName: DeleteCertificateError
+        uid: azure-arm-batch - v5.0.0.DeleteCertificateError

@@ -1,0 +1,530 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient
+    name: IotHubClient
+    fullName: IotHubClient
+    children:
+      - azure-arm-iothub - v2.1.0.IotHubClient.acceptLanguage
+      - azure-arm-iothub - v2.1.0.IotHubClient.addUserAgentInfo
+      - azure-arm-iothub - v2.1.0.IotHubClient.apiVersion
+      - azure-arm-iothub - v2.1.0.IotHubClient.certificates
+      - azure-arm-iothub - v2.1.0.IotHubClient.credentials
+      - azure-arm-iothub - v2.1.0.IotHubClient.generateClientRequestId
+      - azure-arm-iothub - v2.1.0.IotHubClient.getLongRunningOperationResult_2
+      - azure-arm-iothub - v2.1.0.IotHubClient.getLongRunningOperationResult
+      - azure-arm-iothub - v2.1.0.IotHubClient.getLongRunningOperationResult_1
+      - azure-arm-iothub - v2.1.0.IotHubClient.getPackageJsonInfo
+      - azure-arm-iothub - v2.1.0.IotHubClient.constructor
+      - azure-arm-iothub - v2.1.0.IotHubClient.iotHubResource
+      - azure-arm-iothub - v2.1.0.IotHubClient.longRunningOperationRetryTimeout
+      - azure-arm-iothub - v2.1.0.IotHubClient.operations
+      - azure-arm-iothub - v2.1.0.IotHubClient.resourceProviderCommon
+      - azure-arm-iothub - v2.1.0.IotHubClient.sendLongRunningRequest_1
+      - azure-arm-iothub - v2.1.0.IotHubClient.sendLongRunningRequest
+      - >-
+        azure-arm-iothub -
+        v2.1.0.IotHubClient.sendLongRunningRequestWithHttpOperationResponse
+      - azure-arm-iothub - v2.1.0.IotHubClient.sendRequest_1
+      - azure-arm-iothub - v2.1.0.IotHubClient.sendRequest
+      - >-
+        azure-arm-iothub -
+        v2.1.0.IotHubClient.sendRequestWithHttpOperationResponse
+      - azure-arm-iothub - v2.1.0.IotHubClient.subscriptionId
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    extends:
+      name: AzureServiceClient
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.acceptLanguage
+    name: acceptLanguage
+    fullName: acceptLanguage
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'acceptLanguage: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.addUserAgentInfo
+    name: addUserAgentInfo(any)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Adds custom information to user agent header
+    syntax:
+      content: 'function addUserAgentInfo(additionalUserAgentInfo: any)'
+      parameters:
+        - id: additionalUserAgentInfo
+          type:
+            - any
+          description: |
+            information to be added to user agent header, as string.
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.apiVersion
+    name: apiVersion
+    fullName: apiVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'apiVersion: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.certificates
+    name: certificates
+    fullName: certificates
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'certificates: Certificates'
+      return:
+        type:
+          - azure-arm-iothub - v2.1.0.Certificates
+        description: ''
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.credentials
+    name: credentials
+    fullName: credentials
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'credentials: ServiceClientCredentials'
+      return:
+        type:
+          - ServiceClientCredentials
+        description: ''
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.generateClientRequestId
+    name: generateClientRequestId
+    fullName: generateClientRequestId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'generateClientRequestId: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.getLongRunningOperationResult_2
+    name: >-
+      getLongRunningOperationResult(HttpOperationResponse<TResult>,
+      RequestOptions)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function getLongRunningOperationResult<TResult>(resultOfInitialRequest:
+        HttpOperationResponse<TResult>, options?: RequestOptions)
+      parameters:
+        - id: resultOfInitialRequest
+          type:
+            - HttpOperationResponse<TResult>
+          description: ''
+        - id: options
+          type:
+            - RequestOptions
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<TResult>
+        description: ''
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.getLongRunningOperationResult
+    name: >-
+      getLongRunningOperationResult(HttpOperationResponse<TResult>,
+      RequestOptions, ServiceCallback<TResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function getLongRunningOperationResult<TResult>(resultOfInitialRequest:
+        HttpOperationResponse<TResult>, options: RequestOptions, callback:
+        ServiceCallback<TResult>)
+      parameters:
+        - id: resultOfInitialRequest
+          type:
+            - HttpOperationResponse<TResult>
+          description: ''
+        - id: options
+          type:
+            - RequestOptions
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<TResult>
+          description: ''
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.getLongRunningOperationResult_1
+    name: >-
+      getLongRunningOperationResult(HttpOperationResponse<TResult>,
+      ServiceCallback<TResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function getLongRunningOperationResult<TResult>(resultOfInitialRequest:
+        HttpOperationResponse<TResult>, callback: ServiceCallback<TResult>)
+      parameters:
+        - id: resultOfInitialRequest
+          type:
+            - HttpOperationResponse<TResult>
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<TResult>
+          description: ''
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.getPackageJsonInfo
+    name: getPackageJsonInfo(string)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Attempts to find package.json for the given azure nodejs package.
+
+      If found, returns the name and version of the package by reading the
+      package.json
+
+      If package.json is not found, returns a default value.
+    syntax:
+      content: 'function getPackageJsonInfo(managementClientDir: string)'
+      parameters:
+        - id: managementClientDir
+          type:
+            - string
+          description: pass the directory of the specific azure management client.
+      return:
+        type:
+          - Object
+        description: packageJsonInfo - "name" and "version" of the desired package.
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.constructor
+    name: >-
+      IotHubClient(ServiceClientCredentials, string, string,
+      AzureServiceClientOptions)
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: Initializes a new instance of the IotHubClient class.
+    syntax:
+      content: >-
+        new IotHubClient(credentials: ServiceClientCredentials, subscriptionId:
+        string, baseUri?: string, options?: AzureServiceClientOptions)
+      parameters:
+        - id: credentials
+          type:
+            - ServiceClientCredentials
+          description: |
+            Credentials needed for the client to connect to Azure.
+        - id: subscriptionId
+          type:
+            - string
+          description: |
+            The subscription identifier.
+        - id: baseUri
+          type:
+            - string
+          description: ''
+          optional: true
+        - id: options
+          type:
+            - AzureServiceClientOptions
+          description: ''
+          optional: true
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.iotHubResource
+    name: iotHubResource
+    fullName: iotHubResource
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'iotHubResource: IotHubResource'
+      return:
+        type:
+          - azure-arm-iothub - v2.1.0.IotHubResource
+        description: ''
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.longRunningOperationRetryTimeout
+    name: longRunningOperationRetryTimeout
+    fullName: longRunningOperationRetryTimeout
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'longRunningOperationRetryTimeout: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.operations
+    name: operations
+    fullName: operations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'operations: Operations'
+      return:
+        type:
+          - azure-arm-iothub - v2.1.0.Operations
+        description: ''
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.resourceProviderCommon
+    name: resourceProviderCommon
+    fullName: resourceProviderCommon
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'resourceProviderCommon: ResourceProviderCommon'
+      return:
+        type:
+          - azure-arm-iothub - v2.1.0.ResourceProviderCommon
+        description: ''
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.sendLongRunningRequest_1
+    name: >-
+      sendLongRunningRequest(LongRunningUrlBasedRequestPrepareOptions |
+      LongRunningPathTemplateBasedRequestPrepareOptions)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function sendLongRunningRequest<TResult>(options:
+        LongRunningUrlBasedRequestPrepareOptions |
+        LongRunningPathTemplateBasedRequestPrepareOptions)
+      parameters:
+        - id: options
+          type:
+            - >-
+              LongRunningUrlBasedRequestPrepareOptions |
+              LongRunningPathTemplateBasedRequestPrepareOptions
+          description: ''
+      return:
+        type:
+          - Promise<TResult>
+        description: ''
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.sendLongRunningRequest
+    name: >-
+      sendLongRunningRequest(LongRunningUrlBasedRequestPrepareOptions |
+      LongRunningPathTemplateBasedRequestPrepareOptions,
+      ServiceCallback<TResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function sendLongRunningRequest<TResult>(options:
+        LongRunningUrlBasedRequestPrepareOptions |
+        LongRunningPathTemplateBasedRequestPrepareOptions, callback:
+        ServiceCallback<TResult>)
+      parameters:
+        - id: options
+          type:
+            - >-
+              LongRunningUrlBasedRequestPrepareOptions |
+              LongRunningPathTemplateBasedRequestPrepareOptions
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<TResult>
+          description: ''
+    package: azure-arm-iothub - v2
+  - uid: >-
+      azure-arm-iothub -
+      v2.1.0.IotHubClient.sendLongRunningRequestWithHttpOperationResponse
+    name: >-
+      sendLongRunningRequestWithHttpOperationResponse(LongRunningUrlBasedRequestPrepareOptions
+      | LongRunningPathTemplateBasedRequestPrepareOptions)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function
+        sendLongRunningRequestWithHttpOperationResponse<TResult>(options:
+        LongRunningUrlBasedRequestPrepareOptions |
+        LongRunningPathTemplateBasedRequestPrepareOptions)
+      parameters:
+        - id: options
+          type:
+            - >-
+              LongRunningUrlBasedRequestPrepareOptions |
+              LongRunningPathTemplateBasedRequestPrepareOptions
+          description: ''
+      return:
+        type:
+          - Promise<HttpOperationResponse<TResult>>
+        description: ''
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.sendRequest_1
+    name: >-
+      sendRequest(PathTemplateBasedRequestPrepareOptions |
+      UrlBasedRequestPrepareOptions)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function sendRequest<TResult>(options:
+        PathTemplateBasedRequestPrepareOptions | UrlBasedRequestPrepareOptions)
+      parameters:
+        - id: options
+          type:
+            - >-
+              PathTemplateBasedRequestPrepareOptions |
+              UrlBasedRequestPrepareOptions
+          description: ''
+      return:
+        type:
+          - Promise<TResult>
+        description: ''
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.sendRequest
+    name: >-
+      sendRequest(PathTemplateBasedRequestPrepareOptions |
+      UrlBasedRequestPrepareOptions, ServiceCallback<TResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function sendRequest<TResult>(options:
+        PathTemplateBasedRequestPrepareOptions | UrlBasedRequestPrepareOptions,
+        callback: ServiceCallback<TResult>)
+      parameters:
+        - id: options
+          type:
+            - >-
+              PathTemplateBasedRequestPrepareOptions |
+              UrlBasedRequestPrepareOptions
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<TResult>
+          description: ''
+    package: azure-arm-iothub - v2
+  - uid: >-
+      azure-arm-iothub -
+      v2.1.0.IotHubClient.sendRequestWithHttpOperationResponse
+    name: >-
+      sendRequestWithHttpOperationResponse(PathTemplateBasedRequestPrepareOptions
+      | UrlBasedRequestPrepareOptions)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function sendRequestWithHttpOperationResponse<TResult>(options:
+        PathTemplateBasedRequestPrepareOptions | UrlBasedRequestPrepareOptions)
+      parameters:
+        - id: options
+          type:
+            - >-
+              PathTemplateBasedRequestPrepareOptions |
+              UrlBasedRequestPrepareOptions
+          description: ''
+      return:
+        type:
+          - Promise<HttpOperationResponse<TResult>>
+        description: ''
+    package: azure-arm-iothub - v2
+  - uid: azure-arm-iothub - v2.1.0.IotHubClient.subscriptionId
+    name: subscriptionId
+    fullName: subscriptionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-iothub - v2
+references:
+  - uid: azure-arm-iothub - v2.1.0.Certificates
+    name: Certificates
+    spec.typeScript:
+      - name: Certificates
+        fullName: Certificates
+        uid: azure-arm-iothub - v2.1.0.Certificates
+  - uid: azure-arm-iothub - v2.1.0.IotHubResource
+    name: IotHubResource
+    spec.typeScript:
+      - name: IotHubResource
+        fullName: IotHubResource
+        uid: azure-arm-iothub - v2.1.0.IotHubResource
+  - uid: azure-arm-iothub - v2.1.0.Operations
+    name: Operations
+    spec.typeScript:
+      - name: Operations
+        fullName: Operations
+        uid: azure-arm-iothub - v2.1.0.Operations
+  - uid: azure-arm-iothub - v2.1.0.ResourceProviderCommon
+    name: ResourceProviderCommon
+    spec.typeScript:
+      - name: ResourceProviderCommon
+        fullName: ResourceProviderCommon
+        uid: azure-arm-iothub - v2.1.0.ResourceProviderCommon

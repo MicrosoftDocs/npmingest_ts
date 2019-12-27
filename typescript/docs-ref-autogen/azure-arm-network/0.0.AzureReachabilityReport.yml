@@ -1,0 +1,76 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.AzureReachabilityReport
+    name: AzureReachabilityReport
+    fullName: AzureReachabilityReport
+    children:
+      - azure-arm-network - v13.0.0.AzureReachabilityReport.aggregationLevel
+      - azure-arm-network - v13.0.0.AzureReachabilityReport.providerLocation
+      - azure-arm-network - v13.0.0.AzureReachabilityReport.reachabilityReport
+    langs:
+      - typeScript
+    type: interface
+    summary: Azure reachability report details.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureReachabilityReport.aggregationLevel
+    name: aggregationLevel
+    fullName: aggregationLevel
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The aggregation level of Azure reachability report. Can be Country, State
+      or City.
+    syntax:
+      content: 'aggregationLevel: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureReachabilityReport.providerLocation
+    name: providerLocation
+    fullName: providerLocation
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Parameters that define a geographic location.
+    syntax:
+      content: 'providerLocation: AzureReachabilityReportLocation'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.AzureReachabilityReportLocation
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.AzureReachabilityReport.reachabilityReport
+    name: reachabilityReport
+    fullName: reachabilityReport
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: List of Azure reachability report items.
+    syntax:
+      content: 'reachabilityReport: AzureReachabilityReportItem[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.AzureReachabilityReportItem[]'
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.AzureReachabilityReportLocation
+    name: AzureReachabilityReportLocation
+    spec.typeScript:
+      - name: AzureReachabilityReportLocation
+        fullName: AzureReachabilityReportLocation
+        uid: azure-arm-network - v13.0.0.AzureReachabilityReportLocation
+  - uid: 'azure-arm-network - v13.0.0.AzureReachabilityReportItem[]'
+    name: 'AzureReachabilityReportItem[]'
+    spec.typeScript:
+      - name: AzureReachabilityReportItem
+        fullName: AzureReachabilityReportItem
+        uid: azure-arm-network - v13.0.0.AzureReachabilityReportItem
+      - name: '[]'
+        fullName: '[]'

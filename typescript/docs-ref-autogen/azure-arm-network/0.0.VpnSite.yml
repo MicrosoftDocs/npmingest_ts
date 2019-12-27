@@ -1,0 +1,288 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.VpnSite
+    name: VpnSite
+    fullName: VpnSite
+    children:
+      - azure-arm-network - v13.0.0.VpnSite.addressSpace
+      - azure-arm-network - v13.0.0.VpnSite.bgpProperties
+      - azure-arm-network - v13.0.0.VpnSite.deviceProperties
+      - azure-arm-network - v13.0.0.VpnSite.etag
+      - azure-arm-network - v13.0.0.VpnSite.id
+      - azure-arm-network - v13.0.0.VpnSite.ipAddress
+      - azure-arm-network - v13.0.0.VpnSite.isSecuritySite
+      - azure-arm-network - v13.0.0.VpnSite.location
+      - azure-arm-network - v13.0.0.VpnSite.name
+      - azure-arm-network - v13.0.0.VpnSite.provisioningState
+      - azure-arm-network - v13.0.0.VpnSite.siteKey
+      - azure-arm-network - v13.0.0.VpnSite.tags
+      - azure-arm-network - v13.0.0.VpnSite.type
+      - azure-arm-network - v13.0.0.VpnSite.virtualWan
+    langs:
+      - typeScript
+    type: interface
+    summary: VpnSite Resource.
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnSite.addressSpace
+    name: addressSpace
+    fullName: addressSpace
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The AddressSpace that contains an array of IP address ranges.
+    optional: true
+    syntax:
+      content: 'addressSpace?: AddressSpace'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.AddressSpace
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnSite.bgpProperties
+    name: bgpProperties
+    fullName: bgpProperties
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The set of bgp properties.
+    optional: true
+    syntax:
+      content: 'bgpProperties?: BgpSettings'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.BgpSettings
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnSite.deviceProperties
+    name: deviceProperties
+    fullName: deviceProperties
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The device properties
+    optional: true
+    syntax:
+      content: 'deviceProperties?: DeviceProperties'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.DeviceProperties
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnSite.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Gets a unique read-only string that changes whenever the resource is
+      updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnSite.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnSite.ipAddress
+    name: ipAddress
+    fullName: ipAddress
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The ip-address for the vpn-site.
+    optional: true
+    syntax:
+      content: 'ipAddress?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnSite.isSecuritySite
+    name: isSecuritySite
+    fullName: isSecuritySite
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: IsSecuritySite flag
+    optional: true
+    syntax:
+      content: 'isSecuritySite?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnSite.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnSite.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnSite.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the resource. Possible values include:
+      'Succeeded', 'Updating',
+
+      'Deleting', 'Failed'
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnSite.siteKey
+    name: siteKey
+    fullName: siteKey
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The key for vpn-site that can be used for connections.
+    optional: true
+    syntax:
+      content: 'siteKey?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnSite.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnSite.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VpnSite.virtualWan
+    name: virtualWan
+    fullName: virtualWan
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The VirtualWAN to which the vpnSite belongs
+    optional: true
+    syntax:
+      content: 'virtualWan?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: azure-arm-network - v13.0.0.AddressSpace
+    name: AddressSpace
+    spec.typeScript:
+      - name: AddressSpace
+        fullName: AddressSpace
+        uid: azure-arm-network - v13.0.0.AddressSpace
+  - uid: azure-arm-network - v13.0.0.BgpSettings
+    name: BgpSettings
+    spec.typeScript:
+      - name: BgpSettings
+        fullName: BgpSettings
+        uid: azure-arm-network - v13.0.0.BgpSettings
+  - uid: azure-arm-network - v13.0.0.DeviceProperties
+    name: DeviceProperties
+    spec.typeScript:
+      - name: DeviceProperties
+        fullName: DeviceProperties
+        uid: azure-arm-network - v13.0.0.DeviceProperties
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource

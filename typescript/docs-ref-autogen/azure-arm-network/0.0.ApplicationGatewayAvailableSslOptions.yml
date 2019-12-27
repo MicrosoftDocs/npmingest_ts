@@ -1,0 +1,204 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayAvailableSslOptions
+    name: ApplicationGatewayAvailableSslOptions
+    fullName: ApplicationGatewayAvailableSslOptions
+    children:
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayAvailableSslOptions.availableCipherSuites
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayAvailableSslOptions.availableProtocols
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayAvailableSslOptions.defaultPolicy
+      - azure-arm-network - v13.0.0.ApplicationGatewayAvailableSslOptions.id
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayAvailableSslOptions.location
+      - azure-arm-network - v13.0.0.ApplicationGatewayAvailableSslOptions.name
+      - >-
+        azure-arm-network -
+        v13.0.0.ApplicationGatewayAvailableSslOptions.predefinedPolicies
+      - azure-arm-network - v13.0.0.ApplicationGatewayAvailableSslOptions.tags
+      - azure-arm-network - v13.0.0.ApplicationGatewayAvailableSslOptions.type
+    langs:
+      - typeScript
+    type: interface
+    summary: Response for ApplicationGatewayAvailableSslOptions API service call.
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayAvailableSslOptions.availableCipherSuites
+    name: availableCipherSuites
+    fullName: availableCipherSuites
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: List of available Ssl cipher suites.
+    optional: true
+    syntax:
+      content: 'availableCipherSuites?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayAvailableSslOptions.availableProtocols
+    name: availableProtocols
+    fullName: availableProtocols
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: List of available Ssl protocols.
+    optional: true
+    syntax:
+      content: 'availableProtocols?: string[]'
+      return:
+        type:
+          - 'string[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayAvailableSslOptions.defaultPolicy
+    name: defaultPolicy
+    fullName: defaultPolicy
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Name of the Ssl predefined policy applied by default to application
+      gateway. Possible values
+
+      include: 'AppGwSslPolicy20150501', 'AppGwSslPolicy20170401',
+      'AppGwSslPolicy20170401S'
+    optional: true
+    syntax:
+      content: 'defaultPolicy?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayAvailableSslOptions.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayAvailableSslOptions.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayAvailableSslOptions.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.ApplicationGatewayAvailableSslOptions.predefinedPolicies
+    name: predefinedPolicies
+    fullName: predefinedPolicies
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: List of available Ssl predefined policy.
+    optional: true
+    syntax:
+      content: 'predefinedPolicies?: SubResource[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.SubResource[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayAvailableSslOptions.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ApplicationGatewayAvailableSslOptions.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: 'azure-arm-network - v13.0.0.SubResource[]'
+    name: 'SubResource[]'
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource
+      - name: '[]'
+        fullName: '[]'

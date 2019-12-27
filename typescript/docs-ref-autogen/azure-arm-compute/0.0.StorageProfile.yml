@@ -1,0 +1,106 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.StorageProfile
+    name: StorageProfile
+    fullName: StorageProfile
+    children:
+      - azure-arm-compute - v10.0.0.StorageProfile.dataDisks
+      - azure-arm-compute - v10.0.0.StorageProfile.imageReference
+      - azure-arm-compute - v10.0.0.StorageProfile.osDisk
+    langs:
+      - typeScript
+    type: interface
+    summary: Specifies the storage settings for the virtual machine disks.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.StorageProfile.dataDisks
+    name: dataDisks
+    fullName: dataDisks
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the parameters that are used to add a data disk to a virtual
+      machine. <br><br> For
+
+      more information about disks, see [About disks and VHDs for Azure virtual
+
+      machines](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-about-disks-vhds?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json).
+    optional: true
+    syntax:
+      content: 'dataDisks?: DataDisk[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.DataDisk[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.StorageProfile.imageReference
+    name: imageReference
+    fullName: imageReference
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies information about the image to use. You can specify information
+      about platform
+
+      images, marketplace images, or virtual machine images. This element is
+      required when you want
+
+      to use a platform image, marketplace image, or virtual machine image, but
+      is not used in other
+
+      creation operations.
+    optional: true
+    syntax:
+      content: 'imageReference?: ImageReference'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.ImageReference
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.StorageProfile.osDisk
+    name: osDisk
+    fullName: osDisk
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies information about the operating system disk used by the virtual
+      machine. <br><br>
+
+      For more information about disks, see [About disks and VHDs for Azure
+      virtual
+
+      machines](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-about-disks-vhds?toc=%2fazure%2fvirtual-machines%2fwindows%2ftoc.json).
+    optional: true
+    syntax:
+      content: 'osDisk?: OSDisk'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.OSDisk
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: 'azure-arm-compute - v10.0.0.DataDisk[]'
+    name: 'DataDisk[]'
+    spec.typeScript:
+      - name: DataDisk
+        fullName: DataDisk
+        uid: azure-arm-compute - v10.0.0.DataDisk
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-compute - v10.0.0.ImageReference
+    name: ImageReference
+    spec.typeScript:
+      - name: ImageReference
+        fullName: ImageReference
+        uid: azure-arm-compute - v10.0.0.ImageReference
+  - uid: azure-arm-compute - v10.0.0.OSDisk
+    name: OSDisk
+    spec.typeScript:
+      - name: OSDisk
+        fullName: OSDisk
+        uid: azure-arm-compute - v10.0.0.OSDisk

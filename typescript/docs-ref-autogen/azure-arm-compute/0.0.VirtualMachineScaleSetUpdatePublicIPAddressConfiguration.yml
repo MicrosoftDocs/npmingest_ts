@@ -1,0 +1,93 @@
+### YamlMime:UniversalReference
+items:
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
+    name: VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
+    fullName: VirtualMachineScaleSetUpdatePublicIPAddressConfiguration
+    children:
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdatePublicIPAddressConfiguration.dnsSettings
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdatePublicIPAddressConfiguration.idleTimeoutInMinutes
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineScaleSetUpdatePublicIPAddressConfiguration.name
+    langs:
+      - typeScript
+    type: interface
+    summary: >-
+      Describes a virtual machines scale set IP Configuration's PublicIPAddress
+      configuration
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetUpdatePublicIPAddressConfiguration.dnsSettings
+    name: dnsSettings
+    fullName: dnsSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The dns settings to be applied on the publicIP addresses .
+    optional: true
+    syntax:
+      content: >-
+        dnsSettings?:
+        VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings
+      return:
+        type:
+          - >-
+            azure-arm-compute -
+            v10.0.0.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetUpdatePublicIPAddressConfiguration.idleTimeoutInMinutes
+    name: idleTimeoutInMinutes
+    fullName: idleTimeoutInMinutes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The idle timeout of the public IP address.
+    optional: true
+    syntax:
+      content: 'idleTimeoutInMinutes?: number'
+      return:
+        type:
+          - number
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetUpdatePublicIPAddressConfiguration.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The publicIP address configuration name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings
+    name: VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings
+    spec.typeScript:
+      - name: VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings
+        fullName: VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings
+        uid: >-
+          azure-arm-compute -
+          v10.0.0.VirtualMachineScaleSetPublicIPAddressConfigurationDnsSettings

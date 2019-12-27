@@ -1,0 +1,81 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.BootDiagnosticsInstanceView
+    name: BootDiagnosticsInstanceView
+    fullName: BootDiagnosticsInstanceView
+    children:
+      - >-
+        azure-arm-compute -
+        v10.0.0.BootDiagnosticsInstanceView.consoleScreenshotBlobUri
+      - >-
+        azure-arm-compute -
+        v10.0.0.BootDiagnosticsInstanceView.serialConsoleLogBlobUri
+      - azure-arm-compute - v10.0.0.BootDiagnosticsInstanceView.status
+    langs:
+      - typeScript
+    type: interface
+    summary: The instance view of a virtual machine boot diagnostics.
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.BootDiagnosticsInstanceView.consoleScreenshotBlobUri
+    name: consoleScreenshotBlobUri
+    fullName: consoleScreenshotBlobUri
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The console screenshot blob URI.
+    optional: true
+    syntax:
+      content: 'consoleScreenshotBlobUri?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.BootDiagnosticsInstanceView.serialConsoleLogBlobUri
+    name: serialConsoleLogBlobUri
+    fullName: serialConsoleLogBlobUri
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The Linux serial console log blob Uri.
+    optional: true
+    syntax:
+      content: 'serialConsoleLogBlobUri?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.BootDiagnosticsInstanceView.status
+    name: status
+    fullName: status
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The boot diagnostics status information for the VM. <br><br> NOTE: It will
+      be set only if
+
+      there are errors encountered in enabling boot diagnostics.
+    optional: true
+    syntax:
+      content: 'status?: InstanceViewStatus'
+      return:
+        type:
+          - azure-arm-compute - v10.0.0.InstanceViewStatus
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.InstanceViewStatus
+    name: InstanceViewStatus
+    spec.typeScript:
+      - name: InstanceViewStatus
+        fullName: InstanceViewStatus
+        uid: azure-arm-compute - v10.0.0.InstanceViewStatus

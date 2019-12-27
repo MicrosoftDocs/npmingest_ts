@@ -1,0 +1,96 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.ConnectivityParameters
+    name: ConnectivityParameters
+    fullName: ConnectivityParameters
+    children:
+      - azure-arm-network - v13.0.0.ConnectivityParameters.destination
+      - azure-arm-network - v13.0.0.ConnectivityParameters.protocol
+      - azure-arm-network - v13.0.0.ConnectivityParameters.protocolConfiguration
+      - azure-arm-network - v13.0.0.ConnectivityParameters.source
+    langs:
+      - typeScript
+    type: interface
+    summary: Parameters that determine how the connectivity check will be performed.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityParameters.destination
+    name: destination
+    fullName: destination
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Describes the destination of connection.
+    syntax:
+      content: 'destination: ConnectivityDestination'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.ConnectivityDestination
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityParameters.protocol
+    name: protocol
+    fullName: protocol
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'Network protocol. Possible values include: ''Tcp'', ''Http'', ''Https'', ''Icmp'''
+    optional: true
+    syntax:
+      content: 'protocol?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityParameters.protocolConfiguration
+    name: protocolConfiguration
+    fullName: protocolConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Configuration of the protocol.
+    optional: true
+    syntax:
+      content: 'protocolConfiguration?: ProtocolConfiguration'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.ProtocolConfiguration
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.ConnectivityParameters.source
+    name: source
+    fullName: source
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Describes the source of the connection.
+    syntax:
+      content: 'source: ConnectivitySource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.ConnectivitySource
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.ConnectivityDestination
+    name: ConnectivityDestination
+    spec.typeScript:
+      - name: ConnectivityDestination
+        fullName: ConnectivityDestination
+        uid: azure-arm-network - v13.0.0.ConnectivityDestination
+  - uid: azure-arm-network - v13.0.0.ProtocolConfiguration
+    name: ProtocolConfiguration
+    spec.typeScript:
+      - name: ProtocolConfiguration
+        fullName: ProtocolConfiguration
+        uid: azure-arm-network - v13.0.0.ProtocolConfiguration
+  - uid: azure-arm-network - v13.0.0.ConnectivitySource
+    name: ConnectivitySource
+    spec.typeScript:
+      - name: ConnectivitySource
+        fullName: ConnectivitySource
+        uid: azure-arm-network - v13.0.0.ConnectivitySource

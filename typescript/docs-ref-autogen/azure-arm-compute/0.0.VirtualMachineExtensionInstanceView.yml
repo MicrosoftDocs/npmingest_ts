@@ -1,0 +1,115 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineExtensionInstanceView
+    name: VirtualMachineExtensionInstanceView
+    fullName: VirtualMachineExtensionInstanceView
+    children:
+      - azure-arm-compute - v10.0.0.VirtualMachineExtensionInstanceView.name
+      - azure-arm-compute - v10.0.0.VirtualMachineExtensionInstanceView.statuses
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineExtensionInstanceView.substatuses
+      - azure-arm-compute - v10.0.0.VirtualMachineExtensionInstanceView.type
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineExtensionInstanceView.typeHandlerVersion
+    langs:
+      - typeScript
+    type: interface
+    summary: The instance view of a virtual machine extension.
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineExtensionInstanceView.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The virtual machine extension name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineExtensionInstanceView.statuses
+    name: statuses
+    fullName: statuses
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The resource status information.
+    optional: true
+    syntax:
+      content: 'statuses?: InstanceViewStatus[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.InstanceViewStatus[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineExtensionInstanceView.substatuses
+    name: substatuses
+    fullName: substatuses
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The resource status information.
+    optional: true
+    syntax:
+      content: 'substatuses?: InstanceViewStatus[]'
+      return:
+        type:
+          - 'azure-arm-compute - v10.0.0.InstanceViewStatus[]'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineExtensionInstanceView.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the type of the extension; an example is
+      "CustomScriptExtension".
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineExtensionInstanceView.typeHandlerVersion
+    name: typeHandlerVersion
+    fullName: typeHandlerVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies the version of the script handler.
+    optional: true
+    syntax:
+      content: 'typeHandlerVersion?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: 'azure-arm-compute - v10.0.0.InstanceViewStatus[]'
+    name: 'InstanceViewStatus[]'
+    spec.typeScript:
+      - name: InstanceViewStatus
+        fullName: InstanceViewStatus
+        uid: azure-arm-compute - v10.0.0.InstanceViewStatus
+      - name: '[]'
+        fullName: '[]'

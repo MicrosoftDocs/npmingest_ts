@@ -1,0 +1,185 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineExtensionUpdate
+    name: VirtualMachineExtensionUpdate
+    fullName: VirtualMachineExtensionUpdate
+    children:
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineExtensionUpdate.autoUpgradeMinorVersion
+      - azure-arm-compute - v10.0.0.VirtualMachineExtensionUpdate.forceUpdateTag
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineExtensionUpdate.protectedSettings
+      - azure-arm-compute - v10.0.0.VirtualMachineExtensionUpdate.publisher
+      - azure-arm-compute - v10.0.0.VirtualMachineExtensionUpdate.settings
+      - azure-arm-compute - v10.0.0.VirtualMachineExtensionUpdate.tags
+      - azure-arm-compute - v10.0.0.VirtualMachineExtensionUpdate.type
+      - >-
+        azure-arm-compute -
+        v10.0.0.VirtualMachineExtensionUpdate.typeHandlerVersion
+    langs:
+      - typeScript
+    type: interface
+    summary: Describes a Virtual Machine Extension.
+    extends:
+      name: azure-arm-compute - v10.0.0.UpdateResource
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineExtensionUpdate.autoUpgradeMinorVersion
+    name: autoUpgradeMinorVersion
+    fullName: autoUpgradeMinorVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Indicates whether the extension should use a newer minor version if one is
+      available at
+
+      deployment time. Once deployed, however, the extension will not upgrade
+      minor versions unless
+
+      redeployed, even with this property set to true.
+    optional: true
+    syntax:
+      content: 'autoUpgradeMinorVersion?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineExtensionUpdate.forceUpdateTag
+    name: forceUpdateTag
+    fullName: forceUpdateTag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      How the extension handler should be forced to update even if the extension
+      configuration has
+
+      not changed.
+    optional: true
+    syntax:
+      content: 'forceUpdateTag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineExtensionUpdate.protectedSettings
+    name: protectedSettings
+    fullName: protectedSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The extension can contain either protectedSettings or
+      protectedSettingsFromKeyVault or no
+
+      protected settings at all.
+    optional: true
+    syntax:
+      content: 'protectedSettings?: any'
+      return:
+        type:
+          - any
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineExtensionUpdate.publisher
+    name: publisher
+    fullName: publisher
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The name of the extension handler publisher.
+    optional: true
+    syntax:
+      content: 'publisher?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineExtensionUpdate.settings
+    name: settings
+    fullName: settings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Json formatted public settings for the extension.
+    optional: true
+    syntax:
+      content: 'settings?: any'
+      return:
+        type:
+          - any
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineExtensionUpdate.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: azure-arm-compute - v10.0.0.VirtualMachineExtensionUpdate.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies the type of the extension; an example is
+      "CustomScriptExtension".
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+  - uid: >-
+      azure-arm-compute -
+      v10.0.0.VirtualMachineExtensionUpdate.typeHandlerVersion
+    name: typeHandlerVersion
+    fullName: typeHandlerVersion
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Specifies the version of the script handler.
+    optional: true
+    syntax:
+      content: 'typeHandlerVersion?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-compute - v10
+references:
+  - uid: azure-arm-compute - v10.0.0.UpdateResource
+    name: UpdateResource
+    spec.typeScript:
+      - name: UpdateResource
+        fullName: UpdateResource
+        uid: azure-arm-compute - v10.0.0.UpdateResource

@@ -1,0 +1,467 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch - v5.0.0.Location
+    name: Location
+    fullName: Location
+    children:
+      - azure-arm-batch - v5.0.0.Location.checkNameAvailability
+      - azure-arm-batch - v5.0.0.Location.checkNameAvailability_2
+      - azure-arm-batch - v5.0.0.Location.checkNameAvailability_1
+      - >-
+        azure-arm-batch -
+        v5.0.0.Location.checkNameAvailabilityWithHttpOperationResponse
+      - azure-arm-batch - v5.0.0.Location.getQuotas
+      - azure-arm-batch - v5.0.0.Location.getQuotas_2
+      - azure-arm-batch - v5.0.0.Location.getQuotas_1
+      - azure-arm-batch - v5.0.0.Location.getQuotasWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Location.checkNameAvailability
+    name: 'checkNameAvailability(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Checks whether the Batch account name is available in the specified
+      region.
+    syntax:
+      content: >-
+        function checkNameAvailability(locationName: string, name: string,
+        options?: Object)
+      parameters:
+        - id: locationName
+          type:
+            - string
+          description: |
+            The desired region for the name check.
+        - id: name
+          type:
+            - string
+          description: |
+            The name to check for availability
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.CheckNameAvailabilityResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CheckNameAvailabilityResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CheckNameAvailabilityResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CheckNameAvailabilityResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Location.checkNameAvailability_2
+    name: >-
+      checkNameAvailability(string, string, Object,
+      ServiceCallback<CheckNameAvailabilityResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Checks whether the Batch account name is available in the specified
+      region.
+    syntax:
+      content: >-
+        function checkNameAvailability(locationName: string, name: string,
+        options: Object, callback: ServiceCallback<CheckNameAvailabilityResult>)
+      parameters:
+        - id: locationName
+          type:
+            - string
+          description: ''
+        - id: name
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-batch -
+              v5.0.0.CheckNameAvailabilityResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.CheckNameAvailabilityResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CheckNameAvailabilityResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CheckNameAvailabilityResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CheckNameAvailabilityResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Location.checkNameAvailability_1
+    name: >-
+      checkNameAvailability(string, string,
+      ServiceCallback<CheckNameAvailabilityResult>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Checks whether the Batch account name is available in the specified
+      region.
+    syntax:
+      content: >-
+        function checkNameAvailability(locationName: string, name: string,
+        callback: ServiceCallback<CheckNameAvailabilityResult>)
+      parameters:
+        - id: locationName
+          type:
+            - string
+          description: ''
+        - id: name
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - >-
+              ServiceCallback<azure-arm-batch -
+              v5.0.0.CheckNameAvailabilityResult>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.CheckNameAvailabilityResult>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {CheckNameAvailabilityResult} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {CheckNameAvailabilityResult} [result]   - The deserialized result object if an error did not occur.
+                               See {@link CheckNameAvailabilityResult} for more
+                               information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.Location.checkNameAvailabilityWithHttpOperationResponse
+    name: 'checkNameAvailabilityWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Checks whether the Batch account name is available in the specified
+      region.
+    syntax:
+      content: >-
+        function checkNameAvailabilityWithHttpOperationResponse(locationName:
+        string, name: string, options?: Object)
+      parameters:
+        - id: locationName
+          type:
+            - string
+          description: |
+            The desired region for the name check.
+        - id: name
+          type:
+            - string
+          description: |
+            The name to check for availability
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.CheckNameAvailabilityResult>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Location.getQuotas
+    name: 'getQuotas(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets the Batch service quotas for the specified subscription at the given
+      location.
+    syntax:
+      content: 'function getQuotas(locationName: string, options?: Object)'
+      parameters:
+        - id: locationName
+          type:
+            - string
+          description: |
+            The region for which to retrieve Batch service
+            quotas.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchLocationQuota>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchLocationQuota} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchLocationQuota} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchLocationQuota} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Location.getQuotas_2
+    name: 'getQuotas(string, Object, ServiceCallback<BatchLocationQuota>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets the Batch service quotas for the specified subscription at the given
+      location.
+    syntax:
+      content: >-
+        function getQuotas(locationName: string, options: Object, callback:
+        ServiceCallback<BatchLocationQuota>)
+      parameters:
+        - id: locationName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchLocationQuota>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchLocationQuota>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchLocationQuota} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchLocationQuota} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchLocationQuota} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Location.getQuotas_1
+    name: 'getQuotas(string, ServiceCallback<BatchLocationQuota>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets the Batch service quotas for the specified subscription at the given
+      location.
+    syntax:
+      content: >-
+        function getQuotas(locationName: string, callback:
+        ServiceCallback<BatchLocationQuota>)
+      parameters:
+        - id: locationName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-batch - v5.0.0.BatchLocationQuota>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-batch - v5.0.0.BatchLocationQuota>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {BatchLocationQuota} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {BatchLocationQuota} [result]   - The deserialized result object if an error did not occur.
+                               See {@link BatchLocationQuota} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.Location.getQuotasWithHttpOperationResponse
+    name: 'getQuotasWithHttpOperationResponse(string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: |-
+      Gets the Batch service quotas for the specified subscription at the given
+      location.
+    syntax:
+      content: >-
+        function getQuotasWithHttpOperationResponse(locationName: string,
+        options?: Object)
+      parameters:
+        - id: locationName
+          type:
+            - string
+          description: |
+            The region for which to retrieve Batch service
+            quotas.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-batch -
+            v5.0.0.BatchLocationQuota>>
+        description: A promise is returned
+    package: azure-arm-batch - v5
+references:
+  - uid: Promise<azure-arm-batch - v5.0.0.CheckNameAvailabilityResult>
+    name: CheckNameAvailabilityResult>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: CheckNameAvailabilityResult
+        fullName: CheckNameAvailabilityResult
+        uid: azure-arm-batch - v5.0.0.CheckNameAvailabilityResult
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch - v5.0.0.CheckNameAvailabilityResult>
+    name: CheckNameAvailabilityResult>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: CheckNameAvailabilityResult
+        fullName: CheckNameAvailabilityResult
+        uid: azure-arm-batch - v5.0.0.CheckNameAvailabilityResult
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-batch -
+      v5.0.0.CheckNameAvailabilityResult>>
+    name: CheckNameAvailabilityResult>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: CheckNameAvailabilityResult
+        fullName: CheckNameAvailabilityResult
+        uid: azure-arm-batch - v5.0.0.CheckNameAvailabilityResult
+      - name: '>>'
+        fullName: '>>'
+  - uid: Promise<azure-arm-batch - v5.0.0.BatchLocationQuota>
+    name: BatchLocationQuota>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: BatchLocationQuota
+        fullName: BatchLocationQuota
+        uid: azure-arm-batch - v5.0.0.BatchLocationQuota
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-batch - v5.0.0.BatchLocationQuota>
+    name: BatchLocationQuota>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: BatchLocationQuota
+        fullName: BatchLocationQuota
+        uid: azure-arm-batch - v5.0.0.BatchLocationQuota
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-batch -
+      v5.0.0.BatchLocationQuota>>
+    name: BatchLocationQuota>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: BatchLocationQuota
+        fullName: BatchLocationQuota
+        uid: azure-arm-batch - v5.0.0.BatchLocationQuota
+      - name: '>>'
+        fullName: '>>'

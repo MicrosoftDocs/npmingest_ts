@@ -1,0 +1,188 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters
+    name: CertificateCreateOrUpdateParameters
+    fullName: CertificateCreateOrUpdateParameters
+    children:
+      - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters.data
+      - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters.etag
+      - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters.format
+      - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters.id
+      - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters.name
+      - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters.password
+      - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters.thumbprint
+      - >-
+        azure-arm-batch -
+        v5.0.0.CertificateCreateOrUpdateParameters.thumbprintAlgorithm
+      - azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters.type
+    langs:
+      - typeScript
+    type: interface
+    summary: Contains information about a certificate.
+    extends:
+      name: azure-arm-batch - v5.0.0.ProxyResource
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters.data
+    name: data
+    fullName: data
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The maximum size is 10KB.
+    syntax:
+      content: 'data: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'The ETag of the resource, used for concurrency statements.'
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters.format
+    name: format
+    fullName: format
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The format of the certificate - either Pfx or Cer. If omitted, the default
+      is Pfx. Possible
+
+      values include: 'Pfx', 'Cer'
+    optional: true
+    syntax:
+      content: 'format?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The ID of the resource.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The name of the resource.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters.password
+    name: password
+    fullName: password
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      This is required if the certificate format is pfx and must be omitted if
+      the
+
+      certificate format is cer.
+    optional: true
+    syntax:
+      content: 'password?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters.thumbprint
+    name: thumbprint
+    fullName: thumbprint
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: This must match the thumbprint from the name.
+    optional: true
+    syntax:
+      content: 'thumbprint?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: >-
+      azure-arm-batch -
+      v5.0.0.CertificateCreateOrUpdateParameters.thumbprintAlgorithm
+    name: thumbprintAlgorithm
+    fullName: thumbprintAlgorithm
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      This must match the first portion of the certificate name. Currently
+      required to
+
+      be 'SHA1'.
+    optional: true
+    syntax:
+      content: 'thumbprintAlgorithm?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+  - uid: azure-arm-batch - v5.0.0.CertificateCreateOrUpdateParameters.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The type of the resource.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-batch - v5
+references:
+  - uid: azure-arm-batch - v5.0.0.ProxyResource
+    name: ProxyResource
+    spec.typeScript:
+      - name: ProxyResource
+        fullName: ProxyResource
+        uid: azure-arm-batch - v5.0.0.ProxyResource

@@ -1,0 +1,395 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway
+    name: VirtualNetworkGateway
+    fullName: VirtualNetworkGateway
+    children:
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.activeActive
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.bgpSettings
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.customRoutes
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.enableBgp
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.etag
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.gatewayDefaultSite
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.gatewayType
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.id
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.ipConfigurations
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.location
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.name
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.provisioningState
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.resourceGuid
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.sku
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.tags
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.type
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.vpnClientConfiguration
+      - azure-arm-network - v13.0.0.VirtualNetworkGateway.vpnType
+    langs:
+      - typeScript
+    type: interface
+    summary: A common class for general resource information
+    extends:
+      name: azure-arm-network - v13.0.0.Resource
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.activeActive
+    name: activeActive
+    fullName: activeActive
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ActiveActive flag
+    optional: true
+    syntax:
+      content: 'activeActive?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.bgpSettings
+    name: bgpSettings
+    fullName: bgpSettings
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Virtual network gateway's BGP speaker settings.
+    optional: true
+    syntax:
+      content: 'bgpSettings?: BgpSettings'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.BgpSettings
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.customRoutes
+    name: customRoutes
+    fullName: customRoutes
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The reference of the address space resource which represents the custom
+      routes address space
+
+      specified by the the customer for virtual network gateway and VpnClient.
+    optional: true
+    syntax:
+      content: 'customRoutes?: AddressSpace'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.AddressSpace
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.enableBgp
+    name: enableBgp
+    fullName: enableBgp
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Whether BGP is enabled for this virtual network gateway or not.
+    optional: true
+    syntax:
+      content: 'enableBgp?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.etag
+    name: etag
+    fullName: etag
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Gets a unique read-only string that changes whenever the resource is
+      updated.
+    optional: true
+    syntax:
+      content: 'etag?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.gatewayDefaultSite
+    name: gatewayDefaultSite
+    fullName: gatewayDefaultSite
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The reference of the LocalNetworkGateway resource which represents local
+      network site having
+
+      default routes. Assign Null value in case of removing existing default
+      site setting.
+    optional: true
+    syntax:
+      content: 'gatewayDefaultSite?: SubResource'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.SubResource
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.gatewayType
+    name: gatewayType
+    fullName: gatewayType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The type of this virtual network gateway. Possible values are: 'Vpn' and
+      'ExpressRoute'.
+
+      Possible values include: 'Vpn', 'ExpressRoute'
+    optional: true
+    syntax:
+      content: 'gatewayType?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource ID.
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.ipConfigurations
+    name: ipConfigurations
+    fullName: ipConfigurations
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: IP configurations for virtual network gateway.
+    optional: true
+    syntax:
+      content: 'ipConfigurations?: VirtualNetworkGatewayIPConfiguration[]'
+      return:
+        type:
+          - 'azure-arm-network - v13.0.0.VirtualNetworkGatewayIPConfiguration[]'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.location
+    name: location
+    fullName: location
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource location.
+    optional: true
+    syntax:
+      content: 'location?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource name.
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.provisioningState
+    name: provisioningState
+    fullName: provisioningState
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The provisioning state of the VirtualNetworkGateway resource. Possible
+      values are: 'Updating',
+
+      'Deleting', and 'Failed'.
+    optional: true
+    syntax:
+      content: 'provisioningState?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.resourceGuid
+    name: resourceGuid
+    fullName: resourceGuid
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The resource GUID property of the VirtualNetworkGateway resource.
+    optional: true
+    syntax:
+      content: 'resourceGuid?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.sku
+    name: sku
+    fullName: sku
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The reference of the VirtualNetworkGatewaySku resource which represents
+      the SKU selected for
+
+      Virtual network gateway.
+    optional: true
+    syntax:
+      content: 'sku?: VirtualNetworkGatewaySku'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.VirtualNetworkGatewaySku
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.tags
+    name: tags
+    fullName: tags
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource tags.
+    optional: true
+    syntax:
+      content: 'tags?: [key: string]: string'
+      return:
+        type:
+          - '[key: string]: string'
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Resource type.
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.vpnClientConfiguration
+    name: vpnClientConfiguration
+    fullName: vpnClientConfiguration
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The reference of the VpnClientConfiguration resource which represents the
+      P2S VpnClient
+
+      configurations.
+    optional: true
+    syntax:
+      content: 'vpnClientConfiguration?: VpnClientConfiguration'
+      return:
+        type:
+          - azure-arm-network - v13.0.0.VpnClientConfiguration
+        description: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGateway.vpnType
+    name: vpnType
+    fullName: vpnType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The type of this virtual network gateway. Possible values are:
+      'PolicyBased' and 'RouteBased'.
+
+      Possible values include: 'PolicyBased', 'RouteBased'
+    optional: true
+    syntax:
+      content: 'vpnType?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.Resource
+    name: Resource
+    spec.typeScript:
+      - name: Resource
+        fullName: Resource
+        uid: azure-arm-network - v13.0.0.Resource
+  - uid: azure-arm-network - v13.0.0.BgpSettings
+    name: BgpSettings
+    spec.typeScript:
+      - name: BgpSettings
+        fullName: BgpSettings
+        uid: azure-arm-network - v13.0.0.BgpSettings
+  - uid: azure-arm-network - v13.0.0.AddressSpace
+    name: AddressSpace
+    spec.typeScript:
+      - name: AddressSpace
+        fullName: AddressSpace
+        uid: azure-arm-network - v13.0.0.AddressSpace
+  - uid: azure-arm-network - v13.0.0.SubResource
+    name: SubResource
+    spec.typeScript:
+      - name: SubResource
+        fullName: SubResource
+        uid: azure-arm-network - v13.0.0.SubResource
+  - uid: 'azure-arm-network - v13.0.0.VirtualNetworkGatewayIPConfiguration[]'
+    name: 'VirtualNetworkGatewayIPConfiguration[]'
+    spec.typeScript:
+      - name: VirtualNetworkGatewayIPConfiguration
+        fullName: VirtualNetworkGatewayIPConfiguration
+        uid: azure-arm-network - v13.0.0.VirtualNetworkGatewayIPConfiguration
+      - name: '[]'
+        fullName: '[]'
+  - uid: azure-arm-network - v13.0.0.VirtualNetworkGatewaySku
+    name: VirtualNetworkGatewaySku
+    spec.typeScript:
+      - name: VirtualNetworkGatewaySku
+        fullName: VirtualNetworkGatewaySku
+        uid: azure-arm-network - v13.0.0.VirtualNetworkGatewaySku
+  - uid: azure-arm-network - v13.0.0.VpnClientConfiguration
+    name: VpnClientConfiguration
+    spec.typeScript:
+      - name: VpnClientConfiguration
+        fullName: VpnClientConfiguration
+        uid: azure-arm-network - v13.0.0.VpnClientConfiguration

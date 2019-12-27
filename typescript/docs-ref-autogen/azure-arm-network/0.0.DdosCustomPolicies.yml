@@ -1,0 +1,1510 @@
+### YamlMime:UniversalReference
+items:
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies
+    name: DdosCustomPolicies
+    fullName: DdosCustomPolicies
+    children:
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.beginCreateOrUpdate
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.beginCreateOrUpdate_2
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.beginCreateOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosCustomPolicies.beginCreateOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.beginDeleteMethod
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.beginDeleteMethod_2
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.beginDeleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosCustomPolicies.beginDeleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.beginUpdateTags
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.beginUpdateTags_2
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.beginUpdateTags_1
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosCustomPolicies.beginUpdateTagsWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.createOrUpdate
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.createOrUpdate_2
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.createOrUpdate_1
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosCustomPolicies.createOrUpdateWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.deleteMethod
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.deleteMethod_2
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.deleteMethod_1
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosCustomPolicies.deleteMethodWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.get
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.get_2
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.get_1
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosCustomPolicies.getWithHttpOperationResponse
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.updateTags
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.updateTags_2
+      - azure-arm-network - v13.0.0.DdosCustomPolicies.updateTags_1
+      - >-
+        azure-arm-network -
+        v13.0.0.DdosCustomPolicies.updateTagsWithHttpOperationResponse
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.beginCreateOrUpdate
+    name: 'beginCreateOrUpdate(string, string, DdosCustomPolicy, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a DDoS custom policy.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        ddosCustomPolicyName: string, parameters: DdosCustomPolicy, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: |
+            The name of the DDoS custom policy.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.DdosCustomPolicy
+          description: |
+            Parameters supplied to the create or update
+            operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosCustomPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosCustomPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosCustomPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosCustomPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.beginCreateOrUpdate_2
+    name: >-
+      beginCreateOrUpdate(string, string, DdosCustomPolicy, Object,
+      ServiceCallback<DdosCustomPolicy>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a DDoS custom policy.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        ddosCustomPolicyName: string, parameters: DdosCustomPolicy, options:
+        Object, callback: ServiceCallback<DdosCustomPolicy>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.DdosCustomPolicy
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosCustomPolicy>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosCustomPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosCustomPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosCustomPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosCustomPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.beginCreateOrUpdate_1
+    name: >-
+      beginCreateOrUpdate(string, string, DdosCustomPolicy,
+      ServiceCallback<DdosCustomPolicy>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a DDoS custom policy.
+    syntax:
+      content: >-
+        function beginCreateOrUpdate(resourceGroupName: string,
+        ddosCustomPolicyName: string, parameters: DdosCustomPolicy, callback:
+        ServiceCallback<DdosCustomPolicy>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.DdosCustomPolicy
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosCustomPolicy>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosCustomPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosCustomPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosCustomPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosCustomPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosCustomPolicies.beginCreateOrUpdateWithHttpOperationResponse
+    name: >-
+      beginCreateOrUpdateWithHttpOperationResponse(string, string,
+      DdosCustomPolicy, Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a DDoS custom policy.
+    syntax:
+      content: >-
+        function beginCreateOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, ddosCustomPolicyName: string, parameters: DdosCustomPolicy,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: |
+            The name of the DDoS custom policy.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.DdosCustomPolicy
+          description: |
+            Parameters supplied to the create or update
+            operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.DdosCustomPolicy>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.beginDeleteMethod
+    name: 'beginDeleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified DDoS custom policy.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        ddosCustomPolicyName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: |
+            The name of the DDoS custom policy.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.beginDeleteMethod_2
+    name: 'beginDeleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified DDoS custom policy.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        ddosCustomPolicyName: string, options: Object, callback:
+        ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.beginDeleteMethod_1
+    name: 'beginDeleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified DDoS custom policy.
+    syntax:
+      content: >-
+        function beginDeleteMethod(resourceGroupName: string,
+        ddosCustomPolicyName: string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosCustomPolicies.beginDeleteMethodWithHttpOperationResponse
+    name: 'beginDeleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified DDoS custom policy.
+    syntax:
+      content: >-
+        function beginDeleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, ddosCustomPolicyName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: |
+            The name of the DDoS custom policy.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.beginUpdateTags
+    name: 'beginUpdateTags(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a DDoS custom policy tags
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        ddosCustomPolicyName: string, parameters: TagsObject, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: |
+            The name of the DDoS custom policy.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to the update DDoS custom
+            policy resource tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosCustomPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosCustomPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosCustomPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosCustomPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.beginUpdateTags_2
+    name: >-
+      beginUpdateTags(string, string, TagsObject, Object,
+      ServiceCallback<DdosCustomPolicy>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a DDoS custom policy tags
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        ddosCustomPolicyName: string, parameters: TagsObject, options: Object,
+        callback: ServiceCallback<DdosCustomPolicy>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosCustomPolicy>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosCustomPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosCustomPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosCustomPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosCustomPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.beginUpdateTags_1
+    name: >-
+      beginUpdateTags(string, string, TagsObject,
+      ServiceCallback<DdosCustomPolicy>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a DDoS custom policy tags
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string,
+        ddosCustomPolicyName: string, parameters: TagsObject, callback:
+        ServiceCallback<DdosCustomPolicy>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosCustomPolicy>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosCustomPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosCustomPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosCustomPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosCustomPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosCustomPolicies.beginUpdateTagsWithHttpOperationResponse
+    name: >-
+      beginUpdateTagsWithHttpOperationResponse(string, string, TagsObject,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a DDoS custom policy tags
+    syntax:
+      content: >-
+        function beginUpdateTagsWithHttpOperationResponse(resourceGroupName:
+        string, ddosCustomPolicyName: string, parameters: TagsObject, options?:
+        Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: |
+            The name of the DDoS custom policy.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to the update DDoS custom
+            policy resource tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.DdosCustomPolicy>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.createOrUpdate
+    name: 'createOrUpdate(string, string, DdosCustomPolicy, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a DDoS custom policy.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, ddosCustomPolicyName:
+        string, parameters: DdosCustomPolicy, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: |
+            The name of the DDoS custom policy.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.DdosCustomPolicy
+          description: |
+            Parameters supplied to the create or update
+            operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosCustomPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosCustomPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosCustomPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosCustomPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.createOrUpdate_2
+    name: >-
+      createOrUpdate(string, string, DdosCustomPolicy, Object,
+      ServiceCallback<DdosCustomPolicy>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a DDoS custom policy.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, ddosCustomPolicyName:
+        string, parameters: DdosCustomPolicy, options: Object, callback:
+        ServiceCallback<DdosCustomPolicy>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.DdosCustomPolicy
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosCustomPolicy>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosCustomPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosCustomPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosCustomPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosCustomPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.createOrUpdate_1
+    name: >-
+      createOrUpdate(string, string, DdosCustomPolicy,
+      ServiceCallback<DdosCustomPolicy>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a DDoS custom policy.
+    syntax:
+      content: >-
+        function createOrUpdate(resourceGroupName: string, ddosCustomPolicyName:
+        string, parameters: DdosCustomPolicy, callback:
+        ServiceCallback<DdosCustomPolicy>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.DdosCustomPolicy
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosCustomPolicy>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosCustomPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosCustomPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosCustomPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosCustomPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosCustomPolicies.createOrUpdateWithHttpOperationResponse
+    name: >-
+      createOrUpdateWithHttpOperationResponse(string, string, DdosCustomPolicy,
+      Object)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Creates or updates a DDoS custom policy.
+    syntax:
+      content: >-
+        function createOrUpdateWithHttpOperationResponse(resourceGroupName:
+        string, ddosCustomPolicyName: string, parameters: DdosCustomPolicy,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: |
+            The name of the DDoS custom policy.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.DdosCustomPolicy
+          description: |
+            Parameters supplied to the create or update
+            operation.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.DdosCustomPolicy>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.deleteMethod
+    name: 'deleteMethod(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified DDoS custom policy.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, ddosCustomPolicyName:
+        string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: |
+            The name of the DDoS custom policy.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.deleteMethod_2
+    name: 'deleteMethod(string, string, Object, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified DDoS custom policy.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, ddosCustomPolicyName:
+        string, options: Object, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.deleteMethod_1
+    name: 'deleteMethod(string, string, ServiceCallback<void>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified DDoS custom policy.
+    syntax:
+      content: >-
+        function deleteMethod(resourceGroupName: string, ddosCustomPolicyName:
+        string, callback: ServiceCallback<void>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<void>
+          description: ''
+      return:
+        type:
+          - Promise<void>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {null} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {null} [result]   - The deserialized result object if an error did not occur.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosCustomPolicies.deleteMethodWithHttpOperationResponse
+    name: 'deleteMethodWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Deletes the specified DDoS custom policy.
+    syntax:
+      content: >-
+        function deleteMethodWithHttpOperationResponse(resourceGroupName:
+        string, ddosCustomPolicyName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: |
+            The name of the DDoS custom policy.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<HttpOperationResponse<void>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.get
+    name: 'get(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified DDoS custom policy.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, ddosCustomPolicyName: string,
+        options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: |
+            The name of the DDoS custom policy.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosCustomPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosCustomPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosCustomPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosCustomPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.get_2
+    name: 'get(string, string, Object, ServiceCallback<DdosCustomPolicy>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified DDoS custom policy.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, ddosCustomPolicyName: string,
+        options: Object, callback: ServiceCallback<DdosCustomPolicy>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosCustomPolicy>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosCustomPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosCustomPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosCustomPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosCustomPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.get_1
+    name: 'get(string, string, ServiceCallback<DdosCustomPolicy>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified DDoS custom policy.
+    syntax:
+      content: >-
+        function get(resourceGroupName: string, ddosCustomPolicyName: string,
+        callback: ServiceCallback<DdosCustomPolicy>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosCustomPolicy>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosCustomPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosCustomPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosCustomPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosCustomPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosCustomPolicies.getWithHttpOperationResponse
+    name: 'getWithHttpOperationResponse(string, string, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Gets information about the specified DDoS custom policy.
+    syntax:
+      content: >-
+        function getWithHttpOperationResponse(resourceGroupName: string,
+        ddosCustomPolicyName: string, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: |
+            The name of the DDoS custom policy.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.DdosCustomPolicy>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.updateTags
+    name: 'updateTags(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a DDoS custom policy tags
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, ddosCustomPolicyName:
+        string, parameters: TagsObject, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: |
+            The name of the DDoS custom policy.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to the update DDoS custom
+            policy resource tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosCustomPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosCustomPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosCustomPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosCustomPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.updateTags_2
+    name: >-
+      updateTags(string, string, TagsObject, Object,
+      ServiceCallback<DdosCustomPolicy>)
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a DDoS custom policy tags
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, ddosCustomPolicyName:
+        string, parameters: TagsObject, options: Object, callback:
+        ServiceCallback<DdosCustomPolicy>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: options
+          type:
+            - Object
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosCustomPolicy>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosCustomPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosCustomPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosCustomPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosCustomPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicies.updateTags_1
+    name: 'updateTags(string, string, TagsObject, ServiceCallback<DdosCustomPolicy>)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a DDoS custom policy tags
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, ddosCustomPolicyName:
+        string, parameters: TagsObject, callback:
+        ServiceCallback<DdosCustomPolicy>)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: ''
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: ''
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: ''
+        - id: callback
+          type:
+            - ServiceCallback<azure-arm-network - v13.0.0.DdosCustomPolicy>
+          description: ''
+      return:
+        type:
+          - Promise<azure-arm-network - v13.0.0.DdosCustomPolicy>
+        description: |-
+          If a callback was passed as the last
+          parameter then it returns the callback else returns a Promise.
+
+          {Promise} A promise is returned.
+
+                               @resolve {DdosCustomPolicy} - The deserialized result object.
+
+                               @reject {Error|ServiceError} - The error object.
+
+          {ServiceCallback} optionalCallback(err, result, request, response)
+
+                               {Error|ServiceError}  err        - The Error object if an error occurred, null otherwise.
+
+                               {DdosCustomPolicy} [result]   - The deserialized result object if an error did not occur.
+                               See {@link DdosCustomPolicy} for more information.
+
+                               {WebResource} [request]  - The HTTP Request object if an error did not occur.
+
+                               {http.IncomingMessage} [response] - The HTTP Response stream if an error did not occur.
+    package: azure-arm-network - v13
+  - uid: >-
+      azure-arm-network -
+      v13.0.0.DdosCustomPolicies.updateTagsWithHttpOperationResponse
+    name: 'updateTagsWithHttpOperationResponse(string, string, TagsObject, Object)'
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Update a DDoS custom policy tags
+    syntax:
+      content: >-
+        function updateTagsWithHttpOperationResponse(resourceGroupName: string,
+        ddosCustomPolicyName: string, parameters: TagsObject, options?: Object)
+      parameters:
+        - id: resourceGroupName
+          type:
+            - string
+          description: |
+            The name of the resource group.
+        - id: ddosCustomPolicyName
+          type:
+            - string
+          description: |
+            The name of the DDoS custom policy.
+        - id: parameters
+          type:
+            - azure-arm-network - v13.0.0.TagsObject
+          description: |
+            Parameters supplied to the update DDoS custom
+            policy resource tags.
+        - id: options
+          type:
+            - Object
+          description: ''
+          optional: true
+      return:
+        type:
+          - >-
+            Promise<HttpOperationResponse<azure-arm-network -
+            v13.0.0.DdosCustomPolicy>>
+        description: A promise is returned
+    package: azure-arm-network - v13
+references:
+  - uid: azure-arm-network - v13.0.0.DdosCustomPolicy
+    name: DdosCustomPolicy
+    spec.typeScript:
+      - name: DdosCustomPolicy
+        fullName: DdosCustomPolicy
+        uid: azure-arm-network - v13.0.0.DdosCustomPolicy
+  - uid: Promise<azure-arm-network - v13.0.0.DdosCustomPolicy>
+    name: DdosCustomPolicy>
+    spec.typeScript:
+      - name: Promise<
+        fullName: Promise<
+      - name: DdosCustomPolicy
+        fullName: DdosCustomPolicy
+        uid: azure-arm-network - v13.0.0.DdosCustomPolicy
+      - name: '>'
+        fullName: '>'
+  - uid: ServiceCallback<azure-arm-network - v13.0.0.DdosCustomPolicy>
+    name: DdosCustomPolicy>
+    spec.typeScript:
+      - name: ServiceCallback<
+        fullName: ServiceCallback<
+      - name: DdosCustomPolicy
+        fullName: DdosCustomPolicy
+        uid: azure-arm-network - v13.0.0.DdosCustomPolicy
+      - name: '>'
+        fullName: '>'
+  - uid: >-
+      Promise<HttpOperationResponse<azure-arm-network -
+      v13.0.0.DdosCustomPolicy>>
+    name: DdosCustomPolicy>>
+    spec.typeScript:
+      - name: Promise<HttpOperationResponse<
+        fullName: Promise<HttpOperationResponse<
+      - name: DdosCustomPolicy
+        fullName: DdosCustomPolicy
+        uid: azure-arm-network - v13.0.0.DdosCustomPolicy
+      - name: '>>'
+        fullName: '>>'
+  - uid: azure-arm-network - v13.0.0.TagsObject
+    name: TagsObject
+    spec.typeScript:
+      - name: TagsObject
+        fullName: TagsObject
+        uid: azure-arm-network - v13.0.0.TagsObject
